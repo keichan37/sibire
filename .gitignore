@@ -14,7 +14,7 @@
 *.swp
 *.DS_Store
 wp-config.php
-/wp-content/theme
+wp-content/theme
 
 # pow
 .powenv
