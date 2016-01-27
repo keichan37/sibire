@@ -1,0 +1,51 @@
+#header {
+  height: 44px;
+  line-height: 44px;
+}
+
+#header .logo {
+  padding: 9px 0 0 10px;
+}
+
+#header .logo a {
+  display: block;
+  background-image: url("../images/logo-2x.png");
+  background-size: 70px auto;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 21px;
+  text-indent: -9999px;
+}
+
+#footer {
+  background-color: #999999;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 15px; 
+}
+
+#footer ul {
+  margin: 0;
+  padding: 8px 0px 18px 30px;
+}
+
+#footer ul li {
+  text-align: left;
+  height: 18px;
+}
+
+#footer ul li a {
+  color: #ffffff;
+  font-size: 11px;
+}
+
+#footer b,
+#footer i {
+  padding-left: 11px;
+}
+
+#contents {
+}
