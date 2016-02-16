@@ -26,13 +26,13 @@
 //mysql://bf8a0824b6b17c:e2e02e66@us-cdbr-iron-east-03.cleardb.net/heroku_07dc9a4cdf10ea5?reconnect=true
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define('DB_NAME', 'heroku_07dc9a4cdf10ea5');
+define('DB_NAME', '');
 /** MySQL データベースのユーザー名 */
-define('DB_USER', 'bf8a0824b6b17c');
+define('DB_USER', '');
 /** MySQL データベースのパスワード */
-define('DB_PASSWORD', 'e2e02e66');
+define('DB_PASSWORD', '');
 /** MySQL のホスト名 */
-define('DB_HOST', 'us-cdbr-iron-east-03.cleardb.net');
+define('DB_HOST', '');
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define('DB_CHARSET', 'utf8mb4');
 /** データベースの照合順序 (ほとんどの場合変更する必要はありません) */
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'qXI2+sy29b)h8QM6SSs-[lD2Vsk!{s,R88XT6hBc5ev][C}gkV[PH4awKnv|DOh3');
-define('SECURE_AUTH_KEY',  '&_R3CZ)#Lyq<:Zzxp?eHe&o.Lt=S19<(]uHy3oxcJ+ae.bn+lZ2#~ei{@{t3aDnV');
-define('LOGGED_IN_KEY',    'RN>R)PTp0]c;#_]XQ3!te{nE0T&_w[^:,/HB`fw~TP+kVtm2K>8qV+au.yDnfi3_');
-define('NONCE_KEY',        'g_F/*Zj-d/<:lXm^%cNl8Y?Te{9%?e,oPw^,N)|Y[!6(AR&a]fW_j`+LVa42+2KG');
-define('AUTH_SALT',        'H5XOeGsD7_^KoGP(lWMHI_U8f?2xbkN*{]xrf8+p~[:m,Q7j.9FNZ>BNTRX%=~F:');
-define('SECURE_AUTH_SALT', 'D]cy-x6NfG Nbut/gmxAU0`^P+Kleg({vLgxVEIn1Z?N&/}BQNGPfoVCUG*4Qf)+');
-define('LOGGED_IN_SALT',   'iV:Dec(S9g=-.~BKT^d7;sxNHm+HnM;`^le3*0X&,p}Mksg|xG@E!1dm`B|a@!n.');
-define('NONCE_SALT',       '4fIaIu2Q-Z44&Nk~=T/(bbm^uVjR~eH+|+~|HcUSW_49:7>tHQK--hb=PtU]P84F');
+define('AUTH_KEY',         '');
+define('SECURE_AUTH_KEY',  '');
+define('LOGGED_IN_KEY',    '');
+define('NONCE_KEY',        '');
+define('AUTH_SALT',        '');
+define('SECURE_AUTH_SALT', '');
+define('LOGGED_IN_SALT',   '');
+define('NONCE_SALT',       '');
 /**#@-*/
 /**
  * WordPress データベーステーブルの接頭辞
