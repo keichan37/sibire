@@ -26,16 +26,16 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define('DB_NAME', 'sibire');
+define('DB_NAME', 'heroku_15097336c6a4b99');
 
 /** MySQL データベースのユーザー名 */
-define('DB_USER', 'root');
+define('DB_USER', 'bccb3ccdad0838');
 
 /** MySQL データベースのパスワード */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'ba676c2d');
 
 /** MySQL のホスト名 */
-define('DB_HOST', '127.0.0.1');
+define('DB_HOST', 'us-cdbr-iron-east-03.cleardb.net');
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define('DB_CHARSET', 'utf8mb4');
@@ -52,14 +52,15 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '&{&YAuxs<lXLz!9&nfA3hW-wphseQz!q?&o;7R2~4Nw`np:&}OEw2C/< q+4]3xo');
-define('SECURE_AUTH_KEY',  'WA|q1jhjR;gvuK1Y|>%[a4Gc93+_#:geu!g$.%VSht+j|On+4K+_u%=u|eO|bVZR');
-define('LOGGED_IN_KEY',    '!JHZ~.Vm++ d.*Y|<Ym+hh)>[K,oVC=++O1qsr0lmh/je__v@g|2>^dWYKOXg4~U');
-define('NONCE_KEY',        'zjF3hhMW0M)ePyKTr]IQISHw[qa+5~>=eT|;5Yg8v7tboH;*8co*Y+Q<kGq;d)v*');
-define('AUTH_SALT',        '.dSy#q{Rf=t-z*`TM}X5L_LhD[v[6@MTk)S[<1t3%M -ia_JxB(V-~Z|=RC-4d-T');
-define('SECURE_AUTH_SALT', '8KJ;#|4|JvX~eLCW|t_z}u{ish8OS1`q4)Jr;!EYwiNzg|=:-9P&t_&oQE $<7{{');
-define('LOGGED_IN_SALT',   'p1>cu@^o,oGY_w%(Bw7v~[i=Zfg2aTM$h7xGz;^wmDZ!b*H8/SbHJ/bfn6r G&(O');
-define('NONCE_SALT',       'AWQJG5:c)8-c_L;}M?:=PEnc mR:#%kgG[(S4q1(7A0P%~r!h=aK-@%zciEHXsfw');
+define('AUTH_KEY',         '');
+define('SECURE_AUTH_KEY',  '');
+define('LOGGED_IN_KEY',    '');
+define('NONCE_KEY',        '');
+define('AUTH_SALT',        '');
+define('SECURE_AUTH_SALT', '');
+define('LOGGED_IN_SALT',   '');
+define('NONCE_SALT',       '');
+
 /**#@-*/
 
 /**
@@ -90,4 +91,3 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-
