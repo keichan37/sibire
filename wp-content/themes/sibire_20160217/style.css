@@ -2,8 +2,8 @@
 /*
 Theme Name: シビレ株式会社
 Theme URI: sibire.co.jp
-Description: Coming Soon...
-Version: 0.0.2
+Description: Pre-opening
+Version: 0.1.0
 Author: 虻川景
 */
 
@@ -16,6 +16,7 @@ body {
   padding: 0;
   -webkit-tap-highlight-color:rgba(28,135,201,0.3);
   font-size: 13px;
+  min-width: 1140px;
 }
 
 #wrap {

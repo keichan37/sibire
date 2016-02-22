@@ -32,7 +32,7 @@
     <?php if ( $post->my_keywords ): ?>
       <meta name="keywords" content="<?php echo esc_attr( $post->my_keywords ); ?>" />
     <?php else: ?>
-      <meta name="keywords" content="シビレる日本を作る" />
+      <meta name="keywords" content="シビレる仕事を、地方で" />
     <?php endif; ?>
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
@@ -40,8 +40,8 @@
     <link rel="icon" type="image/gif" href="<?php echo get_template_directory_uri(); ?>/images/favicon.gif" />
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" />
 
-    <meta content="" property="og:url">
-    <meta content="" property="og:site_name">
+    <meta content="http://www.sibire.co.jp" property="og:url">
+    <meta content="sibire" property="og:site_name">
     
     <meta content="website" property="og:type">
     <meta content="OGP.jpg" property="og:image">

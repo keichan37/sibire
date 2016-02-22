@@ -1,20 +1,23 @@
 <footer id="footer">
   <div class="container">
-    <b>シビレ株式会社</b>
-    <ul>
-      <li>
-        <a href="javascript:void(0);">個人情報保護方針</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);">個人情報の取扱いについて</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);">情報セキュリティ基本方針</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);">免責事項</a>
-      </li>
-    </ul>
-    <i>&copy;sibire,.inc</i>
+    <div class="footer-inner">
+      <b>シビレ株式会社</b>
+      <ul>
+        <li>
+          <a class="gray" href="javascript:void(0);">会社概要</a>
+        </li>
+        <li>
+          <a class="gray" href="javascript:void(0);">企業理念</a>
+        </li>
+        <li>
+          <a class="gray" href="javascript:void(0);">プライバシーポリシー</a>
+        </li>
+        <li>
+          <a href="mailto:info@sibire.co.jp">お問い合わせ</a>
+        </li>
+        <div class="clear"></div>
+      </ul>
+    </div>
+    <div class="copy">&copy; 2016 sibire ,inc. All Rights Reserved.</div>
   </div>
 </footer>
