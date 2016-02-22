@@ -43,6 +43,8 @@
     <meta content="http://www.sibire.co.jp" property="og:url">
     <meta content="sibire" property="og:site_name">
     
+    <meta property="og:title" content="シビレ株式会社" />
+    <meta property="og:description" content="シビレる仕事を、地方で" />
     <meta content="website" property="og:type">
     <meta content="<?php echo get_template_directory_uri(); ?>/OGP.png" property="og:image">
     <meta content="ja_JP" property="og:locale">
