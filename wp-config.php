@@ -60,7 +60,6 @@ define('AUTH_SALT',        '.dSy#q{Rf=t-z*`TM}X5L_LhD[v[6@MTk)S[<1t3%M -ia_JxB(V
 define('SECURE_AUTH_SALT', '8KJ;#|4|JvX~eLCW|t_z}u{ish8OS1`q4)Jr;!EYwiNzg|=:-9P&t_&oQE $<7{{');
 define('LOGGED_IN_SALT',   'p1>cu@^o,oGY_w%(Bw7v~[i=Zfg2aTM$h7xGz;^wmDZ!b*H8/SbHJ/bfn6r G&(O');
 define('NONCE_SALT',       'AWQJG5:c)8-c_L;}M?:=PEnc mR:#%kgG[(S4q1(7A0P%~r!h=aK-@%zciEHXsfw');
-
 /**#@-*/
 
 /**
