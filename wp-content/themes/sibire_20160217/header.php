@@ -44,6 +44,6 @@
     <meta content="sibire" property="og:site_name">
     
     <meta content="website" property="og:type">
-    <meta content="OGP.jpg" property="og:image">
+    <meta content="<?php echo get_template_directory_uri(); ?>/OGP.png" property="og:image">
     <meta content="ja_JP" property="og:locale">
   </head>
