@@ -37,8 +37,8 @@
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/layout.css" type="text/css" media="all" />
-    <link rel="icon" type="image/gif" href="<?php echo get_template_directory_uri(); ?>/images/favicon.gif" />
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico" />
+    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
+    <link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/apple-touch-icon.png" />
 
     <meta content="http://www.sibire.co.jp" property="og:url">
     <meta content="sibire" property="og:site_name">
