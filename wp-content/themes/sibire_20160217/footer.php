@@ -13,7 +13,7 @@
           <a class="gray" href="javascript:void(0);">プライバシーポリシー</a>
         </li>
         <li>
-          <a href="mailto:info@sibire.co.jp">お問い合わせ</a>
+          <a href="mailto:info@sibire.co.jp" onClick="ga('send','event','mail','click');">お問い合わせ</a>
         </li>
         <div class="clear"></div>
       </ul>
