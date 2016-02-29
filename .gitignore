@@ -13,7 +13,6 @@
 /tmp
 *.swp
 *.DS_Store
-wp-config.php
 
 # pow
 .powenv
