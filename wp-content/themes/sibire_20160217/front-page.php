@@ -73,7 +73,7 @@
               <p>地方のユニークなIT企業を、ピックアップしてご紹介</p>
               <ul class="ul">
                 <li class="li-1">
-                  <a href="javascript: coid(0);">Coming Soon...</a>
+                  <a href="/?recruit=ガリレオスコープ">ガリレオスコープ</a>
                 </li>
                 <li class="li-2">
                   <a href="javascript: coid(0);">Coming Soon...</a>

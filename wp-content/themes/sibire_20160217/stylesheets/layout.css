@@ -254,13 +254,17 @@
   line-height: 35px;
   font-weight: 700;
   background-image: url("../images/recruit.jpg");
+  text-shadow: 0 0 15px rgba(0,0,0,.6);
 }
 
+#recruit ul li.li-1 a {
+  background-image: url("../images/galileoscope.jpg");
+}
 #recruit ul li.li-2 a { background-position: 0 -206px; }
 #recruit ul li.li-3 a { background-position: 0 -413px; }
 
 #recruit ul li a:hover {
-  text-shadow: 0 0 10px rgba(0,0,0,.5);
+  text-decoration: underline;
 }
 
 #footer {
