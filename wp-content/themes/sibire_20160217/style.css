@@ -2,15 +2,15 @@
 /*
 Theme Name: シビレ株式会社
 Theme URI: sibire.co.jp
-Description: Pre-opening
-Version: 0.1.0
+Description: 求人情報追加
+Version: 0.2.0
 Author: 虻川景
 */
 
 html,
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: 游ゴシック体, 'Yu Gothic', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
+  font-family: '游ゴシック体', 'Yu Gothic', YuGothic, 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
