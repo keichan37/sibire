@@ -3,7 +3,6 @@
 /* アイキャッチ */
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 225, 140, true );
-add_image_size('thumb320',320,200,true);
 /* 投稿に属性追加 */
 /* add_post_type_support( 'post', 'page-attributes' ); */
 /* コメントフィード削除 */
@@ -45,5 +44,20 @@ function show_page_number() {
     	echo ' ('. $paged.'/'.$numpages. ')'; 
     }
 }  
+
+/* 通常の「投稿」をメニューから削除（今回は不使用のため） */
+function remove_menus () {
+global $menu;
+$restricted = array(__('Dashboard'), __('Posts'));
+end ($menu);
+while (prev($menu)){
+$value = explode(' ',$menu[key($menu)][0]);
+if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu)]);}
+}
+}
+add_action('admin_menu', 'remove_menus');
+
+/* 投稿画面用のcssを追加 */
+add_editor_style("editor.css");
 
 ?>

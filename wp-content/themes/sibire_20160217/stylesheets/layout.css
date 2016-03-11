@@ -3,6 +3,11 @@
   position: relative;
 }
 
+#header.thin-header {
+  height: 89px;
+  border-bottom: 2px solid #cccccc;
+}
+
 #header .nest {
   width: 70px;
   height: 111px;
@@ -307,4 +312,19 @@
   background-size: 100px 30px;
   background-position: center left;
   padding-left: 180px;
+}
+
+ul.tag {
+  margin: 0;
+  padding: 0;
+}
+
+ul.tag li {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #000000;
+  display: inline;
+  padding: 3px 5px;
+  margin-right: 5px;
+  font-size: 12px;
 }
