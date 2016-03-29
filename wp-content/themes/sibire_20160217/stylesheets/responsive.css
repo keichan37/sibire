@@ -1,0 +1,36 @@
+@media(max-width: 1140px) {
+  html,
+  body {
+    min-width: 100%;
+  }
+  img {
+    max-width: 100%;
+  }
+  .container {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  h1#message {
+    box-sizing: border-box;
+    padding: 0 50px;
+  }
+  .service-column-wrap {
+    width: auto;
+    margin: 0px auto;
+  }
+  .member-wrap {
+    width: 100%;
+  }
+  .toyota,
+  .midori {
+    text-align: center;
+    margin: 0;
+    padding: 0 10px;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  #member p {
+    max-width: 100%;
+  }
+}

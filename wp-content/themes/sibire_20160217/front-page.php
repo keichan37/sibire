@@ -1,90 +1,135 @@
   <?php get_header(); ?>
-      <div id="wrap">
-        <header id="header">
-          <div class="container">
-            <div class="logo">
-              <a href="javascript:void(0);">シビレ株式会社</a>
-            </div>
-            <div class="nest"></div>
-            <div class="pre-opening">2016.2.22 Pre-opening</div>
-          </div>
-        </header>
         <div id="contents">
-          <div id="cover">
+          <h1 id="message"><img src="<?php echo get_template_directory_uri(); ?>/images/midashi-2x.png" alt="エンジニアよ、地方でシビレろ"></h1>
+          <div id="gif">
             <div class="container">
-              <h1>シビレる仕事を、地方で</h1>
-              <p>エンジニアの地方移住を支援する</p>
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/images/37.gif"
+              >
             </div>
           </div>
-          <div id="sns">
+          <div id="registration">
+            <a href="javascript:void(0);">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/registration.png" alt="登録するにゃ">
+            </a>
+          </div>
+          <div id="news">
             <div class="container">
-              <div class="sns-inner">
-                <div class="twitter">
-                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.sibire.co.jp" data-via="sibire_inc" data-lang="ja" data-hashtags="シビレる">ツイート</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                </div>
-                <div class="facebook">
-                  <div class="fb-like" data-href="http://www.sibire.co.jp" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
-                </div>
-                <div class="clear"></div>
-              </div>
+              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/news-title-2x.png" alt="最新情報"></h2>
+
+              <?php
+                $args = array(
+                  'paged' => $paged,
+                  'post_type' => 'recruit',
+                  'posts_per_page' => 3
+                ); ?>
+              <?php query_posts( $args ); ?>
+              <?php if (have_posts()) : ?>
+                  <?php while (have_posts()) : the_post(); 
+                   ?>
+                    <?php
+                      $thumbnail_id = get_post_thumbnail_id();
+                      $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
+                    ?>
+                    <a href=<?php echo get_permalink(); ?> class="news">
+                      <div class="news-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
+                        <span class="tag"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>
+                      </div>
+                      <div class="news-text">
+                        <b><?php echo nl2br(get_post_meta($post->ID, 'recruit', true)); ?></b>
+                        <p><?php the_title(); ?></p>
+                        <!--<span class="news-link">詳細はこちら</span>-->
+                      </div>
+                    </a>
+                  <?php endwhile; ?>     
+              <?php else : ?>
+                <p>投稿がありません</p>
+              <?php endif; ?>
+              <div class="clear"></div>
             </div>
           </div>
-          <div id="start">
+          <div id="flow">
             <div class="container">
-              <h2>2016.4.1 SERVICE START</h2>
-            </div>
-          </div>
-          <div id="what">
-            <div class="container">
-              <h2>What's sibire?</h2>
-              <p>“地方×IT”に特化した転職エージェント </p>
-              <div class="flow">登録 求人情報の提供 応募 選考・面接 内定・入社 移住</div>
-            </div>
-          </div>
-          <div id="message">
-            <div class="container">
-              <h2>仕事の紹介から移住までサポートします。</h2>
+              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/flow-title-2x.png" alt="私たちは、地方移住をともなう転職を支援するエージェントです。"></h2>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/flow.jpg" class="flow-img" alt="登録 求人情報の提供 応募 選考・面接 内定・入社 移住">
             </div>
           </div>
           <div id="service">
             <div class="container">
-              <h2>サービスの特徴</h2>
-              <div class="service-column japan">
-                <h3>日本全国の求人案件</h3>
-                <div class="icon"></div>
-                <p>47都道府県の求人情報保有。<br />やりたい生活・仕事から、<br />あなたに合ったエリアの推薦も</p>
-              </div>
-              <div class="service-column pickup">
-                <h3>人力でピックアップ</h3>
-                <div class="icon"></div>
-                <p>地方移住専門のITエージェントが、<br />あなたにマッチした求人を<br />ピックアップしてご紹介 </p>
-              </div>
-              <div class="service-column cooperate">
-                <h3>自治体と協同</h3>
-                <div class="icon"></div>
-                <p>各自治体と協同し、<br />移住支援制度や補助制度など、<br />移住に役立つ情報をご提供 </p>
+              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/service-title-2x.png" alt="サービスの特徴"></h2>
+              <div class="service-column-wrap">
+                <div class="service-column japan">
+                  <h3>日本全国の求人案件</h3>
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/cow.jpg">
+                  <p>47都道府県の求人情報保有。<br />やりたい生活・仕事から、<br />あなたに合ったエリアの推薦も</p>
+                </div>
+                <div class="service-column pickup">
+                  <h3>人力でピックアップ</h3>
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/rickshaw.jpg">
+                  <p>地方移住専門のITエージェントが、<br />あなたにマッチした求人を<br />ピックアップしてご紹介 </p>
+                </div>
+                <div class="service-column cooperate">
+                  <h3>自治体と協同</h3>
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/castle.jpg">
+                  <p>各自治体と協同し、<br />移住支援制度や補助制度など、<br />移住に役立つ情報をご提供 </p>
+                </div>
               </div>
               <div class="clear"></div>
             </div>
           </div>
           <div id="recruit">
             <div class="container">
-              <h2>求人紹介</h2>
-              <p>地方のユニークなIT企業を、ピックアップしてご紹介</p>
-              <ul class="ul">
-                <li class="li-1">
-                  <a href="/?recruit=ガリレオスコープ">ガリレオスコープ</a>
-                </li>
-                <li class="li-2">
-                  <a href="javascript: coid(0);">Coming Soon...</a>
-                </li>
-                <li class="li-3">
-                  <a href="javascript: coid(0);">Coming Soon...</a>
-                </li>
-                <div class="clear"></div>
-              </ul>
+              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/recruit-title-2x.png" alt="求人紹介"></h2>
+              <p class="p">地方のユニークなIT企業を、ピックアップしてご紹介</p>
+
+              <?php
+              $args = array(
+               'post_type' => 'recruit',
+               'numberposts'   => 10,
+              );
+              $postslist = get_posts($args);
+              foreach ($postslist as $post) : setup_postdata($post);
+              ?>
+
+                <?php
+                  $thumbnail_id = get_post_thumbnail_id();
+                  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
+                ?>
+                <a href=<?php echo get_permalink(); ?> class="recruit">
+                  <div class="recruit-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
+                    <p><?php the_title(); ?></p>
+                    <div class="recruit-overray"></div>
+                  </div>
+                </a>
+              <?php 
+              endforeach; 
+              wp_reset_postdata();
+              ?>
+              <div class="clear"></div>
             </div>
           </div>
+          
+          <div id="member">
+            <div class="container">
+              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/member-title-2x.png" alt="メンバー"></h2>
+              <div class="member-wrap">
+                <div class="toyota">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/toyota.jpg" alt="CEO 豊田昌代">
+                </div>
+                <div class="midori">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/midori.jpg" alt="COO 鈴木翠">
+                </div>
+                <div class="clear"></div>
+              </div>
+              
+              <p>
+                <b class="caret"></b>
+                地方をオモシロく、シビレる場所にしていきたい。<br />私たちはシビレる人、地方を増やします。
+              </p>
+
+            </div>
+          </div>
+
         </div>
         <?php get_footer(); ?>
     </div>

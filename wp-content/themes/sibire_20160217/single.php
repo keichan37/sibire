@@ -1,13 +1,4 @@
   <?php get_header(); ?>
-  <body>
-    <div id="wrap">
-      <header id="header">
-        <div class="container">
-          <div class="logo">
-            <a href="javascript:void(0);">シビレ株式会社</a>
-          </div>
-        </div>
-      </header>
       <div id="contents">
         <div class="container">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

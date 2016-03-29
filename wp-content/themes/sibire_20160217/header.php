@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/layout.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/company.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/responsive.css" type="text/css" media="all" />
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
     <link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/apple-touch-icon.png" />
 
@@ -60,3 +61,25 @@
       js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5&appId=506335716079745";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div id="wrap">
+      <header id="header">
+        <div class="container">
+          <div class="logo">
+            <a href="/">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/logo-2x.png" alt="シビレ株式会社">
+            </a>
+          </div>
+
+          <div id="sns">
+            <div class="facebook">
+              <div class="fb-like" data-href="http://www.sibire.co.jp" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+            </div>
+            <div class="twitter">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.sibire.co.jp" data-via="sibire_inc" data-lang="ja" data-hashtags="シビレる">ツイート</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </header>
