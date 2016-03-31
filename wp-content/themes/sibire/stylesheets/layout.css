@@ -1,0 +1,498 @@
+#header {
+  height: 75px;
+  position: relative;
+  border-bottom: 1px solid #000000;
+}
+
+#header .logo {
+  padding-top: 0px;
+  width: 121px;
+  float: left;
+}
+
+#header .logo a {
+  display: block;
+  width: 121px;
+  height: 60px;
+}
+
+#header .logo a img {
+  width: 121px;
+  height: 60px;
+}
+
+#gif {
+  background-color: #faf8e0;
+  max-height: 803px;
+}
+
+#gif img {
+  width: 100%;
+}
+
+h1#message {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  max-height: 95px;
+  position: relative;
+  bottom: -25px;
+}
+
+h1#message img {
+  width: 700px;
+}
+
+#registration {
+  width: 156px;
+  width: 156px;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  margin: -78px -20px 0 0;
+  z-index: 10;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#registration a {
+  width: 156px;
+  width: 156px;
+  display: block;
+}
+
+#registration:hover {
+  margin-right: 0;
+}
+
+.sns-inner {
+  width: 221px;
+  margin: 0px auto;
+  height: 26px;
+  padding: 42px 0;
+}
+
+#sns {
+  padding-top: 44px;
+  float: right;
+}
+
+.twitter,
+.facebook {
+  float: left;
+  height: 20px;
+}
+.twitter {
+  width: 75px;
+}
+
+.facebook {
+  width: 121px;
+  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
+  margin-right: 10px;
+}
+
+.news {
+  box-sizing :border-box;
+  float: left;
+  padding: 0 20px;
+  width: 33%;
+  min-height: 360px;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+.news-img {
+  position: relative;
+  background-color: #eeeeee;
+  display: block;
+  width: 100%;
+  height: 240px;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+
+.news .tag {
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 11px;
+  line-height: 13px;
+  border: 1px solid #000000;
+  padding: 3px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 5px 5px 0;
+}
+
+.news b {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.news p {
+  font-size: 13px;
+  line-height: 26px;
+  margin: 5px 0 0 0;
+}
+
+.news .news-link {
+  text-decoration: underline;
+}
+
+
+.news:hover .news-img {
+  background-size: auto 104%;
+}
+
+.news:hover .news-text {
+  color: #000000;
+}
+
+.news:hover .news-text b {
+  text-decoration: underline;
+}
+
+#news h2,
+#flow h2,
+#service h2,
+#recruit h2,
+#member h2 {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+#news h2 {
+  margin-bottom: 10px;
+}
+
+#flow h2 img {
+  height: 100px;
+}
+
+#news h2 img,
+#service h2 img,
+#recruit h2 img,
+#member h2 img {
+  height: 50px;
+}
+
+#flow {
+  text-align: center;
+}
+
+#flow .flow-img {
+  position: relative;
+  top: -20px;
+}
+
+.service-column-wrap {
+  width: 900px;
+  margin: 0px auto;
+}
+
+.service-column {
+  width: 33.33333%;
+  float: left;
+}
+
+.service-column h3 {
+  margin: 10px 0 0 0;
+  padding-left: 45px;
+  height: 42px;
+  line-height: 42px;
+  font-weight: 400;
+  font-size: 24px;
+  background-image: url("../images/numeric-2x.png");
+  background-size: 42px 126px;
+  background-repeat: no-repeat;
+}
+.pickup h3 { background-position: 0 -42px; }
+.cooperate h3 { background-position: 0 -84px; }
+
+.service-column img {
+  display: block;
+}
+.japan img { margin: 28px 0 28px 20px; }
+.pickup img { margin: 20px 0 19px 70px; }
+.cooperate img { margin: 56px 0 57px 30px; }
+
+.service-column p {
+  margin: 0 0 0 45px;
+}
+
+#recruit .p {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0 0 25px 0;
+  text-align: center;
+}
+
+#recruit .recruit {
+  box-sizing: border-box;
+  width: 20%;
+  min-height: 147px;
+  float: left;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#recruit .recruit-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 147px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#recruit .recruit p {
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(0,0,0,.9);
+  margin: 0;
+  font-size: 19px;
+  line-height: 28px;
+  padding: 10px;
+  position: relative;
+  z-index: 3;
+}
+
+#recruit .recruit .recruit-overray {
+  background-color: rgba(0,0,0,.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#recruit .recruit:hover .recruit-overray {
+  background-color: rgba(0,0,0,.2);
+}
+
+.toyota,
+.midori {
+  width: 277px;
+  float: left;
+}
+
+.toyota { margin-right: 30px; }
+.midori { margin-left: 30px; }
+
+.member-wrap {
+  width: 614px;
+  margin: 0px auto;
+}
+
+#member .balloon {
+  text-align: center;
+}
+
+#member .balloon img {
+  width: 700px;
+}
+
+.registration {
+  padding: 20px 0 40px 0;
+}
+
+.registration-button {
+  position: relative;
+  display: block;
+  width: 170px;
+  height: 30px;
+  padding: 15px 0;
+  background-color: #bd1934;
+  margin: 0px auto;
+  text-align: center;
+}
+.registration-button .registration-button-text {
+  width: 98px;
+  height: 30px;
+}
+.registration-button .registration-button-img {
+  width: 100px;
+  width: 117px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -30px -80px 0 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.registration-button:hover {
+  background-color: #aa162e;
+}
+.registration-button:hover .registration-button-img{
+  margin: -33px -83px 0 0;
+}
+.registration-button:active .registration-button-img{
+  margin: -36px -86px 0 0;
+}
+
+.left-side {
+  float: left;
+  width: 70%;
+}
+
+.right-side {
+  width: 30%;
+  float: right;
+  padding: 10px 0 0 30px;
+  box-sizing: border-box;
+}
+
+.right-side h4 {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 10px 0 10px 0;
+}
+
+ul.relation {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+ul.relation li {
+  margin-bottom: 10px;
+  
+}
+
+.page-cover {
+  background-image: url("../images/background.png");
+  background-size: auto 100%;
+  padding: 60px 0;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.page-cover h1 {
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 400;
+  margin: 0;
+  color: #000000;
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.wpcf7 {
+  width: 300px;
+  margin: 0px auto;
+}
+
+.wpcf7 .wpcf7-not-valid {
+  display: block;
+}
+
+.wpcf7 .screen-reader-response {
+  display: none;
+}
+
+.wpcf7 .screen-reader-response,
+.wpcf7 .wpcf7-not-valid-tip,
+.wpcf7 .wpcf7-validation-errors {
+  color: #bd1934;
+}
+
+.wpcf7 .wpcf7-not-valid {
+  border: 1px solid #bd1934;
+}
+
+.wpcf7 form label {
+  margin-top: 12px;
+  display: block;
+}
+
+.wpcf7 p {
+  margin: 0;
+}
+
+.wpcf7 form input[type="submit"] {
+  margin-top: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  color: #333333;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.wpcf7 form input[type="submit"]:hover {
+  border: 1px solid #000000;
+  color: #000000;
+}
+.wpcf7 form input[type="submit"]:active {
+  color: #333333; 
+  border-color: #333333; 
+}
+.wpcf7 .wpcf7-mail-sent-ok {
+  margin-top: 5px;
+  color: #34bd19;
+}
+
+#footer {
+  margin-top: 30px;
+  border-top: 1px solid #000000;
+  padding: 55px 0 10px 0;
+  font-size: 12px;
+}
+
+#footer .copy {
+  text-align: right;
+  margin: 15px 0 10px 0;
+}
+
+#footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+#footer ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+}
+
+#footer ul li a {
+  color: #333333;
+  margin-right: 30px;
+}
+
+#footer ul li a:hover {
+  color: #000000;
+}
+
+#footer .footer-inner {
+  background-image: url("../images/simplelogo-2x.png");
+  background-repeat: no-repeat;
+  background-size: 100px 30px;
+  background-position: center left;
+  padding-left: 180px;
+}
