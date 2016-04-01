@@ -26,19 +26,19 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define('DB_NAME', 'sibire');
+define('DB_NAME', 'heroku_15097336c6a4b99');
 
 /** MySQL データベースのユーザー名 */
-define('DB_USER', 'root');
+define('DB_USER', 'bccb3ccdad0838');
 
 /** MySQL データベースのパスワード */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'ba676c2d');
 
 /** MySQL のホスト名 */
-define('DB_HOST', '127.0.0.1');
+define('DB_HOST', 'us-cdbr-iron-east-03.cleardb.net');
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** データベースの照合順序 (ほとんどの場合変更する必要はありません) */
 define('DB_COLLATE', '');
@@ -52,14 +52,15 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '#BROw*Em,Y}AN<&d]i-kbsUW[kg9(F@(Rk$d3z%]>G;vAJ/Jx?G~l{wB/-8OxnFp');
-define('SECURE_AUTH_KEY',  '_9|RNhA-(1lm4;0I,{eEQR`BKQb9.~D%U?B/0?Fe^]d.?U6C6-*a=s0C:_8yJ}V7');
-define('LOGGED_IN_KEY',    '-$SAW+^7$+M?+PE.fNdwxVUiJ~kNZIlU:|)`vL/vHqqjq>NM1m<Y0n>*+%p=a% 4');
-define('NONCE_KEY',        'J4EOe;yES{+%mc-N(EJR5sVDf2u_+lI8wFc &-2 X.qcm|plRk*GK> ;7J5[,KTg');
-define('AUTH_SALT',        'Ti{`|+AGM$}=1)LG|&=cXt{l?O;1~d6(xe.4H2-5}OHU~e1@B(8jiYk|MxI5-9%,');
-define('SECURE_AUTH_SALT', '||tE5}$:I0RSdNrKNCcy:as>-B}XOp3G7bv/Eh:zSPh`WCU{MT@WjJbPQthT#:}:');
-define('LOGGED_IN_SALT',   'y>YW5uExv0G *~;Hm#Gu:|g*(C9uD+#R%;Pt6N?F~-UfM|LoBNS~.ngH>]ZK{C~q');
-define('NONCE_SALT',       '+H,_EW/@Mt0)>(&3LE>pMxeCM^o#q=..-eU+0x~])]];7}SJ{U2:O9U/^%8GJKjv');
+define('AUTH_KEY',         '');
+define('SECURE_AUTH_KEY',  '');
+define('LOGGED_IN_KEY',    '');
+define('NONCE_KEY',        '');
+define('AUTH_SALT',        '');
+define('SECURE_AUTH_SALT', '');
+define('LOGGED_IN_SALT',   '');
+define('NONCE_SALT',       '');
+
 /**#@-*/
 
 /**
