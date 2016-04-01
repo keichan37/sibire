@@ -9,7 +9,7 @@
             </div>
           </div>
           <div id="registration">
-            <a href="javascript:void(0);">
+            <a href="/registration">
               <img src="<?php echo get_template_directory_uri(); ?>/images/registration.png" alt="登録するにゃ">
             </a>
           </div>
@@ -55,7 +55,7 @@
             </div>
           </div>
           <div class="registration">
-            <a href="javascript:void(0);" class="registration-button">
+            <a href="/registration" class="registration-button">
               <img src="<?php echo get_template_directory_uri(); ?>/images/registration-text-2x.png" alt="登録する" class="registration-button-text">
               <img src="<?php echo get_template_directory_uri(); ?>/images/registration-cat.png" class="registration-button-img">
             </a>
