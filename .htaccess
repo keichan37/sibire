@@ -8,9 +8,9 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 <Files wp-login.php>
-AuthUserFile /wp-login.php
+AuthUserFile /.htpasswd
 AuthGroupFile /dev/null
-AuthName “IDとパスワードを入力してください”
+AuthName “ID & PASS”
 AuthType Basic
 require valid-user
 </Files>
