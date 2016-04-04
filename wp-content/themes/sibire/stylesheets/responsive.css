@@ -74,11 +74,27 @@
     margin-bottom: 30px;
     float: none;
   }
+  
+  #news h2 img,
+  #recruit h2 img,
+  #member h2 img,
+  #service h2 img {
+    height: 35px;
+    width: auto;
+  }
+  #flow h2 img {
+    height: 70px;
+    width: auto;
+  }
+
   #sns {
     width: 121px;
     padding-top: 15px;
   }
   #sns .twitter {
     margin-top: 10px;
+  }
+  .registration-button-img {
+    display: none;
   }
 }
