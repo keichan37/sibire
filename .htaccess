@@ -6,3 +6,11 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
+
+<Files wp-login.php>
+AuthUserFile /wp-login.php
+AuthGroupFile /dev/null
+AuthName “IDとパスワードを入力してください”
+AuthType Basic
+require valid-user
+</Files>
