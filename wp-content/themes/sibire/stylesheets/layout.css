@@ -80,10 +80,17 @@ h1#message img {
 }
 
 .twitter,
-.facebook {
+.facebook,
+.hatena {
   float: left;
   height: 20px;
 }
+
+.hatena {
+  width: 20px;
+  margin-right: 10px;
+}
+
 .twitter {
   width: 75px;
 }
