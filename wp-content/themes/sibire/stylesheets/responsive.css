@@ -89,10 +89,13 @@
 
   #sns {
     width: 121px;
-    padding-top: 15px;
+    padding-top: 5px;
+  }
+  #sns .facebook {
+    margin-top: 3px;
   }
   #sns .twitter {
-    margin-top: 10px;
+    margin-top: 3px;
   }
   .registration-button-img {
     display: none;

@@ -71,6 +71,9 @@
           </div>
 
           <div id="sns">
+            <div class="hatena">
+              <a href="http://b.hatena.ne.jp/entry/http://www.sibire.co.jp" class="hatena-bookmark-button" data-hatena-bookmark-title="シビレ株式会社" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+            </div>
             <div class="facebook">
               <div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
             </div>
