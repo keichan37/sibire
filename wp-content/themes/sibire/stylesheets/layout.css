@@ -301,6 +301,20 @@ h1#message img {
   float: left;
 }
 
+.toyota a img,
+.midori a img {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.toyota a:hover img,
+.midori a:hover img {
+  top: -5px;
+  position: relative;
+}
+
 .toyota { margin-right: 30px; }
 .midori { margin-left: 30px; }
 
