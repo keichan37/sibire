@@ -126,10 +126,14 @@
               <h2><img src="<?php echo get_template_directory_uri(); ?>/images/member-title-2x.png" alt="メンバー"></h2>
               <div class="member-wrap">
                 <div class="toyota">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/toyota.jpg" alt="CEO 豊田昌代">
+                  <a href="/member" class="member-link">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/toyota.jpg" alt="CEO 豊田昌代">
+                  </a>
                 </div>
                 <div class="midori">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/midori.jpg" alt="COO 鈴木翠">
+                  <a href="/member" class="member-link">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/midori.jpg" alt="COO 鈴木翠">
+                  </a>
                 </div>
                 <div class="clear"></div>
               </div>
