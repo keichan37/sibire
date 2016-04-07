@@ -36,7 +36,7 @@
     <meta content="website" property="og:type">
 
     <?php if (has_post_thumbnail()): ?>
-      <meta property="og:image" content="<?php echo home_url().wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
+      <meta property="og:image" content="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
     <?php else: ?>
       <meta content="<?php echo get_template_directory_uri(); ?>/OGP.png" property="og:image">
     <?php endif; ?>

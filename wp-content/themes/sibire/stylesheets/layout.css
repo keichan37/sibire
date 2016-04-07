@@ -175,6 +175,7 @@ h1#message img {
 #flow h2,
 #service h2,
 #recruit h2,
+#column h2,
 #member h2 {
   text-align: center;
   margin: 50px 0 0 0;
@@ -191,6 +192,7 @@ h1#message img {
 #news h2 img,
 #service h2 img,
 #recruit h2 img,
+#column h2 img,
 #member h2 img {
   height: 50px;
 }
@@ -239,13 +241,15 @@ h1#message img {
   margin: 0 0 0 45px;
 }
 
-#recruit .p {
+#recruit .p,
+#column .p {
   font-size: 18px;
   line-height: 26px;
   margin: 0 0 25px 0;
   text-align: center;
 }
 
+#column .column,
 #recruit .recruit {
   box-sizing: border-box;
   width: 20%;
@@ -255,6 +259,7 @@ h1#message img {
   text-decoration: none;
 }
 
+#column .column-img,
 #recruit .recruit-img {
   position: relative;
   display: block;
@@ -266,6 +271,7 @@ h1#message img {
   background-repeat: no-repeat;
 }
 
+#column .column p,
 #recruit .recruit p {
   color: #ffffff;
   text-shadow: 0 0 5px rgba(0,0,0,.9);
@@ -277,6 +283,7 @@ h1#message img {
   z-index: 3;
 }
 
+#column .column .column-overray,
 #recruit .recruit .recruit-overray {
   background-color: rgba(0,0,0,.4);
   width: 100%;
@@ -291,6 +298,7 @@ h1#message img {
   transition: 0.3s;
 }
 
+#column .column:hover .column-overray,
 #recruit .recruit:hover .recruit-overray {
   background-color: rgba(0,0,0,.2);
 }

@@ -20,8 +20,9 @@
               <?php
                 $args = array(
                   'paged' => $paged,
-                  'post_type' => 'recruit',
-                  'posts_per_page' => 3
+                  'post_type' => array('recruit','column'),
+                  'posts_per_page' => 3,
+                  'post_status' => 'publish',
                 ); ?>
               <?php query_posts( $args ); ?>
               <?php if (have_posts()) : ?>
@@ -36,7 +37,7 @@
                         <span class="tag"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>
                       </div>
                       <div class="news-text">
-                        <b><?php echo nl2br(get_post_meta($post->ID, 'recruit', true)); ?></b>
+                        <b><?php echo nl2br(get_post_meta($post->ID, 'recruit', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'column', true)); ?></b>
                         <p><?php the_title(); ?></p>
                         <!--<span class="news-link">詳細はこちら</span>-->
                       </div>
@@ -114,13 +115,49 @@
               <div class="clear"></div>
             </div>
           </div>
-          
+
           <div class="registration">
             <a href="/registration" class="registration-button">
               <img src="<?php echo get_template_directory_uri(); ?>/images/registration-text-2x.png" alt="登録する" class="registration-button-text">
               <img src="<?php echo get_template_directory_uri(); ?>/images/registration-cat.png" class="registration-button-img">
             </a>
           </div>
+
+          <?php /* ?>
+          トヨさん作るまでコメントアウトやで
+          <div id="column">
+            <div class="container">
+              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/column-title-2x.png" alt="コラム"></h2>
+              <p class="p">テキストテキストテキスト</p>
+
+              <?php
+              $args = array(
+               'post_type' => 'column',
+               'numberposts'   => 5,
+              );
+              $postslist = get_posts($args);
+              foreach ($postslist as $post) : setup_postdata($post);
+              ?>
+
+                <?php
+                  $thumbnail_id = get_post_thumbnail_id();
+                  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
+                ?>
+                <a href=<?php echo get_permalink(); ?> class="column">
+                  <div class="column-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
+                    <p><?php the_title(); ?></p>
+                    <div class="column-overray"></div>
+                  </div>
+                </a>
+              <?php 
+              endforeach; 
+              wp_reset_postdata();
+              ?>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <?php */ ?>
+
           <div id="member">
             <div class="container">
               <h2><img src="<?php echo get_template_directory_uri(); ?>/images/member-title-2x.png" alt="メンバー"></h2>
