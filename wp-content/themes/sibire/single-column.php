@@ -1,13 +1,13 @@
   <?php get_header(); ?>
-        <div id="company">
+        <div id="column">
           <div id="contents">
             <div class="container">
 
               <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 
                 <h1><?php the_title(); ?></h1>
-                <div class="company-name">
-                  <? $txt = get_field('recruit'); if($txt){ ?><? echo $txt; ?> <? } ?>
+                <div class="column-name">
+                  <? $txt = get_field('column'); if($txt){ ?><? echo $txt; ?> <? } ?>
                 </div>
 
                 <?php
@@ -17,9 +17,9 @@
 
 
                 <?php if (has_post_thumbnail()): ?>
-                  <div class="company-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);"></div>
+                  <div class="column-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);"></div>
                 <?php else: ?>
-                  <div class="company-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);"></div>
+                  <div class="column-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);"></div>
                 <?php endif; ?>
                 <div class="articleDate"><span><i class="fa fa-calendar"></i>
                 <ul class="tag">
@@ -55,7 +55,7 @@
                         $slug = get_post_type();
                         $args = array(
                          'paged' => $paged,
-                         'post_type' => 'recruit',
+                         'post_type' => 'column',
                          'posts_per_page'   => 10,
                          'post_status' => 'publish',
                         );

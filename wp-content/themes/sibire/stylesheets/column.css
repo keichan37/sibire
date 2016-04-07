@@ -1,0 +1,76 @@
+#column h1 {
+  font-size: 26px;
+  line-height: 45px;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+#column h2 {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+#column p {
+  font-size: 13px;
+  line-height: 28px;
+  margin: 20px 0;
+  padding: 0;
+}
+
+#column .column-name {
+  font-size: 14px;
+  margin: 0 0 0 0;
+  font-weight: 400;
+  display: inline;
+  height: 378px;
+}
+
+#column .sns {
+  float: right;
+  clear: right;
+  height: 20px;
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+#column .fb-like {
+  position: relative;
+  top: -6px;
+  margin-left: 5px;
+}
+
+#column .column-img {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #eeeeee;
+  height: 378px;
+  background-size: cover; 
+  background-position: center center;
+} 
+
+#column ul.tag {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#column time {
+  float: right;
+  clear: right;
+  margin-top: 10px;
+}
+ul.tag {
+  margin: 0;
+  padding: 0;
+}
+
+ul.tag li {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #000000;
+  display: inline;
+  padding: 3px 5px;
+  margin-right: 5px;
+  font-size: 12px;
+}

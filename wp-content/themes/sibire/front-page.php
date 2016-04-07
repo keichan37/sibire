@@ -32,9 +32,14 @@
                       $thumbnail_id = get_post_thumbnail_id();
                       $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
                     ?>
+
                     <a href=<?php echo get_permalink(); ?> class="news">
-                      <div class="news-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
-                        <span class="tag"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>
+                      <?php if (has_post_thumbnail()): ?>
+                        <div class="news-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
+                      <?php else: ?>
+                        <div class="news-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);">
+                      <?php endif; ?>
+                          <span class="tag"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>
                       </div>
                       <div class="news-text">
                         <b><?php echo nl2br(get_post_meta($post->ID, 'recruit', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'column', true)); ?></b>
@@ -103,7 +108,12 @@
                   $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
                 ?>
                 <a href=<?php echo get_permalink(); ?> class="recruit">
-                  <div class="recruit-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
+
+                  <?php if (has_post_thumbnail()): ?>
+                    <div class="recruit-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
+                  <?php else: ?>
+                    <div class="recruit-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);">
+                  <?php endif; ?>
                     <p><?php the_title(); ?></p>
                     <div class="recruit-overray"></div>
                   </div>
@@ -144,7 +154,12 @@
                   $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
                 ?>
                 <a href=<?php echo get_permalink(); ?> class="column">
-                  <div class="column-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
+
+                  <?php if (has_post_thumbnail()): ?>
+                    <div class="column-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
+                  <?php else: ?>
+                    <div class="column-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);">
+                  <?php endif; ?>
                     <p><?php the_title(); ?></p>
                     <div class="column-overray"></div>
                   </div>
