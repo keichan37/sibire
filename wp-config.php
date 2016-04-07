@@ -81,6 +81,7 @@ $table_prefix  = 'wp_';
  *
  * @link http://wpdocs.osdn.jp/WordPress%E3%81%A7%E3%81%AE%E3%83%87%E3%83%90%E3%83%83%E3%82%B0
  */
+define('AUTOMATIC_UPDATER_DISABLED', true);
 define('WP_DEBUG', false);
 
 /* 編集が必要なのはここまでです ! WordPress でブログをお楽しみください。 */
@@ -91,4 +92,3 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-

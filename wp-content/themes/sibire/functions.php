@@ -56,7 +56,7 @@ register_nav_menus(
 /* 通常の「投稿」をメニューから削除（今回は不使用のため） */
 function remove_menus () {
 global $menu;
-$restricted = array(__('Dashboard'), __('Posts'));
+$restricted = array(__('Dashboard'), __('Posts'), __('Comments'), __('Tools'));
 end ($menu);
 while (prev($menu)){
 $value = explode(' ',$menu[key($menu)][0]);

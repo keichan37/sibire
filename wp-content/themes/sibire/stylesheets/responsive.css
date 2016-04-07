@@ -50,12 +50,13 @@
     display: none;
   }
   #flow h2 img {
-    height: auto;
+    height: 100px;
   }
   .news {
     width: 50%;
   }
 
+  #column .column,
   #recruit .recruit {
     width: 33.33333%;
   }
@@ -65,6 +66,7 @@
   .news {
     width: 100%;
   }
+  #column .column,
   #recruit .recruit {
     width: 100%;
   }
@@ -77,16 +79,19 @@
   
   #news h2 img,
   #recruit h2 img,
+  #column h2 img,
   #member h2 img,
   #service h2 img {
-    height: 25px;
+    height: 30px;
     width: auto;
   }
   #flow h2 img {
-    height: 50px;
+    height: 60px;
     width: auto;
   }
-
+  #flow .flow-img {
+    top: 0;
+  }
   #sns {
     width: 121px;
     padding-top: 5px;
@@ -100,4 +105,4 @@
   .registration-button-img {
     display: none;
   }
-}
+} 
