@@ -10,14 +10,14 @@
   line-height: 1.5;
   margin: 0 0 20px 0;
   padding: 0 0 0 10px;
-  border-left: 1px solid #000000;
+  border-left: 1px solid #aaaaaa;
 }
 
 #company h3 {
   font-size: 18px;
   line-height: 1.5;
   margin: 0 0 20px 0;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #aaaaaa;
 }
 
 #company p {
@@ -74,7 +74,7 @@
 #company time {
   float: right;
   clear: right;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 ul.tag {
   margin: 0;
