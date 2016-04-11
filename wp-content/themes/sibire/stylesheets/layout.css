@@ -144,6 +144,17 @@ h1#message img {
   margin: 0 5px 5px 0;
 }
 
+.news .tag.column {
+  background-color: #ffff00;
+  border-color: #ffff00;
+  color: #000000;
+}
+
+.news .tag.recruit {
+  background-color: #245988;
+  border-color: #245988;
+}
+
 .news b {
   display: block;
   font-size: 18px;
