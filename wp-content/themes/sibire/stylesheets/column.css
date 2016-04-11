@@ -43,6 +43,15 @@
   display: inline;
 }
 
+#column .column-img {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #eeeeee;
+  height: 378px;
+  background-size: cover; 
+  background-position: center center;
+}
+
 #column .sns {
   float: right;
   clear: right;
