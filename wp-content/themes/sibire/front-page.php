@@ -16,41 +16,42 @@
           <div id="news">
             <div class="container">
               <h2><img src="<?php echo get_template_directory_uri(); ?>/images/news-title-2x.png" alt="最新情報"></h2>
+              <div class="owl-carousel">
+                <?php
+                  $args = array(
+                    'paged' => $paged,
+                    'post_type' => array('recruit','column'),
+                    'posts_per_page' => 6,
+                    'post_status' => 'publish',
+                  ); ?>
+                <?php query_posts( $args ); ?>
+                <?php if (have_posts()) : ?>
+                    <?php while (have_posts()) : the_post(); 
+                     ?>
+                      <?php
+                        $thumbnail_id = get_post_thumbnail_id();
+                        $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
+                      ?>
 
-              <?php
-                $args = array(
-                  'paged' => $paged,
-                  'post_type' => array('recruit','column'),
-                  'posts_per_page' => 3,
-                  'post_status' => 'publish',
-                ); ?>
-              <?php query_posts( $args ); ?>
-              <?php if (have_posts()) : ?>
-                  <?php while (have_posts()) : the_post(); 
-                   ?>
-                    <?php
-                      $thumbnail_id = get_post_thumbnail_id();
-                      $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
-                    ?>
-
-                    <a href=<?php echo get_permalink(); ?> class="news">
-                      <?php if (has_post_thumbnail()): ?>
-                        <div class="news-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
-                      <?php else: ?>
-                        <div class="news-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);">
-                      <?php endif; ?>
-                          <span class="tag"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>
-                      </div>
-                      <div class="news-text">
-                        <b><?php echo nl2br(get_post_meta($post->ID, 'recruit', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'column', true)); ?></b>
-                        <p><?php the_title(); ?></p>
-                        <!--<span class="news-link">詳細はこちら</span>-->
-                      </div>
-                    </a>
-                  <?php endwhile; ?>     
-              <?php else : ?>
-                <p>投稿がありません</p>
-              <?php endif; ?>
+                      <a href=<?php echo get_permalink(); ?> class="news item">
+                        <?php if (has_post_thumbnail()): ?>
+                          <div class="news-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
+                        <?php else: ?>
+                          <div class="news-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);">
+                        <?php endif; ?>
+                            <span class="tag"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>
+                        </div>
+                        <div class="news-text">
+                          <b><?php echo nl2br(get_post_meta($post->ID, 'recruit', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'column', true)); ?></b>
+                          <p><?php the_title(); ?></p>
+                          <!--<span class="news-link">詳細はこちら</span>-->
+                        </div>
+                      </a>
+                    <?php endwhile; ?>     
+                <?php else : ?>
+                  <p>投稿がありません</p>
+                <?php endif; ?>
+              </div>
               <div class="clear"></div>
             </div>
           </div>
@@ -133,12 +134,9 @@
             </a>
           </div>
 
-          <?php /* ?>
-          トヨさん作るまでコメントアウトやで
-          <div id="column">
+          <div id="columns">
             <div class="container">
-              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/column-title-2x.png" alt="コラム"></h2>
-              <p class="p">テキストテキストテキスト</p>
+              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/columns-title-2x.png" alt="シビレる小ネタ"></h2>
 
               <?php
               $args = array(
@@ -153,15 +151,15 @@
                   $thumbnail_id = get_post_thumbnail_id();
                   $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
                 ?>
-                <a href=<?php echo get_permalink(); ?> class="column">
+                <a href=<?php echo get_permalink(); ?> class="columns">
 
                   <?php if (has_post_thumbnail()): ?>
-                    <div class="column-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
+                    <div class="columns-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
                   <?php else: ?>
-                    <div class="column-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);">
+                    <div class="columns-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);">
                   <?php endif; ?>
                     <p><?php the_title(); ?></p>
-                    <div class="column-overray"></div>
+                    <div class="columns-overray"></div>
                   </div>
                 </a>
               <?php 
@@ -171,7 +169,6 @@
               <div class="clear"></div>
             </div>
           </div>
-          <?php */ ?>
 
           <div id="member">
             <div class="container">
