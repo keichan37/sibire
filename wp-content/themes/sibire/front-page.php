@@ -21,7 +21,7 @@
                   $args = array(
                     'paged' => $paged,
                     'post_type' => array('recruit','column'),
-                    'posts_per_page' => 6,
+                    'posts_per_page' => 10,
                     'post_status' => 'publish',
                   ); ?>
                 <?php query_posts( $args ); ?>
