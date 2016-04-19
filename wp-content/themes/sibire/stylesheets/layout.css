@@ -144,15 +144,16 @@ h1#message img {
   margin: 0 5px 5px 0;
 }
 
-.news .tag.column {
+.tag.column {
   background-color: #ffff00;
   border-color: #ffff00;
   color: #000000;
 }
 
-.news .tag.recruit {
+.tag.recruit {
   background-color: #245988;
   border-color: #245988;
+  color: #ffffff;
 }
 
 .news b {
@@ -410,20 +411,67 @@ h1#message img {
   box-sizing: border-box;
 }
 
-.right-side h4 {
+h4.relation-title {
   font-size: 15px;
-  font-weight: 400;
-  margin: 10px 0 10px 0;
+  margin: 0px auto;
+  margin-top: 10px;
+  color: #000000;
+  text-align: center;
+  width: 100px;
+  border-bottom: 1px solid #000000;
 }
 
 ul.relation {
   margin: 0;
-  padding: 0 0 0 20px;
+  padding: 0 10px;
 }
 
 ul.relation li {
-  margin-bottom: 10px;
-  
+  list-style: none;
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid #dddddd;
+  min-height: 50px;
+}
+
+ul.relation li:last-child {
+  border-bottom: none;
+}
+
+ul.relation li a {
+  display: block;
+  color: #000000;
+}
+
+ul.relation li a:hover {
+  color: #333333;
+}
+
+ul.relation li a:hover img {
+  opacity: .9;
+}
+
+ul.relation li img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: -25px 0 0 0;
+}
+
+ul.relation li p,
+ul.relation li .p {
+  padding: 3px 0 0 60px;
+  margin: 0;
+  line-height: 22px;
+}
+
+ul.relation li .tag {
+  font-size: 10px;
+  line-height: 13px;
+  height: 13px;
+  padding: 2px;
+  margin-right: 5px;
+  text-decoration: none;
 }
 
 .page-cover {
