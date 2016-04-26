@@ -145,14 +145,20 @@ h1#message img {
 }
 
 .tag.column {
-  background-color: #ffff00;
-  border-color: #ffff00;
-  color: #000000;
+  background-color: #b99c3d;
+  border-color: #b99c3d;
+  color: #ffffff;
 }
 
 .tag.recruit {
-  background-color: #245988;
-  border-color: #245988;
+  background-color: #007ca0;
+  border-color: #007ca0;
+  color: #ffffff;
+}
+
+.tag.interview {
+  background-color: #ee8d7b;
+  border-color: #ee8d7b;
   color: #ffffff;
 }
 
@@ -196,6 +202,7 @@ h1#message img {
 #service h2,
 #recruit h2,
 #columns h2,
+#interviews h2,
 #member h2 {
   text-align: center;
   margin: 50px 0 0 0;
@@ -213,6 +220,7 @@ h1#message img {
 #service h2 img,
 #recruit h2 img,
 #columns h2 img,
+#interviews h2 img,
 #member h2 img {
   height: 50px;
 }
@@ -270,6 +278,7 @@ h1#message img {
 }
 
 #columns .columns,
+#interviews .interviews,
 #recruit .recruit {
   box-sizing: border-box;
   width: 20%;
@@ -280,6 +289,7 @@ h1#message img {
 }
 
 #columns .columns-img,
+#interviews .interviews-img,
 #recruit .recruit-img {
   position: relative;
   display: block;
@@ -292,6 +302,7 @@ h1#message img {
 }
 
 #columns .columns p,
+#interviews .interviews p,
 #recruit .recruit p {
   color: #ffffff;
   text-shadow: 0 0 5px rgba(0,0,0,.9);
@@ -304,6 +315,7 @@ h1#message img {
 }
 
 #columns .columns .columns-overray,
+#interviews .interviews .interviews-overray,
 #recruit .recruit .recruit-overray {
   background-color: rgba(0,0,0,.4);
   width: 100%;
@@ -319,6 +331,7 @@ h1#message img {
 }
 
 #columns .columns:hover .columns-overray,
+#interviews .interviews:hover .interviews-overray,
 #recruit .recruit:hover .recruit-overray {
   background-color: rgba(0,0,0,.2);
 }
@@ -359,10 +372,12 @@ h1#message img {
   width: 700px;
 }
 
+.business,
 .registration {
   padding: 20px 0 40px 0;
 }
 
+.business-button,
 .registration-button {
   position: relative;
   display: block;
@@ -373,6 +388,16 @@ h1#message img {
   margin: 0px auto;
   text-align: center;
 }
+
+.business-button {
+  background-color: #245988;
+  width: 240px;
+}
+.business-button .business-button-text {
+  width: 200px;
+  height: 30px;
+}
+
 .registration-button .registration-button-text {
   width: 98px;
   height: 30px;
@@ -389,13 +414,36 @@ h1#message img {
   -ms-transition: 0.3s;
   transition: 0.3s;
 }
+.business-button .business-button-img {
+  width: 140px;
+  width: 140px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -30px -80px 0 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .registration-button:hover {
   background-color: #aa162e;
+}
+.business-button:hover {
+  background-color: #1c476c;
 }
 .registration-button:hover .registration-button-img{
   margin: -33px -83px 0 0;
 }
 .registration-button:active .registration-button-img{
+  margin: -36px -86px 0 0;
+}
+
+.business-button:hover .business-button-img{
+  margin: -33px -83px 0 0;
+}
+.business-button:active .business-button-img{
   margin: -36px -86px 0 0;
 }
 
@@ -409,6 +457,10 @@ h1#message img {
   float: right;
   padding: 10px 0 0 30px;
   box-sizing: border-box;
+}
+
+.left-side ul {
+ padding-left: 30px;
 }
 
 h4.relation-title {

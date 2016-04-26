@@ -20,7 +20,7 @@
                 <?php
                   $args = array(
                     'paged' => $paged,
-                    'post_type' => array('recruit','column'),
+                    'post_type' => array('recruit','interview','column'),
                     'posts_per_page' => 10,
                     'post_status' => 'publish',
                   ); ?>
@@ -42,7 +42,7 @@
                             <span class="tag <?php echo esc_html(get_post_type_object($post->post_type)->name); ?>"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>
                         </div>
                         <div class="news-text">
-                          <b><?php echo nl2br(get_post_meta($post->ID, 'recruit', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'column', true)); ?></b>
+                          <b><?php echo nl2br(get_post_meta($post->ID, 'recruit', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'column', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'interview', true)); ?></b>
                           <p><?php the_title(); ?></p>
                           <!--<span class="news-link">詳細はこちら</span>-->
                         </div>
@@ -134,6 +134,44 @@
             </a>
           </div>
 
+          <?php /* ?>          
+          <div id="interviews">
+            <div class="container">
+              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/interview-title-2x.png" alt="インタビュー"></h2>
+
+              <?php
+              $args = array(
+               'post_type' => 'interview',
+               'numberposts'   => 5,
+              );
+              $postslist = get_posts($args);
+              foreach ($postslist as $post) : setup_postdata($post);
+              ?>
+
+                <?php
+                  $thumbnail_id = get_post_thumbnail_id();
+                  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
+                ?>
+                <a href=<?php echo get_permalink(); ?> class="interviews">
+
+                  <?php if (has_post_thumbnail()): ?>
+                    <div class="interviews-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
+                  <?php else: ?>
+                    <div class="interviews-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);">
+                  <?php endif; ?>
+                    <p><?php the_title(); ?></p>
+                    <div class="interviews-overray"></div>
+                  </div>
+                </a>
+              <?php 
+              endforeach; 
+              wp_reset_postdata();
+              ?>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <?php */ ?>
+
           <div id="columns">
             <div class="container">
               <h2><img src="<?php echo get_template_directory_uri(); ?>/images/columns-title-2x.png" alt="シビレる小ネタ"></h2>
@@ -168,6 +206,13 @@
               ?>
               <div class="clear"></div>
             </div>
+          </div>
+
+          <div class="business">
+            <a href="/business" class="business-button">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/business-text-2x.png" alt="法人の方はこちら" class="business-button-text">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/business-person.png" class="business-button-img">
+            </a>
           </div>
 
           <div id="member">
