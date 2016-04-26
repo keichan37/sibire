@@ -39,6 +39,7 @@ $ sudo vim /etc/apache2/httpd.conf
 $ sudo apachectl restart  
 $ mysql.server start  
 $ mysql -uroot -p  
-$ mysql -uroot
+$ mysql -uroot  
+
     mysql> CREATE DATABASE sibire;  
 $ open http://localhost  
