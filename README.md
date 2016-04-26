@@ -4,6 +4,7 @@ $ xcode-select --install
 $ brew install git  
 $ brew install mysql  
 $ sudo vim /etc/apache2/httpd.conf  
+
     DocumentRoot "/Users/Kei/Sites/sibire"
     <Directory "/Users/Kei/Sites/sibire">
         #
@@ -34,6 +35,7 @@ $ sudo vim /etc/apache2/httpd.conf
         #
         Require all granted
     </Directory>
+
 $ sudo apachectl restart  
 $ mysql.server start  
 $ mysql -uroot -p  
