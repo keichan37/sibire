@@ -57,6 +57,7 @@
   }
 
   #columns .columns,
+  #interviews .interviews,
   #recruit .recruit {
     width: 33.33333%;
   }
@@ -67,6 +68,7 @@
     width: 100%;
   }
   #columns .columns,
+  #interviews .interviews,
   #recruit .recruit {
     width: 100%;
   }
@@ -79,6 +81,7 @@
   
   #news h2 img,
   #recruit h2 img,
+  #interviews h2 img,
   #columns h2 img,
   #member h2 img,
   #service h2 img {
@@ -102,6 +105,7 @@
   #sns .twitter {
     margin-top: 3px;
   }
+  .business-button-img,
   .registration-button-img {
     display: none;
   }
