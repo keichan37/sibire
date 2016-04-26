@@ -3,7 +3,7 @@
 $ xcode-select --install  
 $ brew install git  
 $ brew install mysql  
-$ sudo vim /etc/apache2/httpd.conf
+$ sudo vim /etc/apache2/httpd.conf  
     DocumentRoot "/Users/Kei/Sites/sibire"
     <Directory "/Users/Kei/Sites/sibire">
         #
