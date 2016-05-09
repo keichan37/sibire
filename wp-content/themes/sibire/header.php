@@ -10,13 +10,19 @@
     <meta content="index, follow" name="robots">
     <meta content="width=device-width, initial-scale=1" id="viewport" name="viewport">
 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@sibire_inc">
+    <meta name="twitter:creator" content="@sibire_inc">
+    <meta name="twitter:description" content="シビレは、地方に移住したいエンジニアに、地方のユニークな企業を紹介する移住支援サービスです。">
     <!-- タイトル -->
 
     <?php if ( is_home() || is_front_page() ) : ?>
       <title><?php bloginfo('name'); ?></title>
+      <meta name="twitter:title" content="<?php bloginfo('name'); ?>">
       <meta content="<?php bloginfo('name'); ?>" property="og:title">
     <?php else: ?>
       <title><?php wp_title( '', true, '' ); ?></title>
+      <meta name="twitter:title" content="<?php wp_title( '', true, '' ); ?>">
       <meta content="<?php wp_title( '', true, '' ); ?>" property="og:title">
     <?php endif; ?>
     
@@ -37,8 +43,10 @@
 
     <?php if (has_post_thumbnail()): ?>
       <meta property="og:image" content="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
+      <meta name="twitter:image:src" content="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
     <?php else: ?>
       <meta content="<?php echo get_template_directory_uri(); ?>/OGP.png" property="og:image">
+      <meta name="twitter:image:src" content="<?php echo get_template_directory_uri(); ?>/OGP.png">
     <?php endif; ?>
     <meta content="ja_JP" property="og:locale">
 
