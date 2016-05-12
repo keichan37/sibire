@@ -5,10 +5,6 @@
 
               <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 
-                <h1><?php the_title(); ?></h1>
-                <div class="interview-name">
-                  <? $txt = get_field('interview'); if($txt){ ?><? echo $txt; ?> <? } ?>
-                </div>
 
                 <?php
                   $thumbnail_id = get_post_thumbnail_id();
@@ -17,24 +13,22 @@
 
 
                 <?php if (has_post_thumbnail()): ?>
-                  <div class="interview-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);"></div>
+                  <div class="interview-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
                 <?php else: ?>
-                  <div class="interview-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);"></div>
+                  <div class="interview-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);">
                 <?php endif; ?>
-                <div class="articleDate"><span><i class="fa fa-calendar"></i>
-                <ul class="tag">
-                  <?php
-                    $posttags = get_the_tags();
-                    if ($posttags) {
-                      foreach($posttags as $tag) {
-                        echo '<li>' . $tag->name . '</li>';
-                      }
-                    }
-                  ?>
-                </ul>
-                <time class="entry-date" datetime="<?php the_time('c') ;?>">
-                  <?php the_time('Y年m月d日') ;?>
-                </time>
+                <div class="title-box">
+                  <h1><?php the_title(); ?></h1>
+                  <div class="interview-name">
+                    <? $txt = get_field('subtitle'); if($txt){ ?><? echo $txt; ?> <? } ?>
+                  </div>
+                </div>
+                </div>
+                <div class="interview-profile">
+                  <img src="<?php the_field('avatar'); ?>" alt="">
+                  <div class="profile-text"><? $txt = get_field('profile'); if($txt){ ?><? echo $txt; ?> <? } ?></div>
+                  <div class="clear"></div>
+                </div>
                 <?php the_content(); //本文 ?>
                 <?php wp_link_pages('before=<div class="page-numbers">&after=</div>&next_or_number=number&pagelink=<span class="numbers">%</span>'); ?>
                 <?php endwhile; else: ?>
@@ -49,13 +43,13 @@
                 </div>
 
 
-                  <h4 class="relation-title">関連記事</h4>
+                  <h4 class="relation-title">新着情報</h4>
                     <ul class="relation">
                       <?php
                         $slug = get_post_type();
                         $args = array(
                          'paged' => $paged,
-                         'post_type' => 'interview',
+                         'post_type' => array('recruit','interview','column'),
                          'posts_per_page'   => 10,
                          'post_status' => 'publish',
                          'post__not_in'=> array(get_the_ID())
