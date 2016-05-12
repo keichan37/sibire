@@ -42,7 +42,7 @@
                             <span class="tag <?php echo esc_html(get_post_type_object($post->post_type)->name); ?>"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>
                         </div>
                         <div class="news-text">
-                          <b><?php echo nl2br(get_post_meta($post->ID, 'recruit', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'column', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'interview', true)); ?></b>
+                          <b><?php echo nl2br(get_post_meta($post->ID, 'recruit', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'column', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></b>
                           <p><?php the_title(); ?></p>
                           <!--<span class="news-link">詳細はこちら</span>-->
                         </div>
@@ -134,7 +134,6 @@
             </a>
           </div>
 
-          <?php /* ?>          
           <div id="interviews">
             <div class="container">
               <h2><img src="<?php echo get_template_directory_uri(); ?>/images/interview-title-2x.png" alt="インタビュー"></h2>
@@ -170,7 +169,6 @@
               <div class="clear"></div>
             </div>
           </div>
-          <?php */ ?>
 
           <div id="columns">
             <div class="container">

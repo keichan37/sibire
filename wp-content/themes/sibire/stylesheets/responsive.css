@@ -61,6 +61,26 @@
   #recruit .recruit {
     width: 33.33333%;
   }
+  
+  #interview .title-box h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #interview .title-box .interview-name {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  #interview .interview-profile {
+    width: auto;
+    padding: 20px;
+    margin: 0 40px;
+  }
+  #interview .interview-profile img {
+    display: block;
+    margin: 0px auto;
+    float: none;
+  }
 }
 
 @media(max-width: 550px) {
