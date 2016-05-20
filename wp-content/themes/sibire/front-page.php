@@ -20,7 +20,7 @@
                 <?php
                   $args = array(
                     'paged' => $paged,
-                    'post_type' => array('recruit','interview','column'),
+                    'post_type' => array('recruit','interview','offer','column'),
                     'posts_per_page' => 10,
                     'post_status' => 'publish',
                   ); ?>
@@ -42,7 +42,7 @@
                             <span class="tag <?php echo esc_html(get_post_type_object($post->post_type)->name); ?>"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>
                         </div>
                         <div class="news-text">
-                          <b><?php echo nl2br(get_post_meta($post->ID, 'recruit', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'column', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></b>
+                          <b><?php echo nl2br(get_post_meta($post->ID, 'recruit', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'column', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'offer', true)); ?></b>
                           <p><?php the_title(); ?></p>
                           <!--<span class="news-link">詳細はこちら</span>-->
                         </div>
@@ -92,8 +92,8 @@
           </div>
           <div id="recruit">
             <div class="container">
-              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/recruit-title-2x.png" alt="求人紹介"></h2>
-              <p class="p">地方のユニークなIT企業を、ピックアップしてご紹介</p>
+              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/recruit2-title-2x.png" alt="“江戸川タマが行く！”シビレる企業訪問"></h2>
+              <!--<p class="p">地方のユニークなIT企業を、ピックアップしてご紹介</p>-->
 
               <?php
               $args = array(
@@ -136,7 +136,7 @@
 
           <div id="interviews">
             <div class="container">
-              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/interview-title-2x.png" alt="インタビュー"></h2>
+              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/interview2-title-2x.png" alt="シビレビト発見伝"></h2>
 
               <?php
               $args = array(
@@ -160,6 +160,42 @@
                   <?php endif; ?>
                     <p><?php the_title(); ?></p>
                     <div class="interviews-overray"></div>
+                  </div>
+                </a>
+              <?php 
+              endforeach; 
+              wp_reset_postdata();
+              ?>
+              <div class="clear"></div>
+            </div>
+          </div>
+
+          <div id="offers">
+            <div class="container">
+              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/offers-title-2x.png" alt="シビレる求人"></h2>
+
+              <?php
+              $args = array(
+               'post_type' => 'offer',
+               'numberposts'   => 10,
+              );
+              $postslist = get_posts($args);
+              foreach ($postslist as $post) : setup_postdata($post);
+              ?>
+
+                <?php
+                  $thumbnail_id = get_post_thumbnail_id();
+                  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
+                ?>
+                <a href=<?php echo get_permalink(); ?> class="offers">
+
+                  <?php if (has_post_thumbnail()): ?>
+                    <div class="offers-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
+                  <?php else: ?>
+                    <div class="offers-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);">
+                  <?php endif; ?>
+                    <p><?php the_title(); ?></p>
+                    <div class="offers-overray"></div>
                   </div>
                 </a>
               <?php 

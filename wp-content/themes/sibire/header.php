@@ -56,6 +56,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/company.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/column.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/interview.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/offer.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/owl.carousel.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/responsive.css" type="text/css" media="all" />
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />

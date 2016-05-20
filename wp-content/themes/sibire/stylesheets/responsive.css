@@ -58,6 +58,7 @@
 
   #columns .columns,
   #interviews .interviews,
+  #offers .offers,
   #recruit .recruit {
     width: 33.33333%;
   }
@@ -89,6 +90,7 @@
   }
   #columns .columns,
   #interviews .interviews,
+  #offers .offers,
   #recruit .recruit {
     width: 100%;
   }
@@ -99,9 +101,19 @@
     float: none;
   }
   
+  #recruit h2 img {
+    height: 150px;
+    width: auto;
+  }
+  #interviews h2 img {
+    height: 100px;
+    width: auto;
+  }
+  #offers h2 img {
+    height: 60px;
+    width: auto;
+  }
   #news h2 img,
-  #recruit h2 img,
-  #interviews h2 img,
   #columns h2 img,
   #member h2 img,
   #service h2 img {
