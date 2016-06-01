@@ -20,7 +20,7 @@
                 <?php
                   $args = array(
                     'paged' => $paged,
-                    'post_type' => array('recruit','interview','offer','column'),
+                    'post_type' => array('recruit','interview','offer','column','event'),
                     'posts_per_page' => 10,
                     'post_status' => 'publish',
                   ); ?>
@@ -42,7 +42,7 @@
                             <span class="tag <?php echo esc_html(get_post_type_object($post->post_type)->name); ?>"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>
                         </div>
                         <div class="news-text">
-                          <b><?php echo nl2br(get_post_meta($post->ID, 'recruit', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'column', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'offer', true)); ?></b>
+                          <b><?php echo nl2br(get_post_meta($post->ID, 'recruit', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'column', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'offer', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'event_subtitle', true)); ?></b>
                           <p><?php the_title(); ?></p>
                           <!--<span class="news-link">詳細はこちら</span>-->
                         </div>
@@ -271,7 +271,8 @@
 
             </div>
           </div>
-
+          <div class="clear"></div>
+          
         </div>
         <?php get_footer(); ?>
     </div>
