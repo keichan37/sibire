@@ -1,0 +1,259 @@
+.event-footer #footer {
+  margin-top: 0;
+}
+
+#event .title-head {
+  height: 84px;
+  border-bottom: 4px solid #000000;
+  text-align: center;
+}
+
+#event .title-head h2 {
+  margin: 0;
+}
+
+#event .title-head h2 img {
+  width: 300px;
+  margin-top: 7px;
+}
+
+#event .cover {
+  padding-top: 100px;
+  text-align: center;
+  background-image: url("../images/21cafe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#event .cover-head .badge {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: block;
+  top: 0;
+  right: 50%;
+  margin: 80px -400px 0 0;
+}
+
+#event .cover-head b img {
+  width: 419px;
+}
+
+#event .cover-head h1 {
+  margin: 0;
+}
+
+#event .cover-head h1 img {
+  width: 709px;
+}
+
+#event .cover .cover-head p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 25px 0 0 0;
+}
+
+#event .description {
+  width: 750px;
+  padding: 0 25px;
+  margin: 0px auto;
+  margin-top: 55px;
+  border: 5px solid #000000;
+  background-color: #ffffff;
+}
+
+#event .table-description {
+  border-collapse: collapse;
+}
+
+#event .table-description tr th,
+#event .table-description tr td {
+  border-bottom: 5px solid #000000;
+  padding: 25px 0;
+}
+
+#event .table-description tr.ability th,
+#event .table-description tr.ability td {
+  border-bottom-width: 0px;
+}
+
+#event .table-description th {
+  width: 180px;
+  text-align: right;
+  font-size: 18px;
+  vertical-align: top;
+}
+
+#event .table-description th span {
+  background-color: #ffff00;
+}
+
+#event .table-description tr td {
+  text-align: left;
+  font-size: 16px;
+  padding-left: 25px;
+}
+
+#event .table-description tr td.event-checkbox {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+#event .table-description tr td.event-checkbox b {
+  color: #ff0000;
+}
+
+#event .table-description tr td b {
+  font-size: 20px;
+}
+
+#event h2.h2-merit {
+  margin: 50px 0 15px 0;
+  font-size: 28px;
+}
+
+#event .merit {
+  width: 750px;
+  padding: 15px 25px;
+  margin: 0px auto;
+  border: 5px solid #000000;
+  background-color: #ffffff;
+}
+
+#event .table-merit {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#event .table-merit thead tr th {
+  border-bottom: 5px solid #000000;
+  padding: 10px 0;
+}
+
+#event .table-merit thead tr th.th-left {
+  width: 180px;
+}
+
+#event .table-merit tbody th {
+  font-size: 18px;
+  padding: 15px 0;
+}
+
+#event .table-merit tbody td {
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+#event .table-merit thead .yellow-cell {
+  font-size: 24px;
+  text-align: left;
+  line-height: 28px;
+}
+
+#event .table-merit .yellow-cell {
+  background-color: #fff000;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#event .table-merit .yellow-cell b {
+  font-size: 34px;
+}
+
+#event h2.h2-form {
+  margin: 50px 0 15px 0;
+  font-size: 28px;
+}
+
+#event .event-form {
+  width: 800px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
+
+#event .event-form b {
+  color: #ff0000;
+  font-size: 20px;
+}
+
+#event .event-form p {
+  font-size: 16px;
+  line-height: 32px;
+  text-align: left;
+}
+
+@media(max-width: 830px) {
+  #event .title-head {
+    height: 65px;
+  }
+  #event .title-head h2 img {
+    width: 200px;
+  }
+  #event .cover {
+    background-size: 800px auto;
+    background-position: top center;
+    padding-top: 30px;
+  }
+  #event .cover .cover-head {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #event .cover .cover-head .badge {
+    width: 70px;
+    height: 70px;
+    right: 0;
+    margin-top: -50px;
+    margin-right: 20px;
+  }
+  #event .cover .cover-head p {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 10px;
+  }
+  #event .description {
+    margin-top: 30px;
+  }
+  #event .description,
+  #event .merit,
+  #event .event-form {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #event .table-description tr th,
+  #event .table-description tr td {
+    display: block;
+    width: 100%;
+  }
+  #event .table-description tr th {
+    text-align: left;
+    border: none;
+    padding-bottom: 0;
+  } 
+  #event .table-description tr td {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  #event .merit {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #event .table-merit thead tr th.th-left {
+    width: 90px;
+    text-align: left;
+  }
+  #event .table-merit thead tr th.yellow-cell {
+    font-size: 18px;
+  }
+  #event .table-merit tr .yellow-cell b {
+    font-size: 25px;
+  }
+  #event .table-merit tbody tr th {
+    font-size: 16px;
+  }
+  #event .table-merit tbody tr td {
+    font-size: 13px;
+  }
+}
