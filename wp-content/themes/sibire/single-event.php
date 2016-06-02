@@ -1,7 +1,7 @@
   <?php get_header(); ?>
         <div id="event">
           <div id="contents">
-            <div class="title-head">
+            <div class="title-head" style="display: none;">
               <h2><img src="<?php echo get_template_directory_uri(); ?>/images/event-collaboration-2x.png" alt="@IT &times; sibire"></h2>
             </div>
             <div class="cover">
@@ -9,7 +9,8 @@
                 <img class="badge" src="<?php echo get_template_directory_uri(); ?>/images/event-entry-2x.png" alt="出展企業申込み">
                 <b><img src="<?php echo get_template_directory_uri(); ?>/images/event-head-2x.png" alt="地方に移住したいエンジニアに出会える！"></b>
                 <h1><img src="<?php echo get_template_directory_uri(); ?>/images/event-title-2x.png" alt="Engineer移住Night"></h1>
-                <p>ITmedia「@IT」と、地方移住したいエンジニアの転職支援を行うsibireのタイアップイベントが実現！<br />地方のシビレるIT企業の出展を、限定8社、募集します！</p>
+                <p style="display: none;">ITmedia「@IT」と、地方移住したいエンジニアの転職支援を行うsibireのタイアップイベントが実現！<br />地方のシビレるIT企業の出展を、限定8社、募集します！</p>
+                <p>エンジニアの地方移住をともなう転職支援を行うsibireが、リアルイベントを開催。<br />首都圏で働きながら「地方で働きたい」優秀なエンジニアに都内で会えます！<br />そこで、地方のシビレるIT企業の出展を限定8社、募集します！</p>
               </div>
               <div class="container">
                 <div class="description">
