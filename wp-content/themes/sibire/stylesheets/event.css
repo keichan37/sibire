@@ -20,7 +20,7 @@
 #event .cover {
   padding-top: 100px;
   text-align: center;
-  background-image: url("../images/21cafe.jpg");
+  background-image: url("../images/21cafe-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   position: relative;
@@ -53,6 +53,8 @@
   line-height: 28px;
   font-weight: 700;
   margin: 25px 0 0 0;
+  color: #ffffff;
+  text-shadow: 0 0 3px rgba(0, 0, 0, .95);
 }
 
 #event .description {
@@ -185,6 +187,64 @@
   text-align: left;
 }
 
+#event .event-form p.message {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 700;
+  text-align: left;
+}
+
+#event .event-form p label {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#event .event-form p label .wpcf7-not-valid-tip {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#event .event-form p label input {
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 44px;
+  line-height: 23px;
+  padding: 7px;
+  border: 5px solid #000000;
+  outline: 0;
+  width: 100%;
+  -webkit-appearance: none;
+  display: inline-block;
+}
+
+#event .event-form p label input.wpcf7-not-valid {
+  border-color: #ff0000;
+}
+
+#event .event-form p label input:hover {
+  background-color: #fafafa;
+}
+
+#event .event-form p label input:focus {
+  border-color: #3fa9f5;
+}
+
+#event .event-form p input[type="submit"] {
+  border: 5px solid #3fa9f5;
+  border-radius: 0px;
+  color: #3fa9f5;
+  font-size: 18px;
+  font-weight: 700;
+  box-sizing: border-box;
+  height: 44px;
+  width: 100%;
+}
+
+#event .event-form p input[type="submit"]:hover {
+  background-color: #3fa9f5;
+  color: #ffffff;
+}
+
 @media(max-width: 830px) {
   #event .title-head {
     height: 65px;
@@ -205,8 +265,8 @@
     width: 70px;
     height: 70px;
     right: 0;
-    margin-top: -50px;
-    margin-right: 20px;
+    margin-top: -45px;
+    margin-right: 5px;
   }
   #event .cover .cover-head p {
     font-size: 16px;
