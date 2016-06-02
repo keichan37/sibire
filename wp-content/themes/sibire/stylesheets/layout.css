@@ -688,3 +688,17 @@ ul.relation li .tag {
   background-position: center left;
   padding-left: 180px;
 }
+
+.alignright {
+  float: right;
+  clear: right;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.alignleft {
+  float: left;
+  clear: left;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}

@@ -141,4 +141,11 @@
   .registration-button-img {
     display: none;
   }
+
+  .alignleft,
+  .alignright {
+    float: none;
+    clear: none;
+    margin: 0;
+  }
 } 
