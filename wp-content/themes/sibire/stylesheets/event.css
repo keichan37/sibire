@@ -57,13 +57,21 @@
   text-shadow: 0 0 3px rgba(0, 0, 0, .95);
 }
 
+#event .atit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: -70px -5px 0 0;
+}
+
 #event .description {
   width: 750px;
   padding: 0 25px;
   margin: 0px auto;
-  margin-top: 55px;
+  margin-top: 85px;
   border: 5px solid #000000;
   background-color: #ffffff;
+  position: relative;
 }
 
 #event .table-description {
@@ -262,6 +270,7 @@
     padding-right: 10px;
   }
   #event .cover .cover-head .badge {
+    display: none;
     width: 70px;
     height: 70px;
     right: 0;
@@ -274,7 +283,7 @@
     margin-top: 10px;
   }
   #event .description {
-    margin-top: 30px;
+    margin-top: 70px;
   }
   #event .description,
   #event .merit,
