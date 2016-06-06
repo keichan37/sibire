@@ -187,6 +187,11 @@ h1#message img {
   color: #ffffff;
 }
 
+.tag.offer {
+  background-color: #fff000;
+  border-color: #fff000;
+  color: #000000;
+}
 
 .news b {
   display: block;

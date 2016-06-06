@@ -9,12 +9,11 @@
                 <img class="badge" src="<?php echo get_template_directory_uri(); ?>/images/event-entry-2x.png" alt="出展企業申込み">
                 <b><img src="<?php echo get_template_directory_uri(); ?>/images/event-head-2x.png" alt="地方に移住したいエンジニアに出会える！"></b>
                 <h1><img src="<?php echo get_template_directory_uri(); ?>/images/event-title-2x.png" alt="Engineer移住Night"></h1>
-                <p style="display: none;">ITmedia「@IT」と、地方移住したいエンジニアの転職支援を行うsibireのタイアップイベントが実現！<br />地方のシビレるIT企業の出展を、限定8社、募集します！</p>
                 <p>エンジニアの地方移住をともなう転職支援を行うsibireが、リアルイベントを開催。<br />首都圏で働きながら「地方で働きたい」優秀なエンジニアに都内で会えます！<br />そこで、地方のシビレるIT企業の出展を限定8社、募集します！</p>
               </div>
               <div class="container">
                 <div class="description">
-                <?php /* ?><img class="atit" src="<?php echo get_template_directory_uri(); ?>/images/atit.png" alt="@it"><?php */ ?>
+                <img class="atit" src="<?php echo get_template_directory_uri(); ?>/images/atit.png" alt="@it">
                   <table class="table-description">
                     <tbody>
                       <tr class="date">
@@ -51,7 +50,7 @@
                           15分間、自社のプレゼンテーションを行っていただけます。<br /><br />
 
                           PRバナー露出&nbsp;&nbsp;<b>+10万円</b><br />
-                          ITmedia「＠IT」で自社のロゴや求人情報などを記載したバナーを露出します
+                          ＠ITで自社のロゴや求人情報などを記載したバナーを露出します
                         </td>
                       </tr>
                       <tr class="ability">
