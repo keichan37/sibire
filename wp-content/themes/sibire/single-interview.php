@@ -49,7 +49,7 @@
                         $slug = get_post_type();
                         $args = array(
                          'paged' => $paged,
-                         'post_type' => array('recruit','interview','column'),
+                         'post_type' => array('recruit','interview','column','offer','event'),
                          'posts_per_page'   => 10,
                          'post_status' => 'publish',
                          'post__not_in'=> array(get_the_ID())

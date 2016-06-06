@@ -49,13 +49,13 @@
                 </div>
 
 
-                  <h4 class="relation-title">関連記事</h4>
+                  <h4 class="relation-title">新着情報</h4>
                     <ul class="relation">
                       <?php
                         $slug = get_post_type();
                         $args = array(
                          'paged' => $paged,
-                         'post_type' => 'column',
+                         'post_type' => array('recruit','interview','column','offer','event'),
                          'posts_per_page'   => 10,
                          'post_status' => 'publish',
                          'post__not_in'=> array(get_the_ID())
