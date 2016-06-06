@@ -14,7 +14,7 @@
               </div>
               <div class="container">
                 <div class="description">
-                  <img class="atit" src="<?php echo get_template_directory_uri(); ?>/images/atit.png" alt="@it">
+                <?php /* ?><img class="atit" src="<?php echo get_template_directory_uri(); ?>/images/atit.png" alt="@it"><?php */ ?>
                   <table class="table-description">
                     <tbody>
                       <tr class="date">
