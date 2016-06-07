@@ -250,8 +250,24 @@ h1#message img {
   z-index: 3;
 }
 
+#recruit .edogawatama {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#recruit .edogawatama img {
+  height: 120px;
+}
+
+#recruit .edogawatama a:hover img {
+  opacity: .8;
+}
+
+#recruit h2 {
+  margin-top: 0;
+}
 #recruit h2 img {
-  height: 200px;
+  height: 69px;
 }
 
 #interviews h2 img {
@@ -495,6 +511,8 @@ h1#message img {
 .business-button:active .business-button-img{
   margin: -36px -86px 0 0;
 }
+
+.ce { text-align: center; }
 
 .left-side {
   float: left;

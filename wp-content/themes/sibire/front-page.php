@@ -95,8 +95,8 @@
           </div>
           <div id="recruit">
             <div class="container">
-              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/recruit2-title-2x.png" alt="“江戸川タマが行く！”シビレる企業訪問"></h2>
-              <!--<p class="p">地方のユニークなIT企業を、ピックアップしてご紹介</p>-->
+              <div class="edogawatama"><a href="/edogawatama"><img src="<?php echo get_template_directory_uri(); ?>/images/recruit2-edogawatama-2x.png" alt="“江戸川タマが行く！”"></a></div>
+              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/recruit2-title-2x.png" alt="シビレる企業訪問"></h2>
 
               <?php
               $args = array(
