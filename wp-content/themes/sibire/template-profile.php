@@ -10,7 +10,7 @@
         <div class="container">
           <div class="profile-wrap">
             <div class="profile-box profile-table">
-              <h3>江戸の時代に生まれ、200年以上生きる化け猫。 <br />日本各地を放浪しながら、自分にいちばんピッタリな、シビレる住みかを探している。</h3>
+              <h3>江戸の時代に生まれ、200年以上生きる化け猫。 <br />日本各地を放浪しながら、自分にいちばんピッタリな、<br />シビレる住みかを探している。</h3>
               <table>
                 <tbody>
                   <tr>
