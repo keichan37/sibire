@@ -55,20 +55,22 @@
   line-height: 1.5;
   margin: 0 0 20px 0;
   padding: 0 0 0 10px;
-  border-left: 1px solid #aaaaaa;
+  border-left: 5px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 
 #interview h3 {
   font-size: 18px;
   line-height: 1.5;
   margin: 0 0 20px 0;
-  border-bottom: 1px solid #aaaaaa;
+  border-bottom: 1px solid #000000;
+  margin-left: 20px;
 }
 
 #interview p {
   font-size: 15px;
   line-height: 1.7;
-  margin: 0 0 30px 0; 
+  margin: 0 0 30px 20px; 
   padding: 0;
 }
 
