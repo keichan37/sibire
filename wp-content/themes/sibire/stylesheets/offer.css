@@ -80,7 +80,7 @@
 .offer_image1,
 .offer_image2,
 .offer_image3 {
-  width: 250px;
+  max-height: 180px;
   margin: 0 5px 10px 0;
 }
 
