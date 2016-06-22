@@ -1,3 +1,31 @@
+#event.event-background {
+  padding: 0px 0 0px 0;
+  background-color: #f9dc6d;
+}
+
+#event .event-box {
+  max-width: 500px;
+  margin: 0px auto;
+  background-color: #ffffff;
+}
+
+#event .event-box img {
+  max-width: 100%;
+  height: 100%;
+}
+
+#event .event-box-text {
+  padding: 0 15px;
+}
+
+#event .event-box-text h2 {
+  margin: 20px 0 0 0;
+  border-bottom: 3px solid #f9dc6d;
+}
+#event .event-box-text p {
+  margin-bottom: 0;
+}
+
 .event-footer #footer {
   margin-top: 0;
 }
@@ -179,9 +207,18 @@
 }
 
 #event .event-form {
-  width: 800px;
+  max-width: 400px;
   margin: 0px auto;
   margin-bottom: 50px;
+}
+
+#event .event-form.event-form2 .wpcf7 {
+  width: 100%;
+}
+
+#event .event-form.event-form2 .wpcf7-list-item label {
+  display: inline-block;
+  margin: 5px 15px 0 0;
 }
 
 #event .event-form b {
@@ -203,8 +240,8 @@
 }
 
 #event .event-form p label {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 #event .event-form p label .wpcf7-not-valid-tip {
@@ -212,28 +249,41 @@
   font-weight: 400;
 }
 
-#event .event-form p label input {
+#event .event-form p label input[type="text"],
+#event .event-form p label input[type="email"],
+#event .event-form p label input[type="tel"],
+#event .event-form p label textarea {
   box-sizing: border-box;
   font-size: 16px;
   height: 44px;
   line-height: 23px;
   padding: 7px;
-  border: 5px solid #000000;
+  border: 1px solid #000000;
   outline: 0;
   width: 100%;
   -webkit-appearance: none;
   display: inline-block;
 }
 
-#event .event-form p label input.wpcf7-not-valid {
+#event .event-form p label textarea {
+  min-height: 100px;
+  line-height: auto;
+}
+
+#event .event-form p label input[type="text"].wpcf7-not-valid,
+#event .event-form p label input[type="email"].wpcf7-not-valid,
+#event .event-form p label input[type="tel"].wpcf7-not-valid,
+#event .event-form p label textarea.wpcf7-not-valid {
   border-color: #ff0000;
 }
 
-#event .event-form p label input:hover {
+#event .event-form p label input:hover,
+#event .event-form p label textarea:hover {
   background-color: #fafafa;
 }
 
-#event .event-form p label input:focus {
+#event .event-form p label input:focus,
+#event .event-form p label textarea:focus {
   border-color: #3fa9f5;
 }
 
