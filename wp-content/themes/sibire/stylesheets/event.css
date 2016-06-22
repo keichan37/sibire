@@ -18,13 +18,41 @@
   padding: 0 15px;
 }
 
-#event .event-box-text h2 {
+
+#event h1 {
+  font-size: 27px;
+  line-height: 1.4;
   margin: 20px 0 0 0;
-  border-bottom: 3px solid #f9dc6d;
+  padding: 0;
 }
-#event .event-box-text p {
-  margin-bottom: 0;
+
+#event h2 {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 10px;
+  border-left: 1px solid #aaaaaa;
 }
+
+#event h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#event p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0 0 30px 0; 
+  padding: 0;
+}
+
+#event p.wp-caption-text {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
 
 .event-footer #footer {
   margin-top: 0;
