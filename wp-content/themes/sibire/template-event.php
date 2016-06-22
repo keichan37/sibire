@@ -42,13 +42,6 @@
                   <p>記事がありません</p>
                 <?php endif; ?>
 
-                <div class="registration">
-                  <a href="/registration" class="registration-button">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/registration-text-2x.png" alt="登録する" class="registration-button-text">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/registration-cat.png" class="registration-button-img">
-                  </a>
-                </div>
-
 
                   <h4 class="relation-title">新着情報</h4>
                     <ul class="relation">
