@@ -64,13 +64,12 @@
   line-height: 1.5;
   margin: 0 0 20px 0;
   border-bottom: 1px solid #000000;
-  margin-left: 20px;
 }
 
 #interview p {
   font-size: 15px;
   line-height: 1.7;
-  margin: 0 0 30px 20px; 
+  margin: 0 0 30px 0px; 
   padding: 0;
 }
 

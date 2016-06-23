@@ -26,19 +26,19 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define('DB_NAME', 'heroku_15097336c6a4b99');
+define('DB_NAME', 'sibire');
 
 /** MySQL データベースのユーザー名 */
-define('DB_USER', 'bccb3ccdad0838');
+define('DB_USER', 'root');
 
 /** MySQL データベースのパスワード */
-define('DB_PASSWORD', 'ba676c2d');
+define('DB_PASSWORD', '');
 
 /** MySQL のホスト名 */
-define('DB_HOST', 'us-cdbr-iron-east-03.cleardb.net');
+define('DB_HOST', '127.0.0.1');
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
-define('DB_CHARSET', 'utf8mb4');
+define('DB_CHARSET', 'utf8');
 
 /** データベースの照合順序 (ほとんどの場合変更する必要はありません) */
 define('DB_COLLATE', '');
@@ -60,7 +60,6 @@ define('AUTH_SALT',        '');
 define('SECURE_AUTH_SALT', '');
 define('LOGGED_IN_SALT',   '');
 define('NONCE_SALT',       '');
-
 /**#@-*/
 
 /**
@@ -92,4 +91,3 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-

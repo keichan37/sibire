@@ -1,0 +1,193 @@
+/*
+Description: 投稿用デフォルトフォーマット、ここに項目追加していきましょう
+*/
+
+#post h1.post-h1 {
+  font-size: 25px;
+  line-height: 1.4;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+#post h2 {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 10px;
+  border-left: 3px solid #000000;
+}
+
+#post h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  border-bottom: 2px solid #000000;
+}
+
+#post h5 {
+  text-align: center;
+  font-size: 15px;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 15px;
+}
+
+#post p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0 0 30px 0; 
+  padding: 0;
+}
+
+#post p.wp-caption-text {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+#post img {
+  vertical-align: bottom;
+}
+
+#post .post-name {
+  font-size: 16px;
+  margin: 0px 0 0 0;
+  font-weight: 400;
+  display: inline;
+  background-color: #fff000;
+}
+
+#post .post-img {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #eeeeee;
+  height: 370px;
+  background-size: cover; 
+  background-position: center center;
+  background-attachment: scroll;
+}
+
+#post ul.tag {
+  margin: 15px 0 25px 0;
+  padding: 0;
+  display: inline-block;
+}
+
+#post ul.tag li {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #000000;
+  display: inline;
+  padding: 3px 5px;
+  margin-right: 5px;
+  font-size: 12px;
+  border-radius: 1px;
+  font-weight: 700;
+}
+
+#post time {
+  float: right;
+  margin-top: 15px;
+}
+
+#post .post_image1,
+#post .post_image2,
+#post .post_image3 {
+  max-height: 180px;
+  margin: 0 5px 10px 0;
+}
+
+table.post-table {
+ border: 2px solid #000000;
+ border-collapse: collapse;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+table.post-table thead tr th {
+  height: 40px;
+  background-color: #fff000;
+  border-bottom: 2px solid #000000;
+}
+
+table.post-table tbody tr th,
+table.post-table tbody tr td {
+  padding: 10px 16px;
+  border: 1px solid #aaaaaa;
+}
+
+table.post-table tbody tr td {
+}
+
+table.post-table tbody tr th {
+  font-weight: 400;
+  text-align: left;
+  width: 100px;
+  font-weight: 700;
+}
+
+table.post-table tr:nth-child(odd) th {
+}
+
+ul.post-grid {
+  margin: 0;
+  padding: 0;
+}
+
+ul.post-grid li {
+  list-style: none;
+  float: left;
+  width: 196px;
+  height: 170px;
+  margin: 0px 10px 20px 10px;
+}
+
+ul.post-grid li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+ul.post-grid li a:hover {
+  text-decoration: underline;
+}
+
+ul.post-grid li a .post-grid-img {
+  width: 100%;
+  height: 100px;
+  background-size: cover;
+  background-position: center center;
+  background-color: #aaaaaa;
+  margin-bottom: 5px;
+}
+
+ul.post-grid li a:hover .post-grid-img {
+  filter:alpha(opacity=90);
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+}
+
+@media(max-width: 550px) {
+  #post h1.post-h1 {
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+  #post h2 {
+    font-size: 18px;
+  }
+  #post h3 {
+    font-size: 15px;
+  }
+
+  #post .post-img {
+    height: 208px;
+  }
+  table.post-table tbody tr th {
+    width: 35px;
+  }
+  ul.post-grid li {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} 
