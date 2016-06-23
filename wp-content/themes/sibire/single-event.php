@@ -1,14 +1,14 @@
 <?php /* Template Name: 新イベントページテンプレート*/ ?>
   <?php get_header(); ?>
-        <div id="event">
+        <div id="column">
           <div id="contents">
             <div class="container">
 
               <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 
                 <h1><?php the_title(); ?></h1>
-                <div class="event-name">
-                  <? $txt = get_field('event'); if($txt){ ?><? echo $txt; ?> <? } ?>
+                <div class="column-name">
+                  <? $txt = get_field('column'); if($txt){ ?><? echo $txt; ?> <? } ?>
                 </div>
 
                 <?php
@@ -18,9 +18,9 @@
 
 
                 <?php if (has_post_thumbnail()): ?>
-                  <div class="event-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);"></div>
+                  <div class="column-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);"></div>
                 <?php else: ?>
-                  <div class="event-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);"></div>
+                  <div class="column-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);"></div>
                 <?php endif; ?>
                 <div class="articleDate"><span><i class="fa fa-calendar"></i>
                 <ul class="tag">
@@ -41,13 +41,6 @@
                 <?php endwhile; else: ?>
                   <p>記事がありません</p>
                 <?php endif; ?>
-
-                <div class="registration">
-                  <a href="/registration" class="registration-button">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/registration-text-2x.png" alt="登録する" class="registration-button-text">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/registration-cat.png" class="registration-button-img">
-                  </a>
-                </div>
 
 
                   <h4 class="relation-title">新着情報</h4>
@@ -92,3 +85,4 @@
     </div>
   </body>
 </html>
+
