@@ -14,14 +14,14 @@ Description: 投稿用デフォルトフォーマット、ここに項目追加�
   line-height: 1.5;
   margin: 0 0 20px 0;
   padding: 0 0 0 10px;
-  border-left: 3px solid #000000;
+  border-left: 3px solid #dd0000;
 }
 
 #post h3 {
   font-size: 18px;
   line-height: 1.5;
   margin: 0 0 20px 0;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #dd0000;
 }
 
 #post h5 {
@@ -52,7 +52,8 @@ Description: 投稿用デフォルトフォーマット、ここに項目追加�
   margin: 0px 0 0 0;
   font-weight: 400;
   display: inline;
-  background-color: #fff000;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 #post .post-img {
@@ -106,8 +107,7 @@ table.post-table {
 
 table.post-table thead tr th {
   height: 40px;
-  background-color: #fff000;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #dd0000;
 }
 
 table.post-table tbody tr th,
