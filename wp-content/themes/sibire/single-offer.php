@@ -14,13 +14,11 @@
                   $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
                 ?>
 
-            </div>
                 <?php if (has_post_thumbnail()): ?>
                   <div class="post-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);"></div>
                 <?php else: ?>
                   <div class="post-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);"></div>
                 <?php endif; ?>
-            <div class="container">
                 <ul class="tag">
                   <?php
                     $posttags = get_the_tags();
@@ -54,8 +52,10 @@
                   </a>
                 </div>
 
-
+                
                 <h5>最新情報</h5>
+
+                <?php /* ?>
                 <ul class="post-grid">
                   <?php
                     $slug = get_post_type();
@@ -81,12 +81,49 @@
                     </a>
                   </li>
 
+                  <?php 
+                  endforeach; 
+                  wp_reset_postdata();
+                  ?>
+                  <div class="clear"></div>
+                </ul>
+              <?php */ ?>
+
+                <ul class="relation">
+                  <?php
+                    $slug = get_post_type();
+                    $args = array(
+                     'paged' => $paged,
+                     'post_type' => array('recruit','interview','column','offer','event'),
+                     'posts_per_page'   => 10,
+                     'post_status' => 'publish',
+                     'post__not_in'=> array(get_the_ID())
+                    );
+                    $postslist = get_posts($args);
+                    foreach ($postslist as $post) : setup_postdata($post);
+                    ?>
+                  <li>
+                    <a href="<?php the_permalink(); ?>">
+                      <div class="p"><span class="tag <?php echo esc_html(get_post_type_object($post->post_type)->name); ?>"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span><br /><?php the_title(); ?></div>
+                      <?php if (has_post_thumbnail()): ?>
+                        <?php the_post_thumbnail(array(50, 50)); ?>
+                      <?php else: ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png" alt="no image" title="no image" width="50" height="50" />
+                      <?php endif; ?>
+                    </a>
+                  </li>
+
+
+
                 <?php 
                 endforeach; 
                 wp_reset_postdata();
                 ?>
-                <div class="clear"></div>
               </ul>
+
+
+
+
             </div>
           </div>
         </div>
