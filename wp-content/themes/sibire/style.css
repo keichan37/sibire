@@ -2,20 +2,20 @@
 /*
 Theme Name: シビレ
 Theme URI: www.sibire.co.jp
-Description: シビレは、地方に移住したいエンジニアに、地方のユニークな企業を紹介する移住支援サービスです。
-Version: 1.0.0
-Author: 虻川景
+Description: CSS、テンプレート、管理画面がそれぞれグチャってきたので整理なんとか綺麗になるようにします。改行できねーぞ
+Version: やったるでー
+Author: あぶかわけい
 */
 
 html,
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: '游ゴシック', YuGothic, 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
+  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
   -webkit-tap-highlight-color:rgba(28,135,201,0.3);
-  font-size: 13px;
+  font-size: 14px;
   min-width: 1140px;
 }
 
