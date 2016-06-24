@@ -13,11 +13,9 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/registration.png" alt="登録するにゃ">
             </a>
           </div>
-          <?php /* ?>
           <div id="banner">
-            <a href="/event/entry1"><img src="<?php echo get_template_directory_uri(); ?>/images/banner-entry1.jpg" alt="Engineer移住Night"></a>
+            <a href="/event/entry1"><img src="<?php echo get_template_directory_uri(); ?>/images/banner-ijyuunight.jpg" alt="Engineer移住Night"></a>
           </div>
-          <?php */ ?>
           <div id="news">
             <div class="container">
               <h2><img src="<?php echo get_template_directory_uri(); ?>/images/news-title-2x.png" alt="最新情報"></h2>
@@ -25,8 +23,8 @@
                 <?php
                   $args = array(
                     'paged' => $paged,
-                    'post_type' => array('recruit','interview','offer','column'),
-                    'posts_per_page' => 10,
+                    'post_type' => array('recruit','interview','offer','column','event'),
+                    'posts_per_page' => 20,
                     'post_status' => 'publish',
                   ); ?>
                 <?php query_posts( $args ); ?>
