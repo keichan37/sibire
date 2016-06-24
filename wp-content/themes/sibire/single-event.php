@@ -1,13 +1,13 @@
 <?php /* Template Name: 新イベントページテンプレート*/ ?>
   <?php get_header(); ?>
-        <div id="column">
+        <div id="post">
           <div id="contents">
             <div class="container">
 
               <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 
-                <h1><?php the_title(); ?></h1>
-                <div class="column-name">
+                <h1 class="post-h1"><?php the_title(); ?></h1>
+                <div class="post-name">
                   <? $txt = get_field('column'); if($txt){ ?><? echo $txt; ?> <? } ?>
                 </div>
 
@@ -18,9 +18,9 @@
 
 
                 <?php if (has_post_thumbnail()): ?>
-                  <div class="column-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);"></div>
+                  <div class="post-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);"></div>
                 <?php else: ?>
-                  <div class="column-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);"></div>
+                  <div class="post-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);"></div>
                 <?php endif; ?>
                 <div class="articleDate"><span><i class="fa fa-calendar"></i>
                 <ul class="tag">
@@ -43,7 +43,7 @@
                 <?php endif; ?>
 
 
-                  <h4 class="relation-title">新着情報</h4>
+                  <h5>最新情報</h5>
                     <ul class="relation">
                       <?php
                         $slug = get_post_type();
