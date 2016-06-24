@@ -53,7 +53,6 @@ Description: 投稿用デフォルトフォーマット、ここに項目追加�
   font-weight: 400;
   display: inline;
   font-weight: 700;
-  text-decoration: underline;
 }
 
 #post .post-img {
@@ -107,7 +106,6 @@ table.post-table {
 
 table.post-table thead tr th {
   height: 40px;
-  border-bottom: 2px solid #dd0000;
 }
 
 table.post-table tbody tr th,
@@ -180,7 +178,7 @@ ul.post-grid li a:hover .post-grid-img {
   }
 
   #post .post-img {
-    height: 208px;
+    height: 150px;
   }
   table.post-table tbody tr th {
     width: 35px;
