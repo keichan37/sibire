@@ -85,8 +85,15 @@
 }
 
 @media(max-width: 550px) {
+
+  #news .owl-item {
+    min-height: 240px;
+  }
   .news {
     width: 100%;
+  }
+  .news-img {
+    height: 120px;
   }
   #columns .columns,
   #interviews .interviews,
