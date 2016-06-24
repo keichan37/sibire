@@ -620,7 +620,7 @@ ul.relation li .tag {
   display: block;
 }
 
-.wpcf7 .screen-reader-response {
+.wpcf7 .screen-reader-response ul {
   display: none;
 }
 
