@@ -39,7 +39,7 @@
 #offer .offer-name {
   font-size: 18px;
   margin: 0 0 0 0;
-  font-weight: 400;
+  font-weight: 500;
   display: inline;
 }
 
@@ -100,7 +100,7 @@ table.offer-table tr td {
 }
 
 table.offer-table tr th {
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
   width: 100px;
 }

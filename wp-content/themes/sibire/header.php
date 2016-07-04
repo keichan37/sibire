@@ -14,8 +14,7 @@
     <meta name="twitter:site" content="@sibire_inc">
     <meta name="twitter:creator" content="@sibire_inc">
     <meta name="twitter:description" content="シビレは、地方に移住したいエンジニアに、地方のユニークな企業を紹介する移住支援サービスです。">
-    <!-- タイトル -->
-
+    <?php /* ?>タイトル<?php */ ?>
     <?php if ( is_home() || is_front_page() ) : ?>
       <title><?php bloginfo('name'); ?></title>
       <meta name="twitter:title" content="<?php bloginfo('name'); ?>">
@@ -25,12 +24,10 @@
       <meta name="twitter:title" content="<?php wp_title( '', true, '' ); ?>">
       <meta content="<?php wp_title( '', true, '' ); ?>" property="og:title">
     <?php endif; ?>
-    
-    <!-- 説明 -->
+    <?php /* ?>説明<?php */ ?>
     <meta name="description" content="「地方で働きたい」エンジニアの方々に、移住希望地の仕事を紹介するサービス。地方のユニークなIT企業の紹介はもちろん、移住に利用できるお得な制度なども紹介します。地方移住でシビレる人生を実現しましょう！" />
     <meta property="og:description" content="シビレは、地方に移住したいエンジニアに、地方のユニークな企業を紹介する移住支援サービスです。" />
-
-    <!-- キーワード -->
+    <?php /* ?>キーワード<?php */ ?>
     <?php if ( $post->my_keywords ): ?>
       <meta name="keywords" content="<?php echo esc_attr( $post->my_keywords ); ?>" />
     <?php else: ?>
@@ -50,24 +47,29 @@
     <?php endif; ?>
     <meta content="ja_JP" property="og:locale">
 
+    <meta name="description" content="「地方で働きたい」エンジニアの方々に、移住希望地の仕事を紹介するサービス。地方のユニークなIT企業の紹介はもちろん、移住に利用できるお得な制度なども紹介します。地方移住でシビレる人生を実現しましょう！" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/normalize.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/layout.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/company.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/column.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/interview.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/offer.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/event.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/profile.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/post.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/form.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/owl.carousel.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/responsive.css" type="text/css" media="all" />
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
     <link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/apple-touch-icon.png" />
 
+    <?php /* ?>
+      <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/column.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/event.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/offer.css" type="text/css" media="all" />
+    <?php */ ?>
+
     <?php wp_deregister_script('jquery'); ?>
-    <!-- WordPressのjQueryを読み込ませない -->
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/jquery.js"></script>
+    <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/app.js"></script>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/owl.carousel.min.js"></script>
   
   </head>
@@ -81,7 +83,6 @@
       js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5&appId=207637699615029";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-
     <div id="wrap">
       <header id="header">
         <div class="container">

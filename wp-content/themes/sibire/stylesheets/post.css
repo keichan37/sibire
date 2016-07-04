@@ -3,39 +3,43 @@ Description: 投稿用デフォルトフォーマット、ここに項目追加�
 */
 
 #post h1.post-h1 {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.4;
-  margin: 10px 0 0 0;
+  margin: 0 0 0 0;
   padding: 0;
+  clear: both;
+}
+
+#post .post-name {
+  font-size: 15px;
+  margin: 0 0 0 0;
+  padding-bottom: 15px;
+  font-weight: 500;
+  border-bottom: 2px solid #333333;
+}
+
+#post h1 {
+  font-size: 20px;
+  margin: 40px 0 10px 0;
 }
 
 #post h2 {
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 0 0 20px 0;
-  padding: 0 0 0 10px;
-  border-left: 3px solid #dd0000;
+  font-size: 18px;
+  margin: 40px 0 10px 0;
 }
 
 #post h3 {
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 0 0 20px 0;
-  border-bottom: 2px solid #dd0000;
+  font-size: 15px;
+  margin: 40px 0 10px 0;
 }
 
 #post h5 {
-  text-align: center;
   font-size: 15px;
-  border-bottom: 2px solid #000000;
-  margin-bottom: 15px;
 }
 
 #post p {
   font-size: 15px;
-  line-height: 1.7;
-  margin: 0 0 30px 0; 
-  padding: 0;
+  line-height: 27px;
 }
 
 #post p.wp-caption-text {
@@ -47,16 +51,8 @@ Description: 投稿用デフォルトフォーマット、ここに項目追加�
   vertical-align: bottom;
 }
 
-#post .post-name {
-  font-size: 16px;
-  margin: 0px 0 0 0;
-  font-weight: 400;
-  display: inline;
-  font-weight: 700;
-}
-
 #post .post-img {
-  margin-top: 10px;
+  margin: 20px 0 25px 0;
   text-align: center;
   background-color: #eeeeee;
   height: 370px;
@@ -66,7 +62,7 @@ Description: 投稿用デフォルトフォーマット、ここに項目追加�
 }
 
 #post ul.tag {
-  margin: 15px 0 25px 0;
+  margin: 0;
   padding: 0;
   display: inline-block;
 }
@@ -75,17 +71,21 @@ Description: 投稿用デフォルトフォーマット、ここに項目追加�
   margin: 0;
   padding: 0;
   border: 1px solid #000000;
-  display: inline;
-  padding: 3px 5px;
+  display: inline-block;
+  padding: 1px 3px;
   margin-right: 5px;
-  font-size: 12px;
+  font-size: 11px;
   border-radius: 1px;
-  font-weight: 700;
+  font-weight: 500;
+  box-sizing: border-box;
+  line-height: 15px;
+  margin-bottom: 3px;
 }
 
 #post time {
   float: right;
-  margin-top: 15px;
+  margin-top: 0px;
+  font-size: 12px;
 }
 
 #post .post_image1,
@@ -96,12 +96,14 @@ Description: 投稿用デフォルトフォーマット、ここに項目追加�
 }
 
 table.post-table {
- border: 2px solid #000000;
+ border: 2px solid #333333;
  border-collapse: collapse;
  margin-top: 20px;
  margin-bottom: 20px;
  margin-left: auto;
  margin-right: auto;
+ font-size: 11px;
+ max-width: 550px;
 }
 
 table.post-table thead tr th {
@@ -118,7 +120,7 @@ table.post-table tbody tr td {
 }
 
 table.post-table tbody tr th {
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
   width: 100px;
   font-weight: 700;

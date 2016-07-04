@@ -9,14 +9,15 @@ Author: あぶかわけい
 
 html,
 body {
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 500;
   height: 100%;
   margin: 0;
   padding: 0;
   -webkit-tap-highlight-color:rgba(28,135,201,0.3);
   font-size: 14px;
   min-width: 1140px;
+  color: #333333;
 }
 
 #wrap {
