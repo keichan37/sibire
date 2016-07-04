@@ -80,6 +80,7 @@ h2.h2-form {
 .wpcf7 p input[type="text"],
 .wpcf7 p input[type="email"],
 .wpcf7 p input[type="tel"],
+.wpcf7 p input[type="url"],
 .wpcf7 p textarea {
   box-sizing: border-box;
   font-size: 16px;
