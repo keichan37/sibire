@@ -1,7 +1,7 @@
 #header {
   height: 75px;
   position: relative;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #333333;
 }
 
 #header .logo {
@@ -194,7 +194,7 @@ h1#message img {
 .news b {
   display: block;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 26px;
   white-space: nowrap;
   width: 100%;
@@ -307,7 +307,7 @@ h1#message img {
   padding-left: 45px;
   height: 42px;
   line-height: 42px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 24px;
   background-image: url("../images/numeric-2x.png");
   background-size: 42px 126px;
@@ -430,6 +430,7 @@ h1#message img {
 
 #member .balloon {
   text-align: center;
+  padding-bottom: 40px;
 }
 
 #member .balloon img {
@@ -439,6 +440,7 @@ h1#message img {
 .business,
 .registration {
   padding: 20px 0 40px 0;
+  text-align: center;
 }
 
 .business-button,
@@ -504,6 +506,12 @@ h1#message img {
   margin: -36px -86px 0 0;
 }
 
+.registration p {
+  margin: 0;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
 .business-button:hover .business-button-img{
   margin: -33px -83px 0 0;
 }
@@ -513,43 +521,50 @@ h1#message img {
 
 .ce { text-align: center; }
 
+#main-content,
 .left-side {
   float: left;
   width: 70%;
 }
 
+#sidebar,
 .right-side {
   width: 30%;
   float: right;
-  padding: 10px 0 0 30px;
+  padding: 10px 0 30px 20px;
   box-sizing: border-box;
 }
 
-.left-side ul {
- padding-left: 30px;
+iframe#twitter-widget-0,
+iframe#twitter-widget-1 {
+  border-left: 1px solid #e9ebee !important;
+  border-right: 1px solid #e9ebee !important;
+  border-bottom: 1px solid #e9ebee !important;
 }
 
-h4.relation-title {
-  font-size: 15px;
+h5.relation-title {
   margin: 0px auto;
-  margin-top: 10px;
-  color: #000000;
+  background-color: #eeeeee;
+  font-weight: 500;
   text-align: center;
-  width: 100px;
-  border-bottom: 1px solid #000000;
+  font-size: 13px;
+  margin: 5px 0 5px 0;
+  padding: 10px 0 5px 0;
 }
 
 ul.relation {
-  margin: 0;
+  max-width: 500px;
+  margin: 0px auto;
   padding: 0 10px;
+  border: 1px solid #e9ebee;
 }
 
 ul.relation li {
   list-style: none;
   position: relative;
-  padding: 10px 0;
-  border-bottom: 1px solid #dddddd;
+  padding: 10px 0 0 0;
   min-height: 50px;
+  border-bottom: 2px solid #333333;
 }
 
 ul.relation li:last-child {
@@ -558,29 +573,27 @@ ul.relation li:last-child {
 
 ul.relation li a {
   display: block;
-  color: #000000;
+  color: #333333;
+  min-height: 80px;
 }
 
 ul.relation li a:hover {
-  color: #333333;
-}
-
-ul.relation li a:hover img {
-  opacity: .9;
+  text-decoration: none;
 }
 
 ul.relation li img {
   position: absolute;
   left: 0;
   top: 50%;
-  margin: -25px 0 0 0;
+  margin: -30px 0 0 7px;
 }
 
 ul.relation li p,
 ul.relation li .p {
-  padding: 3px 0 0 60px;
+  padding: 3px 0 0 80px;
   margin: 0;
   line-height: 22px;
+  font-size: 13px;
 }
 
 ul.relation li .tag {
@@ -589,12 +602,12 @@ ul.relation li .tag {
   height: 13px;
   padding: 2px;
   margin-right: 5px;
-  text-decoration: none;
 }
 
 .page-cover {
-  background-image: url("../images/background.png");
-  background-size: auto 100%;
+  background-color: #135796;
+  background-color: #214F31;
+  background-image: url("../images/karakusa.png");
   padding: 60px 0;
   text-align: center;
   margin-bottom: 15px;
@@ -603,76 +616,18 @@ ul.relation li .tag {
 .page-cover h1 {
   font-size: 26px;
   line-height: 34px;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
-  color: #000000;
+  color: #ffffff;
   padding: 0 5px;
   display: inline-block;
 }
 
-.wpcf7 {
-  width: 300px;
-  margin: 0px auto;
-}
-
-.wpcf7 .wpcf7-not-valid {
-  display: block;
-}
-
-.wpcf7 .screen-reader-response ul {
-  display: none;
-}
-
-.wpcf7 .screen-reader-response,
-.wpcf7 .wpcf7-not-valid-tip,
-.wpcf7 .wpcf7-validation-errors {
-  color: #bd1934;
-}
-
-.wpcf7 .wpcf7-not-valid {
-  border: 1px solid #bd1934;
-}
-
-.wpcf7 form label {
-  margin-top: 12px;
-  display: block;
-}
-
-.wpcf7 p {
-  margin: 0;
-}
-
-.wpcf7 form input[type="submit"] {
-  margin-top: 15px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: #ffffff;
-  border: 1px solid #333333;
-  color: #333333;
-  width: 200px;
-  height: 40px;
-  font-size: 16px;
-  border-radius: 2px;
-  cursor: pointer;
-}
-.wpcf7 form input[type="submit"]:hover {
-  border: 1px solid #000000;
-  color: #000000;
-}
-.wpcf7 form input[type="submit"]:active {
-  color: #333333; 
-  border-color: #333333; 
-}
-.wpcf7 .wpcf7-mail-sent-ok {
-  margin-top: 5px;
-  color: #34bd19;
-}
 
 #footer {
-  margin-top: 30px;
-  border-top: 1px solid #000000;
+  position: relative;
+  background-color: #eeeeee;
+  color: #333333;
   padding: 55px 0 10px 0;
   font-size: 12px;
 }
@@ -700,16 +655,70 @@ ul.relation li .tag {
 }
 
 #footer ul li a:hover {
-  color: #000000;
+  text-decoration: none;
 }
 
 #footer .footer-inner {
   background-image: url("../images/simplelogo-2x.png");
   background-repeat: no-repeat;
   background-size: 100px 30px;
-  background-position: center left;
+  background-position: center left 20px;
   padding-left: 180px;
 }
+
+
+.breadcrumb {
+  font-size: 11px;
+  margin: 10px 0 10px 0;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow:    ellipsis;
+}
+
+.breadcrumb a {
+  color: #333333;
+}
+
+.breadcrumb a:hover {
+  text-decoration: none;
+}
+
+
+a.scroll-top {
+  font-family: sans-serif;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 7;
+  margin: 0 20px 20px 0;
+  text-decoration: none;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 51px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 2px solid #555555;
+  color: #555555;
+  border-radius: 4px;
+}
+
+a.scroll-top.none { display: none; }
+
+a.scroll-top.absolute {
+  position: absolute;
+  margin-bottom: 165px;
+}
+
+a.scroll-top:hover {
+  background-color: #f7f7f7;
+}
+
+/* 記事系のCSSはどこかで一括管理 */
 
 .alignright {
   float: right;
