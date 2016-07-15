@@ -40,10 +40,6 @@ a {
 
 a:hover { color: #16699c; }
 
-ul {
-  -webkit-padding-start: 0px;
-}
-
 iframe {
   max-width: 100%;
 }

@@ -24,7 +24,7 @@
                   $args = array(
                     'paged' => $paged,
                     'post_type' => array('recruit','interview','offer','column','event'),
-                    'posts_per_page' => 20,
+                    'posts_per_page' => 15,
                     'post_status' => 'publish',
                   ); ?>
                 <?php query_posts( $args ); ?>
@@ -45,9 +45,8 @@
                             <span class="tag <?php echo esc_html(get_post_type_object($post->post_type)->name); ?>"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>
                         </div>
                         <div class="news-text">
-                          <b><?php echo nl2br(get_post_meta($post->ID, 'recruit', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'column', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?><?php echo nl2br(get_post_meta($post->ID, 'offer', true)); ?></b>
+                          <b><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></b>
                           <p><?php the_title(); ?></p>
-                          <!--<span class="news-link">詳細はこちら</span>-->
                         </div>
                       </a>
                     <?php endwhile; ?>     
@@ -257,12 +256,12 @@
               <h2><img src="<?php echo get_template_directory_uri(); ?>/images/member-title-2x.png" alt="メンバー"></h2>
               <div class="member-wrap">
                 <div class="toyota">
-                  <a href="/member" class="member-link">
+                  <a href="/member#toyota" class="member-link">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/toyota.jpg" alt="CEO 豊田昌代">
                   </a>
                 </div>
                 <div class="midori">
-                  <a href="/member" class="member-link">
+                  <a href="/member#midori" class="member-link">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/midori.jpg" alt="COO 鈴木翠">
                   </a>
                 </div>

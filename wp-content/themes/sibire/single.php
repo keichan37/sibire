@@ -8,6 +8,7 @@ description: このファイルが基本フォーマットになる
           <div id="contents">
             <div class="container">
               <div id="main-content">
+
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); //投稿が存在する場合 ?>
                   <?php get_template_part('breadcrumb'); //パンくずリスト ?>
                   <?php get_template_part('tag'); //タグ ?>

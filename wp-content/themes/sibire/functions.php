@@ -53,6 +53,28 @@ register_nav_menus(
     )
 );
 
+register_sidebars(1,
+  array(
+    'name' => 'サイドバーウィジェット',
+    'id' => 'sidebar-1',
+    'description' => 'サイドバーのウィジットエリアです。',
+    'before_widget' => '<div>',
+    'after_widget' => '</div>',
+  )
+);
+
+// 固定ページにカテゴリーを設定
+function add_categorie_to_pages(){
+register_taxonomy_for_object_type('category', 'page');
+}
+add_action('init','add_categorie_to_pages');
+
+// 固定ページにタグを設定
+function add_tag_to_page() {
+register_taxonomy_for_object_type('post_tag', 'page');
+}
+add_action('init', 'add_tag_to_page');
+
 /* 通常の「投稿」をメニューから削除（今回は不使用のため） */
 function remove_menus () {
 global $menu;
