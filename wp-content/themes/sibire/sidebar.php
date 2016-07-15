@@ -1,6 +1,5 @@
 <?php /* ?>
 title: サイドバーの部分テンプレート
-description: 管理画面で自由に記述できる部分を作る
 <?php */ ?>
 
 <h5 class="relation-title">Twitter</h5>

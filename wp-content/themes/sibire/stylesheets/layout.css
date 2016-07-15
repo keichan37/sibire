@@ -629,7 +629,7 @@ ul.relation li .tag {
   background-color: #eeeeee;
   color: #333333;
   padding: 55px 0 10px 0;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 #footer .copy {
@@ -669,12 +669,12 @@ ul.relation li .tag {
 
 .breadcrumb {
   font-size: 11px;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 5px 0;
   white-space: nowrap;
   width: 100%;
   overflow: hidden;
   -o-text-overflow: ellipsis;
-  text-overflow:    ellipsis;
+  text-overflow: ellipsis;
 }
 
 .breadcrumb a {
