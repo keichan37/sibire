@@ -37,16 +37,14 @@
                         $width = $image['sizes'][ $size . '-width' ];
                         $height = $image['sizes'][ $size . '-height' ];
                      
-                        if( $caption ): ?>
-                          <div class="wp-caption">
-                        <?php endif; ?>
+                        <div class="wp-caption">
                           <div class="wp-img">
                             <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
                           </div>
                         <?php if( $caption ): ?>
                           <p class="wp-caption-text"><?php echo $caption; ?></p>
-                          </div>
                         <?php endif; ?>
+                        </div>
                     <?php endif; ?>
                     <?php 
                     $image = get_field('img2');
