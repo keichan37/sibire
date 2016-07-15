@@ -36,15 +36,20 @@
                         $thumb = $image['sizes'][ $size ];
                         $width = $image['sizes'][ $size . '-width' ];
                         $height = $image['sizes'][ $size . '-height' ];
-                     
-                        <div class="wp-caption">
-                          <div class="wp-img">
-                            <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+                        if( $caption ): ?>
+                          <div class="wp-caption">
+                            <div class="wp-img">
+                              <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+                            </div>
+                            <p class="wp-caption-text"><?php echo $caption; ?></p>
                           </div>
-                        <?php if( $caption ): ?>
-                          <p class="wp-caption-text"><?php echo $caption; ?></p>
+                        <?php else: ?>
+                          <div class="wp-caption">
+                            <div class="wp-img">
+                              <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+                            </div>
+                          </div>
                         <?php endif; ?>
-                        </div>
                     <?php endif; ?>
                     <?php 
                     $image = get_field('img2');
@@ -59,12 +64,16 @@
                      
                         if( $caption ): ?>
                           <div class="wp-caption">
-                        <?php endif; ?>
-                          <div class="wp-img">
-                            <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+                            <div class="wp-img">
+                              <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+                            </div>
+                            <p class="wp-caption-text"><?php echo $caption; ?></p>
                           </div>
-                        <?php if( $caption ): ?>
-                          <p class="wp-caption-text"><?php echo $caption; ?></p>
+                        <?php else: ?>
+                          <div class="wp-caption">
+                            <div class="wp-img">
+                              <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+                            </div>
                           </div>
                         <?php endif; ?>
                     <?php endif; ?>
@@ -81,12 +90,16 @@
                      
                         if( $caption ): ?>
                           <div class="wp-caption">
-                        <?php endif; ?>
-                          <div class="wp-img">
-                            <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+                            <div class="wp-img">
+                              <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+                            </div>
+                            <p class="wp-caption-text"><?php echo $caption; ?></p>
                           </div>
-                        <?php if( $caption ): ?>
-                          <p class="wp-caption-text"><?php echo $caption; ?></p>
+                        <?php else: ?>
+                          <div class="wp-caption">
+                            <div class="wp-img">
+                              <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+                            </div>
                           </div>
                         <?php endif; ?>
                     <?php endif; ?>
