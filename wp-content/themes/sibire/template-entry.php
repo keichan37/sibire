@@ -106,7 +106,8 @@
 
                   </div>
                   <div class="clear"></div>
-
+                  <? $txt = get_field('form'); if($txt){ ?><? echo $txt; ?> <? } ?>
+                  <br />
 
                 <?php endwhile; else: //投稿が存在しない場合 ?>
                   <p>記事がありません</p>
