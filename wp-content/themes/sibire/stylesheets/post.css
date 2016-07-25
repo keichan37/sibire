@@ -2,12 +2,22 @@
 Description: 投稿用デフォルトフォーマット、ここに項目追加していきましょう
 */
 
+#post .container {
+  width: 940px;
+}
+
 #post h1.post-h1 {
   font-size: 20px;
   line-height: 1.4;
   margin: 0 0 0 0;
   padding: 0;
   clear: both;
+}
+
+#post .post-eyecatch-img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
 }
 
 #post .post-name {
@@ -254,7 +264,10 @@ ul.post-grid li a:hover .post-grid-img {
   margin: 0;
 }
 
-@media(max-width: 1140px) {
+@media(max-width: 940px) {
+  #post .container {
+    width: 100%;
+  }
   #post .left-column {
     max-width: 100%;
     float: none;
