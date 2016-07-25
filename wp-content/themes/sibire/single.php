@@ -25,7 +25,7 @@ description: このファイルが基本フォーマットになる
                     $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true); //アイキャッチのURL取得
                   ?>
                   <?php if (has_post_thumbnail()): //アイキャッチある場合 ?>
-                    <div class="post-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);"></div>
+                    <img class="post-eyecatch-img" src="<?php echo $thumbnail_url[0]; ?>">
                   <?php else: //アイキャッチない場合 ?>
                     <?php /* ?>
                     <div class="post-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);"></div>
