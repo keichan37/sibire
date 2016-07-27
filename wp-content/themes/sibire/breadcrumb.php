@@ -14,12 +14,9 @@ description: 固定ページ以外は3段階のパンくずになります。改
   <?php if (is_page()) {?>
   <?php } else{ ?>
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-      <? php /* ?>
       <a href="/<?php echo esc_html(get_post_type_object($post->post_type)->name); ?>" itemprop="url">
         <span itemprop="title"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></a></span>
       </a>&gt;
-      <?php */ ?>
-      <span itemprop="title"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>&gt; 
     </span>
   <?php } ?>
   
