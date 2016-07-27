@@ -93,7 +93,6 @@
             <div class="container">
               <div class="edogawatama"><a href="/edogawatama"><img src="<?php echo get_template_directory_uri(); ?>/images/recruit2-edogawatama-2x.png" alt="“江戸川タマが行く！”"></a></div>
               <h2><img src="<?php echo get_template_directory_uri(); ?>/images/recruit2-title-2x.png" alt="シビレる企業訪問"></h2>
-
               <?php
               $args = array(
                'post_type' => 'recruit',
@@ -122,6 +121,8 @@
               endforeach; 
               wp_reset_postdata();
               ?>
+              <div class="clear"></div>
+              <a class="more-link" href="/recruit">もっと見る&nbsp;&gt;</a>
               <div class="clear"></div>
             </div>
           </div>
@@ -166,6 +167,8 @@
               wp_reset_postdata();
               ?>
               <div class="clear"></div>
+              <a class="more-link" href="/interview">もっと見る&nbsp;&gt;</a>
+              <div class="clear"></div>
             </div>
           </div>
 
@@ -202,6 +205,8 @@
               wp_reset_postdata();
               ?>
               <div class="clear"></div>
+              <a class="more-link" href="/offer">もっと見る&nbsp;&gt;</a>
+              <div class="clear"></div>
             </div>
           </div>
 
@@ -237,6 +242,8 @@
               endforeach; 
               wp_reset_postdata();
               ?>
+              <div class="clear"></div>
+              <a class="more-link" href="/column">もっと見る&nbsp;&gt;</a>
               <div class="clear"></div>
             </div>
           </div>

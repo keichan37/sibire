@@ -292,6 +292,25 @@ h1#message img {
   top: -20px;
 }
 
+a.more-link {
+  display: block;
+  font-weight: 700;
+  width: 100px;
+  margin: 0px auto;
+  float: right;
+  clear: right;
+  padding: 5px 0;
+  text-align: center;
+  color: #333333;
+  border: 2px solid #333333;
+  text-decoration: none;
+}
+
+a.more-link:hover {
+  color: #16699c;
+  border-color: #16699c;
+}
+
 .service-column-wrap {
   width: 900px;
   margin: 0px auto;
