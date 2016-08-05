@@ -23,6 +23,7 @@
                     'post_type' => array('recruit','interview','offer','column','event'),
                     'posts_per_page' => 15,
                     'post_status' => 'publish',
+                    'has_password' => false,
                   ); ?>
                 <?php query_posts( $args ); ?>
                 <?php if (have_posts()) : ?>
@@ -98,6 +99,8 @@
               $args = array(
                'post_type' => array('recruit','offer'),
                'numberposts'   => 10,
+               'post_status' => 'publish',
+               'has_password' => false,
               );
               $postslist = get_posts($args);
               foreach ($postslist as $post) : setup_postdata($post);
@@ -183,6 +186,8 @@
               $args = array(
                'post_type' => 'interview',
                'numberposts'   => 5,
+               'post_status' => 'publish',
+               'has_password' => false,
               );
               $postslist = get_posts($args);
               foreach ($postslist as $post) : setup_postdata($post);
@@ -222,6 +227,8 @@
               $args = array(
                'post_type' => 'column',
                'numberposts'   => 5,
+               'post_status' => 'publish',
+               'has_password' => false,
               );
               $postslist = get_posts($args);
               foreach ($postslist as $post) : setup_postdata($post);

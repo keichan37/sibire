@@ -34,6 +34,8 @@ description: 各投稿の一覧ページです
                     <?php
                     $args = array(
                       'post_type' => array($cat_name,$cat_name2),
+                      'post_status' => 'publish',
+                      'has_password' => false,
                     );
                     $postslist = get_posts($args);
                     foreach ($postslist as $post) : setup_postdata($post);
@@ -55,6 +57,8 @@ description: 各投稿の一覧ページです
                     ?>
                   </ul>
                   <div class="clear"></div>
+
+                <?php /* ?>
                   <div class="ce">
                     <?php $numposts = $wpdb->get_var("SELECT count(*) FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = '$cat_name'");
                     if (0 < $numposts)
@@ -62,6 +66,8 @@ description: 各投稿の一覧ページです
                     echo '全'. $numposts .'件';
                     ?>
                   </div>
+                <?php */ ?>
+
                 <?php endwhile; else: //投稿が存在しない場合 ?>
                   <p>記事がありません</p>
                 <?php endif; ?>
