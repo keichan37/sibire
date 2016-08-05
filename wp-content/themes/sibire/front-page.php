@@ -89,6 +89,46 @@
               </div>
             </div>
           </div>
+
+          <div id="offers">
+            <div class="container">
+              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/offers-title-2x.png" alt="シビレる求人"></h2>
+
+              <?php
+              $args = array(
+               'post_type' => array('recruit','offer'),
+               'numberposts'   => 10,
+              );
+              $postslist = get_posts($args);
+              foreach ($postslist as $post) : setup_postdata($post);
+              ?>
+
+                <?php
+                  $thumbnail_id = get_post_thumbnail_id();
+                  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
+                ?>
+                <a href=<?php echo get_permalink(); ?> class="offers">
+
+                  <?php if (has_post_thumbnail()): ?>
+                    <div class="offers-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
+                  <?php else: ?>
+                    <div class="offers-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);">
+                  <?php endif; ?>
+                    <p><?php the_title(); ?></p>
+                    <div class="offers-overray"></div>
+                  </div>
+                </a>
+              <?php 
+              endforeach; 
+              wp_reset_postdata();
+              ?>
+              <div class="clear"></div>
+              <a class="more-link" href="/recruit">もっと見る&nbsp;&gt;</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+
+          <?php /* ?>
           <div id="recruit">
             <div class="container">
               <div class="edogawatama"><a href="/edogawatama"><img src="<?php echo get_template_directory_uri(); ?>/images/recruit2-edogawatama-2x.png" alt="“江戸川タマが行く！”"></a></div>
@@ -126,6 +166,7 @@
               <div class="clear"></div>
             </div>
           </div>
+          <?php */ ?>
 
           <div class="registration">
             <a href="/registration" class="registration-button">
@@ -172,43 +213,6 @@
             </div>
           </div>
 
-          <div id="offers">
-            <div class="container">
-              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/offers-title-2x.png" alt="シビレる求人"></h2>
-
-              <?php
-              $args = array(
-               'post_type' => 'offer',
-               'numberposts'   => 10,
-              );
-              $postslist = get_posts($args);
-              foreach ($postslist as $post) : setup_postdata($post);
-              ?>
-
-                <?php
-                  $thumbnail_id = get_post_thumbnail_id();
-                  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
-                ?>
-                <a href=<?php echo get_permalink(); ?> class="offers">
-
-                  <?php if (has_post_thumbnail()): ?>
-                    <div class="offers-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
-                  <?php else: ?>
-                    <div class="offers-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);">
-                  <?php endif; ?>
-                    <p><?php the_title(); ?></p>
-                    <div class="offers-overray"></div>
-                  </div>
-                </a>
-              <?php 
-              endforeach; 
-              wp_reset_postdata();
-              ?>
-              <div class="clear"></div>
-              <a class="more-link" href="/offer">もっと見る&nbsp;&gt;</a>
-              <div class="clear"></div>
-            </div>
-          </div>
 
           <div id="columns">
             <div class="container">

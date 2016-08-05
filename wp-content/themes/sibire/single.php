@@ -41,6 +41,17 @@ description: このファイルが基本フォーマットになる
                   <img class="post_image2" src="<?php the_field('offer_image2'); ?>" alt="">
                   <img class="post_image3" src="<?php the_field('offer_image3'); ?>" alt="">
                   <div class="post-information"><? $txt = get_field('offer_table'); if($txt){ ?><? echo $txt; ?> <? } ?></div>
+
+                  <?php
+                    $fields = get_field_objects($post_id);
+                    $dir_array = $fields["area"]["choices"];
+                    $check = get_field('area');
+                    if($check): //日本地図で拠点を表示 ?>
+                      <div class="area <?php foreach($check as $value): ?><?php echo $value; ?> <?php endforeach ?>">
+                        <b><?php foreach($check as $value): ?><?php echo $dir_array[$value]; ?><br /><?php endforeach ?></b>
+                      </div>
+                    <?php endif ?>
+
                 <?php endif; ?>
 
               </div>

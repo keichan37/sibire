@@ -15,23 +15,42 @@ description: 検索結果が表示されます
                     </a>&gt; 
                   </span>
                   <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                    <span itemprop="title"><?php the_search_query(); ?>で検索した結果</span>
+                    <span itemprop="title">検索結果</span>
                   </span>
                 </div>
-                <h2>"<?php the_search_query(); ?>"で検索した結果: <?php echo $wp_query->found_posts; ?>件</h2>
-                
+
+                <?php
+                  $searchCat = $_GET['cat'];
+                  $searctTag = $_GET['tag'];
+                 
+                  $searchCatObj = get_term_by( 'ID', $searchCat, 'category');
+                  $searchTagObj = get_term_by( 'slug', $searctTag, 'post_tag');
+                 
+                  $searchCatStr = $searchCatObj->name;
+                  $searchTagStr = $searchTagObj->name;
+                 
+                  $found_cnt = $wp_query->post_count;
+                ?>
+
+                <?php if ($searchCatObj) echo 'カテゴリー: '.$searchCatStr; ?>
+                <?php if ($searchTagObj) echo 'タグ: '.$searchTagStr; ?>
+                <h1 class="post-h1"><?php the_search_query(); ?>で検索した結果: <?php echo $wp_query->found_posts; ?>件</h1>
+                <div class="post-name">
+                </div>
                 <?php if(have_posts()) : ?>
-                  <ul class="">
+                  <ul class="cpt-ui-list">
                     <?php while(have_posts()):the_post() ?>
                       <li>
-                        <a href="<?php echo get_permalink(); ?>">
-                          <h3><?php the_title(); ?></h3>
-                          <div class="post"> 
-                            <?php if (has_post_thumbnail()) : ?>
-                              <p class="postThumbnail"><?php the_post_thumbnail(); ?></p>
-                            <?php endif; ?>
-                          </div>
-                          <?php the_excerpt(); ?>
+                        <a href=<?php echo get_permalink(); ?>>
+                          <?php if (has_post_thumbnail()): ?>
+                            <?php the_post_thumbnail(array(70, 70)); ?>
+                          <?php else: ?>
+                            <img width="70" height="70" src="<?php echo get_template_directory_uri(); ?>/images/no-image256.png" alt="画像はありません">
+                          <?php endif; ?>
+
+                            <?php get_template_part('tag'); //タグ ?>
+                            <h3><?php the_title(); ?></h3>
+                            <?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?>
                         </a>
                       </li>
                     <?php endwhile; ?>
@@ -41,6 +60,7 @@ description: 検索結果が表示されます
                     <p>申し訳ございません。<br />該当するページがございません。</p>
                   </div>
                 <?php endif; ?>
+                <?php echo $wp_query->found_posts; ?>件
               </div>
 
               <div id="sidebar">
