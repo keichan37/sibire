@@ -75,6 +75,15 @@ register_taxonomy_for_object_type('post_tag', 'page');
 }
 add_action('init', 'add_tag_to_page');
 
+// 検索結果から固定ページを除外
+function SearchFilter($query) {
+  if ( !is_admin() && $query->is_main_query() && $query->is_search() ) {
+    $query->set('post_type', array('recruit','interview','offer','column','event'));
+  }
+  return $query;
+}
+add_filter('pre_get_posts','SearchFilter');
+
 /* 通常の「投稿」をメニューから削除（今回は不使用のため） */
 function remove_menus () {
 global $menu;

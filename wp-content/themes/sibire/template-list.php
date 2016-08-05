@@ -16,6 +16,7 @@ description: 各投稿の一覧ページです
                     $category = get_the_category();
                     $cat_id   = $category[0]->cat_ID;
                     $cat_name = $category[0]->cat_name;
+                    $cat_name2 = $category[1]->cat_name;
                     $cat_slug = $category[0]->category_nicename;
                     $thumbnail_id = get_post_thumbnail_id();
                     $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
@@ -32,7 +33,7 @@ description: 各投稿の一覧ページです
                   <ul class="cpt-ui-list"> 
                     <?php
                     $args = array(
-                      'post_type' => array($cat_name),
+                      'post_type' => array($cat_name,$cat_name2),
                     );
                     $postslist = get_posts($args);
                     foreach ($postslist as $post) : setup_postdata($post);
@@ -52,9 +53,15 @@ description: 各投稿の一覧ページです
                     endforeach; 
                     wp_reset_postdata();
                     ?>
-                  <ul>
+                  </ul>
                   <div class="clear"></div>
-
+                  <div class="ce">
+                    <?php $numposts = $wpdb->get_var("SELECT count(*) FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = '$cat_name'");
+                    if (0 < $numposts)
+                      $numposts = number_format($numposts);
+                    echo '全'. $numposts .'件';
+                    ?>
+                  </div>
                 <?php endwhile; else: //投稿が存在しない場合 ?>
                   <p>記事がありません</p>
                 <?php endif; ?>
