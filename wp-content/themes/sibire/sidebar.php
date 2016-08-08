@@ -27,6 +27,7 @@ title: サイドバーの部分テンプレート
      'post_type' => array('recruit','interview','column','offer','event'),
      'posts_per_page'   => 10,
      'post_status' => 'publish',
+     'has_password' => false,
      'post__not_in'=> array(get_the_ID())
     );
     $postslist = get_posts($args);
