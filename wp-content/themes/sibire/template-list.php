@@ -33,6 +33,7 @@ description: 各投稿の一覧ページです
                   <ul class="cpt-ui-list"> 
                     <?php
                     $args = array(
+                      'posts_per_page' => -1,
                       'post_type' => array($cat_name,$cat_name2),
                       'post_status' => 'publish',
                       'has_password' => false,
