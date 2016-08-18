@@ -425,6 +425,13 @@ a.more-link:hover {
   float: left;
 }
 
+.abukawa {
+  width: 277px;
+  margin: 0px auto;
+  clear: both;
+}
+
+.abukawa a img,
 .toyota a img,
 .midori a img {
   -webkit-transition: 0.3s;
@@ -433,6 +440,7 @@ a.more-link:hover {
   transition: 0.3s;
 }
 
+.abukawa a:hover img,
 .toyota a:hover img,
 .midori a:hover img {
   top: -5px;
