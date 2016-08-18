@@ -16,5 +16,16 @@
     $(".wpcf7-mail-sent-ok").click(function() { 
       $(".wpcf7-mail-sent-ok").fadeOut(300)
     })
+
+    $('a[href^="#"]').click(function() {
+      var speed = 400;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+     });
+
   })
 }).call(this);
+

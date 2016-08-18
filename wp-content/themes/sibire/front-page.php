@@ -280,6 +280,11 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/images/midori.jpg" alt="COO 鈴木翠">
                   </a>
                 </div>
+                <div class="abukawa">
+                  <a href="/member#abukawa" class="member-link">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/abukawa.jpg" alt="虻川景">
+                  </a>
+                </div>
                 <div class="clear"></div>
               </div>
               <div class="balloon">
