@@ -36,7 +36,7 @@ description: このファイルが基本フォーマットになる
                   <p>記事がありません</p>
                 <?php endif; ?>
 
-                <?php if (( get_post_type() == 'offer')): //シビレる求人のみ表示 ?>
+                <?php if ( in_array(get_post_type(), array('offer','recruit')) ): //シビレる求人に表示 ?>
                   <img class="post_image1" src="<?php the_field('offer_image1'); ?>" alt="">
                   <img class="post_image2" src="<?php the_field('offer_image2'); ?>" alt="">
                   <img class="post_image3" src="<?php the_field('offer_image3'); ?>" alt="">
