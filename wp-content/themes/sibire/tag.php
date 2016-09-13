@@ -8,7 +8,7 @@ description:
         $posttags = get_the_tags();
         if ($posttags) {
           foreach($posttags as $tag) {
-            echo '<li>' . $tag->name . '</li>';
+            echo '<li class="icon-tag">' . $tag->name . '</li>';
           }
         }
       ?>
