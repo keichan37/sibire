@@ -99,4 +99,12 @@ add_action('admin_menu', 'remove_menus');
 /* 投稿画面用のcssを追加 */
 add_editor_style("editor.css");
 
+/* Google Map API */
+function my_acf_google_map_api( $api ){
+	$api['key'] = 'AIzaSyAC4maiLTsNgl8S0ueBDQEfaDjCJoxUEDc';
+	return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+
 ?>

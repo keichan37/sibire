@@ -1,0 +1,354 @@
+/*
+Description: リニューアル用やで
+*/
+
+#post .inner-padding {
+  padding: 0 10px;
+}
+
+#post h1.recruit-h1 {
+  font-size: 24px;
+  line-height: 1.4;
+  padding: 0;
+  clear: both;
+  position: absolute;
+  z-index: 2;
+  color: #ffffff;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  margin: auto;
+  text-shadow: 0 0 4px rgba(0,0,0,.8);
+}
+
+#post .recruit-area-relative {
+  position: relative;
+}
+
+#post .recruit-area-wrap {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+#post .recruit-area {
+  text-align: center;
+  font-size: 11px;
+  color: #49c6e8;
+  float: left;
+  margin: 0 5px;
+}
+
+#post .recruit-area .recruit-area-map {
+  width: 40px;
+  height: 40px;
+  margin: 0px auto;
+  background-image: url("../images/area/area-2x.png");
+  background-repeat: no-repeat;
+  background-size: 360px 40px;
+}
+
+#post .recruit-area .recruit-area-map.tohoku { background-position: -40px 0; }
+#post .recruit-area .recruit-area-map.hokuriku { background-position: -80px 0; }
+#post .recruit-area .recruit-area-map.kanto { background-position: -120px 0; }
+#post .recruit-area .recruit-area-map.toukai { background-position: -160px 0; }
+#post .recruit-area .recruit-area-map.kansai { background-position: -200px 0; }
+#post .recruit-area .recruit-area-map.chugoku { background-position: -240px 0; }
+#post .recruit-area .recruit-area-map.shikoku { background-position: -280px 0; }
+#post .recruit-area .recruit-area-map.kyushu { background-position: -320px 0; }
+
+#post .recruit-eyecatch-img-wrap {
+  position: relative;
+  text-align: center;
+  min-height: 170px;
+  background-color: #f7f7f7;
+  margin-top: 10px;
+}
+
+#post .recruit-eyecatch-img-wrap:after {
+  content: "";
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.5));
+}
+
+#post .recruit-eyecatch-img {
+  width: 100%;
+  height: auto;
+}
+
+#post .recruit-url,
+#post .recruit-date {
+  color: #49C6E8;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+#post .recruit-url a,
+#post .recruit-date span {
+  font-size: 12px;
+  color: #000000;
+}
+
+#post .recruit-date span {
+  font-weight: 700;
+}
+
+#post h2.recruit-name {
+  font-size: 18px;
+  margin: 0 0 0 0;
+  padding: 10px 10px 15px 10px;
+  border-bottom: 2px solid #333333;
+}
+
+#post .recruit-image {
+  position: relative;
+  width: 50%;
+  float: left;
+  height: 239px;
+  line-height: 239px;
+  text-align: center;
+  background-color: #f7f7f7;
+  z-index: 1;
+}
+
+#post .recruit-image:after {
+  content: "";
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, .4));
+  z-index: 2;
+}
+
+#post .recruit-image img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#post .recruit-image span {
+  text-align: left;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 5px 5px 5px;
+  text-shadow: 0 0 4px rgba(0,0,0,.8);
+  z-index: 3;
+}
+
+#post h3.recruit-h3 {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  margin: 30px 0 10px 0;
+}
+
+#post h3.recruit-h3:before {
+  border-top: 1px solid #49C6E8;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#post h3.recruit-h3 span {
+  background-color: white;
+  display: inline-block;
+  padding: 3px 10px;
+  position: relative;
+  z-index: 2;
+  background-color: #49C6E8;
+}
+
+#post .recruit-content {
+  margin-top: 20px;
+}
+
+#post .recruit-content h1 {
+  font-size: 20px;
+  margin: 40px 0 10px 0;
+}
+
+#post .recruit-content h2 {
+  font-size: 18px;
+  margin: 40px 0 10px 0;
+}
+
+#post .recruit-content h3 {
+  font-size: 18px;
+  margin: 0px 0 10px 0;
+  background-image: url("../images/recruit-h3.png");
+  background-repeat: repeat-x;
+  background-size: 44px 6px;
+  background-position: bottom;
+  padding: 0 0 10px 0;
+  margin: 20px 0 0 0;
+  padding-right: 15px;
+  display: inline-block;
+}
+
+#post .recruit-content h5 {
+  font-size: 15px;
+}
+
+#post .recruit-content p {
+  font-size: 14px;
+  line-height: 27px;
+}
+
+#post .recruit-table {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+#post .recruit-table tbody tr th {
+  background-color: #f7f7f7;
+  width: 70px;
+}
+
+#post .recruit-table tbody tr th,
+#post .recruit-table tbody tr td {
+  border: 1px solid #dddddd;
+  font-size: 13px;
+  padding: 15px;
+  text-align: left;
+}
+
+#post #sidebar .recruit-map {
+  margin-top: 10px;
+}
+
+#post #sidebar .recruit-map a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+#post #sidebar .recruit-map span {
+  font-size: 18px;
+  color: #49C6E8;
+  margin-right: 5px;
+}
+
+#post .recruit-job {
+  margin: 0 0 0 0;
+  padding: 13px 0 40px 0;
+}
+
+#post .recruit-job li {
+  list-style: none;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  width: 160px;
+  height: 21px;
+  margin: 0px auto;
+  line-height: 21px;
+  font-size: 13px;
+  padding: 0 10px;
+  margin-bottom: 8px;
+}
+
+#post .recruit-job li span {
+  position: relative;
+  font-size: 15px;
+  top: -2p;
+  margin-right: 3px;
+}
+
+#post a.recruit-registration {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #e2274b;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  border: 1px solid #e2274b;
+}
+
+#post a.recruit-registration:hover {
+  background-color: #d31c40;
+  text-shadow: 0 0 3px rgba(255,255,255,.4);
+}
+
+#post a.recruit-registration span {
+  position: absolute;
+  font-size: 18px;
+  left: 50%;
+  top: 50%;
+  margin: -9px 0 0 -70px;
+}
+
+#post .recruit-registration-window {
+  font-size: 13px;
+  text-align: center;
+  border: 1px solid #000000;
+  line-height: 18px;
+  padding: 5px 0;
+  width: 210px;
+  margin: 0px auto;
+  margin-top: 10px;
+  position: relative;
+}
+
+#post .recruit-registration-window b.caret {
+  position: absolute;
+  display: block;
+  height: 7px;
+  width: 12px;
+  background-image: url("../images/caret.png");
+  background-repeat: no-repeat;
+  background-size: 12px 7px;
+  left: 50%;
+  top: 0;
+  margin: -7px 0 0 -6px;
+}
+
+#post .recruit-sns {
+  background-color: #f7f7f7;
+  border: 1px solid #dddddd;
+  padding: 15px 10px;
+  margin: 20px 0 0 0;
+}
+
+#post .recruit-sns .hatena,
+#post .recruit-sns .facebook {
+  margin-right: 7px;
+}
+
+#post .recruit-sns .facebook {
+  width: 130px;
+}
+
+#post.post-recruit a:hover { text-decoration: none; }
+
+@media(max-width: 940px) {
+}
+
+@media(max-width: 768px) {
+}
+
+@media(max-width: 550px) {
+  #post .recruit-table tbody tr th {
+    width: 30px;
+  }
+} 
