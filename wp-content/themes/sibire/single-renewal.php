@@ -42,20 +42,22 @@
                       <h1 class="recruit-h1"><?php the_title(); ?></h1>
                     </div>
                     <span class="icon-globe recruit-url">
-                      <a href="http://www.sibire.co.jp" target="_blank">http://www.sibire.co.jp</a>
+                      <? $txt = get_field('company_url'); if($txt){ ?>
+                        <a href="<? echo $txt; ?>" target="_blank"><? echo $txt; ?></a>
+                      <? } ?>
                     </span>
                     <time class="entry-date icon-clock recruit-date" datetime="<?php the_time('c') ;?>">
                       <span><?php the_time('Y年n月j日') ;?></span>
                     </time>
                     <h3 class="recruit-h3"><span>会社の雰囲気</span></h3>
                     <div class="recruit-image-wrap">
-                      <?php $image = get_field('offer_image1'); if( !empty($image) ): ?>
+                      <?php $image = get_field('company_image1'); if( !empty($image) ): ?>
                         <div class="recruit-image">
                           <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
                           <span><?php echo $image['caption']; ?></span>
                         </div>
                       <?php endif; ?>
-                      <?php $image = get_field('offer_image2'); if( !empty($image) ): ?>
+                      <?php $image = get_field('company_image2'); if( !empty($image) ): ?>
                         <div class="recruit-image">
                           <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
                           <span><?php echo $image['caption']; ?></span>
