@@ -10,7 +10,8 @@
     r = 500,
     $(window).scroll(function() {
       return $("a.r-scroll-top").toggleClass("none", $(window).scrollTop() < r),
-      $("a.r-scroll-top").toggleClass("absolute", $(this).scrollTop() + $(this).height() > $("#footer").offset().top)
+      $("a.r-scroll-top").toggleClass("absolute", $(this).scrollTop() + $(this).height() > $("#footer").offset().top),
+      $(".r-fixed-box").toggleClass("fixed", $(window).scrollTop() > 588)
     })
 
     $(".wpcf7-mail-sent-ok").click(function() { 

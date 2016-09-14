@@ -177,6 +177,29 @@
               </div>
               <div id="sidebar">
 
+
+                <?php  $location = get_field('google_map'); if( !empty($location) ):?>
+                  <?php get_template_part('google_map');?>
+                  <h3 class="recruit-h3"><span>地図</span></h3>
+                  <div class="acf-map">
+                    <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+                  </div>
+                  <div class="recruit-map"><span class="icon-map"></span><a href="http://maps.google.com/maps?q=<?php echo $location['address']; ?>" target="_blank"><?php echo $location['address']; ?></a></div>
+                <?php endif; ?>
+                <h3 class="recruit-h3"><span>募集職種</span></h3>
+                <ul class="recruit-job">
+                  <?php
+                    $posttags = get_the_tags();
+                    if ($posttags) {
+                      foreach($posttags as $tag) {
+                        echo '<li><span class="icon-head"></span>' . $tag->name . '</li>';
+                      }
+                    }
+                  ?>
+                </ul>
+                <div class="fixed-box r-fixed-box">
+                  <a class="recruit-registration" href="/registration"><span class="icon-head"></span>登録する</a>
+                  <div class="recruit-registration-window"><b class="caret"></b>イベント情報や最新のお知らせを<br />優先的にご案内します。<span class="icon-mail"></span></div>
                 <div class="recruit-sns">
                   <div class="hatena">
                     <a href="http://b.hatena.ne.jp/entry/http://www.sibire.co.jp" class="hatena-bookmark-button" data-hatena-bookmark-title="シビレ株式会社" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
@@ -190,29 +213,7 @@
                   <div class="clear"></div>
                 </div>
                 <div class="clear"></div>
-
-                <?php  $location = get_field('google_map'); if( !empty($location) ):?>
-                  <?php get_template_part('google_map');?>
-                  <h3 class="recruit-h3"><span>地図</span></h3>
-                  <div class="acf-map">
-                    <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
-                  </div>
-                  <div class="recruit-map"><span class="icon-map"></span><a href="http://maps.google.com/maps?q=<?php echo $location['address']; ?>" target="_blank"><?php echo $location['address']; ?></a></div>
-                <?php endif; ?>
-
-                <h3 class="recruit-h3"><span>募集職種</span></h3>
-                <ul class="recruit-job">
-                  <?php
-                    $posttags = get_the_tags();
-                    if ($posttags) {
-                      foreach($posttags as $tag) {
-                        echo '<li><span class="icon-head"></span>' . $tag->name . '</li>';
-                      }
-                    }
-                  ?>
-                </ul>
-                <a class="recruit-registration" href="javascript:void(0);"><span class="icon-head"></span>登録する</a>
-                <div class="recruit-registration-window"><b class="caret"></b>イベント情報や最新のお知らせを<br />優先的にご案内します。<span class="icon-mail"></span></div>
+                </div>
               </div>
               <div class="clear"></div>
             </div>
