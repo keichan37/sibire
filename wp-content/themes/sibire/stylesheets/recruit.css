@@ -382,4 +382,9 @@ Description: リニューアル用やで
     height: 130px;
     line-height: 130px;
   }
+  #post .recruit-url,
+  #post .recruit-date {
+    float: none;
+    display: block;
+  }  
 } 
