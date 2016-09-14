@@ -104,6 +104,9 @@ Description: リニューアル用やで
   border-bottom: 2px solid #333333;
 }
 
+#post .recruit-image-wrap {
+}
+
 #post .recruit-image {
   position: relative;
   width: 50%;
@@ -271,7 +274,7 @@ Description: リニューアル用やで
 
 #post a.recruit-registration {
   display: block;
-  width: 100%;
+  max-width: 242px;
   height: 50px;
   border-radius: 3px;
   background-color: #e2274b;
@@ -282,7 +285,7 @@ Description: リニューアル用やで
   text-decoration: none;
   line-height: 50px;
   position: relative;
-  border: 1px solid #e2274b;
+  margin: 0px auto;
 }
 
 #post a.recruit-registration:hover {
@@ -304,10 +307,11 @@ Description: リニューアル用やで
   border: 1px solid #000000;
   line-height: 18px;
   padding: 5px 0;
-  width: 210px;
+  max-width: 210px;
   margin: 0px auto;
   margin-top: 10px;
   position: relative;
+  background-color: #ffffff;
 }
 
 #post .recruit-registration-window b.caret {
@@ -339,16 +343,43 @@ Description: リニューアル用やで
   width: 130px;
 }
 
+#post .fixed-box {
+}
+
+#post .fixed-box.fixed {
+  margin-top: 15px;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: 208px;
+  width: 262px;
+  -webkit-font-smoothing: antialiased;
+  z-index: 10;
+}
+
 #post.post-recruit a:hover { text-decoration: none; }
 
 @media(max-width: 940px) {
 }
 
 @media(max-width: 768px) {
+  #post .fixed-box.fixed {
+    position: relative;
+    margin: 0px auto;
+    padding: 0;
+    top: auto;
+    left: auto;
+    width: 262px;
+  }
 }
 
 @media(max-width: 550px) {
   #post .recruit-table tbody tr th {
     width: 30px;
+  }
+  #post .recruit-image {
+    height: 130px;
+    line-height: 130px;
   }
 } 
