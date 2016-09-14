@@ -9,7 +9,7 @@
     <div class="copy">&copy; 2016 sibire ,inc. All Rights Reserved.</div>
   </div>
 </footer>
-<a class="e-scroll-top r-scroll-top scroll-top none" href="javascript:void(0);">&uarr;</a>
+<a class="e-scroll-top r-scroll-top scroll-top none icon-arrow-up" href="javascript:void(0);"></a>
 <script>
   $(document).ready(function() {
     $(".owl-carousel").owlCarousel({
@@ -24,6 +24,20 @@
         0: { items: 1 },
         450: { items: 2 },
         768: { items: 3 }
+      }
+    });
+  });
+  $(document).ready(function() {
+    $(".other-recruit").owlCarousel({
+      loop: true,
+      nav: true,
+      dots: false,
+      navText: ["","" ],
+      items : 4,
+      responsive: {
+        0: { items: 1 },
+        450: { items: 3 },
+        768: { items: 4 }
       }
     });
   });
