@@ -33,6 +33,7 @@ Description: リニューアル用やで
   position: absolute;
   right: 0;
   top: 50%;
+  z-index: 2;
 }
 
 #post .recruit-area {
@@ -118,7 +119,6 @@ Description: リニューアル用やで
   height: 239px;
   line-height: 239px;
   text-align: center;
-  background-color: #f7f7f7;
   z-index: 1;
 }
 
@@ -254,19 +254,26 @@ Description: リニューアル用やで
 #post .recruit-job {
   margin: 0 0 0 0;
   padding: 13px 0 40px 0;
+  text-align: center;
 }
 
 #post .recruit-job li {
   list-style: none;
+}
+
+#post .recruit-job li .recruit-tag {
+  list-style: none;
   border: 1px solid #000000;
   border-radius: 2px;
-  width: 160px;
-  height: 21px;
+  width: auto;
+  min-height: 15px;
   margin: 0px auto;
-  line-height: 21px;
+  line-height: 15px;
   font-size: 13px;
-  padding: 0 10px;
+  padding: 3px 10px;
   margin-bottom: 8px;
+  display: inline-block;
+  text-align: left;
 }
 
 #post .recruit-job li span {
@@ -462,6 +469,12 @@ Description: リニューアル用やで
 }
 
 @media(max-width: 768px) {
+  #post .recruit-area-wrap {
+    top: auto;
+    bottom: 0;
+    margin: 0 20px -130px 0;
+    background-color: rgba(255,255,255,.7);
+  }
   #post .fixed-box.fixed.absolute,
   #post .fixed-box.fixed {
     position: relative;
