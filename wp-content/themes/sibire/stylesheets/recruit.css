@@ -219,6 +219,7 @@ Description: リニューアル用やで
 
 #post .recruit-table {
   border-collapse: collapse;
+  width: 100%;
 }
 
 #post .recruit-table tbody tr th {
@@ -375,7 +376,6 @@ Description: リニューアル用やで
 }
 
 #post h3.other-title {
-  border-top: 1px solid #dddddd;
   margin: 0 0 15px 10px;
   padding: 3px 10px;
   background-color: #49C6E8;
