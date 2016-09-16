@@ -206,6 +206,7 @@
                         }
                       ?>
                     </ul>
+                    <div class="e-fixed-box"></div>
                     <div class="fixed-box r-fixed-box">
                       <a class="recruit-registration" href="/registration"><span class="icon-head"></span>登録する</a>
                       <div class="recruit-registration-window"><b class="caret"></b>イベント情報や最新のお知らせを<br />優先的にご案内します。<span class="icon-mail"></span></div>
