@@ -1,3 +1,6 @@
+<div class="scroll-top-wrap">
+  <a class="e-scroll-top r-scroll-top scroll-top none icon-arrow-up" href="javascript:void(0);"></a>
+</div>
 <footer id="footer">
   <div class="container">
     <div class="footer-inner">
@@ -9,7 +12,6 @@
     <div class="copy">&copy; 2016 sibire ,inc. All Rights Reserved.</div>
   </div>
 </footer>
-<a class="e-scroll-top r-scroll-top scroll-top none icon-arrow-up" href="javascript:void(0);"></a>
 <script>
   $(document).ready(function() {
     $(".owl-carousel").owlCarousel({

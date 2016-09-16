@@ -713,6 +713,10 @@ ul.relation li .tag {
 }
 
 
+.scroll-top-wrap {
+  position: relative;
+}
+
 a.scroll-top {
   display: block;
   position: fixed;
@@ -737,7 +741,6 @@ a.scroll-top.none { display: none; }
 
 a.scroll-top.absolute {
   position: absolute;
-  margin-bottom: 165px;
 }
 
 a.scroll-top:hover {
