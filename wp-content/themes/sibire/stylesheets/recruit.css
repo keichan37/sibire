@@ -109,9 +109,6 @@ Description: リニューアル用やで
   border-bottom: 2px solid #333333;
 }
 
-#post .recruit-image-wrap {
-}
-
 #post .recruit-image {
   position: relative;
   width: 50%;
@@ -255,7 +252,7 @@ Description: リニューアル用やで
 #post .recruit-job {
   margin: 0 0 0 0;
   padding: 13px 0 40px 0;
-  text-align: center;
+  text-align: left;
 }
 
 #post .recruit-job li {
