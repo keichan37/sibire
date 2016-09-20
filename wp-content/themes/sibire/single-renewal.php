@@ -46,14 +46,16 @@
                           <?php endif; ?>
                           <h1 class="recruit-h1"><?php the_title(); ?></h1>
                         </div>
-                        <span class="icon-globe recruit-url">
-                          <? $txt = get_field('company_url'); if($txt){ ?>
-                            <a href="<? echo $txt; ?>" target="_blank"><? echo $txt; ?></a>
-                          <? } ?>
-                        </span>
-                        <time class="entry-date icon-clock recruit-date" datetime="<?php the_time('c') ;?>">
-                          <span><?php the_time('Y年n月j日') ;?></span>
-                        </time>
+                        <div class="e-fixed-title">
+                          <span class="icon-globe recruit-url">
+                            <? $txt = get_field('company_url'); if($txt){ ?>
+                              <a href="<? echo $txt; ?>" target="_blank"><? echo $txt; ?></a>
+                            <? } ?>
+                          </span>
+                          <time class="entry-date icon-clock recruit-date" datetime="<?php the_time('c') ;?>">
+                            <span><?php the_time('Y年n月j日') ;?></span>
+                          </time>
+                        </div>
                         <h3 class="recruit-h3"><span>会社の雰囲気</span></h3>
                         <div class="recruit-image-wrap">
                           <?php $image = get_field('company_image1'); if( !empty($image) ): ?>
