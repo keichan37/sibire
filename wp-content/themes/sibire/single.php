@@ -62,12 +62,16 @@ description: このファイルが基本フォーマットになる
             </div>
           </div>
         </div>
-        <div class="registration">
-          <a href="/registration" class="registration-button">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/registration-text-2x.png" alt="登録する" class="registration-button-text">
-          </a>
-          <p>イベント情報や最新のお知らせを優先的にご案内します。</p>
-        </div>
+        
+        <?php if ( in_array(get_post_type(), array('event')) ): //イベントで非表示 ?>
+        <?php else: ?>
+          <div class="registration">
+            <a href="/registration" class="registration-button">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/registration-text-2x.png" alt="登録する" class="registration-button-text">
+            </a>
+            <p>イベント情報や最新のお知らせを優先的にご案内します。</p>
+          </div>
+        <?php endif; ?>
         <?php get_footer(); //フッター ?>
     </div>
   </body>

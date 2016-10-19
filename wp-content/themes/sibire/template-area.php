@@ -14,492 +14,116 @@
                   <? $txt = get_field('subtitle'); if($txt){ ?><? echo $txt; ?> <? } ?>
                 </div>
 
-                <div class="area-wrap" id="area-wrap">
-                  <ul>
-                    <!-- 北海道 -->
-                    <?php
-                      $args = array(
-                           'post_type' => array('recruit','offer'),
-                           'meta_key' => 'area',
-                           'meta_value' => 'hokkaido',
-                           'meta_compare'=>'LIKE'
-                      ); ?>
-                    <?php query_posts( $args ); ?>
-                      <?php if (have_posts()) : ?>
-                        <li class="hokkaido">
-                          <a href="#hokkaido" class="scroll">北海道</a>
-                        </li>
-                      <?php endif; ?>
-                    <?php wp_reset_query();?>
+                <div class="inner-padding inner-margin">
 
-                    <!-- 東北 -->
-                    <?php
-                      $args = array(
-                           'post_type' => array('recruit','offer'),
-                           'meta_key' => 'area',
-                           'meta_value' => 'tohoku',
-                           'meta_compare'=>'LIKE'
-                      ); ?>
-                    <?php query_posts( $args ); ?>
-                      <?php if (have_posts()) : ?>
-                        <li class="tohoku">
-                          <a href="#tohoku" class="scroll">東北</a>
-                        </li>
-                      <?php endif; ?>
-                    <?php wp_reset_query();?>
+                  <!-- partials/area-list.phpに引数を渡して出力 -->
+                  <?php
+                    $area_name = 'hokkaido';
+                    $area_title = '北海道';
+                    get_template_part('partials/area','list');
+                  ?>
+                  <?php
+                    $area_name = 'tohoku';
+                    $area_title = '東北';
+                    get_template_part('partials/area','list');
+                  ?>
+                  <?php
+                    $area_name = 'kanto';
+                    $area_title = '関東';
+                    get_template_part('partials/area','list');
+                  ?>
+                  <?php
+                    $area_name = 'hokuriku';
+                    $area_title = '北陸・甲信越';
+                    get_template_part('partials/area','list');
+                  ?>
+                  <?php
+                    $area_name = 'tokai';
+                    $area_title = '東海';
+                    get_template_part('partials/area','list');
+                  ?>
+                  <?php
+                    $area_name = 'kansai';
+                    $area_title = '関西';
+                    get_template_part('partials/area','list');
+                  ?>
+                  <?php
+                    $area_name = 'chugoku';
+                    $area_title = '中国';
+                    get_template_part('partials/area','list');
+                  ?>
+                  <?php
+                    $area_name = 'shikoku';
+                    $area_title = '四国';
+                    get_template_part('partials/area','list');
+                  ?>
+                  <?php
+                    $area_name = 'kyushu';
+                    $area_title = '九州・沖縄';
+                    get_template_part('partials/area','list');
+                  ?>
 
-                    <!-- 関東 -->
-                    <?php
-                      $args = array(
-                           'post_type' => array('recruit','offer'),
-                           'meta_key' => 'area',
-                           'meta_value' => 'kanto',
-                           'meta_compare'=>'LIKE'
-                      ); ?>
-                    <?php query_posts( $args ); ?>
-                      <?php if (have_posts()) : ?>
-                        <li class="kanto">
-                          <a href="#kanto" class="scroll">関東</a>
-                        </li>
-                      <?php endif; ?>
-                    <?php wp_reset_query();?>
-
-                    <!-- 北陸・甲信越 -->
-                    <?php
-                      $args = array(
-                           'post_type' => array('recruit','offer'),
-                           'meta_key' => 'area',
-                           'meta_value' => 'hokuriku',
-                           'meta_compare'=>'LIKE'
-                      ); ?>
-                    <?php query_posts( $args ); ?>
-                      <?php if (have_posts()) : ?>
-                        <li class="hokuriku">
-                          <a href="#hokuriku" class="scroll">北陸・甲信越</a>
-                        </li>
-                      <?php endif; ?>
-                    <?php wp_reset_query();?>
-
-                    <!-- 東海 -->
-                    <?php
-                      $args = array(
-                           'post_type' => array('recruit','offer'),
-                           'meta_key' => 'area',
-                           'meta_value' => 'toukai',
-                           'meta_compare'=>'LIKE'
-                      ); ?>
-                    <?php query_posts( $args ); ?>
-                      <?php if (have_posts()) : ?>
-                        <li class="toukai">
-                          <a href="#toukai" class="scroll">東海</a>
-                        </li>
-                      <?php endif; ?>
-                    <?php wp_reset_query();?>
-
-                    <!-- 関西 -->
-                    <?php
-                      $args = array(
-                           'post_type' => array('recruit','offer'),
-                           'meta_key' => 'area',
-                           'meta_value' => 'kansai',
-                           'meta_compare'=>'LIKE'
-                      ); ?>
-                    <?php query_posts( $args ); ?>
-                      <?php if (have_posts()) : ?>
-                        <li class="kansai">
-                          <a href="#kansai" class="scroll">関西</a>
-                        </li>
-                      <?php endif; ?>
-                    <?php wp_reset_query();?>
-
-                    <!-- 中国 -->
-                    <?php
-                      $args = array(
-                           'post_type' => array('recruit','offer'),
-                           'meta_key' => 'area',
-                           'meta_value' => 'chugoku',
-                           'meta_compare'=>'LIKE'
-                      ); ?>
-                    <?php query_posts( $args ); ?>
-                      <?php if (have_posts()) : ?>
-                        <li class="chugoku">
-                          <a href="#chugoku" class="scroll">中国</a>
-                        </li>
-                      <?php endif; ?>
-                    <?php wp_reset_query();?>
-
-                    <!-- 四国 -->
-                    <?php
-                      $args = array(
-                           'post_type' => array('recruit','offer'),
-                           'meta_key' => 'area',
-                           'meta_value' => 'shikoku',
-                           'meta_compare'=>'LIKE'
-                      ); ?>
-                    <?php query_posts( $args ); ?>
-                      <?php if (have_posts()) : ?>
-                        <li class="shikoku">
-                          <a href="#shikoku" class="scroll">四国</a>
-                        </li>
-                      <?php endif; ?>
-                    <?php wp_reset_query();?>
-
-                    <!-- 九州・沖縄 -->
-                    <?php
-                      $args = array(
-                           'post_type' => array('recruit','offer'),
-                           'meta_key' => 'area',
-                           'meta_value' => 'kyushu',
-                           'meta_compare'=>'LIKE'
-                      ); ?>
-                    <?php query_posts( $args ); ?>
-                      <?php if (have_posts()) : ?>
-                        <li class="kyushu">
-                          <a href="#kyushu" class="scroll">九州・沖縄</a>
-                        </li>
-                      <?php endif; ?>
-                    <?php wp_reset_query();?>
-
-                  </ul>
                 </div>
-
-                <div class="area">
-                <!-- 北海道 -->
-                <?php
-                  $args = array(/* 配列（$args）に複数の引数を追加 */
-                       'posts_per_page' => -1,
-                       'post_type' => array('recruit','offer'),
-                       'meta_key' => 'area', /* カスタムフィールドキー（meta_key） */
-                       'meta_value' => 'hokkaido', /* カスタムフィールド値（meta_value)  */
-                       'meta_compare'=>'LIKE'
-                  ); ?>
-
-                <?php query_posts( $args ); ?><!-- メインの WordPress ループを変更するタグ -->
-
-                  <?php if (have_posts()) : ?>
-                    <a class="scroll-map" href="#area-wrap">エリア選択に戻る</a>
-                    <h2 id="hokkaido">北海道</h2>
-                    <ul class="cpt-ui-list"> 
-                    <?php while (have_posts()) : the_post(); ?>
-                      <li>
-                        <a href="<?php the_permalink(); ?>">
-
-                            <?php if (has_post_thumbnail()): ?>
-                              <?php the_post_thumbnail(array(70, 70)); ?>
-                            <?php endif; ?>
-
-                              <?php get_template_part('tag'); //タグ ?>
-                              <h3><?php the_title(); ?></h3>
-                              <?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?>
-
-                        </a>
-                      </li>
-                    <?php endwhile; ?>     
-                    </ul>
-                  <?php endif; ?>
-                <?php wp_reset_query();?>
-                </div>
-
-                <div class="area">
-                <!-- 東北 -->
-                <?php
-                  $args = array(/* 配列（$args）に複数の引数を追加 */
-                       'posts_per_page' => -1,
-                       'post_type' => array('recruit','offer'),
-                       'meta_key' => 'area', /* カスタムフィールドキー（meta_key） */
-                       'meta_value' => 'tohoku', /* カスタムフィールド値（meta_value)  */
-                       'meta_compare'=>'LIKE'
-                  ); ?>
-
-                <?php query_posts( $args ); ?><!-- メインの WordPress ループを変更するタグ -->
-
-                  <?php if (have_posts()) : ?>
-                    <a class="scroll-map" href="#area-wrap">エリア選択に戻る</a>
-                    <h2 id="tohoku">東北</h2>
-                    <ul class="cpt-ui-list"> 
-                    <?php while (have_posts()) : the_post(); ?>
-                      <li>
-                        <a href="<?php the_permalink(); ?>">
-
-                            <?php if (has_post_thumbnail()): ?>
-                              <?php the_post_thumbnail(array(70, 70)); ?>
-                            <?php endif; ?>
-
-                              <?php get_template_part('tag'); //タグ ?>
-                              <h3><?php the_title(); ?></h3>
-                              <?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?>
-
-                        </a>
-                      </li>
-                    <?php endwhile; ?>     
-                    </ul>
-                  <?php endif; ?>
-                <?php wp_reset_query();?>
-                </div>
-
-                <div class="area">
-                <!-- 関東 -->
-                <?php
-                  $args = array(/* 配列（$args）に複数の引数を追加 */
-                       'posts_per_page' => -1,
-                       'post_type' => array('recruit','offer'),
-                       'meta_key' => 'area', /* カスタムフィールドキー（meta_key） */
-                       'meta_value' => 'kanto', /* カスタムフィールド値（meta_value)  */
-                       'meta_compare'=>'LIKE'
-                  ); ?>
-
-                <?php query_posts( $args ); ?><!-- メインの WordPress ループを変更するタグ -->
-
-                  <?php if (have_posts()) : ?>
-                    <a class="scroll-map" href="#area-wrap">エリア選択に戻る</a>
-                    <h2 id="kanto">関東</h2>
-                    <ul class="cpt-ui-list"> 
-                    <?php while (have_posts()) : the_post(); ?>
-                      <li>
-                        <a href="<?php the_permalink(); ?>">
-
-                            <?php if (has_post_thumbnail()): ?>
-                              <?php the_post_thumbnail(array(70, 70)); ?>
-                            <?php endif; ?>
-
-                              <?php get_template_part('tag'); //タグ ?>
-                              <h3><?php the_title(); ?></h3>
-                              <?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?>
-
-                        </a>
-                      </li>
-                    <?php endwhile; ?>     
-                    </ul>
-                  <?php endif; ?>
-                <?php wp_reset_query();?>
-                </div>
-
-                <div class="area">
-                <!-- 北陸・甲信越 -->
-                <?php
-                  $args = array(/* 配列（$args）に複数の引数を追加 */
-                       'posts_per_page' => -1,
-                       'post_type' => array('recruit','offer'),
-                       'meta_key' => 'area', /* カスタムフィールドキー（meta_key） */
-                       'meta_value' => 'hokuriku', /* カスタムフィールド値（meta_value)  */
-                       'meta_compare'=>'LIKE'
-                  ); ?>
-
-                <?php query_posts( $args ); ?><!-- メインの WordPress ループを変更するタグ -->
-
-                  <?php if (have_posts()) : ?>
-                    <a class="scroll-map" href="#area-wrap">エリア選択に戻る</a>
-                    <h2 id="hokuriku">北陸・甲信越</h2>
-                    <ul class="cpt-ui-list"> 
-                    <?php while (have_posts()) : the_post(); ?>
-                      <li>
-                        <a href="<?php the_permalink(); ?>">
-
-                            <?php if (has_post_thumbnail()): ?>
-                              <?php the_post_thumbnail(array(70, 70)); ?>
-                            <?php endif; ?>
-
-                              <?php get_template_part('tag'); //タグ ?>
-                              <h3><?php the_title(); ?></h3>
-                              <?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?>
-
-                        </a>
-                      </li>
-                    <?php endwhile; ?>     
-                    </ul>
-                  <?php endif; ?>
-                <?php wp_reset_query();?>
-                </div>
-
-                <div class="area">
-                <!-- 東海 -->
-                <?php
-                  $args = array(/* 配列（$args）に複数の引数を追加 */
-                       'posts_per_page' => -1,
-                       'post_type' => array('recruit','offer'),
-                       'meta_key' => 'area', /* カスタムフィールドキー（meta_key） */
-                       'meta_value' => 'toukai', /* カスタムフィールド値（meta_value)  */
-                       'meta_compare'=>'LIKE'
-                  ); ?>
-
-                <?php query_posts( $args ); ?><!-- メインの WordPress ループを変更するタグ -->
-
-                  <?php if (have_posts()) : ?>
-                    <a class="scroll-map" href="#area-wrap">エリア選択に戻る</a>
-                    <h2 id="toukai">東海</h2>
-                    <ul class="cpt-ui-list"> 
-                    <?php while (have_posts()) : the_post(); ?>
-                      <li>
-                        <a href="<?php the_permalink(); ?>">
-
-                            <?php if (has_post_thumbnail()): ?>
-                              <?php the_post_thumbnail(array(70, 70)); ?>
-                            <?php endif; ?>
-
-                              <?php get_template_part('tag'); //タグ ?>
-                              <h3><?php the_title(); ?></h3>
-                              <?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?>
-
-                        </a>
-                      </li>
-                    <?php endwhile; ?>     
-                    </ul>
-                  <?php endif; ?>
-                <?php wp_reset_query();?>
-                </div>
-
-                <div class="area">
-                <!-- 関西 -->
-                <?php
-                  $args = array(/* 配列（$args）に複数の引数を追加 */
-                       'posts_per_page' => -1,
-                       'post_type' => array('recruit','offer'),
-                       'meta_key' => 'area', /* カスタムフィールドキー（meta_key） */
-                       'meta_value' => 'kansai', /* カスタムフィールド値（meta_value)  */
-                       'meta_compare'=>'LIKE'
-                  ); ?>
-
-                <?php query_posts( $args ); ?><!-- メインの WordPress ループを変更するタグ -->
-
-                  <?php if (have_posts()) : ?>
-                    <a class="scroll-map" href="#area-wrap">エリア選択に戻る</a>
-                    <h2 id="kansai">関西</h2>
-                    <ul class="cpt-ui-list"> 
-                    <?php while (have_posts()) : the_post(); ?>
-                      <li>
-                        <a href="<?php the_permalink(); ?>">
-
-                            <?php if (has_post_thumbnail()): ?>
-                              <?php the_post_thumbnail(array(70, 70)); ?>
-                            <?php endif; ?>
-
-                              <?php get_template_part('tag'); //タグ ?>
-                              <h3><?php the_title(); ?></h3>
-                              <?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?>
-
-                        </a>
-                      </li>
-                    <?php endwhile; ?>     
-                    </ul>
-                  <?php endif; ?>
-                <?php wp_reset_query();?>
-                </div>
-
-                <div class="area">
-                <!-- 中国 -->
-                <?php
-                  $args = array(/* 配列（$args）に複数の引数を追加 */
-                       'posts_per_page' => -1,
-                       'post_type' => array('recruit','offer'),
-                       'meta_key' => 'area', /* カスタムフィールドキー（meta_key） */
-                       'meta_value' => 'chugoku', /* カスタムフィールド値（meta_value)  */
-                       'meta_compare'=>'LIKE'
-                  ); ?>
-
-                <?php query_posts( $args ); ?><!-- メインの WordPress ループを変更するタグ -->
-
-                  <?php if (have_posts()) : ?>
-                    <a class="scroll-map" href="#area-wrap">エリア選択に戻る</a>
-                    <h2 id="chugoku">中国</h2>
-                    <ul class="cpt-ui-list"> 
-                    <?php while (have_posts()) : the_post(); ?>
-                      <li>
-                        <a href="<?php the_permalink(); ?>">
-
-                            <?php if (has_post_thumbnail()): ?>
-                              <?php the_post_thumbnail(array(70, 70)); ?>
-                            <?php endif; ?>
-
-                              <?php get_template_part('tag'); //タグ ?>
-                              <h3><?php the_title(); ?></h3>
-                              <?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?>
-
-                        </a>
-                      </li>
-                    <?php endwhile; ?>     
-                    </ul>
-                  <?php endif; ?>
-                <?php wp_reset_query();?>
-                </div>
-
-                <div class="area">
-                <!-- 四国 -->
-                <?php
-                  $args = array(/* 配列（$args）に複数の引数を追加 */
-                       'posts_per_page' => -1,
-                       'post_type' => array('recruit','offer'),
-                       'meta_key' => 'area', /* カスタムフィールドキー（meta_key） */
-                       'meta_value' => 'shikoku', /* カスタムフィールド値（meta_value)  */
-                       'meta_compare'=>'LIKE'
-                  ); ?>
-
-                <?php query_posts( $args ); ?><!-- メインの WordPress ループを変更するタグ -->
-
-                  <?php if (have_posts()) : ?>
-                    <a class="scroll-map" href="#area-wrap">エリア選択に戻る</a>
-                    <h2 id="shikoku">四国</h2>
-                    <ul class="cpt-ui-list"> 
-                    <?php while (have_posts()) : the_post(); ?>
-                      <li>
-                        <a href="<?php the_permalink(); ?>">
-
-                            <?php if (has_post_thumbnail()): ?>
-                              <?php the_post_thumbnail(array(70, 70)); ?>
-                            <?php endif; ?>
-
-                              <?php get_template_part('tag'); //タグ ?>
-                              <h3><?php the_title(); ?></h3>
-                              <?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?>
-
-                        </a>
-                      </li>
-                    <?php endwhile; ?>     
-                    </ul>
-                  <?php endif; ?>
-                <?php wp_reset_query();?>
-                </div>
-
-                <div class="area">
-                <!-- 九州・沖縄 -->
-                <?php
-                  $args = array(/* 配列（$args）に複数の引数を追加 */
-                       'posts_per_page' => -1,
-                       'post_type' => array('recruit','offer'),
-                       'meta_key' => 'area', /* カスタムフィールドキー（meta_key） */
-                       'meta_value' => 'kyushu', /* カスタムフィールド値（meta_value)  */
-                       'meta_compare'=>'LIKE'
-                  ); ?>
-
-                <?php query_posts( $args ); ?><!-- メインの WordPress ループを変更するタグ -->
-
-                  <?php if (have_posts()) : ?>
-                    <a class="scroll-map" href="#area-wrap">エリア選択に戻る</a>
-                    <h2 id="kyushu">九州・沖縄</h2>
-                    <ul class="cpt-ui-list"> 
-                    <?php while (have_posts()) : the_post(); ?>
-                      <li>
-                        <a href="<?php the_permalink(); ?>">
-
-                            <?php if (has_post_thumbnail()): ?>
-                              <?php the_post_thumbnail(array(70, 70)); ?>
-                            <?php endif; ?>
-
-                              <?php get_template_part('tag'); //タグ ?>
-                              <h3><?php the_title(); ?></h3>
-                              <?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?>
-
-                        </a>
-                      </li>
-                    <?php endwhile; ?>     
-                    </ul>
-                  <?php endif; ?>
-                <?php wp_reset_query();?>
-                </div>
-
               </div>
 
               <div id="sidebar">
-                <?php get_template_part('sidebar'); //サイドバー ?>
+                <div class="e-fixed-box"></div>
+                <div class="fixed-box r-fixed-box">
+                  <div class="area-map-wrap" id="area-map-wrap">
+                    <ul>
+                      <!-- partials/area-map.phpに引数を渡して出力 -->
+                      <?php
+                        $area_name = 'hokkaido';
+                        $area_title = '北海道';
+                        get_template_part('partials/area','map');
+                      ?>
+                      <?php
+                        $area_name = 'tohoku';
+                        $area_title = '東北';
+                        get_template_part('partials/area','map');
+                      ?>
+                      <?php
+                        $area_name = 'kanto';
+                        $area_title = '関東';
+                        get_template_part('partials/area','map');
+                      ?>
+                      <?php
+                        $area_name = 'hokuriku';
+                        $area_title = '北陸・甲信越';
+                        get_template_part('partials/area','map');
+                      ?>
+                      <?php
+                        $area_name = 'tokai';
+                        $area_title = '東海';
+                        get_template_part('partials/area','map');
+                      ?>
+                      <?php
+                        $area_name = 'kansai';
+                        $area_title = '関西';
+                        get_template_part('partials/area','map');
+                      ?>
+                      <?php
+                        $area_name = 'chugoku';
+                        $area_title = '中国';
+                        get_template_part('partials/area','map');
+                      ?>
+                      <?php
+                        $area_name = 'shikoku';
+                        $area_title = '四国';
+                        get_template_part('partials/area','map');
+                      ?>
+                      <?php
+                        $area_name = 'kyushu';
+                        $area_title = '九州・沖縄';
+                        get_template_part('partials/area','map');
+                      ?>
+
+                    </ul>
+                  </div>
+
+                  <a class="recruit-registration" href="/registration"><span class="icon-head"></span>登録する</a>
+                  <div class="recruit-registration-window"><b class="caret"></b>イベント情報や最新のお知らせを<br />優先的にご案内します。<span class="icon-mail"></span></div>
+                </div>
               </div>
               <div class="clear"></div>
             </div>

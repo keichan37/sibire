@@ -10,9 +10,7 @@
     r = 500,
     $(window).scroll(function() {
       return $("a.r-scroll-top").toggleClass("none", $(window).scrollTop() < r),
-      $("a.r-scroll-top").toggleClass("absolute", $(this).scrollTop() + $(this).height() > $("#footer").offset().top),
-      $(".r-fixed-box").toggleClass("fixed", $(this).scrollTop() + 30 > $(".e-fixed-box").offset().top),
-      $(".r-fixed-box").toggleClass("absolute", $(this).scrollTop() + $(this).height() - 438 > $("#other-lists").offset().top)
+      $("a.r-scroll-top").toggleClass("absolute", $(this).scrollTop() + $(this).height() > $("#footer").offset().top)
     })
 
     $(".wpcf7-mail-sent-ok").click(function() { 

@@ -55,7 +55,6 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/profile.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/post.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/recruit.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/area.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/form.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/feather.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/owl.carousel.css" type="text/css" media="all" />
@@ -73,6 +72,12 @@
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/jquery.js"></script>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/app.js"></script>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/owl.carousel.min.js"></script>
+    <?php if ( in_array(get_post_type(), array('offer','recruit')) ): //シビレる求人に表示 ?>
+      <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/recruit.js"></script>
+    <?php elseif (is_page_template('template-area.php')) :?>
+      <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/area.css" type="text/css" media="all" />
+      <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/area.js"></script>
+    <?php endif; ?>
   
   </head>
   <body>
