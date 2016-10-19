@@ -4,137 +4,185 @@ Description: エリア絞り込み用
 
 .area-wrap {
   position: relative;
-  text-align: center;
-  height: 350px;
-  margin: 0px auto;
-  margin-top: 15px;
-  padding: 0 0 20px 0;
-  background-image: url("../images/area/area.png");
-  background-color: rgb(175,210,235);
-  background-size: 400px 350px;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
-.area-wrap ul {
-  margin: 0;
-  padding: 0;
+#post .inner-margin {
+  margin-top: 30px;
 }
 
-.area-wrap ul li {
-  list-style: none;
-  text-align: left;
-}
-
-.area-wrap ul li a {
-  display: block;
-  font-size: 16px;
-  width: auto;
-  border: 4px solid #333333;
-  padding: 3px 8px;
-  background-color: rgba(255,255,255,1);
-}
-
-.area-wrap ul li a:hover {
-  text-decoration: none;
-}
-
-.area-wrap ul li.hokkaido {
-  position: absolute;
-  right: 50%;
-  top: 0;
-  margin: 30px -80px 0 0;
-}
-
-.area-wrap ul li.tohoku {
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  margin: -50px -210px 0 0;
-}
-
-.area-wrap ul li.kanto {
-  position: absolute;
-  right: 50%;
-  bottom: 0;
-  margin: 0 -215px 100px 0;
-}
-
-.area-wrap ul li.hokuriku {
-  position: absolute;
-  left: 50%;
-  bottom: 50%;
-  margin: 0 0 10px 0px;
-}
-
-.area-wrap ul li.toukai {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  margin: 0 0 35px 30px;
-}
-
-.area-wrap ul li.kansai {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: 0 0 20px -70px;
-}
-
-.area-wrap ul li.chugoku {
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  margin: 0 80px 0 0;
-}
-
-.area-wrap ul li.shikoku {
-  position: absolute;
-  right: 50%;
-  bottom: 0;
-  margin: 0 40px 10px 0;
-}
-
-.area-wrap ul li.kyushu {
-  position: absolute;
-  right: 50%;
-  bottom: 0;
-  margin: 0 180px 30px 0;
-}
-
-.area {
+#post .area {
   position: relative;
 }
 
-.scroll-map {
+#post h2.area-h2 {
+  background-color: #49c6e8;
+  background-image: url("../images/area/area-white-2x.png");
+  background-repeat: no-repeat;
+  background-size: 30px 270px;
+  background-position: 250px 0px;
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  height: 30px;
+  margin: 0;
+  width: 100%;
+  max-width: 638px;
+  z-index: 11;
+}
+
+#post h2.area-h2.are-h2-tohoku    { background-position: 260px -30px;  }
+#post h2.area-h2.area-h2-hokuriku { background-position: 260px -60px;  }
+#post h2.area-h2.area-h2-kanto    { background-position: 260px -90px;  }
+#post h2.area-h2.area-h2-tokai    { background-position: 260px -120px;  }
+#post h2.area-h2.area-h2-kansai   { background-position: 260px -150px;  }
+#post h2.area-h2.area-h2-chugoku  { background-position: 260px -180px;  }
+#post h2.area-h2.area-h2-shikoku  { background-position: 260px -210px;  }
+#post h2.area-h2.area-h2-kyushu   { background-position: 235px -240px;  }
+
+#post h2.area-h2.fixed {
+  position: fixed;
+  top: 0;
+  height: 30px;
+  z-index: 10;
+  background-color: rgba(73,198,232,0.9);
+}
+
+#post h2.area-h2.fixed:after {
+  content: "";
+  background-image: url("../images/area/area-shadow.png");
+  height: 10px;
+  width: 100%;
+  display: block;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -10px;
   position: absolute;
+}
+
+#post h2.area-h2.fixed.absolute {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  margin-bottom: 0px;
+}
+
+.r-fixed-padding.padding {
+  padding-top: 30px; 
+}
+
+#post ul.area-ul {
+  padding: 0 0 30px 0;
+  margin: 0;
+}
+
+#post ul.area-ul li.area-li {
+  list-style: none;
+  border-bottom: 3px solid #dddddd;
+  padding: 30px;
+}
+
+#post ul.area-ul li.area-li a {
+  display: block;
+  color: #000000;
+}
+
+#post ul.area-ul li.area-li a:hover {
+}
+
+#post ul.area-ul li.area-li .area-li-img,
+#post ul.area-ul li.area-li .area-li-text {
+  float: left;
+}
+
+#post ul.area-ul li.area-li .area-li-text .tag li {
+  color: #49c6e8;
+  border-color: #49c6e8;
+}
+
+#post ul.area-ul li.area-li .area-li-text h3 {
+  color: #49c6e8;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+#post ul.area-ul li.area-li .area-li-text b {
+  font-size: 18px;
+}
+
+#post ul.area-ul li.area-li .area-li-text {
+  padding-left: 30px;
+  max-width: 348px;
+}
+#post ul.area-ul li.area-li .area-li-detail {
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#post .area-map-wrap {
+  background-color: #49c6e8;
+  background-image: url("../images/area/area-map-2x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 180px 165px;
+  border: 2px solid #3c9eb5;
+  max-width: 238px;
+  height: 218px;
+  margin: 0px auto;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+#post .area-map-wrap ul {
+  padding: 0;
+  margin: 0;
+}
+
+#post .area-map-wrap ul li {
+  list-style: none;
+  position: absolute;
+}
+
+#post .area-map-wrap ul li a {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  padding: 3px 5px;
+}
+
+#post .area-map-wrap ul li.area-map-hokkaido {
   right: 0;
   top: 0;
+  margin: 2px 2px 0 0;
 }
 
-h2#hokkaido,
-h2#tohoku,
-h2#kanto,
-h2#hokuriku,
-h2#toukai,
-h2#kansai,
-h2#chugoku,
-h2#shikoku,
-h2#kyushu {
-  padding-top: 15px;
-  background-repeat: no-repeat;
-  background-size: 100px 100px;
-  height: 100px;
-  padding-left: 120px;
-  border-top: 2px solid #333333;
+#post .area-map-wrap ul li.area-map-kanto {
+  right: 0;
+  bottom: 0;
+  margin: 0 2px 2px 0;
 }
 
-h2#hokkaido { background-image: url("../images/area/hokkaido.png"); }
-h2#tohoku   { background-image: url("../images/area/tohoku.png"); }
-h2#kanto    { background-image: url("../images/area/kanto.png"); }
-h2#hokuriku { background-image: url("../images/area/hokuriku.png"); }
-h2#toukai   { background-image: url("../images/area/toukai.png"); }
-h2#kansai   { background-image: url("../images/area/kansai.png"); }
-h2#chugoku  { background-image: url("../images/area/chugoku.png"); }
-h2#shikoku  { background-image: url("../images/area/shikoku.png"); }
-h2#kyushu   { background-image: url("../images/area/kyushu.png"); }
+#post .area-map-wrap ul li.area-map-tokai {
+  left: 50%;
+  bottom: 0;
+  margin: 0 2px 2px 0;
+}
+
+#post .area-map-wrap ul li.area-map-kansai {
+  right: 50%;
+  bottom: 50%;
+}
+
+#post .area-map-wrap ul li.area-map-kyushu {
+  left: 0;
+  bottom: 0;
+  margin: 0 0 2px 2px;
+}
+
+#post .area-map-wrap ul li a:hover {
+  text-decoration: none;
+}
