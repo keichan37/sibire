@@ -32,8 +32,8 @@ Description: エリア絞り込み用
   z-index: 11;
 }
 
-#post h2.area-h2.are-h2-tohoku    { background-position: 260px -30px;  }
-#post h2.area-h2.area-h2-hokuriku { background-position: 260px -60px;  }
+#post h2.area-h2.area-h2-tohoku    { background-position: 260px -30px;  }
+#post h2.area-h2.area-h2-hokuriku { background-position: 235px -60px;  }
 #post h2.area-h2.area-h2-kanto    { background-position: 260px -90px;  }
 #post h2.area-h2.area-h2-tokai    { background-position: 260px -120px;  }
 #post h2.area-h2.area-h2-kansai   { background-position: 260px -150px;  }
@@ -70,6 +70,10 @@ Description: エリア絞り込み用
 
 .r-fixed-padding.padding {
   padding-top: 30px; 
+}
+
+#post .fixed-area-box.fixed.absolute {
+  margin-bottom: 25px;
 }
 
 #post ul.area-ul {
@@ -157,24 +161,49 @@ Description: エリア絞り込み用
 #post .area-map-wrap ul li.area-map-hokkaido {
   right: 0;
   top: 0;
-  margin: 2px 2px 0 0;
+  margin: 10px 2px 0 0;
+}
+
+#post .area-map-wrap ul li.area-map-tohoku {
+  right: 0;
+  bottom: 50%;
+  margin: 0 2px 0 0;
 }
 
 #post .area-map-wrap ul li.area-map-kanto {
   right: 0;
-  bottom: 0;
-  margin: 0 2px 2px 0;
+  top: 50%;
+  margin: 20px 10px 0 0;
+}
+
+#post .area-map-wrap ul li.area-map-hokuriku {
+  right: 50%;
+  bottom: 50%;
+  margin: 0 -30px 8px 0;
 }
 
 #post .area-map-wrap ul li.area-map-tokai {
   left: 50%;
   bottom: 0;
-  margin: 0 2px 2px 0;
+  margin: 0 0 35px 15px;
 }
 
 #post .area-map-wrap ul li.area-map-kansai {
   right: 50%;
-  bottom: 50%;
+  top: 50%;
+  margin: -5px 5px 0 0;
+}
+
+#post .area-map-wrap ul li.area-map-shikoku {
+  right: 50%;
+  bottom: 0;
+  margin: 0 0 25px 0;
+}
+
+#post .area-map-wrap ul li.area-map-chugoku {
+  left: 0;
+  top: 50%;
+  margin: 2px 0 0 30px;
 }
 
 #post .area-map-wrap ul li.area-map-kyushu {
@@ -186,3 +215,28 @@ Description: エリア絞り込み用
 #post .area-map-wrap ul li a:hover {
   text-decoration: none;
 }
+
+@media(max-width: 550px) {
+  #post h2.area-h2.fixed,
+  #post h2.area-h2.fixed.absolute {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    margin: 0;
+  }
+  .r-fixed-padding.padding {
+    padding-top: 0;
+  }
+  #post ul.area-ul li.area-li a {
+    text-decoration: none;
+  }
+  #post ul.area-ul li.area-li .area-li-img,
+  #post ul.area-ul li.area-li .area-li-text {
+    float: none;
+  }
+  #post ul.area-ul li.area-li .area-li-text {
+    padding: 10px 0 0 0;
+  }
+} 

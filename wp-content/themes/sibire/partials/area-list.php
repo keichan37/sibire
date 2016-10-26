@@ -6,6 +6,8 @@
        'post_type' => array('recruit','offer'),
        'meta_key' => 'area', /* カスタムフィールドキー（meta_key） */
        'meta_value' => $area_name, /* カスタムフィールド値（meta_value)  */
+       'post_status' => 'publish',
+       'has_password' => false,
        'meta_compare'=>'LIKE'
   ); ?>
 
