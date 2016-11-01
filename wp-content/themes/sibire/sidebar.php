@@ -18,7 +18,7 @@ title: サイドバーの部分テンプレート
   </a>
   <p>イベント情報や最新のお知らせを<br />優先的にご案内します。</p>
 </div>
-
+<?php /* ?>
 <h5 class="relation-title">関連情報</h5>
 <ul class="relation">
   <?php
@@ -50,4 +50,4 @@ title: サイドバーの部分テンプレート
   wp_reset_postdata();
   ?>
 </ul>
-
+<?php */ ?>
