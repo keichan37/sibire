@@ -55,9 +55,19 @@ register_nav_menus(
 
 register_sidebars(1,
   array(
-    'name' => 'サイドバーウィジェット',
+    'name' => 'トップバナー',
+    'id' => 'top-banner-1',
+    'description' => '画像サイズ(800px × 150px)',
+    'before_widget' => '<div id="banner">',
+    'after_widget' => '</div>',
+  )
+);
+
+register_sidebars(1,
+  array(
+    'name' => 'サイドバー',
     'id' => 'sidebar-1',
-    'description' => 'サイドバーのウィジットエリアです。',
+    'description' => 'サイドバーに表示されます',
     'before_widget' => '<div>',
     'after_widget' => '</div>',
   )
