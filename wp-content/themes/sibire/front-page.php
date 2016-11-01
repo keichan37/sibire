@@ -13,6 +13,7 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/registration.png" alt="登録するにゃ">
             </a>
           </div>
+          <?php dynamic_sidebar('top-banner-1'); ?>
           <div id="news">
             <div class="container">
               <h2><img src="<?php echo get_template_directory_uri(); ?>/images/news-title-2x.png" alt="最新情報"></h2>

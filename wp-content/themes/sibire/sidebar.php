@@ -2,6 +2,7 @@
 title: サイドバーの部分テンプレート
 <?php */ ?>
 
+<?php dynamic_sidebar('sidebar-1'); ?>
 <h5 class="relation-title">Twitter</h5>
 <div class="ce">
   <a class="twitter-timeline" height="400" href="https://twitter.com/sibire_inc" data-chrome="noheader nofooter" data-width="500" data-widget-id="739715991165247488">@sibire_incさんのツイート</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
