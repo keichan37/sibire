@@ -233,7 +233,7 @@
 
               <?php wp_reset_query();?>
               <div id="other-lists" class="inner-padding">
-                <h3 class="other-title">その他の求人</h5>
+                <h3 class="other-title">その他の求人</h3>
                 <div class="other-recruit">
                   <?php
                     $slug = get_post_type();

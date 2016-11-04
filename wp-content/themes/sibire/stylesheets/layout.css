@@ -233,6 +233,7 @@ h1#message img {
 #columns h2,
 #interviews h2,
 #offers h2,
+#niche h2,
 #member h2 {
   text-align: center;
   margin: 50px 0 0 0;
@@ -357,6 +358,7 @@ a.more-link:hover {
 #columns .columns,
 #interviews .interviews,
 #recruit .recruit,
+#niche .niche,
 #offers .offers {
   box-sizing: border-box;
   width: 20%;
@@ -369,6 +371,7 @@ a.more-link:hover {
 #columns .columns-img,
 #interviews .interviews-img,
 #recruit .recruit-img,
+#niche .niche-img,
 #offers .offers-img {
   position: relative;
   display: block;
@@ -383,6 +386,7 @@ a.more-link:hover {
 #columns .columns p,
 #interviews .interviews p,
 #recruit .recruit p,
+#niche .niche p,
 #offers .offers p {
   font-family: '游ゴシック', YuGothic, 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
   color: #ffffff;
@@ -398,6 +402,7 @@ a.more-link:hover {
 #columns .columns .columns-overray,
 #interviews .interviews .interviews-overray,
 #recruit .recruit .recruit-overray,
+#niche .niche .niche-overray,
 #offers .offers .offers-overray {
   background-color: rgba(0,0,0,.4);
   width: 100%;
@@ -415,6 +420,7 @@ a.more-link:hover {
 #columns .columns:hover .columns-overray,
 #interviews .interviews:hover .interviews-overray,
 #recruit .recruit:hover .recruit-overray,
+#niche .niche:hover .niche-overray,
 #offers .offers:hover .offers-overray {
   background-color: rgba(0,0,0,.2);
 }
