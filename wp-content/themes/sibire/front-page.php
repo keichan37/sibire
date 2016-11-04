@@ -268,6 +268,9 @@
           <div id="member">
             <div class="container">
               <h2><img src="<?php echo get_template_directory_uri(); ?>/images/member-title-2x.png" alt="メンバー"></h2>
+              <div class="member-image"><?php dynamic_sidebar('member-banner'); ?></div>
+
+              <?php /* ?>
               <div class="member-wrap">
                 <div class="toyota">
                   <a href="/member#toyota" class="member-link">
@@ -286,6 +289,7 @@
                 </div>
                 <div class="clear"></div>
               </div>
+              <?php */ ?>
               <div class="balloon">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/balloon-2x.png" alt="地方をオモシロく、シビレる場所にしていきたい。私たちはシビレる人、地方を増やします。">
               </div>
