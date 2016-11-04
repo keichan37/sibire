@@ -88,6 +88,9 @@
     margin: 0px auto;
     float: none;
   }
+  .member-image {
+    width: 100%;
+  }
 }
 
 @media(max-width: 550px) {
