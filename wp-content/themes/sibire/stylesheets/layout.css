@@ -466,6 +466,10 @@ a.more-link:hover {
   height: auto;
 }
 
+.member-image a:hover img {
+  opacity: 0.9;
+}
+
 .member-wrap {
   width: 614px;
   margin: 0px auto;
