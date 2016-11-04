@@ -456,6 +456,16 @@ a.more-link:hover {
 .toyota { margin-right: 30px; }
 .midori { margin-left: 30px; }
 
+.member-image {
+  width: 600px;
+  margin: 0px auto;
+}
+
+.member-image img {
+  width: 100%;
+  height: auto;
+}
+
 .member-wrap {
   width: 614px;
   margin: 0px auto;
