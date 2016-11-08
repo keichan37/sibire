@@ -43,6 +43,8 @@ define('DB_CHARSET', 'utf8mb4');
 /** データベースの照合順序 (ほとんどの場合変更する必要はありません) */
 define('DB_COLLATE', '');
 
+/** 管理画面 SSL認証 */
+define('FORCE_SSL_ADMIN', true);
 /**#@+
  * 認証用ユニークキー
  *
