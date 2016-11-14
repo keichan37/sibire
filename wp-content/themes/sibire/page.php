@@ -6,7 +6,10 @@ description: このファイルが基本フォーマットになる
   <?php get_header(); ?>
         <div id="contents">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <?php dynamic_sidebar('page-banner'); ?>
+            <?php if ( in_array(get_post_type(), array('niche')) ): //シビレるニッチのみ表示 ?>
+              <?php dynamic_sidebar('page-banner'); ?>
+            <?php else: ?>
+            <?php endif; ?>
             <div class="page-cover">
               <div class="container">
                 <h1><?php the_title(); ?><?php show_page_number(); ?></h1>
