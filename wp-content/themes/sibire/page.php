@@ -6,6 +6,7 @@ description: このファイルが基本フォーマットになる
   <?php get_header(); ?>
         <div id="contents">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <?php dynamic_sidebar('page-banner'); ?>
             <div class="page-cover">
               <div class="container">
                 <h1><?php the_title(); ?><?php show_page_number(); ?></h1>
