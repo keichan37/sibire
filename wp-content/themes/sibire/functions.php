@@ -83,6 +83,16 @@ register_sidebars(1,
   )
 );
 
+register_sidebars(1,
+  array(
+    'name' => '固定ページバナー',
+    'id' => 'page-banner',
+    'description' => '一覧ページ バナー',
+    'before_widget' => '<div>',
+    'after_widget' => '</div>',
+  )
+);
+
 // 固定ページにカテゴリーを設定
 function add_categorie_to_pages(){
 register_taxonomy_for_object_type('category', 'page');
