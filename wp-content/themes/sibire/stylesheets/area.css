@@ -124,7 +124,13 @@ Description: エリア絞り込み用
   background-color: #f5f5f5;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 12px;
+  min-width: 299px;
+}
+
+#post ul.area-ul li.area-li .area-li-detail .icon {
+  position: relative;
+  top: -2px;
 }
 
 #post .area-map-wrap {
