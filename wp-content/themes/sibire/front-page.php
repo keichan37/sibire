@@ -44,8 +44,13 @@
                             <span class="tag <?php echo esc_html(get_post_type_object($post->post_type)->name); ?>"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>
                         </div>
                         <div class="news-text">
-                          <b><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></b>
-                          <p><?php the_title(); ?></p>
+                          <?php if ( in_array(get_post_type(), array('offer','recruit')) ): //シビレる求人に表示 ?>
+                            <b><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></b>
+                            <p><?php the_title(); ?></p>
+                          <?php else: ?>
+                            <b><?php the_title(); ?></b>
+                            <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
+                          <?php endif; ?>
                         </div>
                       </a>
                     <?php endwhile; ?>     
