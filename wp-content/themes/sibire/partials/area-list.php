@@ -32,11 +32,12 @@
                   <h3><?php the_title(); ?></h3>
                   <b><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></b>
                   <div class="area-li-detail">
-                    <span class="icon-chat">言語</span><br />
+                    <? $txt = get_field('company-language'); if($txt){ ?><span class="icon icon-server"></span>&nbsp;<? echo $txt; ?><br /><? } ?>
                     <?php  $location = get_field('google_map'); if( !empty($location) ):?>
-                      <span class="icon-map"><?php echo $location['address']; ?></span><br />
+                      <span class="icon-location">&nbsp;<?php echo $location['address']; ?></span><br />
                     <?php endif; ?>
-                    <span class="icon-paper"><? $txt = get_field('company-establish'); if($txt){ ?><? echo $txt; ?><? } ?>設立</span>
+                    <? $txt = get_field('company-employee'); if($txt){ ?><span class="icon icon-head"></span>&nbsp;<? echo $txt; ?><br /><? } ?>
+                    <? $txt = get_field('company-establish'); if($txt){ ?><span class="icon icon-briefcase"></span>&nbsp;<? echo $txt; ?>設立<br /><? } ?>
                   </div>
                 </div>
                 <div class="clear"></div>
