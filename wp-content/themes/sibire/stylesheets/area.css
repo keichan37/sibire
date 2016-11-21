@@ -245,4 +245,7 @@ Description: エリア絞り込み用
   #post ul.area-ul li.area-li .area-li-text {
     padding: 10px 0 0 0;
   }
+  #post ul.area-ul li.area-li .area-li-detail {
+    min-width: auto;
+  }
 } 

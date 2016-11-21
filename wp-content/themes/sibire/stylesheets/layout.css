@@ -742,7 +742,7 @@ a.scroll-top {
   position: fixed;
   bottom: 0;
   right: 0;
-  z-index: 7;
+  z-index: 99;
   margin: 0 20px 20px 0;
   text-decoration: none;
   text-align: center;
