@@ -32,12 +32,32 @@
                   <h3><?php the_title(); ?></h3>
                   <b><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></b>
                   <div class="area-li-detail">
-                    <? $txt = get_field('company-language'); if($txt){ ?><span class="icon icon-server"></span>&nbsp;<? echo $txt; ?><br /><? } ?>
-                    <?php  $location = get_field('google_map'); if( !empty($location) ):?>
-                      <span class="icon-location">&nbsp;<?php echo $location['address']; ?></span><br />
-                    <?php endif; ?>
-                    <? $txt = get_field('company-employee'); if($txt){ ?><span class="icon icon-head"></span>&nbsp;<? echo $txt; ?><br /><? } ?>
-                    <? $txt = get_field('company-establish'); if($txt){ ?><span class="icon icon-briefcase"></span>&nbsp;<? echo $txt; ?>設立<br /><? } ?>
+                    <table class="area-detail-table">
+                      <? $txt = get_field('company-language'); if($txt){ ?>
+                        <tr>
+                          <th><span class="icon icon-server"></span></th>
+                          <td><? echo $txt; ?></td>
+                        </tr>
+                      <? } ?>
+                      <?php  $location = get_field('google_map'); if( !empty($location) ):?>
+                        <tr>
+                          <th><span class="icon-location"></span></th>
+                          <td><?php echo $location['address']; ?></td>
+                        </tr>
+                      <?php endif; ?>
+                      <? $txt = get_field('company-employee'); if($txt){ ?>
+                        <tr>
+                          <th><span class="icon icon-head"></span></th>
+                          <td><? echo $txt; ?></td>
+                        </tr>
+                      <? } ?>
+                      <? $txt = get_field('company-establish'); if($txt){ ?>
+                        <tr>
+                          <th><span class="icon icon-briefcase"></span></th>
+                          <td><? echo $txt; ?>設立</td>
+                        </tr>
+                      <? } ?>
+                    </table>
                   </div>
                 </div>
                 <div class="clear"></div>
