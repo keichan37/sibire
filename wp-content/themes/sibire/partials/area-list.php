@@ -33,7 +33,7 @@
                   <b><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></b>
                   <div class="area-li-detail">
                     <table class="area-detail-table">
-                      <? $txt = get_field('company-language'); if($txt){ ?>
+                      <? $txt = get_field('development-language'); if($txt){ ?>
                         <tr>
                           <th><span class="icon icon-server"></span></th>
                           <td><? echo $txt; ?></td>
