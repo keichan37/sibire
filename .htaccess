@@ -1,3 +1,9 @@
+<Files wp-login.php>
+AuthUserFile /app/.htpasswd
+AuthName "パスワードを入力してください"
+AuthType Basic
+require valid-user
+</Files>
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
