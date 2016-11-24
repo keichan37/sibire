@@ -582,6 +582,29 @@ a.more-link:hover {
   box-sizing: border-box;
 }
 
+.link_page_navi {
+  margin: 10px 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+.link_page_navi li {
+  list-style: none;
+  text-align: center;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  padding: 0 12px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 5px 0 0;
+  font-weight: 700;
+}
+
+.link_page_navi a li {
+  border-color: #1c87c9;
+  font-weight: 400;
+}
+
 iframe#twitter-widget-0,
 iframe#twitter-widget-1 {
   border-left: 1px solid #e9ebee !important;
