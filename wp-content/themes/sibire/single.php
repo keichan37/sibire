@@ -4,7 +4,7 @@ description: このファイルが基本フォーマットになる
 <?php */ ?>
 
   <?php get_header(); //ヘッダー ?>
-        <div id="post">
+        <div id="post" <?php body_class(); ?>>
           <div id="contents">
             <div class="container">
               <div id="main-content">
@@ -19,16 +19,28 @@ description: このファイルが基本フォーマットになる
                   <div class="post-name">
                     <? $txt = get_field('subtitle'); if($txt){ ?><? echo $txt; ?> <? } ?>
                   </div>
-                  <?php
-                    $thumbnail_id = get_post_thumbnail_id();
-                    $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true); //アイキャッチのURL取得
-                  ?>
-                  <?php if (has_post_thumbnail()): //アイキャッチある場合 ?>
-                    <img class="post-eyecatch-img" src="<?php echo $thumbnail_url[0]; ?>">
-                  <?php else: //アイキャッチない場合 ?>
-                    <?php /* ?>
-                    <div class="post-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);"></div>
-                    <?php */ ?>
+                  <?php if ( in_array(get_post_type(), array('niche')) ): ?>
+                    <div class="single-niche-top">
+                      <div class="single-niche-top-image">
+                        <img src="<?php the_field('single-niche-top-image'); ?>" alt="">
+                      </div>
+                      <div class="single-niche-top-text">
+                        <? $txt = get_field('single-niche-top-text'); if($txt){ ?><? echo $txt; ?> <? } ?>
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+                  <?php else: //シビレるニッチで非表示 ?>
+                    <?php
+                      $thumbnail_id = get_post_thumbnail_id();
+                      $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true); //アイキャッチのURL取得
+                    ?>
+                    <?php if (has_post_thumbnail()): //アイキャッチある場合 ?>
+                      <img class="post-eyecatch-img" src="<?php echo $thumbnail_url[0]; ?>">
+                    <?php else: //アイキャッチない場合 ?>
+                      <?php /* ?>
+                      <div class="post-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);"></div>
+                      <?php */ ?>
+                    <?php endif; ?>
                   <?php endif; ?>
                   
                   <?php the_content(); //本文 ?>
