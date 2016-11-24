@@ -19,16 +19,18 @@ description: このファイルが基本フォーマットになる
                   <div class="post-name">
                     <? $txt = get_field('subtitle'); if($txt){ ?><? echo $txt; ?> <? } ?>
                   </div>
-                  <?php if ( in_array(get_post_type(), array('niche')) ): ?>
-                    <div class="single-niche-top">
-                      <div class="single-niche-top-image">
-                        <img src="<?php the_field('single-niche-top-image'); ?>" alt="">
+                  <?php if ( in_array(get_post_type(), array('niche')) ): //シビレるニッチ用?>
+                    <?php if ( $page == 1 ) : // 1ページ目だけ表示 ?>
+                      <div class="single-niche-top">
+                        <div class="single-niche-top-image">
+                          <img src="<?php the_field('single-niche-top-image'); ?>" alt="">
+                        </div>
+                        <div class="single-niche-top-text">
+                          <? $txt = get_field('single-niche-top-text'); if($txt){ ?><? echo $txt; ?> <? } ?>
+                        </div>
+                        <div class="clear"></div>
                       </div>
-                      <div class="single-niche-top-text">
-                        <? $txt = get_field('single-niche-top-text'); if($txt){ ?><? echo $txt; ?> <? } ?>
-                      </div>
-                      <div class="clear"></div>
-                    </div>
+                    <?php endif; ?>
                   <?php else: //シビレるニッチで非表示 ?>
                     <?php
                       $thumbnail_id = get_post_thumbnail_id();
