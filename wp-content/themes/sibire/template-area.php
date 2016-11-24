@@ -1,6 +1,6 @@
 <?php /* Template Name: エリアテンプレート*/ ?>
   <?php get_header(); //ヘッダー ?>
-        <div id="post">
+        <div id="post" class="template-area">
           <div id="contents">
             <div class="container">
               <div class="relative">
