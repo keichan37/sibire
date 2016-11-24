@@ -3,7 +3,7 @@
     'before' => '<div class="link_page_navi">', 
     'after' => '</div>', 
     'next_or_number' => 'nextpagelink',
-    'nextpagelink'     =>  '続きを読む<span class="icon-arrow-right"></span>',
+    'nextpagelink'     =>  '次のページ<span class="icon-arrow-right"></span>',
     'previouspagelink' =>  '<span class="icon-arrow-left"></span>前のページ'
   );
   wp_link_pages( $args );

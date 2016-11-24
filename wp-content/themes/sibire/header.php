@@ -49,13 +49,13 @@
 
     <meta name="description" content="「地方で働きたい」エンジニアの方々に、移住希望地の仕事を紹介するサービス。地方のユニークなIT企業の紹介はもちろん、移住に利用できるお得な制度なども紹介します。地方移住でシビレる人生を実現しましょう！" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/sample.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/normalize.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/layout.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/interview.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/profile.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/post.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/recruit.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/single-niche.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/form.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/feather.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/owl.carousel.css" type="text/css" media="all" />
@@ -63,22 +63,12 @@
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
     <link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/apple-touch-icon.png" />
 
-    <?php /* ?>
-      <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/column.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/event.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/offer.css" type="text/css" media="all" />
-    <?php */ ?>
-
     <?php wp_deregister_script('jquery'); ?>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/jquery.js"></script>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/app.js"></script>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/owl.carousel.min.js"></script>
-    <?php if ( in_array(get_post_type(), array('offer','recruit')) ): //シビレる求人に表示 ?>
-      <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/recruit.js"></script>
-    <?php elseif (is_page_template('template-area.php')) :?>
-      <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/area.css" type="text/css" media="all" />
-      <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/area.js"></script>
-    <?php endif; ?>
+    <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/recruit.js"></script>
+    <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/area.js"></script>
   
   </head>
   <body>
