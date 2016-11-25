@@ -50,7 +50,7 @@ h1#message img {
   top: 50%;
   right: 0;
   margin: -78px -20px 0 0;
-  z-index: 10;
+  z-index: 100;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
