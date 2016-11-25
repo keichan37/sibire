@@ -14,19 +14,27 @@ module.exports = function (grunt) {
           src: ['*.scss'], // タスクを実行するファイル
           dest: 'scss', // コンパイルしたcssファイルの置き場所
           ext: '.css' // コンパイル後のファイル
-        }]
+        }] 
       }
     },
-
+ 
     // コンパイルしたCSSファイルをstyle.cssに結合するタスクを設定
     cssmin: {
       minify: {
         files: {
           // 結合先のcssファイル名: 結合するcssファイル名
           'style.css': [
+            'stylesheets/feather.css',
+            'stylesheets/normalize.css',
+            'stylesheets/owl.carousel.css',
+            'scss/style.css',
             'scss/style.css',
             'scss/single-niche.css',
-            'scss/template-area.css'
+            'scss/single-interview.css',
+            'scss/single-recruit.css',
+            'scss/template-area.css',
+            'scss/template-profile.css',
+            'scss/plugin-wpcf7.css'
           ]
         }
       }
@@ -44,8 +52,12 @@ module.exports = function (grunt) {
         // 監視するファイル
         files: [
           'scss/style.css',
-          'scss/singel-niche.css',
-          'scss/template-area.css'
+          'scss/single-niche.css',
+          'scss/single-interview.css',
+          'scss/single-recruit.css',
+          'scss/template-area.css',
+          'scss/template-profile.css',
+          'scss/plugin-wpcf7.css'
         ],
         tasks: ['cssmin']
       }

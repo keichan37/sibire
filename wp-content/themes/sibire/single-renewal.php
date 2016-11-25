@@ -195,7 +195,12 @@
                       <div class="acf-map">
                         <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
                       </div>
-                      <div class="recruit-map"><span class="icon-map"></span><a href="http://maps.google.com/maps?q=<?php echo $location['address']; ?>" target="_blank"><?php echo $location['address']; ?></a></div>
+                      <table class="recruit-map">
+                        <tr>
+                          <th><span class="icon-map"></span></th>
+                          <td><a href="http://maps.google.com/maps?q=<?php echo $location['address']; ?>" target="_blank"><?php echo $location['address']; ?></a></td>
+                        </tr>
+                      </table>
                     <?php endif; ?>
                     <h3 class="recruit-h3"><span>募集職種</span></h3>
                     <ul class="recruit-job">
