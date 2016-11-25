@@ -791,6 +791,21 @@ a.scroll-top:hover {
   color: #80d7ef;
 }
 
+ul.tag {
+  margin: 0;
+  padding: 0;
+}
+
+ul.tag li {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #000000;
+  display: inline;
+  padding: 3px 5px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
 /* 記事系のCSSはどこかで一括管理 */
 
 .alignright {
@@ -803,4 +818,8 @@ a.scroll-top:hover {
   float: left;
   clear: left;
   margin-right: 30px;
+}
+
+.relative {
+  position: relative;
 }

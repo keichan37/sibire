@@ -1,82 +1,66 @@
+@charset "UTF-8";
 .wpcf7 {
   position: relative;
   max-width: 450px;
   border: 3px solid #eeeeee;
   padding: 30px;
+  /* エラー */
 }
-
 .wpcf7 .wpcf7-not-valid {
   display: block;
 }
-
 .wpcf7 .screen-reader-response,
 .wpcf7 .screen-reader-response ul {
   display: none;
 }
-
-/* エラー */
 .wpcf7 .wpcf7-not-valid-tip {
   color: #dd0000;
 }
-
 .wpcf7 .wpcf7-validation-errors {
   background-color: #dd5555;
   color: #ffffff;
   text-align: center;
 }
-
 .wpcf7 .wpcf7-not-valid {
   color: #dd0000;
 }
-
 .wpcf7 form label {
   margin-top: 12px;
   display: block;
 }
-
 .wpcf7 p {
   margin: 0;
-}
-
-h2.h2-form {
-  margin: 50px 0 15px 0;
-  font-size: 28px;
-}
-
-.wpcf7 .wpcf7-list-item label {
-  display: inline-block;
-  margin: 5px 15px 0 0;
-}
-
-.wpcf7 b {
-  color: #ff0000;
-  font-size: 20px;
-}
-
-.wpcf7 p {
   font-size: 16px;
   line-height: 32px;
   text-align: left;
 }
-
 .wpcf7 p.message {
   font-size: 24px;
   line-height: 38px;
   font-weight: 700;
   text-align: left;
 }
-
 .wpcf7 p label {
   font-size: 15px;
   font-weight: 500;
   clear: both;
 }
-
 .wpcf7 p label .wpcf7-not-valid-tip {
   font-size: 16px;
   font-weight: 500;
 }
-
+.wpcf7 p label textarea {
+  min-height: 100px;
+  line-height: auto;
+}
+.wpcf7 p label input:hover,
+.wpcf7 p label textarea:hover {
+  background-color: #eeeeee;
+}
+.wpcf7 p label input:focus,
+.wpcf7 p label textarea:focus {
+  border-color: #3fa9f5;
+}
 .wpcf7 p input[type="text"],
 .wpcf7 p input[type="email"],
 .wpcf7 p input[type="tel"],
@@ -95,12 +79,6 @@ h2.h2-form {
   -webkit-appearance: none;
   display: block;
 }
-
-.wpcf7 p label textarea {
-  min-height: 100px;
-  line-height: auto;
-}
-
 .wpcf7 p input[type="text"].wpcf7-not-valid,
 .wpcf7 p input[type="email"].wpcf7-not-valid,
 .wpcf7 p input[type="tel"].wpcf7-not-valid,
@@ -108,17 +86,6 @@ h2.h2-form {
 .wpcf7 p textarea.wpcf7-not-valid {
   border: 1px solid #dd0000;
 }
-
-.wpcf7 p label input:hover,
-.wpcf7 p label textarea:hover {
-  background-color: #eeeeee;
-}
-
-.wpcf7 p label input:focus,
-.wpcf7 p label textarea:focus {
-  border-color: #3fa9f5;
-}
-
 .wpcf7 p input[type="submit"] {
   border: 5px solid #3fa9f5;
   border-radius: 0px;
@@ -131,12 +98,22 @@ h2.h2-form {
   width: 100%;
   max-width: 450px;
 }
-
 .wpcf7 p input[type="submit"]:hover {
   background-color: #3fa9f5;
   color: #ffffff;
 }
-
+.wpcf7 h2.h2-form {
+  margin: 50px 0 15px 0;
+  font-size: 28px;
+}
+.wpcf7 .wpcf7-list-item label {
+  display: inline-block;
+  margin: 5px 15px 0 0;
+}
+.wpcf7 b {
+  color: #ff0000;
+  font-size: 20px;
+}
 .wpcf7 .wpcf7-mail-sent-ok {
   position: fixed;
   top: 50%;
@@ -149,8 +126,10 @@ h2.h2-form {
   text-align: center;
   min-height: 120px;
   margin-top: -60px;
-  background-color: rgba(63, 169, 245, .95);
+  background-color: rgba(63, 169, 245, 0.95);
   vertical-align: middle;
   padding: 50px 10px;
   box-sizing: border-box;
 }
+
+/*# sourceMappingURL=plugin-wpcf7.css.map */
