@@ -20,6 +20,7 @@ description: このファイルが基本フォーマットになる
                     <? $txt = get_field('subtitle'); if($txt){ ?><? echo $txt; ?> <? } ?>
                   </div>
                   <?php if ( in_array(get_post_type(), array('niche')) ): //シビレるニッチ用?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/single-niche-banner.jpg">
                     <?php if ( $page == 1 ) : // 1ページ目だけ表示 ?>
                       <div class="single-niche-top">
                         <div class="single-niche-top-image">
