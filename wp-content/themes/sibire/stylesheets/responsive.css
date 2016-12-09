@@ -65,6 +65,7 @@
   #columns .columns,
   #interviews .interviews,
   #offers .offers,
+  #niche .niche,
   #recruit .recruit {
     width: 33.33333%;
   }
@@ -118,6 +119,7 @@
   #columns .columns,
   #interviews .interviews,
   #offers .offers,
+  #niche .niche,
   #recruit .recruit {
     width: 100%;
   }
