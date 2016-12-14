@@ -39,6 +39,15 @@
   margin: 0;
 }
 
+.niche-banner {
+  padding: 40px 0 0 0;
+  text-align: center;
+}
+
+.niche-banner a:hover img {
+  opacity: 0.8;
+}
+
 h1#message {
   margin: 0;
   padding: 0;
