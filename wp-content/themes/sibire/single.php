@@ -73,6 +73,3 @@ description: このファイルが基本フォーマットになる
           </div>
         <?php endif; ?>
         <?php get_footer(); //フッター ?>
-    </div>
-  </body>
-</html>

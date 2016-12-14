@@ -54,7 +54,3 @@
       </div>
       
       <?php get_footer(); ?>
-      </div>
-    </div>
-  </body>
-</html>

@@ -13,10 +13,6 @@
       $("a.r-scroll-top").toggleClass("absolute", $(this).scrollTop() + $(this).height() > $("#footer").offset().top)
     })
 
-    $(".wpcf7-mail-sent-ok").click(function() { 
-      $(".wpcf7-mail-sent-ok").fadeOut(300)
-    })
-
     $('a[href^="#"]').click(function() {
       var speed = 400;
       var href= $(this).attr("href");

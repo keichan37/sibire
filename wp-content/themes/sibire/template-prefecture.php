@@ -88,6 +88,3 @@
           </div>
         </div>
         <?php get_footer(); //フッター ?>
-    </div>
-  </body>
-</html>
