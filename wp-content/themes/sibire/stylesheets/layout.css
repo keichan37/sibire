@@ -30,6 +30,17 @@
   width: 100%;
 }
 
+.line {
+  text-align: center;
+  background-color: #607FB6;
+  color: #ffffff;
+  padding: 15px 0;
+}
+
+.line h3 {
+  margin: 0;
+}
+
 h1#message {
   margin: 0;
   padding: 0;
