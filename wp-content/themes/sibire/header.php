@@ -55,13 +55,13 @@
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
     <link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/apple-touch-icon.png" />
 
-    <?php wp_deregister_script('jquery'); ?>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/jquery.js"></script>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/app.js"></script>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/owl.carousel.min.js"></script>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/recruit.js"></script>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/area.js"></script>
-  
+
+  <?php wp_head(); ?>
   </head>
   <body>
     <?php include_once("analyticstracking.php") ?>

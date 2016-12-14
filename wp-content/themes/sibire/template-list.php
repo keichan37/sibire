@@ -89,6 +89,3 @@ description: 各投稿の一覧ページです
           <p>イベント情報や最新のお知らせを優先的にご案内します。</p>
         </div>
         <?php get_footer(); //フッター ?>
-    </div>
-  </body>
-</html>
