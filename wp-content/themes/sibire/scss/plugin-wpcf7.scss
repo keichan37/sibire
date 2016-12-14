@@ -82,6 +82,13 @@
         &.wpcf7-not-valid {
           border: 1px solid #dd0000;
         }
+        &.wpcf7c-conf {
+          border: none;
+          background-color: #ffffff;
+          padding: 0;
+          height: 23px;
+          margin-bottom: 15px;
+        }
       }
 
       input[type="submit"] {

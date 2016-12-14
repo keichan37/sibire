@@ -87,6 +87,17 @@
 #contents div.wpcf7 p textarea.wpcf7-not-valid {
   border: 1px solid #dd0000;
 }
+#contents div.wpcf7 p input[type="text"].wpcf7c-conf,
+#contents div.wpcf7 p input[type="email"].wpcf7c-conf,
+#contents div.wpcf7 p input[type="tel"].wpcf7c-conf,
+#contents div.wpcf7 p input[type="url"].wpcf7c-conf,
+#contents div.wpcf7 p textarea.wpcf7c-conf {
+  border: none;
+  background-color: #ffffff;
+  padding: 0;
+  height: 23px;
+  margin-bottom: 15px;
+}
 #contents div.wpcf7 p input[type="submit"] {
   border: 5px solid #3fa9f5;
   border-radius: 0px;
@@ -124,6 +135,9 @@
   vertical-align: middle;
   box-sizing: border-box;
   border: none;
+}
+#contents div.wpcf7 .wpcf7-response-output {
+  margin: 0;
 }
 
 /*# sourceMappingURL=plugin-wpcf7.css.map */

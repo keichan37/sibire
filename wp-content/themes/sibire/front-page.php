@@ -73,6 +73,10 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/registration-cat.png" class="registration-button-img">
             </a>
           </div>
+          <div class="line">
+            <h3>LINE@始めました</h3>
+            <a href="https://line.me/R/ti/p/%40urv2252f" target="_blank"><img height="36" border="0" alt="友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"></a>
+          </div>
           <div id="service">
             <div class="container">
               <h2><img src="<?php echo get_template_directory_uri(); ?>/images/service-title-2x.png" alt="サービスの特徴"></h2>
@@ -179,6 +183,11 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/registration-text-2x.png" alt="登録する" class="registration-button-text">
               <img src="<?php echo get_template_directory_uri(); ?>/images/registration-cat.png" class="registration-button-img">
             </a>
+          </div>
+
+          <div class="line">
+            <h3>LINE@始めました</h3>
+            <a href="https://line.me/R/ti/p/%40urv2252f" target="_blank"><img height="36" border="0" alt="友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"></a>
           </div>
 
           <div id="interviews">
