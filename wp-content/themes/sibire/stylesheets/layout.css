@@ -244,6 +244,8 @@ h1#message img {
   text-decoration: underline;
 }
 
+
+#event h2,
 #news h2,
 #flow h2,
 #service h2,
@@ -285,6 +287,11 @@ h1#message img {
 }
 #recruit h2 img {
   height: 69px;
+}
+
+
+#event h2 img {
+  height: 80px;
 }
 
 #interviews h2 img {
@@ -373,107 +380,6 @@ a.more-link:hover {
   margin: 0 0 25px 0;
   text-align: center;
 }
-
-#columns .columns,
-#interviews .interviews,
-#recruit .recruit,
-#niche .niche,
-#offers .offers {
-  box-sizing: border-box;
-  width: 20%;
-  min-height: 147px;
-  float: left;
-  padding: 10px;
-  text-decoration: none;
-}
-
-#columns .columns-img,
-#interviews .interviews-img,
-#recruit .recruit-img,
-#niche .niche-img,
-#offers .offers-img {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 147px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-#columns .columns p,
-#interviews .interviews p,
-#recruit .recruit p,
-#niche .niche p,
-#offers .offers p {
-  font-family: '游ゴシック', YuGothic, 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
-  color: #ffffff;
-  text-shadow: 0 0 5px rgba(0,0,0,.9);
-  margin: 0;
-  font-size: 19px;
-  line-height: 28px;
-  padding: 10px;
-  position: relative;
-  z-index: 3;
-}
-
-#columns .columns .columns-overray,
-#interviews .interviews .interviews-overray,
-#recruit .recruit .recruit-overray,
-#niche .niche .niche-overray,
-#offers .offers .offers-overray {
-  background-color: rgba(0,0,0,.4);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
-}
-
-#columns .columns:hover .columns-overray,
-#interviews .interviews:hover .interviews-overray,
-#recruit .recruit:hover .recruit-overray,
-#niche .niche:hover .niche-overray,
-#offers .offers:hover .offers-overray {
-  background-color: rgba(0,0,0,.2);
-}
-
-.toyota,
-.midori {
-  width: 277px;
-  float: left;
-}
-
-.abukawa {
-  width: 277px;
-  margin: 0px auto;
-  clear: both;
-}
-
-.abukawa a img,
-.toyota a img,
-.midori a img {
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.abukawa a:hover img,
-.toyota a:hover img,
-.midori a:hover img {
-  top: -5px;
-  position: relative;
-}
-
-.toyota { margin-right: 30px; }
-.midori { margin-left: 30px; }
 
 .member-image {
   width: 600px;

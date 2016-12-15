@@ -34,7 +34,8 @@ module.exports = function (grunt) {
             'scss/single-recruit.css',
             'scss/template-area.css',
             'scss/template-profile.css',
-            'scss/plugin-wpcf7.css'
+            'scss/plugin-wpcf7.css',
+            'scss/front-page.css'
           ]
         }
       }
@@ -57,7 +58,8 @@ module.exports = function (grunt) {
           'scss/single-recruit.css',
           'scss/template-area.css',
           'scss/template-profile.css',
-          'scss/plugin-wpcf7.css'
+          'scss/plugin-wpcf7.css',
+          'scss/front-page.css'
         ],
         tasks: ['cssmin']
       }

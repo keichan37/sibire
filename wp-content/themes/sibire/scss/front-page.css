@@ -1,0 +1,59 @@
+@charset "UTF-8";
+.grid-list {
+  box-sizing: border-box;
+  width: 20%;
+  min-height: 147px;
+  float: left;
+  padding: 10px;
+  text-decoration: none;
+}
+.grid-list .grid-list-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 147px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.grid-list p {
+  font-family: '游ゴシック', YuGothic, 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  margin: 0;
+  font-size: 19px;
+  line-height: 28px;
+  padding: 10px;
+  position: relative;
+  z-index: 3;
+}
+.grid-list .grid-list-overray {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.grid-list:hover .grid-list-overray {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .grid-list {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 550px) {
+  .grid-list {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=front-page.css.map */
