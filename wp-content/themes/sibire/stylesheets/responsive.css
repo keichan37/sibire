@@ -129,6 +129,10 @@
     margin-bottom: 30px;
     float: none;
   }
+  #event h2 img {
+    height: 70px;
+    width: auto;
+  }
   
   #recruit h2 img {
     height: 50px;

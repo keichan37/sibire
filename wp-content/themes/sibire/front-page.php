@@ -64,45 +64,18 @@
             </div>
           </div>
 
-          <?php /* ?>インタビュー<?php */ ?>
+          <?php /* ?>シビレビト<?php */ ?>
           <div id="interviews">
             <div class="container">
               <h2><img src="<?php echo get_template_directory_uri(); ?>/images/interview2-title-2x.png" alt="シビレビト発見伝"></h2>
 
               <?php
-              $args = array(
-               'post_type' => 'interview',
-               'numberposts'   => 5,
-               'post_status' => 'publish',
-               'has_password' => false,
-              );
-              $postslist = get_posts($args);
-              foreach ($postslist as $post) : setup_postdata($post);
+                $post_type = 'interview';
+                $post_link = 'interview';
+                get_template_part('partials/grid','list');
               ?>
-
-                <?php
-                  $thumbnail_id = get_post_thumbnail_id();
-                  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
-                ?>
-                <a href=<?php echo get_permalink(); ?> class="interviews">
-
-                  <?php if (has_post_thumbnail()): ?>
-                    <div class="interviews-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
-                  <?php else: ?>
-                    <div class="interviews-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);">
-                  <?php endif; ?>
-                    <p><?php the_title(); ?></p>
-                    <div class="interviews-overray"></div>
-                  </div>
-                </a>
-              <?php 
-              endforeach; 
-              wp_reset_postdata();
-              ?>
-              <div class="clear"></div>
-              <a class="more-link" href="/interview">もっと見る&nbsp;&gt;</a>
-              <div class="clear"></div>
             </div>
+
           </div>
 
           <?php /* ?>ニッチ<?php */ ?>
@@ -118,40 +91,28 @@
               <h2><img src="<?php echo get_template_directory_uri(); ?>/images/columns-title-2x.png" alt="シビレる小ネタ"></h2>
 
               <?php
-              $args = array(
-               'post_type' => 'column',
-               'numberposts'   => 5,
-               'post_status' => 'publish',
-               'has_password' => false,
-              );
-              $postslist = get_posts($args);
-              foreach ($postslist as $post) : setup_postdata($post);
+                $post_type = 'column';
+                $post_link = 'column';
+                get_template_part('partials/grid','list');
               ?>
 
-                <?php
-                  $thumbnail_id = get_post_thumbnail_id();
-                  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
-                ?>
-                <a href=<?php echo get_permalink(); ?> class="columns">
-
-                  <?php if (has_post_thumbnail()): ?>
-                    <div class="columns-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
-                  <?php else: ?>
-                    <div class="columns-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);">
-                  <?php endif; ?>
-                    <p><?php the_title(); ?></p>
-                    <div class="columns-overray"></div>
-                  </div>
-                </a>
-              <?php 
-              endforeach; 
-              wp_reset_postdata();
-              ?>
-              <div class="clear"></div>
-              <a class="more-link" href="/column">もっと見る&nbsp;&gt;</a>
-              <div class="clear"></div>
             </div>
           </div>
+
+          <?php /* ?>イベント<?php */ ?>
+          <div id="event">
+            <div class="container">
+              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/event-title-2x.png" alt="シビレる集"></h2>
+
+              <?php
+                $post_type = 'event';
+                $post_link = 'event';
+                get_template_part('partials/grid','list');
+              ?>
+
+            </div>
+          </div>
+
 
           <?php /* ?>フロー<?php */ ?>
           <div id="flow">
@@ -165,40 +126,11 @@
           <div id="offers">
             <div class="container">
               <h2><a href="/recruit"><img src="<?php echo get_template_directory_uri(); ?>/images/offers-title-2x.png" alt="シビレる求人"></a></h2>
-
               <?php
-              $args = array(
-               'post_type' => array('recruit','offer'),
-               'numberposts'   => 10,
-               'post_status' => 'publish',
-               'has_password' => false,
-              );
-              $postslist = get_posts($args);
-              foreach ($postslist as $post) : setup_postdata($post);
+                $post_type = array('recruit','offer');
+                $post_link = 'recruit';
+                get_template_part('partials/grid','list');
               ?>
-
-                <?php
-                  $thumbnail_id = get_post_thumbnail_id();
-                  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
-                ?>
-                <a href=<?php echo get_permalink(); ?> class="offers">
-
-                  <?php if (has_post_thumbnail()): ?>
-                    <div class="offers-img" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);">
-                  <?php else: ?>
-                    <div class="offers-img" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/no-image-2x.png);">
-                  <?php endif; ?>
-                    <p><?php the_title(); ?></p>
-                    <div class="offers-overray"></div>
-                  </div>
-                </a>
-              <?php 
-              endforeach; 
-              wp_reset_postdata();
-              ?>
-              <div class="clear"></div>
-              <a class="more-link" href="/recruit">もっと見る&nbsp;&gt;</a>
-              <div class="clear"></div>
             </div>
           </div>
 
