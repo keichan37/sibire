@@ -67,7 +67,7 @@
           <?php /* ?>シビレビト<?php */ ?>
           <div id="interviews">
             <div class="container">
-              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/interview2-title-2x.png" alt="シビレビト発見伝"></h2>
+              <h2><a href="interview"><img src="<?php echo get_template_directory_uri(); ?>/images/interview2-title-2x.png" alt="シビレビト発見伝"></a></h2>
 
               <?php
                 $post_type = 'interview';
@@ -81,14 +81,14 @@
           <?php /* ?>ニッチ<?php */ ?>
           <div id="niche" class="niche-banner">
             <div class="container">
-              <a href="/niche/8402"><img src="<?php echo get_template_directory_uri(); ?>/images/niche_top.jpg" alt="シビレるニッチ 第一弾は富山">
+              <a href="/niche/8402"><img src="<?php echo get_template_directory_uri(); ?>/images/niche_top.jpg" alt="シビレるニッチ 第一弾は富山"></a>
             </div>
           </div>
 
           <?php /* ?>小ネタ<?php */ ?>
           <div id="columns">
             <div class="container">
-              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/columns-title-2x.png" alt="シビレる小ネタ"></h2>
+              <h2><a href="/column"><img src="<?php echo get_template_directory_uri(); ?>/images/columns-title-2x.png" alt="シビレる小ネタ"></a></h2>
 
               <?php
                 $post_type = 'column';
@@ -102,7 +102,7 @@
           <?php /* ?>イベント<?php */ ?>
           <div id="event">
             <div class="container">
-              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/event-title-2x.png" alt="シビレる集"></h2>
+              <h2><a href="/event"><img src="<?php echo get_template_directory_uri(); ?>/images/event-title-2x.png" alt="シビレる集"></a></h2>
 
               <?php
                 $post_type = 'event';
