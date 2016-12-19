@@ -1,0 +1,76 @@
+#header {
+  height: 75px;
+  position: relative;
+  border-bottom: 1px solid #333333;
+}
+#header .logo {
+  padding-top: 0px;
+  width: 121px;
+  float: left;
+}
+#header .logo a {
+  display: block;
+  width: 121px;
+  height: 60px;
+}
+#header .logo img {
+  width: 121px;
+  height: 60px;
+}
+#header .sns-inner {
+  width: 221px;
+  margin: 0px auto;
+  height: 26px;
+  padding: 42px 0;
+}
+#header #sns {
+  padding-top: 44px;
+  float: right;
+}
+#header .twitter,
+#header .facebook,
+#header .hatena {
+  float: left;
+  height: 20px;
+}
+#header .hatena {
+  width: 20px;
+  margin-right: 10px;
+}
+#header .twitter {
+  width: 75px;
+}
+#header .facebook {
+  width: 150px;
+  margin-right: 10px;
+}
+
+.menu-global_menu-container #menu-global_menu {
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu-global_menu-container #menu-global_menu .menu-item {
+  float: left;
+  width: 20%;
+  border-bottom: 1px solid transparent;
+}
+.menu-global_menu-container #menu-global_menu .menu-item a {
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #333333;
+}
+.menu-global_menu-container #menu-global_menu .menu-item.current-menu-item {
+  border-bottom-color: #49c6e8;
+}
+.menu-global_menu-container #menu-global_menu .menu-item.current-menu-item a {
+  cursor: default;
+  color: #49c6e8;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=header.css.map */

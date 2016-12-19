@@ -45,14 +45,6 @@ function show_page_number() {
     }
 }  
 
-
-/* カスタムメニュー */
-register_nav_menus(
-    array(
-        'footernavCenter' => 'フッターメニュー',
-    )
-);
-
 register_sidebars(1,
   array(
     'name' => 'トップバナー',
