@@ -25,3 +25,33 @@
   })
 }).call(this);
 
+$(document).ready(function() {
+  $(".owl-carousel").owlCarousel({
+    autoplay: true,
+    autoplayHoverPause: true,
+    autoplayTimeout: 8000,
+    loop: true,
+    nav: false,
+    navText: ["前","次" ],
+    items : 3,
+    responsive: {
+      0: { items: 1 },
+      450: { items: 2 },
+      768: { items: 3 }
+    }
+  });
+});
+$(document).ready(function() {
+  $(".other-recruit").owlCarousel({
+    loop: true,
+    nav: true,
+    dots: false,
+    navText: ["","" ],
+    items : 4,
+    responsive: {
+      0: { items: 1 },
+      450: { items: 3 },
+      768: { items: 4 }
+    }
+  });
+});

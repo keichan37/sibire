@@ -28,7 +28,8 @@ module.exports = function (grunt) {
             'stylesheets/normalize.css',
             'stylesheets/owl.carousel.css',
             'scss/style.css',
-            'scss/style.css',
+            'scss/header.css',
+            'scss/footer.css',
             'scss/single-niche.css',
             'scss/single-interview.css',
             'scss/single-recruit.css',
@@ -53,6 +54,8 @@ module.exports = function (grunt) {
         // 監視するファイル
         files: [
           'scss/style.css',
+          'scss/header.css',
+          'scss/footer.css',
           'scss/single-niche.css',
           'scss/single-interview.css',
           'scss/single-recruit.css',

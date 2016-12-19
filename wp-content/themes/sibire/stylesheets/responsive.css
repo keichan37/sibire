@@ -100,13 +100,6 @@
     padding: 0 10px;
   }
 
-  #footer .footer-inner {
-    background-position: center left 10px;
-    padding-left: 130px;
-  }
-  #footer ul li {
-    float: none;
-  }
   #news .owl-item {
     min-height: 240px;
   }
