@@ -9,7 +9,7 @@
     <?php
       $args = array(
        'post_type' => $footer_post_type,
-       'numberposts'   => 10,
+       'numberposts'   => 5,
        'post_status' => 'publish',
        'has_password' => false,
       );
