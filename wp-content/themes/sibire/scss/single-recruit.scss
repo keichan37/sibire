@@ -317,6 +317,18 @@
     .facebook {
       width: 130px;
     }
+    .twitter,
+    .facebook,
+    .hatena {
+      float: left;
+      height: 20px;
+    }
+    .hatena {
+      width: 20px;
+    }
+    .twitter {
+      width: 75px;
+    }
   }
 
   .fixed-box {
