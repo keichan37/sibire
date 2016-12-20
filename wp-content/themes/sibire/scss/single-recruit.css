@@ -318,6 +318,18 @@
 #post .recruit-sns .facebook {
   width: 130px;
 }
+#post .recruit-sns .twitter,
+#post .recruit-sns .facebook,
+#post .recruit-sns .hatena {
+  float: left;
+  height: 20px;
+}
+#post .recruit-sns .hatena {
+  width: 20px;
+}
+#post .recruit-sns .twitter {
+  width: 75px;
+}
 #post .fixed-box.fixed {
   margin-top: 15px;
   padding: 15px 0;

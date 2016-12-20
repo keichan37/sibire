@@ -11,7 +11,7 @@
     $(window).scroll(function() {
       return $("a.r-scroll-top").toggleClass("none", $(window).scrollTop() < r),
       $("a.r-scroll-top").toggleClass("absolute", $(this).scrollTop() + $(this).height() > $("#footer").offset().top)
-    })
+    });
 
     $('a[href^="#"]').click(function() {
       var speed = 400;
@@ -21,6 +21,10 @@
       $('body,html').animate({scrollTop:position}, speed, 'swing');
       return false;
      });
+ 
+    $("a.e-toggle-global_menu").click(function() {
+      $("#menu-global_menu").toggleClass("open");
+    });
 
   })
 }).call(this);

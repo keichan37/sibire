@@ -153,16 +153,6 @@
   #flow .flow-img {
     top: 0;
   }
-  #sns {
-    width: 150px;
-    padding-top: 5px;
-  }
-  #sns .facebook {
-    margin-top: 3px;
-  }
-  #sns .twitter {
-    margin-top: 3px;
-  }
   .business-button-img,
   .registration-button-img {
     display: none;
