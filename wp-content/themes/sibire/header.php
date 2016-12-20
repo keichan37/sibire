@@ -97,3 +97,9 @@
           <div class="clear"></div>
         </div>
       </header>
+      <div id="menu-global_menu-wrap">
+        <div class="container">
+          <a class="sp-menu e-toggle-global_menu" href="javascript: void(0);"><i class="icon icon-menu"></i></a>
+          <?php wp_nav_menu( array('menu' => 'global_menu')); ?>
+        </div>
+      </div>

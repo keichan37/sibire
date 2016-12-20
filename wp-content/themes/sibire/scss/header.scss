@@ -50,32 +50,105 @@
   }
 }
 
-.menu-global_menu-container {
-  #menu-global_menu {
-    height: 40px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    .menu-item {
-      float: left;
-      width: 20%;
-      border-bottom: 1px solid transparent;
-      a {
-        display: block;
-        text-align: center;
-        height: 40px;
-        line-height: 40px;
-        text-decoration: none;
-        color: #333333;
-      }
-      &.current-menu-item {
-        border-bottom-color: #49c6e8;
+#menu-global_menu-wrap {
+  position: relative;
+  .sp-menu {
+    position: relative;
+    z-index: 101;
+    margin: 3px 0;
+    background-color: #000000;
+    background-color: rgba(51, 51, 51, 0.7);
+    display: none;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 23px;
+    -moz-border-radius: 23px;
+    -webkit-border-radius: 23px;
+    i {
+      position: relative;
+      top: -2px;
+    }
+  }
+  background-color: #000000;
+  background-color: rgba(51, 51, 51, 0.7);
+  .menu-global_menu-container {
+    #menu-global_menu {
+      height: 35px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      .menu-item {
+        float: left;
+        width: 20%;
         a {
-          cursor: default;
-          color: #49c6e8;
-          font-weight: 700;
+          display: block;
+          text-align: center;
+          height: 35px;
+          line-height: 35px;
+          text-decoration: none;
+          color: #ffffff;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          transition: 0.3s;
+          &:hover { color: #aaaaaa; }
+        }
+        &.current-menu-item {
+          a {
+            color: #aaaaaa;
+          }
         }
       }
     }
   }
+}
+
+@media(max-width: 768px) {
+  #menu-global_menu-wrap {
+    background: none;
+    .menu-global_menu-container {
+      #menu-global_menu {
+        z-index: 100;
+        background-color: rgba(51, 51, 51, 0.7);
+        position: relative;
+        display: none;
+        .menu-item {
+          width: 100%;
+          float: none;
+          height: 30px;
+          line-height: 30px;
+        }
+        &.open {
+          display: block;
+          height: auto;
+          width: 100%;
+          padding: 10px 0;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          transition: 0.3s;
+        }
+      }
+    }
+    .sp-menu { display: block;  }
+  }
+}
+
+@media(max-width: 550px) {
+  #header {
+    #sns {
+      width: 150px;
+      padding-top: 5px;
+      .facebook {
+        margin-top: 3px;
+      }
+      .twitter {
+        margin-top: 3px;
+      }
+    }
+  } 
 }

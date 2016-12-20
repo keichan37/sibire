@@ -208,8 +208,8 @@ Description: エリア絞り込み用
     padding-top: 0;
   }
 
-  #post h2.area-h2.fixed,
-  #post h2.area-h2.fixed.absolute {
+  #post.template-area h2.area-h2.fixed,
+  #post.template-area h2.area-h2.fixed.absolute {
     position: relative;
     top: auto;
     left: auto;
@@ -217,17 +217,17 @@ Description: エリア絞り込み用
     right: auto;
     margin: 0;
   }
-  #post ul.area-ul li.area-li a {
+  #post.template-area ul.area-ul li.area-li a {
     text-decoration: none;
   }
-  #post ul.area-ul li.area-li .area-li-img,
-  #post ul.area-ul li.area-li .area-li-text {
+  #post.template-area ul.area-ul li.area-li .area-li-img,
+  #post.template-area ul.area-ul li.area-li .area-li-text {
     float: none;
   }
-  #post ul.area-ul li.area-li .area-li-text {
+  #post.template-area ul.area-ul li.area-li .area-li-text {
     padding: 10px 0 0 0;
   }
-  #post ul.area-ul li.area-li .area-li-detail {
+  #post.template-area ul.area-ul li.area-li .area-li-detail {
     min-width: auto;
   }
 }
