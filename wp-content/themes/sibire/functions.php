@@ -148,6 +148,31 @@ if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu
 }
 add_action('admin_menu', 'remove_menus');
 
+/* カスタムメニューにてカスタム投稿の下層でもcurrent_pageクラスを付与 */
+function add_nav_menu_custom_class( $menu_items ) {
+	$lists = array(
+		'interview' => 'interview',
+		'event' => 'event',
+		'column' => 'column',
+		'recruit' => 'recruit',
+		'offer' => 'offer',
+	);
+  $current_post_type = get_post_type();
+	foreach($lists as $post_type => $page_slug){
+	
+		if($current_post_type==$post_type){
+			foreach ( $menu_items as $menu_key => $menu_item ) {
+				if(get_page($menu_item->object_id)->post_name == $page_slug){
+					$menu_items[$menu_key]->classes[] = 'current-menu-item '; //任意のクラス名
+				}
+			}
+		}
+	}
+	return $menu_items;
+}
+add_filter( 'wp_nav_menu_objects', 'add_nav_menu_custom_class' );
+
+
 /* 投稿画面用のcssを追加 */
 add_editor_style("editor.css");
 
