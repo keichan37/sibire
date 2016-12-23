@@ -34,6 +34,7 @@
 				// 戻って編集ボタン挙動
 				parent.find(".wpcf7c-btn-back").on("click", function(){
 					wpcf7c_to_step1(parent, true);
+					return false;
 				});
 			}
 
@@ -75,7 +76,7 @@ var wpcf7c_to_step1 = function(parent, scroll){
 	// スムーズスクロール
 	if(scroll) {
 		// スムーズスクロール
-		setTimeout(function() { wpcf7c_scroll(parent.attr("name")) }, 100);
+		setTimeout(function() { wpcf7c_scroll(parent.find("input[name=_wpcf7_unit_tag]").val()) }, 100);
 	}
 
 }

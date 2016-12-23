@@ -60,6 +60,7 @@
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/owl.carousel.min.js"></script>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/recruit.js"></script>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/area.js"></script>
+    <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/wpcf7.js"></script>
 
   <?php wp_head(); ?>
   </head>

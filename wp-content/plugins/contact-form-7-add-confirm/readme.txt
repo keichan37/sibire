@@ -3,8 +3,8 @@ Contributors: Yuichiro ABE
 Donate link:
 Tags: contact, form, contact form
 Requires at least: 3.8
-Tested up to: 4.4
-Stable tag: 4.3.2
+Tested up to: 4.7
+Stable tag: 4.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: contact-form-7-add-confirm
@@ -123,6 +123,13 @@ An answer to that question.
 
 4.3.1
  Check at WordPress4.4
-== Upgrade notice ==
+
 4.3.2
  Contact Form 7がインストールされていないときに管理画面がおかしくなるバグを修正
+
+4.3.3
+ アンカースクロールバグ修正
+
+== Upgrade notice ==
+4.6
+ WordPress4.7対応

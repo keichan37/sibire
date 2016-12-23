@@ -1,10 +1,12 @@
 #gif {
   background-color: #faf8e0;
   max-height: 803px;
+  min-height: 200px;
 }
 
 #gif img {
   width: 100%;
+  height: auto;
 }
 
 .line {
