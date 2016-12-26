@@ -553,7 +553,7 @@ ul.relation li .tag {
   margin-bottom: 15px;
 }
 
-.page-cover h1 {
+#post .page-cover h1 {
   font-size: 26px;
   line-height: 34px;
   font-weight: 500;
