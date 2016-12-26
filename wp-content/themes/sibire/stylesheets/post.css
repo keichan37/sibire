@@ -264,39 +264,6 @@ ul.post-grid li a:hover .post-grid-img {
   margin: 0;
 }
 
-#post .cpt-ui-list {
-  margin: 15px 0;
-  padding-left: 0;
-}
-
-#post .cpt-ui-list img {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin: -35px 0 0 10px;
-}
-
-#post .cpt-ui-list li {
-  position: relative;
-  list-style: none;
-}
-
-#post .cpt-ui-list li a {
-  color: #333333;
-  min-height: 70px;
-  display: block;
-  padding: 10px 10px 10px 90px;
-}
-
-#post .cpt-ui-list li a:hover {
-  text-decoration: none;
-  background-color: #f5f5f5;
-}
-
-#post .cpt-ui-list li a h3 {
-  margin: 0;
-}
-
 @media(max-width: 940px) {
   #post .container {
     width: 100%;

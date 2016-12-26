@@ -15,7 +15,7 @@ description: このファイルが基本フォーマットになる
                   <time class="entry-date" datetime="<?php the_time('c') ;?>">
                     <?php the_time('Y年n月j日') ;?>
                   </time>
-                  <h1 class="post-h1"><?php the_title(); ?></h1>
+                  <h1 class="post-h1"><?php the_title(); ?><?php show_page_number(); ?></h1>
                   <div class="post-name">
                     <? $txt = get_field('subtitle'); if($txt){ ?><? echo $txt; ?> <? } ?>
                   </div>

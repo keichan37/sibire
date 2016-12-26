@@ -30,7 +30,7 @@ description: 各投稿の一覧ページです
                   <div class="post-name">
                     <? $txt = get_field('subtitle'); if($txt){ ?><? echo $txt; ?> <? } ?>
                   </div>
-                  <ul class="cpt-ui-list"> 
+                  <ul class="post-list"> 
                     <?php
                     $args = array(
                       'posts_per_page' => -1,
@@ -41,13 +41,14 @@ description: 各投稿の一覧ページです
                     $postslist = get_posts($args);
                     foreach ($postslist as $post) : setup_postdata($post);
                     ?>
-                      <li>
+                      <li class="post-list-li">
                         <a href=<?php echo get_permalink(); ?>>
                           <?php if (has_post_thumbnail()): ?>
-                            <?php the_post_thumbnail(array(70, 70)); ?>
+                            <?php the_post_thumbnail(array(100, 100)); ?>
                           <?php endif; ?>
 
                             <?php get_template_part('tag'); //タグ ?>
+                            <time><?php the_date(); ?></time>
                             <h3><?php the_title(); ?></h3>
                             <?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?>
                         </a>
@@ -81,11 +82,5 @@ description: 各投稿の一覧ページです
               <div class="clear"></div>
             </div>
           </div>
-        </div>
-        <div class="registration">
-          <a href="/registration" class="registration-button">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/registration-text-2x.png" alt="登録する" class="registration-button-text">
-          </a>
-          <p>イベント情報や最新のお知らせを優先的にご案内します。</p>
         </div>
         <?php get_footer(); //フッター ?>
