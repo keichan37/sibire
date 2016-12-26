@@ -1,0 +1,44 @@
+@import "mixin";
+
+#post {
+  ul.post-list {
+    margin: 15px 0;
+    padding-left: 0;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: 10px 0 0 10px;
+    }
+
+    li.post-list-li {
+      position: relative;
+      list-style: none;
+      margin-bottom: 10px;
+      a {
+        color: #333333;
+        border: 2px solid #333333;
+        min-height: 100px;
+        display: block;
+        padding: 10px 10px 10px 120px;
+        text-decoration: none;
+        @include border-radius(2px);
+        h3 {
+          margin: 5px 0;
+        }
+        time {
+          display: block;
+          text-decoration: none;
+          clear: right;
+          color: #49c6e8;
+        }
+        &:hover {
+          border-color: #49c6e8;
+        }
+      }
+      &:nth-child(even) {
+        background-color: #fafafa;
+      } 
+    }
+  }
+}
