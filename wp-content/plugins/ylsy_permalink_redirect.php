@@ -403,7 +403,7 @@ class YLSY_Rewrite {
 }
 
 if (!function_exists('wp_redirect')) {
-    function wp_redirect($location, $status=302) {
+    function wp_redirect($location, $status=301) {
         global $is_IIS;
 
         $location = apply_filters('wp_redirect', $location, $status);
