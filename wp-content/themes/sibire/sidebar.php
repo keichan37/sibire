@@ -18,6 +18,7 @@ title: サイドバーの部分テンプレート
   </a>
   <p>イベント情報や最新のお知らせを<br />優先的にご案内します。</p>
 </div>
+<iframe frameborder='0' height='305px' name='wantedly_project_widget_82276' scrolling='no' src='https://www.wantedly.com/projects/82276/widget' style='border: none; max-width: 100%; min-width: 240px; width: 540px;'></iframe>
 <?php /* ?>
 <h5 class="relation-title">関連情報</h5>
 <ul class="relation">
