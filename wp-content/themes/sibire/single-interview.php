@@ -41,6 +41,7 @@
                 <?php get_template_part('sidebar'); //サイドバー ?>
               </div>
               <div class="clear"></div>
+              <?php get_template_part('partials/iframe');?>
 
             </div>
           </div>

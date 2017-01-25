@@ -58,6 +58,7 @@ description: このファイルが基本フォーマットになる
                 <?php get_template_part('sidebar'); //サイドバー ?>
               </div>
               <div class="clear"></div>
+              <?php get_template_part('partials/iframe');?>
               <?php get_template_part('partials/other','list');?>
             </div>
           </div>

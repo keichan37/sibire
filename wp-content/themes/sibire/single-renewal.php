@@ -267,6 +267,7 @@
                   wp_reset_postdata();
                   ?>
                 </div>
+                <?php get_template_part('partials/iframe');?>
               </div>
             </div>
           </div>
