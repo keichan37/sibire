@@ -1,1 +1,1 @@
-<iframe frameborder='0' height='305px' name='wantedly_project_widget_82276' scrolling='no' src='https://www.wantedly.com/projects/82276/widget' style='border: none; max-width: 100%; min-width: 240px; width: 540px;'></iframe>
+<iframe frameborder='0' height='305px' name='wantedly_project_widget_82276' scrolling='no' src='https://www.wantedly.com/projects/82276/widget' style='border: none; max-width: 100%; min-width: 240px; width: 540px; margin-top: 15px;'></iframe>
