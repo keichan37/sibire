@@ -32,6 +32,16 @@ description: このファイルが基本フォーマットになる
                         <div class="clear"></div>
                       </div>
                     <?php endif; ?>
+                  <?php elseif ( in_array(get_post_type(), array('creator')) ): //シビレるクリエイター用?>
+                    <div class="single-creator-top">
+                      <div class="single-creator-top-image">
+                        <img src="<?php the_field('single-creator-top-image'); ?>" alt="">
+                      </div>
+                      <div class="single-creator-top-text">
+                        <? $txt = get_field('single-creator-top-text'); if($txt){ ?><? echo $txt; ?> <? } ?>
+                      </div>
+                      <div class="clear"></div>
+                    </div>
                   <?php else: //シビレるニッチで非表示 ?>
                     <?php
                       $thumbnail_id = get_post_thumbnail_id();
