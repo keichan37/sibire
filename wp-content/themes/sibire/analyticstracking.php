@@ -8,3 +8,18 @@
   ga('send', 'pageview');
 
 </script>
+
+<script>
+/**
+* Google アナリティクスでアウトバウンド リンクのクリックをトラッキングする関数。
+* この関数では有効な URL 文字列を引数として受け取り、その URL 文字列を
+* イベントのラベルとして使用する。transport メソッドを 'beacon' に設定すると
+* 対応ブラウザでは 'navigator.sendBeacon' を使ってヒットが送信される。
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+</script>
