@@ -39,16 +39,8 @@ Description: 投稿用デフォルトフォーマット、ここに項目追加�
 }
 
 #post h3 {
-  font-size: 18px;
+  font-size: 16px;
   margin: 40px 0 10px 0;
-  background-image: url("../images/single-niche-h3.png");
-  background-repeat: repeat-x;
-  background-size: 44px 6px;
-  background-position: bottom;
-  padding: 0 0 10px 0;
-  margin: 20px 0 0 0;
-  padding-right: 15px;
-  display: inline-block;
 }
 
 #post h5 {
