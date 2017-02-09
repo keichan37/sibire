@@ -41,7 +41,7 @@ Description: 投稿用デフォルトフォーマット、ここに項目追加�
 #post h3 {
   font-size: 18px;
   margin: 40px 0 10px 0;
-  background-image: url("images/single-niche-h3.png");
+  background-image: url("../images/single-niche-h3.png");
   background-repeat: repeat-x;
   background-size: 44px 6px;
   background-position: bottom;
