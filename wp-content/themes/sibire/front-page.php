@@ -78,8 +78,8 @@
 
           </div>
 
-          <?php /* ?>
           <?php /* ?>ニッチ<?php */ ?>
+          <?php /* ?>
           <div id="niche" class="niche-banner">
             <div class="container">
               <a href="/niche/8402"><img src="<?php echo get_template_directory_uri(); ?>/images/niche_top.jpg" alt="シビレるニッチ 第一弾は富山"></a>
