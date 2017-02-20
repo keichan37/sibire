@@ -5,12 +5,10 @@
     label {
       display: block;
       float: left;
-      width: 215px;
-      text-align: right;
       font-weight: 800;
       font-size: 15px;
       line-height: 24px;
-      padding: 10px 15px 10px 0;
+      padding: 10px 0 10px 0;
       abbr { font-weight: 400; }
     }
     input[type="password"]{
@@ -28,11 +26,14 @@
       &:focus { border-color: #d4d4bd; }
       &:hover { background-color: #e8e8dc; }
     }
+    input[type="submit"] {
+      margin: 0;
+    }
   }
   @media(max-width: 600px) {
     .post-password-form {
       input[type="submit"] {
-        margin: 0px auto;
+        margin: 0px;
       }
       input[type="password"] {
         @include border-box;
