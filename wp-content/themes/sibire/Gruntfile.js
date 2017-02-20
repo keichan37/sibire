@@ -39,7 +39,8 @@ module.exports = function (grunt) {
             'scss/template-profile.css',
             'scss/template-list.css',
             'scss/plugin-wpcf7.css',
-            'scss/front-page.css'
+            'scss/front-page.css',
+            'scss/wordpress.css'
           ]
         }
       }
@@ -68,7 +69,8 @@ module.exports = function (grunt) {
           'scss/template-profile.css',
           'scss/template-list.css',
           'scss/plugin-wpcf7.css',
-          'scss/front-page.css'
+          'scss/front-page.css',
+          'scss/wordpress.css'
         ],
         tasks: ['cssmin']
       }

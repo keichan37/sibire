@@ -2,6 +2,46 @@
 #contents {
   /* 確認画面 */
 }
+#contents .post-password-form label {
+  display: block;
+  float: left;
+  width: 215px;
+  text-align: right;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 10px 15px 10px 0;
+}
+#contents .post-password-form label abbr {
+  font-weight: 400;
+}
+#contents .post-password-form input[type="password"] {
+  font-size: 15px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  line-height: 22px;
+  padding: 10px;
+  height: 22px;
+  width: 278px;
+  max-width: 278px;
+  background-color: #f2f2eb;
+  border: 1px solid #f2f2eb;
+  outline: none;
+}
+#contents .post-password-form input[type="password"]:focus {
+  border-color: #d4d4bd;
+}
+#contents .post-password-form input[type="password"]:hover {
+  background-color: #e8e8dc;
+}
 #contents div.wpcf7 {
   position: relative;
   padding: 30px 0;
