@@ -1,12 +1,10 @@
 #contents .post-password-form label {
   display: block;
   float: left;
-  width: 215px;
-  text-align: right;
   font-weight: 800;
   font-size: 15px;
   line-height: 24px;
-  padding: 10px 15px 10px 0;
+  padding: 10px 0 10px 0;
 }
 #contents .post-password-form label abbr {
   font-weight: 400;
@@ -38,9 +36,12 @@
 #contents .post-password-form input[type="password"]:hover {
   background-color: #e8e8dc;
 }
+#contents .post-password-form input[type="submit"] {
+  margin: 0;
+}
 @media (max-width: 600px) {
   #contents .post-password-form input[type="submit"] {
-    margin: 0px auto;
+    margin: 0px;
   }
   #contents .post-password-form input[type="password"] {
     box-sizing: border-box;
