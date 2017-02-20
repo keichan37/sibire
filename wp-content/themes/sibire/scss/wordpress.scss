@@ -1,0 +1,54 @@
+@import "mixin";
+
+#contents {
+  .post-password-form {
+    label {
+      display: block;
+      float: left;
+      width: 215px;
+      text-align: right;
+      font-weight: 800;
+      font-size: 15px;
+      line-height: 24px;
+      padding: 10px 15px 10px 0;
+      abbr { font-weight: 400; }
+    }
+    input[type="password"]{
+      font-size: 15px;
+      @include border-radius;
+      @include appearance;
+      line-height: 22px;
+      padding: 10px;
+      height: 22px;
+      width: 278px;
+      max-width: 278px;
+      background-color: #f2f2eb;
+      border: 1px solid #f2f2eb;
+      outline: none;
+      &:focus { border-color: #d4d4bd; }
+      &:hover { background-color: #e8e8dc; }
+    }
+  }
+  @media(max-width: 600px) {
+    .post-password-form {
+      input[type="submit"] {
+        margin: 0px auto;
+      }
+      input[type="password"] {
+        @include border-box;
+        min-height: 44px;
+        width: 100%;
+        margin-top: 10px;
+        max-width: 100%;
+      }
+      .control-label {
+        width: auto;
+        text-align: left;
+        float: none;
+        clear: both;
+        height: auto;
+        padding-bottom: 0;
+      }
+    }
+  }
+}

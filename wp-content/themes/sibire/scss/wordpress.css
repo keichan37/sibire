@@ -1,0 +1,66 @@
+#contents .post-password-form label {
+  display: block;
+  float: left;
+  width: 215px;
+  text-align: right;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 10px 15px 10px 0;
+}
+#contents .post-password-form label abbr {
+  font-weight: 400;
+}
+#contents .post-password-form input[type="password"] {
+  font-size: 15px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  line-height: 22px;
+  padding: 10px;
+  height: 22px;
+  width: 278px;
+  max-width: 278px;
+  background-color: #f2f2eb;
+  border: 1px solid #f2f2eb;
+  outline: none;
+}
+#contents .post-password-form input[type="password"]:focus {
+  border-color: #d4d4bd;
+}
+#contents .post-password-form input[type="password"]:hover {
+  background-color: #e8e8dc;
+}
+@media (max-width: 600px) {
+  #contents .post-password-form input[type="submit"] {
+    margin: 0px auto;
+  }
+  #contents .post-password-form input[type="password"] {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    min-height: 44px;
+    width: 100%;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  #contents .post-password-form .control-label {
+    width: auto;
+    text-align: left;
+    float: none;
+    clear: both;
+    height: auto;
+    padding-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=wordpress.css.map */
