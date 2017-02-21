@@ -1,12 +1,7 @@
-<?php 
-endforeach; 
-wp_reset_postdata();
-?>
-
 <?php
   $args = array(
    'post_type' => 'catchcopy',
-   'numberposts'   => -1,
+   'posts_per_page' => -1,
    'post_status' => 'publish',
    'has_password' => false,
   );
