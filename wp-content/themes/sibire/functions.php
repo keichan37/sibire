@@ -112,6 +112,18 @@ function sort_posts_columns($columns){
 	return $columns;
 }
 
+
+function Include_my_php($params = array()) {
+  extract(shortcode_atts(array(
+    'file' => 'default'
+  ), $params));
+  ob_start();
+  include(get_theme_root() . '/' . get_template() . "/$file.php");
+  return ob_get_clean();
+}
+add_shortcode('partial-php', 'Include_my_php');
+
+
 add_filter( 'manage_posts_columns', 'sort_posts_columns' );
 add_action( 'manage_posts_custom_column', 'add_column', 10, 2 );
 
