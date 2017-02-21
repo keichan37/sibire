@@ -12,8 +12,18 @@
 
     <?php the_title(); ?>
     <? $txt = get_field('catchcopy-link'); if($txt){ ?><? echo $txt; ?> <? } ?>
-    <? $txt = get_field('catchcopy-twitter'); if($txt){ ?><? echo $txt; ?> <? } ?>
+    
     <? $txt = get_field('catchcopy-area'); if($txt){ ?><? echo $txt; ?> <? } ?>
+
+    <a class="twitter-hashtag-button"
+      href="https://twitter.com/intent/tweet?button_hashtag=<? $txt = get_field('catchcopy-twitter'); if($txt){ ?><? echo $txt; ?> <? } ?>を応援する&text=<? $txt = get_field('catchcopy-twitter'); if($txt){ ?><? echo $txt; ?> <? } ?>を応援する"
+      data-size="large"
+      data-text="<? $txt = get_field('catchcopy-twitter'); if($txt){ ?><? echo $txt; ?> <? } ?>を応援する"
+      data-url="http://www.sibire.co.jp/event/11082"
+      data-hashtags="シビレ春場所,<? $txt = get_field('catchcopy-twitter'); if($txt){ ?><? echo $txt; ?> <? } ?>を応援する"
+      lang="ja">
+    #シビレを応援する
+    </a>
 
   <?php endwhile; ?>
 
