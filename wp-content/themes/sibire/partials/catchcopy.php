@@ -14,6 +14,7 @@
     <? $txt = get_field('catchcopy_link'); if($txt){ ?><? echo $txt; ?> <? } ?>
     <? $txt = get_field('catchcopy_twitter'); if($txt){ ?><? echo $txt; ?> <? } ?>
     <? $txt = get_field('catchcopy_area'); if($txt){ ?><? echo $txt; ?> <? } ?>
+    <b><?php echo nl2br(get_post_meta($post->ID, 'catchcopy_area', true)); ?></b>
 
   <?php endwhile; ?>
 
