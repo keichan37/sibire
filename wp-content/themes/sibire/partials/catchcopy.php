@@ -1,3 +1,8 @@
+<?php 
+endforeach; 
+wp_reset_postdata();
+?>
+
 <?php
   $args = array(
    'post_type' => 'catchcopy',
