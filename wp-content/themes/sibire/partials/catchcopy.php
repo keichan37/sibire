@@ -17,7 +17,7 @@
       $my_query = new WP_Query( $args );  //　クエリーを新規作成
     ?>
     <?php if ( $my_query->have_posts() ) : ?>
-      <h3 class="sendai">仙台部屋</h3>
+      <h4 class="sendai">仙台部屋</h4>
       <?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 
         <b><?php the_title(); ?></b>
