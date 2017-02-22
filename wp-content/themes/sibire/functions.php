@@ -112,9 +112,11 @@ function sort_posts_columns($columns){
 	return $columns;
 }
 
-
+// エディタ内でphpファイルを読み込む
 function Include_my_php($params = array()) {
   extract(shortcode_atts(array(
+    'area' => 'sendai',
+    'title' => '仙台',
     'file' => 'default'
   ), $params));
   ob_start();

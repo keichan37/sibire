@@ -1,5 +1,5 @@
 <div id="catchcopy">
-  <div class="catchcopy catchcopy-sendai">
+  <div class="catchcopy catchcopy-<? echo $area; ?>">
     <?php
       $args = array(
        'post_type' => 'catchcopy',
@@ -9,7 +9,7 @@
        'meta_query' => array(
          array(
           'key' => 'catchcopy-area',
-          'value' => 'sendai',
+          'value' => $area,
           'compare'=> 'LIKE'
          )
        ),
@@ -17,7 +17,7 @@
       $my_query = new WP_Query( $args );  //　クエリーを新規作成
     ?>
     <?php if ( $my_query->have_posts() ) : ?>
-      <h4 class="sendai">仙台部屋</h4>
+      <h4 class="<? echo $area; ?>"><? echo $title; ?>部屋</h4>
       <?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 
         <b><?php the_title(); ?></b>
@@ -30,6 +30,7 @@
           lang="ja">
         #<?php the_title(); ?>を応援する
         </a>
+        <br />
         <? $txt = get_field('catchcopy-link'); if($txt){ ?><a href="<? echo $txt; ?>" target="_blank">詳細はこちら</a> <? } ?>
 
       <?php endwhile; ?>
