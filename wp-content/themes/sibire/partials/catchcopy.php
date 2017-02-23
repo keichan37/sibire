@@ -26,7 +26,7 @@
             data-size="large"
             data-text="<?php the_title(); ?>がシビレる！"
             data-url="http://www.sibire.co.jp/event/11082"
-            data-hashtags="シビレ春場所,<?php the_title(); ?>がシビレる！"
+            data-hashtags="<? echo $title; ?>の仕事がシビレる,片道チケットもらえる,シビレ春場所"
             lang="ja">
           #<?php the_title(); ?>がシビレる！
           </a>
