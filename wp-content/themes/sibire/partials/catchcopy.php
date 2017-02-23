@@ -31,7 +31,7 @@
           #<?php the_title(); ?>がシビレる！
           </a>
           <br />
-          <? $txt = get_field('catchcopy-link'); if($txt){ ?><a href="<? echo $txt; ?>" target="_blank">詳細はこちら</a> <? } ?>
+          <? $txt = get_field('catchcopy-link'); if($txt){ ?><a href="<? echo $txt; ?>" target="_blank">この仕事の会社情報は…</a> <? } ?>
         </div>
 
       <?php endwhile; ?>
