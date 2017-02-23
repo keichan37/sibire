@@ -26,7 +26,7 @@
             data-size="large"
             data-text="3月9日東京で開催「シビレ春場所」で私がシビレた仕事は…"
             data-url="http://www.sibire.co.jp/event/11082"
-            data-hashtags="<?php the_title(); ?>がシビレる！,片道チケットもらえる,<? echo $title; ?>を応援,シビレ春場所"
+            data-hashtags="<?php the_title(); ?>がシビレる！,キャッチコピーで仕事選び,片道チケットもらえる,シビレ春場所"
             lang="ja">
           #<?php the_title(); ?>がシビレる！
           </a>
