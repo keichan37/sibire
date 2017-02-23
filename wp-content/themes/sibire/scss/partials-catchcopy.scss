@@ -1,5 +1,7 @@
+@import "mixin";
+
 #catchcopy {
-  .catchcopy {
+  .catchcopies {
     h4 {
       margin: 20px 0 10px 0;
       width: 120px;
@@ -10,10 +12,20 @@
       &.kobe     { background-image: url("images/partials-catchcopy/kobe.png"); }
       &.sendai   { background-image: url("images/partials-catchcopy/sendai.png"); }
     }
-    b {
-      display: block;
-      font-size: 23px;
-      margin: 10px 0 5px 0;
+    .catchcopy {
+      &.sendai   { background-image: url("images/partials-catchcopy/rikishi-sendai.png"); }
+      &.ishikawa { background-image: url("images/partials-catchcopy/rikishi-ishikawa.png"); }
+      &.kobe     { background-image: url("images/partials-catchcopy/rikishi-kobe.png"); }
+      background-repeat: no-repeat;
+      border: 1px solid #dddddd;
+      @include border-radius(3px);
+      padding: 10px 10px 10px 110px;
+      margin-bottom: 5px;
+      b {
+        display: block;
+        font-size: 23px;
+        margin: 10px 0 5px 0;
+      }
     }
   }
 }
