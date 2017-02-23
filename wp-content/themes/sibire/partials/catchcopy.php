@@ -22,7 +22,7 @@
         <div class="catchcopy <? echo $area; ?>">
           <b><?php the_title(); ?></b>
           <a class="twitter-hashtag-button"
-            href="https://twitter.com/intent/tweet?button_hashtag=<?php the_title(); ?>がシビレる！&text=<?php the_title(); ?>がシビレる！"
+            href="https://twitter.com/intent/tweet?button_hashtag=<? echo $title; ?>の仕事がシビレる&text=<?php the_title(); ?>がシビレる！"
             data-size="large"
             data-text="<?php the_title(); ?>がシビレる！"
             data-url="http://www.sibire.co.jp/event/11082"
