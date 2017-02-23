@@ -22,11 +22,11 @@
         <div class="catchcopy <? echo $area; ?>">
           <b><?php the_title(); ?></b>
           <a class="twitter-hashtag-button"
-            href="https://twitter.com/intent/tweet?button_hashtag=<? echo $title; ?>の仕事がシビレる&text=<?php the_title(); ?>がシビレる！"
+            href="https://twitter.com/intent/tweet?button_hashtag=<?php the_title(); ?>がシビレる！&text=3月9日東京で開催「シビレ春場所」で私がシビレた仕事は…"
             data-size="large"
-            data-text="<?php the_title(); ?>がシビレる！"
+            data-text="3月9日東京で開催「シビレ春場所」で私がシビレた仕事は…"
             data-url="http://www.sibire.co.jp/event/11082"
-            data-hashtags="<? echo $title; ?>の仕事がシビレる,片道チケットもらえる,シビレ春場所"
+            data-hashtags="<?php the_title(); ?>がシビレる！,片道チケットもらえる,<? echo $title; ?>を応援,シビレ春場所"
             lang="ja">
           #<?php the_title(); ?>がシビレる！
           </a>
