@@ -3,8 +3,8 @@
     $(window).scroll(function() {
 
       if ($('.e-fixed-box').length) {
-        $(".r-fixed-box-area").toggleClass("fixed", $(this).scrollTop() + 0 > $(".e-fixed-box").offset().top),
-        $(".r-fixed-box-area").toggleClass("absolute", $(this).scrollTop() + $(this).height() - 113 > $("#footer").offset().top)
+        $(".r-fixed-box-area").toggleClass("fixed", $(this).scrollTop() + 30 > $(".e-fixed-box").offset().top),
+        $(".r-fixed-box-area").toggleClass("absolute", $(this).scrollTop() + $(this).height() - 348 > $("#footer").offset().top)
       }
       // 北海道
       if ($('#e-fixed-title-hokkaido').length) {
