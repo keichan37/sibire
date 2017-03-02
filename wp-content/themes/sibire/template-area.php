@@ -68,7 +68,7 @@
                 </div>
 
                 <div id="sidebar">
-                  <div class="e-fixed-box"></div>
+                  <div class="e-fixed-box fixed-box-area-wrap"></div>
                   <div class="fixed-box r-fixed-box-area fixed-area-box">
                     <div class="area-map-wrap" id="area-map-wrap">
                       <ul>

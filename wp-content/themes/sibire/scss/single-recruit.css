@@ -330,6 +330,9 @@
 #post .recruit-sns .twitter {
   width: 75px;
 }
+#post .fixed-box-area-wrap {
+  margin-top: 25px;
+}
 #post .fixed-box.fixed {
   margin-top: 15px;
   padding: 15px 0;
