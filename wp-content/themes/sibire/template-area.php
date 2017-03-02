@@ -69,7 +69,7 @@
 
                 <div id="sidebar">
                   <div class="e-fixed-box"></div>
-                  <div class="fixed-box r-fixed-box fixed-area-box">
+                  <div class="fixed-box r-fixed-box-area fixed-area-box">
                     <div class="area-map-wrap" id="area-map-wrap">
                       <ul>
                         <!-- partials/area-map.phpに引数を渡して出力 -->
