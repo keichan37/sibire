@@ -81,8 +81,7 @@
           <?php /* ?>ニッチ<?php */ ?>
           <div id="niche" class="niche-banner">
             <div class="container">
-              <a href="/niche/8402"><img src="<?php echo get_template_directory_uri(); ?>/images/niche_top.jpg" alt="シビレるニッチ 第一弾は富山"></a>
-              <a href="/niche/11552"><img src="<?php echo get_template_directory_uri(); ?>/images/niche2_top.jpg" alt="シビレるニッチ 第二弾は北九州"></a>
+              <a href="/niche"><img src="<?php echo get_template_directory_uri(); ?>/images/front-page/niche_banner.jpg" alt="シビレるニッチ"></a>
             </div>
           </div>
 
