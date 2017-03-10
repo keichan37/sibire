@@ -4,8 +4,15 @@
   $args = array(/* 配列（$args）に複数の引数を追加 */
        'posts_per_page' => -1,
        'post_type' => array('recruit','offer'),
-       'meta_key' => 'area', /* カスタムフィールドキー（meta_key） */
-       'meta_value' => $area_name, /* カスタムフィールド値（meta_value)  */
+       'orderby' => 'meta_value',
+       'order' => 'ASC',
+       'meta_query' => array(
+         array(
+          'key' => 'area',
+          'value' => $area_name,
+          'compare'=> 'LIKE'
+         )
+       ),
        'post_status' => 'publish',
        'has_password' => false,
        'meta_compare'=>'LIKE'
