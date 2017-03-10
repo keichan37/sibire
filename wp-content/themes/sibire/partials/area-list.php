@@ -14,8 +14,7 @@
          )
        ),
        'post_status' => 'publish',
-       'has_password' => false,
-       'meta_compare'=>'LIKE'
+       'has_password' => false
   ); ?>
 
 <?php query_posts( $args ); ?><!-- メインの WordPress ループを変更するタグ -->
