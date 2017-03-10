@@ -4,7 +4,7 @@
   $args = array(/* 配列（$args）に複数の引数を追加 */
        'posts_per_page' => -1,
        'post_type' => array('recruit','offer'),
-       'orderby' => 'meta_value',
+       'orderby' => 'prefecture',
        'order' => 'ASC',
        'meta_query' => array(
          array(
