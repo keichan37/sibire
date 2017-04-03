@@ -42,6 +42,7 @@ description: このファイルが基本フォーマットになる
                       </div>
                       <div class="clear"></div>
                     </div>
+                  <?php elseif ( in_array(get_post_type(), array('media')) ): //メディア掲載用?>
                   <?php else: //シビレるニッチで非表示 ?>
                     <?php
                       $thumbnail_id = get_post_thumbnail_id();

@@ -203,6 +203,7 @@
                             echo '</ul>';
                           }
                         ?>
+                        <?php get_template_part('partials/registration');?>
 
                       <?php endif ?>
                     </div>  

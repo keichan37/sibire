@@ -40,6 +40,7 @@ module.exports = function (grunt) {
             'scss/template-list.css',
             'scss/plugin-wpcf7.css',
             'scss/partials-catchcopy.css',
+            'scss/partials-registration.css',
             'scss/front-page.css',
             'scss/wordpress.css'
           ]
@@ -71,6 +72,7 @@ module.exports = function (grunt) {
           'scss/template-list.css',
           'scss/plugin-wpcf7.css',
           'scss/partials-catchcopy.css',
+          'scss/partials-registration.css',
           'scss/front-page.css',
           'scss/wordpress.css'
         ],
