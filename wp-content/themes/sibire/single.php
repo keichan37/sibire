@@ -58,6 +58,9 @@ description: このファイルが基本フォーマットになる
                   <?php endif; ?>
                   
                   <?php the_content(); //本文 ?>
+                  <?php if ( in_array(get_post_type(), array('column')) ): //シビレる小ネタ用 他カテゴリーが決まったらtemplate側で場合分けする?>
+                    <?php get_template_part('partials/registration');?>
+                  <?php endif; ?>
                 <?php endwhile; else: //投稿が存在しない場合 ?>
                   <p>記事がありません</p>
                 <?php endif; ?>
