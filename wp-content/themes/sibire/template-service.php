@@ -1,6 +1,4 @@
-<?php /* ?>
-title: サービス
-<?php */ ?>
+<?php /* Template Name: サービス*/ ?>
 
   <?php get_header(); //ヘッダー ?>
         <div id="post" <?php body_class(); ?>>
