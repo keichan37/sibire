@@ -1,7 +1,7 @@
 <?php /* Template Name: サービス*/ ?>
 
   <?php get_header(); //ヘッダー ?>
-        <div id="post single-event">
+        <div id="post" class="single-event">
           <div id="contents">
             <div class="container">
               <div id="main-content">
