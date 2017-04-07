@@ -132,10 +132,7 @@
 
 
           <div class="registration">
-            <a href="/service" class="registration-button">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/registration-text-2x.png" alt="サービスに申し込む" class="registration-button-text">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/registration-cat.png" class="registration-button-img">
-            </a>
+            <?php get_template_part('partials/registration');?>
           </div>
 
           <div class="line">
