@@ -112,14 +112,10 @@
 
             </div>
           </div>
-
-
-          <?php /* ?>フロー<?php */ ?>
-          <div id="flow">
-            <div class="container">
-              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/flow-title-2x.png" alt="私たちは、地方移住をともなう転職を支援するエージェントです。"></h2>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/flow.jpg" class="flow-img" alt="登録 求人情報の提供 応募 選考・面接 内定・入社 移住">
-            </div>
+          <div id="banner">
+            <a href="/service">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/service_banner.jpg" alt="最適な環境で、最高の技術を sibireは東京にこだわらず働きたいエンジニアのための転職を支援するサービスです。">
+            </a>
           </div>
 
           <?php /* ?>求人<?php */ ?>
@@ -134,34 +130,10 @@
             </div>
           </div>
 
-          <?php /* ?>サービス<?php */ ?>
-          <div id="service">
-            <div class="container">
-              <h2><img src="<?php echo get_template_directory_uri(); ?>/images/service-title-2x.png" alt="サービスの特徴"></h2>
-              <div class="service-column-wrap">
-                <div class="service-column japan">
-                  <h3>日本全国の求人案件</h3>
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/cow.jpg">
-                  <p>47都道府県の求人情報保有。<br />やりたい生活・仕事から、<br />あなたに合ったエリアの推薦も</p>
-                </div>
-                <div class="service-column pickup">
-                  <h3>人力でピックアップ</h3>
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/rickshaw.jpg">
-                  <p>地方移住専門のITエージェントが、<br />あなたにマッチした求人を<br />ピックアップしてご紹介 </p>
-                </div>
-                <div class="service-column cooperate">
-                  <h3>自治体と協同</h3>
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/castle.jpg">
-                  <p>各自治体と協同し、<br />移住支援制度や補助制度など、<br />移住に役立つ情報をご提供 </p>
-                </div>
-                <div class="clear"></div>
-              </div>
-            </div>
-          </div>
 
           <div class="registration">
             <a href="/registration" class="registration-button">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/registration-text-2x.png" alt="登録する" class="registration-button-text">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/registration-text-2x.png" alt="サービスに申し込む" class="registration-button-text">
               <img src="<?php echo get_template_directory_uri(); ?>/images/registration-cat.png" class="registration-button-img">
             </a>
           </div>
