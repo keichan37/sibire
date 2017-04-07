@@ -121,9 +121,7 @@
 
                       </ul>
                     </div>
-
-                    <a class="recruit-registration" href="/registration"><span class="icon-head"></span>登録する</a>
-                    <div class="recruit-registration-window"><b class="caret"></b>イベント情報や最新のお知らせを<br />優先的にご案内します。<span class="icon-mail"></span></div>
+                    <?php get_template_part('partials/service');?>
                   </div>
                 </div>
                 <div class="clear"></div>

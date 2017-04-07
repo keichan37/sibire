@@ -12,12 +12,8 @@ title: サイドバーの部分テンプレート
 <div class="ce">
   <div class="fb-page" data-href="https://www.facebook.com/sibireinc" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/sibireinc" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/sibireinc">シビレ株式会社</a></blockquote></div>
 </div>
-<div class="registration">
-  <a href="/registration" class="registration-button">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/registration-text-2x.png" alt="サービスに申し込む" class="registration-button-text">
-  </a>
-  <p>脱・東京したいエンジニアの転職を支援</p>
-</div>
+<br />
+<?php get_template_part('partials/service');?>
 <?php /* ?>
 <h5 class="relation-title">関連情報</h5>
 <ul class="relation">
