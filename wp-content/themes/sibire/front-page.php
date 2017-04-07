@@ -10,7 +10,7 @@
           </div>
           <div id="registration">
             <a href="/registration">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/registration.png" alt="登録するにゃ">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/registration.png" alt="東京を脱出するニャ！">
             </a>
           </div>
           <?php dynamic_sidebar('top-banner-1'); ?>
@@ -132,7 +132,7 @@
 
 
           <div class="registration">
-            <a href="/registration" class="registration-button">
+            <a href="/service" class="registration-button">
               <img src="<?php echo get_template_directory_uri(); ?>/images/registration-text-2x.png" alt="サービスに申し込む" class="registration-button-text">
               <img src="<?php echo get_template_directory_uri(); ?>/images/registration-cat.png" class="registration-button-img">
             </a>
