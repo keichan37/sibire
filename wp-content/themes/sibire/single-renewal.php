@@ -215,8 +215,8 @@
                     </ul>
                     <div class="e-fixed-box"></div>
                     <div class="fixed-box r-fixed-box">
-                      <a class="recruit-registration" href="/registration"><span class="icon-head"></span>登録する</a>
-                      <div class="recruit-registration-window"><b class="caret"></b>イベント情報や最新のお知らせを<br />優先的にご案内します。<span class="icon-mail"></span></div>
+                      <a class="recruit-registration" href="/registration">サービスに申し込む</a>
+                      <div class="recruit-registration-window"><b class="caret"></b>脱・東京したい<br />エンジニアの転職を支援 <span class="icon-mail"></span></div>
                     <div class="recruit-sns">
                       <div class="hatena">
                         <a href="http://b.hatena.ne.jp/entry/http://www.sibire.co.jp" class="hatena-bookmark-button" data-hatena-bookmark-title="シビレ株式会社" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
