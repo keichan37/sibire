@@ -112,11 +112,6 @@
 
             </div>
           </div>
-          <div id="banner">
-            <a href="/service">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/service_banner.jpg" alt="最適な環境で、最高の技術を sibireは東京にこだわらず働きたいエンジニアのための転職を支援するサービスです。">
-            </a>
-          </div>
 
           <?php /* ?>求人<?php */ ?>
           <div id="offers">
