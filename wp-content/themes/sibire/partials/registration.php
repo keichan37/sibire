@@ -2,7 +2,11 @@
   <div class="partials-registration-wrap">
     <a class="partials-registration" href="/service#form">サービスに申し込む</a>
     <p>
-      エンジニアのための転職を支援 
+      <?php if ( in_array(get_post_type(), array('recruit')) ): //求人用?>
+        この求人にシビレた！
+      <?php else: ?>
+        エンジニアのための転職を支援
+      <?php endif; ?>
     </p>
   </div>
 </div>

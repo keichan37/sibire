@@ -178,6 +178,8 @@
                             </tr>
                           </tbody>
                         </table>
+                        <br />
+                        <?php get_template_part('partials/registration');?>
                       <?php endif ?>
                     </div>  
                   <?php endwhile; else: //投稿が存在しない場合 ?>
