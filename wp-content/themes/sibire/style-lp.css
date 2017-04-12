@@ -27,7 +27,7 @@ header a {
   width: 61px;
   height: 19px;
   text-indent: -9999px;
-  background: url("images/template-service/lp-logo.png") no-repeat;
+  background: url("images/template-lp/lp-logo.png") no-repeat;
 }
 
 footer {
@@ -39,12 +39,12 @@ footer {
 
 /* ---------------------------- */
 
-/* ----- template-service ----- */
+/* ----- template-lp ----- */
 
 #lp .lp-cover {
   height: 300px;
   padding-top: 180px;
-  background: url("images/template-service/lp-cover-background.jpg") center center /100% no-repeat;
+  background: url("images/template-lp/lp-cover-background.jpg") center center /100% no-repeat;
 }
 
 #lp .lp-cover h1 {
@@ -61,7 +61,7 @@ footer {
 
 #lp .lp-title-wrap {
   height: 56px;
-  background: #1b1464 url("images/template-service/lp-title-background.png") no-repeat;
+  background: #1b1464 url("images/template-lp/lp-title-background.png") no-repeat;
   padding: 35px 0;
 }
 
@@ -83,10 +83,10 @@ footer {
 #lp .lp-characteristic-wrap {
   position: relative;
   height: 360px;
-  background: #f5f5f5 url("images/template-service/lp-characteristic-first-background.jpg") center center no-repeat;
+  background: #f5f5f5 url("images/template-lp/lp-characteristic-first-background.jpg") center center no-repeat;
 }
-#lp .lp-characteristic-wrap.second-child { background: #ffffff url("images/template-service/lp-characteristic-second-background.jpg") center center no-repeat; }
-#lp .lp-characteristic-wrap.last-child { background: #f5f5f5 url("images/template-service/lp-characteristic-last-background.jpg") center center no-repeat; }
+#lp .lp-characteristic-wrap.second-child { background: #ffffff url("images/template-lp/lp-characteristic-second-background.jpg") center center no-repeat; }
+#lp .lp-characteristic-wrap.last-child { background: #f5f5f5 url("images/template-lp/lp-characteristic-last-background.jpg") center center no-repeat; }
 
 #lp .lp-characteristic-wrap .lp-characteristic-img {
   width: 360px;
@@ -137,7 +137,7 @@ footer {
 #lp .lp-flow-wrap {
   height: 530px;
   padding-top: 40px;
-  background-image: url("images/template-service/lp-flow-background.png");
+  background-image: url("images/template-lp/lp-flow-background.png");
 }
 
 #lp .lp-flow-wrap ul {
@@ -152,7 +152,7 @@ footer {
   padding: 12px 15px 12px 60px;
   margin-bottom: 33px;
   list-style: none;
-  background-image: url("images/template-service/lp-flow-number.png");
+  background-image: url("images/template-lp/lp-flow-number.png");
   background-repeat: no-repeat;
 }
 
@@ -165,7 +165,7 @@ footer {
   margin: 0 0 -34px -15px;
   width: 40px;
   height: 30px;
-  background-image: url("images/template-service/lp-flow-caret.png");
+  background-image: url("images/template-lp/lp-flow-caret.png");
 }
 
 #lp .lp-flow-wrap ul li.second-child { background-position: 0 -82px;  }
@@ -221,7 +221,7 @@ footer {
 }
 
 #lp .lp-message-wrap {
-  background-image: url("images/template-service/lp-message-background.png");
+  background-image: url("images/template-lp/lp-message-background.png");
   padding: 77px 0 130px 0;
   text-align: center;
   color: #ffffff;
