@@ -8,11 +8,14 @@
   max-width: 636px;
   margin: 0px auto;
 }
-#post .partials-registration-wrap p,
-.partials .partials-registration-wrap p {
-  margin: 10px 0 0 0;
-  font-size: 13px;
-  line-height: 18px;
+#post .partials-registration-wrap img.partials-img,
+.partials .partials-registration-wrap img.partials-img {
+  vertical-align: bottom;
+  margin-bottom: 5px;
+}
+#post .partials-registration-wrap .partials-link-wrap,
+.partials .partials-registration-wrap .partials-link-wrap {
+  margin-bottom: 10px;
 }
 #post .partials-registration-wrap a.partials-registration,
 .partials .partials-registration-wrap a.partials-registration {
@@ -29,6 +32,7 @@
   line-height: 50px;
   position: relative;
   margin: 0px auto;
+  margin-bottom: 10px;
 }
 #post .partials-registration-wrap a.partials-registration span,
 .partials .partials-registration-wrap a.partials-registration span {
@@ -42,6 +46,13 @@
 .partials .partials-registration-wrap a.partials-registration:hover {
   background-color: #d31c40;
   text-shadow: 0 0 3px rgba(255, 255, 255, 0.4);
+}
+#post .partials-registration-wrap p,
+.partials .partials-registration-wrap p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 /*# sourceMappingURL=partials-registration.css.map */
