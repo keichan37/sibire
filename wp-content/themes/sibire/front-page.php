@@ -2,7 +2,7 @@
         <div id="contents">
           <div id="gif">
             <div class="container">
-              <h1 id="message"><img src="<?php echo get_template_directory_uri(); ?>/images/midashi-2x.png" alt="エンジニアよ、地方でシビレろ"></h1>
+              <h1 id="message"><img src="<?php echo get_template_directory_uri(); ?>/images/midashi2-2.png" alt="シビレる環境で最高の技術を"></h1>
               <img
                 src="<?php echo get_template_directory_uri(); ?>/images/37.gif"
               >
