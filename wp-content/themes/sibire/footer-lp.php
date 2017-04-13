@@ -2,7 +2,7 @@
         <a class="e-scroll-top r-scroll-top scroll-top none icon-arrow-up" href="javascript:void(0);"></a>
       </div>
       <footer id="footer">
-        <div class="copy">&copy; 2017 sibire ,inc. All Rights Reserved.</div>
+        <div class="copy">&copy; <?php echo date("Y"); ?> sibire ,inc. All Rights Reserved.</div>
       </footer>
 
     </div>

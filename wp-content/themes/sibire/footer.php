@@ -45,7 +45,7 @@
             ?>
             <div class="clear"></div>
           </div>
-          <div class="copy">&copy; 2016 sibire ,inc. All Rights Reserved.</div>
+          <div class="copy">&copy; <?php echo date("Y"); ?> sibire ,inc. All Rights Reserved.</div>
         </div>
       </footer>
 
