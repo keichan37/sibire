@@ -37,6 +37,31 @@ footer {
   text-align: center;
 }
 
+.sns-wrap:after .sns-wrap:before {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  font-size:0;	
+  clear: both; 
+  visibility:hidden;
+}
+
+.sns-wrap {
+  height: 24px;
+  width: 220px;
+  margin: 0px auto;
+  margin-bottom: 15px;
+}
+
+.sns-wrap .facebook,
+.sns-wrap .twitter {
+  float: left;
+}
+
+.sns-wrap .facebook {
+  margin-right: 8px;
+}
+
 /* ---------------------------- */
 
 /* ----- template-lp ----- */
