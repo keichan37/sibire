@@ -1,4 +1,4 @@
-<?php if( is_single('272') ):// 申し込みページでは非表示 ?>
+<?php if( is_page('272') ):// 申し込みページでは非表示 ?>
 <?php else: ?>
   <a class="service-registration" href="/service#form">サービスに申し込む</a>
   <div class="service-registration-window"><b class="caret"></b>
