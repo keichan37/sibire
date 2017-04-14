@@ -33,7 +33,7 @@
   width: 238px;
   height: 146px;
   margin-bottom: 10px;
-  background: #f2f2f2 url("images/common/no-image.png") center center /100% no-repeat;
+  background: #f2f2f2 url("images/common/no-image.png") center center /auto 100% no-repeat;
 }
 
 #common a.common-grid h3 {
