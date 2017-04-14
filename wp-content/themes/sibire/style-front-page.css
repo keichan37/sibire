@@ -85,3 +85,31 @@
   border-color: #49c6e8;
   color: #49c6e8;
 }
+#common a.common-grid.column .common-grid-text-wrap  { border-left-color: #dd4ae5; }
+#common a.common-grid.column .common-grid-text-wrap .common-grid-time { color: #dd4ae5; }
+#common a.common-grid.column .common-grid-tag,
+#common a.common-grid.column:hover {
+  border-color: #dd4ae5;
+  color: #dd4ae5;
+}
+#common a.common-grid.event .common-grid-text-wrap  { border-left-color: #6ecc3e; }
+#common a.common-grid.event .common-grid-text-wrap .common-grid-time { color: #6ecc3e; }
+#common a.common-grid.event .common-grid-tag,
+#common a.common-grid.event:hover {
+  border-color: #6ecc3e;
+  color: #6ecc3e;
+}
+#common a.common-grid.interview .common-grid-text-wrap  { border-left-color: #ff9e55; }
+#common a.common-grid.interview .common-grid-text-wrap .common-grid-time { color: #ff9e55; }
+#common a.common-grid.interview .common-grid-tag,
+#common a.common-grid.interview:hover {
+  border-color: #ff9e55;
+  color: #ff9e55;
+}
+#common a.common-grid.niche .common-grid-text-wrap  { border-left-color: #1b1464; }
+#common a.common-grid.niche .common-grid-text-wrap .common-grid-time { color: #1b1464; }
+#common a.common-grid.niche .common-grid-tag,
+#common a.common-grid.niche:hover {
+  border-color: #1b1464;
+  color: #1b1464;
+}
