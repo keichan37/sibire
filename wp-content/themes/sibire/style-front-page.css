@@ -91,6 +91,13 @@
   border-color: #49c6e8;
   color: #49c6e8;
 }
+#common a.common-grid.offer .common-grid-text-wrap  { border-left-color: #49c6e8; }
+#common a.common-grid.offer .common-grid-text-wrap .common-grid-time { color: #49c6e8; }
+#common a.common-grid.offer .common-grid-tag,
+#common a.common-grid.offer:hover {
+  border-color: #49c6e8;
+  color: #49c6e8;
+}
 #common a.common-grid.column .common-grid-text-wrap  { border-left-color: #dd4ae5; }
 #common a.common-grid.column .common-grid-text-wrap .common-grid-time { color: #dd4ae5; }
 #common a.common-grid.column .common-grid-tag,
