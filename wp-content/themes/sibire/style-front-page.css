@@ -1,0 +1,82 @@
+#common {
+  background: #f5f5f5;
+}
+
+#common .common-grid-wrap:after,
+#common .common-grid-wrap:before {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  font-size:0;	
+  clear: both; 
+  visibility:hidden;
+}
+
+#common a.common-grid {
+  position: relative;
+  display: block;
+  width: 238px;
+  height: 258px;
+  color: #333333;
+  border: 6px solid #ffffff;
+  background: #ffffff;
+  float: left;
+  margin: 0 15px 15px 0;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#common a.common-grid .common-grid-img {
+  width: 238px;
+  height: 146px;
+  margin-bottom: 10px;
+  background: #f2f2f2 url("images/common/no-image.png") center center /100% no-repeat;
+}
+
+#common a.common-grid h3 {
+  font-size: 17px;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+  padding: 0 6px;
+}
+
+#common a.common-grid .common-grid-text-wrap {
+  padding: 0 6px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 -6px -6px;
+  border-left: 6px solid #f2f2f2;
+}
+
+#common a.common-grid .common-grid-text-wrap .common-grid-time {
+  font-size: 11px;
+}
+
+#common a.common-grid .common-grid-text-wrap p {
+  font-size: 13px;
+  margin: 0;
+}
+
+#common a.common-grid .common-grid-tag {
+  display: block;
+  font-size: 10px;
+  border: 1px solid #333333;
+  padding: 1px 2px 0 2px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0 6px 5px 0;
+}
+
+#common a.common-grid.recruit .common-grid-text-wrap  { border-left-color: #49c6e8; }
+#common a.common-grid.recruit .common-grid-text-wrap .common-grid-time { color: #49c6e8; }
+#common a.common-grid.recruit .common-grid-tag,
+#common a.common-grid.recruit:hover {
+  border-color: #49c6e8;
+  color: #49c6e8;
+}
