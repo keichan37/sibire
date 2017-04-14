@@ -37,8 +37,8 @@
                     echo $post->post_title;
                   }
                 ?>
+                <?php echo mb_strimwidth(get_the_title(), 0, 52, "…", "UTF-8"); ?>
               </h3>
-              <?php /* ?><h3><?php echo mb_strimwidth(get_the_title(), 0, 52, '…'); ?></h3><?php */ ?>
               <div class="common-grid-text-wrap">
                 <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
                 <time class="common-grid-time"><?php the_date('Y.m.d'); ?></time>
