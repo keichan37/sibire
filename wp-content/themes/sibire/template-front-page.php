@@ -27,9 +27,10 @@
                 <?php endif; ?>
               >
               </div>
-              <h3><?php the_title(); ?></h3>
+              
+              <h3><?php echo mb_strimwidth(get_the_title(), 0, 52, "…", "UTF-8"); ?></h3>
               <div class="common-grid-text-wrap">
-                <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
+                <p><?php echo mb_strimwidth(get_post_meta($post->ID, 'subtitle', true), 0, 34, "…", "UTF-8"); ?></p>
                 <time class="common-grid-time"><?php the_date('Y.m.d'); ?></time>
               </div>
               <span class="common-grid-tag <?php echo esc_html(get_post_type_object($post->post_type)->name); ?>"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>
