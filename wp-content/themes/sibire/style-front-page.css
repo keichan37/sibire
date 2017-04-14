@@ -60,6 +60,11 @@
 #common a.common-grid .common-grid-text-wrap p {
   font-size: 13px;
   margin: 0;
+  width: 238px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
 }
 
 #common a.common-grid .common-grid-tag {
