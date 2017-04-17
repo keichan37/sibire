@@ -41,7 +41,22 @@
           </div>
         </div>    
         <div class="common-right">
-          <div style="background: #ffffff; height: 320px;"></div>
+          <div style="background: #ffffff; height: 320px;">
+            <h2>カテゴリ一覧</h2>
+            <ul>
+              <?php
+                $args = array(
+                  'orderby' => 'order',
+                  'order' => 'ASC',
+                  'exclude' => '1' // 「未設定」カテゴリを除外
+
+                );
+                $cat_all = get_categories($args);
+                foreach($cat_all as $value): ?>
+                  <li><a href="<?php echo get_category_link($value); /* カテゴリへのリンク */ ?>"><?php echo esc_html($value->name); /* カテゴリ名 */ ?></a></li>
+                <?php endforeach; ?>
+              </ul>
+          </div>
         </div>
       </div>    
       
