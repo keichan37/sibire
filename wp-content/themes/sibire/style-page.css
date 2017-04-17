@@ -1,0 +1,80 @@
+#common .page-wrap {
+  background-color: #ffffff;
+  color: #1b1464;
+  position: relative;
+}
+
+#common .page-wrap .breadcrumb {
+  border-bottom: 1px solid #1B1464;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  font-size: 11px;
+}
+
+#common .page-wrap .breadcrumb a {
+  color: #1B1464;
+  text-decoration: none;
+}
+
+#common .page-wrap .breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+#common .page-wrap h1 {
+  font-size: 22px;
+  line-height: 45px;
+  height: 45px;
+  margin: 30px 0 0 0;
+  border-bottom: 1px solid #1b1464;
+}
+
+#common .page-wrap .page-nav {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 95px 0 0 15px;
+}
+
+#common .page-wrap .page-nav li {
+  list-style: none;
+}
+
+#common .page-wrap .page-nav li a {
+  display: block;
+  margin-bottom: 10px;
+  width: 195px;
+  height: 31px;
+  line-height: 33px;
+  font-size: 14px;
+  border: 1px solid #1b1464;
+  color: #1b1464;
+  padding: 0 15px;
+  text-decoration: none;
+  border-radius: 3px;
+  background: #ffffff url("images/page/page-nav-caret.png") right 10px top no-repeat;
+}
+
+#common .page-wrap .page-nav li a:hover {
+  background-color: #fafafa;
+}
+
+#common .page-wrap .page-nav li a.active {
+  font-weight: 700;
+  color: #ffffff;
+  cursor: default;
+  background-color: #1b1464;
+  background-position: right 10px top -31px;
+}
+
+#common .page-wrap section {
+  padding: 0 100px 30px 290px;
+}
+
+#common .page-wrap section .page-content {
+  font-size: 14px;
+  line-height: 44px;
+  margin: 30px 13px;
+}
