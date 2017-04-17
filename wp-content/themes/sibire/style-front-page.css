@@ -1,3 +1,49 @@
+/*---------- layout.css ---------*/
+
+.sns-footer {
+  background-color: #f5f5f5;
+  height: 30px;
+  padding: 20px 0;
+}
+
+.sns-footer-inner {
+  width: 184px;
+  margin: 0px auto;
+}
+
+.sns-footer-inne:after,
+.sns-footer-inner:before {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  font-size:0;	
+  clear: both; 
+  visibility: hidden;
+}
+
+.sns-footer a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin: 0 8px;
+  background: #f5f5f5 url("images/common/sns.png") no-repeat;
+  background-size: 30px 120px;
+  text-indent: -9999px;
+}
+.sns-footer a.wantedly { background-position: 0 -30px; }
+.sns-footer a.twitter  { background-position: 0 -60px; }
+.sns-footer a.facebook { background-position: 0 -90px; }
+
+.sns-footer a:hover {
+  opacity: 0.8;
+  -ms-filter: "alpha(opacity=80)";
+  -moz-opacity:0.8;
+  background-color: #ffffff;
+}
+
+/*-------------------------------*/
+
 #common .container {
   width: 1100px;
   padding: 0 15px;
@@ -67,6 +113,10 @@
   height: 146px;
   margin-bottom: 10px;
   background: #f2f2f2 url("images/common/no-image.png") center center /auto 100% no-repeat;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #common a.common-grid h3 {
@@ -117,6 +167,13 @@
   margin: 0 6px 5px 0;
 }
 
+#common a.common-grid .common-grid-img:hover {
+  opacity: 0.8;
+  -ms-filter: "alpha(opacity=80)";
+  -moz-opacity:0.8;
+  background-color: #ffffff;
+}
+
 #common a.common-grid.recruit .common-grid-text-wrap  { border-left-color: #49c6e8; }
 #common a.common-grid.recruit .common-grid-text-wrap .common-grid-time { color: #49c6e8; }
 #common a.common-grid.recruit .common-grid-tag,
@@ -158,4 +215,53 @@
 #common a.common-grid.niche:hover {
   border-color: #1b1464;
   color: #1b1464;
+}
+
+#common .common-category-wrap {
+  padding: 8px 25px 25px;
+  background-color: #ffffff;
+}
+
+#common ul.common-category {
+  margin: 0;
+  padding: 18px 0 0 0;
+}
+
+#common ul.common-category li {
+  padding: 0;
+  list-style: none;
+  float: left;
+  width: 50%;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+#common ul.common-category li a {
+  color: #333333;
+  text-decoration: none;
+}
+
+#common ul.common-category li a:hover {
+  text-decoration: underline;
+}
+
+#common h2.common-category-title {
+  font-size: 14px;
+  margin: 0;
+  width: 124px;
+  height: 26px;
+  line-height: 26px;
+  margin: 0px auto;
+  text-align: center;
+  background: #ffffff url('images/common/h2-category.png') no-repeat;
+}
+
+#common ul.common-category:before,
+#common ul.common-category:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  font-size:0;	
+  clear: both; 
+  visibility: hidden;
 }
