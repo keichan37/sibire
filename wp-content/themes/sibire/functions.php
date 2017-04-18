@@ -186,6 +186,28 @@ function add_nav_menu_custom_class( $menu_items ) {
 }
 add_filter( 'wp_nav_menu_objects', 'add_nav_menu_custom_class' );
 
+/* 複数投稿用ページネーション */
+function pagination($pages = '', $range = 4) {  
+  $showitems = ($range * 2)+1;  
+  global $paged;
+  if(empty($paged)) $paged = 1;
+  if($pages == '') {
+    global $wp_query;
+    $pages = $wp_query->max_num_pages;
+    if(!$pages) { $pages = 1; }
+  }   
+  if(1 != $pages) {
+    echo "<nav class=\"pagination-wrap\"><ul class=\"pagination\">";
+    if($paged > 1) echo "<li><a class=\"pagination-button\" href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a></li>";
+    for ($i=1; $i <= $pages; $i++) {
+      if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )) {
+        echo ($paged == $i)? "<li><span class=\"active\">".$i."</span></li>":"<li><a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a></li>";
+      }
+    }
+    if ($paged < $showitems && $paged < $pages) echo "<li><a class=\"pagination-button\" href=\"".get_pagenum_link($paged + 1)."\">&rsaquo;</a></li>";  
+    echo "</ul></nav>";
+  }
+}
 
 /* 投稿画面用のcssを追加 */
 add_editor_style("editor.css");

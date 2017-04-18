@@ -11,7 +11,7 @@
               $args = array(
                 'paged' => $paged,
                 'post_type' => array('recruit','interview','offer','column','event','niche'),
-                'posts_per_page' => -1,
+                'posts_per_page' => 27,
                 'post_status' => 'publish',
                 'has_password' => false,
               ); ?>
@@ -38,6 +38,10 @@
                   <span class="common-grid-tag <?php echo esc_html(get_post_type_object($post->post_type)->name); ?>"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>
                 </a>
             <?php endwhile; ?>
+            <?php if (function_exists("pagination")) {
+              pagination($custom_query->max_num_pages);
+            } ?>
+
           </div>
         </div>    
         <div class="common-right">
