@@ -55,7 +55,9 @@
 }
 
 #common:after,
-#common:before {
+#common:before,
+#common .container:after,
+#common .container:before {
   content: "."; 
   display: block; 
   height: 0; 
@@ -264,4 +266,34 @@
   font-size:0;	
   clear: both; 
   visibility: hidden;
+}
+
+@media(max-width: 1130px) {
+  #common .container {
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  #common .common-right {
+  }
+}
+
+@media(max-width: 815px) {
+  #common .common-left {
+    width: 100%;
+  }
+  #common .common-left .common-grid {
+    float: none;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0px auto;
+    margin-bottom: 15px;
+  }
+  #common .common-left .common-grid .common-grid-img {
+    width: 100%;
+  }
 }
