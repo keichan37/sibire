@@ -78,3 +78,20 @@
   line-height: 44px;
   margin: 30px 13px;
 }
+
+@media(max-width: 815px) {
+  #common .page-wrap .page-nav {
+    position: relative;
+    margin: 0;
+    padding: 20px 20px 0px 20px;
+  }
+  #common .page-wrap .page-nav li  a{
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  #common .page-wrap section {
+    padding: 0 20px 30px 20px;
+  }
+}
