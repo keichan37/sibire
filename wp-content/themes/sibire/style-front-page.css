@@ -129,7 +129,7 @@
   -webkit-line-clamp: 2;
   font-size: 17px;
   line-height: 22px;
-  height: 48px;
+  height: 44px;
   margin: 0 0 10px 0;
   padding: 0 6px;
 }
@@ -276,6 +276,10 @@
     -moz-box-sizing: border-box;
   }
   #common .common-right {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #common ul.common-category {
   }
 }
 
