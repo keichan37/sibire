@@ -284,6 +284,9 @@
 }
 
 @media(max-width: 815px) {
+  #common .container {
+    padding: 0 20px;
+  }
   #common .common-left {
     width: 100%;
   }
