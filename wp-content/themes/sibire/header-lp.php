@@ -55,6 +55,9 @@
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
     <link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/apple-touch-icon.png" />
 
+    <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/jquery.js"></script>
+    <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/app.js"></script>
+
   <?php wp_head(); ?>
   </head>
   <body>

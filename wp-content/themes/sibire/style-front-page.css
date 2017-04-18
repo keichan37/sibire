@@ -42,6 +42,32 @@
   background-color: #ffffff;
 }
 
+.scroll-top-wrap {
+  position: relative;
+}
+
+.scroll-top {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #1b1464 url("images/common/scroll-top.png") no-repeat;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  margin: 0 20px 20px 0;
+}
+a.scroll-top.none { display: none; }
+
+a.scroll-top.absolute {
+  position: absolute;
+}
+a.scroll-top:hover {
+  opacity: 0.8;
+  -ms-filter: "alpha(opacity=80)";
+  -moz-opacity:0.8;
+}
+
 /*-------------------------------*/
 
 #common .container {
