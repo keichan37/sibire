@@ -128,7 +128,7 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 22px;
   height: 48px;
   margin: 0 0 10px 0;
   padding: 0 6px;
@@ -295,5 +295,6 @@
   }
   #common .common-left .common-grid .common-grid-img {
     width: 100%;
+    background-size: cover;
   }
 }
