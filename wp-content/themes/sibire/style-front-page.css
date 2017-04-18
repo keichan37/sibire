@@ -268,6 +268,68 @@
   visibility: hidden;
 }
 
+#common nav.pagination-wrap {
+  clear: both;
+  display: block;
+  text-align: center;
+}
+
+#common ul.pagination:before,
+#common ul.pagination:after {
+  content: "."; 
+  clear: both;
+  display: block; 
+  height: 0; 
+  font-size:0;	
+  visibility: hidden;
+}
+
+#common ul.pagination {
+  display: inline-block;
+  width: 300px;
+  margin: 10px 0 20px 0;
+  padding: 0;
+}
+
+#common ul.pagination li {
+  list-style: none;
+  float: left;
+}
+
+#common ul.pagination li .active,
+#common ul.pagination li a {
+  display: block;
+  width: 34px;
+  height: 34px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 34px;
+  font: 400 14px/34px 'Lucida Grande';
+}
+
+#common ul.pagination li .active {
+  color: #777777;
+}
+
+#common ul.pagination li a {
+  color: #1b1464;
+}
+
+#common ul.pagination li a:hover {
+  opacity: 0.8;
+  -ms-filter: "alpha(opacity=80)";
+  -moz-opacity:0.8;
+}
+
+#common ul.pagination li a.pagination-button {
+  background-color: #1b1464;
+  color: #ffffff;
+  border-radius: 17px;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 2px;
+}
+
+
 @media(max-width: 1130px) {
   #common .container {
     width: 100%;

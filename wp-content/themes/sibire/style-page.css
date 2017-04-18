@@ -54,6 +54,8 @@
   padding: 0 15px;
   text-decoration: none;
   border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   background: #ffffff url("images/page/page-nav-caret.png") right 10px top no-repeat;
 }
 
