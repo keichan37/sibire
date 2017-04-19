@@ -15,7 +15,7 @@
                 $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true); //アイキャッチのURL取得
               ?>
               <?php if (has_post_thumbnail()): //アイキャッチある場合 ?>
-                <img class="single-eyecatch" src="<?php echo $thumbnail_url[0]; ?>">
+                <div class="single-eyecatch" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);"></div>
               <?php else: //アイキャッチない場合 ?>
                 <div class="single-eyecatch" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/common/no-image.png);"></div>
               <?php endif; ?>
