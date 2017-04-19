@@ -4,10 +4,6 @@ description: 検索結果が表示されます
 <?php */ ?>
 
   <?php get_header(); //ヘッダー ?>
-        <div id="post">
-          <div id="contents">
-            <div class="container">
-              <div id="main-content">
                 <div class="breadcrumb">
                   <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
                     <a href="<?php echo home_url(); ?>" itemprop="url">
@@ -34,9 +30,15 @@ description: 検索結果が表示されます
 
                 <?php if ($searchCatObj) echo 'カテゴリー: '.$searchCatStr; ?>
                 <?php if ($searchTagObj) echo 'タグ: '.$searchTagStr; ?>
-                <h1 class="post-h1"><?php the_search_query(); ?>で検索した結果: <?php echo $wp_query->found_posts; ?>件</h1>
+                  <?php if (isset($_GET['s']) && empty($_GET['s'])) { ?>
+                  <?php } else { ?>
+                    <h1 class="post-h1"><?php the_search_query(); ?>で検索した結果: <?php echo $wp_query->found_posts; ?>件</h1>
+                  <?php } ?>
                 <div class="post-name">
                 </div>
+                <?php if (isset($_GET['s']) && empty($_GET['s'])) { ?>
+                  <p>検索条件が入力されていません。</p>
+                <?php } else { ?>
                 <?php if(have_posts()) : ?>
                   <ul class="cpt-ui-list">
                     <?php while(have_posts()):the_post() ?>
@@ -54,27 +56,15 @@ description: 検索結果が表示されます
                         </a>
                       </li>
                     <?php endwhile; ?>
-                  </ul>
-                <?php else: ?>
-                  <div class="post">
-                    <p>申し訳ございません。<br />該当するページがございません。</p>
-                  </div>
-                <?php endif; ?>
+                 <?php else : ?>
+                  <p>検索条件にヒットした記事がありませんでした。</p>
+                <?php endif; ?> </ul>
                 <?php echo $wp_query->found_posts; ?>件
+              <?php } ?>
               </div>
 
-              <div id="sidebar">
-                <?php get_template_part('sidebar'); //サイドバー ?>
-              </div>
-              <div class="clear"></div>
             </div>
           </div>
-        </div>
-        <div class="registration">
-          <a href="/registration" class="registration-button">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/registration-text-2x.png" alt="登録する" class="registration-button-text">
-          </a>
-          <p>イベント情報や最新のお知らせを優先的にご案内します。</p>
         </div>
         <?php get_footer(); //フッター ?>
     </div>

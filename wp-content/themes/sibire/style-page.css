@@ -1,10 +1,6 @@
-#common .page-wrap {
-  background-color: #ffffff;
-  color: #1b1464;
-  position: relative;
-}
+/* --------- layout.css --------- */
 
-#common .page-wrap .breadcrumb {
+#common .breadcrumb {
   border-bottom: 1px solid #1B1464;
   height: 40px;
   line-height: 40px;
@@ -12,14 +8,20 @@
   font-size: 11px;
 }
 
-#common .page-wrap .breadcrumb a {
+#common .breadcrumb a {
   color: #1B1464;
   text-decoration: none;
 }
 
-#common .page-wrap .breadcrumb a:hover {
+#common .breadcrumb a:hover {
   text-decoration: underline;
 }
+#common .page-wrap {
+  background-color: #ffffff;
+  color: #1b1464;
+  position: relative;
+}
+/* -------------------------------- */
 
 #common .page-wrap h1 {
   font-size: 22px;
