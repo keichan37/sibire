@@ -34,4 +34,8 @@
   #common .single-wrap article {
     padding: 20px;
   }
+
+  #common .single-wrap article .single-eyecatch {
+    background-size: cover;
+  }
 }
