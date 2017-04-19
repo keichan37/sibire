@@ -209,8 +209,15 @@ function pagination($pages = '', $range = 4) {
   }
 }
 
+//管理画面の「見出し１」等を削除する
+function custom_editor_settings( $initArray ){
+$initArray['block_formats'] = "段落=p; 見出し１=h1; 見出し2=h2; 見出し3=h3; 見出し4=h4;";
+return $initArray;
+}
+add_filter( 'tiny_mce_before_init', 'custom_editor_settings' );
+
 /* 投稿画面用のcssを追加 */
-add_editor_style("editor.css");
+/* add_editor_style("editor.css"); */
 
 /* Google Map API */
 function my_acf_google_map_api( $api ){
