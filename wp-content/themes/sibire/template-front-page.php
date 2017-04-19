@@ -20,7 +20,7 @@
                ?>
                 <?php
                   $thumbnail_id = get_post_thumbnail_id();
-                  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
+                  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
                 ?>
 
                 <a href=<?php echo get_permalink(); ?> class="common-grid <?php echo esc_html(get_post_type_object($post->post_type)->name); ?>">
