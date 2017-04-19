@@ -56,6 +56,10 @@
   right: 0;
   z-index: 99;
   margin: 0 20px 20px 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
 }
 a.scroll-top.none { display: none; }
 
