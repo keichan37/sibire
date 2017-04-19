@@ -12,7 +12,7 @@
               <h2 class="single-subtitle"><? $txt = get_field('subtitle'); if($txt){ ?><? echo $txt; ?> <? } ?></h2>
               <?php
                 $thumbnail_id = get_post_thumbnail_id();
-                $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true); //アイキャッチのURL取得
+                $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'large', true); //アイキャッチのURL取得
               ?>
               <?php if (has_post_thumbnail()): //アイキャッチある場合 ?>
                 <div class="single-eyecatch" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);"></div>
