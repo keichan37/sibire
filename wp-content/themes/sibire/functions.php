@@ -153,7 +153,7 @@ add_filter('pre_get_posts','SearchFilter');
 /* 通常の「投稿」をメニューから削除（今回は不使用のため） */
 function remove_menus () {
 global $menu;
-$restricted = array(__('Dashboard'), __('Posts'), __('Comments'), __('Tools'));
+$restricted = array(__('Dashboard'), __('Posts'), __('Comments'));
 end ($menu);
 while (prev($menu)){
 $value = explode(' ',$menu[key($menu)][0]);
