@@ -74,10 +74,9 @@
     }(document, 'script', 'facebook-jssdk'));</script>
     <div id="wrap">
       <header>
-        <div class="container">
+        <div class="header-inner">
           <div class="logo">
             <a href="/">sibire</a>
           </div>
-
         </div>
       </header>
