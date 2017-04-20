@@ -1,5 +1,5 @@
 .mce-content-body {
-  font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
   -webkit-tap-highlight-color: rgba(28, 135, 201, 0.3);
 	word-wrap: break-word;
   color: #333333;
@@ -16,8 +16,8 @@
 }
 
 .mce-content-body p {
-  font-size: 14px;
-  line-height: 2.4;
+  font-size: 15px;
+  line-height: 2.1;
   margin: 0 0 30px 0;
   padding-top: 10px;
 }
@@ -43,10 +43,19 @@
 .mce-content-body h2 {
   font-size: 18px;
   line-height: 24px;
-  height: 24px;
-  padding: 9px 0 19px 18px;
+  min-height: 24px;
+  padding: 9px 0 19px 9px;
+  position: relative;
+}
+.mce-content-body h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: -26px 0 0 -7px;
+  width: 7px;
+  height: 42px;
   background-image: url("images/editor/h2.png");
-  background-repeat: no-repeat;
 }
 
 .mce-content-body h3 {

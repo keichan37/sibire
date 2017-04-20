@@ -1,5 +1,5 @@
       <div class="scroll-top-wrap">
-        <a class="e-scroll-top r-scroll-top scroll-top none icon-arrow-up" href="javascript:void(0);"></a>
+        <a class="e-scroll-top r-scroll-top scroll-top none" href="javascript:void(0);"></a>
       </div>
       <footer id="footer">
         <div class="sns-wrap">
