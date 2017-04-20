@@ -55,7 +55,8 @@ footer {
   text-align: center;
 }
 
-.sns-wrap:after .sns-wrap:before {
+.sns-wrap:after,
+.sns-wrap:before {
   content: "."; 
   display: block; 
   height: 0; 
