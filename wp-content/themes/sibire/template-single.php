@@ -9,7 +9,7 @@
             <?php while(have_posts()): the_post(); ?>
               <article>
                 <span class="single-category"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></span>
-                <time class="single-date" datetime="<?php the_time('c') ;?>"><span class="icon-clock"></span><?php the_time('Y.n.j') ;?></time>
+                <time class="single-date" datetime="<?php the_time('c') ;?>"><?php the_time('Y.n.j') ;?></time>
                 <h1 class="single-title"><?php the_title(); ?></h1>
                 <? $txt = get_field('subtitle'); if($txt){ ?><h2 class="single-subtitle"><? echo $txt; ?></h2><? } ?>
                 <?php
@@ -28,7 +28,7 @@
           </div>
           <div class="single-right">
             <aside>
-              右カラム何入れようか？
+              <?php get_template_part('partials/service'); ?>
             </aside>
           </div>
         </div>    
