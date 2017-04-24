@@ -327,7 +327,7 @@ a.single-related {
 }
 
 a.single-related:hover .single-related-eyecatch{
-  background-size: auto 104%;
+  background-size: 104% auto;
 }
 
 a.single-related h5 {
@@ -344,7 +344,7 @@ a.single-related h5:hover {
 .single-related-eyecatch {
   width: 100%;
   height: 120px;
-  background-size: auto 100%;
+  background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 10px;
