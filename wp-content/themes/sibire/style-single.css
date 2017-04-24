@@ -334,7 +334,11 @@ a.single-related h5 {
   font-size: 14px;
   display: block;
   margin: 5px 0 0 0;
-  color: #1b1464;
+}
+
+a.single-related p {
+  font-size: 12px;
+  margin: 5px 0 0 0;
 }
 
 a.single-related h5:hover {
