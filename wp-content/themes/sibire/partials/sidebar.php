@@ -6,7 +6,12 @@
       <div class="acf-map">
         <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
       </div>
-      <a href="http://maps.google.com/maps?q=<?php echo $location['address']; ?>" target="_blank"><?php echo $location['address']; ?></a>
+      <table>
+        <tr>
+          <th><span class="icon-link"></span></th>
+          <td><a href="http://maps.google.com/maps?q=<?php echo $location['address']; ?>" target="_blank"><?php echo $location['address']; ?></a></td>
+        </tr>
+      </table>
     </div>
   <?php endif; ?>
 

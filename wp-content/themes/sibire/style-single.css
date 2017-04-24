@@ -16,6 +16,10 @@
 #common .single-wrap .single-left,
 #common .single-wrap .single-right {
   float: left;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #common .single-wrap .single-right {
@@ -66,6 +70,29 @@
   clear: right;
 }
 
+#common .sns-share {
+  height: 26px;
+  padding-bottom: 10px;
+}
+
+#common .sns-share .twitter,
+#common .sns-share .facebook {
+  float: left;
+}
+
+#common .sns-share .twitter {
+  margin: 1px 0 0 8px;
+}
+
+#common .sns-share:before,
+#common .sns-share:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  font-size:0;	
+  clear: both; 
+  visibility:hidden;
+}
 
 #common .partials {
   padding: 0 10px;
@@ -124,6 +151,11 @@
   line-height: 18px;
 }
 
+#common .partials .partials-registration-wrap .sns-share {
+  display: inline-block;
+  padding-top: 20px;
+}
+
 #common aside h4 {
   color: #1B1464;
   font-size: 16px;
@@ -134,6 +166,10 @@
 
 #common .single-map a {
   color: #1b1464;
+}
+
+#common .single-map a:hover {
+  text-decoration: none;
 }
 
 #common .single-tag {
@@ -227,13 +263,31 @@
   margin: -7px 0 0 -6px;
 }
 
-@media(max-width: 815px) {
-  #common .single-wrap .single-left {
-    width: 100%;
+@media(max-width: 1100px) {
+  #common .single-wrap .single-left article {
+    padding-bottom: 0px;
   }
-  #common .single-wrap article {
+  #common .single-wrap .single-right aside {
+    max-width: 100%;
+    padding: 0  40px 40px 58px;
+  }
+  #common .single-service {
+    display: none;
+  }
+  #common .single-wrap .single-left,
+  #common .single-wrap .single-right {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 815px) {
+  #common .single-wrap .single-left article,
+  #common .single-wrap .single-right aside {
     padding: 20px;
   }
+  #common .single-wrap .single-left article  { padding-bottom: 0; }
+  #common .single-wrap .single-right aside { padding-top: 0; }
 
   #common .single-wrap article .single-eyecatch {
     background-size: cover;

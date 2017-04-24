@@ -18,5 +18,6 @@
         エンジニアの転職を支援
       <?php endif; ?>
     </p>
+    <?php get_template_part('partials/sns-share'); ?>
   </div>
 </div>

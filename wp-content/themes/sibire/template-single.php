@@ -12,7 +12,7 @@
                 <time class="single-date" datetime="<?php the_time('c') ;?>"><?php the_time('Y.n.j') ;?></time>
                 <h1 class="single-title"><?php the_title(); ?></h1>
                 <? $txt = get_field('subtitle'); if($txt){ ?><h2 class="single-subtitle"><? echo $txt; ?></h2><? } ?>
-                <?php get_template_part('partials/sns-sidebar'); ?>
+                <?php get_template_part('partials/sns-share'); ?>
                 <?php
                   $thumbnail_id = get_post_thumbnail_id();
                   $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'large', true); //アイキャッチのURL取得
