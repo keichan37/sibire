@@ -54,5 +54,26 @@
   font-size: 13px;
   line-height: 18px;
 }
+#post .partials-registration-wrap .sns-share,
+.partials .partials-registration-wrap .sns-share {
+  display: inline-block;
+  padding-top: 20px;
+}
+#post .partials-registration-wrap .sns-share .twitter,
+#post .partials-registration-wrap .sns-share .facebook,
+.partials .partials-registration-wrap .sns-share .twitter,
+.partials .partials-registration-wrap .sns-share .facebook {
+  float: left;
+}
+#post .partials-registration-wrap .sns-share:after, #post .partials-registration-wrap .sns-share:before,
+.partials .partials-registration-wrap .sns-share:after,
+.partials .partials-registration-wrap .sns-share:before {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
 
 /*# sourceMappingURL=partials-registration.css.map */
