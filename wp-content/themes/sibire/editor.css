@@ -145,6 +145,23 @@
   font-size: 12px;
 }
 
-.mce-content-body table.table {
+.mce-content-body table {
   border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+
+.mce-content-body table tr th,
+.mce-content-body table tr td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 15px 20px;
+}
+
+.mce-content-body table tr th {
+  background-color: #f5f5f5;
+}
+
+.mce-content-body table tr td {
+  min-width: 90px;
 }
