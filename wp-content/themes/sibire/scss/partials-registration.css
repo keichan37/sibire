@@ -65,6 +65,10 @@
 .partials .partials-registration-wrap .sns-share .facebook {
   float: left;
 }
+#post .partials-registration-wrap .sns-share .twitter,
+.partials .partials-registration-wrap .sns-share .twitter {
+  margin: 1px 0 0 8px;
+}
 #post .partials-registration-wrap .sns-share:after, #post .partials-registration-wrap .sns-share:before,
 .partials .partials-registration-wrap .sns-share:after,
 .partials .partials-registration-wrap .sns-share:before {
