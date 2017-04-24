@@ -22,7 +22,7 @@
         <?php if (has_post_thumbnail()): ?>
           <div class="single-related-eyecatch" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);"></div>
         <?php else: ?>
-          <div class="single-related-eyecatch" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/common/no-image.png")></div>
+          <div class="single-related-eyecatch" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/common/no-image-eyecatch.png")></div>
         <?php endif; ?>
         <h5><?php the_title(); ?></h5>
         <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
