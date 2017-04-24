@@ -59,3 +59,18 @@ $(document).ready(function() {
     }
   });
 });
+
+$(document).ready(function() {
+  $(".single-related-lists").owlCarousel({
+    loop: true,
+    nav: true,
+    dots: false,
+    navText: ["","" ],
+    items : 4,
+    responsive: {
+      0: { items: 1 },
+      450: { items: 3 },
+      768: { items: 4 }
+    }
+  });
+});
