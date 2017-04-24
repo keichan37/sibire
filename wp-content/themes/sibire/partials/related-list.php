@@ -20,9 +20,9 @@
       ?>
       <a class="single-related" href="<?php the_permalink(); ?>">
         <?php if (has_post_thumbnail()): ?>
-          <img class="single-related-eyecatch" src="<?php echo $thumbnail_url[0]; ?>">
+          <div class="single-related-eyecatch" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);"></div>
         <?php else: ?>
-          <img class="single-related-eyecatch" src="<?php echo get_template_directory_uri(); ?>/images/common/no-image.png">
+          <div class="single-related-eyecatch" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/common/no-image.png")></div>
         <?php endif; ?>
         <h5><?php the_title(); ?></h5>
       </a>
