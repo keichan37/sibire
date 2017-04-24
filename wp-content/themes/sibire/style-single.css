@@ -19,11 +19,11 @@
 }
 
 #common .single-wrap .single-right {
-  min-width: 260px;
+  max-width: 260px;
 }
 
 #common .single-wrap .single-right aside {
-  padding: 130px 0 0 0;
+  padding: 50px 0 0 0;
 }
 
 #common .single-wrap .single-left {
@@ -31,7 +31,7 @@
 }
 
 #common .single-wrap article {
-  padding: 40px 58px;
+  padding: 40px 40px 40px 58px;
 }
 
 #common .single-wrap article h1.single-title {
@@ -69,6 +69,7 @@
 
 #common .partials {
   padding: 0 10px;
+  clear: both;
 }
 
 #common .partials .partials-registration-wrap {
@@ -123,7 +124,58 @@
   line-height: 18px;
 }
 
+#common aside h4 {
+  color: #1B1464;
+  font-size: 16px;
+  border-bottom: 1.5px solid #1B1464;
+  padding: 20px 0 5px 0;
+  margin: 0 0 10px 0;
+}
+
+#common .single-map a {
+  color: #1b1464;
+}
+
+#common .single-tag {
+  margin: 0 0 20px 0;
+  padding: 0 10px;
+}
+
+#common .single-tag:before,
+#common .single-tag:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  font-size:0;	
+  clear: both; 
+  visibility:hidden;
+}
+
+#common .single-tag li {
+  list-style: none;
+  border: 1px solid #1b1464;
+  color: #1b1464;
+  list-style: none;
+  border-radius: 2px;
+  width: auto;
+  min-height: 15px;
+  margin: 0 auto 8px;
+  line-height: 15px;
+  padding: 4px 10px 4px 7px;
+  display: block;
+  float: left;
+  clear: left;
+  text-align: left;
+}
+
+#common .single-tag li span {
+  position: relative;
+  top: -1px;
+  margin: 0 2px 0 0;
+}
+
 #common a.service-registration {
+  clear: left;
   display: block;
   max-width: 242px;
   height: 50px;
