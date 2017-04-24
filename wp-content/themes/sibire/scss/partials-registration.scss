@@ -48,5 +48,22 @@
       font-size: 13px;
       line-height: 18px;
     }
+    .sns-share {
+      display: inline-block;
+      padding-top: 20px;
+      .twitter,
+      .facebook {
+        float: left;
+      }
+      &:after,
+      &:before {
+        content: "."; 
+        display: block; 
+        height: 0; 
+        font-size:0;	
+        clear: both; 
+        visibility:hidden;
+      }
+    }
   }
 }
