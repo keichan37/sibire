@@ -26,5 +26,29 @@
         }
       ?>
     </ul>
+  <h4>関連記事</h4>
+  <ul class="single-related-list">
+  <?php
+    $slug = get_post_type();
+    $args = array( 
+     'paged' => $paged,
+     'post_type' => $slug,
+     'post_status' => 'publish',
+     'posts_per_page'   => 10,
+     'has_password' => false,
+     'post__not_in'=> array(get_the_ID())
+    );
+    $postslist = get_posts($args);
+    foreach ($postslist as $post) : setup_postdata($post);
+  ?>
+    <li>
+      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+    </li>
+  <?php 
+  endforeach; 
+  wp_reset_postdata();
+  ?>
+  </ul>
+
   <?php get_template_part('partials/service'); ?>
 </aside>
