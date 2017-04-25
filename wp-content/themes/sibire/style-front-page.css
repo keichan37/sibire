@@ -311,6 +311,37 @@ a.scroll-top:hover {
   color: #1b1464;
 }
 
+#common .common-recruit-wrap {
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  min-height: 280px;
+  background: #ffffff url("images/common/area-map.png") no-repeat center center;
+  position: relative;
+}
+
+#common .common-recruit-wrap ul {
+  margin: 0;
+}
+
+#common .common-recruit-wrap ul li {
+  list-style: none;
+}
+
+#common .common-recruit-wrap ul li a {
+  color: #1C87C9;
+}
+
+#common .common-recruit-wrap ul li a.tohoku {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -30px 0 0 100px;
+}
+
+#common .common-recruit-wrap ul li a:hover {
+  text-decoration: none;
+}
+
 #common .common-category-wrap {
   padding: 8px 25px 25px;
   background-color: #ffffff;
@@ -423,7 +454,9 @@ a.scroll-top:hover {
 
 @media(max-width: 1130px) {
 
-  #common .common-cover {
+  #common .common-cover,
+  #common .common-cover.category,
+  #common .common-cover.custom-field {
     background-size: cover;
     background-attachment: scroll;
     background-position: center center;
