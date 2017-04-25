@@ -101,6 +101,30 @@ a.scroll-top:hover {
   margin-bottom: 15px;
 }
 
+/*-------category-------------*/
+#common .common-cover.category {
+  height: 156px;
+  color: #ffffff;
+  background-color: #1b1464;
+}
+
+#common .common-cover.category h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 30px 20px;
+}
+
+#common .common-cover.category .breadcrumb {
+  border-bottom-color: #ffffff;
+}
+
+#common .common-cover.category .breadcrumb a {
+  color: #ffffff;
+}
+
+
+/*----------------------------*/
+
 /*-------custom-field-------------*/
 
 #common .common-cover.custom-field {

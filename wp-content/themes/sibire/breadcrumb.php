@@ -12,6 +12,8 @@ description: 固定ページ以外は3段階のパンくずになります。改
   
   <? php /* ?>固定ページ以外表示<?php */ ?>
   <?php if (is_page()) {?>
+  <?php } elseif(is_category()) {?>
+    <?php single_cat_title(); ?>カテゴリ
   <?php } else{ ?>
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
       <a href="/<?php echo esc_html(get_post_type_object($post->post_type)->name); ?>" itemprop="url">
