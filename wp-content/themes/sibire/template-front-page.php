@@ -2,8 +2,9 @@
 
   <?php get_header("lp"); //ヘッダーリニューアル?>
     <div id="common">
-      <div class="container"></div>
-      <div class="common-cover"></div>
+      <div class="common-cover">
+        <div class="common-cover-inner"></div>
+      </div>
       <div class="container">
         <div class="common-left">
           <div class="common-grid-wrap">
