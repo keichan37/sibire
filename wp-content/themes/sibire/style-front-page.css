@@ -202,6 +202,17 @@ a.scroll-top:hover {
   transition: 0.3s;
 }
 
+#common a.common-grid .common-grid-new {
+  width: 63px;
+  height: 63px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  margin: -6px -6px 0 0;
+  background: url("images/common/new.png") no-repeat;
+}
+
 #common a.common-grid .common-grid-img {
   width: 238px;
   height: 146px;
