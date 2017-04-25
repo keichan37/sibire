@@ -26,11 +26,6 @@
             ); ?>
           <?php query_posts( $args ); ?>
             <?php if (have_posts()) : while (have_posts()) : the_post();?>
-              <?php
-                $thumbnail_id = get_post_thumbnail_id();
-                $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
-              ?>
-
               <?php get_template_part('partials/common-grid'); ?>
             <?php endwhile; endif; ?>
             <?php wp_reset_postdata();?>
