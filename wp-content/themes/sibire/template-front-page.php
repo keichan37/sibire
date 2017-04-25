@@ -3,7 +3,7 @@
   <?php get_header("lp"); //ヘッダーリニューアル?>
     <div id="common">
       <div class="common-cover">
-        <div class="common-cover-inner"></div>
+        <div class="common-cover-inner"><div class="container"></div></div>
       </div>
       <div class="container">
         <div class="common-left">
