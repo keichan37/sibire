@@ -96,9 +96,10 @@ a.scroll-top:hover {
 }
 
 #common .common-cover {
-  height: 215px;
-  background: #ffffff;
+  height: 275px;
   margin-bottom: 15px;
+  background: url("images/common/cover.jpg") fixed top -250px center /100% no-repeat;
+  background: url("images/template-lp/lp-cover-background.jpg") fixed top -250px center /100% no-repeat;
 }
 
 /*-------category-------------*/
@@ -412,6 +413,12 @@ a.scroll-top:hover {
 
 
 @media(max-width: 1130px) {
+
+  #common .common-cover {
+    background-size: cover;
+  }
+
+
   #common .container {
     width: 100%;
     box-sizing: border-box;
@@ -427,6 +434,10 @@ a.scroll-top:hover {
 }
 
 @media(max-width: 815px) {
+  #common .common-cover {
+    background-attachment: scroll;
+    background-position: center center;
+  }
   #common .container {
     padding: 0 20px;
   }
