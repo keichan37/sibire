@@ -12,20 +12,48 @@
         ?>
       <div class="common-cover custom-field <? echo $cat_name ?>">
         <div class="container">
-          <?php get_template_part('breadcrumb'); //パンくずリスト ?>
-          <h1><?php the_title(); ?></h1>
+          <?php get_template_part('breadcrumb');?>
+          <h1>
+            <?php if ( $post->post_parent > 0 ): //子要素の場合?>
+              <?php $parent_id = $post->post_parent; echo get_the_title($parent_id);?> / 
+            <?php endif ; ?>
+            <?php the_title(); ?>
+          </h1>
         </div>
       </div>
       <div class="container">
         <div class="common-left">
           <div class="common-grid-wrap">
+            <?php if ( $post->post_parent > 0 ): //子要素の場合?>
+              <?php $area_name = get_post_meta($post->ID, 'area_name', true);?>
+              <?php
+                $args = array( 
+                 'post_type' => array($cat_name,$cat_name2),
+                 'post_status' => 'publish',
+                 'has_password' => false,
+                 'meta_query' => array(
+                   array(
+                    'key' => 'area',
+                    'value' => $area_name,
+                    'compare'=> 'LIKE'
+                   )
+                 ),
+                 'posts_per_page' => -1
+                );
+              ?>
+
+            <?php else : ?>
+              <?php
+                $args = array(
+                  'posts_per_page' => -1,
+                  'post_type' => array($cat_name,$cat_name2),
+                  'post_status' => 'publish',
+                  'has_password' => false
+                );
+              ?>
+            <?php endif ; ?>
+
             <?php
-              $args = array(
-                'posts_per_page' => -1,
-                'post_type' => array($cat_name,$cat_name2),
-                'post_status' => 'publish',
-                'has_password' => false,
-              );
               $postslist = get_posts($args);
               foreach ($postslist as $post) : setup_postdata($post);
             ?>
