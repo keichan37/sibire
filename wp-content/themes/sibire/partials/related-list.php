@@ -7,7 +7,7 @@
        'paged' => $paged,
        'post_type' => $slug,
        'post_status' => 'publish',
-       'posts_per_page'   => 20,
+       'posts_per_page'   => 15,
        'has_password' => false,
        'post__not_in'=> array(get_the_ID())
       );

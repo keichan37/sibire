@@ -19,5 +19,4 @@
       </div>    
       
     </div>
-    <?php get_template_part('partials/sns-footer'); ?>
     <?php get_footer("lp"); //フッターリニューアル?>
