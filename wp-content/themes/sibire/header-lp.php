@@ -47,7 +47,6 @@
     <?php endif; ?>
     <meta content="ja_JP" property="og:locale">
 
-    <meta name="description" content="「地方で働きたい」エンジニアの方々に、移住希望地の仕事を紹介するサービス。地方のユニークなIT企業の紹介はもちろん、移住に利用できるお得な制度なども紹介します。地方移住でシビレる人生を実現しましょう！" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/normalize.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style-lp.css" type="text/css" media="all" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style-front-page.css" type="text/css" media="all" />
