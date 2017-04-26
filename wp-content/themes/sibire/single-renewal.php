@@ -245,7 +245,7 @@
                     $slug = get_post_type();
                     $args = array( 
                      'paged' => $paged,
-                     'post_type' => array('recruit','offer'),
+                     'post_type' => 'recruit',
                      'post_status' => 'publish',
                      'posts_per_page'   => 20,
                      'has_password' => false,

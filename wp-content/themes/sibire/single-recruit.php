@@ -179,30 +179,6 @@
                           </tbody>
                         </table>
                         
-                        <?php // シビレる求人の親・子の一覧を表示
-                          $page_parent = $post->ancestors[count($post->ancestors) - 1]; // 最上の親のIDを取得
-                          //echo get_the_title($page_parent); // 最上の親のタイトルを表示
-                          $args = array( 
-                            'numberposts' => -1,
-                            'order' => ASC,
-                            'orderby' => menu_order,
-                            'post_type' => recruit,
-                            'post_status' => 'publish',
-                            'has_password' => false,
-                            'post_parent' => $page_parent,
-                            'post__not_in'=> array(get_the_ID())
-                          );
-                          $page_childs = get_posts($args);
-                          if ( $page_childs ) { // 子ページがあれば表示
-                            echo '<h3 class="recruit-h3"><span>拠点</span></h3>';
-                            echo '<ul>';
-                            foreach ( $page_childs as $page_child ) { // 子ページのループ
-                              $page_child_id = $page_child->ID; // 子ページのIDを取得
-                              echo '<li><a href="'.get_page_link($page_child_id).'">'. get_the_title($page_child_id).'</a></li>'; // 子ページのタイトルを表示
-                            }
-                            echo '</ul>';
-                          }
-                        ?>
                         <?php get_template_part('partials/registration');?>
 
                       <?php endif ?>
@@ -270,7 +246,7 @@
                     $slug = get_post_type();
                     $args = array( 
                      'paged' => $paged,
-                     'post_type' => array('recruit','offer'),
+                     'post_type' => 'recruit','offer',
                      'post_status' => 'publish',
                      'posts_per_page'   => 20,
                      'has_password' => false,
