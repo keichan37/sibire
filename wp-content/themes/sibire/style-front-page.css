@@ -356,7 +356,12 @@ a.scroll-top:hover {
 }
 
 #common .common-recruit-wrap ul.area_nav li a {
-  color: #1C87C9;
+  color: #49c6e8;
+}
+
+#common .common-recruit-wrap ul.area_nav li.current-menu-item a {
+  text-decoration: none;
+  font-weight: 700;
 }
 
 #common .common-recruit-wrap ul.area_nav li.hokkaido {
