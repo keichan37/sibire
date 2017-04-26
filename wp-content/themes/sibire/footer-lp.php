@@ -21,6 +21,7 @@
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/jquery.fadethis.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/app.js"></script>
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/wpcf7.js"></script>
   <script>$(window).fadeThis({
     reverse:  false,
     offset: 10,
