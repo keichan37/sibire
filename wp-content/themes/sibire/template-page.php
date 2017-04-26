@@ -10,6 +10,9 @@
             <section>
               <h1><?php the_title(); ?></h1>
               <div class="page-content"><?php the_content(); //本文 ?></div>
+              <?php if (is_page('sitemap')) { ?>
+                <?php wp_nav_menu( array('menu' => 'sitemap','menu_class' => 'sitemap' )); ?>
+              <?php }; ?>
             </section>
           <?php endwhile; ?>
         </div>    

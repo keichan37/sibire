@@ -73,6 +73,27 @@
   background-position: right 10px top -31px;
 }
 
+#common .page-wrap .sitemap {
+  margin: 0;
+  padding: 0 0 0 40px; 
+}
+
+#common .page-wrap .sitemap li {
+  margin: 0;
+  padding-left: 23px;
+  height: 44px;
+  line-height: 44px;
+  list-style: none;
+  background: url("images/page/sitemap.png") no-repeat left top 13px;
+}
+
+#common .page-wrap .sitemap li a {
+  color: #1b1464;
+  text-decoration: none;
+}
+
+#common .page-wrap .sitemap li a:hover { text-decoration: underline; }
+
 #common .page-wrap section {
   padding: 0 100px 30px 290px;
 }
