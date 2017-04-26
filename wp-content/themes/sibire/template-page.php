@@ -5,7 +5,7 @@
       <div class="container">
         <div class="page-wrap">
           <?php get_template_part('breadcrumb'); //パンくずリスト ?>
-          <?php wp_nav_menu( array('menu' => 'page_nav','menu_class' => 'page-nav' )); ?>
+          <?php wp_nav_menu( array('menu' => 'page_nav','container' => 'nav' ,'menu_class' => 'page-nav' )); ?>
           <?php while(have_posts()): the_post(); ?>
             <section>
               <h1><?php the_title(); ?></h1>
