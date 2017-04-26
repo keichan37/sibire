@@ -345,23 +345,55 @@ a.scroll-top:hover {
   padding: 8px 0 0 0;
 }
 
-#common .common-recruit-wrap ul {
+#common .common-recruit-wrap ul.area_nav {
   margin: 0;
 }
 
-#common .common-recruit-wrap ul li {
+#common .common-recruit-wrap ul.area_nav li {
+  position: absolute;
   list-style: none;
+  left: 50%;
 }
 
-#common .common-recruit-wrap ul li a {
+#common .common-recruit-wrap ul.area_nav li a {
   color: #1C87C9;
 }
 
-#common .common-recruit-wrap ul li a.tohoku {
-  position: absolute;
-  left: 50%;
+#common .common-recruit-wrap ul.area_nav li.hokkaido {
+  top: 0;
+  margin: 50px 0 0 0;
+}
+#common .common-recruit-wrap ul.area_nav li.tohoku {
   top: 50%;
-  margin: -30px 0 0 100px;
+  margin: -30px 0 0 95px;
+}
+#common .common-recruit-wrap ul.area_nav li.hokuriku {
+  top: 50%;
+  margin: -42px 0 0 -15px;
+}
+#common .common-recruit-wrap ul.area_nav li.kanto {
+  top: 50%;
+  margin: 20px 0 0 100px;
+}
+#common .common-recruit-wrap ul.area_nav li.tokai {
+  top: 50%;
+  margin: 65px 0 0 20px;
+}
+#common .common-recruit-wrap ul.area_nav li.kansai {
+  top: 50%;
+  margin: 5px 0 0 -35px;
+}
+#common .common-recruit-wrap ul.area_nav li.chugoku {
+  top: 50%;
+  margin: 10px 0 0 -75px;
+}
+#common .common-recruit-wrap ul.area_nav li.shikoku {
+  top: 50%;
+  margin: 85px 0 0 -60px;
+}
+#common .common-recruit-wrap ul.area_nav li.kyushu {
+  top: 50%;
+  margin: 115px 0 0 -130px;
 }
 
 #common .common-recruit-wrap ul li a:hover {
