@@ -5,10 +5,7 @@
       <div class="container">
         <div class="page-wrap">
           <?php get_template_part('breadcrumb'); //パンくずリスト ?>
-          <ul class="page-nav">
-            <li><a href="javascript: void(0);">サイトマップ</a></li>
-            <li><a class="active" href="javascript: void(0);">プライバシーポリシー</a></li>
-          </ul>
+          <?php wp_nav_menu( array('menu' => 'page_nav','menu_class' => 'page-nav' )); ?>
           <?php while(have_posts()): the_post(); ?>
             <section>
               <h1><?php the_title(); ?></h1>

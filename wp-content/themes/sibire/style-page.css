@@ -65,7 +65,7 @@
   background-color: #fafafa;
 }
 
-#common .page-wrap .page-nav li a.active {
+#common .page-wrap .page-nav li.current-menu-item a {
   font-weight: 700;
   color: #ffffff;
   cursor: default;
