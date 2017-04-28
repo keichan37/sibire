@@ -22,6 +22,7 @@
                 <?php else: ?>
                   <img class="single-eyecatch" src="<?php echo get_template_directory_uri(); ?>/images/common/no-image-eyecatch.png">
                 <?php endif; ?>
+                <!-- ここにPRとインタビューの説明追加 -->
                 <div class="single-content mce-content-body">
                   <?php the_content(); //本文 ?>
                   <?php get_template_part('partials/link_pages'); //ページング ?>

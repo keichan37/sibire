@@ -6,7 +6,6 @@
               <div class="relative">
                 <div id="main-content">
                   <?php get_template_part('breadcrumb'); //パンくずリスト ?>
-                  <?php get_template_part('tag'); //タグ ?>
                   <time class="entry-date" datetime="<?php the_time('c') ;?>">
                     <?php the_time('Y年n月j日') ;?>
                   </time>

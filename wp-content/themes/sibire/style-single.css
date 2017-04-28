@@ -70,6 +70,32 @@
   clear: right;
 }
 
+
+#common .link_page_navi {
+  margin: 10px 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+#common .link_page_navi li {
+  list-style: none;
+  text-align: center;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  padding: 0 12px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 5px 0 0;
+  font-weight: 700;
+}
+
+#common .link_page_navi a li {
+  border-color: #1b1464;
+  color: #1b1464;
+  font-weight: 400;
+}
+
+
 #common .sns-share {
   height: 26px;
   padding-bottom: 10px;

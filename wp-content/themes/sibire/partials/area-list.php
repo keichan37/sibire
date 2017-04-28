@@ -35,7 +35,6 @@
                 </div>
 
                 <div class="area-li-text">
-                  <?php get_template_part('tag'); //タグ ?>
                   <h3><?php the_title(); ?></h3>
                   <b><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></b>
                   <div class="area-li-detail">
