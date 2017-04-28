@@ -122,28 +122,27 @@ a.scroll-top:hover {
   text-shadow: 2px 2px 5px rgba(0,0,0,.7);
 }
 
-/*-------category-------------*/
-#common .common-cover.category {
+/*-------tag-------------*/
+#common .common-cover.tag {
   background: url("images/common/cover.png") fixed top center /100% no-repeat;
   height: 156px;
   color: #ffffff;
   background-color: #1b1464;
 }
 
-#common .common-cover.category h1 {
+#common .common-cover.tag h1 {
   font-size: 24px;
   margin: 0;
   padding: 30px 20px;
 }
 
-#common .common-cover.category .breadcrumb {
+#common .common-cover.tag .breadcrumb {
   border-bottom-color: #ffffff;
 }
 
-#common .common-cover.category .breadcrumb a {
+#common .common-cover.tag .breadcrumb a {
   color: #ffffff;
 }
-
 
 /*----------------------------*/
 
@@ -417,17 +416,17 @@ a.scroll-top:hover {
   background: #ffffff url('images/common/h2-recruit.png') no-repeat;
 }
 
-#common .common-category-wrap {
+#common .common-tag-wrap {
   padding: 8px 25px 25px;
   background-color: #ffffff;
 }
 
-#common ul.common-category {
+#common ul.common-tag {
   margin: 0;
   padding: 18px 0 0 0;
 }
 
-#common ul.common-category li {
+#common ul.common-tag li {
   padding: 0;
   list-style: none;
   float: left;
@@ -436,16 +435,16 @@ a.scroll-top:hover {
   line-height: 27px;
 }
 
-#common ul.common-category li a {
+#common ul.common-tag li a {
   color: #333333;
   text-decoration: none;
 }
 
-#common ul.common-category li a:hover {
+#common ul.common-tag li a:hover {
   text-decoration: underline;
 }
 
-#common h2.common-category-title {
+#common h2.common-tag-title {
   font-size: 14px;
   margin: 0;
   width: 124px;
@@ -453,11 +452,11 @@ a.scroll-top:hover {
   line-height: 26px;
   margin: 0px auto;
   text-align: center;
-  background: #ffffff url('images/common/h2-category.png') no-repeat;
+  background: #ffffff url('images/common/h2-tag.png') no-repeat;
 }
 
-#common ul.common-category:before,
-#common ul.common-category:after {
+#common ul.common-tag:before,
+#common ul.common-tag:after {
   content: "."; 
   display: block; 
   height: 0; 

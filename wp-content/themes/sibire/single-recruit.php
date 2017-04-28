@@ -10,7 +10,6 @@
                     <div class="inner-padding recruit-area-relative">
                       <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
                         <?php get_template_part('breadcrumb'); //パンくずリスト ?>
-                        <?php get_template_part('tag'); //タグ ?>
                         <?php
                           $fields = get_field_objects($post_id);
                           $dir_array = $fields["area"]["choices"];
