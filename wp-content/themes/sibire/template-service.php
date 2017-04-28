@@ -8,7 +8,6 @@
 
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); //投稿が存在する場合 ?>
                   <?php get_template_part('breadcrumb'); //パンくずリスト ?>
-                  <?php get_template_part('tag'); //タグ ?>
                   <time class="entry-date" datetime="<?php the_time('c') ;?>">
                     <?php the_time('Y年n月j日') ;?>
                   </time>
