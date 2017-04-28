@@ -1,11 +1,19 @@
 /* --------- layout.css --------- */
 
+#common .common-cover .breadcrumb {
+  background-position: 15px -40px;
+}
+
 #common .breadcrumb {
   border-bottom: 2px solid #1B1464;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 15px;
+  height: 27px;
+  padding: 13px 15px 0 40px;
   font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: url("images/common/icon-home.png") no-repeat top left 15px;
 }
 
 #common .breadcrumb a {
@@ -16,6 +24,7 @@
 #common .breadcrumb a:hover {
   text-decoration: underline;
 }
+
 #common .page-wrap {
   background-color: #ffffff;
   color: #1b1464;

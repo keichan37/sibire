@@ -1,13 +1,13 @@
 <? php /* ?>
-title: パンくずリストの部分テンプレート
-description: 固定ページ以外は3段階のパンくずになります。改行するとスペースが入るので1行で記述
+  title: パンくずリストの部分テンプレート
+  description: 固定ページ以外は3段階のパンくずになります。改行するとスペースが入るので1行で記述
 <?php */ ?>
 
 <div class="breadcrumb">
   <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
     <a href="<?php echo home_url(); ?>" itemprop="url">
-      <span itemprop="title">TOP</span>
-    </a>&gt; 
+      <span itemprop="title">ホーム</span>
+    </a>&nbsp;&gt;&nbsp;
   </span>
   
   <? php /* ?>固定ページ以外表示<?php */ ?>
@@ -18,7 +18,7 @@ description: 固定ページ以外は3段階のパンくずになります。改
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
       <a href="/<?php echo esc_html(get_post_type_object($post->post_type)->name); ?>" itemprop="url">
         <span itemprop="title"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></a></span>
-      </a>&gt;
+      </a>&nbsp;&gt;&nbsp;
     </span>
   <?php } ?>
   
@@ -27,7 +27,7 @@ description: 固定ページ以外は3段階のパンくずになります。改
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
       <a href="<?php echo bloginfo('url'); ?>?p=<?php echo $parentid;?>" itemprop="url">
         <span itemprop="title"><?php echo get_page($parentid)->post_title; ?></span>
-      </a>&gt;
+      </a>&nbsp;&gt;&nbsp;
     </span>
   <?php } ?>
   <?php the_title(); ?>

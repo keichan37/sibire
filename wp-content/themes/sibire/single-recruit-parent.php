@@ -10,7 +10,6 @@
                     <div class="inner-padding recruit-area-relative">
                       <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
                         <?php get_template_part('breadcrumb'); //パンくずリスト ?>
-                        <?php get_template_part('tag'); //タグ ?>
                         <h2 class="recruit-name">
                         <? $txt = get_field('subtitle'); if($txt){ ?><? echo $txt; ?> <? } ?>
                         </h2>

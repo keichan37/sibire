@@ -24,13 +24,17 @@
                 <?php endif; ?>
 
                 <!-- ここにPRとインタビューの説明追加 -->
+                  <div class="single-top-box">
+                    <img src="<?php the_field('avatar'); ?>" alt="">
+                    <div class="single-top-box-text"><? $txt = get_field('profile'); if($txt){ ?><? echo $txt; ?> <? } ?></div>
+                  </div>
                 <?php if ( in_array(get_post_type(), array('interview')) ): ?>
-                  <img src="<?php the_field('avatar'); ?>" alt="">
-                  <? $txt = get_field('profile'); if($txt){ ?><? echo $txt; ?> <? } ?>
                 <?php elseif ( in_array(get_post_type(), array('niche')) ): ?>
                   <?php if ( $page == 1 ) : // 1ページ目だけ表示 ?>
-                    <img src="<?php the_field('single-niche-top-image'); ?>" alt="">
-                    <? $txt = get_field('single-niche-top-text'); if($txt){ ?><? echo $txt; ?> <? } ?>
+                    <div class="single-top-box">
+                      <img src="<?php the_field('single-niche-top-image'); ?>" alt="">
+                      <div class="single-top-box-text"><? $txt = get_field('single-niche-top-text'); if($txt){ ?><? echo $txt; ?> <? } ?></div>
+                    </div>
                   <?php endif; ?>
                 <?php endif; ?>
 
