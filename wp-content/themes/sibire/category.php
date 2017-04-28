@@ -1,4 +1,4 @@
-<?php /* Template Name: カスタム投稿タイプ一覧ページ */ ?>
+<?php /* Template Name: カテゴリページ */ ?>
 
   <?php get_header("lp"); //ヘッダーリニューアル?>
     <?php $current_category = single_cat_title("", false); ?>
