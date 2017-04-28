@@ -431,14 +431,14 @@ a.scroll-top:hover {
   list-style: none;
   float: left;
   width: 50%;
-  font-size: 15px;
-  line-height: 27px;
+  font-size: 13px;
+  min-height: 27px;
 }
 
 #common ul.common-tag li a {
   color: #333333;
   text-decoration: none;
-  line-height: 1.3;
+  line-height: 16px;
 }
 
 #common ul.common-tag li a:hover {

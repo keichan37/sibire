@@ -9,7 +9,7 @@
       );
       $tags = get_terms('post_tag', $args);
       foreach($tags as $value) {
-        echo '<li><a href="'. get_tag_link($value->term_id) .'">'. $value->name .' ('. $value->count .')</a></li>';
+        echo '<li><a href="'. get_tag_link($value->term_id) .'">'. $value->name .'</a></li>';
       }
     ?>
   </ul>
