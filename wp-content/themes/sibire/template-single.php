@@ -22,7 +22,18 @@
                 <?php else: ?>
                   <img class="single-eyecatch" src="<?php echo get_template_directory_uri(); ?>/images/common/no-image-eyecatch.png">
                 <?php endif; ?>
+
                 <!-- ここにPRとインタビューの説明追加 -->
+                <?php if ( in_array(get_post_type(), array('interview')) ): ?>
+                  <img src="<?php the_field('avatar'); ?>" alt="">
+                  <? $txt = get_field('profile'); if($txt){ ?><? echo $txt; ?> <? } ?>
+                <?php elseif ( in_array(get_post_type(), array('niche')) ): ?>
+                  <?php if ( $page == 1 ) : // 1ページ目だけ表示 ?>
+                    <img src="<?php the_field('single-niche-top-image'); ?>" alt="">
+                    <? $txt = get_field('single-niche-top-text'); if($txt){ ?><? echo $txt; ?> <? } ?>
+                  <?php endif; ?>
+                <?php endif; ?>
+
                 <div class="single-content mce-content-body">
                   <?php the_content(); //本文 ?>
                   <?php get_template_part('partials/link_pages'); //ページング ?>
