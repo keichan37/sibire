@@ -46,7 +46,6 @@ description: 各投稿の一覧ページです
                             <?php the_post_thumbnail(array(100, 100)); ?>
                           <?php endif; ?>
 
-                            <?php get_template_part('tag'); //タグ ?>
                             <time><?php the_date(); ?></time>
                             <h3><?php the_title(); ?></h3>
                             <?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?>
