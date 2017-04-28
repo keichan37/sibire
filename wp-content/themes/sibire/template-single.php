@@ -24,6 +24,7 @@
                 <?php endif; ?>
                 <div class="single-content mce-content-body">
                   <?php the_content(); //本文 ?>
+                  <?php get_template_part('partials/link_pages'); //ページング ?>
                   <?php get_template_part('partials/single-table'); ?>
                 </div>
               </article>

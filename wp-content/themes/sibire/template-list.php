@@ -22,7 +22,6 @@ description: 各投稿の一覧ページです
                     $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail-size', true);
                   ?>
                   <?php get_template_part('breadcrumb'); //パンくずリスト ?>
-                  <?php get_template_part('tag'); //タグ ?>
                   <time class="entry-date" datetime="<?php the_time('c') ;?>">
                     <?php the_time('Y年n月j日') ;?>
                   </time>
