@@ -432,7 +432,8 @@ a.scroll-top:hover {
   float: left;
   width: 50%;
   font-size: 13px;
-  min-height: 27px;
+  min-height: 20px;
+  padding: 4px 0;
 }
 
 #common ul.common-tag li a {
