@@ -30,6 +30,7 @@
         <div class="common-right">
           <?php get_template_part('partials/recruit-map'); ?>
           <?php get_template_part('partials/category'); ?>
+          <?php get_template_part('partials/registration'); ?>
         </div>
       </div>    
       
