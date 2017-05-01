@@ -279,7 +279,7 @@
   display: block;
   float: left;
   width: 50%;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 #common .single-image img {
