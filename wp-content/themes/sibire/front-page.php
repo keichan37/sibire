@@ -21,9 +21,12 @@
              ?>
               <?php get_template_part('partials/common-grid'); ?>
             <?php endwhile; ?>
+
+            <?php /* 
             <?php if (function_exists("pagination")) {
               pagination($custom_query->max_num_pages);
             } ?>
+            */ ?>
           </div>
         </div>    
         <div class="common-right">

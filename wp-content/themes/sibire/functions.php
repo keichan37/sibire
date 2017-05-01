@@ -209,21 +209,6 @@ function pagination($pages = '', $range = 4) {
   }
 }
 
-add_filter('redirect_canonical','my_disable_redirect_canonical');
-function my_disable_redirect_canonical( $redirect_url ) {
-	if ( is_single() ){
-		$subject = $redirect_url;
-		$pattern = '/\/page\//'; // URLに「/page/」があるかチェック
-		preg_match($pattern, $subject, $matches);
-		if ($matches){
-		//リクエストURLに「/page/」があれば、リダイレクトしない。
-		$redirect_url = false;
-		return $redirect_url;
-		}
-	}
-}
-
-
 //管理画面の「見出し１」等を削除する
 function custom_editor_settings( $initArray ){
 $initArray['block_formats'] = "段落=p; 見出し１=h1; 見出し2=h2; 見出し3=h3; 見出し4=h4;";
