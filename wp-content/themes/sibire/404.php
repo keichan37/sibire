@@ -6,7 +6,7 @@
         <div class="page-wrap">
           <?php get_template_part('breadcrumb'); //パンくずリスト ?>
           <section>
-            <h1>いつもシビレをご覧頂きありがとうございます。</h1>
+            <h1>ページが見つかりませんでした</h1>
             <div class="page-content">あなたがアクセスしようとしたページは削除されたかURLが変更されています。</div>
           </section>
         </div>    
