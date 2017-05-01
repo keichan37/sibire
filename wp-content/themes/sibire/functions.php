@@ -169,7 +169,7 @@ function add_nav_menu_custom_class( $menu_items ) {
 		'event' => 'event',
 		'column' => 'column',
 		'recruit' => 'recruit',
-		'offer' => 'offer',
+		'niche' => 'niche',
 	);
   $current_post_type = get_post_type();
 	foreach($lists as $post_type => $page_slug){
