@@ -389,6 +389,7 @@ a.scroll-top:hover {
 #common .common-cover.event     { background-color: #6ecc3e; }
 #common .common-cover.interview { background-color: #ff9e55; }
 #common .common-cover.niche     { background-color: #1b1464; }
+#common .common-cover.blog     { background-color: #1b1464; }
 
 /*---------------------------------*/
 
@@ -546,6 +547,13 @@ a.scroll-top:hover {
 #common a.common-grid.niche .common-grid-text-wrap .common-grid-time { color: #1b1464; }
 #common a.common-grid.niche .common-grid-tag,
 #common a.common-grid.niche:hover {
+  border-color: #1b1464;
+  color: #1b1464;
+}
+#common a.common-grid.blog .common-grid-text-wrap  { border-left-color: #1b1464; }
+#common a.common-grid.blog .common-grid-text-wrap .common-grid-time { color: #1b1464; }
+#common a.common-grid.blog .common-grid-tag,
+#common a.common-grid.blog:hover {
   border-color: #1b1464;
   color: #1b1464;
 }
