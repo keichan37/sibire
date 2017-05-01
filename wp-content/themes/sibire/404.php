@@ -1,22 +1,16 @@
-  <?php get_header(); ?>
-        <div id="contents">
-          <div class="container">
-            <div id="main-content">
-              <div class="breadcrumb">
-                <a href="/">TOPへ戻る</a>
-              </div>
-              <h2>いつもシビレをご覧頂きありがとうございます。<br />大変申し訳ないのですが、あなたがアクセスしようとしたページは削除されたかURLが変更されています。</h2>
-            </div>
-            <div id="sidebar">
-              <?php get_template_part('sidebar'); //サイドバー ?>
-            </div>
-            <div class="clear"></div>
-          </div>
+<?php /* Template Name: 404ページ */ ?>
 
-
-        </div>
-        <?php get_footer(); ?>
+  <?php get_header("lp"); //ヘッダーリニューアル?>
+    <div id="common">
+      <div class="container">
+        <div class="page-wrap">
+          <?php get_template_part('breadcrumb'); //パンくずリスト ?>
+          <section>
+            <h1>いつもシビレをご覧頂きありがとうございます。</h1>
+            <div class="page-content">あなたがアクセスしようとしたページは削除されたかURLが変更されています。</div>
+          </section>
+        </div>    
+      </div>    
+      
     </div>
-
-  </body>
-</html>
+    <?php get_footer("lp"); //フッターリニューアル?>
