@@ -115,6 +115,7 @@
 
 #common .page-wrap section {
   padding: 0 100px 30px 290px;
+  min-height: 350px;
 }
 
 #common .page-wrap section .page-content {
