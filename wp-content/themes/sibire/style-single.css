@@ -486,4 +486,8 @@ a.single-related h5:hover {
   #common .single-top-box .single-top-box-text {
     padding-left: 15px;
   }
+  #common .single-image-wrap figure.single-image {
+    float: none;
+    width: 100%;
+  }
 }
