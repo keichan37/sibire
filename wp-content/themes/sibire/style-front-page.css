@@ -392,6 +392,7 @@ a.scroll-top:hover {
 #common .common-cover.interview { background-color: #ff9e55; }
 #common .common-cover.niche     { background-color: #1b1464; }
 #common .common-cover.blog      { background-color: #1b1464; }
+#common .common-cover.media     { background-color: #1b1464; }
 
 /*---------------------------------*/
 
@@ -559,6 +560,13 @@ a.scroll-top:hover {
   border-color: #1b1464;
   color: #1b1464;
 }
+#common a.common-grid.media .common-grid-text-wrap  { border-left-color: #1b1464; }
+#common a.common-grid.media .common-grid-text-wrap .common-grid-time { color: #1b1464; }
+#common a.common-grid.media .common-grid-tag,
+#common a.common-grid.media:hover {
+  border-color: #1b1464;
+  color: #1b1464;
+}
 
 #common .partials {
 }
@@ -660,7 +668,6 @@ a.scroll-top:hover {
   float: left;
   width: 50%;
   font-size: 13px;
-  line-height: 18px;
   min-height: 20px;
   padding: 4px 0;
 }
