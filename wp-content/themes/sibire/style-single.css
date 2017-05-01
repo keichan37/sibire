@@ -265,6 +265,26 @@
   margin: 0 2px 0 0;
 }
 
+#common .single-image-wrap:after,
+#common .single-image-wrap:before {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  font-size:0;	
+  clear: both; 
+  visibility:hidden;
+}
+
+#common .single-image {
+  float: left;
+  width: 50%;
+}
+
+#common .single-image img {
+  max-width: 100%;
+  height: auto;
+}
+
 #common a.service-registration {
   clear: left;
   display: block;
