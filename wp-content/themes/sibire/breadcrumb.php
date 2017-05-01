@@ -11,7 +11,7 @@
   </span>
   
   <? php /* ?>固定ページ以外表示<?php */ ?>
-  <?php if (is_page()) {?>
+  <?php if (is_page() ||  is_404()) {?>
   <?php } elseif(is_tag() || is_category() ) {?>
     <?php single_cat_title(); ?>の検索結果
   <?php } else{ ?>
