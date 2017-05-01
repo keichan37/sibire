@@ -17,10 +17,12 @@
                   $thumbnail_id = get_post_thumbnail_id();
                   $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'large', true); //アイキャッチのURL取得
                 ?>
-                <?php if (has_post_thumbnail()): ?>
-                  <img class="single-eyecatch" src="<?php echo $thumbnail_url[0]; ?>">
-                <?php else: ?>
-                  <img class="single-eyecatch" src="<?php echo get_template_directory_uri(); ?>/images/common/no-image-eyecatch.png">
+                <?php if ( $page == 1 ) : // 1ページ目だけ表示 ?>
+                  <?php if (has_post_thumbnail()): ?>
+                    <img class="single-eyecatch" src="<?php echo $thumbnail_url[0]; ?>">
+                  <?php else: ?>
+                    <img class="single-eyecatch" src="<?php echo get_template_directory_uri(); ?>/images/common/no-image-eyecatch.png">
+                  <?php endif; ?>
                 <?php endif; ?>
 
                 <!-- PRとインタビュー -->
