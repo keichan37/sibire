@@ -24,7 +24,7 @@
             <?php if (function_exists("pagination")) {
               pagination($custom_query->max_num_pages);
             } ?>
-            <?php if(function_exists('pagination')) wp_pagenavi(array('query' => $the_query)); ?>
+            <?php if(function_exists('wp_pageanavi')) wp_pagenavi(array('query' => $the_query)); ?>
           </div>
         </div>    
         <div class="common-right">
