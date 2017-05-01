@@ -41,7 +41,7 @@
                 <div class="single-content mce-content-body">
                   <?php the_content(); //本文 ?>
                   <?php get_template_part('partials/link_pages'); //ページング ?>
-                  <?php if ( in_array(get_post_type(), array('interview')) ): ?>
+                  <?php if ( in_array(get_post_type(), array('recruit')) ): ?>
                     <?php get_template_part('partials/single-table'); ?>
                   <?php endif; ?>
                 </div>
