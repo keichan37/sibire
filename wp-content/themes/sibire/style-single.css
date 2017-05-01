@@ -276,13 +276,21 @@
 }
 
 #common .single-image {
+  display: block;
   float: left;
   width: 50%;
+  margin-top: 20px;
 }
 
 #common .single-image img {
   max-width: 100%;
   height: auto;
+}
+
+#common .single-image figcaption {
+  display: block;
+  padding: 5px 5px 20px 5px;
+  font-size: 12px;
 }
 
 #common a.service-registration {
