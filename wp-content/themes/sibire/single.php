@@ -43,14 +43,20 @@
                 <div class="single-content mce-content-body">
                   <?php if ( in_array(get_post_type(), array('recruit')) ): ?>
                     <h4>会社の雰囲気</h4>
-                    <?php $image = get_field('company_image1'); if( !empty($image) ): ?>
-                      <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
-                      <span><?php echo $image['caption']; ?></span>
-                    <?php endif; ?>
-                    <?php $image = get_field('company_image2'); if( !empty($image) ): ?>
-                      <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
-                      <span><?php echo $image['caption']; ?></span>
-                    <?php endif; ?>
+                    <div class="single-image-wrap">
+                      <?php $image = get_field('company_image1'); if( !empty($image) ): ?>
+                        <div class="single-image">
+                          <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
+                          <span><?php echo $image['caption']; ?></span>
+                        </div>
+                      <?php endif; ?>
+                      <?php $image = get_field('company_image2'); if( !empty($image) ): ?>
+                        <div class="single-image">
+                          <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
+                          <span><?php echo $image['caption']; ?></span>
+                        </div>
+                      <?php endif; ?>
+                    </div>
                   <?php endif; ?>
                   <?php the_content(); //本文 ?>
                   <?php get_template_part('partials/link_pages'); //ページング ?>
