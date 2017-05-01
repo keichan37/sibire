@@ -85,6 +85,9 @@
 #common .page-wrap .sitemap {
   margin: 0;
   padding: 0 0 0 40px; 
+  float: left;
+  max-width: 380px;
+  min-width: 230px;
 }
 
 #common .page-wrap .sitemap li {
@@ -112,6 +115,15 @@
   padding-left: 13px;
 }
 
+#common .page-wrap section:before,
+#common .page-wrap section:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  font-size:0;	
+  clear: both; 
+  visibility:hidden;
+}
 
 #common .page-wrap section {
   padding: 0 100px 30px 290px;
