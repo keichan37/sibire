@@ -660,6 +660,7 @@ a.scroll-top:hover {
   float: left;
   width: 50%;
   font-size: 13px;
+  line-height: 18px;
   min-height: 20px;
   padding: 4px 0;
 }
