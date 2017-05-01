@@ -139,6 +139,10 @@ header .global_menu li {
   float: left;
 }
 
+header .global_menu li .sub-menu {
+  display: none;
+}
+
 header .global_menu li a {
   color: #333333;
   text-decoration: none;
