@@ -115,6 +115,7 @@ header .logo a {
   line-height: 40px;
 }
 
+.slicknav_nav li.current-page-ancestor a,
 .slicknav_nav li.current-menu-item a,
 .slicknav_nav li a:hover {
   background-color: #15104f;
