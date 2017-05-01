@@ -78,5 +78,6 @@
           <div class="logo">
             <a href="/">sibire</a>
           </div>
+          <?php wp_nav_menu( array('menu' => 'global_menu', 'menu_class' => 'global_menu')); ?>
         </div>
       </header>

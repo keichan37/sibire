@@ -3,7 +3,7 @@
   <?php get_header("lp"); //ヘッダーリニューアル?>
     <div id="common">
       <div class="common-cover">
-        <div class="common-cover-inner"><div class="container"><h1>OFF TOKYOしたい<br />エンジニアの転職を支援</h1></div></div>
+        <div class="common-cover-inner"><div class="container"><h1 class="site-title">OFF TOKYOしたい<br />エンジニアの転職を支援</h1></div></div>
       </div>
       <div class="container">
         <div class="common-left">
