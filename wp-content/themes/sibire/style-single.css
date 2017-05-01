@@ -63,6 +63,10 @@
   border-bottom: 2px solid #1b1464;
   padding: 1px 24px 0 4px;
 }
+#common .single-wrap article .single-category a {
+  color: #1b1464;
+  text-decoration: none;
+}
 
 #common .single-wrap article time.single-date {
   color: #888888;

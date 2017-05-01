@@ -123,6 +123,14 @@
   margin: 30px 13px;
 }
 
+#common .page-wrap section .page-content a {
+  color: #1b1464;
+}
+
+#common .page-wrap section .page-content a:hover {
+  text-decoration: none;
+}
+
 @media(max-width: 815px) {
   #common .page-wrap .page-nav {
     position: relative;
