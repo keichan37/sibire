@@ -45,16 +45,16 @@
                     <h4>会社の雰囲気</h4>
                     <div class="single-image-wrap">
                       <?php $image = get_field('company_image1'); if( !empty($image) ): ?>
-                        <div class="single-image">
+                        <figure class="single-image">
                           <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
-                          <span><?php echo $image['caption']; ?></span>
-                        </div>
+                          <figcaption><?php echo $image['caption']; ?></figcaption>
+                        </figure>
                       <?php endif; ?>
                       <?php $image = get_field('company_image2'); if( !empty($image) ): ?>
-                        <div class="single-image">
+                        <figure class="single-image">
                           <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
-                          <span><?php echo $image['caption']; ?></span>
-                        </div>
+                          <figcaption><?php echo $image['caption']; ?></figcaption>
+                        </figure>
                       <?php endif; ?>
                     </div>
                   <?php endif; ?>
