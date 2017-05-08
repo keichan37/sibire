@@ -23,7 +23,7 @@
         $posttags = get_the_tags();
         if ($posttags) {
           foreach($posttags as $tag) {
-            echo '<li><span class="icon-head"></span>' . $tag->name . '</li>';
+            echo '<li><span class="icon-tag"></span>' . $tag->name . '</li>';
           }
         }
       ?>

@@ -13,8 +13,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@sibire_inc">
     <meta name="twitter:creator" content="@sibire_inc">
-    <meta name="twitter:description" content="sibireは東京にこだわらない働き方を支援します">
-    <?php /* ?>タイトル<?php */ ?>
+
     <?php if ( is_home() || is_front_page() ) : ?>
       <title><?php bloginfo('name'); ?></title>
       <meta name="twitter:title" content="<?php bloginfo('name'); ?>">
@@ -24,10 +23,17 @@
       <meta name="twitter:title" content="<?php wp_title( '', true, '' ); ?>">
       <meta content="<?php wp_title( '', true, '' ); ?>" property="og:title">
     <?php endif; ?>
-    <?php /* ?>説明<?php */ ?>
-    <meta name="description" content="「地方で働きたい」エンジニアの方々に、移住希望地の仕事を紹介するサービス。地方のユニークなIT企業の紹介はもちろん、移住に利用できるお得な制度なども紹介します。地方移住でシビレる人生を実現しましょう！" />
-    <meta property="og:description" content="sibireは東京にこだわらない働き方を支援します" />
-    <?php /* ?>キーワード<?php */ ?>
+
+    <?php if ( is_home() || is_front_page() ) : ?>
+      <meta name="twitter:description" content="sibireは東京にこだわらない働き方を支援します">
+      <meta name="description" content="sibireは東京にこだわらない働き方を支援します" />
+      <meta property="og:description" content="sibireは東京にこだわらない働き方を支援します" />
+    <?php else: ?>
+      <meta name="twitter:description" content="<?php echo get_the_excerpt(); ?>" />
+      <meta name="description" content="<?php echo get_the_excerpt(); ?>" />
+      <meta property="og:description" content="<?php echo get_the_excerpt(); ?>" />
+    <?php endif; ?>
+    
     <?php if ( $post->my_keywords ): ?>
       <meta name="keywords" content="<?php echo esc_attr( $post->my_keywords ); ?>" />
     <?php else: ?>
