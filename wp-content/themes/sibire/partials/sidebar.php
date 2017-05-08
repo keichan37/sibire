@@ -17,7 +17,8 @@
       </div>
     <?php endif; ?>
   <?php endif; ?>
-  <h4>タグ</h4>
+  <?php if(has_tag()==true) : ?>
+    <h4>タグ</h4>
     <ul class="single-tag">
       <?php
         $posttags = get_the_tags();
@@ -28,6 +29,7 @@
         }
       ?>
     </ul>
+  <?php endif; ?>
   <h4>関連記事</h4>
   <ul class="single-related-list">
   <?php
