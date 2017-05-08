@@ -249,7 +249,6 @@
 #common .single-tag li {
   list-style: none;
   border: 1px solid #1b1464;
-  color: #1b1464;
   list-style: none;
   border-radius: 2px;
   width: auto;
@@ -261,6 +260,11 @@
   float: left;
   clear: left;
   text-align: left;
+}
+
+#common .single-tag li a {
+  color: #1b1464;
+  text-decoration: none;
 }
 
 #common .single-tag li span {

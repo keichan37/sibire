@@ -24,7 +24,7 @@
         $posttags = get_the_tags();
         if ($posttags) {
           foreach($posttags as $tag) {
-            echo '<li><span class="icon-tag"></span>' . $tag->name . '</li>';
+            echo '<li><a href="'. get_tag_link($tag->term_id) .'"><span class="icon-tag"></span>' . $tag->name . '</a></li>';
           }
         }
       ?>
