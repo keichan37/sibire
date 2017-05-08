@@ -29,9 +29,9 @@
       <meta name="description" content="sibireは東京にこだわらない働き方を支援します" />
       <meta property="og:description" content="sibireは東京にこだわらない働き方を支援します" />
     <?php else: ?>
-      <meta name="twitter:description" content="<?php echo get_the_excerpt(); ?>" />
-      <meta name="description" content="<?php echo get_the_excerpt(); ?>" />
-      <meta property="og:description" content="<?php echo get_the_excerpt(); ?>" />
+      <meta name='twitter:description' content='<?php while(have_posts()): the_post();  echo get_the_excerpt('');endwhile;?>' />
+      <meta name='description' content='<?php while(have_posts()): the_post();  echo get_the_excerpt('');endwhile;?>' />
+      <meta property='og:description' content='<?php while(have_posts()): the_post();  echo get_the_excerpt('');endwhile;?>'>
     <?php endif; ?>
     
     <?php if ( $post->my_keywords ): ?>
