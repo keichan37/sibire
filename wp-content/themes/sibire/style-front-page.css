@@ -836,4 +836,15 @@ a.scroll-top:hover {
     width: 100%;
     background-size: cover;
   }
+
+  #common a.common-grid .common-grid-text-wrap {
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  #common a.common-grid .common-grid-text-wrap p {
+    width: 100%;
+  }
 }
