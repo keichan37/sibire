@@ -16,19 +16,18 @@
         </table>
       </div>
     <?php endif; ?>
-
-    <h4>募集職種</h4>
-      <ul class="single-tag">
-        <?php
-          $posttags = get_the_tags();
-          if ($posttags) {
-            foreach($posttags as $tag) {
-              echo '<li><span class="icon-head"></span>' . $tag->name . '</li>';
-            }
-          }
-        ?>
-      </ul>
   <?php endif; ?>
+  <h4>タグ</h4>
+    <ul class="single-tag">
+      <?php
+        $posttags = get_the_tags();
+        if ($posttags) {
+          foreach($posttags as $tag) {
+            echo '<li><span class="icon-head"></span>' . $tag->name . '</li>';
+          }
+        }
+      ?>
+    </ul>
   <h4>関連記事</h4>
   <ul class="single-related-list">
   <?php
