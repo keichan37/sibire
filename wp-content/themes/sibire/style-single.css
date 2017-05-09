@@ -231,6 +231,10 @@
   display: block;
 }
 
+#common aside img:hover {
+  opacity: 0.8;
+}
+
 #common .single-map a {
   color: #1b1464;
 }
