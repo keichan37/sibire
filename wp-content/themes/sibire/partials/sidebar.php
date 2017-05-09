@@ -53,6 +53,6 @@
   wp_reset_postdata();
   ?>
   </ul>
-
+  <?php dynamic_sidebar('sidebar-1'); ?>
   <?php get_template_part('partials/service'); ?>
 </aside>

@@ -47,39 +47,9 @@ function show_page_number() {
 
 register_sidebars(1,
   array(
-    'name' => 'トップバナー',
-    'id' => 'top-banner-1',
-    'description' => '画像サイズ(800px × 150px)',
-    'before_widget' => '<div id="banner">',
-    'after_widget' => '</div>',
-  )
-);
-
-register_sidebars(1,
-  array(
     'name' => 'サイドバー',
     'id' => 'sidebar-1',
     'description' => 'サイドバーに表示されます',
-    'before_widget' => '<div>',
-    'after_widget' => '</div>',
-  )
-);
-
-register_sidebars(1,
-  array(
-    'name' => 'メンバーバナー',
-    'id' => 'member-banner',
-    'description' => 'メンバーの集合写真です',
-    'before_widget' => '<div>',
-    'after_widget' => '</div>',
-  )
-);
-
-register_sidebars(1,
-  array(
-    'name' => '固定ページバナー',
-    'id' => 'page-banner',
-    'description' => '一覧ページ バナー',
     'before_widget' => '<div>',
     'after_widget' => '</div>',
   )
