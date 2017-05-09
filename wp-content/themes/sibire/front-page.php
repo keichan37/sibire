@@ -27,6 +27,8 @@
               pagination($custom_query->max_num_pages);
             } ?>
             */ ?>
+            <?php wp_reset_query();?>
+
           </div>
         </div>    
         <div class="common-right">
