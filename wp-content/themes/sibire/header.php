@@ -14,8 +14,6 @@
     <meta name="twitter:site" content="@sibire_inc">
     <meta name="twitter:creator" content="@sibire_inc">
     
-    <meta property="fb:app_id" content="207637699615029" />
-    
     <?php if ( is_home() || is_front_page() ) : ?>
       <title><?php bloginfo('name'); ?></title>
       <meta name="twitter:title" content="<?php bloginfo('name'); ?>">
@@ -51,8 +49,8 @@
       <meta property="og:image" content="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
       <meta name="twitter:image:src" content="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
     <?php else: ?>
-      <meta content="<?php echo get_template_directory_uri(); ?>/OGP.png" property="og:image">
-      <meta name="twitter:image:src" content="<?php echo get_template_directory_uri(); ?>/OGP.png">
+      <meta content="<?php echo get_template_directory_uri(); ?>/OGP.jpg" property="og:image">
+      <meta name="twitter:image:src" content="<?php echo get_template_directory_uri(); ?>/OGP.jpg">
     <?php endif; ?>
     <meta content="ja_JP" property="og:locale">
 
