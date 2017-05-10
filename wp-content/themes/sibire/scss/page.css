@@ -1,37 +1,12 @@
-/* --------- layout.css --------- */
-
-#common .common-cover .breadcrumb {
-  background-position: 15px -40px;
-}
-
-#common .breadcrumb {
-  border-bottom: 2px solid #1B1464;
-  height: 27px;
-  padding: 13px 15px 0 40px;
-  font-size: 11px;
-  white-space: nowrap;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  background: url("images/common/icon-home.png") no-repeat top left 15px;
-}
-
-#common .breadcrumb a {
-  color: #1B1464;
-  text-decoration: none;
-}
-
-#common .breadcrumb a:hover {
-  text-decoration: underline;
-}
-
+@charset "UTF-8";
+/*
+Description: 固定ページ
+*/
 #common .page-wrap {
   background-color: #ffffff;
   color: #1b1464;
   position: relative;
 }
-/* -------------------------------- */
-
 #common .page-wrap h1 {
   font-size: 22px;
   line-height: 45px;
@@ -39,7 +14,6 @@
   margin: 30px 0 0 0;
   border-bottom: 1px solid #1b1464;
 }
-
 #common .page-wrap .page-nav {
   margin: 0;
   padding: 0;
@@ -48,11 +22,9 @@
   top: 0;
   margin: 95px 0 0 15px;
 }
-
 #common .page-wrap .page-nav li {
   list-style: none;
 }
-
 #common .page-wrap .page-nav li a {
   display: block;
   margin-bottom: 10px;
@@ -69,11 +41,9 @@
   -moz-border-radius: 3px;
   background: #ffffff url("images/page/page-nav-caret.png") right 10px top no-repeat;
 }
-
 #common .page-wrap .page-nav li a:hover {
   background-color: #fafafa;
 }
-
 #common .page-wrap .page-nav li.current-menu-item a {
   font-weight: 700;
   color: #ffffff;
@@ -81,15 +51,13 @@
   background-color: #1b1464;
   background-position: right 10px top -31px;
 }
-
 #common .page-wrap .sitemap {
   margin: 0;
-  padding: 0 0 0 40px; 
+  padding: 0 0 0 40px;
   float: left;
   max-width: 380px;
   min-width: 230px;
 }
-
 #common .page-wrap .sitemap li {
   margin: 0;
   padding-left: 23px;
@@ -98,65 +66,61 @@
   list-style: none;
   background: url("images/page/sitemap.png") no-repeat left top 13px;
 }
-
 #common .page-wrap .sitemap li a {
   color: #1b1464;
   text-decoration: none;
 }
-
-#common .page-wrap .sitemap li a:hover { text-decoration: underline; }
-
-#common .page-wrap .sitemap li .sub-menu {
-  padding-left: 0px;  
+#common .page-wrap .sitemap li a:hover {
+  text-decoration: underline;
 }
-
+#common .page-wrap .sitemap li .sub-menu {
+  padding-left: 0px;
+}
 #common .page-wrap .sitemap li .sub-menu li {
   background: url("images/page/sitemap-sub.png") no-repeat left 1px top 18px;
   padding-left: 13px;
 }
-
-#common .page-wrap section:before,
-#common .page-wrap section:after {
-  content: "."; 
-  display: block; 
-  height: 0; 
-  font-size:0;	
-  clear: both; 
-  visibility:hidden;
-}
-
 #common .page-wrap section {
   padding: 0 100px 30px 290px;
   min-height: 350px;
 }
-
 #common .page-wrap section .page-content {
   font-size: 14px;
   line-height: 44px;
   margin: 30px 13px;
 }
-
 #common .page-wrap section .page-content a {
   color: #1b1464;
 }
-
 #common .page-wrap section .page-content a:hover {
   text-decoration: none;
 }
+#common .page-wrap section:before, #common .page-wrap section:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
 
-@media(max-width: 815px) {
+@media (max-width: 815px) {
   #common .page-wrap .page-nav {
     position: relative;
     margin: 0;
     padding: 20px 20px 0px 20px;
   }
-  #common .page-wrap .page-nav li  a{
+  #common .page-wrap .page-nav li a {
     width: 100%;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
   }
   #common .page-wrap section {
     padding: 0 20px 30px 20px;
   }
 }
+
+/*# sourceMappingURL=page.css.map */

@@ -1,10 +1,6 @@
-/*
-Description: 記事パスワード保護機能
-*/
-
 @import "mixin";
 
-#common {
+#contents {
   .post-password-form {
     label {
       display: block;
@@ -15,10 +11,9 @@ Description: 記事パスワード保護機能
       padding: 10px 0 10px 0;
       abbr { font-weight: 400; }
     }
-
-    input[type="password"] {
+    input[type="password"]{
       font-size: 15px;
-      @include border-radius(0px);
+      @include border-radius;
       @include appearance;
       line-height: 22px;
       padding: 10px;
@@ -35,25 +30,26 @@ Description: 記事パスワード保護機能
       margin: 0;
     }
   }
-}
-
-@media (max-width: 600px) {
-  #common .post-password-form {
-    input[type="submit"] { margin: 0px }
-    input[type="password"] {
-      @include border-box;
-      min-height: 44px;
-      width: 100%;
-      margin-top: 10px;
-      max-width: 100%;
-    }
-    .control-label {
-      width: auto;
-      text-align: left;
-      float: none;
-      clear: both;
-      height: auto;
-      padding-bottom: 0;
+  @media(max-width: 600px) {
+    .post-password-form {
+      input[type="submit"] {
+        margin: 0px;
+      }
+      input[type="password"] {
+        @include border-box;
+        min-height: 44px;
+        width: 100%;
+        margin-top: 10px;
+        max-width: 100%;
+      }
+      .control-label {
+        width: auto;
+        text-align: left;
+        float: none;
+        clear: both;
+        height: auto;
+        padding-bottom: 0;
+      }
     }
   }
 }

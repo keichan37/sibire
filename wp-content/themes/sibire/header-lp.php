@@ -53,16 +53,7 @@
     <?php endif; ?>
     <meta content="ja_JP" property="og:locale">
 
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/normalize.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style-lp.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style-front-page.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style-page.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style-single.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/plugin-wpcf7.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/editor.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/feather.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/owl.carousel.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/wordpress.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>">
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
     <link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/apple-touch-icon.png" />
 

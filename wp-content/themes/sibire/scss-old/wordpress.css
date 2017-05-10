@@ -1,4 +1,4 @@
-#common .post-password-form label {
+#contents .post-password-form label {
   display: block;
   float: left;
   font-weight: 800;
@@ -6,10 +6,10 @@
   line-height: 24px;
   padding: 10px 0 10px 0;
 }
-#common .post-password-form label abbr {
+#contents .post-password-form label abbr {
   font-weight: 400;
 }
-#common .post-password-form input[type="password"] {
+#contents .post-password-form input[type="password"] {
   font-size: 15px;
   border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -30,20 +30,20 @@
   border: 1px solid #f2f2eb;
   outline: none;
 }
-#common .post-password-form input[type="password"]:focus {
+#contents .post-password-form input[type="password"]:focus {
   border-color: #d4d4bd;
 }
-#common .post-password-form input[type="password"]:hover {
+#contents .post-password-form input[type="password"]:hover {
   background-color: #e8e8dc;
 }
-#common .post-password-form input[type="submit"] {
+#contents .post-password-form input[type="submit"] {
   margin: 0;
 }
 @media (max-width: 600px) {
-  #common .post-password-form input[type="submit"] {
+  #contents .post-password-form input[type="submit"] {
     margin: 0px;
   }
-  #common .post-password-form input[type="password"] {
+  #contents .post-password-form input[type="password"] {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -54,7 +54,7 @@
     margin-top: 10px;
     max-width: 100%;
   }
-  #common .post-password-form .control-label {
+  #contents .post-password-form .control-label {
     width: auto;
     text-align: left;
     float: none;
@@ -63,3 +63,5 @@
     padding-bottom: 0;
   }
 }
+
+/*# sourceMappingURL=wordpress.css.map */

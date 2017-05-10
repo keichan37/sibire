@@ -24,25 +24,16 @@ module.exports = function (grunt) {
         files: {
           // 結合先のcssファイル名: 結合するcssファイル名
           'style.css': [
-            'stylesheets/feather.css',
-            'stylesheets/normalize.css',
-            'stylesheets/owl.carousel.css',
-            'scss/style.css',
-            'scss/header.css',
-            'scss/footer.css',
-            'scss/single-creator.css',
-            'scss/single-event.css',
-            'scss/single-niche.css',
-            'scss/single-interview.css',
-            'scss/single-recruit.css',
-            'scss/template-area.css',
-            'scss/template-profile.css',
-            'scss/template-list.css',
-            'scss/plugin-wpcf7.css',
-            'scss/partials-catchcopy.css',
-            'scss/partials-registration.css',
-            'scss/partials-service.css',
+            'scss/feather.css',
+            'scss/normalize.css',
+            'scss/owl.carousel.css',
+            'scss/layout.css',
             'scss/front-page.css',
+            'scss/page.css',
+            'scss/single.css',
+            'scss/template-service.css',
+            'scss/partials-catchcopy.css',
+            'scss/plugin-wpcf7.css',
             'scss/wordpress.css'
           ]
         }
@@ -60,22 +51,13 @@ module.exports = function (grunt) {
       css: {
         // 監視するファイル
         files: [
-          'scss/style.css',
-          'scss/header.css',
-          'scss/footer.css',
-          'scss/single-creator.css',
-          'scss/single-event.css',
-          'scss/single-niche.css',
-          'scss/single-interview.css',
-          'scss/single-recruit.css',
-          'scss/template-area.css',
-          'scss/template-profile.css',
-          'scss/template-list.css',
-          'scss/plugin-wpcf7.css',
-          'scss/partials-catchcopy.css',
-          'scss/partials-registration.css',
-          'scss/partials-service.css',
+          'scss/layout.css',
           'scss/front-page.css',
+          'scss/page.css',
+          'scss/single.css',
+          'scss/template-service.css',
+          'scss/partials-catchcopy.css',
+          'scss/plugin-wpcf7.css',
           'scss/wordpress.css'
         ],
         tasks: ['cssmin']
