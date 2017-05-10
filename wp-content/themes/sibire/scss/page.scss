@@ -1,0 +1,118 @@
+/*
+Description: 固定ページ
+*/
+
+@import "mixin";
+
+#common {
+  .page-wrap {
+    background-color: #ffffff;
+    color: #1b1464;
+    position: relative;
+    h1 {
+      font-size: 22px;
+      line-height: 45px;
+      min-height: 45px;
+      margin: 30px 0 0 0;
+      border-bottom: 1px solid #1b1464;
+    }
+    .page-nav {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: 95px 0 0 15px;
+      li {
+        list-style: none;
+        a {
+          display: block;
+          margin-bottom: 10px;
+          width: 195px;
+          height: 31px;
+          line-height: 33px;
+          font-size: 14px;
+          border: 1px solid #1b1464;
+          color: #1b1464;
+          padding: 0 15px;
+          text-decoration: none;
+          border-radius: 3px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          background: #ffffff url("images/page/page-nav-caret.png") right 10px top no-repeat;
+          &:hover { background-color: #fafafa; }
+        }
+        &.current-menu-item a {
+          font-weight: 700;
+          color: #ffffff;
+          cursor: default;
+          background-color: #1b1464;
+          background-position: right 10px top -31px;
+        }
+      }
+    }
+    .sitemap {
+      margin: 0;
+      padding: 0 0 0 40px; 
+      float: left;
+      max-width: 380px;
+      min-width: 230px;
+      li {
+        margin: 0;
+        padding-left: 23px;
+        min-height: 44px;
+        line-height: 44px;
+        list-style: none;
+        background: url("images/page/sitemap.png") no-repeat left top 13px;
+        a {
+          color: #1b1464;
+          text-decoration: none;
+          &:hover { text-decoration: underline; }
+        }
+        .sub-menu {
+          padding-left: 0px;  
+          li {
+            background: url("images/page/sitemap-sub.png") no-repeat left 1px top 18px;
+            padding-left: 13px;
+          }
+        }
+      }
+    }
+    section {
+      padding: 0 100px 30px 290px;
+      min-height: 350px;
+      .page-content {
+        font-size: 14px;
+        line-height: 44px;
+        margin: 30px 13px;
+        a {
+          color: #1b1464;
+          &:hover { text-decoration: none; }
+        }
+      }
+      &:before,
+      &:after {
+        @include clearfix;
+      }
+    }
+  }
+}
+
+@media(max-width: 815px) {
+  #common {
+    .page-wrap {
+      .page-nav {
+        position: relative;
+        margin: 0;
+        padding: 20px 20px 0px 20px;
+        li a {
+          width: 100%;
+          @include border-box;
+        }
+      }
+      section {
+        padding: 0 20px 30px 20px;
+      }
+    }
+  }
+}

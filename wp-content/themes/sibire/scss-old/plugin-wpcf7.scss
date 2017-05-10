@@ -1,42 +1,29 @@
-/*
-Description: Contact Form 7
-*/
-
 @import "mixin";
 
-#common {
+#contents {
   div.wpcf7 {
     position: relative;
-    padding: 0px 0 30px 0;
-    a {
-      color: #1b1464;
-      &:hover { text-decoration: none; }
+    padding: 30px 0;
+    .wpcf7-not-valid {
+      display: block;
     }
-    .wpcf7-step {
-      width: 320px;
-      height: 40px;
-      background-image: url("images/plugin-wpcf7/step1.png");
-      margin-bottom: 30px;
-    }
-    .wpcf7-step2 { background-image: url("images/plugin-wpcf7/step2.png"); }
-    .wpcf7-not-valid { display: block; }
     .screen-reader-response,
     .screen-reader-response ul {
       display: none;
     }
+
     p {
-      margin: 0;
       margin-bottom: 0;
       text-align: center;
-      .wpcf7-not-valid-tip {
-        font-size: 16px;
-        font-weight: 500;
-      }
       &.message {
         font-size: 24px;
         line-height: 38px;
         font-weight: 700;
         text-align: left;
+      }
+      .wpcf7-not-valid-tip {
+        font-size: 16px;
+        font-weight: 500;
       }
       &.wpcf7-not-valid {
         border: 1px solid #dd0000;
@@ -49,7 +36,10 @@ Description: Contact Form 7
         margin-bottom: 15px;
       }
     }
-    .wpcf7-response-output { margin: 0; }
+    .wpcf7-response-output {
+      margin: 0;
+    }
+
     .wpcf7-mail-sent-ok {
       background-color: #1c87c9;
       color: #ffffff;
@@ -60,16 +50,16 @@ Description: Contact Form 7
       margin: 0px auto;
       @include border-radius(1px);
     }
+
+    /* エラー */
     .wpcf7-not-valid-tip {
       position: relative;
       background-color: #dd0000;
       color: #ffffff;
       display: inline-block;
-      padding: 2px 8px;
+      padding: 2px 5px;
       margin: 10px 0 0 0;
       font-size: 13px;
-      line-height: 24px;
-      text-align: center;
       @include border-radius(1px);
       &:after {
         content: "";
@@ -84,43 +74,40 @@ Description: Contact Form 7
         border-color: transparent transparent #dd0000 transparent;
       }
     }
-    .wpcf7-not-valid { color: #dd0000; }
+    .wpcf7-not-valid {
+      color: #dd0000;
+    }
     .wpcf7-validation-errors {
       background-color: #dd0000;
       color: #ffffff;
       text-align: center;
       border: none;
       padding: 5px 8px;
-      line-height: 20px;
+      width: 280px;
       margin: 0px auto;
       margin-bottom: 10px;
-      border-radius: 1px;
-      -webkit-border-radius: 1px;
-      -moz-border-radius: 1px;
-      -o-border-radius: 1px;
-      -ms-border-radius: 1px;
+      @include border-radius(1px);
+    }
+
+    .wpcf7-list-item {
+      margin-left: 0;
+      label {
+        display: inline-block;
+        margin: 5px 15px 0 0;
+      }
+    }
+    .wpcf7-checkbox label {
+      font-size: 0px;
+      .wpcf7-list-item-label {
+        font-size: 15px;
+      }
+    }
+    b {
+      color: #ff0000;
+      font-size: 20px;
     }
   }
 
-  .wpcf7-list-item {
-    margin-left: 0;
-    line-height: 18px;
-    label {
-      display: inline-block;
-      margin: 5px 15px 0 0;
-    }
-  }
-  .wpcf7-checkbox label {
-    font-size: 0px;
-    .wpcf7-list-item-label {
-      font-size: 15px;
-      color: #333333;
-    }
-  }
-  b {
-    color: #ff0000;
-    font-size: 20px;
-  }
   .form-group {
     clear: both;
     min-height: 44px;
@@ -128,13 +115,12 @@ Description: Contact Form 7
     .control-label {
       display: block;
       float: left;
-      width: 170px;
+      width: 215px;
       text-align: right;
       font-weight: 800;
       font-size: 15px;
       line-height: 24px;
       padding: 10px 15px 10px 0;
-      color: #333333;
       abbr { font-weight: 400; }
     }
     .wpcf7-form-control-wrap {
@@ -143,18 +129,24 @@ Description: Contact Form 7
       float: left;
       max-width: 400px;
     }
+    &:after{
+      content: "."; 
+      display: block; 
+      height: 0; 
+      clear: both; 
+      visibility: hidden;
+    }
     .wpcf7c-comment {
       padding: 5px 0 0 230px;
-    }
-    &:after,
-    &:before {
-      @include clearfix;
     }
   }
   input[type="checkbox"],
   input[type="radio"] {
     margin: 0 5px 0 0;
-    @include appearance;
+    appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
     border: none;
     background-color: transparent;
     width: 22px;
@@ -166,12 +158,24 @@ Description: Contact Form 7
     padding: 0;
     top: 5px;
     cursor: pointer;
-    &:hover { background-position: 0 -22px; }
-    &:active { background-position: 0 -44px; }
-    &:checked { background-position: 0 -66px; }
-    &:checked:hover { background-position: 0 -88px; }
-    &:checked:active { background-position: 0 -110px; }
-    &::-ms-check { display: none; }
+    &:hover {
+      background-position: 0 -22px;
+    }
+    &:active {
+      background-position: 0 -44px;
+    }
+    &:checked {
+      background-position: 0 -66px;
+      &:hover {
+        background-position: 0 -88px;
+      }
+      &:active {
+        background-position: 0 -110px;
+      }
+    }
+    &::-ms-check {
+      display: none;
+    }
   }
   input[type="checkbox"] {
     background-image: url("images/plugin-wpcf7/checkbox-2x.png");
@@ -187,18 +191,18 @@ Description: Contact Form 7
   input[type="url"],
   textarea {
     font-size: 15px;
-    @include border-radius(0px);
+    @include border-radius;
     @include appearance;
     line-height: 22px;
     padding: 10px;
     height: 22px;
     width: 278px;
     max-width: 278px;
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
+    background-color: #f2f2eb;
+    border: 1px solid #f2f2eb;
     outline: none;
-    &:focus { border-color: #1b1464; }
-    &:hover { border-color: #aaaaaa; }
+    &:focus { border-color: #d4d4bd; }
+    &:hover { background-color: #e8e8dc; }
   }
   textarea {
     min-height: 44px;
@@ -210,11 +214,11 @@ Description: Contact Form 7
     }
   }
   select {
-    @include border-radius(0px);
+    @include border-radius;
     @include appearance;
     font-size: 15px;
-    border: 1px solid #dddddd;
-    background-color: #ffffff;
+    border: 1px solid #f2f2eb;
+    background-color: #f2f2eb;
     line-height: 22px;
     padding: 10px;
     color: #000000;
@@ -226,9 +230,11 @@ Description: Contact Form 7
     background-size: 44px 44px;
     background-repeat: no-repeat;
     background-position: right center;
-    &:focus { border-color: #1b1464; }
-    &:hover { border-color: #dddddd; }
-    &::-ms-expand { display: none; }
+    &:focus { border-color: #d4d4bd; }
+    &:hover { background-color: #e8e8dc; }
+    &::-ms-expand {
+      display: none;
+    }
   }
   input[type="button"] {
     @include appearance;
@@ -239,93 +245,98 @@ Description: Contact Form 7
     font-size: 15px;
     background-color: #ffffff;
     border: none;
-    color: #1b1464;
+    color: #1c87c9;
     width: 100px;
     text-align: center;
     margin: 0px auto;
-    margin-bottom: 5px;
     text-decoration: underline;
-    &:hover { text-decoration: none; }
+    &:hover {
+      color: #16699c;
+      text-decoration: none;
+    }
   }
   input[type="submit"] {
-    @include border-radius(2px);
+    @include border-radius(1px);
     @include appearance;
     display: block;
-    color: #ffffff;
-    border: 1px solid #1b1464;
+    color: #1c87c9;
+    border: 1px solid #1c87c9;
     width: 198px;
     height: 42px;
     font-weight: 800;
     font-size: 15px;
-    background-color: #1b1464;
+    background-color: #ffffff;
     clear: both;
     margin: 0px auto;
     &:hover {
-      @include opacity;
+      color: #16699c;
+      border-color: #16699c;
     }
   }
-  .your-job select,
-  .time select,
-  .address select {
-    width: 150px;
+  .your-job,
+  .time,
+  .address {
+    select { width: 150px; }
   }
+
+  /* 確認画面 */
   .wpcf7-confirm-wrap {
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #f2f2eb;
     .form-group {
       min-height: auto;
-      line-height: 24px;
       margin-bottom: 10px;
       .control-label {
+        line-height: auto;
         min-height: 1px;
         padding: 0px 15px 0px 0;
       }
       .wpcf7-list-item {
-        height: auto; 
+        float: none;
         label {
           margin: 0;
           display: block;
-          line-height: 1.6;
         }
-        .wpcf7-list-item-label { display: none; }
-        .wpcf7c-conf-hidden + .wpcf7-list-item-label { display: block; }
+        .wpcf7-list-item-label {
+          display: none;
+        }
+        .wpcf7c-conf-hidden + .wpcf7-list-item-label {
+          display: block;
+        }
       }
     }
   }
-  input[type="text"].wpcf7-not-valid,
-  input[type="email"].wpcf7-not-valid,
-  input[type="tel"].wpcf7-not-valid,
-  input[type="url"].wpcf7-not-valid,
-  textarea.wpcf7-not-valid,
-  select.wpcf7-not-valid {
-    border: 1px solid #dd0000;
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"],
+  textarea,
+  select {
+    &.wpcf7-not-valid {
+      border: 1px solid #dd0000;
+    }
+    &.wpcf7c-conf {
+      border: none;
+      background: none;
+      padding: 0;
+      min-height: 0px;
+      line-height: auto;
+      cursor: not-allowed;
+    }
   }
-  input[type="text"].wpcf7c-conf,
-  input[type="email"].wpcf7c-conf,
-  input[type="tel"].wpcf7c-conf,
-  input[type="url"].wpcf7c-conf,
-  textarea.wpcf7c-conf,
-  select.wpcf7c-conf {
-    border: none;
-    background: none;
-    padding: 0;
-    min-height: 0px;
-    line-height: auto;
-    cursor: not-allowed;
+  input[type="checkbox"],
+  input[type="radio"] {
+    &.wpcf7c-conf {
+      display: none;
+      height: 0;
+      visibility: hidden;
+    }
   }
-  input[type="checkbox"].wpcf7c-conf,
-  input[type="radio"].wpcf7c-conf {
-    display: none;
-    height: 0;
-    visibility: hidden;
+  .sent {
+    .complete-hide { display: none; }
   }
-  .sent .complete-hide {
-    display: none;
-  }
-}
 
-@media (max-width: 960px) {
-  #common {
+  @media(max-width: 600px) {
     form {
       input[type="submit"] {
         margin: 0px auto;
@@ -335,11 +346,7 @@ Description: Contact Form 7
       input[type="tel"],
       input[type="url"],
       textarea {
-        box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -o-box-sizing: border-box;
-        -ms-box-sizing: border-box;
+        @include border-box;
         min-height: 44px;
         width: 100%;
         margin-top: 10px;
@@ -351,43 +358,55 @@ Description: Contact Form 7
       select {
         height: 44px;
         margin: 0 0;
-        box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -o-box-sizing: border-box;
-        -ms-box-sizing: border-box;
+        @include border-box;
         width: 100%;
       }
-      .address select,
-      .time select,
-      .your-job select {
-        width: 100%;
+      .address,
+      .time,
+      .your-job {
+        select {
+          width: 100%;
+        }
       }
       .wpcf7-form-control-wrap {
         width: 100%;
         max-width: 100%;
-        line-height: 20px;
+        &.emigrate_1,
+        &.emigrate_2,
+        &.emigrate_3 {
+          width: 33%;
+          margin-right: 1px;
+        }
       }
-      .wpcf7-form-control-wrap.emigrate_1, .wpcf7-form-control-wrap.emigrate_2, .wpcf7-form-control-wrap.emigrate_3 {
-        width: 32%;
-        margin-right: 1px;
+      .form-group {
+        .control-label {
+          width: auto;
+          text-align: left;
+          float: none;
+          clear: both;
+          height: auto;
+          padding-bottom: 0;
+        }
+        .wpcf7c-comment {
+          padding: 5px 0 0 0;
+        }
       }
-      .form-group .control-label {
-        width: auto;
-        text-align: left;
-        float: none;
-        clear: both;
-        height: auto;
-        padding-bottom: 0;
-      }
-      .form-group .wpcf7c-comment {
-        padding: 5px 0 0 0;
-      }
-      .wpcf7-confirm-wrap .form-group {
-        padding-bottom: 10px;
-      }
-      .wpcf7-confirm-wrap .wpcf7-form-control-wrap.emigrate_1, .wpcf7-confirm-wrap .wpcf7-form-control-wrap.emigrate_2, .wpcf7-confirm-wrap .wpcf7-form-control-wrap.emigrate_3 {
-        margin-right: 0;
+      .wpcf7-confirm-wrap {
+        .form-group {
+          padding-bottom: 10px;
+          .control-label {
+          }
+          .wpcf7-list-item {
+          }
+        }
+
+        .wpcf7-form-control-wrap {
+          &.emigrate_1,
+          &.emigrate_2,
+          &.emigrate_3 {
+            margin-right: 0;
+          }
+        }
       }
     }
   }

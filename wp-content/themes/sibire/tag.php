@@ -1,6 +1,6 @@
 <?php /* Template Name: タグページ */ ?>
 
-  <?php get_header("lp"); //ヘッダーリニューアル?>
+  <?php get_header(); ?>
     <div id="common">
       <div class="common-cover tag">
         <div class="container">
@@ -35,9 +35,10 @@
         </div>    
         <div class="common-right">
           <?php get_template_part('partials/recruit-map'); ?>
-          <?php get_template_part('partials/category'); ?>
+          <?php get_template_part('partials/tag'); ?>
+          <?php get_template_part('partials/registration'); ?>
         </div>
       </div>    
       
     </div>    
-    <?php get_footer("lp"); //フッターリニューアル?>
+    <?php get_footer(); ?>

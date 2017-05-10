@@ -1,18 +1,19 @@
+@charset "UTF-8";
+/*
+Description: 投稿ページ
+*/
 #common .single-wrap {
   background-color: #ffffff;
   position: relative;
 }
-
-#common .single-wrap:after,
-#common .single-wrap:before {
-  content: "."; 
-  display: block; 
-  height: 0; 
-  font-size:0;	
-  clear: both; 
-  visibility:hidden;
+#common .single-wrap:after, #common .single-wrap:before {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
 }
-
 #common .single-wrap .single-left,
 #common .single-wrap .single-right {
   float: left;
@@ -21,41 +22,33 @@
   -ms-transition: 0.3s;
   transition: 0.3s;
 }
-
 #common .single-wrap .single-right {
   width: 260px;
 }
-
 #common .single-wrap .single-right aside {
   padding: 50px 0 0 0;
 }
-
 #common .single-wrap .single-left {
   max-width: 800px;
 }
-
 #common .single-wrap article {
   padding: 40px 30px 40px 58px;
 }
-
 #common .single-wrap article h1.single-title {
   font-size: 24px;
   line-height: 1.5;
   margin: 20px 0 10px 0;
 }
-
 #common .single-wrap article h2.single-subtitle {
   font-size: 15px;
   font-weight: 400;
   margin: 0 0 15px 0;
   color: #1b1464;
 }
-
 #common .single-wrap article .single-eyecatch {
   margin-bottom: 20px;
   max-width: 100%;
 }
-
 #common .single-wrap article .single-category {
   display: inline-block;
   font-weight: 700;
@@ -67,49 +60,41 @@
   color: #1b1464;
   text-decoration: none;
 }
-
 #common .single-wrap article time.single-date {
   color: #888888;
   float: right;
   clear: right;
 }
-
-#common .single-top-box:before,
-#common .single-top-box:after {
-  content: "."; 
-  display: block; 
-  height: 0; 
-  font-size:0;	
-  clear: both; 
-  visibility:hidden;
-}
-
 #common .single-top-box {
   border: 5px solid #1b1464;
   margin: 0 0 40px 0;
   padding: 30px 15px 30px 25px;
 }
-
+#common .single-top-box:before, #common .single-top-box:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
 #common .single-top-box img {
   width: 120px;
   height: 120px;
   display: block;
   float: left;
 }
-
 #common .single-top-box .single-top-box-text {
   max-width: 428px;
   padding: 0 15px 0 25px;
   float: left;
   margin: 0;
 }
-
 #common .link_page_navi {
   margin: 10px 0 0 0;
   padding: 0;
   text-align: center;
 }
-
 #common .link_page_navi li {
   list-style: none;
   text-align: center;
@@ -121,43 +106,34 @@
   margin: 0 5px 0 0;
   font-weight: 700;
 }
-
 #common .link_page_navi a li {
   border-color: #1b1464;
   color: #1b1464;
   font-weight: 400;
 }
-
-
 #common .sns-share {
   height: 26px;
   padding-bottom: 10px;
 }
-
 #common .sns-share .twitter,
 #common .sns-share .facebook {
   float: left;
 }
-
 #common .sns-share .twitter {
   margin: 1px 0 0 8px;
 }
-
-#common .sns-share:before,
-#common .sns-share:after {
-  content: "."; 
-  display: block; 
-  height: 0; 
-  font-size:0;	
-  clear: both; 
-  visibility:hidden;
+#common .sns-share:before, #common .sns-share:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
 }
-
 #common .partials {
   padding: 0 10px;
   clear: both;
 }
-
 #common .partials .partials-registration-wrap {
   padding: 20px;
   background: #f5f5f5 url("images/common/background.png") repeat;
@@ -188,6 +164,7 @@
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -o-border-radius: 3px;
+  -ms-border-radius: 3px;
   background-color: #e2274b;
   color: #ffffff;
   text-align: center;
@@ -209,55 +186,48 @@
   font-size: 13px;
   line-height: 18px;
 }
-
 #common .partials .partials-registration-wrap .sns-share {
   display: inline-block;
   padding-top: 20px;
 }
-
-#common aside h4 {
+#common aside
+h4 {
   color: #1B1464;
   font-size: 16px;
   border-bottom: 1.5px solid #1B1464;
   padding: 20px 0 5px 0;
   margin: 0 0 10px 0;
 }
-
-#common aside img {
+#common img {
   max-width: 100%;
   height: auto;
   margin: 0px auto;
   margin-bottom: 15px;
   display: block;
 }
-
-#common aside img:hover {
+#common img:hover {
   opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-filter: "alpha(opacity=$ratioms)";
 }
-
 #common .single-map a {
   color: #1b1464;
 }
-
 #common .single-map a:hover {
   text-decoration: none;
 }
-
 #common .single-tag {
   margin: 0 0 20px 0;
   padding: 0 10px;
 }
-
-#common .single-tag:before,
-#common .single-tag:after {
-  content: "."; 
-  display: block; 
-  height: 0; 
-  font-size:0;	
-  clear: both; 
-  visibility:hidden;
+#common .single-tag:before, #common .single-tag:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
 }
-
 #common .single-tag li {
   list-style: none;
   border: 1px solid #1b1464;
@@ -273,46 +243,38 @@
   clear: left;
   text-align: left;
 }
-
 #common .single-tag li a {
   color: #1b1464;
   text-decoration: none;
 }
-
 #common .single-tag li span {
   position: relative;
   top: -1px;
   margin: 0 2px 0 0;
 }
-
-#common .single-image-wrap:after,
-#common .single-image-wrap:before {
-  content: "."; 
-  display: block; 
-  height: 0; 
-  font-size:0;	
-  clear: both; 
-  visibility:hidden;
+#common .single-image-wrap:after, #common .single-image-wrap:before {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
 }
-
 #common .single-image {
   display: block;
   float: left;
   width: 50%;
   margin: 20px 0;
 }
-
 #common .single-image img {
   max-width: 100%;
   height: auto;
 }
-
 #common .single-image figcaption {
   display: block;
   padding: 5px 5px 20px 5px;
   font-size: 12px;
 }
-
 #common a.service-registration {
   clear: left;
   display: block;
@@ -340,7 +302,6 @@
   background-color: #d31c40;
   text-shadow: 0 0 3px rgba(255, 255, 255, 0.4);
 }
-
 #common .service-registration-window {
   font-size: 13px;
   text-align: center;
@@ -365,32 +326,22 @@
   top: 0;
   margin: -7px 0 0 -6px;
 }
-
 #common .single-related-list {
   margin: 5px 0 40px 0;
   padding: 0 0 0 25px;
 }
-
 #common .single-related-list li {
   margin: 0 0 8px 0;
   list-style-image: url("images/single/list-style.png");
 }
-
 #common .single-related-list li a {
   color: #1b1464;
 }
-
 #common .single-related-list li a:hover {
   text-decoration: none;
 }
-
-/*----------plugin owl------------*/
-.single-related-wrap {
-  padding: 0 58px 40px;
-}
-
-.owl-controls .owl-nav .owl-prev,
-.owl-controls .owl-nav .owl-next {
+#common .owl-controls .owl-nav .owl-prev,
+#common .owl-controls .owl-nav .owl-next {
   display: block;
   width: 30px;
   height: 30px;
@@ -407,48 +358,48 @@
   background-size: 60px 30px;
   background-position: 0 0;
 }
-.owl-controls .owl-nav .owl-prev:hover,
-.owl-controls .owl-nav .owl-next:hover {
+#common .owl-controls .owl-nav .owl-prev:hover, #common .owl-controls .owl-nav .owl-prev:hover,
+#common .owl-controls .owl-nav .owl-next:hover,
+#common .owl-controls .owl-nav .owl-next:hover {
   opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-filter: "alpha(opacity=$ratioms)";
 }
-.owl-controls .owl-nav .owl-prev {
+#common .owl-controls .owl-nav .owl-prev {
   left: 0;
   margin-left: -30px;
 }
-.owl-controls .owl-nav .owl-next {
+#common .owl-controls .owl-nav .owl-next {
   right: 0;
   margin-right: -30px;
   background-position: -30px 0;
 }
-
-a.single-related {
+#common .single-related-wrap {
+  padding: 0 58px 40px;
+}
+#common a.single-related {
   display: block;
   padding: 0 10px;
   color: #000000;
   text-decoration: none;
   font-size: 13px;
 }
-
-a.single-related:hover .single-related-eyecatch{
+#common a.single-related:hover .single-related-eyecatch {
   background-size: 104% auto;
 }
-
-a.single-related h5 {
+#common a.single-related h5 {
   font-size: 14px;
   display: block;
   margin: 5px 0 0 0;
 }
-
-a.single-related p {
+#common a.single-related h5:hover {
+  text-decoration: underline;
+}
+#common a.single-related p {
   font-size: 12px;
   margin: 5px 0 0 0;
 }
-
-a.single-related h5:hover {
-  text-decoration: underline;
-}
-
-.single-related-eyecatch {
+#common a.single-related .single-related-eyecatch {
   width: 100%;
   height: 120px;
   background-size: 100% auto;
@@ -461,11 +412,7 @@ a.single-related h5:hover {
   transition: 0.3s;
 }
 
-
-/*--------------------------------------*/
-
-
-@media(max-width: 1100px) {
+@media (max-width: 1100px) {
   #common .single-wrap .single-left article {
     padding-bottom: 0px;
   }
@@ -473,28 +420,29 @@ a.single-related h5:hover {
     max-width: 100%;
     padding: 0  40px 40px 58px;
   }
-  #common .single-service {
-    display: none;
-  }
   #common .single-wrap .single-left,
   #common .single-wrap .single-right {
     width: 100%;
     max-width: 100%;
   }
+  #common .single-service {
+    display: none;
+  }
 }
-
-@media(max-width: 815px) {
+@media (max-width: 815px) {
   #common .single-wrap .single-left article,
   #common .single-wrap .single-right aside {
     padding: 20px;
   }
-  #common .single-wrap .single-left article  { padding-bottom: 0; }
-  #common .single-wrap .single-right aside { padding-top: 0; }
-
-  #common .single-wrap article .single-eyecatch {
+  #common .single-wrap .single-left article {
+    padding-bottom: 0;
+  }
+  #common .single-wrap .single-left article .single-eyecatch {
     background-size: cover;
   }
-
+  #common .single-wrap .single-right aside {
+    padding-top: 0;
+  }
   #common .single-top-box img,
   #common .single-top-box .single-top-box-text {
     float: none;
@@ -511,3 +459,5 @@ a.single-related h5:hover {
     width: 100%;
   }
 }
+
+/*# sourceMappingURL=single.css.map */

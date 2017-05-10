@@ -1,6 +1,6 @@
 <?php /* Template Name: サービス紹介LP */ ?>
 
-  <?php get_header("lp"); //ヘッダーリニューアル?>
+  <?php get_header(); ?>
     <div id="lp">
       <div class="lp-cover">
         <h1><?php the_title(); ?><?php show_page_number(); ?><br /><img src="<?php echo get_template_directory_uri(); ?>/images/template-lp/lp-offtokyo.png" alt="OFF TOKYO"></h1>
@@ -88,4 +88,4 @@
       </div>
     </div>
         
-    <?php get_footer("lp"); //フッターリニューアル?>
+    <?php get_footer(); ?>

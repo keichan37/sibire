@@ -1,0 +1,43 @@
+#catchcopy .catchcopies h4 {
+  margin: 20px 0 10px 0;
+  width: 120px;
+  height: 50px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+#catchcopy .catchcopies h4.ishikawa {
+  background-image: url("images/partials-catchcopy/ishikawa.png");
+}
+#catchcopy .catchcopies h4.kobe {
+  background-image: url("images/partials-catchcopy/kobe.png");
+}
+#catchcopy .catchcopies h4.sendai {
+  background-image: url("images/partials-catchcopy/sendai.png");
+}
+#catchcopy .catchcopies .catchcopy {
+  background-repeat: no-repeat;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  padding: 10px 10px 10px 110px;
+  margin-bottom: 5px;
+}
+#catchcopy .catchcopies .catchcopy.sendai {
+  background-image: url("images/partials-catchcopy/rikishi-sendai.png");
+}
+#catchcopy .catchcopies .catchcopy.ishikawa {
+  background-image: url("images/partials-catchcopy/rikishi-ishikawa.png");
+}
+#catchcopy .catchcopies .catchcopy.kobe {
+  background-image: url("images/partials-catchcopy/rikishi-kobe.png");
+}
+#catchcopy .catchcopies .catchcopy b {
+  display: block;
+  font-size: 23px;
+  margin: 10px 0 5px 0;
+}
+
+/*# sourceMappingURL=partials-catchcopy.css.map */
