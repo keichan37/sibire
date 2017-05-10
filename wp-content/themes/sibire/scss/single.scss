@@ -178,62 +178,62 @@ Description: 投稿ページ
     }
   }
 
-  aside
-  h4 {
-    color: #1B1464;
-    font-size: 16px;
-    border-bottom: 1.5px solid #1B1464;
-    padding: 20px 0 5px 0;
-    margin: 0 0 10px 0;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-    margin: 0px auto;
-    margin-bottom: 15px;
-    display: block;
-  }
-
-  img:hover {
-    @include opacity;
-  }
-
-  .single-map a {
-    color: #1b1464;
-    &:hover { text-decoration: none; }
-  }
-
-
-  .single-tag {
-    &:before,
-    &:after {
-      @include clearfix;
+  aside {
+    h4 {
+      color: #1B1464;
+      font-size: 16px;
+      border-bottom: 1.5px solid #1B1464;
+      padding: 20px 0 5px 0;
+      margin: 0 0 10px 0;
     }
-    margin: 0 0 20px 0;
-    padding: 0 10px;
-    li {
-      list-style: none;
-      border: 1px solid #1b1464;
-      list-style: none;
-      border-radius: 2px;
-      width: auto;
-      min-height: 15px;
-      margin: 0 auto 8px;
-      line-height: 15px;
-      padding: 4px 10px 4px 7px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 0px auto;
+      margin-bottom: 15px;
       display: block;
-      float: left;
-      clear: left;
-      text-align: left;
-      a {
-        color: #1b1464;
-        text-decoration: none;
+    }
+
+    a img:hover {
+      @include opacity;
+    }
+
+    .single-map a {
+      color: #1b1464;
+      &:hover { text-decoration: none; }
+    }
+
+    .single-tag {
+      &:before,
+      &:after {
+        @include clearfix;
       }
-      span {
-        position: relative;
-        top: -1px;
-        margin: 0 2px 0 0;
+      margin: 0 0 20px 0;
+      padding: 0 10px;
+      li {
+        list-style: none;
+        border: 1px solid #1b1464;
+        list-style: none;
+        border-radius: 2px;
+        width: auto;
+        min-height: 15px;
+        margin: 0 auto 8px;
+        line-height: 15px;
+        padding: 4px 10px 4px 7px;
+        display: block;
+        float: left;
+        clear: left;
+        text-align: left;
+        a {
+          color: #1b1464;
+          text-decoration: none;
+        }
+        span {
+          position: relative;
+          top: -1px;
+          margin: 0 2px 0 0;
+        }
       }
     }
   }
