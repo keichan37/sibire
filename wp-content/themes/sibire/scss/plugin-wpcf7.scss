@@ -95,10 +95,11 @@ Description: Contact Form 7
       margin: 0px auto;
       margin-bottom: 10px;
       border-radius: 1px;
-      -webkit-border-radius: 1px;
-      -moz-border-radius: 1px;
-      -o-border-radius: 1px;
-      -ms-border-radius: 1px;
+      @include border-radius(1px);
+      b {
+        color: #ff0000;
+        font-size: 20px;
+      }
     }
   }
 
@@ -116,10 +117,6 @@ Description: Contact Form 7
       font-size: 15px;
       color: #333333;
     }
-  }
-  b {
-    color: #ff0000;
-    font-size: 20px;
   }
   .form-group {
     clear: both;
