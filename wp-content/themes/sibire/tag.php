@@ -1,6 +1,6 @@
 <?php /* Template Name: タグページ */ ?>
 
-  <?php get_header("lp"); //ヘッダーリニューアル?>
+  <?php get_header(); ?>
     <div id="common">
       <div class="common-cover tag">
         <div class="container">
@@ -41,4 +41,4 @@
       </div>    
       
     </div>    
-    <?php get_footer("lp"); //フッターリニューアル?>
+    <?php get_footer(); ?>

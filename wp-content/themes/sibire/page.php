@@ -1,6 +1,6 @@
 <?php /* Template Name: 固定ページ */ ?>
 
-  <?php get_header("lp"); //ヘッダーリニューアル?>
+  <?php get_header(); ?>
     <div id="common">
       <div class="container">
         <div class="page-wrap">
@@ -20,4 +20,4 @@
       </div>    
       
     </div>
-    <?php get_footer("lp"); //フッターリニューアル?>
+    <?php get_footer(); ?>

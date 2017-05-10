@@ -1,6 +1,6 @@
 <?php /* Template Name: カスタム投稿タイプ一覧ページ */ ?>
 
-  <?php get_header("lp"); //ヘッダーリニューアル?>
+  <?php get_header(); ?>
     <div id="common">
       <?php if(have_posts()): while(have_posts()):the_post(); ?>
         <?php
@@ -80,4 +80,4 @@
       </div>    
       
     </div>    
-    <?php get_footer("lp"); //フッターリニューアル?>
+    <?php get_footer(); ?>

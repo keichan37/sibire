@@ -1,6 +1,6 @@
 <?php /* Template Name: 投稿ページ */ ?>
 
-  <?php get_header("lp"); ?>
+  <?php get_header(); ?>
     <div id="common">
       <div class="container">
         <div class="single-wrap">
@@ -91,4 +91,4 @@
       </div>    
       
     </div>
-    <?php get_footer("lp"); ?>
+    <?php get_footer(); ?>

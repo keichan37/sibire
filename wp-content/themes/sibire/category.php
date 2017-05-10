@@ -1,6 +1,6 @@
 <?php /* Template Name: カテゴリページ */ ?>
 
-  <?php get_header("lp"); //ヘッダーリニューアル?>
+  <?php get_header(); ?>
     <?php $current_category = single_cat_title("", false); ?>
     <div id="common">
       <div class="common-cover category">
@@ -42,4 +42,4 @@
       </div>    
       
     </div>    
-    <?php get_footer("lp"); //フッターリニューアル?>
+    <?php get_footer(); ?>
