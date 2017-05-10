@@ -13,7 +13,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@sibire_inc">
     <meta name="twitter:creator" content="@sibire_inc">
-
+    
+    <meta property="fb:app_id" content="207637699615029" />
+    
     <?php if ( is_home() || is_front_page() ) : ?>
       <title><?php bloginfo('name'); ?></title>
       <meta name="twitter:title" content="<?php bloginfo('name'); ?>">
@@ -25,10 +27,12 @@
     <?php endif; ?>
 
     <?php if ( is_home() || is_front_page() ) : ?>
+      <meta content="website" property="og:type">
       <meta name="twitter:description" content="sibireは東京にこだわらない働き方を支援します">
       <meta name="description" content="sibireは東京にこだわらない働き方を支援します" />
       <meta property="og:description" content="sibireは東京にこだわらない働き方を支援します" />
     <?php else: ?>
+      <meta content="artcle" property="og:type" />
       <meta name='twitter:description' content='<?php while(have_posts()): the_post();  echo get_the_excerpt('');endwhile;?>' />
       <meta name='description' content='<?php while(have_posts()): the_post();  echo get_the_excerpt('');endwhile;?>' />
       <meta property='og:description' content='<?php while(have_posts()): the_post();  echo get_the_excerpt('');endwhile;?>'>
@@ -42,7 +46,6 @@
 
     <meta content="<?php the_permalink(); ?>" property="og:url">
     <meta content="sibire" property="og:site_name">
-    <meta content="website" property="og:type">
 
     <?php if (has_post_thumbnail()): ?>
       <meta property="og:image" content="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>">
