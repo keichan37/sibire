@@ -190,37 +190,36 @@ Description: 投稿ページ
   display: inline-block;
   padding-top: 20px;
 }
-#common aside
-h4 {
+#common aside h4 {
   color: #1B1464;
   font-size: 16px;
   border-bottom: 1.5px solid #1B1464;
   padding: 20px 0 5px 0;
   margin: 0 0 10px 0;
 }
-#common img {
+#common aside img {
   max-width: 100%;
   height: auto;
   margin: 0px auto;
   margin-bottom: 15px;
   display: block;
 }
-#common img:hover {
+#common aside a img:hover {
   opacity: 0.8;
   -moz-opacity: 0.8;
   -ms-filter: "alpha(opacity=$ratioms)";
 }
-#common .single-map a {
+#common aside .single-map a {
   color: #1b1464;
 }
-#common .single-map a:hover {
+#common aside .single-map a:hover {
   text-decoration: none;
 }
-#common .single-tag {
+#common aside .single-tag {
   margin: 0 0 20px 0;
   padding: 0 10px;
 }
-#common .single-tag:before, #common .single-tag:after {
+#common aside .single-tag:before, #common aside .single-tag:after {
   content: ".";
   display: block;
   height: 0;
@@ -228,7 +227,7 @@ h4 {
   clear: both;
   visibility: hidden;
 }
-#common .single-tag li {
+#common aside .single-tag li {
   list-style: none;
   border: 1px solid #1b1464;
   list-style: none;
@@ -243,11 +242,11 @@ h4 {
   clear: left;
   text-align: left;
 }
-#common .single-tag li a {
+#common aside .single-tag li a {
   color: #1b1464;
   text-decoration: none;
 }
-#common .single-tag li span {
+#common aside .single-tag li span {
   position: relative;
   top: -1px;
   margin: 0 2px 0 0;
