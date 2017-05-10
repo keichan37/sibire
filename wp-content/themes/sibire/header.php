@@ -14,8 +14,6 @@
     <meta name="twitter:site" content="@sibire_inc">
     <meta name="twitter:creator" content="@sibire_inc">
     
-    <meta property="fb:app_id" content="207637699615029" />
-    
     <?php if ( is_home() || is_front_page() ) : ?>
       <title><?php bloginfo('name'); ?></title>
       <meta name="twitter:title" content="<?php bloginfo('name'); ?>">
