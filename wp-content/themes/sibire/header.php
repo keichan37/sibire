@@ -18,19 +18,17 @@
       <title><?php bloginfo('name'); ?></title>
       <meta name="twitter:title" content="<?php bloginfo('name'); ?>">
       <meta content="<?php bloginfo('name'); ?>" property="og:title">
-    <?php else: ?>
-      <title><?php wp_title( '', true, '' ); ?></title>
-      <meta name="twitter:title" content="<?php wp_title( '', true, '' ); ?>">
-      <meta content="<?php wp_title( '', true, '' ); ?>" property="og:title">
-    <?php endif; ?>
-
-    <?php if ( is_home() || is_front_page() ) : ?>
       <meta content="website" property="og:type">
+      <meta content="<?php echo esc_url( home_url( '/' ) ); ?>" property="og:url">
       <meta name="twitter:description" content="sibireは東京にこだわらない働き方を支援します">
       <meta name="description" content="sibireは東京にこだわらない働き方を支援します" />
       <meta property="og:description" content="sibireは東京にこだわらない働き方を支援します" />
     <?php else: ?>
+      <title><?php wp_title( '', true, '' ); ?></title>
+      <meta name="twitter:title" content="<?php wp_title( '', true, '' ); ?>">
+      <meta content="<?php wp_title( '', true, '' ); ?>" property="og:title">
       <meta content="artcle" property="og:type" />
+      <meta content="<?php the_permalink(); ?>" property="og:url">
       <meta name='twitter:description' content='<?php while(have_posts()): the_post();  echo get_the_excerpt('');endwhile;?>' />
       <meta name='description' content='<?php while(have_posts()): the_post();  echo get_the_excerpt('');endwhile;?>' />
       <meta property='og:description' content='<?php while(have_posts()): the_post();  echo get_the_excerpt('');endwhile;?>'>
@@ -42,7 +40,6 @@
       <meta name="keywords" content="地方,IT,エンジニア,移住,転職,Web" />
     <?php endif; ?>
 
-    <meta content="<?php the_permalink(); ?>" property="og:url">
     <meta content="sibire" property="og:site_name">
 
     <?php if (has_post_thumbnail()): ?>
