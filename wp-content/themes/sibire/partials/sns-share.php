@@ -3,7 +3,11 @@
     <?php if ( is_home() || is_front_page() ) : ?>
       <div class="fb-like" data-href="<?php echo esc_url( home_url( '/' ) ); ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
     <?php else: ?>
-      <div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+      <?php  $postname = get_field('postname'); if( !empty($postname) )://postnameがある場合はdata-urlをpostnameにする ?>
+        <div class="fb-like" data-href="<?php echo esc_url( home_url( '/' ) ); ?><?php echo esc_html(get_post_type_object($post->post_type)->name); ?>/<? $txt = get_field('postname'); if($txt){ ?><? echo $txt; ?><? } ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+      <?php else: ?>
+        <div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+      <?php endif; ?>
     <?php endif; ?>
   </div>
   <div class="twitter">
