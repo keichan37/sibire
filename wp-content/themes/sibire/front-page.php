@@ -3,7 +3,25 @@
   <?php get_header("lp"); //ヘッダーリニューアル?>
     <div id="common">
       <div class="common-cover">
-        <div class="common-cover-inner"><div class="container"><h1 class="site-title">OFF TOKYOしたい<br />エンジニアの転職を支援</h1></div></div>
+        <div class="common-cover-inner">
+          <div class="container">
+            <h1 class="site-title">OFF TOKYOしたい<br />エンジニアの転職を支援</h1>
+          <?php /* 
+          <p>あなたのキャリアを生かす、シビレる企業をご紹介。</p>
+          <ul>
+            <li>希望エリアの情報を提供</li>
+            <li>使える制度をご紹介</li>
+            <li>転職と移住を同時に実現</li>
+          </ul>
+          */ ?>
+        </div>
+        <?php /* 
+        <div class="common-cover-scroll">
+          <div class="mouse"><div class="wheel"></div></div>
+          <div><span class="unu"></span> <span class="doi"></span> <span class="trei"></span> </div>
+        </div>
+        */ ?>
+        </div>
       </div>
       <div class="container">
         <div class="common-left">

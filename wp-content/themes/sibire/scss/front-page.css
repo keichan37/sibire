@@ -3,6 +3,10 @@
 Description: フロントページ
 */
 #common .common-cover {
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  font-weight: 700;
+  position: relative;
   height: 275px;
   margin-bottom: 15px;
   background: url("images/common/cover-background.jpg") fixed top -250px center/100% no-repeat;
@@ -12,11 +16,46 @@ Description: フロントページ
 #common .common-cover h1.site-title {
   margin: 0;
   text-align: center;
-  color: #ffffff;
   font-size: 24px;
   line-height: 30px;
   padding-top: 100px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+#common .common-cover p {
+  text-align: center;
+  font-size: 20px;
+  margin: 15px 0 0 0;
+}
+#common .common-cover ul {
+  width: 330px;
+  margin: 0px auto;
+  margin-top: 20px;
+  padding: 0;
+  font-size: 16px;
+}
+#common .common-cover ul li {
+  list-style: none;
+  margin: 0 2px;
+  border: 3px solid #ffffff;
+  text-align: center;
+  width: 100px;
+  height: 70px;
+  line-height: 20px;
+  padding-top: 30px;
+  float: left;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+}
+#common .common-cover ul:after, #common .common-cover ul:before {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
 }
 #common .common-cover .common-cover-inner {
   width: 100%;
@@ -27,7 +66,6 @@ Description: フロントページ
 }
 #common .common-cover .cover-title {
   padding-top: 100px;
-  text-align: center;
   color: #ffffff;
   font-size: 22px;
   margin: 0;
@@ -72,6 +110,134 @@ Description: フロントページ
 }
 #common .common-cover.custom-field.media {
   background-color: #1b1464;
+}
+#common .common-cover .common-cover-scroll {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0 0 0 -9px;
+  width: 18px;
+  height: 61px;
+}
+#common .common-cover .unu, #common .common-cover .doi, #common .common-cover .trei {
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  margin: 0 0 3px 6px;
+  -webkit-animation: mouse-scroll 1s infinite;
+  -moz-animation: mouse-scroll 1s infinite;
+  -webkit-animation-direction: alternate;
+}
+#common .common-cover .unu {
+  margin-top: 6px;
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+}
+#common .common-cover .doi {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+}
+#common .common-cover .trei {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+}
+#common .common-cover .mouse {
+  height: 21px;
+  width: 14px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  transform: none;
+  border: 2px solid #ffffff;
+  top: 170px;
+}
+#common .common-cover .wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: #ffffff;
+  position: relative;
+}
+#common .common-cover .wheel {
+  -webkit-animation: mouse-wheel 1.2s ease infinite;
+  -moz-animation: mouse-wheel 1.2s ease infinite;
+}
+@-webkit-keyframes mouse-wheel {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  50% {
+    top: 2px;
+  }
+  100% {
+    top: 3px;
+  }
+}
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 #common .common-left {
   width: 800px;
