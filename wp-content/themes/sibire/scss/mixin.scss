@@ -38,6 +38,17 @@
   transition: $seconds;
 }
 
+@mixin transform($deg: 45deg) {
+  -ms-transform: rotate($deg); 
+  -webkit-transform: rotate($deg); 
+  transform: rotate($deg);
+}
+
+@mixin animation-delay($second: 0.1s) {
+  -webkit-animation-delay: $second;
+  -moz-animation-delay: $second;
+}
+
 @mixin opacity($ratio: 0.8){
   opacity: $ratio;
   -moz-opacity: $ratio;
