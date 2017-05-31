@@ -323,6 +323,13 @@ Description: Contact Form 7
 
 @media (max-width: 960px) {
   #common {
+    div.wpcf7 {
+      .wpcf7-step {
+        width: 280px;
+        height: 35px;
+        background-size: 280px 35px;
+      }
+    }
     form {
       input[type="submit"] {
         margin: 0px auto;
