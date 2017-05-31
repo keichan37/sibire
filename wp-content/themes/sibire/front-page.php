@@ -29,7 +29,7 @@
             <?php
               $args = array(
                 'paged' => $paged,
-                'post_type' => array('recruit','interview','offer','column','event','niche','blog'),
+                'post_type' => array('recruit','interview','column','event','niche','blog'),
                 'posts_per_page' => 27,
                 'post_status' => 'publish',
                 'has_password' => false,
@@ -41,9 +41,9 @@
             <?php endwhile; ?>
 
             <?php /* 
-            <?php if (function_exists("pagination")) {
-              pagination($custom_query->max_num_pages);
-            } ?>
+              <?php if (function_exists("pagination")) {
+                pagination($custom_query->max_num_pages);
+              } ?>
             */ ?>
             <?php wp_reset_query();?>
 
