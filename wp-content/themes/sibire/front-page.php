@@ -5,7 +5,10 @@
       <div class="common-cover">
         <div class="common-cover-inner">
           <div class="container">
-            <h1 class="site-title">OFF TOKYOしたい<br />エンジニアの転職を支援</h1>
+            <h1 class="site-title">転職でOFF TOKYO</h1>
+            <h2 class="site-message"><b class="caret"></b>東京にこだわらずキャリアを生かして働く</h2>
+            <br />
+            <a class="cover-registration" href="/registration">OFF TOKYOしたいエンジニアはこちら</a>
           <?php /* 
           <p>あなたのキャリアを生かす、シビレる企業をご紹介。</p>
           <ul>

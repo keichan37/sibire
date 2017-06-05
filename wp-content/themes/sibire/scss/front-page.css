@@ -4,7 +4,6 @@ Description: フロントページ
 */
 #common .common-cover {
   color: #ffffff;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
   font-weight: 700;
   position: relative;
   height: 275px;
@@ -12,13 +11,58 @@ Description: フロントページ
   background: url("images/common/cover-background.jpg") fixed top -250px center/100% no-repeat;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 #common .common-cover h1.site-title {
-  margin: 0;
-  text-align: center;
-  font-size: 24px;
-  line-height: 30px;
-  padding-top: 100px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  margin: 0 0 8px 0;
+  font-size: 40px;
+  line-height: 45px;
+  padding-top: 80px;
+}
+#common .common-cover h2.site-message {
+  position: relative;
+  font-size: 16px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  line-height: 26px;
+  margin: 0 0 20px 0;
+  width: auto;
+  display: inline-block;
+  padding: 0 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#common .common-cover h2.site-message b.caret {
+  position: absolute;
+  display: block;
+  height: 7px;
+  width: 12px;
+  background-image: url("images/common/cover-caret.png");
+  background-repeat: no-repeat;
+  background-size: 12px 7px;
+  left: 50%;
+  top: 0;
+  margin: -7px 0 0 -6px;
+}
+#common .common-cover a.cover-registration {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  background-color: #e2274b;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  display: inline-block;
+  width: auto;
+  padding: 3px 8px;
+  margin: 0px auto;
+  text-decoration: none;
+  font-size: 16px;
+  border: 1px solid #c1272d;
+}
+#common .common-cover a.cover-registration:hover {
+  background-color: #d31c40;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.4);
 }
 #common .common-cover p {
   text-align: center;
@@ -604,7 +648,16 @@ Description: フロントページ
     height: 215px;
   }
   #common .common-cover h1.site-title {
-    padding-top: 80px;
+    padding-top: 40px;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  #common .common-cover h2.site-message {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  #common .common-cover a.cover-registration {
+    font-size: 12px;
   }
   #common .common-left {
     width: 100%;
