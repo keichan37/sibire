@@ -8,7 +8,6 @@ Description: フロントページ
 #common {
   .common-cover {
     color: #ffffff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, .9);
     font-weight: 700;
     position: relative;
     height: 275px;
@@ -18,13 +17,54 @@ Description: フロントページ
     //background: url("images/37.gif") center center /102% no-repeat;
     position: relative;
     z-index: 1;
+    text-align: center;
     
     h1.site-title {
-      margin: 0;
-      text-align: center;
-      font-size: 24px;
-      line-height: 30px;
-      padding-top: 100px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, .9);
+      margin: 0 0 8px 0;
+      font-size: 40px;
+      line-height: 45px;
+      padding-top: 80px;
+    }
+    h2.site-message {
+      position: relative;
+      font-size: 16px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, .9);
+      line-height: 26px;
+      margin: 0 0 20px 0;
+      width: auto;
+      display: inline-block;
+      padding: 0 8px;
+      background-color: rgba(0,0,0,.5);
+      b.caret {
+        position: absolute;
+        display: block;
+        height: 7px;
+        width: 12px;
+        background-image: url("images/common/cover-caret.png");
+        background-repeat: no-repeat;
+        background-size: 12px 7px;
+        left: 50%;
+        top: 0;
+        margin: -7px 0 0 -6px;
+      }
+    }
+    a.cover-registration {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, .4);
+      color: #ffffff;
+      background-color: #e2274b;
+      @include border-radius(3px);
+      display: inline-block;
+      width: auto;
+      padding: 3px 8px;
+      margin: 0px auto;
+      text-decoration: none;
+      font-size: 16px;
+      border: 1px solid #c1272d;
+      &:hover {
+        background-color: #d31c40;
+        text-shadow: 0 0 3px rgba(255, 255, 255, 0.4);
+      }
     }
     p {
       text-align: center;
@@ -508,7 +548,16 @@ Description: フロントページ
     .common-cover {
       height: 215px;
       h1.site-title {
-        padding-top: 80px;
+        padding-top: 40px;
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+      h2.site-message {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+      a.cover-registration {
+        font-size: 12px;
       }
     }
     .common-left {
