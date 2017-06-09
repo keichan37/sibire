@@ -27,7 +27,7 @@
       <title><?php wp_title( '', true, '' ); ?></title>
       <meta name="twitter:title" content="<?php wp_title( '', true, '' ); ?>">
       <meta content="<?php wp_title( '', true, '' ); ?>" property="og:title">
-      <meta content="artcle" property="og:type" />
+      <meta content="article" property="og:type" />
       <?php  $postname = get_field('postname'); if( !empty($postname) )://postnameがある場合はog:urlをpostnameにする ?>
         <meta content="<?php echo esc_url( home_url( '/' ) ); ?><?php echo esc_html(get_post_type_object($post->post_type)->name); ?>/<? $txt = get_field('postname'); if($txt){ ?><? echo $txt; ?><? } ?>" property="og:url">
       <?php else: ?>
