@@ -213,3 +213,7 @@
   clear: both; 
   visibility: hidden;
 }
+
+@media(max-width: 767px) {
+  .mce-content-body [class=*"gallery-columns-"] .gallery-item { width: 100%; }
+}
