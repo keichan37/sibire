@@ -186,6 +186,9 @@ return $initArray;
 }
 add_filter( 'tiny_mce_before_init', 'custom_editor_settings' );
 
+/* 本体ギャラリーCSS停止 */
+add_filter( 'use_default_gallery_style', '__return_false' );
+
 /* 投稿画面用のcssを追加 */
 add_editor_style("editor.css");
 
