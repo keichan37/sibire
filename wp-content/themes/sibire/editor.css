@@ -191,6 +191,7 @@
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
   padding: 5px;
+  margin: 0;
 }
 
 .mce-content-body .gallery br {
