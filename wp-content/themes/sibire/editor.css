@@ -215,5 +215,5 @@
 }
 
 @media(max-width: 767px) {
-  .mce-content-body [class=*"gallery-columns-"] .gallery-item { width: 100%; }
+  .mce-content-body [class*="gallery-columns-"] .gallery-item { width: 100%; }
 }
