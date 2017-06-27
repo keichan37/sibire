@@ -165,3 +165,31 @@
 .mce-content-body table tr td {
   min-width: 90px;
 }
+
+.mce-content-body a:hover img {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-filter: "alpha(opacity=80)";
+}
+
+.mce-content-body img[class*="tile"] {
+  display: inline;
+  height: auto;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 5px;
+}
+
+.mce-content-body img.tile2 { width: 50%; }
+.mce-content-body img.tile3 { width: 33.3%; }
+.mce-content-body img.tile4 { width: 25%; }
+
+
+@media(max-width: 767px) {
+  .mce-content-body img[class*="tile"] {
+    width: 100%;
+  }
+}
