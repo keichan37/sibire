@@ -186,8 +186,15 @@ return $initArray;
 }
 add_filter( 'tiny_mce_before_init', 'custom_editor_settings' );
 
-/* 本体ギャラリーCSS停止 */
+/* ギャラリーの自動生成CSSを停止 */
 add_filter( 'use_default_gallery_style', '__return_false' );
+
+/* ギャラリーのリンク先をデフォルトで「なし」に変更 */
+function image_gallery_default_link( $settings ) {
+    $settings['galleryDefaults']['link'] = 'none';
+    return $settings;
+}
+add_filter( 'media_view_settings', 'image_gallery_default_link');
 
 /* 投稿画面用のcssを追加 */
 add_editor_style("editor.css");
