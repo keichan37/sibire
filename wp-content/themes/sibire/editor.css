@@ -194,6 +194,13 @@
   margin: 0;
 }
 
+.mce-content-body .gallery-item .gallery-caption {
+  margin: 0;
+  padding: 0 0 10px 0;
+  font-size: 12px;
+  text-align: left;
+}
+
 .mce-content-body .gallery br {
   display: none;
 }
