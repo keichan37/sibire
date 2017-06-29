@@ -51,15 +51,6 @@ description: 検索結果が表示されます
               <h2>検索条件が入力されていません。</h2>
             <?php } else { ?>
             <?php if(have_posts()) : ?>
-              <?php
-                $args = array(
-                  'paged' => $paged,
-                  'post_type' => array('recruit','interview','column','event','niche','blog'),
-                  'posts_per_page' => 27,
-                  'post_status' => 'publish',
-                  'has_password' => false,
-                ); ?>
-              <?php query_posts( $args ); ?>
               <?php while(have_posts()):the_post() ?>
                 <?php get_template_part('partials/common-grid'); ?>
               <?php endwhile; ?>

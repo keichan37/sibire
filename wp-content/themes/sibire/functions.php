@@ -199,6 +199,16 @@ add_filter( 'media_view_settings', 'image_gallery_default_link');
 /* 投稿画面用のcssを追加 */
 add_editor_style("editor.css");
 
+/* 検索機能で固定ページを除外 */
+
+function fb_search_filter( $query ) {
+	if ( $query -> is_search ) {
+		$query -> set( 'post_type', 'post' );
+	}
+	return $query;
+}
+add_filter( 'pre_get_posts', 'SearchFilter' );
+
 /* Google Map API */
 function my_acf_google_map_api( $api ){
 	$api['key'] = 'AIzaSyAC4maiLTsNgl8S0ueBDQEfaDjCJoxUEDc';
