@@ -36,7 +36,7 @@ description: 検索結果が表示されます
           <?php if ($searchTagObj) echo 'タグ: '.$searchTagStr; ?>
             <?php if (isset($_GET['s']) && empty($_GET['s'])) { ?>
             <?php } else { ?>
-              <h1>“<strong><?php the_search_query(); ?></strong>”の検索結果<?php echo $wp_query->found_posts; ?>件</h1>
+              <h1>“<strong><?php the_search_query(); ?></strong>”の検索結果</h1>
             <?php } ?>
           <div class="post-name">
           </div>
@@ -51,10 +51,21 @@ description: 検索結果が表示されます
               <h2>検索条件が入力されていません。</h2>
             <?php } else { ?>
             <?php if(have_posts()) : ?>
-              <?php query_posts($query_string.'&posts_per_page=-1'); ?>
+              <?php
+                $args = array(
+                  'paged' => $paged,
+                  'post_type' => array('recruit','interview','column','event','niche','blog'),
+                  'posts_per_page' => 27,
+                  'post_status' => 'publish',
+                  'has_password' => false,
+                ); ?>
+              <?php query_posts( $args ); ?>
               <?php while(have_posts()):the_post() ?>
                 <?php get_template_part('partials/common-grid'); ?>
               <?php endwhile; ?>
+              <?php if (function_exists("pagination")) {
+                pagination($custom_query->max_num_pages);
+              } ?>
              <?php else : ?>
               <h2>検索条件にヒットした記事がありませんでした。</h2>
             <?php endif; ?> </ul>
