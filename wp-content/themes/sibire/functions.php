@@ -206,7 +206,7 @@ function fb_search_filter( $query ) {
     $query = array(
       'post_type' => 'post',
       'post_status' => 'publish',
-      'has_password' => false
+      'has_password' => false,
     );
 	}
 	return $query;
