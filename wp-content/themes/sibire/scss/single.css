@@ -3,6 +3,7 @@
 Description: 投稿ページ
 */
 #common .single-wrap {
+  padding-top: 40px;
   background-color: #ffffff;
   position: relative;
 }
@@ -217,7 +218,7 @@ Description: 投稿ページ
 }
 #common aside .single-tag {
   margin: 0 0 20px 0;
-  padding: 0 10px;
+  padding: 0 6px;
 }
 #common aside .single-tag:before, #common aside .single-tag:after {
   content: ".";
@@ -234,12 +235,11 @@ Description: 投稿ページ
   border-radius: 2px;
   width: auto;
   min-height: 15px;
-  margin: 0 auto 8px;
+  margin: 4px;
   line-height: 15px;
   padding: 4px 10px 4px 7px;
   display: block;
   float: left;
-  clear: left;
   text-align: left;
 }
 #common aside .single-tag li a {
