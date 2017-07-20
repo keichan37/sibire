@@ -6,6 +6,7 @@ Description: 固定ページ
   background-color: #ffffff;
   color: #1b1464;
   position: relative;
+  padding-top: 40px;
 }
 #common .page-wrap h1 {
   font-size: 22px;

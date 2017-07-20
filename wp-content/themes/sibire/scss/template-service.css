@@ -4,7 +4,7 @@ Description: サービス紹介ページ
 */
 #lp .lp-cover {
   height: 300px;
-  padding-top: 180px;
+  padding-top: 220px;
   background: url("images/template-lp/lp-cover-background.jpg") center center/100% no-repeat;
 }
 #lp .lp-cover h1 {

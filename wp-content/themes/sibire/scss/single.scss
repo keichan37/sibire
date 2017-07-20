@@ -6,6 +6,7 @@ Description: 投稿ページ
 
 #common {
   .single-wrap {
+    padding-top: 40px;
     background-color: #ffffff;
     position: relative;
     &:after,
@@ -210,7 +211,7 @@ Description: 投稿ページ
         @include clearfix;
       }
       margin: 0 0 20px 0;
-      padding: 0 10px;
+      padding: 0 6px;
       li {
         list-style: none;
         border: 1px solid #1b1464;
@@ -218,12 +219,11 @@ Description: 投稿ページ
         border-radius: 2px;
         width: auto;
         min-height: 15px;
-        margin: 0 auto 8px;
+        margin: 4px;
         line-height: 15px;
         padding: 4px 10px 4px 7px;
         display: block;
         float: left;
-        clear: left;
         text-align: left;
         a {
           color: #1b1464;

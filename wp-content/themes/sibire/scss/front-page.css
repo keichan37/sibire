@@ -6,6 +6,7 @@ Description: フロントページ
   color: #ffffff;
   font-weight: 700;
   position: relative;
+  padding-top: 40px;
   height: 275px;
   margin-bottom: 15px;
   background: url("images/common/cover-background.jpg") fixed top -250px center/100% no-repeat;
@@ -702,6 +703,10 @@ Description: フロントページ
   }
   #common .common-cover a.cover-registration {
     font-size: 12px;
+  }
+  #common #searchform input[type="text"] {
+    margin-top: 0;
+    min-height: 38px;
   }
   #common .common-left {
     width: 100%;

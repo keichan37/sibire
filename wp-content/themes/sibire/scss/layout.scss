@@ -19,9 +19,13 @@ body {
 header {
   margin: 0px auto;
   height: 40px;
-  padding: 0 15px 0 15px;
+  padding: 0;
   text-align: center;
   position: relative;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  background-color: #ffffff;
   &:after,
   &:before {
     content: ""; 
@@ -36,8 +40,9 @@ header {
     z-index: 2;
   }
   .header-inner{
-    max-width: 1070px;
+    max-width: 1040px;
     margin: 0px auto;
+    padding: 0 15px;
     position: relative;
   }
   .global_menu {
