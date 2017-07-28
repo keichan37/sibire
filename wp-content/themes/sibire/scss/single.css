@@ -459,6 +459,11 @@ Description: 投稿ページ
   }
   #common iframe {
     max-width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
   }
 }
 
