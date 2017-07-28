@@ -457,9 +457,6 @@ Description: 投稿ページ
     float: none;
     width: 100%;
   }
-  #common iframe {
-    max-width: 230px;
-  }
 }
 
 /*# sourceMappingURL=single.css.map */
