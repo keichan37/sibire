@@ -439,6 +439,9 @@ Description: 投稿ページ
   #common .single-wrap .single-left article .single-eyecatch {
     background-size: cover;
   }
+  #common .single-wrap .single-left article iframe {
+    width: 100%;
+  }
   #common .single-wrap .single-right aside {
     padding-top: 0;
   }
