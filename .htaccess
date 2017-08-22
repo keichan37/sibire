@@ -1,4 +1,9 @@
 <IfModule mod_rewrite.c>
+
+RewriteCond %{REQUEST_URI} ^/registration [OR]
+RewriteCond %{REQUEST_URI} ^/business
+RewriteCond %{HTTPS} on
+
 RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.php$ - [L]
