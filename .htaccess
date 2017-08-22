@@ -10,7 +10,7 @@ RewriteRule ^/?(.*) https://%{HTTP_HOST}/$1 [R,L]
 RewriteCond %{REQUEST_URI} !(^/registration)
 RewriteCond %{REQUEST_URI} !(^/business)
 RewriteCond %{HTTPS} on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 RewriteEngine On
 RewriteBase /
