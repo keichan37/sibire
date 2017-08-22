@@ -31,10 +31,12 @@
 
                   <!-- PRとインタビュー -->
                   <?php if ( in_array(get_post_type(), array('interview')) ): ?>
-                    <div class="single-top-box">
-                      <img src="<?php the_field('avatar'); ?>" alt="">
-                      <div class="single-top-box-text"><? $txt = get_field('profile'); if($txt){ ?><? echo $txt; ?> <? } ?></div>
-                    </div>
+                    <? $txt = get_field('profile'); if($txt){ ?>
+                      <div class="single-top-box">
+                        <img src="<?php the_field('avatar'); ?>" alt="">
+                        <div class="single-top-box-text"><? echo $txt; ?></div>
+                      </div>
+                     <? } ?>
                   <?php elseif ( in_array(get_post_type(), array('niche')) ): ?>
                     <?php if ( $page == 1 ) : // 1ページ目だけ表示 ?>
                       <div class="single-top-box">
