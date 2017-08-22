@@ -84,6 +84,7 @@ $table_prefix  = 'wp_';
  */
 define('AUTOMATIC_UPDATER_DISABLED', true);
 define('WP_DEBUG', false);
+define('FORCE_SSL_ADMIN', true);
 
 /* 編集が必要なのはここまでです ! WordPress でブログをお楽しみください。 */
 
