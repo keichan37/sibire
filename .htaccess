@@ -1,8 +1,10 @@
 <IfModule mod_rewrite.c>
 
+# SSL
 RewriteCond %{REQUEST_URI} ^/registration [OR]
 RewriteCond %{REQUEST_URI} ^/business
-RewriteCond %{HTTPS} on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 RewriteEngine On
 RewriteBase /
