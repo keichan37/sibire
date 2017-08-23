@@ -20,9 +20,9 @@
       <meta content="<?php bloginfo('name'); ?>" property="og:title">
       <meta content="website" property="og:type">
       <meta content="<?php echo esc_url( home_url( '/' ) ); ?>" property="og:url">
-      <meta name="twitter:description" content="sibireは東京にこだわらない働き方を支援します">
-      <meta name="description" content="sibireは東京にこだわらない働き方を支援します" />
-      <meta property="og:description" content="sibireは東京にこだわらない働き方を支援します" />
+      <meta name="twitter:description" content="sibireでは、転職でOFF TOKYOを実現（東京にこだわらずキャリアを生かして働く）ためのサービスを提供します。">
+      <meta name="description" content="sibireでは、転職でOFF TOKYOを実現（東京にこだわらずキャリアを生かして働く）ためのサービスを提供します。" />
+      <meta property="og:description" content="sibireでは、転職でOFF TOKYOを実現（東京にこだわらずキャリアを生かして働く）ためのサービスを提供します。" />
     <?php else: ?>
       <title><?php wp_title( '', true, '' ); ?></title>
       <meta name="twitter:title" content="<?php wp_title( '', true, '' ); ?>">
