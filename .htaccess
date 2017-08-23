@@ -9,10 +9,11 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !=https
 RewriteRule ^/?(.*) https://%{HTTP_HOST}/$1 [R,L]
 
 #非SSL
-#RewriteCond %{REQUEST_URI} !(/registration)
-#RewriteCond %{REQUEST_URI} !(/business)
+RewriteCond %{REQUEST_URI} !(/registration)
+RewriteCond %{REQUEST_URI} !(/business)
+RewriteCond %{HTTP:X-Forwarded-Port} !^80$
 #RewriteCond %{HTTP:X-Forwarded-Proto} =https
-#RewriteRule ^/?(.*) http://%{HTTP_HOST}/$1 [R,L]
+RewriteRule ^/?(.*) http://%{HTTP_HOST}/$1 [R,L]
 
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
