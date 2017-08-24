@@ -3,10 +3,10 @@ RewriteEngine On
 RewriteBase /
 
 # SSL
-RewriteCond %{REQUEST_URI} ^/registration [OR]
-RewriteCond %{REQUEST_URI} ^/business
-RewriteCond %{HTTP:X-Forwarded-Proto} !=https
-RewriteRule ^/?(.*) https://%{HTTP_HOST}/$1 [R,L]
+#RewriteCond %{REQUEST_URI} ^/registration [OR]
+#RewriteCond %{REQUEST_URI} ^/business
+#RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+#RewriteRule ^/?(.*) https://%{HTTP_HOST}/$1 [R,L]
 
 #非SSL
 #RewriteCond %{REQUEST_URI} !(/registration)
