@@ -84,9 +84,10 @@ $table_prefix  = 'wp_';
  */
 define('AUTOMATIC_UPDATER_DISABLED', true);
 define('WP_DEBUG', false);
-define('FORCE_SSL_ADMIN', true);
-if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
-    $_SERVER['HTTPS'] = 'on';
+/** define('FORCE_SSL_ADMIN', true);
+ * if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
+ *     $_SERVER['HTTPS'] = 'on';
+ */
 
 /* 編集が必要なのはここまでです ! WordPress でブログをお楽しみください。 */
 
