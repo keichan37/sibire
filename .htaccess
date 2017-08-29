@@ -32,3 +32,14 @@ Options +FollowSymLinks
 RewriteCond %{HTTP_HOST} ^sibire\.co\.jp$
 RewriteRule ^(.*)$ http://www.sibire.co.jp/$1 [R=301,L]
 </IfModule>
+
+FileETag None
+<Files "\.(htm|php|css)">
+ Header set Cache-Control "max-age=86400, public"
+</Files>
+<Files "\.(xml|txt)">
+ Header set Cache-Control "max-age=3600, public"
+</Files>
+<Files "\.(ico|bmp|jpg|png|gif|js|swf)">
+ Header set Cache-Control "max-age=604800, public"
+</Files>
