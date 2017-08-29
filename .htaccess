@@ -33,6 +33,7 @@ RewriteCond %{HTTP_HOST} ^sibire\.co\.jp$
 RewriteRule ^(.*)$ http://www.sibire.co.jp/$1 [R=301,L]
 </IfModule>
 
+FileETag None
 <Files "\.(htm|php|css)">
  Header set Cache-Control "max-age=86400, public"
 </Files>
