@@ -32,10 +32,7 @@ Options +FollowSymLinks
 RewriteCond %{HTTP_HOST} ^sibire\.co\.jp$
 RewriteRule ^(.*)$ http://www.sibire.co.jp/$1 [R=301,L]
 </IfModule>
-
-ExpiresActive On
-ExpiresByType text/css "access plus 1 days"
-ExpiresByType image/gif "access plus 1 weeks"
-ExpiresByType image/jpeg "access plus 1 weeks"
-ExpiresByType image/png "access plus 1 weeks"
-ExpiresByType application/x-javascript "access plus 1 weeks"
+<FilesMatch "(?i)^.*\.(ico|flv|jpg|jpeg|png|gif|js|css)$">
+  ExpiresActive On
+  ExpiresDefault A2592000
+</FilesMatch>
