@@ -7,28 +7,35 @@
   SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
  </IfModule>
 </IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 seconds"
+  ExpiresByType image/gif "access plus 1 weeks"
+  ExpiresByType image/jpeg "access plus 1 weeks"
+  ExpiresByType image/png "access plus 1 weeks"
+</IfModule>
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
+  RewriteEngine On
+  RewriteBase /
 
-# SSL
-RewriteCond %{REQUEST_URI} ^/registration [OR]
-RewriteCond %{REQUEST_URI} ^/business
-RewriteCond %{HTTP:X-Forwarded-Proto} !=https
-RewriteRule ^/?(.*) https://%{HTTP_HOST}/$1 [R,L]
+  # SSL
+  RewriteCond %{REQUEST_URI} ^/registration [OR]
+  RewriteCond %{REQUEST_URI} ^/business
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteRule ^/?(.*) https://%{HTTP_HOST}/$1 [R,L]
 
-#非SSL
-#RewriteCond %{REQUEST_URI} !(/registration)
-#RewriteCond %{REQUEST_URI} !(/business)
-#RewriteCond %{HTTP:X-Forwarded-Port} !^80$
-#RewriteCond %{HTTP:X-Forwarded-Proto} =https
-#RewriteRule ^/?(.*) http://%{HTTP_HOST}/$1 [R,L]
+  #非SSL
+  #RewriteCond %{REQUEST_URI} !(/registration)
+  #RewriteCond %{REQUEST_URI} !(/business)
+  #RewriteCond %{HTTP:X-Forwarded-Port} !^80$
+  #RewriteCond %{HTTP:X-Forwarded-Proto} =https
+  #RewriteRule ^/?(.*) http://%{HTTP_HOST}/$1 [R,L]
 
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-Options +FollowSymLinks
-RewriteCond %{HTTP_HOST} ^sibire\.co\.jp$
-RewriteRule ^(.*)$ http://www.sibire.co.jp/$1 [R=301,L]
+  RewriteRule ^index\.php$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.php [L]
+  Options +FollowSymLinks
+  RewriteCond %{HTTP_HOST} ^sibire\.co\.jp$
+  RewriteRule ^(.*)$ http://www.sibire.co.jp/$1 [R=301,L]
 </IfModule>
