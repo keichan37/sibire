@@ -33,7 +33,7 @@
               $args = array(
                 'paged' => $paged,
                 'post_type' => array('recruit','interview','column','event','niche','blog'),
-                'posts_per_page' => 27,
+                'posts_per_page' => 15,
                 'post_status' => 'publish',
                 'has_password' => false,
               ); ?>
