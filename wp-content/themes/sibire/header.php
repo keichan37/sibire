@@ -77,7 +77,7 @@
       <header>
         <div class="header-inner">
           <div class="logo">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">sibire</a>
+            <?php echo '<a href="' . home_url(null, 'http') . '">sibire</a>';?>
           </div>
           <?php wp_nav_menu( array('menu' => 'global_menu', 'menu_class' => 'global_menu')); ?>
         </div>
