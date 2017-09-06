@@ -7,13 +7,6 @@
   SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
  </IfModule>
 </IfModule>
-<IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresDefault "access plus 1 seconds"
-  ExpiresByType image/gif "access plus 1 weeks"
-  ExpiresByType image/jpeg "access plus 1 weeks"
-  ExpiresByType image/png "access plus 1 weeks"
-</IfModule>
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
