@@ -64,22 +64,6 @@ function add_column($column_name, $post_id) {
     if( $column_name == 'subtitle' ) {
         $stitle = get_post_meta($post_id, 'subtitle', true);
     }
-    if ( isset($stitle) && $stitle ) {
-        echo attribute_escape($stitle);
-    } else {
-        echo __('None');
-    }
-}
-
-function sort_posts_columns($columns){
-	$columns = array(
-		'cb' => '<input type="checkbox" />',
-		'title' => 'タイトル',
-		'subtitle' => 'サブタイトル',
-		'tags' => 'タグ',
-		'date' => '日時'
-	);
-	return $columns;
 }
 
 // エディタ内でphpファイルを読み込む
