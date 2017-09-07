@@ -10,6 +10,9 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+  
+  RewriteRule \.(gif|jpe?g|png)$ - [L,E=X_CACHE_PATTERN4:]
+  Header set Cache-Control "max-age=86400" env=X_CACHE_PATTERN4
 
   # SSL
   RewriteCond %{REQUEST_URI} ^/registration [OR]
