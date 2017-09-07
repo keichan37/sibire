@@ -72,7 +72,18 @@ function add_column($column_name, $post_id) {
     }
 }
 add_action( 'manage_posts_custom_column', 'add_column', 10, 2 );
-
+function sort_posts_columns($columns){
+	$columns = array(
+		'cb' => '<input type="checkbox" />',
+		'title' => 'タイトル',
+    'subtitle' => 'サブタイトル',
+    'categories' => 'カテゴリ',
+		'tags' => 'タグ',
+		'date' => '日時'
+	);
+	return $columns;
+}
+add_filter( 'manage_posts_columns', 'sort_posts_columns' );
 
 // エディタ内でphpファイルを読み込む
 function Include_my_php($params = array()) {
