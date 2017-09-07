@@ -120,18 +120,6 @@ function SearchFilter($query) {
 }
 add_filter('pre_get_posts','SearchFilter');
 
-/* 通常の「投稿」をメニューから削除（今回は不使用のため） */
-function remove_menus () {
-global $menu;
-$restricted = array(__('Dashboard'), __('Comments'));
-end ($menu);
-while (prev($menu)){
-$value = explode(' ',$menu[key($menu)][0]);
-if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu)]);}
-}
-}
-add_action('admin_menu', 'remove_menus');
-
 /* カスタムメニューにてカスタム投稿の下層でもcurrent_pageクラスを付与 */
 function add_nav_menu_custom_class( $menu_items ) {
 	$lists = array(
