@@ -12,7 +12,7 @@
     </div>
 
   <?php wp_footer(); ?>
-  <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/jquery.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/jquery.fadethis.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/app.js"></script>
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/owl.carousel.min.js"></script>
