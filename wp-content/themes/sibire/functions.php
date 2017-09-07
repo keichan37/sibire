@@ -73,16 +73,6 @@ function add_column($column_name, $post_id) {
 add_filter( 'manage_posts_columns', 'manage_posts_columns' );
 add_action( 'manage_posts_custom_column', 'add_column', 10, 2 );
 
-function sort_posts_columns($columns){
-	$columns = array(
-		'date' => '日時',
-		'cb' => '<input type="checkbox" />',
-		'title' => 'タイトル',
-		'subtitle' => 'サブタイトル',
-		'tags' => 'タグ'
-	);
-	return $columns;
-}
 
 // エディタ内でphpファイルを読み込む
 function Include_my_php($params = array()) {
@@ -97,9 +87,6 @@ function Include_my_php($params = array()) {
 }
 add_shortcode('partial-php', 'Include_my_php');
 
-
-add_filter( 'manage_posts_columns', 'sort_posts_columns' );
-add_action( 'manage_posts_custom_column', 'add_column', 10, 2 );
 
 // 固定ページにカテゴリーを設定
 function add_categorie_to_pages(){
