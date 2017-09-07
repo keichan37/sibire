@@ -86,9 +86,8 @@
 
 .mce-content-body blockquote {
   margin: 0 0 10px 0;
-  padding: 20px 30px;
-  background-color: #f5f5f5;
-  border-left: 3px dotted #ffffff;
+  padding: 5px 10px;
+  border-left: 3px solid #dddddd;
 }
 
 .mce-content-body blockquote p {

@@ -200,7 +200,6 @@ add_filter( 'media_view_settings', 'image_gallery_default_link');
 add_editor_style("editor.css");
 
 /* 検索機能で固定ページを除外 */
-
 function fb_search_filter( $query ) {
 	if ( $query -> is_search ) {
     $query->set( 'post_type', 'post' );
