@@ -4,13 +4,12 @@
     <div id="common">
       <?php if(have_posts()): while(have_posts()):the_post(); ?>
         <?php
-          $category = get_the_category();
-          $cat_id   = $category[0]->cat_ID;
-          $cat_name = $category[0]->cat_name;
-          $cat_name2 = $category[1]->cat_name;
-          $cat_slug = $category[0]->category_nicename;
+          $category  = get_the_category();
+          $cat_id    = $category[0]->cat_ID;
+          $cat_slug  = $category[0]->category_nicename;
+          $cat_slug2 = $category[1]->category_nicename;
         ?>
-      <div class="common-cover custom-field <? echo $cat_name ?>">
+      <div class="common-cover custom-field <? echo $cat_slug ?>">
         <div class="container">
           <?php get_template_part('breadcrumb');?>
           <h1>
@@ -28,7 +27,7 @@
               <?php $area_name = get_post_meta($post->ID, 'area_name', true);?>
               <?php
                 $args = array( 
-                 'post_type' => array($cat_name,$cat_name2),
+                 'post_type' => array($cat_slug,$cat_slug2),
                  'post_status' => 'publish',
                  'has_password' => false,
                  'meta_query' => array(
@@ -46,7 +45,7 @@
               <?php
                 $args = array(
                   'posts_per_page' => -1,
-                  'post_type' => array($cat_name,$cat_name2),
+                  'post_type' => array($cat_slug,$cat_slug2),
                   'post_status' => 'publish',
                   'has_password' => false
                 );
