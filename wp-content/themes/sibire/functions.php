@@ -66,6 +66,17 @@ function add_column($column_name, $post_id) {
     }
 }
 
+function sort_posts_columns($columns){
+	$columns = array(
+		'cb' => '<input type="checkbox" />',
+		'date' => '日時'
+		'title' => 'タイトル',
+		'subtitle' => 'サブタイトル',
+		'tags' => 'タグ',
+	);
+	return $columns;
+}
+
 // エディタ内でphpファイルを読み込む
 function Include_my_php($params = array()) {
   extract(shortcode_atts(array(
