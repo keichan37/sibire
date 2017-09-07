@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-    <meta content="no-cache" http-equiv="Pragma">
     <meta charset="utf-8">
+    <meta content="no-cache" http-equiv="Pragma">
     <meta content="no-cache" http-equiv="Cache-Control">
     <meta content="0" http-equiv="Expires">
     <meta content="text/css" http-equiv="Content-Style-Type">
