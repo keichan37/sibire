@@ -64,15 +64,18 @@ function add_column($column_name, $post_id) {
     if( $column_name == 'subtitle' ) {
         $stitle = get_post_meta($post_id, 'subtitle', true);
     }
+    else {
+        echo __('None');
+    }
 }
 
 function sort_posts_columns($columns){
 	$columns = array(
+		'date' => '日時',
 		'cb' => '<input type="checkbox" />',
-		'date' => '日時'
 		'title' => 'タイトル',
 		'subtitle' => 'サブタイトル',
-		'tags' => 'タグ',
+		'tags' => 'タグ'
 	);
 	return $columns;
 }
