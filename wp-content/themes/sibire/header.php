@@ -74,11 +74,14 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     <div id="wrap">
-      <header>
-        <div class="header-inner">
-          <div class="logo">
-            <?php echo '<a href="' . home_url(null, 'http') . '">sibire</a>';?>
+      <?php if(is_page('offtokyomeetup2017')): ?>
+      <?php else : ?>
+        <header>
+          <div class="header-inner">
+            <div class="logo">
+              <?php echo '<a href="' . home_url(null, 'http') . '">sibire</a>';?>
+            </div>
+            <?php wp_nav_menu( array('menu' => 'global_menu', 'menu_class' => 'global_menu')); ?>
           </div>
-          <?php wp_nav_menu( array('menu' => 'global_menu', 'menu_class' => 'global_menu')); ?>
-        </div>
-      </header>
+        </header>
+      <?php endif; ?>

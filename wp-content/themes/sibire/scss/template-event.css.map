@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,eAAgB;EACd,UAAU,EAAE,MAAM",
+"sources": ["template-event.scss"],
+"names": [],
+"file": "template-event.css"
+}
