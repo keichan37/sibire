@@ -35,27 +35,27 @@
         </p>
         <h2>日本全国から企業が参加!</h2>
         <ul>
-          <li><span>酒田</span><strong>チェンジ・ザ・ワールド</strong></li>
-          <li><span>仙台</span><strong>ワイヤードビーンズ</strong></li>
-          <li><span>幕張</span><strong>スタートトゥデイ</strong></li>
-          <li><span>鎌倉</span><strong>カヤック</strong></li>
-          <li><span>大阪</span><strong>freee</strong></li>
-          <li><span>白浜</span><strong>セールスフォース・ドットコム</strong></li>
-          <li><span>松江</span><strong>ネットワーク応用通信研究所</strong></li>
-          <li><span>福岡</span><strong>GMOぺパボ</strong></li>
-          <li><span>北九州</span><strong>メンバーズエッジ</strong></li>
-          <li><span>日南</span><strong>ダンドリワークス</strong></li>
+          <li><span>酒田</span><strong>チェンジ・ザ・ワールド</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><span>仙台</span><strong>ワイヤードビーンズ</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><span>幕張</span><strong>スタートトゥデイ</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><span>鎌倉</span><strong>カヤック</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><span>大阪</span><strong>freee</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><span>白浜</span><strong>セールスフォース・ドットコム</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><span>松江</span><strong>ネットワーク応用通信研究所</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><span>福岡</span><strong>GMOぺパボ</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><span>北九州</span><strong>メンバーズエッジ</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><span>日南</span><strong>ダンドリワークス</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
         </ul>
         <h2>IT先進エリア10</h2>
         <ul>
-          <li>横浜市</li>
-          <li>神戸市</li>
-          <li>和歌山県</li>
-          <li>島根県</li>
-          <li>徳島県</li>
-          <li>福岡市</li>
-          <li>北九州市</li>
-          <li>宮崎県</li>
+          <li><strong>横浜市</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><strong>神戸市</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><strong>和歌山県</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><strong>島根県</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><strong>徳島県</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><strong>福岡市</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><strong>北九州市</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li><strong>宮崎県</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
         </ul>
         <table>
           <tr>
