@@ -94,7 +94,10 @@
             </td>
           </tr>
         </table>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7777714030094!2d139.74262735076178!3d35.65784648010269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbda06f20a7%3A0x7eb2bfdb37f9f101!2z44K544K_44O844Op44Kk44K644K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1505107862628" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <?php get_template_part('google_map');?>
+        <div class="acf-map">
+          <div class="marker" data-lat="35.657847" data-lng="139.744821"></div>
+        </div>
         <address>〒105-0011 東京都港区芝公園４丁目４−７</address>
         <ul>
           <li>大江戸線 赤羽橋駅 / 赤羽橋口 徒歩5分</li>

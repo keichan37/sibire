@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,eAAgB;EACd,UAAU,EAAE,MAAM",
+"mappings": "AAAA,eAAgB;EACd,UAAU,EAAE,MAAM;;AAClB,wBAAS;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK",
 "sources": ["template-event.scss"],
 "names": [],
 "file": "template-event.css"

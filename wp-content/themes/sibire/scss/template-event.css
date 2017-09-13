@@ -1,5 +1,9 @@
 #template-event {
   text-align: center;
 }
+#template-event .acf-map {
+  width: 100%;
+  height: 600px;
+}
 
 /*# sourceMappingURL=template-event.css.map */
