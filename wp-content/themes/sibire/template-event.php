@@ -196,7 +196,7 @@
         <a class="button" href="entry;">参加する</a>
         <footer>
           <?php get_template_part('partials/sns-share'); ?>
-          <small>&copy; 2017 sibire ,inc. All Rights Reserved.</small>
+          <small>&copy; <?php echo date("Y"); ?> sibire ,inc. All Rights Reserved.</small>
         </footer>
       </div>
     </div>
