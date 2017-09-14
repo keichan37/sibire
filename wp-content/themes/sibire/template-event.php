@@ -21,7 +21,7 @@
         </p>
       </section>
       <section class="content1">
-        <h2>地域を変えた<br />イノベーター対談</h2>
+        <h2 class="slide-top">地域を変えた<br />イノベーター対談</h2>
         <p>
           島根県に在住するまつもとゆきひろ氏と、鎌倉エリアを盛り上げる活動を行う柳澤大輔氏に<br />
           働きたい場所で東京に負けないキャリアを実現する方法を語ってもらいます。 
@@ -52,7 +52,7 @@
         </figure>
       </section>
       <section class="company">
-        <h2>日本全国から企業が参加!</h2>
+        <h2 class="slide-top">日本全国から企業が参加!</h2>
         <ul>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-kayak.png" alt="面白法人カヤック">
@@ -100,7 +100,7 @@
         <a class="button" href="entry">参加する</a>
       </div>
       <section class="municipality">
-        <h2>IT先進エリア</h2>
+        <h2 class="slide-top">IT先進エリア</h2>
         <ul>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-yokohama.png" alt="横浜市">
