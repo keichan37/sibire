@@ -140,15 +140,15 @@
       <section class="information">
         <table>
           <tr>
-            <th>日時</th>
+            <th>日時:</th>
             <td><time>2017年11月11日（土）12:00～18:00（予定）</time></td>
           </tr>
           <tr>
-            <th>会場</th>
+            <th>会場:</th>
             <td>STAR RISE TOWER 5F「Studio Earth」<br />※東京タワー直結（東京都港区芝公園4-4-7）</td>
           </tr>
           <tr>
-            <th>参加費</th>
+            <th>参加費:</th>
             <td>無料</td>
           </tr>
           <tr>
@@ -156,19 +156,19 @@
             <td>
               <table>
                 <tr>
-                  <th>募集人数：</th>
+                  <th>募集人数:</th>
                   <td>500人</td>
                 </tr>
                 <tr>
-                  <th>対象者：</th>
+                  <th>対象者:</th>
                   <td>東京以外の働き方に興味がある／地方で働くことに関心があるエンジニア、デザイナー、ディレクター</td>
                 </tr>
                 <tr>
-                  <th>主催：</th>
+                  <th>主催:</th>
                   <td>TEAM OFF TOKYO（シビレ株式会社、8infinity株式会社、株式会社am.、株式会社PR Table、株式会社東京リサイクル、合同会社laJapan、福岡移住計画、他) </td>
                 </tr>
                 <tr>
-                  <th>協力：</th>
+                  <th>協力:</th>
                   <td>株式会社team S、ネットワーク応用通信研究所、宮崎県、他</td>
                 </tr>
               </table>
