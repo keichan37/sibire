@@ -436,6 +436,9 @@
   #template-event section.information table tr td table tr td {
     font-size: 13px;
   }
+  #template-event section.map .acf-map {
+    height: 380px;
+  }
   #template-event section.map .address {
     text-align: center;
   }

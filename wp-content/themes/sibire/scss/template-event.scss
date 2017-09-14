@@ -418,16 +418,19 @@
           }
         }
       }
-      &.map .address {
-        text-align: center;
-        address {
-          font-size: 15px;
-        }
-        ul {
-          li {
-            float: none;
-            width: 100%;
-            font-size: 13px;
+      &.map {
+        .acf-map { height: 380px; }
+        .address {
+          text-align: center;
+          address {
+            font-size: 15px;
+          }
+          ul {
+            li {
+              float: none;
+              width: 100%;
+              font-size: 13px;
+            }
           }
         }
       }
