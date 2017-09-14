@@ -37,6 +37,7 @@
     }
   }
   #cover {
+    padding: 100px 0 0 0;
     text-align: center;
     height: 698px;
     background: url("images/template-event/cover-background.jpg") center center /cover no-repeat;
@@ -45,7 +46,7 @@
     }
     h1 {
       margin: 0;
-      padding: 100px 0 0 0;
+      padding: 0;
     }
     .button {
       margin-top: 20px;
