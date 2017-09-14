@@ -23,48 +23,113 @@
           島根県に在住するまつもとゆきひろ氏と、鎌倉エリアを盛り上げる活動を行う柳澤大輔氏に<br />
           働きたい場所で東京に負けないキャリアを実現する方法を語ってもらいます。 
         </p>
-        <h3>まつもとゆきひろ氏</h3>
-        <p>
-          テキストテキストテキストテキストテキストテ
-          テキストテキストテキストテキストテキ
-          テキストテキストテキストテキストテキストテキストテキスキスト
-          テキストテキストテキストテキストテキストテキストテキス
-        </p>
-        <h3>柳澤大輔氏</h3>
-        <p>
-          テキストテキストテキストテキストテキストテ
-          テキストテキストテキストテキストテキ
-          テキストテキストテキストテキストテキストテキストテキスキスト
-          テキストテキストテキストテキストテキストテキストテキス
-        </p>
+        <figure>
+          <img src="" alt="まつもとゆきひろ"/>
+          <figcaption>
+            <h3>まつもとゆきひろ氏</h3>
+            <p>
+              テキストテキストテキストテキストテキストテ
+              テキストテキストテキストテキストテキ
+              テキストテキストテキストテキストテキストテキストテキスキスト
+              テキストテキストテキストテキストテキストテキストテキス
+            </p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="" alt="柳澤大輔"/>
+          <figcaption>
+            <h3>柳澤大輔氏</h3>
+            <p>
+              テキストテキストテキストテキストテキストテ
+              テキストテキストテキストテキストテキ
+              テキストテキストテキストテキストテキストテキストテキスキスト
+              テキストテキストテキストテキストテキストテキストテキス
+            </p>
+          </figcaption>
+        </figure>
       </section>
-      <section>
+      <section class="company">
         <h2>日本全国から企業が参加!</h2>
         <ul>
-          <li><span>酒田</span><strong>チェンジ・ザ・ワールド</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><span>仙台</span><strong>ワイヤードビーンズ</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><span>幕張</span><strong>スタートトゥデイ</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><span>鎌倉</span><strong>カヤック</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><span>大阪</span><strong>freee</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><span>白浜</span><strong>セールスフォース・ドットコム</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><span>松江</span><strong>ネットワーク応用通信研究所</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><span>福岡</span><strong>GMOぺパボ</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><span>北九州</span><strong>メンバーズエッジ</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><span>日南</span><strong>ダンドリワークス</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-kayak.png" alt="面白法人カヤック">
+            <span>鎌倉</span>
+            <h3>面白法人カヤック</h3>
+            <?php /* <a href="javascript:void(0);" target="_blank">Interview<b class="icon icon-open"></b></a> */ ?>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-salesforce.png" alt="株式会社セールスフォース・ドットコム">
+            <span>白浜</span>
+            <h3>株式会社セールスフォース・ドットコム</h3>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-freee.png" alt="freee株式会社">
+            <span>大阪</span>
+            <h3>freee株式会社</h3>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-dandoriworks.png" alt="株式会社ダンドリワークス">
+            <span>日南</span>
+            <h3>株式会社ダンドリワークス</h3>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-nacl.png" alt="ネットワーク応用通信研究所">
+            <span>松江</span>
+            <h3>ネットワーク応用通信研究所</h3>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-membersedge.png" alt="株式会社メンバーズエッジ">
+            <span>北九州</span>
+            <h3>株式会社メンバーズエッジ</h3>
+          </li>
+          
+          <?php /*
+          <li><span>酒田</span><h3>チェンジ・ザ・ワールド</h3></li>
+          <li><span>仙台</span><h3>ワイヤードビーンズ</h3></li>
+          <li><span>幕張</span><h3>スタートトゥデイ</h3></li>
+          <li><span>福岡</span><h3>GMOぺパボ</h3></li>
+          */ ?>
+
         </ul>
+        <aside>&#x203B;50音順</aside>
       </section>
-      <section>
-        <h2>IT先進エリア10</h2>
+      <section class="municipality">
+        <h2>IT先進エリア</h2>
         <ul>
-          <li><strong>横浜市</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><strong>神戸市</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><strong>和歌山県</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><strong>島根県</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><strong>徳島県</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><strong>福岡市</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><strong>北九州市</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
-          <li><strong>宮崎県</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-yokohama.png" alt="横浜市">
+            <h3>横浜市</h3>
+            <?php /* <a href="javascript:void(0);" target="_blank">Interview<b class="icon icon-open"></b></a> */ ?>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-kobe.png" alt="神戸市">
+            <h3>神戸市</h3>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-wakayama.png" alt="和歌山県">
+            <h3>和歌山県</h3>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-shimane.png" alt="島根県">
+            <h3>島根県</h3>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-tokushima.png" alt="徳島県">
+            <h3>徳島県</h3>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-fukuoka.png" alt="福岡市">
+            <h3>福岡市</h3>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-kitakyusyu.png" alt="北九州市">
+            <h3>北九州市</h3>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-miyazaki.png" alt="宮崎県">
+            <h3>宮崎県</h3>
+          </li>
         </ul>
+        <aside>&#x203B;都道府県コード順</aside>
       </section>
       <section class="information">
         <table>
