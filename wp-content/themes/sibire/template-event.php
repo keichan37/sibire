@@ -3,8 +3,11 @@
   <?php get_header(); ?>
     <div id="template-event">
       <div id="cover">
-        <h1><?php the_title(); ?></h1>
-        <a href="javascript:void(0);">参加する</a>
+        <h1>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-title.png" alt="<?php the_title(); ?>"/>
+        </h1>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-date.png" alt="2017/11/11 Sat 13:00~17:00 場所:STAR RISE TOWER 5F 'Studio Earth' (東京タワー直結)"/>
+        <a class="button" href="javascript:void(0);">参加する</a>
         <?php get_template_part('partials/sns-share'); ?>
       </div>
       <section class="overview">
@@ -24,9 +27,9 @@
           働きたい場所で東京に負けないキャリアを実現する方法を語ってもらいます。 
         </p>
         <figure>
-          <img src="" alt="まつもとゆきひろ"/>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-matsumoto.jpg" alt="まつもとゆきひろ"/>
           <figcaption>
-            <h3>まつもとゆきひろ氏</h3>
+            <h3>まつもとゆきひろ<span>氏</span></h3>
             <p>
               テキストテキストテキストテキストテキストテ
               テキストテキストテキストテキストテキ
@@ -36,9 +39,9 @@
           </figcaption>
         </figure>
         <figure>
-          <img src="" alt="柳澤大輔"/>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-yanasawa.jpg" alt="柳澤大輔"/>
           <figcaption>
-            <h3>柳澤大輔氏</h3>
+            <h3>柳澤大輔<span>氏</span></h3>
             <p>
               テキストテキストテキストテキストテキストテ
               テキストテキストテキストテキストテキ
@@ -135,7 +138,7 @@
         <table>
           <tr>
             <th>日時</th>
-            <td>2017年11月11日（土）12:00～18:00（予定）</td>
+            <td><time>2017年11月11日（土）12:00～18:00（予定）</time></td>
           </tr>
           <tr>
             <th>会場</th>
@@ -186,8 +189,12 @@
           </ul>
         </div>
       </section>
-      <a href="javascript:void(0);">参加する</a>
-      <?php get_template_part('partials/sns-share'); ?>
+      <div class="participate">
+        <a class="button" href="javascript:void(0);">参加する</a>
+      </div>
+      <footer>
+        <?php get_template_part('partials/sns-share'); ?>
+        <small>&copy; 2017 sibire ,inc. All Rights Reserved.</small>
+      </footer>
     </div>
-        
     <?php get_footer(); ?>

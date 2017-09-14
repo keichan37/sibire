@@ -1,13 +1,17 @@
       <div class="scroll-top-wrap">
         <a class="e-scroll-top r-scroll-top scroll-top none" href="javascript:void(0);"></a>
       </div>
+
+      <?php if(is_page('offtokyomeetup2017')): ?>
+      <?php else : ?>
       <?php get_template_part('partials/sns-footer'); ?>
-      <footer id="footer">
-        <nav>
-          <?php wp_nav_menu( array('menu' => 'footer_menu', 'menu_class' => 'footer_menu')); ?>
-        </nav>
-        <div class="copy">&copy; <?php echo date("Y"); ?> sibire ,inc. All Rights Reserved.</div>
-      </footer>
+        <footer id="footer">
+          <nav>
+            <?php wp_nav_menu( array('menu' => 'footer_menu', 'menu_class' => 'footer_menu')); ?>
+          </nav>
+          <div class="copy">&copy; <?php echo date("Y"); ?> sibire ,inc. All Rights Reserved.</div>
+        </footer>
+      <?php endif; ?>
 
     </div>
 
