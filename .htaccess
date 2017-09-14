@@ -16,7 +16,8 @@
 
   # SSL
   RewriteCond %{REQUEST_URI} ^/registration [OR]
-  RewriteCond %{REQUEST_URI} ^/business
+  RewriteCond %{REQUEST_URI} ^/business [OR]
+  RewriteCond %{REQUEST_URI} ^/offtokyomeetup2017/entry
   RewriteCond %{HTTP:X-Forwarded-Proto} !=https
   RewriteRule ^/?(.*) https://%{HTTP_HOST}/$1 [R,L]
 

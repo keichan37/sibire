@@ -7,7 +7,7 @@
           <img class="slide-top" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-title.png" alt="<?php the_title(); ?>"/>
         </h1>
         <img class="slide-top" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-date.png" alt="2017/11/11 Sat 13:00~17:00 場所:STAR RISE TOWER 5F 'Studio Earth' (東京タワー直結)"/>
-        <a class="button" href="javascript:void(0);">参加する</a>
+        <a class="button" href="entry">参加する</a>
         <?php get_template_part('partials/sns-share'); ?>
       </div>
       <section class="overview">
@@ -97,7 +97,7 @@
         <aside>&#x203B;50音順</aside>
       </section>
       <div class="participate participate1">
-        <a class="button" href="javascript:void(0);">参加する</a>
+        <a class="button" href="entry">参加する</a>
       </div>
       <section class="municipality">
         <h2>IT先進エリア</h2>
@@ -193,7 +193,7 @@
         </div>
       </section>
       <div class="participate participate2">
-        <a class="button" href="javascript:void(0);">参加する</a>
+        <a class="button" href="entry;">参加する</a>
       </div>
       <footer>
         <?php get_template_part('partials/sns-share'); ?>
