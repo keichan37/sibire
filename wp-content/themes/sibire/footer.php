@@ -1,10 +1,9 @@
-      <div class="scroll-top-wrap">
-        <a class="e-scroll-top r-scroll-top scroll-top none" href="javascript:void(0);"></a>
-      </div>
-
       <?php if(is_page('offtokyomeetup2017')): ?>
       <?php else : ?>
       <?php get_template_part('partials/sns-footer'); ?>
+        <div class="scroll-top-wrap">
+          <a class="e-scroll-top r-scroll-top scroll-top none" href="javascript:void(0);"></a>
+        </div>
         <footer id="footer">
           <nav>
             <?php wp_nav_menu( array('menu' => 'footer_menu', 'menu_class' => 'footer_menu')); ?>
