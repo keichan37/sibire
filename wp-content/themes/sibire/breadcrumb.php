@@ -25,7 +25,7 @@
   <? php /* ?>親要素がある場合<?php */ ?>
   <?php foreach ( array_reverse(get_post_ancestors($post->ID)) as $parentid ) { ?>
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-      <a href="<?php echo bloginfo('url'); ?>?p=<?php echo $parentid;?>" itemprop="url">
+      <?php echo '<a href="' . home_url(null, 'http') . '">?p=<?php echo $parentid;?>" itemprop="url">
         <span itemprop="title"><?php echo get_page($parentid)->post_title; ?></span>
       </a>&nbsp;&gt;&nbsp;
     </span>
