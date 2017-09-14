@@ -8,7 +8,7 @@
           <?php wp_nav_menu( array('menu' => 'page_nav','container' => 'nav' ,'menu_class' => 'page-nav' )); ?>
           <?php while(have_posts()): the_post(); ?>
             <section>
-              <h1><?php the_title(); ?></h1>
+              <h1 id="page-h1"><?php the_title(); ?></h1>
               <div class="page-content"><?php the_content(); //本文 ?></div>
               <?php if (is_page('sitemap')) { ?>
                 <?php wp_nav_menu( array('menu' => 'sitemap-left','container' => '','menu_class' => 'sitemap' )); ?>
