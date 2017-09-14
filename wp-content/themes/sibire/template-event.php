@@ -96,6 +96,9 @@
         </ul>
         <aside>&#x203B;50音順</aside>
       </section>
+      <div class="participate participate1">
+        <a class="button" href="javascript:void(0);">参加する</a>
+      </div>
       <section class="municipality">
         <h2>IT先進エリア</h2>
         <ul>
@@ -189,7 +192,7 @@
           </ul>
         </div>
       </section>
-      <div class="participate">
+      <div class="participate participate2">
         <a class="button" href="javascript:void(0);">参加する</a>
       </div>
       <footer>
