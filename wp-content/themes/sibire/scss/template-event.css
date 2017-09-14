@@ -408,16 +408,21 @@
     margin: 0px auto;
   }
   #template-event section.company ul li {
-    width: 40%;
-    margin: 7% 5% 0 5%;
+    width: 41%;
     min-height: auto;
     height: auto;
+  }
+  #template-event section.company ul li:nth-child(even) {
+    margin: 7% 6% 0 3%;
+  }
+  #template-event section.company ul li:nth-child(odd) {
+    margin: 7% 3% 0 6%;
   }
   #template-event section.company aside {
     margin-top: 15px;
   }
   #template-event section.municipality ul li {
-    width: 29%;
+    width: 29.3%;
     margin: 5% 2% 0 2%;
     min-height: auto;
     height: auto;
