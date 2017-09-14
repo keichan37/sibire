@@ -194,10 +194,10 @@
       </section>
       <div class="participate participate2">
         <a class="button" href="entry;">参加する</a>
+        <footer>
+          <?php get_template_part('partials/sns-share'); ?>
+          <small>&copy; 2017 sibire ,inc. All Rights Reserved.</small>
+        </footer>
       </div>
-      <footer>
-        <?php get_template_part('partials/sns-share'); ?>
-        <small>&copy; 2017 sibire ,inc. All Rights Reserved.</small>
-      </footer>
     </div>
     <?php get_footer(); ?>
