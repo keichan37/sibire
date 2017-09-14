@@ -1,9 +1,13 @@
 @import "mixin";
 #template-event {
   font-size: 14px;
+  a {
+    color: #00A0E9;
+    &:hover { color: #32b3ed; }
+  }
   #cover {
     height: 698px;
-    background: rgb(100,200,237) url("images/template-event/cover.jpg") center center /auto 100% no-repeat;
+    background: url("images/template-event/cover.jpg") center center /auto 100% no-repeat;
     h1 {
       margin: 0;
       padding: 0;
@@ -15,7 +19,7 @@
   section {
     &.overview {
       text-align: center;
-      height: 220px;
+      height: 300px;
       padding-top: 120px;
       background: #ffffff url("images/template-event/map-black.png") center center /cover no-repeat;
       h2 {
@@ -33,9 +37,178 @@
     }
     &.content1 {
       background-color: #54C3F1;
+      padding: 52px 0;
       h2,
       p {
         text-align: center;
+      }
+      h2 {
+        margin: 0;
+        padding: 35px 0;
+        font-size: 27px;
+        line-height: 1.2;
+        position: relative;
+        &:before,
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 147px;
+          height: 32px;
+        }
+        &:before {
+          background-image: url("images/template-event/content1-h2-before.png");
+          top: 0;
+          left: 50%;
+          margin-left: -150px;
+        }
+        &:after {
+          background-image: url("images/template-event/content1-h2-after.png");
+          bottom: 0;
+          right: 50%;
+          margin-right: -150px;
+        }
+      }
+      p {
+        line-height: 1.7;
+        margin: 40px 0 0 0;
+      }
+      figure {
+        max-width: 570px;
+        margin: 0px auto;
+        margin-top: 30px;
+        img,
+        figcaption {
+          display: block;
+          float: left;
+        }
+        img {
+          width: 138px;
+          height: 138px;
+          padding: 6px;
+          @include border-radius(75px);
+          background-color: rgba(255,255,255,.2);
+        }
+        figcaption {
+          max-width: 400px;
+          padding: 10px 0 0 20px;
+          h3 {
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px dotted #000000;
+            font-size: 22px;
+            width: 70%;
+          }
+          p {
+            font-size: 13px;
+            line-height: 1.4;
+            text-align: left;
+            margin: 10px 0 0 0;
+          }
+        }
+        &:after {
+          @include clearfix;
+        }
+      }
+    }
+    &.company {
+      padding: 52px 0 30px 0;
+      text-align: center;
+      h2 {
+        text-align: center;
+        width: 279px;
+        height: 69px;
+        font-size: 21px;
+        line-height: 2.7;
+        margin: 0px auto;
+        background: #ffffff url("images/template-event/company-h2.png") center center no-repeat;
+      }
+      ul {
+        max-width: 720px;
+        margin: 0px auto;
+        padding: 20px 0 0 0;
+        li {
+          list-style: none;
+          width: 200px;
+          min-height: 215px;
+          float: left;
+          margin: 15px 20px 0 20px;
+          img {
+            width: 198px;
+            height: 123px;
+            border: 1px solid #000000;
+          }
+          span {
+            border: 1px solid #000000;
+            font-size: 12px;
+            line-height: 1.1;
+            padding: 0 2px;
+            @include border-radius(1px);
+          }
+          h3 {
+            margin: 3px 0 0 0;
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.4;
+            font-weight: 400;
+          }
+          b {
+            font-size: 11px;
+            position: relative;
+            top: -1px;
+            left: 3px;
+          }
+        }
+        &:after {
+          @include clearfix;
+        }
+      }
+    }
+    &.municipality {
+      text-align: center;
+      padding: 10px 0 20px 0;
+      h2 {
+        padding: 0;
+        font-size: 21px;
+        line-height: 2.5;
+        margin: 0px auto;
+        width: 222px;
+        height: 59px;
+        background: #ffffff url("images/template-event/municipality-h2.png") center center no-repeat;
+      }
+      ul {
+        padding: 0;
+        max-width: 600px;
+        margin: 0px auto;
+        margin-top: 30px;
+        li {
+          list-style: none;
+          float: left;
+          width: 100px;
+          min-height: 150px;
+          margin: 10px 10px 0 10px;
+          img {
+            width: 98px;
+            height: 98px;
+            border: 1px solid #000000;
+          }
+          h3 {
+            margin: 3px 0 0 0;
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.4;
+            font-weight: 400;
+          }
+          b {
+            font-size: 11px;
+            position: relative;
+            top: -1px;
+            left: 3px;
+          }
+        }
+        &:after {
+          @include clearfix;
+        }
       }
     }
     &.information {
