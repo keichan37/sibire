@@ -1,6 +1,5 @@
 #template-event {
   font-size: 14px;
-  background: url("images/template-event/body-background.png") fixed top center/100% no-repeat;
 }
 #template-event a {
   color: #00A0E9;
@@ -245,7 +244,7 @@
 }
 #template-event section.municipality {
   text-align: center;
-  padding: 10px 0 20px 0;
+  padding: 52px 0 20px 0;
 }
 #template-event section.municipality h2 {
   padding: 0;
@@ -354,7 +353,12 @@
 #template-event .participate {
   height: 64px;
   padding: 60px 0;
-  background: url("images/template-event/participate-background.jpg") center center/cover no-repeat;
+}
+#template-event .participate.participate1 {
+  background: url("images/template-event/participate1-background.jpg") center center/cover no-repeat;
+}
+#template-event .participate.participate2 {
+  background: url("images/template-event/participate2-background.jpg") center center/cover no-repeat;
 }
 #template-event footer {
   padding: 20px 0;
