@@ -2,18 +2,22 @@
 
   <?php get_header(); ?>
     <div id="template-event">
-      <div class="template-event-cover">
+      <div id="cover">
         <h1><?php the_title(); ?></h1>
         <a href="javascript:void(0);">参加する</a>
         <?php get_template_part('partials/sns-share'); ?>
       </div>
-      <section>
+      <section class="overview">
         <h2>“東京にこだわらない働き方”を体感するイベント</h2>
         <p>
-          OFF TOKYO MEETUP2017は、<br />
-          全国のIT企業＆IT先進エリアが一挙に集まり、<br />
-          各エリアや各企業での働き方を体感してもらうイベントです。 
+          <span>
+            OFF TOKYO MEETUP2017は、<br />
+            全国のIT企業＆IT先進エリアが一挙に集まり、<br />
+            各エリアや各企業での働き方を体感してもらうイベントです。 
+          <span>
         </p>
+      </section>
+      <section class="content1">
         <h2>地域を変えた<br />イノベーター対談</h2>
         <p>
           島根県に在住するまつもとゆきひろ氏と、鎌倉エリアを盛り上げる活動を行う柳澤大輔氏に<br />
@@ -33,6 +37,8 @@
           テキストテキストテキストテキストテキストテキストテキスキスト
           テキストテキストテキストテキストテキストテキストテキス
         </p>
+      </section>
+      <section>
         <h2>日本全国から企業が参加!</h2>
         <ul>
           <li><span>酒田</span><strong>チェンジ・ザ・ワールド</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
@@ -46,6 +52,8 @@
           <li><span>北九州</span><strong>メンバーズエッジ</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
           <li><span>日南</span><strong>ダンドリワークス</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
         </ul>
+      </section>
+      <section>
         <h2>IT先進エリア10</h2>
         <ul>
           <li><strong>横浜市</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
@@ -57,6 +65,8 @@
           <li><strong>北九州市</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
           <li><strong>宮崎県</strong><a href="javascript:void(0);" target="_blank">Interview<span class="icon icon-open"></span></a></li>
         </ul>
+      </section>
+      <section class="information">
         <table>
           <tr>
             <th>日時</th>
@@ -94,18 +104,22 @@
             </td>
           </tr>
         </table>
+      </section>
+      <section class="map">
         <?php get_template_part('google_map');?>
         <div class="acf-map">
           <div class="marker" data-lat="35.657847" data-lng="139.744821"></div>
         </div>
-        <address>〒105-0011 東京都港区芝公園４丁目４−７</address>
-        <ul>
-          <li>大江戸線 赤羽橋駅 / 赤羽橋口 徒歩5分</li>
-          <li>日比谷線 神谷町駅 / 1 徒歩7分</li>
-          <li>三田線 御成門駅 / A1 徒歩6分</li>
-          <li>浅草線 大門駅 / A6 徒歩10分</li>
-          <li>JR 浜松町駅 / 北口 徒歩15分</li>
-        </ul>
+        <div class="address">
+          <address>〒105-0011 東京都港区芝公園４丁目４−７</address>
+          <ul>
+            <li>大江戸線 赤羽橋駅 / 赤羽橋口 徒歩5分</li>
+            <li>日比谷線 神谷町駅 / 1 徒歩7分</li>
+            <li>三田線 御成門駅 / A1 徒歩6分</li>
+            <li>浅草線 大門駅 / A6 徒歩10分</li>
+            <li>JR 浜松町駅 / 北口 徒歩15分</li>
+          </ul>
+        </div>
       </section>
       <a href="javascript:void(0);">参加する</a>
       <?php get_template_part('partials/sns-share'); ?>
