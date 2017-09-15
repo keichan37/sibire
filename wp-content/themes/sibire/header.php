@@ -60,8 +60,6 @@
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
     <link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/apple-touch-icon.png" />
 
-    <script>$(window).fadeThis();</script>
-
   <?php wp_head(); ?>
   </head>
   <body>

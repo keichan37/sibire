@@ -26,6 +26,7 @@
       $("#menu-global_menu").toggleClass("open");
     });
 
+
   })
 }).call(this);
 
