@@ -17,7 +17,7 @@
         <h1>
           <img class="cover-title" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-title.png" alt="<?php the_title(); ?>"/>
         </h1>
-        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-date.png" alt="2017/11/11 Sat 13:00~17:00 場所:STAR RISE TOWER 5F 'Studio Earth' (東京タワー直結)"/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-date.png" alt="2017/11/11 Sat 12:00~18:00 場所:STAR RISE TOWER 5F 'Studio Earth' (東京タワー直結)"/>
         <a class="button" href="entry#page-h1">参加する</a>
         <?php get_template_part('partials/sns-share'); ?>
       </div>
@@ -187,12 +187,12 @@
           <div class="marker" data-lat="35.657847" data-lng="139.744821">
             <div  data-lat="35.657847" data-lng="139.744821">
               <h1><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-starrisetower.png" alt="STAR RISE TOWER"/></h1>
-              <p>※東京タワー直結（東京都港区芝公園4-4-7）<br /><a href="http://starrise-tower.com" target="_blank">http://starrise-tower.com</a></p>
+              <p>※東京タワー直結（東京都港区芝公園4-4-7）<br /><a href="http://starrise-tower.com" target="_blank">http://starrise-tower.com/#s-access</a></p>
             </div>
           </div>
         </div>
         <div class="address">
-          <address>〒105-0011 東京都港区芝公園４丁目４−７</address>
+          <address>〒105-0011 東京都港区芝公園4-4-7</address>
           <ul>
             <li>大江戸線 赤羽橋駅 / 赤羽橋口 徒歩5分</li>
             <li>日比谷線 神谷町駅 / 1 徒歩7分</li>
