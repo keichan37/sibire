@@ -2,8 +2,8 @@
   var e;
   $(function() {
     
-    var fadeSpeed = 1500;
-    $('.cover-title')
+    var fadeSpeed = 4000;
+    $('#cover')
       .animate({opacity: '1'}, fadeSpeed);
 
     $(window).scroll(function() {
