@@ -2,7 +2,7 @@
   var e;
   $(function() {
     
-    var fadeSpeed = 2500;
+    var fadeSpeed = 4000;
     $('#cover')
       .animate({opacity: '1'}, fadeSpeed);
 
