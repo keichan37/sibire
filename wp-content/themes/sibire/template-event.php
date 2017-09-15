@@ -4,7 +4,7 @@
     <div id="template-event">
       <div id="cover">
         <h1>
-          <img class="slide-top" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-title.png" alt="<?php the_title(); ?>"/>
+          <img class="slide-top" data-plugin-options='{"offset":-800}' src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-title.png" alt="<?php the_title(); ?>"/>
         </h1>
         <img class="slide-top" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-date.png" alt="2017/11/11 Sat 13:00~17:00 場所:STAR RISE TOWER 5F 'Studio Earth' (東京タワー直結)"/>
         <a class="button" href="entry#page-h1">参加する</a>
@@ -31,10 +31,7 @@
           <figcaption>
             <h3>まつもとゆきひろ<span>氏</span></h3>
             <p>
-              テキストテキストテキストテキストテキストテ
-              テキストテキストテキストテキストテキ
-              テキストテキストテキストテキストテキストテキストテキスキスト
-              テキストテキストテキストテキストテキストテキストテキス
+              プログラミング言語「Ruby」の生みの親。島根県松江市在住で、Ruby開発の功績から同市の名誉市民にも選ばれた。松江市ではRubyを軸にしたまちづくりも行われており、地域の産業構造の変革に影響を与えた
             </p>
           </figcaption>
         </figure>
@@ -43,10 +40,7 @@
           <figcaption>
             <h3>柳澤大輔<span>氏</span></h3>
             <p>
-              テキストテキストテキストテキストテキストテ
-              テキストテキストテキストテキストテキ
-              テキストテキストテキストテキストテキストテキストテキスキスト
-              テキストテキストテキストテキストテキストテキストテキス
+              社員の給与をサイコロを振って決める「サイコロ給」などユニークな制度で知られる面白法人カヤックの代表。ひとつの街だけに企業が集中するのではなく、個性ある企業がそれぞれの地域で、その街の特色を生かしながら活躍する「鎌倉資本主義」を提唱するとともに、「満員電車回避制度」など、新たな働き方のスタイルも提唱している
             </p>
           </figcaption>
         </figure>
@@ -66,12 +60,7 @@
             <h3>株式会社セールスフォース・ドットコム</h3>
           </li>
           <li>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-freee.png" alt="freee株式会社">
-            <span>大阪</span>
-            <h3>freee株式会社</h3>
-          </li>
-          <li>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-dandoriworks.png" alt="株式会社ダンドリワークス">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-dandoliworks.png" alt="株式会社ダンドリワークス">
             <span>日南</span>
             <h3>株式会社ダンドリワークス</h3>
           </li>
@@ -79,6 +68,11 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-nacl.png" alt="ネットワーク応用通信研究所">
             <span>松江</span>
             <h3>ネットワーク応用通信研究所</h3>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-freee.png" alt="freee株式会社">
+            <span>大阪</span>
+            <h3>freee株式会社</h3>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-membersedge.png" alt="株式会社メンバーズエッジ">
