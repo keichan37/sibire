@@ -469,7 +469,7 @@
   }
   #template-event section.company ul li {
     width: 41%;
-    min-height: auto;
+    min-height: 175px;
     height: auto;
   }
   #template-event section.company ul li:nth-child(even) {
