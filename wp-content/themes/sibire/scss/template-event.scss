@@ -429,7 +429,7 @@
         ul {
           li {
             width: 41%;
-            min-height: auto;
+            min-height: 175px;
             height: auto;
             &:nth-child(even) { margin: 7% 6% 0 3%; }
             &:nth-child(odd)  { margin: 7% 3% 0 6%; }
