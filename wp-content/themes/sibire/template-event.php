@@ -66,6 +66,11 @@
             <?php /* <a href="javascript:void(0);" target="_blank">Interview<b class="icon icon-open"></b></a> */ ?>
           </li>
           <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-gmopepabo.png" alt="GMOペパボ株式会社">
+            <span>福岡</span>
+            <h3>GMOペパボ株式会社</h3>
+          </li>
+          <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-salesforce.png" alt="株式会社セールスフォース・ドットコム">
             <span>白浜</span>
             <h3>株式会社セールスフォース・ドットコム</h3>
@@ -186,7 +191,7 @@
         <div class="acf-map">
           <div class="marker" data-lat="35.657847" data-lng="139.744821">
             <div  data-lat="35.657847" data-lng="139.744821">
-              <h1><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-starrisetower.png" alt="STAR RISE TOWER"/></h1>
+              <h1><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-starrisetower.jpg" alt="STAR RISE TOWER"/></h1>
               <p>※東京タワー直結（東京都港区芝公園4-4-7）<br /><a href="http://starrise-tower.com" target="_blank">http://starrise-tower.com/#s-access</a></p>
             </div>
           </div>
