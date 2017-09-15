@@ -184,7 +184,12 @@
       <section class="map" id="map">
         <?php get_template_part('google_map');?>
         <div class="acf-map">
-          <div class="marker" data-lat="35.657847" data-lng="139.744821"></div>
+          <div class="marker" data-lat="35.657847" data-lng="139.744821">
+            <div  data-lat="35.657847" data-lng="139.744821">
+              <h1><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-starrisetower.png" alt="STAR RISE TOWER"/></h1>
+              <p>※東京タワー直結（東京都港区芝公園4-4-7）<br /><a href="http://starrise-tower.com" target="_blank">http://starrise-tower.com</a></p>
+            </div>
+          </div>
         </div>
         <div class="address">
           <address>〒105-0011 東京都港区芝公園４丁目４−７</address>
