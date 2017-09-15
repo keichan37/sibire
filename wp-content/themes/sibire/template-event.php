@@ -2,6 +2,17 @@
 
   <?php get_header(); ?>
     <div id="template-event">
+      <nav class="navigation">
+        <ul>
+          <li><a class="r-scroll-template-event" href="#">●</a></li>
+          <li><a class="r-scroll-overview" href="#overview">●</a></li>
+          <li><a class="r-scroll-content1" href="#content1">●</a></li>
+          <li><a class="r-scroll-company" href="#company">●</a></li>
+          <li><a class="r-scroll-municipality" href="#municipality">●</a></li>
+          <li><a class="r-scroll-information" href="#information">●</a></li>
+          <li><a class="r-scroll-map" href="#map">●</a></li>
+        </ul>
+      </nav>
       <div id="cover">
         <h1>
           <img class="slide-top" data-plugin-options='{"offset":-800}' src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-title.png" alt="<?php the_title(); ?>"/>
@@ -10,7 +21,7 @@
         <a class="button" href="entry#page-h1">参加する</a>
         <?php get_template_part('partials/sns-share'); ?>
       </div>
-      <section class="overview">
+      <section class="overview" id="overview">
         <h2>“東京にこだわらない働き方”を体感するイベント</h2>
         <p>
           <span>
@@ -20,7 +31,7 @@
           <span>
         </p>
       </section>
-      <section class="content1">
+      <section class="content1" id="content1">
         <h2 class="slide-top">地域を変えた<br />イノベーター対談</h2>
         <p>
           島根県に在住するまつもとゆきひろ氏と、鎌倉エリアを盛り上げる活動を行う柳澤大輔氏に<br />
@@ -45,7 +56,7 @@
           </figcaption>
         </figure>
       </section>
-      <section class="company">
+      <section class="company" id="company">
         <h2 class="slide-top">日本全国から企業が参加!</h2>
         <ul>
           <li>
@@ -93,7 +104,7 @@
       <div class="participate participate1">
         <a class="button" href="entry#page-h1">参加する</a>
       </div>
-      <section class="municipality">
+      <section class="municipality" id="municipality">
         <h2 class="slide-top">IT先進エリア</h2>
         <ul>
           <li>
@@ -131,7 +142,7 @@
         </ul>
         <aside>&#x203B;都道府県コード順</aside>
       </section>
-      <section class="information">
+      <section class="information" id="information">
         <table>
           <tr>
             <th>日時:</th>
@@ -170,7 +181,7 @@
           </tr>
         </table>
       </section>
-      <section class="map">
+      <section class="map" id="map">
         <?php get_template_part('google_map');?>
         <div class="acf-map">
           <div class="marker" data-lat="35.657847" data-lng="139.744821"></div>
@@ -186,9 +197,10 @@
           </ul>
         </div>
       </section>
+      <a class="scroll-up-button icon icon-arrow-up" href="#"></a>
       <div class="participate participate2">
         <a class="button" href="entry#page-h1">参加する</a>
-        <footer>
+        <footer class="sns-footer">
           <?php get_template_part('partials/sns-share'); ?>
           <small>&copy; <?php echo date("Y"); ?> sibire ,inc. All Rights Reserved.</small>
         </footer>

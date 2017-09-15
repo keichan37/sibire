@@ -15,12 +15,18 @@
     </div>
 
   <?php wp_footer(); ?>
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/jquery.fadethis.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/app.js"></script>
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/owl.carousel.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/jquery.slicknav.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/wpcf7.js"></script>
+
+  <?php if(is_page('offtokyomeetup2017')): ?>
+    <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/template-event.js"></script>
+  <?php else : ?>
+  <?php endif; ?>
   <script>$(window).fadeThis({
     reverse:  false,
     offset: 10,
