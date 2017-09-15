@@ -58,6 +58,7 @@
   list-style: none;
   height: 20px;
   line-height: 20px;
+  text-align: center;
 }
 #template-event .navigation ul li a {
   color: rgba(0, 0, 0, 0.4);
