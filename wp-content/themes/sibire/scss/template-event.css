@@ -261,7 +261,7 @@
 #template-event section.company ul li img {
   width: 100%;
   height: auto;
-  border: 1px solid #000000;
+  border: 1px solid #dddddd;
 }
 #template-event section.company ul li span {
   border: 1px solid #000000;
@@ -324,7 +324,7 @@
 #template-event section.municipality ul li img {
   width: 100%;
   height: auto;
-  border: 1px solid #000000;
+  border: 1px solid #dddddd;
 }
 #template-event section.municipality ul li h3 {
   margin: 3px 0 0 0;
