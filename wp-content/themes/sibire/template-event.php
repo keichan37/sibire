@@ -4,7 +4,7 @@
     <div id="template-event">
       <nav class="navigation">
         <ul>
-          <li><a class="r-scroll-template-event" href="#">●</a></li>
+          <li><a class="r-scroll-template-event active" href="#">●</a></li>
           <li><a class="r-scroll-overview" href="#overview">●</a></li>
           <li><a class="r-scroll-content1" href="#content1">●</a></li>
           <li><a class="r-scroll-company" href="#company">●</a></li>

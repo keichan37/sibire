@@ -50,7 +50,11 @@
           font-size: 12px;
           display: block;
           text-decoration: none;
-          &.active { color: #000000; }
+          @include transition;
+          &.active {
+            color: #000000;
+            &.passive { color: rgba(0,0,0,.4); }
+          }
           &:hover { color: rgba(0,0,0,.7); }
         }
       }
