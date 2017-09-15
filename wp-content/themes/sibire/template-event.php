@@ -192,7 +192,7 @@
           <div class="marker" data-lat="35.657847" data-lng="139.744821">
             <div  data-lat="35.657847" data-lng="139.744821">
               <h1><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-starrisetower.jpg" alt="STAR RISE TOWER"/></h1>
-              <p>※東京タワー直結（東京都港区芝公園4-4-7）<br /><a href="http://starrise-tower.com" target="_blank">http://starrise-tower.com/#s-access</a></p>
+              <p>※東京タワー直結（東京都港区芝公園4-4-7）<br /><a href="http://starrise-tower.com/#s-access" target="_blank">http://starrise-tower.com</a></p>
             </div>
           </div>
         </div>
