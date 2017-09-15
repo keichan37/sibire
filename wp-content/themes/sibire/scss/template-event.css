@@ -64,9 +64,16 @@
   font-size: 12px;
   display: block;
   text-decoration: none;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
 }
 #template-event .navigation ul li a.active {
   color: #000000;
+}
+#template-event .navigation ul li a.active.passive {
+  color: rgba(0, 0, 0, 0.4);
 }
 #template-event .navigation ul li a:hover {
   color: rgba(0, 0, 0, 0.7);
