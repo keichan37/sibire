@@ -15,9 +15,9 @@
       </nav>
       <div id="cover">
         <h1>
-          <img class="slide-top" data-plugin-options='{"offset":-800}' src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-title.png" alt="<?php the_title(); ?>"/>
+          <img style="opacity: 0;" class="cover-title" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-title.png" alt="<?php the_title(); ?>"/>
         </h1>
-        <img class="slide-top" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-date.png" alt="2017/11/11 Sat 13:00~17:00 場所:STAR RISE TOWER 5F 'Studio Earth' (東京タワー直結)"/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-date.png" alt="2017/11/11 Sat 13:00~17:00 場所:STAR RISE TOWER 5F 'Studio Earth' (東京タワー直結)"/>
         <a class="button" href="entry#page-h1">参加する</a>
         <?php get_template_part('partials/sns-share'); ?>
       </div>

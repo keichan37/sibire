@@ -1,6 +1,11 @@
 (function() {
   var e;
   $(function() {
+    
+    var fadeSpeed = 1500;
+    $('.cover-title')
+      .animate({opacity: '1'}, fadeSpeed);
+
     $(window).scroll(function() {
       $("a.r-scroll-template-event").toggleClass("passive", $(this).scrollTop() + 1 > $("#overview").offset().top)
       $("a.r-scroll-overview").toggleClass("active", $(this).scrollTop() + 1 > $("#overview").offset().top)

@@ -45,6 +45,7 @@
         list-style: none;
         height: 20px;
         line-height: 20px;
+        text-align: center;
         a {
           color: rgba(0,0,0,.4);
           font-size: 12px;
@@ -53,7 +54,9 @@
           @include transition;
           &.active {
             color: #000000;
-            &.passive { color: rgba(0,0,0,.4); }
+            &.passive {
+              color: rgba(0,0,0,.4);
+            }
           }
           &:hover { color: rgba(0,0,0,.7); }
         }
