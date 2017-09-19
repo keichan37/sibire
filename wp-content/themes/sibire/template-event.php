@@ -95,7 +95,10 @@
             <span>北九州</span>
             <h3>株式会社メンバーズエッジ</h3>
           </li>
-          
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-comingsoon.png" alt="Coming Soon…">
+          </li>
+
           <?php /*
           <li><span>酒田</span><h3>チェンジ・ザ・ワールド</h3></li>
           <li><span>仙台</span><h3>ワイヤードビーンズ</h3></li>
@@ -104,7 +107,7 @@
           */ ?>
 
         </ul>
-        <aside>&#x203B;50音順</aside>
+        <aside>&#x203B;50音順&nbsp;&nbsp;&nbsp;&#x203B;決定している企業の一部を掲載</aside>
       </section>
       <div class="participate participate1">
         <a class="button" href="entry#page-h1">参加する</a>
