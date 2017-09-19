@@ -293,6 +293,19 @@ Description: フロントページ
   height: 100%;
   float: left;
 }
+#common .common-right a {
+  display: block;
+  margin-bottom: 8px;
+}
+#common .common-right a img {
+  width: 100%;
+  height: auto;
+}
+#common .common-right a:hover img {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-filter: "alpha(opacity=$ratioms)";
+}
 #common .common-grid-wrap:after, #common .common-grid-wrap:before {
   content: ".";
   display: block;
