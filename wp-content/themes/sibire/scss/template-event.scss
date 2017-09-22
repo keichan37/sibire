@@ -33,9 +33,10 @@
       &:hover { background-color: #4cbcef; }
     }
   }
-  h2 { font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB'; }
+  h2,
+  a.button { font-family: 'FOT-ロダンNTLG Pro EB', 'RodinNTLGPro-EB'; }
   strong,
-  th {
+  tr.strong {
     font-family: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
   }
   .navigation {
