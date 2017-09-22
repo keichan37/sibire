@@ -1,6 +1,7 @@
 @import "mixin";
 #template-event {
   font-size: 14px;
+  font-family: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
   a {
     color: #00A0E9;
     &:hover { color: #32b3ed; }
@@ -32,6 +33,7 @@
       &:hover { background-color: #4cbcef; }
     }
   }
+  h2 { font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB'; }
   .navigation {
     position: fixed;
     top: 50%;
