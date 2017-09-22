@@ -46,11 +46,12 @@
 #template-event a.scroll-up-button:hover {
   background-color: #4cbcef;
 }
-#template-event h2 {
-  font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
+#template-event h2,
+#template-event a.button {
+  font-family: FOT-ロダンNTLG Pro EB または RodinNTLGPro-EB;
 }
 #template-event strong,
-#template-event th {
+#template-event tr.strong {
   font-family: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
 }
 #template-event .navigation {

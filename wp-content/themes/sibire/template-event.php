@@ -156,15 +156,15 @@
       </section>
       <section class="information" id="information">
         <table>
-          <tr>
+          <tr class="strong">
             <th>日時:</th>
             <td><time>2017年11月11日（土）12:00～18:00（予定）</time></td>
           </tr>
-          <tr>
+          <tr class="strong">
             <th>会場:</th>
             <td>STAR RISE TOWER 5F「Studio Earth」<br />※東京タワー直結（東京都港区芝公園4-4-7）</td>
           </tr>
-          <tr>
+          <tr class="strong">
             <th>参加費:</th>
             <td>無料</td>
           </tr>
