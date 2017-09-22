@@ -1,5 +1,7 @@
+@charset "UTF-8";
 #template-event {
   font-size: 14px;
+  font-family: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
 }
 #template-event a {
   color: #00A0E9;
@@ -43,6 +45,9 @@
 }
 #template-event a.scroll-up-button:hover {
   background-color: #4cbcef;
+}
+#template-event h2 {
+  font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
 }
 #template-event .navigation {
   position: fixed;
