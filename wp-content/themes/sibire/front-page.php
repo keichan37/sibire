@@ -54,7 +54,7 @@
         </div>    
         <div class="common-right">
           <?php get_search_form(); ?>
-          <a href="/offtokyomeetup2017"><img src="<?php echo get_template_directory_uri(); ?>/images/offtokyomeetup.jpg" alt="OFF TOKYO MEETUP 2017"></a>
+          <?php dynamic_sidebar('sidebar-1'); ?>
           <?php get_template_part('partials/recruit-map'); ?>
           <?php get_template_part('partials/tag'); ?>
           <?php get_template_part('partials/registration'); ?>
