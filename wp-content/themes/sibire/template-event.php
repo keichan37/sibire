@@ -115,11 +115,10 @@
       <section class="municipality" id="municipality">
         <h2 class="slide-top">IT先進エリア</h2>
         <ul>
-          <?php /*<li>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-hokkaido.png" alt="北海道">
-            <h3>北海道</h3>
-            <a href="javascript:void(0);" target="_blank">Interview<b class="icon icon-open"></b></a>
-          </li>*/ ?>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-sapporo.png" alt="札幌市">
+            <h3>札幌市</h3>
+          </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-yokohama.png" alt="横浜市">
             <h3>横浜市</h3>
