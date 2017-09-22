@@ -47,8 +47,9 @@
   background-color: #4cbcef;
 }
 #template-event h2,
+#template-event h3,
 #template-event a.button {
-  font-family: 'FOT-DNP 秀英アンチック Std B', 'FOT_DNPShueiAntiStd-B';
+  font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
 }
 #template-event strong,
 #template-event tr.strong {
