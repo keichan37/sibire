@@ -1,6 +1,8 @@
 @charset "UTF-8";
 #template-event {
   font-size: 14px;
+}
+#template-event section {
   font-family: 'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D';
 }
 #template-event a {
