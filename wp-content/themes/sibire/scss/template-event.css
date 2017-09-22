@@ -475,7 +475,7 @@
     margin: 0px auto;
   }
   #template-event section.content1 figure figcaption {
-    margin-left: 0;
+    padding-left: 0;
     max-width: 100%;
   }
   #template-event section.content1 figure figcaption h3 {
