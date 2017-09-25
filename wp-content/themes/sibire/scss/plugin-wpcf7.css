@@ -356,6 +356,10 @@ Description: Contact Form 7
   -moz-opacity: 0.8;
   -ms-filter: "alpha(opacity=$ratioms)";
 }
+#common .job-type select {
+  width: 300px;
+  padding-right: 40px;
+}
 #common .your-job select,
 #common .time select,
 #common .address select {
@@ -445,6 +449,8 @@ Description: Contact Form 7
   }
   #common form textarea {
     min-height: 66px;
+    max-width: auto;
+    width: auto;
   }
   #common form select {
     height: 44px;
@@ -456,6 +462,7 @@ Description: Contact Form 7
     -ms-box-sizing: border-box;
     width: 100%;
   }
+  #common form .job-type select,
   #common form .address select,
   #common form .time select,
   #common form .your-job select {
