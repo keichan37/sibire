@@ -261,6 +261,10 @@ Description: Contact Form 7
       @include opacity;
     }
   }
+  .job-type select {
+    width: 300px;
+    padding-right: 40px;
+  }
   .your-job select,
   .time select,
   .address select {
@@ -351,6 +355,8 @@ Description: Contact Form 7
       }
       textarea {
         min-height: 66px;
+        max-width: auto;
+        width: auto;
       }
       select {
         height: 44px;
@@ -362,6 +368,7 @@ Description: Contact Form 7
         -ms-box-sizing: border-box;
         width: 100%;
       }
+      .job-type select,
       .address select,
       .time select,
       .your-job select {
