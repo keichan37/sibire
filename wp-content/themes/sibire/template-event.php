@@ -92,6 +92,7 @@
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-membersedge.png" alt="株式会社メンバーズエッジ">
+            <span>仙台</span>
             <span>北九州</span>
             <h3>株式会社メンバーズエッジ</h3>
           </li>
