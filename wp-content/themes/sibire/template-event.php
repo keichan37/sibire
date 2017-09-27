@@ -188,6 +188,10 @@
                   <th>協力:</th>
                   <td>Sansan株式会社、ネットワーク応用通信研究所、宮崎県、他</td>
                 </tr>
+                <tr>
+                  <th>メディア協賛:</th>
+                  <td>@IT、TURNS</td>
+                </tr>
               </table>
             </td>
           </tr>
