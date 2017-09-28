@@ -231,7 +231,7 @@
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-docomo.png" alt="株式会社NTTドコモ"></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-sansan.png" alt="Sansan株式会社"></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-nacl.png" alt="ネットワーク応用通信研究所"></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-miyazaki.png" alt="宮崎県"></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-miyazaki.png" alt="宮崎県"></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-goto.png" alt="五島市"></li>
         </ul>
         <h2>メディア協賛</h2>
