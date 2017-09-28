@@ -73,14 +73,14 @@
     }
   }
   .sns-share {
-    width: 225px;
+    width: 240px;
     margin: 0px auto;
     .facebook,
     .twitter {
       float: left;
       margin: 0 5px;
     }
-    .facebook { width: 130px; }
+    .facebook { width: 145px; }
     .twitter  { width: 75px; }
     &:after {
       @include clearfix;
