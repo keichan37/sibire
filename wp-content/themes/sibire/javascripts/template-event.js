@@ -19,6 +19,8 @@
       $("a.r-scroll-information").toggleClass("active", $(this).scrollTop() + 1 > $("#information").offset().top)
       $("a.r-scroll-information").toggleClass("passive", $(this).scrollTop() + 1 > $("#map").offset().top)
       $("a.r-scroll-map").toggleClass("active", $(this).scrollTop() + 1 > $("#map").offset().top)
+      $("a.r-scroll-map").toggleClass("passive", $(this).scrollTop() + 1 > $("#cooperate").offset().top)
+      $("a.r-scroll-cooperate").toggleClass("active", $(this).scrollTop() + 1 > $("#cooperate").offset().top)
     });
   })
 }).call(this);
