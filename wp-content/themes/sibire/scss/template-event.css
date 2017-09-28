@@ -3,7 +3,8 @@
   font-size: 14px;
   color: #000000;
 }
-#template-event section {
+#template-event section,
+#template-event nav {
   font-family: 'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D';
 }
 #template-event a {
@@ -69,6 +70,7 @@
   padding: 0;
 }
 #template-event .navigation ul li {
+  position: relative;
   list-style: none;
   height: 20px;
   line-height: 20px;
@@ -84,14 +86,64 @@
   -ms-transition: 0.3s;
   transition: 0.3s;
 }
+#template-event .navigation ul li a strong {
+  font-weight: 400;
+  font-size: 12px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  display: none;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  right: 0;
+  margin: 1px 18px 0 0;
+  text-align: right;
+  padding: 0 3px;
+  width: auto;
+}
+#template-event .navigation ul li a.top strong {
+  width: 3em;
+}
+#template-event .navigation ul li a.overview strong {
+  width: 2em;
+}
+#template-event .navigation ul li a.content1 strong {
+  width: 2em;
+}
+#template-event .navigation ul li a.company strong {
+  width: 4em;
+}
+#template-event .navigation ul li a.municipality strong {
+  width: 5em;
+}
+#template-event .navigation ul li a.information strong {
+  width: 2em;
+}
+#template-event .navigation ul li a.map strong {
+  width: 4em;
+}
+#template-event .navigation ul li a.cooperate strong {
+  width: 3em;
+}
 #template-event .navigation ul li a.active {
   color: #000000;
 }
 #template-event .navigation ul li a.active.passive {
   color: rgba(0, 0, 0, 0.4);
 }
+#template-event .navigation ul li a.active.passive:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
 #template-event .navigation ul li a:hover {
   color: rgba(0, 0, 0, 0.7);
+}
+#template-event .navigation ul li a:hover strong {
+  display: block;
 }
 #template-event .sns-share {
   width: 240px;
