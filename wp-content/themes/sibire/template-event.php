@@ -218,6 +218,21 @@
           </ul>
         </div>
       </section>
+      <section class="cooperate">
+        <h2>協力</h2>
+        <ul>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-docomo.png" alt="株式会社NTTドコモ"></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-Sansan.png" alt="Sansan株式会社"></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-nacl.png" alt="ネットワーク応用通信研究所"></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-miyazaki.png" alt="宮崎県"></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-goto.png" alt="五島市"></li>
+        </ul>
+        <h2>メディア協賛</h2>
+        <ul>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-@it.png" alt="@IT"></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-turns.png" alt="TURNS"></li>
+        </ul>
+      </section>
       <a class="scroll-up-button icon icon-arrow-up" href="#"></a>
       <div class="participate participate2">
         <a class="button" href="entry#page-h1">参加する</a>

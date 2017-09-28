@@ -375,6 +375,41 @@
         }
       }
     }
+    &.cooperate {
+      background-color: #f5f5f5;
+      padding: 15px 0 40px 0;
+      h2 {
+        width: 200px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 2.2;
+        margin: 0px auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding: 0;
+        border-bottom: 1px dotted #000000;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        li {
+          background-color: #ffffff;
+          border: 1px solid #dddddd;
+          margin: 0 5px 10px 5px;
+          width: 140px;
+          height: 70px;
+          list-style: none;
+          display: inline-block;
+          line-height: 70px;
+          img {
+            vertical-align: middle;
+            max-width: 100%;
+            max-height: 60px;
+          }
+        }
+      }
+    }
   }
   .participate {
     padding: 60px 0;
