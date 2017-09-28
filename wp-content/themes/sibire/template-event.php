@@ -232,6 +232,16 @@
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-@it.png" alt="@IT"></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-turns.png" alt="TURNS"></li>
         </ul>
+        <h2>主催 TEAM OFF TOKYO </h2>
+        <ul>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-sibire.png" alt="シビレ株式会社"></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-8infinity.png" alt="8infinity株式会社"></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-am.png" alt="株式会社am"></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-prtable.png" alt="株式会社PR Table"></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-tokyorecycle.png" alt="株式会社東京リサイクル"></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-lajapan.png" alt="合同会社laJapan"></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-fukuokaijyu.png" alt="福岡移住計画"></li>
+        </ul>
       </section>
       <a class="scroll-up-button icon icon-arrow-up" href="#"></a>
       <div class="participate participate2">
