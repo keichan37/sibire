@@ -11,6 +11,7 @@
           <li><a class="r-scroll-municipality" href="#municipality">●</a></li>
           <li><a class="r-scroll-information" href="#information">●</a></li>
           <li><a class="r-scroll-map" href="#map">●</a></li>
+          <li><a class="r-scroll-cooperate" href="#cooperate">●</a></li>
         </ul>
       </nav>
       <div id="cover" style="opacity: 0;">
@@ -218,7 +219,7 @@
           </ul>
         </div>
       </section>
-      <section class="cooperate">
+      <section class="cooperate" id="cooperate">
         <h2>協力</h2>
         <ul>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-docomo.png" alt="株式会社NTTドコモ"></li>
