@@ -4,14 +4,14 @@
     <div id="template-event">
       <nav class="navigation">
         <ul>
-          <li><a class="top r-scroll-template-event active" href="#"><strong>トップ</strong>●</a></li>
-          <li><a class="overview r-scroll-overview" href="#overview"><strong>概要</strong>●</a></li>
-          <li><a class="content1 r-scroll-content1" href="#content1"><strong>内容</strong>●</a></li>
-          <li><a class="company r-scroll-company" href="#company"><strong>出展企業</strong>●</a></li>
-          <li><a class="municipality r-scroll-municipality" href="#municipality"><strong>参加自治体</strong>●</a></li>
-          <li><a class="information r-scroll-information" href="#information"><strong>詳細</strong>●</a></li>
-          <li><a class="map r-scroll-map" href="#map"><strong>アクセス</strong>●</a></li>
-          <li><a class="cooperate r-scroll-cooperate" href="#cooperate"><strong>その他</strong>●</a></li>
+          <li><a class="top r-scroll-template-event active" href="#"><strong>トップ</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></svg></a></li>
+          <li><a class="overview r-scroll-overview" href="#overview"><strong>概要</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></a></li>
+          <li><a class="content1 r-scroll-content1" href="#content1"><strong>内容</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></a></li>
+          <li><a class="company r-scroll-company" href="#company"><strong>出展企業</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></a></li>
+          <li><a class="municipality r-scroll-municipality" href="#municipality"><strong>参加自治体</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></a></li>
+          <li><a class="information r-scroll-information" href="#information"><strong>詳細</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></a></li>
+          <li><a class="map r-scroll-map" href="#map"><strong>アクセス</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></a></li>
+          <li><a class="cooperate r-scroll-cooperate" href="#cooperate"><strong>その他</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></a></li>
         </ul>
       </nav>
       <div id="cover" style="opacity: 0;">
