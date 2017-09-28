@@ -222,7 +222,7 @@
         <h2>協力</h2>
         <ul>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-docomo.png" alt="株式会社NTTドコモ"></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-Sansan.png" alt="Sansan株式会社"></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-sansan.png" alt="Sansan株式会社"></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-nacl.png" alt="ネットワーク応用通信研究所"></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-miyazaki.png" alt="宮崎県"></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-goto.png" alt="五島市"></li>
