@@ -522,6 +522,9 @@
             height: auto;
             &:nth-child(even) { margin: 7% 6% 0 3%; }
             &:nth-child(odd)  { margin: 7% 3% 0 6%; }
+            span {
+              font-size: 9px;
+            }
           }
         }
         aside { margin-top: 15px; }
