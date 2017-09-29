@@ -596,6 +596,9 @@
   #template-event section.company ul li:nth-child(odd) {
     margin: 7% 3% 0 6%;
   }
+  #template-event section.company ul li span {
+    font-size: 9px;
+  }
   #template-event section.company aside {
     margin-top: 15px;
   }

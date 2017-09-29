@@ -97,16 +97,29 @@
             <span>北九州</span>
             <h3>株式会社メンバーズエッジ</h3>
           </li>
+          <?php /*
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-monobit.png" alt="株式会社モノビット">
+            <span>神戸</span>
+            <h3>株式会社モノビット</h3>
+          </li>
+          */ ?>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-yahoo.png" alt="ヤフー株式会社">
+            <span>名古屋</span>
+            <span>大阪</span>
+            <span>博多</span>
+            <span>北九州</span>
+            <h3>ヤフー株式会社</h3>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-wiredbeans.png" alt="株式会社ワイヤードビーンズ">
+            <span>仙台</span>
+            <h3>株式会社ワイヤードビーンズ</h3>
+          </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-comingsoon.png" alt="Coming Soon…">
           </li>
-
-          <?php /*
-          <li><span>酒田</span><h3>チェンジ・ザ・ワールド</h3></li>
-          <li><span>仙台</span><h3>ワイヤードビーンズ</h3></li>
-          <li><span>幕張</span><h3>スタートトゥデイ</h3></li>
-          <li><span>福岡</span><h3>GMOぺパボ</h3></li>
-          */ ?>
 
         </ul>
         <aside>&#x203B;50音順&nbsp;&nbsp;&nbsp;&#x203B;決定している企業の一部を掲載</aside>
