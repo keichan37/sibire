@@ -98,6 +98,18 @@
             <h3>株式会社メンバーズエッジ</h3>
           </li>
           <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-yahoo.png" alt="ヤフー株式会社">
+            <span>博多</span>
+            <span>大阪</span>
+            <span>名古屋</span>
+            <h3>ヤフー株式会社</h3>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-wiredbeans.png" alt="株式会社ワイヤードビーンズ">
+            <span>仙台</span>
+            <h3>株式会社ワイヤードビーンズ</h3>
+          </li>
+          <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-comingsoon.png" alt="Coming Soon…">
           </li>
 
