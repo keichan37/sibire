@@ -139,10 +139,12 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-sapporo.png" alt="札幌市">
             <h3>札幌市</h3>
           </li>
+          <?php /*
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-sendai.png" alt="仙台市">
             <h3>仙台市</h3>
           </li>
+          */ ?>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-yokohama.png" alt="横浜市">
             <h3>横浜市</h3>
