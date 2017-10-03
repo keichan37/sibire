@@ -87,6 +87,12 @@
             <h3>株式会社ダンドリワークス</h3>
           </li>
           <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-chatwork.png" alt="ChatWork株式会社">
+            <span>大阪</span>
+            <span>神戸</span>
+            <h3>ChatWork株式会社</h3>
+          </li>
+          <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-nacl.png" alt="ネットワーク応用通信研究所">
             <span>松江</span>
             <h3>ネットワーク応用通信研究所</h3>
@@ -107,6 +113,11 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-monobit.png" alt="株式会社モノビット">
             <span>神戸</span>
             <h3>株式会社モノビット</h3>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-monstarlab.png" alt="株式会社モンスター・ラボ">
+            <span>島根</span>
+            <h3>株式会社モンスター・ラボ</h3>
           </li>
           */ ?>
           <li>
