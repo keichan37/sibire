@@ -61,10 +61,15 @@
         <h2 class="slide-top">日本全国から企業が参加!</h2>
         <ul>
           <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-anysense.png" alt="株式会社エニセンス">
+            <span>福岡</span>
+            <h3>株式会社エニセンス</h3>
+            <?php /* <a href="javascript:void(0);" target="_blank">Interview<b class="icon icon-open"></b></a> */ ?>
+          </li>
+          <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-opt.png" alt="株式会社オプト">
             <span>仙台</span>
             <h3>株式会社オプト</h3>
-            <?php /* <a href="javascript:void(0);" target="_blank">Interview<b class="icon icon-open"></b></a> */ ?>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-kayak.png" alt="面白法人カヤック">
@@ -114,12 +119,12 @@
             <span>神戸</span>
             <h3>株式会社モノビット</h3>
           </li>
+          */ ?>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-monstarlab.png" alt="株式会社モンスター・ラボ">
-            <span>島根</span>
+            <span>松江</span>
             <h3>株式会社モンスター・ラボ</h3>
           </li>
-          */ ?>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-yahoo.png" alt="ヤフー株式会社">
             <span>名古屋</span>
