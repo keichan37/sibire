@@ -57,6 +57,45 @@
           </figcaption>
         </figure>
       </section>
+      <?php /*
+      <section class="content2" id="content2">
+        <h2 class="slide-top">エンジニア<br />“スーパープレゼンテーション”</h2>
+        <p>
+          OFF TOKYOしたエリアで、<br />イノベーションの火を起こすエンジニアたちが、「技術を磨く術」を語ります。
+        </p>
+        <div class="figure-wrap">
+          <figure>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-yamashita.jpg" alt="山下和彦"/>
+            <figcaption>
+              <h3>「OSSを仕事にする、<br />書き続ける技術」</h3>
+              <p>
+                GMOペパボ ホスティング事業部<br />
+                <strong>山下和彦</strong>氏<br />
+                <span>
+                  Golang、Ruby、mrubyを主戦場とし、インフラレイヤーからアプリケーションレイヤーまで幅広く知見を持ち合わせる。Linux認証基盤のSTNSの開発(http://stns.jp)を行う
+                </span>
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-yamada.jpg" alt="山田真次"/>
+            <figcaption>
+              <h3>「“エンタメよりサービス”Webがバックボーンのゲーム運営」</h3>
+              <p>
+                面白法人カヤック　技術部<br />
+                <strong>山田真次</strong>氏<br />
+                <span>
+                  ゲーム開発をgo言語に移行を進めていく立役者。カヤックの社内システムを支えるCPE(Corporate Productivity Engineer)が、これからのゲーム運営について語る
+                </span>
+              </p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-comingsoon.jpg" alt="Coming Soon..."/>
+          </figure>
+        </div>
+      </section>
+      */ ?>
       <section class="company" id="company">
         <h2 class="slide-top">日本全国から企業が参加!</h2>
         <ul>
@@ -75,6 +114,11 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-kayak.png" alt="面白法人カヤック">
             <span>鎌倉</span>
             <h3>面白法人カヤック</h3>
+          </li>
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-gmocloud.png" alt="GMOクラウド株式会社">
+            <span>北九州</span>
+            <h3>GMOクラウド株式会社</h3>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-gmopepabo.png" alt="GMOペパボ株式会社">
