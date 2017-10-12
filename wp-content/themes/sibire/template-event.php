@@ -22,7 +22,7 @@
         <a class="button" href="entry#page-h1">参加する</a>
         <?php get_template_part('partials/sns-share'); ?>
       </div>
-      <section class="overview" id="overview">
+      <div class="section overview" id="overview">
         <h2>“東京にこだわらない働き方”を体感するイベント</h2>
         <p>
           <span>
@@ -31,13 +31,14 @@
             各エリアや各企業での働き方を体感してもらうイベントです。 
           <span>
         </p>
-      </section>
-      <section class="content1" id="content1">
+      </div>
+      <div class="section content1" id="content1">
         <h2 class="slide-top">地域を変えた<br />イノベーター対談</h2>
         <p>
           島根県に在住するまつもとゆきひろ氏と、鎌倉エリアを盛り上げる活動を行う柳澤大輔氏に<br />
           働きたい場所で東京に負けないキャリアを実現する方法を語ってもらいます。 
         </p>
+        <span class="time">13:10～14:00</span>
         <figure>
           <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-matsumoto.jpg" alt="まつもとゆきひろ"/>
           <figcaption>
@@ -56,9 +57,9 @@
             </p>
           </figcaption>
         </figure>
-      </section>
+      </div>
       <?php /*
-      <section class="content2" id="content2">
+      <div class="section content2" id="content2">
         <h2 class="slide-top">エンジニア<br />“スーパープレゼンテーション”</h2>
         <p>
           OFF TOKYOしたエリアで、<br />イノベーションの火を起こすエンジニアたちが、「技術を磨く術」を語ります。
@@ -67,6 +68,7 @@
           <figure>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-yamashita.jpg" alt="山下和彦"/>
             <figcaption>
+              <span class="time">14:20～14:50</span>
               <h3>「OSSを仕事にする、<br />書き続ける技術」</h3>
               <p>
                 GMOペパボ ホスティング事業部<br />
@@ -80,6 +82,7 @@
           <figure>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-yamada.jpg" alt="山田真次"/>
             <figcaption>
+              <span class="time">15:20～15:50</span>
               <h3>「“エンタメよりサービス”Webがバックボーンのゲーム運営」</h3>
               <p>
                 面白法人カヤック　技術部<br />
@@ -92,12 +95,19 @@
           </figure>
           <figure>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-comingsoon.jpg" alt="Coming Soon..."/>
+            <figcaption>
+              <span class="time">16:30～17:00</span>
+            </figcaption>
           </figure>
         </div>
-      </section>
+      </div>
       */ ?>
-      <section class="company" id="company">
-        <h2 class="slide-top">日本全国から企業が参加!</h2>
+      <div class="section company" id="company">
+        <h2 class="slide-top">出展企業</h2>
+        <p>
+          日本全国から企業がブース参加します。<br />
+          <b class="lt">[LT]</b>の企業はライトニングトークで登場します。
+        </p>
         <ul>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-anysense.png" alt="株式会社エニセンス">
@@ -107,7 +117,7 @@
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-opt.png" alt="株式会社オプト">
-            <span>仙台</span>
+            <span>仙台</span><b class="lt">[LT]</b>
             <h3>株式会社オプト</h3>
           </li>
           <li>
@@ -138,23 +148,30 @@
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-chatwork.png" alt="ChatWork株式会社">
             <span>大阪</span>
-            <span>神戸</span>
+            <span>神戸</span><b class="lt">[LT]</b>
             <h3>ChatWork株式会社</h3>
           </li>
+          <?php /*
+          <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-changetheworld.png" alt="株式会社チェンジ・ザ・ワールド">
+            <span>山形</span><b class="lt">[LT]</b>
+            <h3>株式会社チェンジ・ザ・ワールド</h3>
+          </li>
+          */ ?>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-nacl.png" alt="ネットワーク応用通信研究所">
-            <span>松江</span>
+            <span>松江</span><b class="lt">[LT]</b>
             <h3>ネットワーク応用通信研究所</h3>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-freee.png" alt="freee株式会社">
-            <span>大阪</span>
+            <span>大阪</span><b class="lt">[LT]</b>
             <h3>freee株式会社</h3>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-membersedge.png" alt="株式会社メンバーズエッジ">
             <span>仙台</span>
-            <span>北九州</span>
+            <span>北九州</span><b class="lt">[LT]</b>
             <h3>株式会社メンバーズエッジ</h3>
           </li>
           <?php /*
@@ -166,7 +183,7 @@
           */ ?>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-monstarlab.png" alt="株式会社モンスター・ラボ">
-            <span>松江</span>
+            <span>松江</span><b class="lt">[LT]</b>
             <h3>株式会社モンスター・ラボ</h3>
           </li>
           <li>
@@ -188,11 +205,11 @@
 
         </ul>
         <aside>&#x203B;50音順&nbsp;&nbsp;&nbsp;&#x203B;決定している企業の一部を掲載</aside>
-      </section>
-      <div class="participate participate1">
+      </div>
+      <div class="section participate participate1">
         <a class="button" href="entry#page-h1">参加する</a>
       </div>
-      <section class="municipality" id="municipality">
+      <div class="section municipality" id="municipality">
         <h2 class="slide-top">IT先進エリア</h2>
         <ul>
           <li>
@@ -236,12 +253,12 @@
           </li>
         </ul>
         <aside>&#x203B;都道府県コード順</aside>
-      </section>
-      <section class="information" id="information">
+      </div>
+      <div class="section information" id="information">
         <table>
           <tr class="strong">
             <th>日時:</th>
-            <td><time>2017年11月11日（土）12:00～18:00（予定）</time></td>
+            <td><time datetime="2017-11-11 12:00">2017年11月11日</time>（土）12:00～18:00（予定）</td>
           </tr>
           <tr class="strong">
             <th>会場:</th>
@@ -279,8 +296,8 @@
             </td>
           </tr>
         </table>
-      </section>
-      <section class="map" id="map">
+      </div>
+      <div class="section map" id="map">
         <?php get_template_part('google_map');?>
         <div class="acf-map">
           <div class="marker" data-lat="35.657847" data-lng="139.744821">
@@ -290,7 +307,7 @@
             </div>
           </div>
         </div>
-        <div class="address">
+        <div class="section address">
           <address>〒105-0011 東京都港区芝公園4-4-7</address>
           <ul>
             <li>大江戸線 赤羽橋駅 / 赤羽橋口 徒歩5分</li>
@@ -300,8 +317,8 @@
             <li>JR 浜松町駅 / 北口 徒歩15分</li>
           </ul>
         </div>
-      </section>
-      <section class="cooperate" id="cooperate">
+      </div>
+      <div class="section cooperate" id="cooperate">
         <h2>協力</h2>
         <ul>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-docomo.png" alt="株式会社NTTドコモ"></li>
@@ -326,9 +343,9 @@
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-lajapan.png" alt="合同会社laJapan"></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-fukuokaijyu.png" alt="福岡移住計画"></li>
         </ul>
-      </section>
+      </div>
       <a class="scroll-up-button icon icon-arrow-up" href="#"></a>
-      <div class="participate participate2">
+      <div class="section participate participate2">
         <a class="button" href="entry#page-h1">参加する</a>
         <footer class="sns-footer">
           <?php get_template_part('partials/sns-share'); ?>
