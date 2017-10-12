@@ -151,13 +151,11 @@
             <span>神戸</span><b class="lt">[LT]</b>
             <h3>ChatWork株式会社</h3>
           </li>
-          <?php /*
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-changetheworld.png" alt="株式会社チェンジ・ザ・ワールド">
-            <span>山形</span><b class="lt">[LT]</b>
+            <span>酒田</span><b class="lt">[LT]</b>
             <h3>株式会社チェンジ・ザ・ワールド</h3>
           </li>
-          */ ?>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-nacl.png" alt="ネットワーク応用通信研究所">
             <span>松江</span><b class="lt">[LT]</b>
