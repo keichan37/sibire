@@ -106,7 +106,7 @@
         <h2 class="slide-top">出展企業</h2>
         <p>
           日本全国から企業がブース参加します。<br />
-          <b class="lt">[LT]</b>の企業はライトニングトークで登場します。
+          <b class="lt">LT</b>マークがついている企業はライトニングトークに登壇します。
         </p>
         <ul>
           <li>
@@ -117,7 +117,7 @@
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-opt.png" alt="株式会社オプト">
-            <span>仙台</span><b class="lt">[LT]</b>
+            <span>仙台</span><b class="lt">LT</b>
             <h3>株式会社オプト</h3>
           </li>
           <li>
@@ -148,28 +148,28 @@
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-chatwork.png" alt="ChatWork株式会社">
             <span>大阪</span>
-            <span>神戸</span><b class="lt">[LT]</b>
+            <span>神戸</span><b class="lt">LT</b>
             <h3>ChatWork株式会社</h3>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-changetheworld.png" alt="株式会社チェンジ・ザ・ワールド">
-            <span>酒田</span><b class="lt">[LT]</b>
+            <span>酒田</span><b class="lt">LT</b>
             <h3>株式会社チェンジ・ザ・ワールド</h3>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-nacl.png" alt="ネットワーク応用通信研究所">
-            <span>松江</span><b class="lt">[LT]</b>
+            <span>松江</span><b class="lt">LT</b>
             <h3>ネットワーク応用通信研究所</h3>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-freee.png" alt="freee株式会社">
-            <span>大阪</span><b class="lt">[LT]</b>
+            <span>大阪</span><b class="lt">LT</b>
             <h3>freee株式会社</h3>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-membersedge.png" alt="株式会社メンバーズエッジ">
             <span>仙台</span>
-            <span>北九州</span><b class="lt">[LT]</b>
+            <span>北九州</span><b class="lt">LT</b>
             <h3>株式会社メンバーズエッジ</h3>
           </li>
           <?php /*
@@ -181,7 +181,7 @@
           */ ?>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-monstarlab.png" alt="株式会社モンスター・ラボ">
-            <span>松江</span><b class="lt">[LT]</b>
+            <span>松江</span><b class="lt">LT</b>
             <h3>株式会社モンスター・ラボ</h3>
           </li>
           <li>
