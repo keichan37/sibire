@@ -316,6 +316,9 @@
           </ul>
         </div>
       </div>
+      <div class="section participate participate2">
+        <a class="button" href="entry#page-h1">参加する</a>
+      </div>
       <div class="section cooperate" id="cooperate">
         <h2>協力</h2>
         <ul>
@@ -343,7 +346,7 @@
         </ul>
       </div>
       <a class="scroll-up-button icon icon-arrow-up" href="#"></a>
-      <div class="section participate participate2">
+      <div class="section participate participate3">
         <table class="time-table">
           <caption><strong>Contents</strong></caption>
           <tr>
