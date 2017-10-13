@@ -351,7 +351,10 @@
         background: #ffffff url("images/template-event/company-h2.png") center center no-repeat;
       }
       b.lt {
-        color: #ff931e;
+        background-color: #f15475;
+        color: #ffffff;
+        padding: 0 3px;
+        @include border-radius(2px);
       }
       p {
         margin: 20px 0 0 0;
