@@ -749,6 +749,10 @@
   #template-event .section.content2 figure:last-child {
     margin-bottom: 0px;
   }
+  #template-event .section.company p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   #template-event .section.company ul li {
     width: 41%;
     min-height: 175px;
