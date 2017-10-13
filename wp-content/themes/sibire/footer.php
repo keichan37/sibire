@@ -24,7 +24,6 @@
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/wpcf7.js"></script>
 
   <?php if(is_page('offtokyomeetup2017')): ?>
-    <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?55gB3urzk3w%3D&aa=1&ab=2" charset="utf-8"></script>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/template-event.js"></script>
   <?php else : ?>
   <?php endif; ?>
