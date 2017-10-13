@@ -354,6 +354,8 @@
         background-color: #f15475;
         color: #ffffff;
         padding: 0 3px;
+        display: inline-block;
+        line-height: 1.2;
         @include border-radius(2px);
       }
       p {
