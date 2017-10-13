@@ -557,7 +557,7 @@
     }
   }
   .participate {
-    padding: 60px 0;
+    padding: 60px 10px;
     &.participate1 { background: url("images/template-event/participate1-background.jpg") center center /cover no-repeat; }
     &.participate2 {
       background: url("images/template-event/participate2-background.jpg") center center /cover no-repeat;
@@ -594,7 +594,7 @@
           }
         }
         td {
-          font-size: 17px;
+          font-size: 15px;
           line-height: 1.5;
         }
         &:nth-child(1) {
