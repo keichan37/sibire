@@ -643,7 +643,7 @@
   max-height: 60px;
 }
 #template-event .participate {
-  padding: 60px 0;
+  padding: 60px 10px;
 }
 #template-event .participate.participate1 {
   background: url("images/template-event/participate1-background.jpg") center center/cover no-repeat;
@@ -680,7 +680,7 @@
   padding: 2px 5px;
 }
 #template-event .participate table.time-table tr td {
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.5;
 }
 #template-event .participate table.time-table tr:nth-child(1) th,
