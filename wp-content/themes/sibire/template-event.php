@@ -316,34 +316,6 @@
           </ul>
         </div>
       </div>
-      <div class="section time-table">
-        <table>
-          <caption><strong>Contents</strong></caption>
-          <tr>
-            <th><span>12:00〜16:00</span></th>
-            <td>
-              <ul>
-                <li>「キッズ×ロボット×寺子屋」体験</li>
-                <li>宮崎県・飲食コーナー</li>
-                <li>五島市・飲食コーナー</li>
-                <li>キャリアデザインセミナー</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <th><span>16:00〜</span></th>
-            <td>全国地酒の試飲会</td>
-          </tr>
-          <tr>
-            <th><span>12:30〜</span></th>
-            <td>OFF TOKYOマッチ！</td>
-          <tr>
-          <tr>
-            <th><span>17:00〜</span></th>
-            <td>OFF TOKYO PARTY</td>
-          <tr>
-        </table>
-      </div>
       <div class="section cooperate" id="cooperate">
         <h2>協力</h2>
         <ul>
@@ -372,6 +344,33 @@
       </div>
       <a class="scroll-up-button icon icon-arrow-up" href="#"></a>
       <div class="section participate participate2">
+        <table class="time-table">
+          <caption><strong>Contents</strong></caption>
+          <tr>
+            <th><span>12:00〜16:00</span></th>
+            <td>
+              <ul>
+                <li>「キッズ×ロボット×寺子屋」体験</li>
+                <li>宮崎県・飲食コーナー</li>
+                <li>五島市・飲食コーナー</li>
+                <li>キャリアデザインセミナー</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th><span>16:00〜</span></th>
+            <td>全国地酒の試飲会</td>
+          </tr>
+          <tr>
+            <th><span>12:30〜</span></th>
+            <td>OFF TOKYOマッチ！</td>
+          <tr>
+          <tr>
+            <th><span>17:00〜</span></th>
+            <td>OFF TOKYO PARTY</td>
+          <tr>
+        </table>
+
         <a class="button" href="entry#page-h1">参加する</a>
         <footer class="sns-footer">
           <?php get_template_part('partials/sns-share'); ?>
