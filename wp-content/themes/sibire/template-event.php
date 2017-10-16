@@ -280,11 +280,11 @@
                 </tr>
                 <tr>
                   <th>主催:</th>
-                  <td>TEAM OFF TOKYO（シビレ株式会社、8infinity株式会社、株式会社am.、株式会社PR Table、株式会社東京リサイクル、合同会社laJapan、福岡移住計画、他) </td>
+                  <td>TEAM OFF TOKYO（シビレ株式会社、8infinity株式会社、株式会社am.、株式会社PR Table、株式会社東京リサイクル、合同会社laJapan、福岡移住計画) </td>
                 </tr>
                 <tr>
                   <th>協力:</th>
-                  <td>Sansan株式会社、ネットワーク応用通信研究所、宮崎県、他</td>
+                  <td>NTTドコモ、Sansan、ネットワーク応用通信研究所、宮崎県、五島市、CData Software Japan</td>
                 </tr>
                 <tr>
                   <th>メディア協賛:</th>
