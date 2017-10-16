@@ -375,6 +375,7 @@
         </table>
 
         <a class="button" href="entry#page-h1">参加する</a>
+        <center><a class="" href="mailto:event@sibire.co.jp">イベントに関するお問い合わせはこちら</a></center>
         <footer class="sns-footer">
           <?php get_template_part('partials/sns-share'); ?>
           <small>&copy; <?php echo date("Y"); ?> sibire ,inc. All Rights Reserved.</small>

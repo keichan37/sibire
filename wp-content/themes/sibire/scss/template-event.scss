@@ -626,6 +626,18 @@
       }
     }
   }
+  center {
+    text-align: center;
+    padding-top: 10px;
+    a {
+      font-size: 12px;
+      color: #ffffff;
+      &:hover {
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
   footer {
     padding: 20px 0 0 0;
     text-align: center;
@@ -634,6 +646,7 @@
       font: 400 12px/16px 'Lucida Grande';
     }
     &.sns-footer {
+      font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
       background: none;
       height: auto;
     }
