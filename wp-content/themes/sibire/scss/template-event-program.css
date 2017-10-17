@@ -1,0 +1,40 @@
+.template-event-program #sub-cover {
+  background: url("images/template-event/program/cover-background.jpg") center center/cover no-repeat;
+  text-align: center;
+  height: 185px;
+  padding: 35px 10px 0 10px;
+  margin-bottom: 30px;
+}
+.template-event-program #sub-cover img {
+  max-width: 330px;
+}
+.template-event-program section {
+  border: 2px solid #036eb8;
+  width: 595px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.template-event-program section time {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  color: #ffffff;
+  background: url("images/template-event/program/time-background.jpg") no-repeat;
+  font-size: 17px;
+  border-bottom: 2px solid #036eb8;
+}
+.template-event-program section strong {
+  display: block;
+  width: 79px;
+  height: 20px;
+  line-height: 20px;
+  background: url("images/template-event/program/strong-background.png") no-repeat;
+  color: #ffffff;
+  margin: 0px auto;
+}
+.template-event-program section h2 {
+  color: #d70051;
+}
+
+/*# sourceMappingURL=template-event-program.css.map */
