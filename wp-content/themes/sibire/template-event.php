@@ -347,6 +347,7 @@
       </div>
       <a class="scroll-up-button icon icon-arrow-up" href="#"></a>
       <div class="section participate participate3">
+        <?php /*
         <table class="time-table">
           <caption><strong>Contents</strong></caption>
           <tr>
@@ -373,6 +374,7 @@
             <td>OFF TOKYO PARTY</td>
           <tr>
         </table>
+        */ ?>
 
         <a class="button" href="entry#page-h1">参加する</a>
         <center><a class="" href="mailto:event@sibire.co.jp">イベントに関するお問い合わせはこちら</a></center>
