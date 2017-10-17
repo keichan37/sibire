@@ -69,18 +69,19 @@
 .template-event-program section h3 {
   font-size: 14px;
   line-height: 1.4;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
 }
 .template-event-program section p {
   font-size: 14px;
   line-height: 1.4;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
 }
 .template-event-program section figure {
-  margin: 0;
+  margin: 0 8px;
   display: inline-block;
 }
 .template-event-program section figure img {
+  vertical-align: bottom;
   width: 70px;
   height: 70px;
   border-radius: 37px;
@@ -91,8 +92,25 @@
   border: 2px solid #036eb8;
 }
 .template-event-program section figure figcaption {
+  padding-top: 5px;
   font-size: 11px;
   line-height: 1.3;
+}
+.template-event-program section figure.le {
+  text-align: left;
+}
+.template-event-program section figure.ri {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .template-event-program .program-wrap {
+    padding: 0 10px;
+  }
+  .template-event-program section {
+    max-width: 595px;
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=template-event-program.css.map */
