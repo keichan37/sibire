@@ -11,7 +11,7 @@
   margin-bottom: 30px;
 }
 .template-event-program #sub-cover img {
-  max-width: 330px;
+  max-width: 310px;
 }
 .template-event-program h1 {
   width: 280px;
@@ -65,16 +65,19 @@
   font-size: 18px;
   line-height: 1.27;
   margin: 0 0 10px 0;
+  padding: 0 10px;
 }
 .template-event-program section h3 {
   font-size: 14px;
   line-height: 1.4;
   margin: 0 0 20px 0;
+  padding: 0 10px;
 }
 .template-event-program section p {
   font-size: 14px;
   line-height: 1.4;
   margin: 0 0 20px 0;
+  padding: 0 10px;
 }
 .template-event-program section figure {
   margin: 0 8px;
@@ -96,11 +99,30 @@
   font-size: 11px;
   line-height: 1.3;
 }
-.template-event-program section figure.le {
-  text-align: left;
+.template-event-program section figure.le, .template-event-program section figure.ri {
+  width: 50%;
+  margin: 0;
+  float: left;
+  padding: 0 8px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
 }
 .template-event-program section figure.ri {
   text-align: right;
+}
+.template-event-program section figure.le {
+  text-align: left;
+}
+.template-event-program section:before, .template-event-program section:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
 }
 
 @media (max-width: 767px) {
@@ -110,6 +132,9 @@
   .template-event-program section {
     max-width: 595px;
     width: auto;
+  }
+  .template-event-program section P br {
+    display: none;
   }
 }
 
