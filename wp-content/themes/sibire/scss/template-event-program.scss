@@ -9,7 +9,7 @@
     padding: 35px 10px 0 10px;
     margin-bottom: 30px;
     img {
-      max-width: 330px;
+      max-width: 310px;
     }
   }
   h1 {
@@ -55,16 +55,19 @@
       font-size: 18px;
       line-height: 1.27;
       margin: 0 0 10px 0;
+      padding: 0 10px;
     }
     h3 {
       font-size: 14px;
       line-height: 1.4;
       margin: 0 0 20px 0;
+      padding: 0 10px;
     }
     p {
       font-size: 14px;
       line-height: 1.4;
       margin: 0 0 20px 0;
+      padding: 0 10px;
     }
     figure {
       margin: 0 8px;
@@ -81,8 +84,22 @@
         font-size: 11px;
         line-height: 1.3;
       }
-      &.le { text-align: left; }
+      &.le,
+      &.ri {
+        width: 50%;
+        margin: 0;
+        float: left;
+        padding: 0 8px;
+        @include border-box();
+      }
       &.ri { text-align: right; }
+      &.le {
+        text-align: left;
+      }
+    }
+    &:before,
+    &:after {
+      @include clearfix();
     }
   }
 }
@@ -95,6 +112,7 @@
     section {
       max-width: 595px;
       width: auto;
+      P br { display: none; }
     }
   }
 }
