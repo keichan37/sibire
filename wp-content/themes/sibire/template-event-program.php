@@ -97,6 +97,38 @@
           <p>参加者も企業もエリア担当者も、会場全体で地酒を楽しみながら全員で乾杯！<br />会場で同時実施の「地酒ランキング」の発表も</p>
         </section>
       </div>
+      <section class="sub-stage">
+        <h2>Sub Stage</h2>
+        <ul>
+          <li>
+            <h3>キャリアデザインセミナー</h3>
+            <p>釈迦院知則さんあなたがもつ「数値」をもとに、算命学と統計学、心理学でキャリアの方向性をアドバイスします。</p>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/program/sub-career.jpg" alt="キャリアデザインセミナー">
+          </li>
+          <li>
+            <h3>ご当地飲食試食コーナー(宮崎県、五島市)</h3>
+            <p>宮崎県と五島市のお菓子や飲食物をお楽しみいただきます。</p>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/program/sub-tasting.jpg" alt="試食コーナー">
+          </li>
+          <li>
+            <h3>「キッズ×ロボット×寺子屋」体験</h3>
+            <p>寺子屋ラボ日本の「寺」を活用した“21世紀型の寺子屋”キッズ向けプログラミング教室</p>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/program/sub-terakoya.jpg" alt="寺子屋">
+          </li>
+          <li>
+            <h3>「リアルタイムVR企業訪問」</h3>
+            <p>NTTドコモが開発する「リアルタイムVR」機器を利用し、福岡の企業をバーチャル訪問。リアルタイムで訪問した感覚を味わっていただけます</p>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/program/sub-vr.jpg" alt="リアルタイムVR">
+          </li>
+        </ul>
+        <div class="supplement-wrap">
+          <p class="supplement">
+            <time>16:00-18:00</time>
+            お酒解禁!地酒コーナーOPEN＆お弁当引換開始<br />
+            地酒と楽しめるおつまみ弁当を限定販売。
+          </p>
+        </div>
+      </section>
       <a class="scroll-up-button icon icon-arrow-up" href="#"></a>
       <div class="section participate participate3">
         <a class="button" href="entry#page-h1">参加する</a>

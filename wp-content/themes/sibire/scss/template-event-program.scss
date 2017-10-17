@@ -22,84 +22,154 @@
     background: url("images/template-event/program/h1-background.png") no-repeat;
   }
   section {
-    @include border-box();
-    @include box-shadow();
-    border: 2px solid #036eb8;
-    width: 595px;
-    margin: 0px auto;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
-    text-align: center;
-    time {
-      display: block;
-      height: 28px;
-      line-height: 28px;
-      color: #ffffff;
-      background: url("images/template-event/program/time-background.jpg") no-repeat;
-      font-size: 17px;
-      border-bottom: 2px solid #036eb8;
-      margin-bottom: 17px;
-    }
-    strong {
-      display: block;
-      width: 79px;
-      height: 20px;
-      line-height: 20px;
-      background: url("images/template-event/program/strong-background.png") no-repeat;
-      color: #ffffff;
+    &.program {
+      @include border-box();
+      @include box-shadow();
+      border: 2px solid #036eb8;
+      width: 595px;
       margin: 0px auto;
-      margin-bottom: 15px;
-    }
-    h2 {
-      color: #d70051;
-      font-size: 18px;
-      line-height: 1.27;
-      margin: 0 0 10px 0;
-      padding: 0 10px;
-    }
-    h3 {
-      font-size: 14px;
-      line-height: 1.4;
-      margin: 0 0 20px 0;
-      padding: 0 10px;
-    }
-    p {
-      font-size: 14px;
-      line-height: 1.4;
-      margin: 0 0 20px 0;
-      padding: 0 10px;
-    }
-    figure {
-      margin: 0 8px;
-      display: inline-block;
-      img {
-        vertical-align: bottom;
-        width: 70px;
-        height: 70px;
-        @include border-radius(37px);
-        border: 2px solid #036eb8;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+      text-align: center;
+      time {
+        display: block;
+        height: 28px;
+        line-height: 28px;
+        color: #ffffff;
+        background: url("images/template-event/program/time-background.jpg") no-repeat;
+        font-size: 17px;
+        border-bottom: 2px solid #036eb8;
+        margin-bottom: 17px;
       }
-      figcaption {
-        padding-top: 5px;
-        font-size: 11px;
-        line-height: 1.3;
+      strong {
+        display: block;
+        width: 79px;
+        height: 20px;
+        line-height: 20px;
+        background: url("images/template-event/program/strong-background.png") no-repeat;
+        color: #ffffff;
+        margin: 0px auto;
+        margin-bottom: 15px;
       }
-      &.le,
-      &.ri {
-        width: 50%;
-        margin: 0;
-        float: left;
-        padding: 0 8px;
-        @include border-box();
+      h2 {
+        color: #d70051;
+        font-size: 18px;
+        line-height: 1.27;
+        margin: 0 0 10px 0;
+        padding: 0 10px;
       }
-      &.ri { text-align: right; }
-      &.le {
-        text-align: left;
+      h3 {
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0 0 20px 0;
+        padding: 0 10px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0 0 20px 0;
+        padding: 0 10px;
+      }
+      figure {
+        margin: 0 8px;
+        display: inline-block;
+        img {
+          vertical-align: bottom;
+          width: 70px;
+          height: 70px;
+          @include border-radius(37px);
+          border: 2px solid #036eb8;
+        }
+        figcaption {
+          padding-top: 5px;
+          font-size: 11px;
+          line-height: 1.3;
+        }
+        &.le,
+        &.ri {
+          width: 50%;
+          margin: 0;
+          float: left;
+          padding: 0 8px;
+          @include border-box();
+        }
+        &.ri { text-align: right; }
+        &.le {
+          text-align: left;
+        }
+      }
+      &:before,
+      &:after {
+        @include clearfix();
       }
     }
-    &:before,
-    &:after {
-      @include clearfix();
+    &.sub-stage {
+      padding-top: 40px;
+      h2 {
+        color: #ffffff;
+        text-align: center;
+        font-size: 16px;
+        height: 35px;
+        line-height: 35px;
+        background: url("images/template-event/program/h2-background.jpg") center center /cover no-repeat;
+        margin: 0 0 30px 0;
+      }
+      ul {
+        max-width: 744px;
+        margin: 0px auto;
+        padding: 0 10px;
+        li {
+          position: relative;
+          margin-bottom: 30px;
+          @include border-box;
+          border-left: 1px solid #036eb8;
+          list-style: none;
+          padding: 0;
+          float: left;
+          width: 50%;
+          padding: 10px 120px 15px 15px;
+          h3 {
+            font-size: 14px;
+            line-height: 1.4;
+            color: #036eb8;
+            margin: 0 0 5px 0;
+          }
+          p {
+            margin: 0;
+            font-size: 13px;
+            line-height: 1.4;
+          }
+          img {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 10px 25px 0 0;
+          }
+        }
+        &:after {
+          @include clearfix;
+        }
+      }
+      .supplement-wrap {
+        padding: 0 10px;
+        .supplement {
+          @include border-box;
+          padding: 10px;
+          line-height: 1.4;
+          text-align: center;
+          max-width: 344px;
+          margin: 0px auto;
+          margin-bottom: 40px;
+          color: #036eb8;
+          border: 1px solid #036eb8;
+          time {
+            display: block;
+            margin-bottom: 5px;
+          }
+        }
+      }
     }
   }
 }
@@ -110,9 +180,19 @@
       padding: 0 10px;
     }
     section {
-      max-width: 595px;
-      width: auto;
-      P br { display: none; }
+      &.program {
+        max-width: 595px;
+        width: auto;
+        P br { display: none; }
+      }
+      &.sub-stage {
+        ul {
+          li {
+            width: 100%;
+            float: none;
+          }
+        }
+      }
     }
   }
 }
