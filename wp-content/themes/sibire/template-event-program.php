@@ -68,7 +68,7 @@
           <time>15:20〜15:50</time>
           <strong>Round6</strong>
           <h2>エンジニア“スーパープレゼンテーション”(2)</h2>
-          <h3>「“エンタメよりサービス”Webがバックボーンのゲーム運営」(仮)</h3>
+          <h3>「技術コミュニティのつくり方～OFF TOKYO後のリアル」(仮)</h3>
           <figure>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/program/avatar-yamada.jpg" alt="山田真次">
             <figcaption>山田真次/面白法人カヤック</figcaption>
