@@ -23,7 +23,7 @@
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/jquery.slicknav.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/wpcf7.js"></script>
 
-  <?php if(is_page(array('offtokyomeetup2017', 'offtokyomeetup2017/program'))): ?>
+  <?php if(is_page('offtokyomeetup2017')): ?>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/template-event.js"></script>
   <?php else : ?>
   <?php endif; ?>

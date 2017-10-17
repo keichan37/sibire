@@ -5,68 +5,98 @@
         <img class="cover-title" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-title.svg" alt="OFF TOKYO MEETUP 2017"/>
         <h1><?php the_title(); ?></h1>
       </div>
-      <section class="program">
-        <time>12:00</time>
-        <h2>会場OPEN</h2>
-      </section>
-      <section class="program">
-        <time>12:30〜13:00</time>
-        <strong>Round1</strong>
-        <h2>OFF TOKYOマッチ！</h2>
-        <p>プロレスのゴングでOFF TOKYO MEETUP スタート!</p>
-        <figure>
-          <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/program/avatar-hidaka.jpg" alt="日高郁人">
-          <figcaption>日高郁人</figcaption>
-        </figure>
-      </section>
-      <section class="program">
-        <time>13:00〜14:00</time>
-        <strong>Round2</strong>
-        <h2>トークセッション 「地域を変えたイノベーター対談」</h2>
-        <p>Ruby開発者・まつもとゆきひろ氏×面白法人カヤック・柳澤大輔氏。<br />東京を離れてもイノベーションを起こし続ける方法や背景を語ります</p>
-      </section>
-      <section class="program">
-        <time>14:00 〜14:20</time>
-        <strong>Round3</strong>
-        <h2>IT先進エリアによるピッチプレゼン</h2>
-        <p>IT先進エリア10自治体が、<br />自エリアの魅力とアピールポイントをピッチ形式で語ります。</p>
-      </section>
-      <section class="program">
-        <time>14:20〜14:50</time>
-        <strong>Round4</strong>
-        <h2>エンジニア“スーパープレゼンテーション”(1)</h2>
-        <h3>「OSSを仕事にする、書き続ける技術」</h3>
-      </section>
-      <section class="program">
-        <time>14:50 〜15:20</time>
-        <strong>Round5</strong>
-        <h2>企業LT（ライトニングトーク)(1)</h2>
-        <p>1社7分！自社の魅力とプロダクト、<br />開発手法などを限られた時間で語ります。(3社)</p>
-      </section>
-      <section class="program">
-        <time>15:20〜15:50</time>
-        <strong>Round6</strong>
-        <h2>エンジニア“スーパープレゼンテーション”(2)</h2>
-        <h3>「“エンタメよりサービス”Webがバックボーンのゲーム運営」(仮)</h3>
-      </section>
-      <section class="program">
-        <time>15:50〜16:30</time>
-        <strong>Round7</strong>
-        <h2>企業LT（ライトニングトーク)(2)</h2>
-        <p>1社7分！自社の魅力とプロダクト、<br />開発手法などを限られた時間で語ります。(4社)</p>
-      </section>
-      <section class="program">
-        <time>16:30〜17:00</time>
-        <strong>Round8</strong>
-        <h2>エンジニア“スーパープレゼンテーション”(3)</h2>
-        <h3>「東京を離れた新しい働き方＆働き方UPDATE」（仮）</h3>
-      </section>
-      <section class="program">
-        <time>17:00〜18:00</time>
-        <strong>Round9</strong>
-        <h2>OFF TOKYO PARTY!</h2>
-        <p>参加者も企業もエリア担当者も、会場全体で地酒を楽しみながら全員で乾杯！<br />会場で同時実施の「地酒ランキング」の発表も</p>
-      </section>
+      <div class="program-wrap">
+        <section class="program">
+          <time>12:00</time>
+          <h2>会場OPEN</h2>
+        </section>
+        <section class="program">
+          <time>12:30〜13:00</time>
+          <strong>Round1</strong>
+          <h2>OFF TOKYOマッチ！</h2>
+          <p>プロレスのゴングでOFF TOKYO MEETUP スタート!</p>
+          <figure>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/program/avatar-hidaka.jpg" alt="日高郁人">
+            <figcaption>日高郁人</figcaption>
+          </figure>
+          <figure>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/program/avatar-sugawara.jpg" alt="菅原拓也">
+            <figcaption>菅原拓也</figcaption>
+          </figure>
+          <figure>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/program/avatar-sugi.jpg" alt="SUGI">
+            <figcaption>SUGI</figcaption>
+          </figure>
+        </section>
+        <section class="program">
+          <time>13:00〜14:00</time>
+          <strong>Round2</strong>
+          <h2>トークセッション 「地域を変えたイノベーター対談」</h2>
+          <p>Ruby開発者・まつもとゆきひろ氏×面白法人カヤック・柳澤大輔氏。<br />東京を離れてもイノベーションを起こし続ける方法や背景を語ります</p>
+          <figure class="ri">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/program/avatar-matsumoto.jpg" alt="まつもとゆきひろ">
+            <figcaption>まつもとゆきひろ<br />島根県松江市/Ruby開発者</figcaption>
+          </figure>
+          <figure class="le">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/program/avatar-yanasawa.jpg" alt="柳澤大輔">
+            <figcaption>柳澤大輔<br />神奈川県鎌倉市/面白法人カヤック創業者</figcaption>
+          </figure>
+        </section>
+        <section class="program">
+          <time>14:00 〜14:20</time>
+          <strong>Round3</strong>
+          <h2>IT先進エリアによるピッチプレゼン</h2>
+          <p>IT先進エリア10自治体が、<br />自エリアの魅力とアピールポイントをピッチ形式で語ります。</p>
+        </section>
+        <section class="program">
+          <time>14:20〜14:50</time>
+          <strong>Round4</strong>
+          <h2>エンジニア“スーパープレゼンテーション”(1)</h2>
+          <h3>「OSSを仕事にする、書き続ける技術」</h3>
+          <figure>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/program/avatar-yamashita.jpg" alt="山下和彦">
+            <figcaption>山下和彦/GMOペパボ株式会社</figcaption>
+          </figure>
+        </section>
+        <section class="program">
+          <time>14:50 〜15:20</time>
+          <strong>Round5</strong>
+          <h2>企業LT（ライトニングトーク)(1)</h2>
+          <p>1社7分！自社の魅力とプロダクト、<br />開発手法などを限られた時間で語ります。(3社)</p>
+        </section>
+        <section class="program">
+          <time>15:20〜15:50</time>
+          <strong>Round6</strong>
+          <h2>エンジニア“スーパープレゼンテーション”(2)</h2>
+          <h3>「“エンタメよりサービス”Webがバックボーンのゲーム運営」(仮)</h3>
+          <figure>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/program/avatar-yamada.jpg" alt="山田真次">
+            <figcaption>山田真次/面白法人カヤック</figcaption>
+          </figure>
+        </section>
+        <section class="program">
+          <time>15:50〜16:30</time>
+          <strong>Round7</strong>
+          <h2>企業LT（ライトニングトーク)(2)</h2>
+          <p>1社7分！自社の魅力とプロダクト、<br />開発手法などを限られた時間で語ります。(4社)</p>
+        </section>
+        <section class="program">
+          <time>16:30〜17:00</time>
+          <strong>Round8</strong>
+          <h2>エンジニア“スーパープレゼンテーション”(3)</h2>
+          <h3>「東京を離れた新しい働き方＆働き方UPDATE」（仮）</h3>
+          <figure>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/program/avatar-tanabe.jpg" alt="田邉アキヒロ">
+            <figcaption>田邉アキヒロ/ヤフー株式会社(予定)</figcaption>
+          </figure>
+        </section>
+        <section class="program">
+          <time>17:00〜18:00</time>
+          <strong>Round9</strong>
+          <h2>OFF TOKYO PARTY!</h2>
+          <p>参加者も企業もエリア担当者も、会場全体で地酒を楽しみながら全員で乾杯！<br />会場で同時実施の「地酒ランキング」の発表も</p>
+        </section>
+      </div>
       <a class="scroll-up-button icon icon-arrow-up" href="#"></a>
       <div class="section participate participate3">
         <a class="button" href="entry#page-h1">参加する</a>
