@@ -14,6 +14,10 @@
         <strong>Round1</strong>
         <h2>OFF TOKYOマッチ！</h2>
         <p>プロレスのゴングでOFF TOKYO MEETUP スタート!</p>
+        <figure>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/program/avatar-hidaka.jpg" alt="日高郁人">
+          <figcaption>日高郁人</figcaption>
+        </figure>
       </section>
       <section class="program">
         <time>13:00〜14:00</time>

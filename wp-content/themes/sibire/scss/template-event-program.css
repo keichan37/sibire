@@ -1,17 +1,42 @@
+@charset "UTF-8";
+.template-event-program time,
+.template-event-program strong {
+  font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
+}
 .template-event-program #sub-cover {
   background: url("images/template-event/program/cover-background.jpg") center center/cover no-repeat;
   text-align: center;
-  height: 185px;
+  height: 195px;
   padding: 35px 10px 0 10px;
   margin-bottom: 30px;
 }
 .template-event-program #sub-cover img {
   max-width: 330px;
 }
+.template-event-program h1 {
+  width: 280px;
+  height: 25px;
+  padding: 29px 0;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0px auto;
+  background: url("images/template-event/program/h1-background.png") no-repeat;
+}
 .template-event-program section {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   border: 2px solid #036eb8;
   width: 595px;
   margin: 0px auto;
+  padding-bottom: 15px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -23,6 +48,7 @@
   background: url("images/template-event/program/time-background.jpg") no-repeat;
   font-size: 17px;
   border-bottom: 2px solid #036eb8;
+  margin-bottom: 17px;
 }
 .template-event-program section strong {
   display: block;
@@ -32,9 +58,41 @@
   background: url("images/template-event/program/strong-background.png") no-repeat;
   color: #ffffff;
   margin: 0px auto;
+  margin-bottom: 15px;
 }
 .template-event-program section h2 {
   color: #d70051;
+  font-size: 18px;
+  line-height: 1.27;
+  margin: 0 0 10px 0;
+}
+.template-event-program section h3 {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+}
+.template-event-program section p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+}
+.template-event-program section figure {
+  margin: 0;
+  display: inline-block;
+}
+.template-event-program section figure img {
+  width: 70px;
+  height: 70px;
+  border-radius: 37px;
+  -webkit-border-radius: 37px;
+  -moz-border-radius: 37px;
+  -o-border-radius: 37px;
+  -ms-border-radius: 37px;
+  border: 2px solid #036eb8;
+}
+.template-event-program section figure figcaption {
+  font-size: 11px;
+  line-height: 1.3;
 }
 
 /*# sourceMappingURL=template-event-program.css.map */
