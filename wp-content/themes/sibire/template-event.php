@@ -83,7 +83,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-yamada.jpg" alt="山田真次"/>
             <figcaption>
               <span class="time">15:20～15:50</span>
-              <h3>「“エンタメよりサービス”Webがバックボーンのゲーム運営」</h3>
+              <h3>「技術コミュニティのつくり方～OFF TOKYO後のリアル」</h3>
               <p>
                 面白法人カヤック　技術部<br />
                 <strong>山田真次</strong>氏<br />
