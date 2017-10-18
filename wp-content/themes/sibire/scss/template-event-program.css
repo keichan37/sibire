@@ -11,7 +11,8 @@
   margin-bottom: 30px;
 }
 .template-event-program #sub-cover img {
-  max-width: 310px;
+  width: 310px;
+  height: 81px;
 }
 .template-event-program h1 {
   width: 280px;
