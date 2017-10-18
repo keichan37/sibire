@@ -400,6 +400,10 @@
   line-height: 1.4;
   border-bottom: 1px dotted #000000;
 }
+#template-event .section.content2 figure figcaption h3.line2 {
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
 #template-event .section.content2 figure figcaption p {
   text-align: left;
   margin: 0;
@@ -809,6 +813,9 @@
   }
   #template-event .section.content2 figure figcaption h3 br {
     display: none;
+  }
+  #template-event .section.content2 figure figcaption h3.line2 {
+    padding: 10px 0 10px 0;
   }
   #template-event .section.content2 figure figcaption p {
     text-align: center;

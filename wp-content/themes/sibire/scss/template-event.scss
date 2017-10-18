@@ -325,6 +325,10 @@
             font-size: 19px;
             line-height: 1.4;
             border-bottom: 1px dotted #000000;
+            &.line2 {
+              padding-top: 23px;
+              padding-bottom: 23px;
+            }
           }
           p {
             text-align: left;
@@ -729,6 +733,7 @@
               margin: 0px auto;
               margin-bottom: 10px;
               br { display: none; }
+              &.line2 { padding: 10px 0 10px 0; }
             }
             p {
               text-align: center;

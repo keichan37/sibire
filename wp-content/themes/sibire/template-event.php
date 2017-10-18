@@ -58,6 +58,8 @@
           </figcaption>
         </figure>
       </div>
+
+      <?php /*
       <div class="section content2" id="content2">
         <h2 class="slide-top">エンジニア<br />“スーパープレゼンテーション”</h2>
         <p>
@@ -68,7 +70,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-yamashita.jpg" alt="山下和彦"/>
             <figcaption>
               <span class="time">14:20～14:50</span>
-              <h3>「OSSを仕事にする、<br />書き続ける技術」</h3>
+              <h3 class="line2">「OSSを仕事にする、<br />書き続ける技術」</h3>
               <p>
                 GMOペパボ ホスティング事業部<br />
                 <strong>山下和彦</strong>氏<br />
@@ -108,6 +110,7 @@
           </figure>
         </div>
       </div>
+      */ ?>
       <div class="section company" id="company">
         <h2 class="slide-top">出展企業</h2>
         <p>
