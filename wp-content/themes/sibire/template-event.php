@@ -59,7 +59,6 @@
         </figure>
       </div>
 
-      <?php /*
       <div class="section content2" id="content2">
         <h2 class="slide-top">エンジニア<br />“スーパープレゼンテーション”</h2>
         <p>
@@ -89,7 +88,7 @@
                 面白法人カヤック　技術部<br />
                 <strong>山田真次</strong>氏<br />
                 <span>
-                  社内システムやグループウェア、パブリッククラウドなど「管理」と名のつくものを一手に担う。鎌倉エリアに技術コミュニティを立ち上げてきた
+                  社内システムやグループウェア、パブリッククラウドなど「管理」と名のつくものを一手に担う。湘南エリアの技術コミュニティに関わってきた 
                 </span>
               </p>
             </figcaption>
@@ -110,7 +109,6 @@
           </figure>
         </div>
       </div>
-      */ ?>
       <div class="section company" id="company">
         <h2 class="slide-top">出展企業</h2>
         <p>
