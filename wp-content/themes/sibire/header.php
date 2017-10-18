@@ -90,7 +90,11 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     <div id="wrap">
-      <?php if(is_page(array('offtokyomeetup2017', 'offtokyomeetup2017/program'))): ?>
+      <?php if(is_page('offtokyomeetup2017')): ?>
+      <?php elseif(is_page('offtokyomeetup2017/program')): ?>
+        <header class="offtokyomeetup2017-header">
+          <?php wp_nav_menu( array('menu' => 'offtokyomeetup2017', 'menu_class' => 'offtokyomeetup2017')); ?>
+        </header>
       <?php else : ?>
         <header>
           <div class="header-inner">
