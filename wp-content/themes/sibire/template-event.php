@@ -94,9 +94,17 @@
             </figcaption>
           </figure>
           <figure>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-comingsoon.jpg" alt="Coming Soon..."/>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-tanabe.jpg" alt=""/>
             <figcaption>
               <span class="time">16:30～17:00</span>
+              <h3>「東京を離れた新しい働き方＆働き方UPDATE」</h3>
+              <p>
+                ヤフー株式会社<br />
+                <strong>田邉アキヒロ</strong>氏<br />
+                <span>
+                  2012年、ヤフー株式会社に入社。ビッグデータエンジニアとしてデータ＆サイエンスソリューション統括本部の関西拠点に従事しながら、クリエイター人財戦略室にて採用担当を兼務
+                </span>
+              </p>
             </figcaption>
           </figure>
         </div>
