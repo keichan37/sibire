@@ -143,6 +143,7 @@
 }
 .template-event-program section.sub-stage ul li {
   position: relative;
+  min-height: 121px;
   margin-bottom: 30px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -218,6 +219,7 @@
     display: none;
   }
   .template-event-program section.sub-stage ul li {
+    min-height: auto;
     width: 100%;
     float: none;
   }
