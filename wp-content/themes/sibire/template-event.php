@@ -293,7 +293,7 @@
                 </tr>
                 <tr>
                   <th>協力:</th>
-                  <td>NTTドコモ、Sansan、ネットワーク応用通信研究所、宮崎県、五島市、CData Software Japan</td>
+                  <td>NTTドコモ、Sansan、ネットワーク応用通信研究所、宮崎県、五島市、CData Software Japan、ワークスアプリケーションズ</td>
                 </tr>
                 <tr>
                   <th>メディア協賛:</th>
@@ -337,6 +337,7 @@
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-miyazaki.png" alt="宮崎県"></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-goto.png" alt="五島市"></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-cdata.png" alt="CData Software Japan"></li>
+          <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-wap.png" alt="株式会社ワークスアプリケーションズ"></li>
         </ul>
         <h2>メディア協賛</h2>
         <ul>
