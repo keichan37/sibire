@@ -120,6 +120,7 @@
         padding: 0 10px;
         li {
           position: relative;
+          min-height: 121px;
           margin-bottom: 30px;
           @include border-box;
           border-left: 1px solid #036eb8;
@@ -188,6 +189,7 @@
       &.sub-stage {
         ul {
           li {
+            min-height: auto;
             width: 100%;
             float: none;
           }

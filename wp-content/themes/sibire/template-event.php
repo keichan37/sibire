@@ -58,6 +58,7 @@
           </figcaption>
         </figure>
       </div>
+
       <?php /*
       <div class="section content2" id="content2">
         <h2 class="slide-top">エンジニア<br />“スーパープレゼンテーション”</h2>
@@ -69,7 +70,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-yamashita.jpg" alt="山下和彦"/>
             <figcaption>
               <span class="time">14:20～14:50</span>
-              <h3>「OSSを仕事にする、<br />書き続ける技術」</h3>
+              <h3 class="line2">「OSSを仕事にする、<br />書き続ける技術」</h3>
               <p>
                 GMOペパボ ホスティング事業部<br />
                 <strong>山下和彦</strong>氏<br />
@@ -88,7 +89,7 @@
                 面白法人カヤック　技術部<br />
                 <strong>山田真次</strong>氏<br />
                 <span>
-                  ゲーム開発をgo言語に移行を進めていく立役者。カヤックの社内システムを支えるCPE(Corporate Productivity Engineer)が、これからのゲーム運営について語る
+                  社内システムやグループウェア、パブリッククラウドなど「管理」と名のつくものを一手に担う。鎌倉エリアに技術コミュニティを立ち上げてきた
                 </span>
               </p>
             </figcaption>
