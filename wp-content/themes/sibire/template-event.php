@@ -19,7 +19,7 @@
           <img class="cover-title" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-title.svg" alt="<?php the_title(); ?>"/>
         </h1>
         <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-date.svg" alt="2017/11/11 Sat 12:00~18:00 場所:STAR RISE TOWER 5F 'Studio Earth' (東京タワー直結)"/>
-        <a class="button" href="entry#page-h1">参加する</a>
+        <a class="button" href="entry">参加する</a>
         <?php get_template_part('partials/sns-share'); ?>
       </div>
       <div class="section overview" id="overview">
@@ -212,7 +212,7 @@
         <aside>&#x203B;50音順&nbsp;&nbsp;&nbsp;&#x203B;決定している企業の一部を掲載</aside>
       </div>
       <div class="section participate participate1">
-        <a class="button" href="entry#page-h1">参加する</a>
+        <a class="button" href="entry">参加する</a>
       </div>
       <div class="section municipality" id="municipality">
         <h2 class="slide-top">IT先進エリア</h2>
@@ -328,7 +328,7 @@
         </div>
       </div>
       <div class="section participate participate2">
-        <a class="button" href="entry#page-h1">参加する</a>
+        <a class="button" href="entry">参加する</a>
       </div>
       <div class="section cooperate" id="cooperate">
         <h2>協力</h2>
@@ -392,7 +392,7 @@
         </table>
         */ ?>
 
-        <a class="button" href="entry#page-h1">参加する</a>
+        <a class="button" href="entry">参加する</a>
         <center><a class="" href="mailto:event@sibire.co.jp">イベントに関するお問い合わせはこちら</a></center>
         <footer class="sns-footer">
           <?php get_template_part('partials/sns-share'); ?>
