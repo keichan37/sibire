@@ -52,7 +52,7 @@
             <p>IT先進エリア10自治体が、<br />自エリアの魅力とアピールポイントをピッチ形式で語ります。</p>
           </section>
           <section class="program">
-            <time>14:20〜14:50</time>
+            <time>14:20～14:40</time>
             <strong>Round4</strong>
             <h2>エンジニア“スーパープレゼンテーション”(1)</h2>
             <h3>「OSSを仕事にする、書き続ける技術」</h3>
@@ -68,7 +68,7 @@
             <p>1社7分！自社の魅力とプロダクト、<br />開発手法などを限られた時間で語ります。(3社)</p>
           </section>
           <section class="program">
-            <time>15:20〜15:50</time>
+            <time>15:20～15:40</time>
             <strong>Round6</strong>
             <h2>エンジニア“スーパープレゼンテーション”(2)</h2>
             <h3>「技術コミュニティのつくり方～OFF TOKYO後のリアル」</h3>
@@ -84,7 +84,7 @@
             <p>1社7分！自社の魅力とプロダクト、<br />開発手法などを限られた時間で語ります。(4社)</p>
           </section>
           <section class="program">
-            <time>16:30〜17:00</time>
+            <time>16:30～16:50</time>
             <strong>Round8</strong>
             <h2>エンジニア“スーパープレゼンテーション”(3)</h2>
             <h3>「東京を離れた新しい働き方＆働き方UPDATE」</h3>
