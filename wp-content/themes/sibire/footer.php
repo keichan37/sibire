@@ -1,4 +1,5 @@
-      <?php if(is_page(array('offtokyomeetup2017', 'offtokyomeetup2017/program'))): ?>
+      <?php $url = $_SERVER['REQUEST_URI']; ?>
+      <?php if(strstr($url,'offtokyomeetup2017')): ?>
       <?php else : ?>
       <?php get_template_part('partials/sns-footer'); ?>
         <div class="scroll-top-wrap">

@@ -1,9 +1,9 @@
 @import "mixin";
-.template-event-program {
+.template-event-sub-page {
   time,
   strong { font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB'; }
   #sub-cover {
-    background: url("images/template-event/program/cover-background.jpg") center center /cover no-repeat;
+    background: url("images/template-event/sub-page/cover-background.jpg") center center /cover no-repeat;
     text-align: center;
     height: 195px;
     padding: 63px 10px 0 10px;
@@ -20,7 +20,18 @@
     font-size: 18px;
     line-height: 1.5;
     margin: 0px auto;
-    background: url("images/template-event/program/h1-background.png") no-repeat;
+    background: url("images/template-event/sub-page/h1-background.png") no-repeat;
+  }
+  #common.entry-wrap {
+    max-width: 700px;
+    padding: 0 10px 30px 10px;
+    margin: 0px auto;
+    background: none;
+    min-height: 300px;
+    div.wpcf7 .wpcf7-step {
+      margin: 0px auto;
+      margin-bottom: 30px
+    }
   }
   section {
     &.program {
@@ -37,7 +48,7 @@
         height: 28px;
         line-height: 28px;
         color: #ffffff;
-        background: url("images/template-event/program/time-background.jpg") no-repeat;
+        background: url("images/template-event/sub-page/time-background.jpg") no-repeat;
         font-size: 17px;
         border-bottom: 2px solid #036eb8;
         margin-bottom: 17px;
@@ -47,7 +58,7 @@
         width: 79px;
         height: 20px;
         line-height: 20px;
-        background: url("images/template-event/program/strong-background.png") no-repeat;
+        background: url("images/template-event/sub-page/strong-background.png") no-repeat;
         color: #ffffff;
         margin: 0px auto;
         margin-bottom: 15px;
@@ -112,7 +123,7 @@
         font-size: 16px;
         height: 35px;
         line-height: 35px;
-        background: url("images/template-event/program/h2-background.jpg") center center /cover no-repeat;
+        background: url("images/template-event/sub-page/h2-background.jpg") center center /cover no-repeat;
         margin: 0 0 30px 0;
       }
       ul {
@@ -177,7 +188,7 @@
 }
 
 @media(max-width: 767px) {
-  .template-event-program {
+  .template-event-sub-page {
     .program-wrap {
       padding: 0 10px;
     }
