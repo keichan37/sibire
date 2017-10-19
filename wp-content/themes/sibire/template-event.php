@@ -297,6 +297,10 @@
                   <th>メディア協賛:</th>
                   <td>@IT、TURNS</td>
                 </tr>
+                <tr>
+                  <th>後援:</th>
+                  <td>総務省</td>
+                </tr>
               </table>
             </td>
           </tr>
