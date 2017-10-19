@@ -68,11 +68,7 @@
     })(window,document,'script','dataLayer','GTM-T5QQFS5');</script>
     <!-- End Google Tag Manager -->
 
-    <?php $url = $_SERVER['REQUEST_URI']; ?>
-    <?php if(strstr($url,'offtokyomeetup2017')): ?>
-      <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?55gB3urzk3w%3D&aa=1&ab=2" charset="utf-8"></script>
-    <?php else : ?>
-    <?php endif; ?>
+    <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?55gB3urzk3w%3D&aa=1&ab=2" charset="utf-8"></script>
 
   <?php wp_head(); ?>
   </head>
