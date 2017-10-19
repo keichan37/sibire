@@ -1,29 +1,40 @@
 @charset "UTF-8";
-.template-event-program time,
-.template-event-program strong {
+.template-event-sub-page time,
+.template-event-sub-page strong {
   font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
 }
-.template-event-program #sub-cover {
-  background: url("images/template-event/program/cover-background.jpg") center center/cover no-repeat;
+.template-event-sub-page #sub-cover {
+  background: url("images/template-event/sub-page/cover-background.jpg") center center/cover no-repeat;
   text-align: center;
   height: 195px;
   padding: 63px 10px 0 10px;
   margin-bottom: 30px;
 }
-.template-event-program #sub-cover img {
+.template-event-sub-page #sub-cover img {
   width: 310px;
   height: 81px;
 }
-.template-event-program h1 {
+.template-event-sub-page h1 {
   width: 280px;
   height: 25px;
   padding: 29px 0;
   font-size: 18px;
   line-height: 1.5;
   margin: 0px auto;
-  background: url("images/template-event/program/h1-background.png") no-repeat;
+  background: url("images/template-event/sub-page/h1-background.png") no-repeat;
 }
-.template-event-program section.program {
+.template-event-sub-page #common.entry-wrap {
+  max-width: 700px;
+  padding: 0 10px 30px 10px;
+  margin: 0px auto;
+  background: none;
+  min-height: 300px;
+}
+.template-event-sub-page #common.entry-wrap div.wpcf7 .wpcf7-step {
+  margin: 0px auto;
+  margin-bottom: 30px;
+}
+.template-event-sub-page section.program {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -41,50 +52,50 @@
   margin-bottom: 20px;
   text-align: center;
 }
-.template-event-program section.program time {
+.template-event-sub-page section.program time {
   display: block;
   height: 28px;
   line-height: 28px;
   color: #ffffff;
-  background: url("images/template-event/program/time-background.jpg") no-repeat;
+  background: url("images/template-event/sub-page/time-background.jpg") no-repeat;
   font-size: 17px;
   border-bottom: 2px solid #036eb8;
   margin-bottom: 17px;
 }
-.template-event-program section.program strong {
+.template-event-sub-page section.program strong {
   display: block;
   width: 79px;
   height: 20px;
   line-height: 20px;
-  background: url("images/template-event/program/strong-background.png") no-repeat;
+  background: url("images/template-event/sub-page/strong-background.png") no-repeat;
   color: #ffffff;
   margin: 0px auto;
   margin-bottom: 15px;
 }
-.template-event-program section.program h2 {
+.template-event-sub-page section.program h2 {
   color: #d70051;
   font-size: 18px;
   line-height: 1.27;
   margin: 0 0 10px 0;
   padding: 0 10px;
 }
-.template-event-program section.program h3 {
+.template-event-sub-page section.program h3 {
   font-size: 14px;
   line-height: 1.4;
   margin: 0 0 20px 0;
   padding: 0 10px;
 }
-.template-event-program section.program p {
+.template-event-sub-page section.program p {
   font-size: 14px;
   line-height: 1.4;
   margin: 0 0 20px 0;
   padding: 0 10px;
 }
-.template-event-program section.program figure {
+.template-event-sub-page section.program figure {
   margin: 0 8px;
   display: inline-block;
 }
-.template-event-program section.program figure img {
+.template-event-sub-page section.program figure img {
   vertical-align: bottom;
   width: 70px;
   height: 70px;
@@ -95,12 +106,12 @@
   -ms-border-radius: 37px;
   border: 2px solid #036eb8;
 }
-.template-event-program section.program figure figcaption {
+.template-event-sub-page section.program figure figcaption {
   padding-top: 5px;
   font-size: 11px;
   line-height: 1.3;
 }
-.template-event-program section.program figure.le, .template-event-program section.program figure.ri {
+.template-event-sub-page section.program figure.le, .template-event-sub-page section.program figure.ri {
   width: 50%;
   margin: 0;
   float: left;
@@ -111,13 +122,13 @@
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
 }
-.template-event-program section.program figure.ri {
+.template-event-sub-page section.program figure.ri {
   text-align: right;
 }
-.template-event-program section.program figure.le {
+.template-event-sub-page section.program figure.le {
   text-align: left;
 }
-.template-event-program section.program:before, .template-event-program section.program:after {
+.template-event-sub-page section.program:before, .template-event-sub-page section.program:after {
   content: ".";
   display: block;
   height: 0;
@@ -125,24 +136,24 @@
   clear: both;
   visibility: hidden;
 }
-.template-event-program section.sub-stage {
+.template-event-sub-page section.sub-stage {
   padding-top: 40px;
 }
-.template-event-program section.sub-stage h2 {
+.template-event-sub-page section.sub-stage h2 {
   color: #ffffff;
   text-align: center;
   font-size: 16px;
   height: 35px;
   line-height: 35px;
-  background: url("images/template-event/program/h2-background.jpg") center center/cover no-repeat;
+  background: url("images/template-event/sub-page/h2-background.jpg") center center/cover no-repeat;
   margin: 0 0 30px 0;
 }
-.template-event-program section.sub-stage ul {
+.template-event-sub-page section.sub-stage ul {
   max-width: 744px;
   margin: 0px auto;
   padding: 0 10px;
 }
-.template-event-program section.sub-stage ul li {
+.template-event-sub-page section.sub-stage ul li {
   position: relative;
   min-height: 130px;
   margin-bottom: 30px;
@@ -158,18 +169,18 @@
   width: 50%;
   padding: 10px 120px 15px 15px;
 }
-.template-event-program section.sub-stage ul li h3 {
+.template-event-sub-page section.sub-stage ul li h3 {
   font-size: 14px;
   line-height: 1.4;
   color: #036eb8;
   margin: 0 0 5px 0;
 }
-.template-event-program section.sub-stage ul li p {
+.template-event-sub-page section.sub-stage ul li p {
   margin: 0;
   font-size: 13px;
   line-height: 1.4;
 }
-.template-event-program section.sub-stage ul li img {
+.template-event-sub-page section.sub-stage ul li img {
   width: 80px;
   height: 80px;
   position: absolute;
@@ -177,7 +188,7 @@
   right: 0;
   margin: 10px 25px 0 0;
 }
-.template-event-program section.sub-stage ul:after {
+.template-event-sub-page section.sub-stage ul:after {
   content: ".";
   display: block;
   height: 0;
@@ -185,10 +196,10 @@
   clear: both;
   visibility: hidden;
 }
-.template-event-program section.sub-stage .supplement-wrap {
+.template-event-sub-page section.sub-stage .supplement-wrap {
   padding: 0 10px;
 }
-.template-event-program section.sub-stage .supplement-wrap .supplement {
+.template-event-sub-page section.sub-stage .supplement-wrap .supplement {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -203,27 +214,27 @@
   color: #036eb8;
   border: 1px solid #036eb8;
 }
-.template-event-program section.sub-stage .supplement-wrap .supplement time {
+.template-event-sub-page section.sub-stage .supplement-wrap .supplement time {
   display: block;
   margin-bottom: 5px;
 }
 
 @media (max-width: 767px) {
-  .template-event-program .program-wrap {
+  .template-event-sub-page .program-wrap {
     padding: 0 10px;
   }
-  .template-event-program section.program {
+  .template-event-sub-page section.program {
     max-width: 595px;
     width: auto;
   }
-  .template-event-program section.program P br {
+  .template-event-sub-page section.program P br {
     display: none;
   }
-  .template-event-program section.sub-stage ul li {
+  .template-event-sub-page section.sub-stage ul li {
     min-height: auto;
     width: 100%;
     float: none;
   }
 }
 
-/*# sourceMappingURL=template-event-program.css.map */
+/*# sourceMappingURL=template-event-sub-page.css.map */
