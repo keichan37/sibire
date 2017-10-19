@@ -68,7 +68,7 @@
           <figure>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-yamashita.jpg" alt="山下和彦"/>
             <figcaption>
-              <span class="time">14:20～14:50</span>
+              <span class="time">14:20～14:40</span>
               <h3 class="line2">「OSSを仕事にする、<br />書き続ける技術」</h3>
               <p>
                 GMOペパボ ホスティング事業部<br />
@@ -82,7 +82,7 @@
           <figure>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-yamada.jpg" alt="山田真次"/>
             <figcaption>
-              <span class="time">15:20～15:50</span>
+              <span class="time">15:20～15:40</span>
               <h3>「技術コミュニティのつくり方～OFF TOKYO後のリアル」</h3>
               <p>
                 面白法人カヤック　技術部<br />
@@ -96,7 +96,7 @@
           <figure>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-tanabe.jpg" alt=""/>
             <figcaption>
-              <span class="time">16:30～17:00</span>
+              <span class="time">16:30～16:50</span>
               <h3>「東京を離れた新しい働き方＆働き方UPDATE」</h3>
               <p>
                 ヤフー株式会社<br />
