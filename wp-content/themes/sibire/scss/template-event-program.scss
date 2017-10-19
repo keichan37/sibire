@@ -1,37 +1,4 @@
 @import "mixin";
-header.offtokyomeetup2017-header {
-  height: 28px;
-  background-color: rgba(3,110,184,.5);
-  font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
-  border-bottom: 1px solid rgb(3,110,184);
-  ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    li {
-      list-style: none;
-      display: inline-block;
-      line-height: 28px;
-      height: 28px;
-      padding: 0 5px;
-      font-size: 13px;
-      a {
-        @include transition();
-        color: #ffffff;
-        text-decoration: none;
-        &:hover {
-          color: rgba(255,255,255,.8);
-        }
-      }
-      &.current_page_item {
-        a {
-          cursor: default;
-          color: rgba(255,255,255,.8);
-        }
-      }
-    }
-  }
-}
 .template-event-program {
   time,
   strong { font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB'; }
