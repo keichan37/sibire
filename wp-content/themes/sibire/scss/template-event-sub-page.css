@@ -128,6 +128,18 @@
 .template-event-sub-page section.program figure.le {
   text-align: left;
 }
+.template-event-sub-page section.program figure.figure-logo {
+  margin: 0 4px 10px 4px;
+}
+.template-event-sub-page section.program figure.figure-logo img {
+  width: 103px;
+  height: 64px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+}
 .template-event-sub-page section.program:before, .template-event-sub-page section.program:after {
   content: ".";
   display: block;

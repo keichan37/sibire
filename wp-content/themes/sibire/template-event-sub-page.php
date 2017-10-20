@@ -66,6 +66,18 @@
             <strong>Round5</strong>
             <h2>企業LT（ライトニングトーク)(1)</h2>
             <p>1社7分！自社の魅力とプロダクト、<br />開発手法などを限られた時間で語ります。(3社)</p>
+            <figure class="figure-logo">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/logo-freee.jpg" alt="freee">
+              <figcaption>freee</figcaption>
+            </figure>
+            <figure class="figure-logo">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/logo-monstarlab.jpg" alt="モンスター・ラボ">
+              <figcaption>モンスター・ラボ</figcaption>
+            </figure>
+            <figure class="figure-logo">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/logo-opt.jpg" alt="オプト">
+              <figcaption>オプト</figcaption>
+            </figure>
           </section>
           <section class="program">
             <time>15:20～15:40</time>
@@ -82,6 +94,22 @@
             <strong>Round7</strong>
             <h2>企業LT（ライトニングトーク)(2)</h2>
             <p>1社7分！自社の魅力とプロダクト、<br />開発手法などを限られた時間で語ります。(4社)</p>
+            <figure class="figure-logo">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/logo-nacl.jpg" alt="ネットワーク応用通信研究所">
+              <figcaption>ネットワーク応用通信研究所</figcaption>
+            </figure>
+            <figure class="figure-logo">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/logo-membersedge.jpg" alt="メンバーズエッジ">
+              <figcaption>メンバーズエッジ</figcaption>
+            </figure>
+            <figure class="figure-logo">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/logo-changetheworld.jpg" alt="チェンジ・ザ・ワールド">
+              <figcaption>チェンジ・ザ・ワールド</figcaption>
+            </figure>
+            <figure class="figure-logo">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/logo-chatwork.jpg" alt="ChatWork">
+              <figcaption>ChatWork</figcaption>
+            </figure>
           </section>
           <section class="program">
             <time>16:30～16:50</time>

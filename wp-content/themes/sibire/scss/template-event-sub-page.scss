@@ -109,6 +109,14 @@
         &.le {
           text-align: left;
         }
+        &.figure-logo {
+          margin: 0 4px 10px 4px;
+          img {
+            width: 103px;
+            height: 64px;
+            @include border-radius(0px);
+          }
+        }
       }
       &:before,
       &:after {
