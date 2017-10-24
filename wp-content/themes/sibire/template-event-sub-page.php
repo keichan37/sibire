@@ -158,7 +158,7 @@
               お酒解禁!地酒コーナーOPEN＆お弁当引換開始<br />
               地酒と楽しめるおつまみ弁当を限定販売。
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sub-lunch-box.jpg" alt="弁当"><br />
-              <span>※お弁当は1000円です。当日お支払いください。</span>
+              <span>※お弁当は1000円です。当日お支払いください。<br />※写真はイメージです。内容は異なる場合があります。</span>
             </p>
           </div>
         </section>
