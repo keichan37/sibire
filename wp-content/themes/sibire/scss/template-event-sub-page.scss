@@ -28,10 +28,21 @@
     margin: 0px auto;
     background: none;
     min-height: 300px;
-    div.wpcf7 .wpcf7-step {
-      margin: 0px auto;
-      margin-bottom: 30px
+    div.wpcf7 {
+      .wpcf7-step {
+        margin: 0px auto;
+        margin-bottom: 30px
+      }
+      a {
+        color: #00A0E9;
+        &:hover { color: #32b3ed; }
+      }
+      input[type="submit"] {
+        background-color: #00A0E9;
+        border-color: #00A0E9;
+      }
     }
+
   }
   section {
     &.program {
@@ -189,6 +200,8 @@
             display: block;
             margin-bottom: 5px;
           }
+          img { margin-top: 10px; }
+          span { font-size: 12px; }
         }
       }
     }

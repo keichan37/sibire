@@ -34,6 +34,16 @@
   margin: 0px auto;
   margin-bottom: 30px;
 }
+.template-event-sub-page #common.entry-wrap div.wpcf7 a {
+  color: #00A0E9;
+}
+.template-event-sub-page #common.entry-wrap div.wpcf7 a:hover {
+  color: #32b3ed;
+}
+.template-event-sub-page #common.entry-wrap div.wpcf7 input[type="submit"] {
+  background-color: #00A0E9;
+  border-color: #00A0E9;
+}
 .template-event-sub-page section.program {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -229,6 +239,12 @@
 .template-event-sub-page section.sub-stage .supplement-wrap .supplement time {
   display: block;
   margin-bottom: 5px;
+}
+.template-event-sub-page section.sub-stage .supplement-wrap .supplement img {
+  margin-top: 10px;
+}
+.template-event-sub-page section.sub-stage .supplement-wrap .supplement span {
+  font-size: 12px;
 }
 
 @media (max-width: 767px) {
