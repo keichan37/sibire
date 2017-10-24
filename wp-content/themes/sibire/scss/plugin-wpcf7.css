@@ -419,6 +419,11 @@ Description: Contact Form 7
   height: 0;
   visibility: hidden;
 }
+#common span.supplement {
+  display: inline-block;
+  font-size: 12px;
+  margin: 9px 0 0 10px;
+}
 #common .sent .complete-hide {
   display: none;
 }

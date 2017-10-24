@@ -153,10 +153,12 @@
             </li>
           </ul>
           <div class="supplement-wrap">
-            <p class="supplement">
+            <p id="supplement" class="supplement">
               <time>16:00-18:00</time>
               お酒解禁!地酒コーナーOPEN＆お弁当引換開始<br />
               地酒と楽しめるおつまみ弁当を限定販売。
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sub-lunch-box.jpg" alt="弁当"><br />
+              <span>※お弁当は1000円です。当日お支払いください。</span>
             </p>
           </div>
         </section>
