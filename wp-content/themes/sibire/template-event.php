@@ -169,6 +169,11 @@
             <h3>ネットワーク応用通信研究所</h3>
           </li>
           <li>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-bright-sys.png" alt="株式会社ブライトシステム">
+            <span>大阪</span>
+            <h3>株式会社ブライトシステム</h3>
+          </li>
+          <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-freee.png" alt="freee株式会社">
             <span>大阪</span><b class="lt">LT</b>
             <h3>freee株式会社</h3>
@@ -179,13 +184,6 @@
             <span>北九州</span><b class="lt">LT</b>
             <h3>株式会社メンバーズエッジ</h3>
           </li>
-          <?php /*
-          <li>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-monobit.png" alt="株式会社モノビット">
-            <span>神戸</span>
-            <h3>株式会社モノビット</h3>
-          </li>
-          */ ?>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-monstarlab.png" alt="株式会社モンスター・ラボ">
             <span>松江</span><b class="lt">LT</b>
@@ -204,9 +202,11 @@
             <span>仙台</span>
             <h3>株式会社ワイヤードビーンズ</h3>
           </li>
+          <?php /*
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-comingsoon.png" alt="Coming Soon…">
           </li>
+          */ ?>
 
         </ul>
         <aside>&#x203B;50音順&nbsp;&nbsp;&nbsp;&#x203B;決定している企業の一部を掲載</aside>
