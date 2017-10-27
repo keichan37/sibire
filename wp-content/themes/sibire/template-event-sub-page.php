@@ -124,8 +124,81 @@
           <section class="program">
             <time>17:00〜18:00</time>
             <strong>Round9</strong>
-            <h2>OFF TOKYO PARTY!</h2>
-            <p>参加者も企業もエリア担当者も、会場全体で地酒を楽しみながら全員で乾杯！<br />会場で同時実施の「地酒ランキング」の発表も</p>
+            <h2>OFF TOKYO ご当地お酒フェス</h2>
+            <p>参加者も企業もエリア担当者も、ご当地のお酒を楽しみながら会場全体で乾杯！ <br />ご当地のお酒に投票していく「OFF TOKYO 酒類コンクール2017」も開催 </p>
+            <figure>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/avatar-hayashi.jpg" alt="林生馬">
+              <figcaption>林生馬/日本テキーラ協会会長 </figcaption>
+            </figure>
+            <h4>ご当地お酒ラインナップ </h4>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-01.jpg">
+              <figcaption>宮城県/勝山</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-02.jpg">
+              <figcaption>宮城県/伯楽星</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-03.jpg">
+              <figcaption>宮城県/綿谷</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-04.jpg">
+              <figcaption>兵庫県/福寿 純米吟醸</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-05.jpg">
+              <figcaption>兵庫県/六甲ビール 熟</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-06.jpg">
+              <figcaption>和歌山県/紀土 純米大吟醸</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-07.jpg">
+              <figcaption>島根県/月山</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-08.jpg">
+              <figcaption>島根県/七冠馬</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-09.jpg">
+              <figcaption>島根県/十旭日</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-10.jpg">
+              <figcaption>福岡県/百年蔵</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-11.jpg">
+              <figcaption>宮崎県/キャンベルアーリーロゼ</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-12.jpg">
+              <figcaption>宮崎県/京屋酒造 油津吟</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-13.jpg">
+              <figcaption>宮崎県/匠の蔵</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-14.jpg">
+              <figcaption>長崎県/五島芋</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-15.jpg">
+              <figcaption>長崎県/五島麦</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-16.jpg">
+              <figcaption>長崎県/マスカット・ベリー</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-17.jpg">
+              <figcaption>長崎県/ナイアガラ スパークリング</figcaption>
+            </figure>
           </section>
         </div>
         <section class="sub-stage">
