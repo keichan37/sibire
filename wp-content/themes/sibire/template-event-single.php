@@ -3,7 +3,7 @@
     <div id="template-event" class="template-event-single">
       <div id="sub-cover">
         <img class="cover-title" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-title.svg" alt="OFF TOKYO MEETUP 2017"/>
-        <h1><?php the_title(); ?></h1>
+        <h1><span><?php the_title(); ?></span></h1>
       </div>
       <article>
         <div class="single-content mce-content-body">

@@ -18,13 +18,16 @@
     padding: 0 20px 40px 20px;
   }
   h1 {
-    width: 280px;
+    color: #036eb8;
     height: 23px;
-    padding: 29px 0;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.5;
     margin: 0px auto;
-    background: url("images/template-event/sub-page/h1-background.png") no-repeat;
+    margin-top: 30px;
+    span {
+      background-color: rgba(255,255,255,.9);
+      padding: 5px 8px;
+    }
   }
   .mce-content-body {
     $blue: #036eb8;
@@ -46,8 +49,12 @@
 
 @media(max-width: 767px) {
   .template-event-single {
-    h1 {
-      font-size: 16px;
+    #sub-cover {
+      height: auto;
+      padding-bottom: 20px;
+      h1 {
+        height: auto;
+      }
     }
     article {
       width: 100%;
