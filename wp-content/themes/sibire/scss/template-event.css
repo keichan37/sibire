@@ -38,6 +38,7 @@ header.offtokyomeetup2017-header ul li.current_page_item a {
   font-size: 14px;
   color: #000000;
 }
+#template-event article,
 #template-event section,
 #template-event .section,
 #template-event nav {
@@ -89,6 +90,7 @@ header.offtokyomeetup2017-header ul li.current_page_item a {
 #template-event h1,
 #template-event h2,
 #template-event h3,
+#template-event h4,
 #template-event a.button {
   font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
 }
