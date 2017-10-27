@@ -29,7 +29,7 @@
 }
 .template-event-single h1 span {
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 5px 8px;
+  padding: 2px 8px 5px 8px;
 }
 .template-event-single .mce-content-body h1,
 .template-event-single .mce-content-body h2,
