@@ -36,7 +36,8 @@
         <h2 class="slide-top">地域を変えた<br />イノベーター対談</h2>
         <p>
           島根県に在住するまつもとゆきひろ氏と、鎌倉エリアを盛り上げる活動を行う柳澤大輔氏に<br />
-          働きたい場所で東京に負けないキャリアを実現する方法を語ってもらいます。 
+          働きたい場所で東京に負けないキャリアを実現する方法を語ってもらいます。<br />
+          一般公開できない話もあるため、外部には公開しないセッションとなります。
         </p>
         <span class="time">13:10～14:00</span>
         <figure>
@@ -57,6 +58,10 @@
             </p>
           </figcaption>
         </figure>
+        <p class="attention">
+          <strong>メディア完全非公開!</strong>
+          当セッションは動画配信等、メディア公開を行っていません。<br />地域を変えたふたりの対談を聞かれたい方は事前参加をお願いします。
+        </p>
       </div>
 
       <div class="section content2" id="content2">
@@ -172,6 +177,8 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-bright-sys.png" alt="株式会社ブライトシステム">
             <span>大阪</span>
             <h3>株式会社ブライトシステム</h3>
+            <a href="/recruit/26362" target="_blank">Interview<b class="icon icon-open"></b></a>
+          </li>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-freee.png" alt="freee株式会社">
