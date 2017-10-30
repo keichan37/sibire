@@ -162,9 +162,9 @@ header.offtokyomeetup2017-header {
     }
   }
   #cover {
-    padding: 128px 0 0 0;
+    padding: 128px 0 50px 0;
     text-align: center;
-    height: 600px;
+    height: auto;
     background: url("images/template-event/cover-background.jpg") center center /cover no-repeat;
     img {
       max-width: 98%;
@@ -713,8 +713,8 @@ header.offtokyomeetup2017-header {
       display: none;
     }
     #cover {
-      height: auto;
-      padding-bottom: 50px;
+      padding: 90px 0 30px 0;
+      a.button { margin-top: 0; }
     }
     .section {
       &.overview {
@@ -727,6 +727,12 @@ header.offtokyomeetup2017-header {
         }
         p {
         }
+      }
+      &.content1,
+      &.content2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        p { margin-top: 20px; }
       }
       &.content1 {
         padding-left: 10px;
@@ -753,7 +759,6 @@ header.offtokyomeetup2017-header {
       &.content2 {
         padding-left: 10px;
         padding-right: 10px;
-
         h2 {
           &:before {
             margin-left: -150px;
