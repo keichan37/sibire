@@ -158,6 +158,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-salesforce.png" alt="株式会社セールスフォース・ドットコム">
             <span>白浜</span>
             <h3>株式会社セールスフォース・ドットコム</h3>
+            <a href="https://www.pr-table.com/salesforcecom/stories/782" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-dandoliworks.png" alt="株式会社ダンドリワークス">
