@@ -307,6 +307,27 @@ header.offtokyomeetup2017-header ul li.current_page_item a {
   line-height: 1.7;
   margin: 40px 0 0 0;
 }
+#template-event .section.content1 p.attention {
+  max-width: 430px;
+  margin: 0px auto;
+  margin-top: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  font-size: 12px;
+  background-color: #f15475;
+}
+#template-event .section.content1 p.attention strong {
+  display: block;
+}
 #template-event .section.content1 figure {
   max-width: 570px;
   margin: 0px auto;
@@ -869,7 +890,7 @@ header.offtokyomeetup2017-header ul li.current_page_item a {
   }
   #template-event .section.company ul li {
     width: 41%;
-    min-height: 175px;
+    min-height: 193px;
     height: auto;
   }
   #template-event .section.company ul li:nth-child(even) {

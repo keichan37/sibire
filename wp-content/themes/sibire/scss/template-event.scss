@@ -247,6 +247,19 @@ header.offtokyomeetup2017-header {
       p {
         line-height: 1.7;
         margin: 40px 0 0 0;
+        &.attention {
+          max-width: 430px;
+          margin: 0px auto;
+          margin-top: 40px;
+          padding: 10px;
+          @include border-box;
+          @include border-radius(2px);
+          font-size: 12px;
+          background-color: #f15475;
+          strong {
+            display: block;
+          }
+        }
       }
       figure {
         max-width: 570px;
@@ -788,7 +801,7 @@ header.offtokyomeetup2017-header {
         ul {
           li {
             width: 41%;
-            min-height: 175px;
+            min-height: 193px;
             height: auto;
             &:nth-child(even) { margin: 7% 6% 0 3%; }
             &:nth-child(odd)  { margin: 7% 3% 0 6%; }
