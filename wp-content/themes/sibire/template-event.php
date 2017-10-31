@@ -180,6 +180,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-nacl.png" alt="ネットワーク応用通信研究所">
             <span>松江</span><b class="lt">LT</b>
             <h3>ネットワーク応用通信研究所</h3>
+            <a href="https://www.pr-table.com/NaCl/stories/778" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-bright-sys.png" alt="株式会社ブライトシステム">
