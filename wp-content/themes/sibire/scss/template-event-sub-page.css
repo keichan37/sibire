@@ -284,6 +284,9 @@
   .template-event-sub-page section.program P br {
     display: none;
   }
+  .template-event-sub-page section.program figure.figure-sake {
+    width: 18%;
+  }
   .template-event-sub-page section.sub-stage ul li {
     min-height: auto;
     width: 100%;
