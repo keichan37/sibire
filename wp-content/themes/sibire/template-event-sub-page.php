@@ -30,6 +30,10 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/avatar-sugi.jpg" alt="SUGI">
               <figcaption>SUGI</figcaption>
             </figure>
+            <figure>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/avatar-guinness.jpg" alt="ショーン・ギネス">
+              <figcaption>ショーン・ギネス</figcaption>
+            </figure>
           </section>
           <section class="program">
             <time>13:00〜14:00</time>
@@ -155,6 +159,8 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-06.jpg">
               <figcaption>和歌山県/紀土 純米大吟醸</figcaption>
             </figure>
+
+            <?php /*
             <figure class="figure-sake">
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-07.jpg">
               <figcaption>島根県/月山</figcaption>
@@ -167,6 +173,8 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-09.jpg">
               <figcaption>島根県/十旭日</figcaption>
             </figure>
+            */ ?>
+
             <figure class="figure-sake">
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-10.jpg">
               <figcaption>福岡県/百年蔵</figcaption>
