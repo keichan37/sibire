@@ -1,12 +1,13 @@
 @import "mixin";
 header.offtokyomeetup2017-header {
-  height: 28px;
   background-color: rgba(3,110,184,.5);
   font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
   border-bottom: 1px solid rgb(3,110,184);
-  ul {
-    margin: 0;
-    padding: 0;
+  .menu-global_menu-container { float: none; }
+  ul.global_menu {
+    max-width: 756px;
+    margin: 0px auto;
+    padding: 6px;
     text-align: center;
     li {
       list-style: none;
@@ -14,21 +15,49 @@ header.offtokyomeetup2017-header {
       line-height: 28px;
       height: 28px;
       padding: 0 5px;
-      font-size: 13px;
+      float: none;
       a {
         @include transition();
         color: #ffffff;
         text-decoration: none;
+        padding: 0 5px;
+        @include border-radius(0px);
+        border: none;
+        color: #ffffff;
         &:hover {
-          color: rgba(255,255,255,.8);
+          background: none;
+          color: rgba(255,255,255,.7);
         }
       }
       &.current_page_item {
         a {
-          cursor: default;
-          color: rgba(255,255,255,.8);
+          background: none;
+          color: rgba(255,255,255,.7);
         }
       }
+      &.current-page-ancestor {
+        a {
+          background: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .slicknav_btn {
+    @include box-shadow(0,0,5px,.5);
+    @include border-radius(2px);
+    margin: 10px 10px 0 0;
+    background-color: #1baaeb;
+    &:hover,
+    &.slicknav_open { background-color: #49bcef; }
+  }
+  .slicknav_nav {
+    margin-top: 58px;
+    background-color: #1baaeb;
+    @include box-shadow(0,0,5px,.5);
+    li a:hover,
+    li.current-menu-item a {
+      background-color: #49bcef;
     }
   }
 }
@@ -707,7 +736,26 @@ header.offtokyomeetup2017-header {
   }
 }
 
+
+@media(max-width: 815px) {
+  header.offtokyomeetup2017-header {
+    .global_menu  { display: block; }
+    .slicknav_btn { display: none; }
+  }
+}
+
 @media(max-width: 767px) {
+  header.offtokyomeetup2017-header {
+    .global_menu  { display: none; }
+    .slicknav_btn { display: block; }
+    background: none;
+    border: none;
+    height: 0;
+    &:after,
+    &:before {
+      background: none;
+    }
+  }
   #template-event {
     .navigation {
       display: none;

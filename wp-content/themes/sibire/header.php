@@ -90,7 +90,9 @@
       <?php $url = $_SERVER['REQUEST_URI']; ?>
       <?php if(strstr($url,'offtokyomeetup2017')): ?>
         <header class="offtokyomeetup2017-header">
-          <?php wp_nav_menu( array('menu' => 'offtokyomeetup2017', 'menu_class' => 'offtokyomeetup2017')); ?>
+          <div class="menu-global_menu-container">
+            <?php wp_nav_menu( array('menu' => 'offtokyomeetup2017', 'menu_class' => 'global_menu')); ?>
+          </div>
         </header>
       <?php else : ?>
         <header>
