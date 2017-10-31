@@ -241,6 +241,9 @@
         max-width: 595px;
         width: auto;
         P br { display: none; }
+        figure {
+          &.figure-sake { width: 18%; }
+        }
       }
       &.sub-stage {
         ul {
