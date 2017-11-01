@@ -174,7 +174,14 @@
               <figcaption>島根県/十旭日</figcaption>
             </figure>
             */ ?>
-
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-18.jpg">
+              <figcaption>福岡県/天心 純米吟醸酒</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-19.jpg">
+              <figcaption>福岡県/皿倉 純米吟醸</figcaption>
+            </figure>
             <figure class="figure-sake">
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-10.jpg">
               <figcaption>福岡県/百年蔵</figcaption>
