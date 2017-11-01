@@ -297,16 +297,18 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
 }
 #template-event .section.overview {
   text-align: center;
-  height: 300px;
-  padding-top: 120px;
-  background: #ffffff url("images/template-event/map-black.png") center center/cover no-repeat;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 #template-event .section.overview h2 {
-  margin: 0 0 0 0;
-  padding: 0;
-  font-size: 26px;
-  background-color: #ffffff;
-  display: inline;
+  display: inline-block;
+  margin: 0 10px 30px 10px;
+  padding: 0 10px 15px 10px;
+  font-size: 25px;
+  line-height: 1.4;
+  background-image: url("images/template-event/overview-h2.png");
+  background-repeat: repeat-x;
+  background-position: center bottom;
 }
 #template-event .section.overview p {
   margin: 20px 0 0 0;
@@ -314,6 +316,60 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
 }
 #template-event .section.overview p span {
   background-color: #ffffff;
+}
+#template-event .section.overview ul#menu-offtokyomeetup2017-content {
+  padding: 0;
+  margin: 0px auto;
+}
+#template-event .section.overview ul#menu-offtokyomeetup2017-content li {
+  display: inline-block;
+  margin: 0 7px 10px 7px;
+}
+#template-event .section.overview ul#menu-offtokyomeetup2017-content li a {
+  width: 320px;
+  height: 168px;
+  display: block;
+  border: 5px solid #000000;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+#template-event .section.overview ul#menu-offtokyomeetup2017-content li a:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+#template-event .section.overview ul#menu-offtokyomeetup2017-content li.match a {
+  background-image: url("images/template-event/menu-match.jpg");
+  border-color: #c30d23;
+}
+#template-event .section.overview ul#menu-offtokyomeetup2017-content li.match a:hover {
+  border-color: #f12c43;
+}
+#template-event .section.overview ul#menu-offtokyomeetup2017-content li.osakefes a {
+  background-image: url("images/template-event/menu-osakefes.jpg");
+  border-color: #40220f;
+}
+#template-event .section.overview ul#menu-offtokyomeetup2017-content li.osakefes a:hover {
+  border-color: #7e431e;
+}
+#template-event .section.overview ul#menu-offtokyomeetup2017-content li.experience a {
+  background-image: url("images/template-event/menu-experience.jpg");
+  border-color: #29abe2;
+}
+#template-event .section.overview ul#menu-offtokyomeetup2017-content li.experience a:hover {
+  border-color: #6cc5eb;
 }
 #template-event .section.content1 {
   background-color: #54C3F1;
@@ -878,7 +934,7 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
   }
   #template-event .section.overview {
     height: auto;
-    padding: 50px 10px;
+    padding: 30px 0px;
     background-size: 150% auto;
   }
   #template-event .section.overview h2 {
@@ -887,6 +943,16 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
   }
   #template-event .section.overview p br {
     display: none;
+  }
+  #template-event .section.overview ul#menu-offtokyomeetup2017-content li {
+    margin: 0 0 10px 0px;
+  }
+  #template-event .section.overview ul#menu-offtokyomeetup2017-content li a {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
   }
   #template-event .section.content1, #template-event .section.content2 {
     padding-top: 20px;

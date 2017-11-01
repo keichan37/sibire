@@ -2,6 +2,7 @@
 
   <?php get_header(); ?>
     <div id="template-event">
+      <?php /*
       <nav class="navigation">
         <ul>
           <li><a class="top r-scroll-template-event active" href="#"><strong>トップ</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></svg></a></li>
@@ -14,6 +15,7 @@
           <li><a class="cooperate r-scroll-cooperate" href="#cooperate"><strong>その他</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></a></li>
         </ul>
       </nav>
+      */ ?>
       <div id="cover" style="opacity: 0;">
         <h1>
           <img class="cover-title" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover.png" alt="<?php the_title(); ?>"/>
@@ -28,6 +30,11 @@
         <?php get_template_part('partials/sns-share'); ?>
       </div>
       <div class="section overview" id="overview">
+        <h2>OFF TOKYOを体感! スペシャル・コンテンツ</h2>
+        <nav>
+          <?php wp_nav_menu( array('menu' => 'offtokyomeetup2017-content', 'menu_class' => 'content-menu')); ?>
+        </nav>
+        <?php /*
         <h2>東京の中心でOFF TOKYOを叫ぼう!新しい働き方を体感 </h2>
         <p>
           <span>
@@ -38,6 +45,7 @@
             仕事とくらしの両面から、これからの働き方を体感していただけます。 
           <span>
         </p>
+        */ ?>
       </div>
       <div class="section content1" id="content1">
         <h2 class="slide-top">地域を変えた<br />イノベーター対談</h2>

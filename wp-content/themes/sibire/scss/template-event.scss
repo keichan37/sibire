@@ -224,20 +224,71 @@ header.offtokyomeetup2017-header {
     }
     &.overview {
       text-align: center;
-      height: 300px;
-      padding-top: 120px;
-      background: #ffffff url("images/template-event/map-black.png") center center /cover no-repeat;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      //background: #ffffff url("images/template-event/map-black.png") center center /cover no-repeat;
       h2 {
-        margin: 0 0 0 0;
-        padding: 0;
-        font-size: 26px;
-        background-color: #ffffff;
-        display: inline;
+        //margin: 0 0 0 0;
+        //padding: 0;
+        //font-size: 26px;
+        //background-color: #ffffff;
+        //display: inline;
+        display: inline-block;
+        margin: 0 10px 30px 10px;
+        padding: 0 10px 15px 10px;
+        font-size: 25px;
+        line-height: 1.4;
+        background-image: url("images/template-event/overview-h2.png");
+        background-repeat: repeat-x;
+        background-position: center bottom;
       }
       p {
         margin: 20px 0 0 0;
         line-height: 1.7;
         span { background-color: #ffffff; }
+      }
+      ul#menu-offtokyomeetup2017-content {
+        padding: 0;
+        margin: 0px auto;
+        li {
+            display: inline-block;
+            margin: 0 7px 10px 7px;
+          a {
+            width: 320px;
+            height: 168px;
+            display: block;
+            border: 5px solid #000000;
+            background-color: #ffffff;
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+            @include border-radius(5px);
+            @include transition();
+            &:hover {
+              @include box-shadow(0px, 0px, 15px, .3);
+            }
+          }
+          &.match a {
+            background-image: url("images/template-event/menu-match.jpg");
+            border-color: #c30d23;
+            &:hover {
+              border-color: #f12c43;
+            }
+          }
+          &.osakefes a {
+            background-image: url("images/template-event/menu-osakefes.jpg");
+            border-color: #40220f;
+            &:hover {
+              border-color: #7e431e;
+            }
+          }
+          &.experience a {
+            background-image: url("images/template-event/menu-experience.jpg");
+            border-color: #29abe2;
+            &:hover {
+              border-color: #6cc5eb;
+            }
+          }
+        }
       }
     }
     &.content1 {
@@ -768,13 +819,22 @@ header.offtokyomeetup2017-header {
     .section {
       &.overview {
         height: auto;
-        padding: 50px 10px;
+        padding: 30px 0px;
         background-size: 150% auto;
         h2 {
           line-height: 1.4;
           font-size: 24px;
         }
         p br { display: none; }
+
+        ul#menu-offtokyomeetup2017-content {
+          li {
+            margin: 0 0 10px 0px;
+            a {
+              @include border-box();
+            }
+          }
+        }
       }
       &.content1,
       &.content2 {
