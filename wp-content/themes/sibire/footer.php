@@ -26,6 +26,7 @@
 
   <?php if(is_page('offtokyomeetup2017')): ?>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/template-event.js"></script>
+    <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/jquery.liMarquee.js "></script>
   <?php else : ?>
   <?php endif; ?>
   <script>$(window).fadeThis({
@@ -36,6 +37,12 @@
   $('.global_menu').slicknav({
     label: '',
 		prependTo: '.menu-global_menu-container'
+  });
+  $('#marquee').liMarquee({
+    direction: 'left',
+    loop: -1,
+    drag: false,
+    hoverstop: false
   });
   </script>
 
