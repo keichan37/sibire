@@ -40,7 +40,7 @@
   });
   $('#marquee').liMarquee({
     circular:true, 
-		startShow:true
+		startShow:true,
     direction: 'left',
     loop: -1
   });
