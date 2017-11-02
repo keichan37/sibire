@@ -39,10 +39,10 @@
 		prependTo: '.menu-global_menu-container'
   });
   $('#marquee').liMarquee({
+    circular:true, 
+		startShow:true
     direction: 'left',
-    loop: -1,
-    drag: false,
-    hoverstop: false
+    loop: -1
   });
   </script>
 
