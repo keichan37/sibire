@@ -237,6 +237,21 @@ header.offtokyomeetup2017-header {
     margin: -12px 0 0 -160px;
     @include rotate(-5deg);
   }
+  #marquee {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 70px;
+    border-bottom: 1px solid #000000;
+    position: relative;
+    .str_move {
+      white-space: nowrap;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
   .section {
     .time {
       display: block;
@@ -840,7 +855,7 @@ header.offtokyomeetup2017-header {
       display: none;
     }
     #cover {
-      padding: 90px 0 30px 0;
+      padding: 70px 0 20px 0;
       a.button { margin-top: 0; }
       img {
         &.freeentrance {

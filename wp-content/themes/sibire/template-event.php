@@ -14,6 +14,34 @@
         <?php get_template_part('partials/sns-share'); ?>
         <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-soumusyo.jpg" alt="総務省"/>
       </div>
+      <div id="marquee" class="marquee">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/01.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/02.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/03.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/04.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/05.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/06.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/07.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/08.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/09.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/10.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/11.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/12.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/13.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/14.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/15.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/16.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/17.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/18.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/19.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/20.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/21.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/22.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/23.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/24.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/25.jpg" alt=""/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/marquee/26.jpg" alt=""/>
+      </div>
       <div class="section overview" id="overview">
         <h2>OFF TOKYOを体感! スペシャル・コンテンツ</h2>
         <nav>
