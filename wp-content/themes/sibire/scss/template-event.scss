@@ -6,6 +6,7 @@ header.offtokyomeetup2017-header {
   .menu-global_menu-container { float: none; }
   ul.global_menu {
     max-width: 756px;
+    max-width: 860px;
     margin: 0px auto;
     padding: 6px;
     text-align: center;
@@ -847,7 +848,7 @@ header.offtokyomeetup2017-header {
   }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 872px) {
   header.offtokyomeetup2017-header {
     .global_menu  { display: none; }
     .slicknav_btn { display: block; }
@@ -859,6 +860,9 @@ header.offtokyomeetup2017-header {
       background: none;
     }
   }
+}
+
+@media(max-width: 767px) {
   #template-event {
     .navigation {
       display: none;
