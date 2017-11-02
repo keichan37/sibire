@@ -264,7 +264,10 @@
       <div class="section participate participate3">
         <?php $url = $_SERVER['REQUEST_URI']; ?>
         <?php if(strstr($url,'program')): ?>
-          <a class="button" href="entry#page-h1">参加する</a>
+          <div class="button-wrap">
+            <strong class="reservation">要事前予約</strong>
+            <a class="button" href="entry">参加する</a>
+          </div>
         <?php else: ?>
         <?php endif; ?>
         <center><a class="" href="mailto:event@sibire.co.jp">イベントに関するお問い合わせはこちら</a></center>

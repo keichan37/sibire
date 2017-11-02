@@ -2,50 +2,23 @@
 
   <?php get_header(); ?>
     <div id="template-event">
-      <?php /*
-      <nav class="navigation">
-        <ul>
-          <li><a class="top r-scroll-template-event active" href="#"><strong>トップ</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></svg></a></li>
-          <li><a class="overview r-scroll-overview" href="#overview"><strong>概要</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></a></li>
-          <li><a class="content1 r-scroll-content1" href="#content1"><strong>内容</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></a></li>
-          <li><a class="company r-scroll-company" href="#company"><strong>出展企業</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></a></li>
-          <li><a class="municipality r-scroll-municipality" href="#municipality"><strong>参加自治体</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></a></li>
-          <li><a class="information r-scroll-information" href="#information"><strong>詳細</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></a></li>
-          <li><a class="map r-scroll-map" href="#map"><strong>アクセス</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></a></li>
-          <li><a class="cooperate r-scroll-cooperate" href="#cooperate"><strong>その他</strong><svg width="20px" height="20px"><circle class="circle" cx="10" cy="10" r="5" fill="rgba(0,0,0,.4)" stroke="rgba(0,0,0,.4)" /></a></li>
-        </ul>
-      </nav>
-      */ ?>
       <div id="cover" style="opacity: 0;">
         <h1>
           <img class="cover-title" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover.png" alt="<?php the_title(); ?>"/>
-          <?php /*
-          <img class="cover-title" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-title.svg" alt="<?php the_title(); ?>"/>
-          */ ?>
         </h1>
-        <?php /*
-        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-date.svg" alt="2017/11/11 Sat 12:00~18:00 場所:STAR RISE TOWER 5F 'Studio Earth' (東京タワー直結)"/>
-          */ ?>
-        <a class="button" href="entry">参加する</a>
+        <img class="freeentrance" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-freeentrance.png" alt="入場無料"/>
+        <div class="button-wrap">
+          <strong class="reservation">要事前予約</strong>
+          <a class="button" href="entry">参加する</a>
+        </div>
         <?php get_template_part('partials/sns-share'); ?>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-soumusyo.jpg" alt="総務省"/>
       </div>
       <div class="section overview" id="overview">
         <h2>OFF TOKYOを体感! スペシャル・コンテンツ</h2>
         <nav>
           <?php wp_nav_menu( array('menu' => 'offtokyomeetup2017-content', 'menu_class' => 'content-menu')); ?>
         </nav>
-        <?php /*
-        <h2>東京の中心でOFF TOKYOを叫ぼう!新しい働き方を体感 </h2>
-        <p>
-          <span>
-            OFF TOKYO MEETUP 2017は、<br />
-            東京にこだわらない「これからの新しい働き方」を知ってもらう祭典です。<br />
-            全国からおもしろい働き方ができる企業や、IT先進エリアが一挙に集まり、<br />
-            リアルタイムVRを利用した企業訪問や、全国のお酒を堪能できるコンテンツなど、<br />
-            仕事とくらしの両面から、これからの働き方を体感していただけます。 
-          <span>
-        </p>
-        */ ?>
       </div>
       <div class="section content1" id="content1">
         <h2 class="slide-top">地域を変えた<br />イノベーター対談</h2>
@@ -236,7 +209,10 @@
         <aside>&#x203B;50音順&nbsp;&nbsp;&nbsp;&#x203B;決定している企業の一部を掲載</aside>
       </div>
       <div class="section participate participate1">
-        <a class="button" href="entry">参加する</a>
+        <div class="button-wrap">
+          <strong class="reservation">要事前予約</strong>
+          <a class="button" href="entry">参加する</a>
+        </div>
       </div>
       <div class="section municipality" id="municipality">
         <h2 class="slide-top">IT先進エリア</h2>
@@ -352,7 +328,10 @@
         </div>
       </div>
       <div class="section participate participate2">
-        <a class="button" href="entry">参加する</a>
+        <div class="button-wrap">
+          <strong class="reservation">要事前予約</strong>
+          <a class="button" href="entry">参加する</a>
+        </div>
       </div>
       <div class="section cooperate" id="cooperate">
         <h2>協力</h2>
@@ -416,7 +395,10 @@
         </table>
         */ ?>
 
-        <a class="button" href="entry">参加する</a>
+        <div class="button-wrap">
+          <strong class="reservation">要事前予約</strong>
+          <a class="button" href="entry">参加する</a>
+        </div>
         <center><a class="" href="mailto:event@sibire.co.jp">イベントに関するお問い合わせはこちら</a></center>
         <footer class="sns-footer">
           <?php get_template_part('partials/sns-share'); ?>

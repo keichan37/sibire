@@ -266,7 +266,8 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
   visibility: hidden;
 }
 #template-event #cover {
-  padding: 128px 0 50px 0;
+  position: relative;
+  padding: 128px 0 30px 0;
   text-align: center;
   height: auto;
   background: url("images/template-event/cover-background.jpg") center center/cover no-repeat;
@@ -274,15 +275,45 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
 #template-event #cover img {
   max-width: 98%;
 }
+#template-event #cover img.freeentrance {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  margin: 0 -290px 130px 0;
+}
 #template-event #cover h1 {
   margin: 0;
   padding: 0;
 }
-#template-event #cover .button {
+#template-event #cover .button-wrap {
   margin-top: 20px;
 }
 #template-event #cover .sns-share {
   margin-top: 10px;
+  margin-bottom: 10px;
+}
+#template-event .button-wrap {
+  position: relative;
+}
+#template-event strong.reservation {
+  text-align: center;
+  background-color: #005ead;
+  display: block;
+  width: 88px;
+  height: 18px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.3;
+  padding: 6px 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: -12px 0 0 -160px;
+  webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
 #template-event .section .time {
   display: block;
@@ -931,6 +962,11 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
   }
   #template-event #cover a.button {
     margin-top: 0;
+  }
+  #template-event #cover img.freeentrance {
+    margin: 0 -160px 165px 0;
+    width: 50px;
+    height: 50px;
   }
   #template-event .section.overview {
     height: auto;
