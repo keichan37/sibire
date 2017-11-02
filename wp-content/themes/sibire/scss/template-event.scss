@@ -241,16 +241,24 @@ header.offtokyomeetup2017-header {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    height: 75px!important;
+    overflow: scroll;
+    height: 76px;
     border-bottom: 1px solid #000000;
     position: relative;
+    white-space: nowrap;
     .str_move {
       white-space: nowrap;
       position: absolute;
       top: 0;
       left: 0;
-      cursor: move;
+      cursor:-moz-grab;
+      cursor:-webkit-grab;
+      cursor: grab;
+      &:active {
+        cursor:-moz-grabbing;
+        cursor:-webkit-grabbing;
+        cursor: grabbing;
+      }
     }
   }
   .section {

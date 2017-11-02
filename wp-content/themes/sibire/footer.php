@@ -38,12 +38,15 @@
     label: '',
 		prependTo: '.menu-global_menu-container'
   });
-  $(window).on('load',function(){
-    $('#marquee').liMarquee({
-      circular:true, 
-      startShow:true
-    });
-  })
+  //$(window).on('load',function(){
+    //$('#marquee').liMarquee({
+      //scrollDelay: 2000,
+      //scrollStop: true,
+      //stopOutScreen: true,
+      //dragAndDrop: true,
+      //startShow: true
+    //});
+  //})
   </script>
 
   </body>
