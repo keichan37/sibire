@@ -38,12 +38,12 @@
     label: '',
 		prependTo: '.menu-global_menu-container'
   });
-  $('#marquee').liMarquee({
-    circular:true, 
-		startShow:true,
-    direction: 'left',
-    loop: -1
-  });
+  $(window).on('load',function(){
+    $('#marquee').liMarquee({
+      circular:true, 
+      startShow:true
+    });
+  })
   </script>
 
   </body>
