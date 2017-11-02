@@ -9,6 +9,7 @@ header.offtokyomeetup2017-header .menu-global_menu-container {
 }
 header.offtokyomeetup2017-header ul.global_menu {
   max-width: 756px;
+  max-width: 860px;
   margin: 0px auto;
   padding: 6px;
   text-align: center;
@@ -962,7 +963,7 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
     display: none;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 872px) {
   header.offtokyomeetup2017-header {
     background: none;
     border: none;
@@ -977,7 +978,8 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
   header.offtokyomeetup2017-header:after, header.offtokyomeetup2017-header:before {
     background: none;
   }
-
+}
+@media (max-width: 767px) {
   #template-event .navigation {
     display: none;
   }
