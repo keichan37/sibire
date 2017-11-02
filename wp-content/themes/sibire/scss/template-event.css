@@ -320,7 +320,7 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  height: 70px;
+  height: 75px !important;
   border-bottom: 1px solid #000000;
   position: relative;
 }
