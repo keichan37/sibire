@@ -576,7 +576,7 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
   margin: 40px 0 0 0;
 }
 #template-event .section.content2 .figure-wrap {
-  max-width: 765px;
+  max-width: 510px;
   margin: 0px auto;
   margin-top: 35px;
 }
@@ -1117,7 +1117,7 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
   #template-event .section.municipality ul li {
     width: 29.3%;
     margin: 5% 2% 0 2%;
-    min-height: auto;
+    min-height: 182px;
     height: auto;
   }
   #template-event .section.municipality aside {

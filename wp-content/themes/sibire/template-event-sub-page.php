@@ -116,16 +116,6 @@
             </figure>
           </section>
           <section class="program">
-            <time>16:30～16:50</time>
-            <strong>Round8</strong>
-            <h2>エンジニア“スーパープレゼンテーション”(3)</h2>
-            <h3>「東京を離れた新しい働き方＆働き方UPDATE」</h3>
-            <figure>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/avatar-tanabe.jpg" alt="田邉アキヒロ">
-              <figcaption>田邉昭博/ヤフー株式会社</figcaption>
-            </figure>
-          </section>
-          <section class="program">
             <time>17:00〜18:00</time>
             <strong>Round9</strong>
             <h2>OFF TOKYO ご当地お酒フェス</h2>
