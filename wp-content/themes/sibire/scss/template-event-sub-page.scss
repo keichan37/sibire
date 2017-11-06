@@ -127,6 +127,10 @@
         &.le {
           text-align: left;
         }
+        &.ce {
+          clear: both;
+          margin-top: 10px;
+        }
         &.figure-logo {
           margin: 0 4px 10px 4px;
           img {

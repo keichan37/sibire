@@ -43,12 +43,7 @@
             <time>13:00〜14:00</time>
             <strong>Round2</strong>
             <h2>トークセッション 「地域を変えたイノベーター対談」</h2>
-            <p>Ruby開発者・まつもとゆきひろ氏×面白法人カヤック・柳澤大輔氏が 今回、対談を初めて実現。東京を離れてもイノベーションを起こし続ける 方法を語ります。ファシリテータは、元衆議院議員の宮崎謙介氏。</p>
-            <figure>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/avatar-miyazaki.jpg" alt="宮崎謙介">
-              <figcaption>東京都/元衆議院議員</figcaption>
-            </figure>
-            <div class="clear"></div>
+            <p>Ruby開発者・まつもとゆきひろ氏×面白法人カヤック・柳澤大輔氏が<br />今回、対談を初めて実現。東京を離れてもイノベーションを起こし続ける<br />方法を語ります。ファシリテータは、元衆議院議員の宮崎謙介氏。</p>
             <figure class="ri">
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/avatar-matsumoto.jpg" alt="まつもとゆきひろ">
               <figcaption>まつもとゆきひろ<br />島根県松江市/Ruby開発者</figcaption>
@@ -56,6 +51,10 @@
             <figure class="le">
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/avatar-yanasawa.jpg" alt="柳澤大輔">
               <figcaption>柳澤大輔<br />神奈川県鎌倉市/面白法人カヤック創業者</figcaption>
+            </figure>
+            <figure class="ce">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/avatar-miyazaki.jpg" alt="宮崎謙介">
+              <figcaption>宮崎謙介<br />東京都/元衆議院議員</figcaption>
             </figure>
           </section>
           <section class="program">
