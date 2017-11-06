@@ -7,10 +7,7 @@
           <img class="cover-title" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover.png" alt="<?php the_title(); ?>"/>
         </h1>
         <img class="freeentrance" src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-freeentrance.png" alt="入場無料"/>
-        <div class="button-wrap">
-          <strong class="reservation">要事前予約</strong>
-          <a class="button" href="entry">参加する</a>
-        </div>
+        <?php get_template_part('partials/template-event-button'); ?>
         <?php get_template_part('partials/sns-share'); ?>
         <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/cover-soumusyo.jpg" alt="総務省"/>
       </div>
@@ -239,10 +236,7 @@
         <aside>&#x203B;50音順&nbsp;&nbsp;&nbsp;&#x203B;決定している企業の一部を掲載</aside>
       </div>
       <div class="section participate participate1">
-        <div class="button-wrap">
-          <strong class="reservation">要事前予約</strong>
-          <a class="button" href="entry">参加する</a>
-        </div>
+        <?php get_template_part('partials/template-event-button'); ?>
       </div>
       <div class="section municipality" id="municipality">
         <h2 class="slide-top">IT先進エリア</h2>
@@ -362,10 +356,7 @@
         </div>
       </div>
       <div class="section participate participate2">
-        <div class="button-wrap">
-          <strong class="reservation">要事前予約</strong>
-          <a class="button" href="entry">参加する</a>
-        </div>
+        <?php get_template_part('partials/template-event-button'); ?>
       </div>
       <div class="section cooperate" id="cooperate">
         <h2>協力</h2>
@@ -429,10 +420,7 @@
         </table>
         */ ?>
 
-        <div class="button-wrap">
-          <strong class="reservation">要事前予約</strong>
-          <a class="button" href="entry">参加する</a>
-        </div>
+        <?php get_template_part('partials/template-event-button'); ?>
         <center><a class="" href="mailto:event@sibire.co.jp">イベントに関するお問い合わせはこちら</a></center>
         <footer class="sns-footer">
           <?php get_template_part('partials/sns-share'); ?>
