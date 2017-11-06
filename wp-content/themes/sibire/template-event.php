@@ -52,7 +52,7 @@
           働きたい場所で東京に負けないキャリアを実現する方法を語ってもらいます。<br />
           一般公開できない話もあるため、外部には公開しないセッションとなります。
         </p>
-        <span class="time">13:10～14:00</span>
+        <span class="time">13:00〜14:00</span>
         <figure>
           <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-matsumoto.jpg" alt="まつもとゆきひろ"/>
           <figcaption>
