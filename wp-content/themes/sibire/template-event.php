@@ -114,6 +114,7 @@
               </p>
             </figcaption>
           </figure>
+          <?php /*
           <figure>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/avatar-tanabe.jpg" alt=""/>
             <figcaption>
@@ -128,6 +129,7 @@
               </p>
             </figcaption>
           </figure>
+          */ ?>
         </div>
       </div>
       <div class="section company" id="company">
@@ -248,6 +250,7 @@
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-sapporo.png" alt="札幌市">
             <h3>札幌市</h3>
+            <a href="https://www.70seeds.jp/offtokyo-sapporo-313/" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-sendai.png" alt="仙台市">
@@ -263,10 +266,12 @@
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-wakayama.png" alt="和歌山県">
             <h3>和歌山県</h3>
+            <a href="https://www.70seeds.jp/offtokyo-wakayama-315/" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-shimane.png" alt="島根県">
             <h3>島根県</h3>
+            <a href="https://www.70seeds.jp/offtokyo-shimane-312/" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-tokushima.png" alt="徳島県">
@@ -275,6 +280,7 @@
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-fukuoka.png" alt="福岡市">
             <h3>福岡市</h3>
+            <a href="https://www.70seeds.jp/offtokyo-fukuoka-314/" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-kitakyusyu.png" alt="北九州市">
