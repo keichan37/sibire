@@ -14,10 +14,7 @@
       </article>
       <a class="scroll-up-button icon icon-arrow-up" href="#"></a>
       <div class="section participate participate3">
-        <div class="button-wrap">
-          <strong class="reservation">要事前予約</strong>
-          <a class="button" href="entry">参加する</a>
-        </div>
+        <?php get_template_part('partials/template-event-button'); ?>
         <center><a class="" href="mailto:event@sibire.co.jp">イベントに関するお問い合わせはこちら</a></center>
         <footer class="sns-footer">
           <?php get_template_part('partials/sns-share'); ?>

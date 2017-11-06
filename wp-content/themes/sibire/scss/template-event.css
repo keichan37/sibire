@@ -288,6 +288,7 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
 }
 #template-event #cover .button-wrap {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 #template-event #cover .sns-share {
   margin-top: 10px;
@@ -295,12 +296,19 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
 }
 #template-event .button-wrap {
   position: relative;
+  text-align: center;
+}
+#template-event .button-wrap b {
+  font-weight: 700;
+  display: block;
+  margin: 10px 0 0 0;
+  font-size: 12px;
 }
 #template-event strong.reservation {
   text-align: center;
   background-color: #005ead;
   display: block;
-  width: 88px;
+  width: 105px;
   height: 18px;
   color: #ffffff;
   font-size: 14px;
@@ -931,7 +939,6 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
 }
 #template-event center {
   text-align: center;
-  padding-top: 10px;
 }
 #template-event center a {
   font-size: 12px;

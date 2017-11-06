@@ -10,8 +10,12 @@
       <?php if(strstr($url,'program')): ?>
         <div class="program-wrap">
           <section class="program">
+            <time>11:30</time>
+            <h2>受付開始</h2>
+          </section>
+          <section class="program">
             <time>12:00</time>
-            <h2>会場OPEN</h2>
+            <h2>イベントSTART！</h2>
           </section>
           <section class="program">
             <time>12:30〜13:00</time>
@@ -254,10 +258,7 @@
       <div class="section participate participate3">
         <?php $url = $_SERVER['REQUEST_URI']; ?>
         <?php if(strstr($url,'program')): ?>
-          <div class="button-wrap">
-            <strong class="reservation">要事前予約</strong>
-            <a class="button" href="entry">参加する</a>
-          </div>
+          <?php get_template_part('partials/template-event-button'); ?>
         <?php else: ?>
         <?php endif; ?>
         <center><a class="" href="mailto:event@sibire.co.jp">イベントに関するお問い合わせはこちら</a></center>
