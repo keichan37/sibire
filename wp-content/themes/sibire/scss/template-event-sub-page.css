@@ -145,6 +145,10 @@
 .template-event-sub-page section.program figure.le {
   text-align: left;
 }
+.template-event-sub-page section.program figure.ce {
+  clear: both;
+  margin-top: 10px;
+}
 .template-event-sub-page section.program figure.figure-logo {
   margin: 0 4px 10px 4px;
 }
