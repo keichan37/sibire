@@ -72,17 +72,15 @@
           </figcaption>
         </figure>
 
-        <?php /*
         <figure>
           <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/avatar-miyazaki.jpg" alt="宮崎謙介"/>
           <figcaption>
-            <h3>宮崎謙介<span>氏</span></h3>
+            <h3><span class="facilitator">ファシリテーター</span>宮崎謙介氏<span>氏</span></h3>
             <p>
               東京都新宿区生まれ。前衆議院議員。26歳で起業し日々奮闘する中で、社会の大きな問題に行きつき国政選挙に出馬し当選。2度の選挙を勝ち抜き、法案を作るなどし、志を実現する。大きな挫折の後に二度目の起業に踏み出す。現在は地方にある課題のひとつ、プログラミング教育を促進する事業を行う。
             </p>
           </figcaption>
         </figure>
-        */ ?>
         <p class="attention">
           <strong>メディア完全非公開!</strong>
           当セッションは動画配信等、メディア公開を行っていません。<br />地域を変えたふたりの対談を聞かれたい方は事前参加をお願いします。
@@ -244,6 +242,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-wiredbeans.png" alt="株式会社ワイヤードビーンズ">
             <span>仙台</span>
             <h3>株式会社ワイヤードビーンズ</h3>
+            <a href="https://www.pr-table.com/wiredbeans/stories/797" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <?php /*
           <li>
