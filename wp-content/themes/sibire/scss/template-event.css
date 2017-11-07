@@ -525,6 +525,7 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
   padding: 0;
   border-bottom: 1px dotted #000000;
   font-size: 22px;
+  line-height: 1.4;
   width: 70%;
 }
 #template-event .section.content1 figure figcaption h3 span {
@@ -1052,6 +1053,9 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
   #template-event .section.content1 figure figcaption h3 {
     text-align: center;
     margin: 0px auto;
+  }
+  #template-event .section.content1 figure figcaption h3 span.facilitator {
+    display: block;
   }
   #template-event .section.content2 {
     padding-left: 10px;

@@ -427,6 +427,7 @@ header.offtokyomeetup2017-header {
             padding: 0;
             border-bottom: 1px dotted #000000;
             font-size: 22px;
+            line-height: 1.4;
             width: 70%;
             span {
               font-size: 14px;
@@ -930,6 +931,9 @@ header.offtokyomeetup2017-header {
             h3 {
               text-align: center;
               margin: 0px auto;
+              span {
+                &.facilitator { display: block; }
+              }
             }
           }
         }
