@@ -72,6 +72,7 @@
           </figcaption>
         </figure>
 
+        <?php /*
         <figure>
           <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/avatar-miyazaki.jpg" alt="宮崎謙介"/>
           <figcaption>
@@ -81,6 +82,7 @@
             </p>
           </figcaption>
         </figure>
+        */ ?>
         <p class="attention">
           <strong>メディア完全非公開!</strong>
           当セッションは動画配信等、メディア公開を行っていません。<br />地域を変えたふたりの対談を聞かれたい方は事前参加をお願いします。
