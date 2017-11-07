@@ -96,10 +96,11 @@
   padding: 0 10px;
 }
 .template-event-sub-page section.program h4 {
+  clear: both;
   font-size: 14px;
   line-height: 1.4;
-  margin: 20px 0 12px 0;
-  padding: 0 10px;
+  margin: 0 0 12px 0;
+  padding: 20px 10px 0 10px;
   color: #036eb8;
 }
 .template-event-sub-page section.program p {
@@ -187,6 +188,12 @@
   font-size: 0;
   clear: both;
   visibility: hidden;
+}
+.template-event-sub-page section.program p.small {
+  clear: both;
+  font-size: 11px;
+  margin: 0;
+  padding: 5px 0 0 0;
 }
 .template-event-sub-page section.sub-stage {
   padding-top: 40px;

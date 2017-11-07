@@ -128,10 +128,15 @@
             <strong>Round9</strong>
             <h2>OFF TOKYO ご当地お酒フェス</h2>
             <p>参加者も企業もエリア担当者も、ご当地のお酒を楽しみながら会場全体で乾杯！ <br />ご当地のお酒に投票していく「OFF TOKYO 酒類コンクール2017」も開催 </p>
-            <figure>
+            <figure class="ri">
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/avatar-hayashi.jpg" alt="林生馬">
-              <figcaption>林生馬/日本テキーラ協会会長 </figcaption>
+              <figcaption>林生馬/日本テキーラ協会会長</figcaption>
             </figure>
+            <figure class="le">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/avatar-tanabe2.jpg" alt="田邉公一">
+              <figcaption>田邉公一/日本ソムリエ協会認定ソムリエ</figcaption>
+            </figure>
+            <p class="small">※田邊さんはコンクールの審査員として参加、会場への出場はありません。</p>
             <h4>ご当地お酒ラインナップ </h4>
             <figure class="figure-sake">
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-01.jpg">
