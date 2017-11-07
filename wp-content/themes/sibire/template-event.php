@@ -151,16 +151,19 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-kayak.png" alt="面白法人カヤック">
             <span>鎌倉</span>
             <h3>面白法人カヤック</h3>
+            <a href="https://www.pr-table.com/kayac/stories/795" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-gmocloud.png" alt="GMOクラウド株式会社">
             <span>北九州</span>
             <h3>GMOクラウド株式会社</h3>
+            <a href="https://www.pr-table.com/gmocloud/stories/800" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-gmopepabo.png" alt="GMOペパボ株式会社">
             <span>福岡</span>
             <h3>GMOペパボ株式会社</h3>
+            <a href="https://www.pr-table.com/pepabo/stories/787" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-salesforce.png" alt="株式会社セールスフォース・ドットコム">
@@ -172,6 +175,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-dandoliworks.png" alt="株式会社ダンドリワークス">
             <span>日南</span>
             <h3>株式会社ダンドリワークス</h3>
+            <a href="https://www.pr-table.com/dandoliworks/stories/786" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-chatwork.png" alt="ChatWork株式会社">
@@ -201,12 +205,14 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-freee.png" alt="freee株式会社">
             <span>大阪</span><b class="lt">LT</b>
             <h3>freee株式会社</h3>
+            <a href="https://www.pr-table.com/freee/stories/794" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-membersedge.png" alt="株式会社メンバーズエッジ">
             <span>仙台</span>
             <span>北九州</span><b class="lt">LT</b>
             <h3>株式会社メンバーズエッジ</h3>
+            <a href="https://www.pr-table.com/membersedge/stories/785" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-monstarlab.png" alt="株式会社モンスター・ラボ">
