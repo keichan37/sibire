@@ -147,8 +147,8 @@
               <figcaption>宮城県/伯楽星</figcaption>
             </figure>
             <figure class="figure-sake">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-03.jpg">
-              <figcaption>宮城県/綿谷</figcaption>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-20.jpg">
+              <figcaption>宮城県/愛宕の松</figcaption>
             </figure>
             <figure class="figure-sake">
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-04.jpg">
@@ -210,8 +210,8 @@
               <figcaption>長崎県/五島麦</figcaption>
             </figure>
             <figure class="figure-sake">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-16.jpg">
-              <figcaption>長崎県/マスカット・ベリー</figcaption>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-21.jpg">
+              <figcaption>長崎県/ナイアガラ</figcaption>
             </figure>
             <figure class="figure-sake">
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-17.jpg">
