@@ -125,7 +125,7 @@
           </section>
           <section class="program">
             <time>17:00〜18:00</time>
-            <strong>Round9</strong>
+            <strong>Round8</strong>
             <h2>OFF TOKYO ご当地お酒フェス</h2>
             <p>参加者も企業もエリア担当者も、ご当地のお酒を楽しみながら会場全体で乾杯！ <br />ご当地のお酒に投票していく「OFF TOKYO 酒類コンクール2017」も開催 </p>
             <figure class="ri">
