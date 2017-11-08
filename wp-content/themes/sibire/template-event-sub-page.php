@@ -217,6 +217,18 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-17.jpg">
               <figcaption>長崎県/ナイアガラ スパークリング</figcaption>
             </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-22.jpg">
+              <figcaption>プラビダ</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-23.jpg">
+              <figcaption>エレンシアデプラタ</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-24.jpg">
+              <figcaption>カリフォルニアフルーツワイン</figcaption>
+            </figure>
           </section>
         </div>
         <section class="sub-stage">
