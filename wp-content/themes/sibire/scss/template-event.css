@@ -672,6 +672,11 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
   margin: 20px 0 0 0;
   line-height: 1.7;
 }
+#template-event .section.company p.small {
+  font-size: 11px;
+  line-height: 1.3;
+  margin: 0;
+}
 #template-event .section.company ul {
   max-width: 720px;
   margin: 0px auto;
