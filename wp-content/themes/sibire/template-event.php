@@ -152,7 +152,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-anysense.png" alt="株式会社エニセンス">
             <span>福岡</span>
             <h3>株式会社エニセンス</h3>
-            <?php /* <a href="javascript:void(0);" target="_blank">Interview<b class="icon icon-open"></b></a> */ ?>
+            <a href="https://www.pr-table.com/anysense/stories/790" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-opt.png" alt="株式会社オプト">
