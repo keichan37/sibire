@@ -139,6 +139,22 @@
             <p class="small">※田邊さんはコンクールの審査員として参加、会場への出場はありません。</p>
             <h4>ご当地お酒ラインナップ </h4>
             <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-26.jpg">
+              <figcaption>北海道/国稀</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-25.jpg">
+              <figcaption>北海道/ナイアガラドライ</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-27.jpg">
+              <figcaption>青森/KJ 松緑 六根 翡翠</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-28.jpg">
+              <figcaption>青森/松緑 六根 タイガーアイ</figcaption>
+            </figure>
+            <figure class="figure-sake">
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-01.jpg">
               <figcaption>宮城県/勝山</figcaption>
             </figure>
@@ -162,32 +178,21 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-06.jpg">
               <figcaption>和歌山県/紀土 純米大吟醸</figcaption>
             </figure>
-
-            <?php /*
             <figure class="figure-sake">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-07.jpg">
-              <figcaption>島根県/月山</figcaption>
-            </figure>
-            <figure class="figure-sake">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-08.jpg">
-              <figcaption>島根県/七冠馬</figcaption>
-            </figure>
-            <figure class="figure-sake">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-09.jpg">
-              <figcaption>島根県/十旭日</figcaption>
-            </figure>
-            */ ?>
-            <figure class="figure-sake">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-18.jpg">
-              <figcaption>福岡県/天心 純米吟醸酒</figcaption>
-            </figure>
-            <figure class="figure-sake">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-19.jpg">
-              <figcaption>福岡県/皿倉 純米吟醸</figcaption>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-29.jpg">
+              <figcaption>徳島県/御殿桜</figcaption>
             </figure>
             <figure class="figure-sake">
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-10.jpg">
               <figcaption>福岡県/百年蔵</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-19.jpg">
+              <figcaption>福岡県/天心 純米吟醸酒</figcaption>
+            </figure>
+            <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-18.jpg">
+              <figcaption>福岡県/皿倉 純米吟醸</figcaption>
             </figure>
             <figure class="figure-sake">
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-11.jpg">
@@ -217,7 +222,6 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-17.jpg">
               <figcaption>長崎県/ナイアガラ スパークリング</figcaption>
             </figure>
-            <?php /*
             <figure class="figure-sake">
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-22.jpg">
               <figcaption>プラビダ</figcaption>
@@ -230,7 +234,6 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-24.jpg">
               <figcaption>カリフォルニアフルーツワイン</figcaption>
             </figure>
-            */ ?>
           </section>
         </div>
         <section class="sub-stage">
