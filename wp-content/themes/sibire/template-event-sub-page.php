@@ -155,6 +155,10 @@
               <figcaption>青森/松緑 六根 タイガーアイ</figcaption>
             </figure>
             <figure class="figure-sake">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-30.jpg">
+              <figcaption>青森/六根</figcaption>
+            </figure>
+            <figure class="figure-sake">
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/sub-page/sake-01.jpg">
               <figcaption>宮城県/勝山</figcaption>
             </figure>
