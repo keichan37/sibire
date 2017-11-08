@@ -290,6 +290,7 @@
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-tokushima.png" alt="徳島県">
             <h3>徳島県</h3>
+            <a href="https://www.70seeds.jp/offtokyo-tokushima-319/" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-fukuoka.png" alt="福岡市">
