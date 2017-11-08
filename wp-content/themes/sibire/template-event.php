@@ -246,11 +246,15 @@
             <h3>株式会社ワイヤードビーンズ</h3>
             <a href="https://www.pr-table.com/wiredbeans/stories/797" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
-          <?php /*
           <li>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-comingsoon.png" alt="Coming Soon…">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-monobit.png" alt="株式会社モノビット">
+            <span>神戸</span>
+            <h3>モノビット</h3>
+            <p class="small">※OFF TOKYO応援企業。当日のブース出展はありません</p>
+            <?php /*
+            <a href="javascript:void(0);" target="_blank">Interview<b class="icon icon-open"></b></a>
+            */ ?>
           </li>
-          */ ?>
 
         </ul>
         <aside>&#x203B;50音順&nbsp;&nbsp;&nbsp;&#x203B;決定している企業の一部を掲載</aside>
