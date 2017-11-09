@@ -231,6 +231,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-monstarlab.png" alt="株式会社モンスター・ラボ">
             <span>松江</span><b class="lt">LT</b>
             <h3>株式会社モンスター・ラボ</h3>
+            <a href="https://www.pr-table.com/monstar-lab/stories/803" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-yahoo.png" alt="ヤフー株式会社">
