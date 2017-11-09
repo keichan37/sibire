@@ -198,6 +198,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-changetheworld.png" alt="株式会社チェンジ・ザ・ワールド">
             <span>酒田</span><b class="lt">LT</b>
             <h3>株式会社チェンジ・ザ・ワールド</h3>
+            <a href="https://www.pr-table.com/changetheworld/stories/801" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-nacl.png" alt="ネットワーク応用通信研究所">
@@ -237,6 +238,7 @@
             <span>博多</span>
             <span>北九州</span>
             <h3>ヤフー株式会社</h3>
+            <a href="https://www.pr-table.com/yahoo/stories/804" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-wiredbeans.png" alt="株式会社ワイヤードビーンズ">
