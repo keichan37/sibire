@@ -156,6 +156,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-opt.png" alt="株式会社オプト">
             <span>仙台</span><b class="lt">LT</b>
             <h3>株式会社オプト</h3>
+            <a href="https://www.pr-table.com/opt/stories/805" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo-kayak.png" alt="面白法人カヤック">
