@@ -275,10 +275,12 @@
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-sendai.png" alt="仙台市">
             <h3>仙台市</h3>
+            <a href="https://www.70seeds.jp/offtokyo-sendai-316/" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-yokohama.png" alt="横浜市">
             <h3>横浜市</h3>
+            <a href="https://www.70seeds.jp/offtokyo-yokohama-321/" target="_blank">Interview<b class="icon icon-open"></b></a>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-kobe.png" alt="神戸市">
             <h3>神戸市</h3>
@@ -306,6 +308,7 @@
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-kitakyusyu.png" alt="北九州市">
             <h3>北九州市</h3>
+            <a href="https://www.70seeds.jp/offtokyo-kitakyusyu-318/" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-miyazaki.png" alt="宮崎県">
