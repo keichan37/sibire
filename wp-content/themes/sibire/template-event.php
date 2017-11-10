@@ -253,9 +253,7 @@
             <span>神戸</span>
             <h3>モノビット</h3>
             <p class="small">※OFF TOKYO応援企業。当日のブース出展はありません</p>
-            <?php /*
-            <a href="javascript:void(0);" target="_blank">Interview<b class="icon icon-open"></b></a>
-            */ ?>
+            <a href="https://www.pr-table.com/monobit/stories/793" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
 
         </ul>
