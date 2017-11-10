@@ -282,6 +282,7 @@
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-kobe.png" alt="神戸市">
             <h3>神戸市</h3>
+            <a href="https://www.70seeds.jp/offtokyo-kobe-322/" target="_blank">Interview<b class="icon icon-open"></b></a>
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-event/emblem-wakayama.png" alt="和歌山県">
