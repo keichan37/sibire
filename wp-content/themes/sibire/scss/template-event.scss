@@ -87,6 +87,11 @@ header.offtokyomeetup2017-header {
       background: transparent url("images/template-event/button.png") center center no-repeat;
       @include transition;
       &:hover { color: #54C3F1; }
+      &.button-end {
+        background: none;
+        font-size: 17px;
+        &:hover { color: #000000; }
+      }
     }
     &.scroll-up-button {
       background-color: #32b3ed;

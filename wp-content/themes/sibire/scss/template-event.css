@@ -117,6 +117,13 @@ header.offtokyomeetup2017-header .slicknav_nav li.current-menu-item a {
 #template-event a.button:hover {
   color: #54C3F1;
 }
+#template-event a.button.button-end {
+  background: none;
+  font-size: 17px;
+}
+#template-event a.button.button-end:hover {
+  color: #000000;
+}
 #template-event a.scroll-up-button {
   background-color: #32b3ed;
   color: #ffffff;
