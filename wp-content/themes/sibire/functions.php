@@ -16,7 +16,7 @@ remove_action('wp_head','wp_generator');
 remove_action('wp_head', 'wp_shortlink_wp_head');
 /* prev next 削除 */
 remove_action('wp_head','adjacent_posts_rel_link_wp_head',10);
-
+add_filter( 'wp_calculate_image_srcset', '__return_false' );
 // WPのバージョン情報削除
 function remove_wp_ver( $src ) {
 	if (strpos( $src, 'ver=' . get_bloginfo( 'version' ) )) {
