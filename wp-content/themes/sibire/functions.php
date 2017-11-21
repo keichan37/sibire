@@ -174,16 +174,6 @@ return $initArray;
 }
 add_filter( 'tiny_mce_before_init', 'custom_editor_settings' );
 
-// メディアのURL相対パスに
-function delete_host_from_attachment_url( $url ) {
-    $regex = '/^http(s)?:\/\/[^\/\s]+(.*)$/';
-    if ( preg_match( $regex, $url, $m ) ) {
-        $url = $m[2];
-    }
-    return $url;
-}
-add_filter( 'wp_get_attachment_url', 'delete_host_from_attachment_url' );
-
 /* ギャラリーの自動生成CSSを停止 */
 add_filter( 'use_default_gallery_style', '__return_false' );
 
