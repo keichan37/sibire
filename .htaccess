@@ -14,19 +14,9 @@
   RewriteEngine On
   RewriteBase /
 
-  # SSL
-  RewriteCond %{REQUEST_URI} ^/registration [OR]
-  RewriteCond %{REQUEST_URI} ^/business [OR]
-  RewriteCond %{REQUEST_URI} ^/offtokyomeetup2017/entry
-  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
-  RewriteRule ^/?(.*) https://%{HTTP_HOST}/$1 [R,L]
-
-  #非SSL
-  #RewriteCond %{REQUEST_URI} !(/registration)
-  #RewriteCond %{REQUEST_URI} !(/business)
-  #RewriteCond %{HTTP:X-Forwarded-Port} !^80$
-  #RewriteCond %{HTTP:X-Forwarded-Proto} =https
-  #RewriteRule ^/?(.*) http://%{HTTP_HOST}/$1 [R,L]
+  ##Force SSL 
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
   RewriteRule ^index\.php$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
@@ -34,5 +24,5 @@
   RewriteRule . /index.php [L]
   Options +FollowSymLinks
   RewriteCond %{HTTP_HOST} ^sibire\.co\.jp$
-  RewriteRule ^(.*)$ http://www.sibire.co.jp/$1 [R=301,L]
+  RewriteRule ^(.*)$ https://www.sibire.co.jp/$1 [R=301,L]
 </IfModule>
