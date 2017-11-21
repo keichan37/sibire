@@ -174,7 +174,7 @@ return $initArray;
 }
 add_filter( 'tiny_mce_before_init', 'custom_editor_settings' );
 
-/* 画像URLのSSL化 */
+/* 画像を挿入機能のsrcをSSLに置換 */
 function fix_ssl_attachment_url($url) {
   if(is_ssl()){
       $url = preg_replace("/^http:/", "https:", $url);
