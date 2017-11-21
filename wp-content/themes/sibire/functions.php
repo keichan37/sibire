@@ -174,6 +174,15 @@ return $initArray;
 }
 add_filter( 'tiny_mce_before_init', 'custom_editor_settings' );
 
+/* 画像URLのSSL化 */
+function fix_ssl_attachment_url($url) {
+  if(is_ssl()){
+      $url = preg_replace("/^http:/", "https:", $url);
+  }
+  return $url;
+}
+add_filter("wp_get_attachment_url", "fix_ssl_attachment_url");
+
 /* ギャラリーの自動生成CSSを停止 */
 add_filter( 'use_default_gallery_style', '__return_false' );
 
