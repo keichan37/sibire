@@ -19,7 +19,7 @@
       <meta name="twitter:title" content="<?php bloginfo('name'); ?>">
       <meta content="<?php bloginfo('name'); ?>" property="og:title">
       <meta content="website" property="og:type">
-      <meta content="<?php echo esc_url( home_url( '/' ) ); ?>" property="og:url">
+      <meta content="<?php echo home_url(null, 'http'); ?>" property="og:url">
       <meta name="twitter:description" content="<?php bloginfo('description'); ?>">
       <meta name="description" content="<?php bloginfo('description'); ?>" />
       <meta property="og:description" content="<?php bloginfo('description'); ?>" />
@@ -28,11 +28,11 @@
       <meta name="twitter:title" content="<?php wp_title( '', true, '' ); ?>">
       <meta content="<?php wp_title( '', true, '' ); ?>" property="og:title">
       <meta content="article" property="og:type" />
-      <?php  $postname = get_field('postname'); if( !empty($postname) )://postnameがある場合はog:urlをpostnameにする ?>
-        <meta content="<?php echo esc_url( home_url( '/' ) ); ?><?php echo esc_html(get_post_type_object($post->post_type)->name); ?>/<? $txt = get_field('postname'); if($txt){ ?><? echo $txt; ?><? } ?>" property="og:url">
-      <?php else: ?>
-        <meta content="<?php the_permalink(); ?>" property="og:url">
-      <?php endif; ?>
+      <?php
+        $permalink = get_permalink();
+        $httplink = str_replace( 'https://', 'http://', $permalink );
+      ?>
+      <meta content="<?php echo $httplink ;?>" property="og:url">
       <meta name='twitter:description' content='<?php while(have_posts()): the_post();  echo get_the_excerpt('');endwhile;?>' />
       <meta name='description' content='<?php while(have_posts()): the_post();  echo get_the_excerpt('');endwhile;?>' />
       <meta property='og:description' content='<?php while(have_posts()): the_post();  echo get_the_excerpt('');endwhile;?>'>
