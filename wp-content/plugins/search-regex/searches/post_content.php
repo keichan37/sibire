@@ -4,7 +4,7 @@ class SearchPostContent extends Search {
 	function find( $pattern, $limit, $offset, $orderby ) {
 		global $wpdb;
 
-		$sql = "SELECT ID, post_content, post_title FROM {$wpdb->posts} WHERE post_status != 'inherit' AND post_type IN ('post','page') ORDER BY ID ".$orderby;
+		$sql = "SELECT ID, post_content, post_title FROM {$wpdb->posts} WHERE post_status != 'inherit' AND post_type IN ('post','page','interview','niche','column','event','blog') ORDER BY ID ".$orderby;
 
 		if ( $limit > 0 )
 			$sql .= $wpdb->prepare( " LIMIT %d,%d", $offset, $limit );
