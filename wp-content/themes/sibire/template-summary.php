@@ -7,9 +7,7 @@
           <h1>
             <?php the_title(); ?>
           </h1>
-          <p>
-            <?php the_content(); ?>
-          </p>
+          <?php the_content(); ?>
           <?php get_template_part('partials/sns-share'); ?>
         </div>
       </div>
@@ -23,6 +21,7 @@
              'post_status' => 'publish',
              'has_password' => false,
              'tag' => 'offtokyo',
+             'orderby' => 'rand',
              'posts_per_page' => -1
             );
           ?>
@@ -44,6 +43,7 @@
              'post_status' => 'publish',
              'has_password' => false,
              'tag' => 'offtokyo',
+             'orderby' => 'rand',
              'posts_per_page' => -1
             );
           ?>
