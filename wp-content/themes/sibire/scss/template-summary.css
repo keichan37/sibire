@@ -85,6 +85,10 @@
   visibility: hidden;
 }
 #summary .summary-grid-wrap .summary-grid {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
   display: block;
   width: 227px;
   height: auto;
@@ -118,6 +122,9 @@
   font-size: 13px;
   line-height: 1.7;
   margin: 0;
+}
+#summary .summary-grid-wrap .summary-grid:hover {
+  color: #e61673;
 }
 
 /*# sourceMappingURL=template-summary.css.map */
