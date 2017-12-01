@@ -62,6 +62,18 @@
 }
 #summary .summary-widget a img {
   vertical-align: bottom;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+#summary .summary-widget a:hover {
+  border-color: #ec3989;
+}
+#summary .summary-widget a:hover img {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-filter: "alpha(opacity=$ratioms)";
 }
 #summary h2.summary-h2 {
   text-align: center;
@@ -102,6 +114,10 @@
   margin: 0;
 }
 #summary .summary-grid-wrap .summary-grid figure img {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
   width: 100%;
   height: auto;
   margin-bottom: 8px;

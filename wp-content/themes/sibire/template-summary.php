@@ -21,15 +21,33 @@
              'post_status' => 'publish',
              'has_password' => false,
              'tag' => 'offtokyo',
-             'orderby' => 'rand',
-             'posts_per_page' => -1
+             'posts_per_page' => 1
             );
           ?>
           <?php
             $postslist = get_posts($args);
             foreach ($postslist as $post) : setup_postdata($post);
           ?>
-          <?php get_template_part('partials/summary-grid'); ?>
+            <?php get_template_part('partials/summary-grid-first'); ?>
+          <?php 
+            endforeach; 
+            wp_reset_postdata();
+          ?>
+          <?php
+            $args = array( 
+             'post_type' => 'interview',
+             'post_status' => 'publish',
+             'has_password' => false,
+             'tag' => 'offtokyo',
+             'offset' => '1',
+             'posts_per_page' => 50
+            );
+          ?>
+          <?php
+            $postslist = get_posts($args);
+            foreach ($postslist as $post) : setup_postdata($post);
+          ?>
+            <?php get_template_part('partials/summary-grid'); ?>
           <?php 
             endforeach; 
             wp_reset_postdata();
@@ -43,8 +61,27 @@
              'post_status' => 'publish',
              'has_password' => false,
              'tag' => 'offtokyo',
-             'orderby' => 'rand',
-             'posts_per_page' => -1
+             'posts_per_page' => 1
+            );
+          ?>
+
+          <?php
+            $postslist = get_posts($args);
+            foreach ($postslist as $post) : setup_postdata($post);
+          ?>
+          <?php get_template_part('partials/summary-grid'); ?>
+          <?php 
+            endforeach; 
+            wp_reset_postdata();
+          ?>
+          <?php
+            $args = array( 
+             'post_type' => 'niche',
+             'post_status' => 'publish',
+             'has_password' => false,
+             'tag' => 'offtokyo',
+             'offset' => '1',
+             'posts_per_page' => 50
             );
           ?>
 
