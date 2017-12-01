@@ -98,7 +98,7 @@
       text-decoration: none;
       color: $black;
       margin: 15px $margin;
-      overflow: hidden;
+      background: transparent url("images/template-summary/bottom.png") bottom left repeat-x;
       figure {
         margin: 0;
         text-align: center;
@@ -124,8 +124,6 @@
           display: -webkit-box;
           -webkit-box-orient: vertical;
           -webkit-line-clamp: 3;
-          background: transparent url("images/template-summary/h3.png") bottom left repeat-x;
-          padding-bottom: 10px;
         }
         h4 {
           @include transition;
