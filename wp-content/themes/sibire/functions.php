@@ -215,12 +215,6 @@ function fb_search_filter( $query ) {
 }
 add_filter( 'pre_get_posts', 'SearchFilter' );
 
-/* ループ内の最初の投稿を判定 */
-function isFirst(){
-  global $wp_query;
-  return ($wp_query->current_post === 0);
-}
-
 /* Google Map API */
 function my_acf_google_map_api( $api ){
 	$api['key'] = 'AIzaSyAC4maiLTsNgl8S0ueBDQEfaDjCJoxUEDc';

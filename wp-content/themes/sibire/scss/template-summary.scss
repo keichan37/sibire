@@ -47,12 +47,20 @@
     text-align: center;
     margin-bottom: 50px;
     a {
+      @include transition;
       border: 5px solid $pink;
       display: inline-block;
       max-width: 347px;
       height: auto;
       img {
         vertical-align: bottom;
+        @include transition;
+      }
+      &:hover {
+        border-color: lighten($pink,8%);
+        img {
+          @include opacity;
+        }
       }
     }
   }
@@ -87,6 +95,7 @@
       figure {
         margin: 0;
         img {
+          @include transition;
           width: 100%;
           height: auto;
           margin-bottom: 8px;
