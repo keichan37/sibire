@@ -1,20 +1,22 @@
 <?php /* Template Name: OFF TOKYO */ ?>
 
   <?php get_header(); ?>
-    <div id="common">
-      <div class="container">
-        <h1>
-          <?php the_title(); ?>
-        </h1>
-        <?php get_template_part('partials/sns-share'); ?>
-        <p>
-          <?php the_content(); ?>
-        </p>
+    <div id="summary">
+      <div class="summary-cover">
+        <div class="container">
+          <h1>
+            <?php the_title(); ?>
+          </h1>
+          <p>
+            <?php the_content(); ?>
+          </p>
+          <?php get_template_part('partials/sns-share'); ?>
+        </div>
       </div>
       <div class="container">
-        <?php dynamic_sidebar('event-report'); ?>
-        <h2>OFF TOKYO Engineer Story</h2>
-        <div class="common-grid-wrap">
+        <div class="summary-widget"><?php dynamic_sidebar('event-report'); ?></div>
+        <h2 class="summary-h2">OFF TOKYO Engineer Story</h2>
+        <div class="summary-grid-wrap">
           <?php
             $args = array( 
              'post_type' => 'interview',
@@ -34,8 +36,8 @@
             wp_reset_postdata();
           ?>
         </div>
-        <h2>OFF TOKYO IT先進エリア</h2>
-        <div class="common-grid-wrap">
+        <h2 class="summary-h2">OFF TOKYO IT先進エリア</h2>
+        <div class="sumaary-grid-wrap">
           <?php
             $args = array( 
              'post_type' => 'niche',
