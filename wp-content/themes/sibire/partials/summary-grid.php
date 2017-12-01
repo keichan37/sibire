@@ -4,7 +4,7 @@
 ?>
 <a href=<?php echo get_permalink(); ?> class="summary-grid <?php echo esc_html(get_post_type_object($post->post_type)->name); ?>">
   <?php if (has_post_thumbnail()): ?>
-    <img src="url(<?php echo $thumbnail_url[0]; ?>">
+    <img src="<?php echo $thumbnail_url[0]; ?>">
   <?php endif; ?>
   <h3><?php the_title(); ?></h3>
   <div class="summary-grid-text-wrap">
