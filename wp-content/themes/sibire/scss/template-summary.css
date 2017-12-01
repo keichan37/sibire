@@ -111,19 +111,19 @@
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
   display: block;
-  width: 229px;
+  width: 235px;
   height: auto;
   min-height: 357px;
   float: left;
   text-decoration: none;
   color: #231815;
-  margin: 15px 23px;
-  padding-bottom: 20px;
+  margin: 15px 20px;
   overflow: hidden;
 }
 #summary .summary-grid-wrap .summary-grid figure {
   margin: 0;
   text-align: center;
+  background-color: #e61673;
 }
 #summary .summary-grid-wrap .summary-grid figure img {
   -webkit-transition: 0.3s;
@@ -132,7 +132,11 @@
   transition: 0.3s;
   height: 170px;
   width: auto;
-  margin-bottom: 8px;
+  vertical-align: bottom;
+}
+#summary .summary-grid-wrap .summary-grid figure figcaption {
+  padding: 8px 0 20px 0;
+  background-color: #ffffff;
 }
 #summary .summary-grid-wrap .summary-grid figure h3 {
   text-align: left;
@@ -161,7 +165,7 @@
   -webkit-line-clamp: 5;
 }
 #summary .summary-grid-wrap .summary-grid.summary-grid-first {
-  width: 504px;
+  width: 510px;
 }
 #summary .summary-grid-wrap .summary-grid.summary-grid-first figure img {
   height: 340px;
