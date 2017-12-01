@@ -111,6 +111,9 @@
       }
       &:hover {
         color: $pink;
+        img {
+          @include opacity;
+        }
       }
     }
   }
