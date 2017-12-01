@@ -126,5 +126,10 @@
 #summary .summary-grid-wrap .summary-grid:hover {
   color: #e61673;
 }
+#summary .summary-grid-wrap .summary-grid:hover img {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-filter: "alpha(opacity=$ratioms)";
+}
 
 /*# sourceMappingURL=template-summary.css.map */
