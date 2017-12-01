@@ -153,7 +153,7 @@
 #summary .summary-grid-wrap .summary-grid figure h4 {
   text-align: left;
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
-  color: #555555;
+  color: #888888;
   font-size: 13px;
   line-height: 1.5;
   margin: 0 0 15px 0;
@@ -177,6 +177,9 @@
   height: 340px;
 }
 #summary .summary-grid-wrap .summary-grid:hover {
+  color: #e61673;
+}
+#summary .summary-grid-wrap .summary-grid:hover h4 {
   color: #e61673;
 }
 #summary .summary-grid-wrap .summary-grid:hover img {
