@@ -113,7 +113,7 @@
   display: block;
   width: 235px;
   height: auto;
-  min-height: 357px;
+  min-height: 325px;
   float: left;
   text-decoration: none;
   color: #231815;
@@ -144,6 +144,11 @@
   font-size: 19px;
   line-height: 1.4;
   margin: 0 0 15px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 #summary .summary-grid-wrap .summary-grid figure h4 {
   text-align: left;
