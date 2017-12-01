@@ -37,7 +37,7 @@
           ?>
         </div>
         <h2 class="summary-h2">OFF TOKYO IT先進エリア</h2>
-        <div class="sumaary-grid-wrap">
+        <div class="summary-grid-wrap">
           <?php
             $args = array( 
              'post_type' => 'niche',
