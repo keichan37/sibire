@@ -83,15 +83,17 @@
       @include clearfix;
     }
     .summary-grid {
+      $width: 227px;
+      $margin: 25px;
       @include transition;
       @include border-box;
       display: block;
-      width: 227px;
+      width: $width;
       height: auto;
       float: left;
       text-decoration: none;
       color: $black;
-      margin: 15px 25px;
+      margin: 15px $margin;
       padding-bottom: 20px;
       figure {
         margin: 0;
@@ -120,7 +122,7 @@
         }
       }
       &.summary-grid-first {
-        width: 330px;
+        width: ($width * 2) + ($margin * 2);
       }
       &:hover {
         color: $pink;
