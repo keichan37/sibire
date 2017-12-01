@@ -113,6 +113,7 @@
   display: block;
   width: 229px;
   height: auto;
+  min-height: 357px;
   float: left;
   text-decoration: none;
   color: #231815;
