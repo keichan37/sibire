@@ -215,6 +215,19 @@ function fb_search_filter( $query ) {
 }
 add_filter( 'pre_get_posts', 'SearchFilter' );
 
+
+/* 概要（抜粋）の文字数調整 */
+function my_excerpt_length($length) {
+	return 200;
+}
+add_filter('excerpt_length', 'my_excerpt_length');
+
+/* 概要（抜粋）の省略文字 */
+function my_excerpt_more($more) {
+  return '';
+}
+add_filter('excerpt_more', 'my_excerpt_more');
+
 /* Google Map API */
 function my_acf_google_map_api( $api ){
 	$api['key'] = 'AIzaSyAC4maiLTsNgl8S0ueBDQEfaDjCJoxUEDc';
