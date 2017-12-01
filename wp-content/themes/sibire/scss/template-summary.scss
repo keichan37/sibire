@@ -74,6 +74,7 @@
       @include clearfix;
     }
     .summary-grid {
+      @include transition;
       display: block;
       width: 227px;
       height: auto;
@@ -106,6 +107,9 @@
           line-height: 1.7;
           margin: 0;
         }
+      }
+      &:hover {
+        color: $pink;
       }
     }
   }
