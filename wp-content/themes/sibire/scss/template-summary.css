@@ -113,7 +113,7 @@
   display: block;
   width: 235px;
   height: auto;
-  min-height: 327px;
+  min-height: 307px;
   float: left;
   text-decoration: none;
   color: #231815;
@@ -135,7 +135,7 @@
   vertical-align: bottom;
 }
 #summary .summary-grid-wrap .summary-grid figure figcaption {
-  padding: 8px 0 20px 0;
+  padding: 8px 0 0px 0;
   background-color: #ffffff;
 }
 #summary .summary-grid-wrap .summary-grid figure h3 {
