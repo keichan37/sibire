@@ -48,6 +48,7 @@
     text-align: center;
     a {
       @include transition;
+      background-color: $pink;
       border: 5px solid $pink;
       display: inline-block;
       max-width: 347px;
