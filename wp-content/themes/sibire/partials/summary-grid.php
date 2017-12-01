@@ -10,17 +10,4 @@
   <div class="summary-grid-text-wrap">
     <h4><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></h4>
   </div>
-  <?php
-    $tags = get_the_tags( $post->ID );
-    $separator = ', ';
-    $output = '';
-    if($tags){
-      foreach($tags as $tag) {
-        if($tag->slug != "offtokyo"){
-          $output .= '<span>'.$tag->name.'</span>'.$separator;
-        }
-      }
-      echo trim($output, $separator);
-    }
-  ?>
 </a>
