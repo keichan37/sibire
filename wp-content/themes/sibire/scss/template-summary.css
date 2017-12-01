@@ -120,7 +120,7 @@
   color: #231815;
   margin: 15px 20px;
   overflow: hidden;
-  background: transparent url("images/template-summary/bottom.png") bottom left repeat-x;
+  background: transparent url("images/template-summary/bottom.png") bottom right no-repeat;
 }
 #summary .summary-grid-wrap .summary-grid figure {
   margin: 0;
