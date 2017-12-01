@@ -69,7 +69,7 @@
             $postslist = get_posts($args);
             foreach ($postslist as $post) : setup_postdata($post);
           ?>
-          <?php get_template_part('partials/summary-grid'); ?>
+          <?php get_template_part('partials/summary-grid-first'); ?>
           <?php 
             endforeach; 
             wp_reset_postdata();
