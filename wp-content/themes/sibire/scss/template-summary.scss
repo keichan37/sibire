@@ -5,8 +5,9 @@
   $gothic-b: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
   $pink: #e61673;
   $black: #231815;
+  $container: 1100px;
   .container {
-    max-width: 1100px;
+    max-width: $container + 20px;
     margin: 0px auto;
     padding: 0 10px;
     @include border-box;
@@ -83,8 +84,8 @@
       @include clearfix;
     }
     .summary-grid {
-      $width: 227px;
-      $margin: 25px;
+      $margin: 23px;
+      $width: ($container - ($margin * 8)) / 4;
       @include transition;
       @include border-box;
       display: block;
