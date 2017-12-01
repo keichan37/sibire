@@ -13,6 +13,7 @@
       <div class="container">
         <?php dynamic_sidebar('event-report'); ?>
         <h2>OFF TOKYO Engineer Story</h2>
+        <b>TAGID:2812</b>
         <div class="common-grid-wrap">
           <?php
             $args = array( 
@@ -23,12 +24,11 @@
              'posts_per_page' => -1
             );
           ?>
-
           <?php
             $postslist = get_posts($args);
             foreach ($postslist as $post) : setup_postdata($post);
           ?>
-          <?php get_template_part('partials/common-grid'); ?>
+          <?php get_template_part('partials/summary-grid'); ?>
           <?php 
             endforeach; 
             wp_reset_postdata();
@@ -50,7 +50,7 @@
             $postslist = get_posts($args);
             foreach ($postslist as $post) : setup_postdata($post);
           ?>
-          <?php get_template_part('partials/common-grid'); ?>
+          <?php get_template_part('partials/summary-grid'); ?>
           <?php 
             endforeach; 
             wp_reset_postdata();
