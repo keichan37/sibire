@@ -11,35 +11,18 @@
         </p>
       </div>
       <div class="container">
+        <?php dynamic_sidebar('event-report'); ?>
+        <h2>OFF TOKYO Engineer Story</h2>
         <div class="common-grid-wrap">
-          <?php if ( $post->post_parent > 0 ): //子要素の場合?>
-            <?php $area_name = get_post_meta($post->ID, 'area_name', true);?>
-            <?php
-              $args = array( 
-               'post_type' => array($cat_slug,$cat_slug2),
-               'post_status' => 'publish',
-               'has_password' => false,
-               'meta_query' => array(
-                 array(
-                  'key' => 'area',
-                  'value' => $area_name,
-                  'compare'=> 'LIKE'
-                 )
-               ),
-               'posts_per_page' => -1
-              );
-            ?>
-
-          <?php else : ?>
-            <?php
-              $args = array(
-                'posts_per_page' => -1,
-                'post_type' => array($cat_slug,$cat_slug2),
-                'post_status' => 'publish',
-                'has_password' => false
-              );
-            ?>
-          <?php endif ; ?>
+          <?php
+            $args = array( 
+             'post_type' => 'interview',
+             'post_status' => 'publish',
+             'has_password' => false,
+             'tag' => 'offtokyo',
+             'posts_per_page' => -1
+            );
+          ?>
 
           <?php
             $postslist = get_posts($args);
@@ -50,10 +33,32 @@
             endforeach; 
             wp_reset_postdata();
           ?>
-
-
-          <?php get_template_part('partials/registration'); ?>
         </div>
+        <h2>OFF TOKYO IT先進エリア</h2>
+        <div class="common-grid-wrap">
+          <?php
+            $args = array( 
+             'post_type' => 'niche',
+             'post_status' => 'publish',
+             'has_password' => false,
+             'tag' => 'offtokyo',
+             'posts_per_page' => -1
+            );
+          ?>
+
+          <?php
+            $postslist = get_posts($args);
+            foreach ($postslist as $post) : setup_postdata($post);
+          ?>
+          <?php get_template_part('partials/common-grid'); ?>
+          <?php 
+            endforeach; 
+            wp_reset_postdata();
+          ?>
+        </div>
+        <h2>TEAM OFF TOKYO</h2>
+
+        <?php get_template_part('partials/registration'); ?>
       </div>    
       
     </div>    
