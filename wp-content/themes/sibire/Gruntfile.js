@@ -35,6 +35,7 @@ module.exports = function (grunt) {
             'scss/template-event.css',
             'scss/template-event-sub-page.css',
             'scss/template-event-single.css',
+            'scss/template-summary.css',
             'scss/partials-catchcopy.css',
             'scss/plugin-wpcf7.css',
             'scss/wordpress.css'
@@ -62,6 +63,7 @@ module.exports = function (grunt) {
           'scss/template-event.css',
           'scss/template-event-sub-page.css',
           'scss/template-event-single.css',
+          'scss/template-summary.css',
           'scss/partials-catchcopy.css',
           'scss/plugin-wpcf7.css',
           'scss/wordpress.css'

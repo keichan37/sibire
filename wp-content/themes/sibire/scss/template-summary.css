@@ -1,0 +1,114 @@
+@charset "UTF-8";
+#summary .container {
+  max-width: 1100px;
+  margin: 0px auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+#summary .summary-cover {
+  background: transparent url("images/template-summary/cover-background.jpg") center center/cover no-repeat;
+  padding: 105px 0 95px 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#summary .summary-cover h1 {
+  margin: 0 0 10px 0;
+  padding: 30px 0 0 0;
+  font-family: "FOT-あおかね Std EB", "AokaneStd-EB";
+  font-size: 32px;
+}
+#summary .summary-cover p {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  line-height: 1.9;
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
+}
+#summary .sns-share {
+  width: 240px;
+  margin: 0px auto;
+}
+#summary .sns-share .facebook,
+#summary .sns-share .twitter {
+  float: left;
+  margin: 0 5px;
+}
+#summary .sns-share .facebook {
+  width: 145px;
+}
+#summary .sns-share .twitter {
+  width: 75px;
+}
+#summary .sns-share:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+#summary .summary-widget {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#summary .summary-widget a {
+  border: 5px solid #e61673;
+  display: inline-block;
+  max-width: 347px;
+  height: auto;
+}
+#summary .summary-widget a img {
+  vertical-align: bottom;
+}
+#summary h2.summary-h2 {
+  text-align: center;
+  width: 185px;
+  margin: 0px auto;
+  padding: 15px;
+  border-top: 1px solid #e61673;
+  border-bottom: 1px solid #e61673;
+  font-size: 26px;
+  line-height: 27px;
+  color: #e61673;
+  font-family: "FOT-あおかね Std EB", "AokaneStd-EB";
+}
+#summary .summary-grid-wrap:before, #summary .summary-grid-wrap:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+#summary .summary-grid-wrap .summary-grid {
+  width: 227px;
+  height: auto;
+  float: left;
+  text-decoration: none;
+  color: #231815;
+}
+#summary .summary-grid-wrap .summary-grid figure {
+  margin: 0;
+}
+#summary .summary-grid-wrap .summary-grid figure h3 {
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
+  font-size: 19px;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+}
+#summary .summary-grid-wrap .summary-grid figure h4 {
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+}
+#summary .summary-grid-wrap .summary-grid figure p {
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/*# sourceMappingURL=template-summary.css.map */
