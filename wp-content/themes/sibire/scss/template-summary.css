@@ -118,38 +118,46 @@
   color: #231815;
   margin: 15px 23px;
   padding-bottom: 20px;
+  overflow: hidden;
 }
 #summary .summary-grid-wrap .summary-grid figure {
   margin: 0;
+  text-align: center;
 }
 #summary .summary-grid-wrap .summary-grid figure img {
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
-  width: 100%;
-  height: auto;
+  height: 170px;
+  width: auto;
   margin-bottom: 8px;
 }
 #summary .summary-grid-wrap .summary-grid figure h3 {
+  text-align: left;
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
   font-size: 19px;
   line-height: 1.4;
   margin: 0 0 15px 0;
 }
 #summary .summary-grid-wrap .summary-grid figure h4 {
+  text-align: left;
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
   font-size: 13px;
   line-height: 1.5;
   margin: 0 0 15px 0;
 }
 #summary .summary-grid-wrap .summary-grid figure p {
+  text-align: left;
   font-size: 13px;
   line-height: 1.7;
   margin: 0;
 }
 #summary .summary-grid-wrap .summary-grid.summary-grid-first {
   width: 504px;
+}
+#summary .summary-grid-wrap .summary-grid.summary-grid-first figure img {
+  height: 340px;
 }
 #summary .summary-grid-wrap .summary-grid:hover {
   color: #e61673;
