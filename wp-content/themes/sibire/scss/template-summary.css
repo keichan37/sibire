@@ -55,6 +55,10 @@
   margin-bottom: 50px;
 }
 #summary .summary-widget a {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
   border: 5px solid #e61673;
   display: inline-block;
   max-width: 347px;
@@ -101,6 +105,11 @@
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   display: block;
   width: 227px;
   height: auto;
@@ -138,6 +147,9 @@
   font-size: 13px;
   line-height: 1.7;
   margin: 0;
+}
+#summary .summary-grid-wrap .summary-grid.summary-grid-first {
+  width: 330px;
 }
 #summary .summary-grid-wrap .summary-grid:hover {
   color: #e61673;

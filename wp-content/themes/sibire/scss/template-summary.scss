@@ -84,6 +84,7 @@
     }
     .summary-grid {
       @include transition;
+      @include border-box;
       display: block;
       width: 227px;
       height: auto;
@@ -117,6 +118,9 @@
           line-height: 1.7;
           margin: 0;
         }
+      }
+      &.summary-grid-first {
+        width: 330px;
       }
       &:hover {
         color: $pink;
