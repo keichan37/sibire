@@ -2,6 +2,7 @@
 #summary {
   $design: 'FOT-あおかね Std EB', 'AokaneStd-EB';
   $gothic: 'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D';
+  $gothic-b: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
   $pink: #e61673;
   $black: #231815;
   .container {
@@ -91,7 +92,7 @@
           margin-bottom: 8px;
         }
         h3 {
-          font-family: $gothic;
+          font-family: $gothic-b;
           font-size: 19px;
           line-height: 1.4;
           margin: 0 0 15px 0;
