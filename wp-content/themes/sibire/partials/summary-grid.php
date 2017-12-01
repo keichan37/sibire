@@ -7,7 +7,6 @@
     <img src="<?php echo $thumbnail_url[0]; ?>">
   <?php endif; ?>
   <h3><?php the_title(); ?></h3>
-  <div class="summary-grid-text-wrap">
-    <h4><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></h4>
-  </div>
+  <h4><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></h4>
+  <p><?php the_excerpt(); ?></p>
 </a>

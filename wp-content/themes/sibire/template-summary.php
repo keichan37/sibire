@@ -13,7 +13,6 @@
       <div class="container">
         <?php dynamic_sidebar('event-report'); ?>
         <h2>OFF TOKYO Engineer Story</h2>
-        <b>TAGID:2812</b>
         <div class="common-grid-wrap">
           <?php
             $args = array( 
