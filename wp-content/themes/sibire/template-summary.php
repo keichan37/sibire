@@ -6,6 +6,7 @@
         <h1>
           <?php the_title(); ?>
         </h1>
+        <?php get_template_part('partials/sns-share'); ?>
         <p>
           <?php the_content(); ?>
         </p>
@@ -57,7 +58,6 @@
         </div>
         <h2>TEAM OFF TOKYO</h2>
 
-        <?php get_template_part('partials/registration'); ?>
       </div>    
       
     </div>    
