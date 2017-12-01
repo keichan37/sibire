@@ -67,6 +67,7 @@
   text-align: center;
   width: 185px;
   margin: 0px auto;
+  margin-bottom: 15px;
   padding: 15px;
   border-top: 1px solid #e61673;
   border-bottom: 1px solid #e61673;
@@ -84,14 +85,20 @@
   visibility: hidden;
 }
 #summary .summary-grid-wrap .summary-grid {
+  display: block;
   width: 227px;
   height: auto;
   float: left;
   text-decoration: none;
   color: #231815;
+  margin: 15px 25px;
 }
 #summary .summary-grid-wrap .summary-grid figure {
   margin: 0;
+}
+#summary .summary-grid-wrap .summary-grid figure img {
+  width: 100%;
+  height: auto;
 }
 #summary .summary-grid-wrap .summary-grid figure h3 {
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
