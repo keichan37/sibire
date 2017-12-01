@@ -134,8 +134,10 @@
           margin: 0 0 15px 0;
         }
         p {
+          @include transition;
           text-align: left;
           font-family: $gothic;
+          color: #888888;
           font-size: 13px;
           line-height: 1.7;
           margin: 0;
@@ -156,7 +158,8 @@
       }
       &:hover {
         color: $pink;
-        h4 {
+        h4,
+        p {
           color: $pink;
         }
         img {
