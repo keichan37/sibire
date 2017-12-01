@@ -114,7 +114,7 @@
   display: block;
   width: 235px;
   height: auto;
-  min-height: 307px;
+  min-height: 317px;
   float: left;
   text-decoration: none;
   color: #231815;
@@ -150,6 +150,8 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  background: transparent url("images/template-summary/h3.png") bottom left repeat-x;
+  padding-bottom: 10px;
 }
 #summary .summary-grid-wrap .summary-grid figure h4 {
   -webkit-transition: 0.3s;

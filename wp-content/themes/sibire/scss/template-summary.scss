@@ -93,7 +93,7 @@
       display: block;
       width: $width;
       height: auto;
-      min-height: 307px;
+      min-height: 317px;
       float: left;
       text-decoration: none;
       color: $black;
@@ -124,6 +124,8 @@
           display: -webkit-box;
           -webkit-box-orient: vertical;
           -webkit-line-clamp: 3;
+          background: transparent url("images/template-summary/h3.png") bottom left repeat-x;
+          padding-bottom: 10px;
         }
         h4 {
           @include transition;
