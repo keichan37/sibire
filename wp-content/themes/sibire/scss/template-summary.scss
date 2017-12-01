@@ -59,6 +59,7 @@
     text-align: center;
     width: 185px;
     margin: 0px auto;
+    margin-bottom: 15px;
     padding: 15px;
     border-top: 1px solid $pink;
     border-bottom: 1px solid $pink;
@@ -73,13 +74,19 @@
       @include clearfix;
     }
     .summary-grid {
+      display: block;
       width: 227px;
       height: auto;
       float: left;
       text-decoration: none;
       color: $black;
+      margin: 15px 25px;
       figure {
         margin: 0;
+        img {
+          width: 100%;
+          height: auto;
+        }
         h3 {
           font-family: $gothic;
           font-size: 19px;
