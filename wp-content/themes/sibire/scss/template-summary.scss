@@ -125,6 +125,7 @@
           -webkit-line-clamp: 3;
         }
         h4 {
+          @include transition;
           text-align: left;
           font-family: $gothic;
           color: #888888;
