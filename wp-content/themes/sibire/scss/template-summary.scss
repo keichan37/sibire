@@ -212,6 +212,8 @@
 @media(max-width: 767px) {
   #summary {
     .summary-cover {
+      padding-top: 60px;
+      margin-bottom: 0;
       h1 {
         img {
           max-width: 95%;
