@@ -177,7 +177,7 @@
   color: #888888;
   font-size: 13px;
   line-height: 1.7;
-  margin: 0 0 20px 0;
+  margin: 0 0 17px 0;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -191,7 +191,7 @@
   height: 340px;
 }
 #summary .summary-grid-wrap .summary-grid.summary-grid-first figure figcaption {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 #summary .summary-grid-wrap .summary-grid:hover {
   color: #e61673;
