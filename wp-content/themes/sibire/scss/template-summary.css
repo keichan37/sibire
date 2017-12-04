@@ -262,6 +262,13 @@
   #summary .summary-grid-wrap .summary-grid figure img {
     height: 140px;
   }
+  #summary .summary-grid-wrap .summary-grid figure figcaption h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
   #summary .summary-grid-wrap .summary-grid.summary-grid.summary-grid-first {
     width: 96%;
     margin: 2% 2% 5% 2%;
