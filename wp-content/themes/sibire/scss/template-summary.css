@@ -208,7 +208,7 @@
 #summary .logo-wrap {
   position: relative;
   border: 2px solid #e61673;
-  max-width: 760px;
+  max-width: 745px;
   margin: 0px auto;
   margin-top: 70px;
   padding: 0 0 5px 0;
@@ -232,13 +232,15 @@
 #summary .logo-wrap ul li {
   display: block;
   float: left;
-  width: 122px;
+  width: 91px;
   list-style: none;
-  margin: 0 14px 14px 14px;
+  margin: 0 5px 5px 8px;
   padding: 0;
   border: 1px solid #888888;
 }
 #summary .logo-wrap ul li img {
+  width: 100%;
+  height: auto;
   vertical-align: bottom;
 }
 #summary .logo-wrap ul:before, #summary .logo-wrap ul:after {
