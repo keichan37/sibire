@@ -104,7 +104,7 @@
       figure {
         margin: 0;
         text-align: center;
-        background-color: $pink; 
+        //background-color: $pink; 
         img {
           @include transition;
           height: $img;
@@ -113,7 +113,7 @@
         }
         figcaption {
           padding: 8px 0 0px 0;
-          background-color: #ffffff;
+          //background-color: #ffffff;
         }
         h3 {
           text-align: left;
