@@ -21,6 +21,7 @@
              'post_status' => 'publish',
              'has_password' => false,
              'tag' => 'offtokyo',
+             'order' => 'ASC',
              'posts_per_page' => 1
             );
           ?>
@@ -39,6 +40,7 @@
              'post_status' => 'publish',
              'has_password' => false,
              'tag' => 'offtokyo',
+             'order' => 'ASC',
              'offset' => '1',
              'posts_per_page' => 50
             );
@@ -61,6 +63,7 @@
              'post_status' => 'publish',
              'has_password' => false,
              'tag' => 'offtokyo',
+             'order' => 'ASC',
              'posts_per_page' => 1
             );
           ?>
@@ -80,6 +83,7 @@
              'post_status' => 'publish',
              'has_password' => false,
              'tag' => 'offtokyo',
+             'order' => 'ASC',
              'offset' => '1',
              'posts_per_page' => 50
             );
