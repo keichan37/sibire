@@ -128,7 +128,6 @@
 #summary .summary-grid-wrap .summary-grid figure {
   margin: 0;
   text-align: center;
-  background-color: #e61673;
 }
 #summary .summary-grid-wrap .summary-grid figure img {
   -webkit-transition: 0.3s;
@@ -141,7 +140,6 @@
 }
 #summary .summary-grid-wrap .summary-grid figure figcaption {
   padding: 8px 0 0px 0;
-  background-color: #ffffff;
 }
 #summary .summary-grid-wrap .summary-grid figure h3 {
   text-align: left;
