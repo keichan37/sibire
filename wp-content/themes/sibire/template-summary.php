@@ -5,7 +5,7 @@
       <div class="summary-cover">
         <div class="container">
           <h1>
-            <?php the_title(); ?>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/cover.png" alt="<?php the_title(); ?>"/>
           </h1>
           <?php the_content(); ?>
           <?php get_template_part('partials/sns-share'); ?>
@@ -95,8 +95,16 @@
             wp_reset_postdata();
           ?>
         </div>
-        <h2>TEAM OFF TOKYO</h2>
-
+        <div class="logo-wrap">
+          <h2 class="logo-h2"><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/h2.png" alt="TEAM OFF TOKYO"/></h2>
+          <ul>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-am.png" alt="am."/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-am.png" alt="am."/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-am.png" alt="am."/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-am.png" alt="am."/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-am.png" alt="am."/></li>
+          </ul>
+        </div>
       </div>    
       
     </div>    
