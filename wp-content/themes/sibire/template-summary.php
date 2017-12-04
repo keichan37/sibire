@@ -107,7 +107,10 @@
             <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-fukuoka.png" alt="福岡移住計画"/></li>
           </ul>
         </div>
+
       </div>    
       
-    </div>    
-    <?php get_footer(); ?>
+    </div>
+    <div class="summary-footer"> 
+      <?php get_footer(); ?>
+    </div>

@@ -252,6 +252,12 @@
   visibility: hidden;
 }
 
+.summary-footer .sns-footer {
+  background: #transparent url("images/template-summary/footer-background.jpg") center center/cover no-repeat;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 @media (max-width: 1120px) {
   #summary .container {
     max-width: 845px;
