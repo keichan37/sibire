@@ -252,7 +252,12 @@
   visibility: hidden;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1120px) {
+  #summary .container {
+    max-width: 845px;
+  }
+}
+@media (max-width: 845px) {
   #summary .summary-cover {
     padding-top: 60px;
     margin-bottom: 0;
