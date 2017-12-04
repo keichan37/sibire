@@ -130,16 +130,18 @@
   text-align: center;
 }
 #summary .summary-grid-wrap .summary-grid figure img {
+  height: 170px;
+  width: auto;
+  vertical-align: bottom;
+  background-color: #e61673;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
-  height: 170px;
-  width: auto;
-  vertical-align: bottom;
 }
 #summary .summary-grid-wrap .summary-grid figure figcaption {
   padding: 8px 0 0px 0;
+  background-color: #ffffff;
 }
 #summary .summary-grid-wrap .summary-grid figure h3 {
   text-align: left;
@@ -175,7 +177,7 @@
   color: #888888;
   font-size: 13px;
   line-height: 1.7;
-  margin: 0;
+  margin: 0 0 15px 0;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -195,7 +197,7 @@
 #summary .summary-grid-wrap .summary-grid:hover p {
   color: #e61673;
 }
-#summary .summary-grid-wrap .summary-grid:hover img {
+#summary .summary-grid-wrap .summary-grid:hover figure img {
   opacity: 0.8;
   -moz-opacity: 0.8;
   -ms-filter: "alpha(opacity=$ratioms)";
