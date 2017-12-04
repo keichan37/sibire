@@ -221,5 +221,38 @@
         br { display: none; }
       }
     }
+    .summary-grid-wrap {
+      .summary-grid {
+        width: 46%;
+        margin: 2% 2% 5% 2%;
+        figure {
+          img {
+            height: 140px;
+          }
+        }
+        &.summary-grid.summary-grid-first {
+          width: 96%;
+          margin: 2% 2% 5% 2%;
+          figure {
+            img {
+              height: 230px;
+            }
+          }
+        }
+      }
+    }
+    .logo-wrap {
+      ul {
+        li {
+          @include border-box;
+          width: 40%;
+          margin: 0 5% 5% 5%;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
   }
 }

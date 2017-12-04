@@ -254,6 +254,33 @@
   #summary .summary-cover p br {
     display: none;
   }
+  #summary .summary-grid-wrap .summary-grid {
+    width: 46%;
+    margin: 2% 2% 5% 2%;
+  }
+  #summary .summary-grid-wrap .summary-grid figure img {
+    height: 140px;
+  }
+  #summary .summary-grid-wrap .summary-grid.summary-grid.summary-grid-first {
+    width: 96%;
+    margin: 2% 2% 5% 2%;
+  }
+  #summary .summary-grid-wrap .summary-grid.summary-grid.summary-grid-first figure img {
+    height: 230px;
+  }
+  #summary .logo-wrap ul li {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    width: 40%;
+    margin: 0 5% 5% 5%;
+  }
+  #summary .logo-wrap ul li img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=template-summary.css.map */
