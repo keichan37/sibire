@@ -248,6 +248,10 @@
 }
 
 @media (max-width: 767px) {
+  #summary .summary-cover {
+    padding-top: 60px;
+    margin-bottom: 0;
+  }
   #summary .summary-cover h1 img {
     max-width: 95%;
   }
