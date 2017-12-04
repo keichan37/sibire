@@ -98,11 +98,13 @@
         <div class="logo-wrap">
           <h2 class="logo-h2"><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/h2.png" alt="TEAM OFF TOKYO"/></h2>
           <ul>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-sibire.png" alt="sibire"/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-8infinity.png" alt="8infinity"/></li>
             <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-am.png" alt="am."/></li>
-            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-am.png" alt="am."/></li>
-            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-am.png" alt="am."/></li>
-            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-am.png" alt="am."/></li>
-            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-am.png" alt="am."/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-prtable.png" alt="PR TABLE"/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-tokyo.png" alt="TOKYO RECYCLE"/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-lajapan.png" alt="lajapan"/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-fukuoka.png" alt="福岡移住計画"/></li>
           </ul>
         </div>
       </div>    
