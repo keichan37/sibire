@@ -1,0 +1,243 @@
+@charset "UTF-8";
+header.wakayama {
+  font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
+}
+header.wakayama .menu-global_menu-container {
+  float: none;
+}
+header.wakayama ul.global_menu li a {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  padding: 0 5px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border: none;
+  color: #ffffff;
+}
+header.wakayama ul.global_menu li a:hover {
+  background: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+header.wakayama ul.global_menu li.current-menu-item a, header.wakayama ul.global_menu li.current_page_item a {
+  background: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+header.wakayama ul.global_menu li.current-page-ancestor a {
+  background: none;
+  cursor: pointer;
+}
+header.wakayama .slicknav_btn {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  margin: 10px 10px 0 0;
+  background-color: #1baaeb;
+}
+header.wakayama .slicknav_btn:hover, header.wakayama .slicknav_btn.slicknav_open {
+  background-color: #49bcef;
+}
+header.wakayama .slicknav_nav {
+  margin-top: 58px;
+  background-color: #1baaeb;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+header.wakayama .slicknav_nav li a:hover,
+header.wakayama .slicknav_nav li.current-menu-item a {
+  background-color: #49bcef;
+}
+
+#template-wakayama {
+  padding-top: 40px;
+  font-size: 14px;
+  color: #000000;
+}
+#template-wakayama article,
+#template-wakayama section,
+#template-wakayama .section,
+#template-wakayama nav {
+  font-family: 'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D';
+}
+#template-wakayama a {
+  color: #00A0E9;
+}
+#template-wakayama a:hover {
+  color: #32b3ed;
+}
+#template-wakayama a.button {
+  display: block;
+  width: 234px;
+  height: 64px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 2.8;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  margin: 0px auto;
+  background: transparent url("images/template-wakayama/button.png") center center no-repeat;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+#template-wakayama a.button:hover {
+  color: #54C3F1;
+}
+#template-wakayama a.button.button-end {
+  background: none;
+  font-size: 17px;
+}
+#template-wakayama a.button.button-end:hover {
+  color: #000000;
+}
+#template-wakayama a.scroll-up-button {
+  background-color: #32b3ed;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  height: 35px;
+  line-height: 35px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+#template-wakayama a.scroll-up-button:hover {
+  background-color: #4cbcef;
+}
+#template-wakayama h1,
+#template-wakayama h2,
+#template-wakayama h3,
+#template-wakayama h4,
+#template-wakayama a.button {
+  font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
+}
+#template-wakayama strong,
+#template-wakayama tr.strong {
+  font-family: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
+}
+#template-wakayama .container {
+  max-width: 1100px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  margin: 0px auto;
+  padding: 0 10px;
+}
+#template-wakayama #cover h1 {
+  margin: 0;
+}
+#template-wakayama .sns-share {
+  width: 240px;
+  margin: 0px auto;
+}
+#template-wakayama .sns-share .facebook,
+#template-wakayama .sns-share .twitter {
+  float: left;
+  margin: 0 5px;
+}
+#template-wakayama .sns-share .facebook {
+  width: 145px;
+}
+#template-wakayama .sns-share .twitter {
+  width: 75px;
+}
+#template-wakayama .sns-share:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+#template-wakayama .map .acf-map {
+  width: 100%;
+  height: 600px;
+}
+#template-wakayama center {
+  text-align: center;
+}
+#template-wakayama center a {
+  font-size: 12px;
+  color: #ffffff;
+}
+#template-wakayama center a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+#template-wakayama footer {
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+#template-wakayama footer small {
+  color: #ffffff;
+  font: 400 12px/16px 'Lucida Grande';
+}
+#template-wakayama footer.sns-footer {
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  background: none;
+  height: auto;
+}
+
+@media (max-width: 815px) {
+  header.wakayama .global_menu {
+    display: block;
+  }
+  header.wakayama .slicknav_btn {
+    display: none;
+  }
+}
+@media (max-width: 872px) {
+  header.wakayama {
+    background: none;
+    border: none;
+    height: 0;
+  }
+  header.wakayama .global_menu {
+    display: none;
+  }
+  header.wakayama .slicknav_btn {
+    display: block;
+  }
+  header.wakayama:after, header.wakayama:before {
+    background: none;
+  }
+}
+@media (max-width: 767px) {
+  #template-wakayama .map .acf-map {
+    height: 420px;
+  }
+  #template-wakayama .map .address {
+    text-align: center;
+  }
+  #template-wakayama .map .address address {
+    font-size: 15px;
+  }
+  #template-wakayama .map .address ul li {
+    float: none;
+    width: 100%;
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=template-wakayama.css.map */
