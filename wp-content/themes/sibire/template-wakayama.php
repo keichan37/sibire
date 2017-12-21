@@ -3,12 +3,11 @@
   <?php get_header(); ?>
     <div id="template-wakayama">
       <div id="cover">
-        <h1><?php the_title(); ?></h1>
-        <?php get_template_part('partials/template-event-button'); ?>
-        <?php get_template_part('partials/sns-share'); ?>
-      </div>
-      <div class="section participate participate1">
-        <?php get_template_part('partials/template-event-button'); ?>
+        <div class="container">
+          <h1><?php the_title(); ?></h1>
+          <?php the_content(); //本文 ?>
+          <?php get_template_part('partials/sns-share'); ?>
+        </div>
       </div>
       <div class="section map" id="map">
         <?php get_template_part('google_map');?>
@@ -24,14 +23,12 @@
           <address>〒105-0000 東京都</address>
         </div>
       </div>
-      <div class="section participate participate2">
-        <?php get_template_part('partials/template-event-button'); ?>
+      <div class="container">
+        <?php echo do_shortcode('[contact-form-7 id="31972" title="OFF TOKYO 和歌山キャリアフェア"]'); ?>
       </div>
-      <?php the_content(); //本文 ?>
       <a class="scroll-up-button icon icon-arrow-up" href="#"></a>
       <div class="section participate participate3">
 
-        <?php get_template_part('partials/template-event-button'); ?>
         <center><a class="" href="mailto:event@sibire.co.jp">イベントに関するお問い合わせはこちら</a></center>
         <footer class="sns-footer">
           <?php get_template_part('partials/sns-share'); ?>

@@ -1,0 +1,206 @@
+@import "mixin";
+header.wakayama {
+  font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
+  .menu-global_menu-container { float: none; }
+  ul.global_menu {
+    li {
+      a {
+        @include transition();
+        padding: 0 5px;
+        @include border-radius(0px);
+        border: none;
+        color: #ffffff;
+        &:hover {
+          background: none;
+          color: rgba(255,255,255,.7);
+        }
+      }
+      &.current-menu-item,
+      &.current_page_item {
+        a {
+          background: none;
+          color: rgba(255,255,255,.7);
+        }
+      }
+      &.current-page-ancestor {
+        a {
+          background: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .slicknav_btn {
+    @include box-shadow(0,0,5px,.5);
+    @include border-radius(2px);
+    margin: 10px 10px 0 0;
+    background-color: #1baaeb;
+    &:hover,
+    &.slicknav_open { background-color: #49bcef; }
+  }
+  .slicknav_nav {
+    margin-top: 58px;
+    background-color: #1baaeb;
+    @include box-shadow(0,0,5px,.5);
+    li a:hover,
+    li.current-menu-item a {
+      background-color: #49bcef;
+    }
+  }
+}
+#template-wakayama {
+  padding-top: 40px;
+  font-size: 14px;
+  color: #000000;
+  article,
+  section,
+  .section,
+  nav { font-family: 'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D'; }
+  a {
+    color: #00A0E9;
+    &:hover { color: #32b3ed; }
+    &.button {
+      display: block;
+      width: 234px;
+      height: 64px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 2.8;
+      color: #000000;
+      text-decoration: none;
+      text-align: center;
+      margin: 0px auto;
+      background: transparent url("images/template-wakayama/button.png") center center no-repeat;
+      @include transition;
+      &:hover { color: #54C3F1; }
+      &.button-end {
+        background: none;
+        font-size: 17px;
+        &:hover { color: #000000; }
+      }
+    }
+    &.scroll-up-button {
+      background-color: #32b3ed;
+      color: #ffffff;
+      display: block;
+      text-align: center;
+      font-size: 22px;
+      height: 35px;
+      line-height: 35px;
+      text-decoration: none;
+      @include transition;
+      &:hover { background-color: #4cbcef; }
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  a.button { font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB'; }
+  strong,
+  tr.strong {
+    font-family: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
+  }
+  .container {
+    max-width: 1100px;
+    @include border-box;
+    margin: 0px auto;
+    padding: 0 10px;
+  }
+  #cover {
+    h1 {
+      margin: 0;
+    }
+  }
+  .sns-share {
+    width: 240px;
+    margin: 0px auto;
+    .facebook,
+    .twitter {
+      float: left;
+      margin: 0 5px;
+    }
+    .facebook { width: 145px; }
+    .twitter  { width: 75px; }
+    &:after {
+      @include clearfix;
+    }
+  }
+  #cover {
+  }
+  .map {
+    .acf-map {
+      width: 100%;
+      height: 600px;
+    }
+  }
+  center {
+    text-align: center;
+    a {
+      font-size: 12px;
+      color: #ffffff;
+      &:hover {
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+  footer {
+    padding: 20px 0 0 0;
+    text-align: center;
+    small {
+      color: #ffffff;
+      font: 400 12px/16px 'Lucida Grande';
+    }
+    &.sns-footer {
+      font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+      background: none;
+      height: auto;
+    }
+  }
+}
+
+
+@media(max-width: 815px) {
+  header.wakayama {
+    .global_menu  { display: block; }
+    .slicknav_btn { display: none; }
+  }
+}
+
+@media(max-width: 872px) {
+  header.wakayama {
+    .global_menu  { display: none; }
+    .slicknav_btn { display: block; }
+    background: none;
+    border: none;
+    height: 0;
+    &:after,
+    &:before {
+      background: none;
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  #template-wakayama {
+    #cover {
+    }
+    .map {
+      .acf-map { height: 420px; }
+      .address {
+        text-align: center;
+        address {
+          font-size: 15px;
+        }
+        ul {
+          li {
+            float: none;
+            width: 100%;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
