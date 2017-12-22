@@ -52,6 +52,7 @@ header.wakayama {
   padding-top: 40px;
   font-size: 14px;
   color: #000000;
+  p,
   article,
   section,
   .section,
@@ -66,18 +67,14 @@ header.wakayama {
       font-size: 20px;
       font-weight: 700;
       line-height: 2.8;
-      color: #000000;
+      color: #ffffff;
       text-decoration: none;
       text-align: center;
       margin: 0px auto;
-      background: transparent url("images/template-wakayama/button.png") center center no-repeat;
+      margin-bottom: 30px;
+      background: #000000;
       @include transition;
-      &:hover { color: #54C3F1; }
-      &.button-end {
-        background: none;
-        font-size: 17px;
-        &:hover { color: #000000; }
-      }
+      &:hover { background-color: #333333; }
     }
     &.scroll-up-button {
       background-color: #32b3ed;
@@ -96,6 +93,7 @@ header.wakayama {
   h2,
   h3,
   h4,
+  time,
   a.button { font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB'; }
   strong,
   tr.strong {
@@ -108,8 +106,24 @@ header.wakayama {
     padding: 0 10px;
   }
   #cover {
+    padding: 150px 0;
+    background-color: #f5f5f5;
     h1 {
+      text-align: center;
       margin: 0;
+      font-size: 28px;
+    }
+    time {
+      text-align: center;
+      display: block;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0px auto;
+      margin-top: 20px;
+      margin-bottom: 30px;
     }
   }
   .sns-share {
