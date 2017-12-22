@@ -5,7 +5,9 @@
       <div id="cover">
         <div class="container">
           <h1><?php the_title(); ?></h1>
+          <time datetime="<?php the_time('c') ;?>"><?php the_time('Y年n月d日(D)'); ?></time>
           <?php the_content(); //本文 ?>
+          <a class="button" href="#form">参加する</a>
           <?php get_template_part('partials/sns-share'); ?>
         </div>
       </div>
@@ -19,11 +21,11 @@
             </div>
           </div>
         </div>
-        <div class="section address">
+        <div class="address">
           <address>〒105-0000 東京都</address>
         </div>
       </div>
-      <div class="container">
+      <div id="form" class="container">
         <?php echo do_shortcode('[contact-form-7 id="31972" title="OFF TOKYO 和歌山キャリアフェア"]'); ?>
       </div>
       <a class="scroll-up-button icon icon-arrow-up" href="#"></a>

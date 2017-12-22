@@ -67,6 +67,7 @@ header.wakayama .slicknav_nav li.current-menu-item a {
   font-size: 14px;
   color: #000000;
 }
+#template-wakayama p,
 #template-wakayama article,
 #template-wakayama section,
 #template-wakayama .section,
@@ -86,25 +87,19 @@ header.wakayama .slicknav_nav li.current-menu-item a {
   font-size: 20px;
   font-weight: 700;
   line-height: 2.8;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   text-align: center;
   margin: 0px auto;
-  background: transparent url("images/template-wakayama/button.png") center center no-repeat;
+  margin-bottom: 30px;
+  background: #000000;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
 }
 #template-wakayama a.button:hover {
-  color: #54C3F1;
-}
-#template-wakayama a.button.button-end {
-  background: none;
-  font-size: 17px;
-}
-#template-wakayama a.button.button-end:hover {
-  color: #000000;
+  background-color: #333333;
 }
 #template-wakayama a.scroll-up-button {
   background-color: #32b3ed;
@@ -127,6 +122,7 @@ header.wakayama .slicknav_nav li.current-menu-item a {
 #template-wakayama h2,
 #template-wakayama h3,
 #template-wakayama h4,
+#template-wakayama time,
 #template-wakayama a.button {
   font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
 }
@@ -144,8 +140,26 @@ header.wakayama .slicknav_nav li.current-menu-item a {
   margin: 0px auto;
   padding: 0 10px;
 }
+#template-wakayama #cover {
+  padding: 150px 0;
+  background-color: #f5f5f5;
+}
 #template-wakayama #cover h1 {
+  text-align: center;
   margin: 0;
+  font-size: 28px;
+}
+#template-wakayama #cover time {
+  text-align: center;
+  display: block;
+}
+#template-wakayama #cover p {
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 #template-wakayama .sns-share {
   width: 240px;
