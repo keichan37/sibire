@@ -1,5 +1,6 @@
       <?php $url = $_SERVER['REQUEST_URI']; ?>
-      <?php if(strstr($url,'offtokyomeetup2017')): ?>
+      <?php if(strstr($url,'wakayama-careerfair')): ?>
+      <?php elseif(strstr($url,'offtokyomeetup2017')): ?>
       <?php else : ?>
       <?php get_template_part('partials/sns-footer'); ?>
         <div class="scroll-top-wrap">
