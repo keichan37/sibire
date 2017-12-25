@@ -7,7 +7,7 @@
           <img class="cover-image" src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/cover-image.jpg" alt="">
           <h1><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/logo.png" alt="<?php the_title(); ?>"/><time datetime="<?php the_time('c') ;?>"><?php the_time('Y年n月d日(D)'); ?></time></h1>
           <?php the_content(); //本文 ?>
-          <a class="button" href="#form">参加する</a>
+          <a class="button" href="#common">参加する</a>
           <?php get_template_part('partials/sns-share'); ?>
         </div>
       </div>
@@ -19,14 +19,12 @@
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/monsoon.png" width="200" alt="モンスーンカフェ"/>
               <br />
               <a href="http://www.monsoon-cafe.jp/shibuya/" target="_blank">モンスーンカフェ 渋谷</a>
+              <address>〒150-0041 東京都渋谷区神南1-6-8 神南カンパリビル 4Ｆ</address>
             </div>
           </div>
         </div>
-        <div class="address">
-          <address>〒150-0041 東京都渋谷区神南1-6-8 神南カンパリビル 4Ｆ</address>
-        </div>
       </div>
-      <div id="form" class="container">
+      <div id="common" class="container">
         <?php echo do_shortcode('[contact-form-7 id="31972" title="OFF TOKYO 和歌山キャリアフェア"]'); ?>
       </div>
     </div>
