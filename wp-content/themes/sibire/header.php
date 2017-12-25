@@ -88,7 +88,8 @@
     }(document, 'script', 'facebook-jssdk'));</script>
     <div id="wrap">
       <?php $url = $_SERVER['REQUEST_URI']; ?>
-      <?php if(strstr($url,'offtokyomeetup2017')): ?>
+      <?php if(strstr($url,'wakayama-careerfair')): ?>
+      <?php elseif(strstr($url,'offtokyomeetup2017')): ?>
         <header class="offtokyomeetup2017-header">
           <div class="menu-global_menu-container">
             <?php wp_nav_menu( array('menu' => 'offtokyomeetup2017', 'menu_class' => 'global_menu')); ?>
