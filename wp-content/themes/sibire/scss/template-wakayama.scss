@@ -52,6 +52,7 @@ header.wakayama {
   padding-top: 40px;
   font-size: 14px;
   color: #000000;
+  img { max-width: 100%; }
   p,
   article,
   section,
@@ -106,16 +107,23 @@ header.wakayama {
     padding: 0 10px;
   }
   #cover {
-    padding: 150px 0;
-    background-color: #f5f5f5;
+    padding: 0px 0;
+    background-color: #fffcdB;
+    text-align: center;
+    img.cover-image {
+      position: relative;
+      z-index: 1;
+      bottom: -50px;
+    }
     h1 {
+      position: relative;
+      z-index: 2;
       text-align: center;
       margin: 0;
       font-size: 28px;
-    }
-    time {
-      text-align: center;
-      display: block;
+      time {
+        display: none;
+      }
     }
     p {
       font-size: 15px;

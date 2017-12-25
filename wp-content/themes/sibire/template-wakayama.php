@@ -4,8 +4,8 @@
     <div id="template-wakayama">
       <div id="cover">
         <div class="container">
-          <h1><?php the_title(); ?></h1>
-          <time datetime="<?php the_time('c') ;?>"><?php the_time('Y年n月d日(D)'); ?></time>
+          <img class="cover-image" src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/cover-image.jpg" alt="">
+          <h1><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/logo.png" alt="<?php the_title(); ?>"/><time datetime="<?php the_time('c') ;?>"><?php the_time('Y年n月d日(D)'); ?></time></h1>
           <?php the_content(); //本文 ?>
           <a class="button" href="#form">参加する</a>
           <?php get_template_part('partials/sns-share'); ?>
@@ -27,15 +27,6 @@
       </div>
       <div id="form" class="container">
         <?php echo do_shortcode('[contact-form-7 id="31972" title="OFF TOKYO 和歌山キャリアフェア"]'); ?>
-      </div>
-      <a class="scroll-up-button icon icon-arrow-up" href="#"></a>
-      <div class="section participate participate3">
-
-        <center><a class="" href="mailto:event@sibire.co.jp">イベントに関するお問い合わせはこちら</a></center>
-        <footer class="sns-footer">
-          <?php get_template_part('partials/sns-share'); ?>
-          <small>&copy; <?php echo date("Y"); ?> sibire ,inc. All Rights Reserved.</small>
-        </footer>
       </div>
     </div>
     <?php get_footer(); ?>
