@@ -14,15 +14,16 @@
       <div class="section map" id="map">
         <?php get_template_part('google_map');?>
         <div class="acf-map">
-          <div class="marker" data-lat="35.6304639" data-lng="139.6539423">
+          <div class="marker" data-lat="35.6644916" data-lng="139.6991901">
             <div  data-lat="35.6304639" data-lng="139.6539423">
-              <h1><img src="<?php echo get_template_directory_uri(); ?>/images/template-event/logo.jpg" alt="Coming Soon…"/></h1>
-              <p>※Coming Soon…<br /><a href="javascript:void(0);" target="_blank">Coming Soon…</a></p>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/monsoon.png" width="200" alt="モンスーンカフェ"/>
+              <br />
+              <a href="http://www.monsoon-cafe.jp/shibuya/" target="_blank">モンスーンカフェ 渋谷</a>
             </div>
           </div>
         </div>
         <div class="address">
-          <address>〒105-0000 東京都</address>
+          <address>〒150-0041 東京都渋谷区神南1-6-8 神南カンパリビル 4Ｆ</address>
         </div>
       </div>
       <div id="form" class="container">
