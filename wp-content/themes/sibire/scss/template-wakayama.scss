@@ -49,7 +49,6 @@ header.wakayama {
   }
 }
 #template-wakayama {
-  padding-top: 40px;
   font-size: 14px;
   color: #222222;
   img { max-width: 100%; }
@@ -125,15 +124,30 @@ header.wakayama {
         display: none;
       }
     }
-    p {
-      background-color: #fedc5e;
-      padding: 10px 20px;
-      font-size: 15px;
-      line-height: 1.6;
-      max-width: 600px;
+    .content {
+      position: relative;
+      max-width: 580px;
       margin: 0px auto;
-      margin-top: 20px;
-      margin-bottom: 30px;
+      p {
+        background-color: #fedc5e;
+        padding: 10px 20px;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+      .content-img {
+        position: absolute;
+        bottom: 0;
+        &.orange {
+          left: 0;
+          margin: 0 0 40px -30px;
+        }
+        &.panda {
+          right: 0;
+          margin: 0 -30px -30px 0;
+        }
+      }
     }
   }
   .sns-share {

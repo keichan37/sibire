@@ -6,7 +6,12 @@
         <div class="container">
           <img class="cover-image" src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/cover-image.jpg" alt="">
           <h1><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/logo.png" alt="<?php the_title(); ?>"/><time datetime="<?php the_time('c') ;?>"><?php the_time('Y年n月d日(D)'); ?></time></h1>
-          <?php the_content(); //本文 ?>
+          <strong>@モンスーンカフェ 恵比寿店</strong>
+          <div class="content">
+            <?php the_content(); //本文 ?>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/orange.png" class="content-img orange"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/panda.png" class="content-img panda"/>
+          </div>
           <a class="button" href="#common">参加する</a>
           <?php get_template_part('partials/sns-share'); ?>
         </div>
