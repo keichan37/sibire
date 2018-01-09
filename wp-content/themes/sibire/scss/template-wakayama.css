@@ -225,6 +225,9 @@ header.wakayama .slicknav_nav li.current-menu-item a {
   color: #ffffff;
   text-decoration: none;
 }
+#template-wakayama #common {
+  background: none;
+}
 #template-wakayama footer {
   padding: 20px 0 0 0;
   text-align: center;
