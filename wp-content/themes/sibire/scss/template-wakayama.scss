@@ -51,6 +51,7 @@ header.wakayama {
 #template-wakayama {
   font-size: 14px;
   color: #222222;
+  background: #fef5ea url("images/template-wakayama/background.png") center right repeat-y;
   img { max-width: 100%; }
   p,
   article,
@@ -74,6 +75,8 @@ header.wakayama {
       margin-bottom: 30px;
       background: #000000;
       @include transition;
+      @include border-radius(32px);
+      @include box-shadow(0px, 0px, 10px, .3);
       &:hover { background-color: #333333; }
     }
     &.scroll-up-button {
@@ -107,7 +110,6 @@ header.wakayama {
   }
   #cover {
     padding: 0 0 30px 0;
-    background-color: #fef5ea;
     text-align: center;
     img.cover-image {
       position: relative;
@@ -123,6 +125,13 @@ header.wakayama {
       time {
         display: none;
       }
+    }
+    strong,
+    address {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.4;
     }
     .content {
       position: relative;
@@ -150,6 +159,17 @@ header.wakayama {
       }
     }
   }
+  .section {
+    h2 {
+      text-align: center;
+      margin: 20px 0 0 0;
+    }
+    p {
+      max-width: 600px;
+      margin: 0px auto;
+      margin-bottom: 40px;
+    }
+  }
   .sns-share {
     width: 240px;
     margin: 0px auto;
@@ -163,8 +183,6 @@ header.wakayama {
     &:after {
       @include clearfix;
     }
-  }
-  #cover {
   }
   .map {
     .acf-map {

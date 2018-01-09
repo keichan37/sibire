@@ -65,6 +65,7 @@ header.wakayama .slicknav_nav li.current-menu-item a {
 #template-wakayama {
   font-size: 14px;
   color: #222222;
+  background: #fef5ea url("images/template-wakayama/background.png") center right repeat-y;
 }
 #template-wakayama img {
   max-width: 100%;
@@ -99,6 +100,16 @@ header.wakayama .slicknav_nav li.current-menu-item a {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -o-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 #template-wakayama a.button:hover {
   background-color: #333333;
@@ -144,7 +155,6 @@ header.wakayama .slicknav_nav li.current-menu-item a {
 }
 #template-wakayama #cover {
   padding: 0 0 30px 0;
-  background-color: #fef5ea;
   text-align: center;
 }
 #template-wakayama #cover img.cover-image {
@@ -161,6 +171,13 @@ header.wakayama .slicknav_nav li.current-menu-item a {
 }
 #template-wakayama #cover h1 time {
   display: none;
+}
+#template-wakayama #cover strong,
+#template-wakayama #cover address {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4;
 }
 #template-wakayama #cover .content {
   position: relative;
@@ -186,6 +203,15 @@ header.wakayama .slicknav_nav li.current-menu-item a {
 #template-wakayama #cover .content .content-img.panda {
   right: 0;
   margin: 0 -30px -30px 0;
+}
+#template-wakayama .section h2 {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+#template-wakayama .section p {
+  max-width: 600px;
+  margin: 0px auto;
+  margin-bottom: 40px;
 }
 #template-wakayama .sns-share {
   width: 240px;
