@@ -72,7 +72,7 @@
 
   <?php wp_head(); ?>
   </head>
-  <body>
+  <body <?php body_class( $class ); ?>>
     <?php include_once("analyticstracking.php") ?>
     <!-- Google Tag Manager (noscript) adinte -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5QQFS5"
