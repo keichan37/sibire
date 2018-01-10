@@ -2,7 +2,6 @@
 
 .page-template-template-wakayama {
   color: #222222;
-  background: #fef5ea url("images/template-wakayama/background.png") center center /100% repeat-y;
 
   header.wakayama {
     font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
@@ -63,7 +62,7 @@
 
 #template-wakayama {
   font-size: 14px;
-  background: transparent url("images/template-wakayama/background-top.png") top center /100% no-repeat;
+  background: #fef5ea url("images/template-wakayama/background.png") center center /100% repeat-y;
   img { max-width: 100%; }
   p,
   article,
@@ -121,6 +120,7 @@
     padding: 0 10px;
   }
   #cover {
+    background: transparent url("images/template-wakayama/background-top.png") top center /100% no-repeat;
     padding: 0 0 30px 0;
     text-align: center;
     img.cover-image {
