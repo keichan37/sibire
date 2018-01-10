@@ -73,6 +73,7 @@
 
 #template-wakayama {
   font-size: 14px;
+  background: transparent url("images/template-wakayama/background-top.png") top center/100% no-repeat;
 }
 #template-wakayama img {
   max-width: 100%;
