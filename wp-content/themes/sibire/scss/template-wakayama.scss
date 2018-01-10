@@ -124,6 +124,9 @@
     padding: 0 0 30px 0;
     text-align: center;
     img.cover-image {
+      position: relative;
+      top: 35px;
+      z-index: 1;
     }
     h1 {
       position: relative;
