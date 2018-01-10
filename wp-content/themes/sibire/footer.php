@@ -1,8 +1,8 @@
       <?php $url = $_SERVER['REQUEST_URI']; ?>
       <?php if(strstr($url,'wakayama-careerfair')): ?>
-        <footer id="footer">
+        <footer id="footer" class="template-wakayama-footer">
           主催:公益財団法人 わかやま産業振興財団 和歌山県プロフェッショナル人材戦略拠点
-          <div class="copy">&copy; <?php echo date("Y"); ?> sibire ,inc. All Rights Reserved.</div>
+          <div class="copy">Copyright &copy; Wakayama Prefecture. All Rights Reserved.</div>
         </footer>
       <?php elseif(strstr($url,'offtokyomeetup2017')): ?>
       <?php else : ?>
