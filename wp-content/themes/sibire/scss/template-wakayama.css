@@ -157,11 +157,6 @@ header.wakayama .slicknav_nav li.current-menu-item a {
   padding: 0 0 30px 0;
   text-align: center;
 }
-#template-wakayama #cover img.cover-image {
-  position: relative;
-  z-index: 1;
-  bottom: -50px;
-}
 #template-wakayama #cover h1 {
   position: relative;
   z-index: 2;
@@ -267,6 +262,14 @@ header.wakayama .slicknav_nav li.current-menu-item a {
   font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
   background: none;
   height: auto;
+}
+
+#footer.template-wakayama-footer {
+  background: #fef5ea url("images/template-wakayama/background.png") center center/100% repeat-y;
+  color: #222222;
+  font: 400 12px/16px 'Lucida Grande';
+  padding: 30px 0 15px;
+  text-align: center;
 }
 
 @media (max-width: 815px) {
