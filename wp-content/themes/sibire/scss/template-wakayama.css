@@ -65,7 +65,7 @@ header.wakayama .slicknav_nav li.current-menu-item a {
 #template-wakayama {
   font-size: 14px;
   color: #222222;
-  background: #fef5ea url("images/template-wakayama/background.png") center right repeat-y;
+  background: #fef5ea url("images/template-wakayama/background.png") center center/100% repeat-y;
 }
 #template-wakayama img {
   max-width: 100%;
@@ -94,7 +94,7 @@ header.wakayama .slicknav_nav li.current-menu-item a {
   text-decoration: none;
   text-align: center;
   margin: 0px auto;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   background: #000000;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -237,8 +237,9 @@ header.wakayama .slicknav_nav li.current-menu-item a {
   visibility: hidden;
 }
 #template-wakayama .map .acf-map {
-  width: 100%;
-  height: 600px;
+  margin: 0px auto;
+  max-width: 800px;
+  height: 450px;
 }
 #template-wakayama center {
   text-align: center;
