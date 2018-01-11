@@ -82,7 +82,7 @@
           </div>
         </div>
       </div>
-      <div id="common" class="container">
+      <div id="common">
         <?php echo do_shortcode('[contact-form-7 id="31972" title="OFF TOKYO 和歌山キャリアフェア"]'); ?>
       </div>
     </div>
