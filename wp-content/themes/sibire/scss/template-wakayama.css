@@ -338,6 +338,10 @@
     max-width: 500px;
     width: auto;
   }
+  #template-wakayama h2#form.h2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   #template-wakayama .section,
   #template-wakayama .schedule,
   #template-wakayama #common {
@@ -359,10 +363,20 @@
   #template-wakayama #common .interest select {
     width: 100%;
   }
+  #template-wakayama #common .form-group {
+    margin-bottom: 5px;
+  }
+  #template-wakayama #common form input[type=text],
+  #template-wakayama #common form input[type=email],
+  #template-wakayama #common form input[type=tel],
+  #template-wakayama #common form input[type=url],
+  #template-wakayama #common form textarea {
+    margin-top: 5px;
+  }
 }
 @media (max-width: 767px) {
   #template-wakayama .map .acf-map {
-    height: 420px;
+    height: 550px;
   }
   #template-wakayama .map .address {
     text-align: center;
