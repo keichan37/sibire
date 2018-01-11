@@ -2,68 +2,6 @@
 .page-template-template-wakayama {
   color: #222222;
 }
-.page-template-template-wakayama header.wakayama {
-  font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
-}
-.page-template-template-wakayama header.wakayama .menu-global_menu-container {
-  float: none;
-}
-.page-template-template-wakayama header.wakayama ul.global_menu li a {
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
-  padding: 0 5px;
-  border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -o-border-radius: 0px;
-  -ms-border-radius: 0px;
-  border: none;
-  color: #ffffff;
-}
-.page-template-template-wakayama header.wakayama ul.global_menu li a:hover {
-  background: none;
-  color: rgba(255, 255, 255, 0.7);
-}
-.page-template-template-wakayama header.wakayama ul.global_menu li.current-menu-item a, .page-template-template-wakayama header.wakayama ul.global_menu li.current_page_item a {
-  background: none;
-  color: rgba(255, 255, 255, 0.7);
-}
-.page-template-template-wakayama header.wakayama ul.global_menu li.current-page-ancestor a {
-  background: none;
-  cursor: pointer;
-}
-.page-template-template-wakayama header.wakayama .slicknav_btn {
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -o-border-radius: 2px;
-  -ms-border-radius: 2px;
-  margin: 10px 10px 0 0;
-  background-color: #1baaeb;
-}
-.page-template-template-wakayama header.wakayama .slicknav_btn:hover, .page-template-template-wakayama header.wakayama .slicknav_btn.slicknav_open {
-  background-color: #49bcef;
-}
-.page-template-template-wakayama header.wakayama .slicknav_nav {
-  margin-top: 58px;
-  background-color: #1baaeb;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.page-template-template-wakayama header.wakayama .slicknav_nav li a:hover,
-.page-template-template-wakayama header.wakayama .slicknav_nav li.current-menu-item a {
-  background-color: #49bcef;
-}
 .page-template-template-wakayama #footer {
   background: none;
   color: #222222;
@@ -102,7 +40,7 @@
   text-align: center;
   margin: 0px auto;
   margin-bottom: 15px;
-  background: #000000;
+  background-color: #1b1464;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -119,7 +57,7 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 #template-wakayama a.button:hover {
-  background-color: #333333;
+  background-color: #241b86;
 }
 #template-wakayama a.scroll-up-button {
   background-color: #32b3ed;
@@ -161,6 +99,7 @@
   padding: 0 10px;
 }
 #template-wakayama #cover {
+  position: relative;
   background: transparent url("images/template-wakayama/background-top.png") top center/100% no-repeat;
   padding: 0 0 30px 0;
   text-align: center;
@@ -180,7 +119,6 @@
 #template-wakayama #cover h1 time {
   display: none;
 }
-#template-wakayama #cover strong,
 #template-wakayama #cover address {
   font-style: normal;
   font-weight: 700;
@@ -189,34 +127,107 @@
 }
 #template-wakayama #cover .content {
   position: relative;
-  max-width: 580px;
+  max-width: 600px;
   margin: 0px auto;
 }
 #template-wakayama #cover .content p {
   background-color: #fedc5e;
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
   margin-top: 20px;
   margin-bottom: 30px;
 }
-#template-wakayama #cover .content .content-img {
+#template-wakayama #cover .content p strong {
+  font-size: 20px;
+  margin-top: 10px;
+}
+#template-wakayama #cover .content img {
   position: absolute;
   bottom: 0;
 }
-#template-wakayama #cover .content .content-img.orange {
+#template-wakayama #cover .content img.orange {
   left: 0;
-  margin: 0 0 40px -30px;
+  margin: 0 0 40px 10px;
 }
-#template-wakayama #cover .content .content-img.panda {
-  right: 0;
-  margin: 0 -30px -30px 0;
+#template-wakayama #cover img.panda, #template-wakayama #cover img.okami {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+}
+#template-wakayama #cover img.panda {
+  left: 50%;
+  margin: 150px 0 0 200px;
+}
+#template-wakayama #cover img.okami {
+  right: 50%;
+  margin: 300px 200px 0 0;
+}
+#template-wakayama .schedule table {
+  width: 550px;
+  padding: 10px 0;
+  margin: 0px auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border: 3px solid #84b3d9;
+  background-color: #dff3f9;
+}
+#template-wakayama .schedule table caption {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #0d4675;
+  padding: 5px 0 5px 0;
+  border-top: 3px solid #84b3d9;
+  border-left: 3px solid #84b3d9;
+  border-right: 3px solid #84b3d9;
+}
+#template-wakayama .schedule table tbody tr th,
+#template-wakayama .schedule table tbody tr td {
+  padding: 2px 5px;
+}
+#template-wakayama .schedule table tbody tr th {
+  padding-right: 5px;
+  width: 80px;
+  text-align: right;
+  vertical-align: top;
+}
+#template-wakayama .schedule table tbody tr th time {
+  font-size: 13px;
+  background-color: #df7c00;
+  padding: 2px 5px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  -ms-border-radius: 15px;
+}
+#template-wakayama .schedule table tbody tr td {
+  font-size: 15px;
+}
+#template-wakayama .schedule table tbody tr td strong {
+  font-size: 16px;
+}
+#template-wakayama .schedule table tbody tr td strong span {
+  color: #ef4600;
+}
+#template-wakayama .schedule table tbody tr td ul {
+  margin: 5px 0 0 0;
+  padding: 0 0 0 20px;
+}
+#template-wakayama .schedule table tbody tr td ul li {
+  color: #ef4600;
+}
+#template-wakayama .schedule table tbody tr td ul li span {
+  color: #222222;
 }
 #template-wakayama .section h2 {
   text-align: center;
   margin: 20px 0 0 0;
 }
 #template-wakayama .section p {
+  position: relative;
+  top: -15px;
   max-width: 600px;
   margin: 0px auto;
   margin-bottom: 40px;
