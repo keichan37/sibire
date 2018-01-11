@@ -317,6 +317,10 @@
         width: auto;
       }
     }
+    h2#form.h2 {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
     .section,
     .schedule,
     #common {
@@ -335,6 +339,18 @@
           width: 100%
         }
       }
+      .form-group {
+        margin-bottom: 5px
+      }
+      form {
+        input[type=text],
+        input[type=email],
+        input[type=tel],
+        input[type=url],
+        textarea {
+          margin-top: 5px;
+        }
+      }
     }
   }
 }
@@ -347,7 +363,7 @@
     #cover {
     }
     .map {
-      .acf-map { height: 420px; }
+      .acf-map { height: 550px; }
       .address {
         text-align: center;
         address {
