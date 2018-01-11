@@ -14,7 +14,7 @@
             <?php the_content(); //本文 ?>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/orange.png" class="content-img orange"/>
           </div>
-          <a class="button" href="#common">参加する</a>
+          <a class="button" href="#form">参加する</a>
           <?php get_template_part('partials/sns-share'); ?>
         </div>
       </div>
@@ -70,7 +70,7 @@
         <p>和歌山県が誇るおいしい地の物とお酒を召し上がれ。 海の幸も山の幸も味わいながら和歌山ぐらしを体感しよう。</p>
       </div>
       <div class="section map" id="map">
-        <h2>アクセス</h2>
+        <h2 class="h2">アクセス</h2>
         <?php get_template_part('google_map');?>
         <div class="acf-map">
           <div class="marker" data-lat="35.645387" data-lng="139.7117809">
@@ -84,8 +84,10 @@
           </div>
         </div>
       </div>
+      <h2 class="h2" id="form">申し込みフォーム</h2>
       <div id="common">
         <?php echo do_shortcode('[contact-form-7 id="31972" title="OFF TOKYO 和歌山キャリアフェア"]'); ?>
+        <?php /* ?><?php echo do_shortcode('[contact-form-7 id="234" title="OFF TOKYO 和歌山キャリアフェア"]'); ?><?php */ ?>
       </div>
     </div>
     <?php get_footer(); ?>
