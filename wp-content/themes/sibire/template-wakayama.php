@@ -86,8 +86,8 @@
       </div>
       <h2 class="h2" id="form">申し込みフォーム</h2>
       <div id="common">
-        <?php /* ?><?php echo do_shortcode('[contact-form-7 id="31972" title="OFF TOKYO 和歌山キャリアフェア"]'); ?><?php */ ?>
-        <?php echo do_shortcode('[contact-form-7 id="234" title="OFF TOKYO 和歌山キャリアフェア"]'); ?>
+        <?php echo do_shortcode('[contact-form-7 id="31972" title="OFF TOKYO 和歌山キャリアフェア"]'); ?>
+        <?php /* ?><?php echo do_shortcode('[contact-form-7 id="234" title="OFF TOKYO 和歌山キャリアフェア"]'); ?><?php */ ?>
       </div>
     </div>
     <?php get_footer(); ?>
