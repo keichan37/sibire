@@ -3,56 +3,6 @@
 .page-template-template-wakayama {
   color: #222222;
 
-  header.wakayama {
-    font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
-    .menu-global_menu-container { float: none; }
-    ul.global_menu {
-      li {
-        a {
-          @include transition();
-          padding: 0 5px;
-          @include border-radius(0px);
-          border: none;
-          color: #ffffff;
-          &:hover {
-            background: none;
-            color: rgba(255,255,255,.7);
-          }
-        }
-        &.current-menu-item,
-        &.current_page_item {
-          a {
-            background: none;
-            color: rgba(255,255,255,.7);
-          }
-        }
-        &.current-page-ancestor {
-          a {
-            background: none;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-    .slicknav_btn {
-      @include box-shadow(0,0,5px,.5);
-      @include border-radius(2px);
-      margin: 10px 10px 0 0;
-      background-color: #1baaeb;
-      &:hover,
-      &.slicknav_open { background-color: #49bcef; }
-    }
-    .slicknav_nav {
-      margin-top: 58px;
-      background-color: #1baaeb;
-      @include box-shadow(0,0,5px,.5);
-      li a:hover,
-      li.current-menu-item a {
-        background-color: #49bcef;
-      }
-    }
-  }
-
   #footer {
     background: none;
     color: #222222;
@@ -84,11 +34,11 @@
       text-align: center;
       margin: 0px auto;
       margin-bottom: 15px;
-      background: #000000;
+      background-color: #1b1464;
       @include transition;
       @include border-radius(32px);
       @include box-shadow(0px, 0px, 10px, .3);
-      &:hover { background-color: #333333; }
+      &:hover { background-color: lighten(#1b1464,8%); }
     }
     &.scroll-up-button {
       background-color: #32b3ed;
@@ -120,6 +70,7 @@
     padding: 0 10px;
   }
   #cover {
+    position: relative;
     background: transparent url("images/template-wakayama/background-top.png") top center /100% no-repeat;
     padding: 0 0 30px 0;
     text-align: center;
@@ -138,7 +89,6 @@
         display: none;
       }
     }
-    strong,
     address {
       font-style: normal;
       font-weight: 700;
@@ -147,26 +97,102 @@
     }
     .content {
       position: relative;
-      max-width: 580px;
+      max-width: 600px;
       margin: 0px auto;
       p {
         background-color: #fedc5e;
         padding: 10px 20px;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.6;
         margin-top: 20px;
         margin-bottom: 30px;
+        strong {
+          font-size: 20px;
+          margin-top: 10px;
+        }
       }
-      .content-img {
+      img {
         position: absolute;
         bottom: 0;
         &.orange {
           left: 0;
-          margin: 0 0 40px -30px;
+          margin: 0 0 40px 10px;
         }
-        &.panda {
-          right: 0;
-          margin: 0 -30px -30px 0;
+      }
+    }
+    img {
+      &.panda,
+      &.okami {
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+      }
+      &.panda {
+        left: 50%;
+        margin: 150px 0 0 200px;
+      }
+      &.okami {
+        right: 50%;
+        margin: 300px 200px 0 0;
+      }
+    }
+  }
+  .schedule {
+    table {
+      width: 550px;
+      padding: 10px 0;
+      margin: 0px auto;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      border: 3px solid #84b3d9;
+      background-color: #dff3f9;
+      caption {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 18px;
+        background-color: #0d4675;
+        padding: 5px 0 5px 0;
+        border-top: 3px solid #84b3d9;
+        border-left: 3px solid #84b3d9;
+        border-right: 3px solid #84b3d9;
+      }
+      tbody {
+        tr {
+          th,
+          td {
+            padding: 2px 5px;
+          }
+          th {
+            padding-right: 5px;
+            width: 80px;
+            text-align: right;
+            vertical-align: top;
+            time {
+              font-size: 13px;
+              background-color: #df7c00;
+              padding: 2px 5px;
+              @include border-radius(15px);
+            }
+          }
+          td {
+            font-size: 15px;
+            strong {
+              font-size: 16px;
+              span {
+                color: #ef4600;
+              }
+            }
+            ul {
+              margin: 5px 0 0 0;
+              padding: 0 0 0 20px;
+              li {
+                color: #ef4600;
+                span {
+                  color: #222222;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -177,6 +203,8 @@
       margin: 20px 0 0 0;
     }
     p {
+      position: relative;
+      top: -15px;
       max-width: 600px;
       margin: 0px auto;
       margin-bottom: 40px;

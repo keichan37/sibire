@@ -8,14 +8,48 @@
           <h1><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/logo.png" alt="<?php the_title(); ?>"/><time datetime="<?php the_time('c') ;?>"><?php the_time('Y年n月d日(D)'); ?></time></h1>
           <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/building.png" alt="モンスーンカフェ 恵比寿店"/>
           <address>東京都渋谷区恵比寿4-4-6 MARIX恵比寿ビル 1F</address>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/panda.png" class="panda"/>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/okami.png" class="okami"/>
           <div class="content">
             <?php the_content(); //本文 ?>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/orange.png" class="content-img orange"/>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/panda.png" class="content-img panda"/>
           </div>
           <a class="button" href="#common">参加する</a>
           <?php get_template_part('partials/sns-share'); ?>
         </div>
+      </div>
+      <div class="schedule">
+        <table>
+          <caption>開催概要</caption>
+          <tbody>
+            <tr>
+              <th><time>14:00</time></th>
+              <td>オープニング</td>
+            </tr>
+            <tr>
+              <th><time>14:10</time></th>
+              <td>ライトニングトーク 和歌山を選び働くキーマンの実例紹介</td>
+            </tr>
+            <tr>
+              <th><time>14:20</time></th>
+              <td><strong><span>第1部</span>　わかやまワークショップ</strong><br />〜和歌山で働く十人×都内在住の参加者〜</td>
+            </tr>
+            <tr>
+              <th><time>15:10</time></th>
+              <td><strong><span>第2部</span>　交流会</strong><br />和歌山の食を楽しみながら来場者と情報交換
+              <ul>
+                <li><span>企業プレゼン(各社2分程度)</span></li>
+                <li><span>リアルタイムVR体験</span></li>
+                <li><span>ディスカッションスペース など</span></li>
+              </ul>
+              </td>
+            </tr>
+            <tr>
+              <th><time>17:30</time></th>
+              <td>終了</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="section section1">
         <h2>
