@@ -255,7 +255,8 @@
   clear: both;
   visibility: hidden;
 }
-#template-wakayama .map h2 {
+#template-wakayama h2.h2 {
+  text-align: center;
   color: #ffffff;
   font-weight: 700;
   font-size: 18px;
@@ -265,6 +266,9 @@
   max-width: 794px;
   margin: 0px auto;
   border: 3px solid #84b3d9;
+}
+#template-wakayama .map {
+  margin-bottom: 50px;
 }
 #template-wakayama .map .acf-map {
   margin: 0px auto;
@@ -283,9 +287,24 @@
   text-decoration: none;
 }
 #template-wakayama #common {
+  padding-top: 15px;
   background: none;
   width: 500px;
   margin: 0px auto;
+}
+#template-wakayama #common .form-group .control-label {
+  font-weight: 400;
+  font-size: 14px;
+}
+#template-wakayama #common .form-group .wpcf7-form-control-wrap {
+  max-width: 100%;
+}
+#template-wakayama #common .wakayama select,
+#template-wakayama #common .industry select,
+#template-wakayama #common .offtokyo select,
+#template-wakayama #common .interest select {
+  width: 300px;
+  padding-right: 40px;
 }
 
 @media (max-width: 815px) {
