@@ -273,6 +273,8 @@
 }
 #template-wakayama #common {
   background: none;
+  width: 500px;
+  margin: 0px auto;
 }
 
 @media (max-width: 815px) {
