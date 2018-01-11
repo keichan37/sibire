@@ -6,7 +6,7 @@
         <div class="container">
           <img class="cover-image" src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/cover-arch.png" alt="">
           <h1><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/logo.png" alt="<?php the_title(); ?>"/><time datetime="<?php the_time('c') ;?>"><?php the_time('Y年n月d日(D)'); ?></time></h1>
-          <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/building.png" alt="モンスーンカフェ 恵比寿店"/>
+          <img class="building" src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/building.png" alt="モンスーンカフェ 恵比寿店"/>
           <address>東京都渋谷区恵比寿4-4-6 MARIX恵比寿ビル 1F</address>
           <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/panda.png" class="panda"/>
           <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/okami.png" class="okami"/>
@@ -86,8 +86,8 @@
       </div>
       <h2 class="h2" id="form">申し込みフォーム</h2>
       <div id="common">
-        <?php echo do_shortcode('[contact-form-7 id="31972" title="OFF TOKYO 和歌山キャリアフェア"]'); ?>
-        <?php /* ?><?php echo do_shortcode('[contact-form-7 id="234" title="OFF TOKYO 和歌山キャリアフェア"]'); ?><?php */ ?>
+        <?php /* ?><?php echo do_shortcode('[contact-form-7 id="31972" title="OFF TOKYO 和歌山キャリアフェア"]'); ?><?php */ ?>
+        <?php echo do_shortcode('[contact-form-7 id="234" title="OFF TOKYO 和歌山キャリアフェア"]'); ?>
       </div>
     </div>
     <?php get_footer(); ?>
