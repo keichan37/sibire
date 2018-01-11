@@ -308,28 +308,56 @@
   padding-right: 40px;
 }
 
-@media (max-width: 815px) {
-  header.wakayama .global_menu {
-    display: block;
+@media (max-width: 960px) {
+  #template-wakayama {
+    background-image: none;
   }
-  header.wakayama .slicknav_btn {
+  #template-wakayama #cover {
+    overflow: hidden;
+    background-image: none;
+    padding-top: 60px;
+  }
+  #template-wakayama #cover img.cover-image {
+    width: 1000px;
+    max-width: 1000px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: -70px 0 0 -500px;
+  }
+  #template-wakayama #cover .building {
+    max-width: 80%;
+  }
+  #template-wakayama #cover address {
+    font-size: 14px;
+  }
+  #template-wakayama #cover .content img.orange {
     display: none;
   }
-}
-@media (max-width: 872px) {
-  header.wakayama {
-    background: none;
-    border: none;
-    height: 0;
+  #template-wakayama .schedule table {
+    max-width: 500px;
+    width: auto;
   }
-  header.wakayama .global_menu {
-    display: none;
+  #template-wakayama .section,
+  #template-wakayama .schedule,
+  #template-wakayama #common {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    width: 100%;
+    padding: 0 10px;
   }
-  header.wakayama .slicknav_btn {
-    display: block;
+  #template-wakayama #common {
+    max-width: 500px;
+    width: auto;
   }
-  header.wakayama:after, header.wakayama:before {
-    background: none;
+  #template-wakayama #common .wakayama select,
+  #template-wakayama #common .industry select,
+  #template-wakayama #common .offtokyo select,
+  #template-wakayama #common .interest select {
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
