@@ -70,6 +70,7 @@
         <p>和歌山県が誇るおいしい地の物とお酒を召し上がれ。 海の幸も山の幸も味わいながら和歌山ぐらしを体感しよう。</p>
       </div>
       <div class="section map" id="map">
+        <h2>アクセス</h2>
         <?php get_template_part('google_map');?>
         <div class="acf-map">
           <div class="marker" data-lat="35.645387" data-lng="139.7117809">
@@ -78,6 +79,7 @@
               <br />
               <a href="http://www.monsoon-cafe.jp/ebisu/print/" target="_blank">モンスーンカフェ 恵比寿</a>
               <address>〒150-0013 東京都渋谷区恵比寿4-4-6 MARIX恵比寿ビル 1F</address>
+              TEL:<a href="tel:0357893811">0357893811</a>
             </div>
           </div>
         </div>
