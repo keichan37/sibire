@@ -268,6 +268,13 @@
       }
       .wpcf7-form-control-wrap {
         max-width: 100%;
+        &.interest {
+          max-width: 300px;
+          width: 300px;
+          .wpcf7-list-item {
+            display: block;
+          }
+        }
       }
     }
     .wakayama,
