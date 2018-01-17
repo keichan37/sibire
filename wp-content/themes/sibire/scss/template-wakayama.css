@@ -314,6 +314,30 @@
   width: 300px;
   padding-right: 40px;
 }
+#template-wakayama #common .wpcf7-confirm-wrap {
+  background-color: #ffffff;
+}
+#template-wakayama #common .wpcf7-confirm-wrap .form-group .control-label {
+  color: #888888;
+}
+#template-wakayama #common .wpcf7-confirm-wrap .form-group input[type=text].wpcf7c-conf,
+#template-wakayama #common .wpcf7-confirm-wrap .form-group input[type=email].wpcf7c-conf,
+#template-wakayama #common .wpcf7-confirm-wrap .form-group input[type=tel].wpcf7c-conf,
+#template-wakayama #common .wpcf7-confirm-wrap .form-group input[type=url].wpcf7c-conf,
+#template-wakayama #common .wpcf7-confirm-wrap .form-group select.wpcf7c-conf,
+#template-wakayama #common .wpcf7-confirm-wrap .form-group textarea.wpcf7c-conf {
+  color: #888888;
+}
+#template-wakayama #common .div.wpcf7 .wpcf7-mail-sent-ok {
+  background-color: #fedc5e;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  color: #222222;
+  padding: 10px 20px;
+  max-width: 400px;
+  width: auto;
+}
 
 @media (max-width: 960px) {
   #template-wakayama {
