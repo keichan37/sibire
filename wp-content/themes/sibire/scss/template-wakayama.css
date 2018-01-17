@@ -328,7 +328,7 @@
 #template-wakayama #common .wpcf7-confirm-wrap .form-group textarea.wpcf7c-conf {
   color: #888888;
 }
-#template-wakayama #common .div.wpcf7 .wpcf7-mail-sent-ok {
+#template-wakayama #common div.wpcf7 .wpcf7-mail-sent-ok {
   background-color: #fedc5e;
   color: #ffffff;
   text-align: center;
