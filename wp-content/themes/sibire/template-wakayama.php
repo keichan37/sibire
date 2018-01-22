@@ -8,7 +8,8 @@
           <h1><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/logo.png" alt="<?php the_title(); ?>"/><time datetime="2018-03-10T14:00"></time></h1>
           <img class="building" src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/building.png" alt="モンスーンカフェ 恵比寿店"/>
           <address>東京都渋谷区恵比寿4-4-6 MARIX恵比寿ビル 1F</address>
-          <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/panda.png" class="panda"/>
+
+          <?php /* ?><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/panda.png" class="panda"/><?php */ ?>
           <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/okami.png" class="okami"/>
           <span>参加費:1000円(軽食とドリンクをお出しします。当日お支払いいただきます)</span>
           <div class="content">
