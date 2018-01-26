@@ -1,0 +1,77 @@
+#template-event.template-wakayama-single #sub-cover {
+  background: #fef5ea;
+  border-bottom: 2px solid #000000;
+}
+#template-event.template-wakayama-single #sub-cover img {
+  width: 400px;
+  height: 120px;
+}
+#template-event.template-wakayama-single article {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  width: 767px;
+  margin: 0px auto;
+  padding: 0 20px 40px 20px;
+}
+#template-event.template-wakayama-single h1 {
+  color: #ffffff;
+  margin-top: 10px;
+}
+#template-event.template-wakayama-single h1 span {
+  background-color: rgba(24, 41, 135, 0.9);
+  padding: 2px 8px 5px 8px;
+}
+#template-event.template-wakayama-single .mce-content-body h1,
+#template-event.template-wakayama-single .mce-content-body h2,
+#template-event.template-wakayama-single .mce-content-body h3,
+#template-event.template-wakayama-single .mce-content-body h4,
+#template-event.template-wakayama-single .mce-content-body h5,
+#template-event.template-wakayama-single .mce-content-body h6 {
+  color: #182987;
+}
+#template-event.template-wakayama-single .mce-content-body h2:after {
+  background-image: url("images/editor/h2.png");
+}
+#template-event.template-wakayama-single .mce-content-body h3 {
+  background-image: url("images/editor/h3.png");
+}
+#template-event.template-wakayama-single .mce-content-body h4 {
+  border-bottom-color: #182987;
+}
+#template-event.template-wakayama-single .mce-content-body a {
+  color: #182987;
+}
+#template-event.template-wakayama-single .mce-content-body hr {
+  border-top-color: #182987;
+}
+#template-event.template-wakayama-single a.scroll-up-button {
+  background-color: #182987;
+}
+#template-event.template-wakayama-single a.scroll-up-button:hover {
+  background-color: #142271;
+}
+#template-event.template-wakayama-single footer {
+  border-top: 2px solid #000000;
+  background-color: #ffb700;
+}
+#template-event.template-wakayama-single footer small {
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .template-event-single #sub-cover {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .template-event-single #sub-cover h1 {
+    height: auto;
+  }
+  .template-event-single article {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=template-wakayama-single.css.map */
