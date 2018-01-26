@@ -37,6 +37,7 @@ module.exports = function (grunt) {
             'scss/template-event-single.css',
             'scss/template-summary.css',
             'scss/template-wakayama.css',
+            'scss/template-wakayama-single.css',
             'scss/partials-catchcopy.css',
             'scss/plugin-wpcf7.css',
             'scss/wordpress.css'
@@ -66,6 +67,7 @@ module.exports = function (grunt) {
           'scss/template-event-single.css',
           'scss/template-summary.css',
           'scss/template-wakayama.css',
+          'scss/template-wakayama-single.css',
           'scss/partials-catchcopy.css',
           'scss/plugin-wpcf7.css',
           'scss/wordpress.css'
