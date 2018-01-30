@@ -53,6 +53,8 @@
           </tbody>
         </table>
       </div>
+      
+      <?php /* ?>
       <div class="section company" id="company">
         <h2 class="h2">出展企業</h2>
         <ul>
@@ -66,6 +68,8 @@
           <li><figure><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/w-meiwa.jpg"><figcaption><strong>(株)メイワ</strong></figcaption></figure></li>
         </ul>
       </div>
+      <?php */ ?>
+
       <div class="section section1">
         <h2>
           <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/h2-1.png" alt="ワークショップ「わかやま“十人十色のくらしぶり”」"/>
