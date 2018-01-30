@@ -59,6 +59,7 @@
   h3,
   h4,
   time,
+  figcaption sttrong,
   a.button { font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB'; }
   strong,
   tr.strong {
@@ -237,6 +238,66 @@
     margin: 0px auto;
     border: 3px solid #84b3d9;
   }
+  .company {
+    max-width: 900px;
+    margin: 0px auto;
+    ul {
+      padding: 15px 0;
+      margin: 0px auto;
+      margin-bottom: 50px;
+      li {
+        @include border-box;
+        padding: 0 10px 20px 10px;
+        width: 25%;
+        float: left;
+        list-style: none;
+        min-height: 321px; 
+        figure {
+          position: relative;
+          margin: 0;
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 2px;
+          }
+          figcaption {
+            padding-top: 8px;
+            line-height: 1.4;
+            span.tag {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              font-size: 12px;
+              line-height: 1.3;
+              padding: 0 2px;
+              background-color: #84b3d9;;
+              color: #ffffff;
+              margin: 0 0 3px 0;
+              @include border-radius(2px);
+            }
+          }
+        }
+        p {
+          b { display: block; }
+          background-color: #dff3f9;
+          margin: 15px 0 0 0;
+          padding: 5px 8px 5px 8px;
+          font-size: 13px;
+          line-height: 1.5;
+          @include border-radius(10px);
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 4;
+          overflow: hidden;
+        }
+      }
+      &:before,
+      &:after {
+        @include clearfix;
+      }
+    }
+  }
   .map {
     margin-bottom: 50px;
     .acf-map {
@@ -394,6 +455,27 @@
 @media(max-width: 767px) {
   #template-wakayama {
     #cover {
+    }
+    .company {
+      ul {
+        li {
+          width: 50%;
+          figure {
+            figcaption {
+              strong {
+                display: block;
+              }
+              span.tag {
+                display: inline-block;
+                position: relative;
+                bottom: auto;
+                right: auto;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
     }
     .map {
       .acf-map { height: 550px; }
