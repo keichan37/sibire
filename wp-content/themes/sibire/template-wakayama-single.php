@@ -28,7 +28,6 @@
 
                 <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
 
-                  <? $txt = get_field('subtitle'); if($txt){ ?><h2 class="single-subtitle"><? echo $txt; ?></h2><? } ?>
                   <?php get_template_part('partials/sns-share'); ?>
                   <?php
                     $thumbnail_id = get_post_thumbnail_id();
@@ -159,7 +158,6 @@
                       <div class="single-related-eyecatch" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/common/no-image-eyecatch.png")></div>
                     <?php endif; ?>
                     <h5><?php the_title(); ?></h5>
-                    <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
                   </a>
                 <?php 
                 endforeach; 
