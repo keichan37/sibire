@@ -1,6 +1,9 @@
 <?php /* Template Name: 和歌山イベントLP 記事ページ */ ?>
 
   <?php get_header(); ?>
+    <div class="wakayama-header">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/logo.svg" alt="">
+    </div>
     <div id="common" class="template-wakayama-single">
       <div class="container">
         <div class="single-wrap">
