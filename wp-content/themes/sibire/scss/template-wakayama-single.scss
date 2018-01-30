@@ -1,4 +1,16 @@
 @import "mixin";
+.wakayam-careerfair-header {
+  margin: 0px auto;
+  height: 40px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  background-color: #ffffff;
+}
+
 #common.template-wakayama-single {
   background: #fef5ea;
   .single-wrap {
