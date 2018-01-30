@@ -104,6 +104,7 @@
                    'paged' => $paged,
                    'post_type' => $slug,
                    'post_status' => 'publish',
+                   'post_parent' => $parent_id,
                    'posts_per_page'   => 10,
                    'has_password' => false,
                    'post__not_in'=> array(get_the_ID())
@@ -127,11 +128,13 @@
               <h4>関連記事</h4>
               <div class="single-related-lists">
                 <?php
+                  $parent_id = $post->post_parent;
                   $slug = get_post_type();
                   $args = array( 
                    'paged' => $paged,
                    'post_type' => $slug,
                    'post_status' => 'publish',
+                   'post_parent' => $parent_id,
                    'posts_per_page'   => 15,
                    'has_password' => false,
                    'post__not_in'=> array(get_the_ID())
