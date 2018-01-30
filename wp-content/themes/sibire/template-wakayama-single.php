@@ -2,16 +2,27 @@
 
   <?php get_header(); ?>
     <div class="wakayama-header">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/logo.svg" alt="">
+      <?php
+        $parent_id = $post->post_parent;
+        $parent_title = get_post($parent_id)->post_title;
+      ?>
+      <a href="<?php echo get_permalink($parent_id); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/logo.svg" alt=""></a>
     </div>
     <div id="common" class="template-wakayama-single">
       <div class="container">
         <div class="single-wrap">
-          <?php get_template_part('breadcrumb'); ?>
+          <div class="breadcrumb">
+            <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+              <a href="<?php echo get_permalink($parent_id); ?>" itemprop="url">
+                <span itemprop="title"><?php echo $parent_title; ?></span>
+              </a>&nbsp;&gt;&nbsp;
+            </span>
+            <?php the_title(); ?>
+          </div>
           <div class="single-left">
             <?php while(have_posts()): the_post(); ?>
               <article>
-                <span class="single-category">求人情報</span>
+                <span class="single-category">出展企業</span>
                 <time class="single-date" datetime="<?php the_time('c') ;?>"><?php the_time('Y.n.j') ;?></time>
                 <h1 class="single-title"><?php the_title(); ?></h1>
 
