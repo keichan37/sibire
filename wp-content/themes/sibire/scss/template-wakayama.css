@@ -289,6 +289,7 @@
   float: left;
   list-style: none;
   min-height: 321px;
+  min-height: 221px;
 }
 #template-wakayama .company ul li a {
   color: #222222;
@@ -331,14 +332,6 @@
   -moz-border-radius: 2px;
   -o-border-radius: 2px;
   -ms-border-radius: 2px;
-}
-#template-wakayama .company ul li a:hover figure img {
-  opacity: 0.8;
-  -moz-opacity: 0.8;
-  -ms-filter: "alpha(opacity=$ratioms)";
-}
-#template-wakayama .company ul li a:hover figure figcaption {
-  color: #84b3d9;
 }
 #template-wakayama .company ul li p {
   background-color: #dff3f9;

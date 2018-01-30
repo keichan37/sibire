@@ -63,8 +63,9 @@
             $parent_id = $post->post_parent;
             $slug = get_post_type();
             $args = array( 
-             'order' => 'DESC',
              'meta_key' => 'subtitle',
+             'orderby' => 'meta_value',
+             'order' => 'ASC',
              'paged' => $paged,
              'post_type' => $slug,
              'post_status' => 'publish',
@@ -77,14 +78,15 @@
             foreach ($postslist as $post) : setup_postdata($post);
           ?>
             <li>
-              <a href="<?php the_permalink(); ?>">
+              <?php /* ?><a href="<?php the_permalink(); ?>"><?php */ ?>
+              <a href="javascript: void(0);">
                 <figure>
                   <?php if(has_post_thumbnail()): ?>
                     <?php the_post_thumbnail('medium'); ?>
                   <?php else: ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/zaiseido.jpg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/empty.jpg">
                   <?php endif; ?>
-                  <figcaption><strong><?php the_title(); ?></strong><span class="tag">製造業</span></figcaption>
+                  <figcaption><strong><?php the_title(); ?></strong></figcaption>
                 </figure>
               </a>
             </li>
