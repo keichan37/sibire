@@ -90,8 +90,6 @@
       <?php $url = $_SERVER['REQUEST_URI']; ?>
       <?php if(strstr($url,'wakayama-careerfair')): ?>
         <?php if (is_page() && $post->post_parent): ?>
-          <header class="wakayam-careerfair-header">
-          </header>
         <?php else: ?>
         <?php endif; ?>
       <?php elseif(strstr($url,'offtokyomeetup2017')): ?>
