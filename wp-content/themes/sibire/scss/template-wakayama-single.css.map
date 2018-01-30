@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AACA,gCAAiC;EAC/B,UAAU,EAAE,OAAO;;AACnB,6CAAa;EACX,UAAU,EAAE,OAAO",
+"mappings": "AACA,gCAAiC;EAC/B,UAAU,EAAE,OAAO;;AAGnB,wCAAQ;EACN,UAAU,EAAE,iBAAiB;EAC7B,UAAU,EAAE,OAAO;EACnB,KAAK,EAAE,OAAO;EACd,OAAO,EAAE,WACX",
 "sources": ["template-wakayama-single.scss"],
 "names": [],
 "file": "template-wakayama-single.css"

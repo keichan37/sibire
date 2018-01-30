@@ -1,8 +1,11 @@
 #common.template-wakayama-single {
   background: #fef5ea;
 }
-#common.template-wakayama-single .single-wrap {
-  background: #ffffff;
+#common.template-wakayama-single #footer {
+  border-top: 2px solid #231815;
+  background: #ffb700;
+  color: #222222;
+  padding: 30px 0 15px;
 }
 
 /*# sourceMappingURL=template-wakayama-single.css.map */
