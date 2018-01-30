@@ -290,21 +290,33 @@
   list-style: none;
   min-height: 321px;
 }
-#template-wakayama .company ul li figure {
+#template-wakayama .company ul li a {
+  color: #222222;
+  text-decoration: none;
+}
+#template-wakayama .company ul li a figure {
   position: relative;
   margin: 0;
 }
-#template-wakayama .company ul li figure img {
+#template-wakayama .company ul li a figure img {
   width: 100%;
   height: auto;
   display: block;
   margin-bottom: 2px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
 }
-#template-wakayama .company ul li figure figcaption {
+#template-wakayama .company ul li a figure figcaption {
   padding-top: 8px;
   line-height: 1.4;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
 }
-#template-wakayama .company ul li figure figcaption span.tag {
+#template-wakayama .company ul li a figure figcaption span.tag {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -319,6 +331,14 @@
   -moz-border-radius: 2px;
   -o-border-radius: 2px;
   -ms-border-radius: 2px;
+}
+#template-wakayama .company ul li a:hover figure img {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-filter: "alpha(opacity=$ratioms)";
+}
+#template-wakayama .company ul li a:hover figure figcaption {
+  color: #84b3d9;
 }
 #template-wakayama .company ul li p {
   background-color: #dff3f9;

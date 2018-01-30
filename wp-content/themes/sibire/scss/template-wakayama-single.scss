@@ -10,9 +10,17 @@
   width: 100%;
   background-color: #fddb5d;
   text-align: center;
-  img {
-    width: 265px;
-    height: 52px;
+  a {
+    img {
+      @include transition;
+      width: 265px;
+      height: 52px;
+    }
+    &:hover {
+      img {
+        @include opacity;
+      }
+    }
   }
   &:after,
   &:before {

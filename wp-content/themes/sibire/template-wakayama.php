@@ -55,6 +55,47 @@
       </div>
       
       <?php /* ?>
+
+      <div class="section company" id="company">
+        <h2 class="h2">出展企業</h2>
+        <ul>
+        <?php
+          $parent_id = $post->post_parent;
+          $slug = get_post_type();
+          $args = array( 
+           'order' => 'ASC',
+           'orderby' => 'menu_order',
+           'paged' => $paged,
+           'post_type' => $slug,
+           'post_status' => 'publish',
+           'posts_per_page'   => -1,
+           'post_parent' => get_the_ID(),
+           'has_password' => false,
+           'post__not_in'=> array(get_the_ID())
+          );
+          $postslist = get_posts($args);
+          foreach ($postslist as $post) : setup_postdata($post);
+        ?>
+          <li>
+            <a href="<?php the_permalink(); ?>">
+              <figure>
+                <?php if(has_post_thumbnail()): ?>
+                  <?php the_post_thumbnail('medium'); ?>
+                <?php else: ?>
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/zaiseido.jpg">
+                <?php endif; ?>
+                <figcaption><strong><?php the_title(); ?></strong><span class="tag">製造業</span></figcaption>
+              </figure>
+            </a>
+          </li>
+        <?php 
+          endforeach; 
+          wp_reset_postdata();
+        ?>
+        </ul>
+      </div>
+
+
       <div class="section company" id="company">
         <h2 class="h2">出展企業</h2>
         <ul>
