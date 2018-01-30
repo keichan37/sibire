@@ -252,6 +252,7 @@
         float: left;
         list-style: none;
         min-height: 321px;
+        min-height: 221px;
         a {
           color: #222222;
           text-decoration: none;
@@ -285,12 +286,12 @@
           }
           &:hover {
             figure {
-              img {
-                @include opacity;
-              }
-              figcaption {
-                color: #84b3d9;
-              }
+              //img {
+              //  @include opacity;
+              //}
+              //figcaption {
+              //  color: #84b3d9;
+              //}
             }
           }
         }
