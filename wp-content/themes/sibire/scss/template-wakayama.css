@@ -82,6 +82,7 @@
 #template-wakayama h3,
 #template-wakayama h4,
 #template-wakayama time,
+#template-wakayama figcaption sttrong,
 #template-wakayama a.button {
   font-family: 'FOT-ニューセザンヌ ProN DB', 'NewCezanneProN-DB';
 }
@@ -268,6 +269,84 @@
   margin: 0px auto;
   border: 3px solid #84b3d9;
 }
+#template-wakayama .company {
+  max-width: 900px;
+  margin: 0px auto;
+}
+#template-wakayama .company ul {
+  padding: 15px 0;
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
+#template-wakayama .company ul li {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 10px 20px 10px;
+  width: 25%;
+  float: left;
+  list-style: none;
+  min-height: 321px;
+}
+#template-wakayama .company ul li figure {
+  position: relative;
+  margin: 0;
+}
+#template-wakayama .company ul li figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 2px;
+}
+#template-wakayama .company ul li figure figcaption {
+  padding-top: 8px;
+  line-height: 1.4;
+}
+#template-wakayama .company ul li figure figcaption span.tag {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  line-height: 1.3;
+  padding: 0 2px;
+  background-color: #84b3d9;
+  color: #ffffff;
+  margin: 0 0 3px 0;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+}
+#template-wakayama .company ul li p {
+  background-color: #dff3f9;
+  margin: 15px 0 0 0;
+  padding: 5px 8px 5px 8px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+#template-wakayama .company ul li p b {
+  display: block;
+}
+#template-wakayama .company ul:before, #template-wakayama .company ul:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
 #template-wakayama .map {
   margin-bottom: 50px;
 }
@@ -406,6 +485,19 @@
   }
 }
 @media (max-width: 767px) {
+  #template-wakayama .company ul li {
+    width: 50%;
+  }
+  #template-wakayama .company ul li figure figcaption strong {
+    display: block;
+  }
+  #template-wakayama .company ul li figure figcaption span.tag {
+    display: inline-block;
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin: 0;
+  }
   #template-wakayama .map .acf-map {
     height: 550px;
   }
