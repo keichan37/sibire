@@ -94,52 +94,44 @@
           <div class="single-right">
             <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
               <aside>
-              <?php  $location = get_field('google_map'); if( !empty($location) ):?>
-                <h4>勤務地</h4>
-                <div class="single-map">
-                  <?php get_template_part('google_map');?>
-                  <div class="acf-map">
-                    <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+                <?php  $location = get_field('google_map'); if( !empty($location) ):?>
+                  <h4>勤務地</h4>
+                  <div class="single-map">
+                    <?php get_template_part('google_map');?>
+                    <div class="acf-map">
+                      <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+                    </div>
+                    <table>
+                      <tr>
+                        <th><span class="icon-link"></span></th>
+                        <td><a href="http://maps.google.com/maps?q=<?php echo $location['address']; ?>" target="_blank"><?php echo $location['address']; ?></a></td>
+                      </tr>
+                    </table>
                   </div>
-                  <table>
-                    <tr>
-                      <th><span class="icon-link"></span></th>
-                      <td><a href="http://maps.google.com/maps?q=<?php echo $location['address']; ?>" target="_blank"><?php echo $location['address']; ?></a></td>
-                    </tr>
-                  </table>
+                <?php endif; ?>
+                <?php if(has_tag()==true) : ?>
+                  <h4>業種</h4>
+                  <ul class="single-tag">
+                    <?php
+                      $posttags = get_the_tags();
+                      if ($posttags) {
+                        foreach($posttags as $tag) {
+                          echo '<li><span class="icon-tag"></span>' . $tag->name . '</li>';
+                        }
+                      }
+                    ?>
+                  </ul>
+                <?php endif; ?>
+
+                <div class="single-service">
+                  <a class="service-registration" href="<?php echo get_permalink($parent_id); ?>#form">申し込む</a>
                 </div>
-              <?php endif; ?>
-                <h4>関連記事</h4>
-                <ul class="single-related-list">
-                <?php
-                  $parent_id = $post->post_parent;
-                  $slug = get_post_type();
-                  $args = array( 
-                   'paged' => $paged,
-                   'post_type' => $slug,
-                   'post_status' => 'publish',
-                   'post_parent' => $parent_id,
-                   'posts_per_page'   => 10,
-                   'has_password' => false,
-                   'post__not_in'=> array(get_the_ID())
-                  );
-                  $postslist = get_posts($args);
-                  foreach ($postslist as $post) : setup_postdata($post);
-                ?>
-                  <li>
-                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                  </li>
-                <?php 
-                endforeach; 
-                wp_reset_postdata();
-                ?>
-                </ul>
               </aside>
             <?php endif; //パスワード保護 ?>
           </div>
           <aside class="clear">
             <div class="single-related-wrap">
-              <h4>関連記事</h4>
+              <h4>他の出展企業</h4>
               <div class="single-related-lists">
                 <?php
                   $parent_id = $post->post_parent;
