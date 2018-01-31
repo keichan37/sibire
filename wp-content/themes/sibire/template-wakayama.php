@@ -54,49 +54,46 @@
         </table>
       </div>
       
-
-      <?php if (is_user_logged_in()) : ?>
-        <div class="section company" id="company">
-          <h2 class="h2">出展企業</h2>
-          <ul>
-          <?php
-            $parent_id = $post->post_parent;
-            $slug = get_post_type();
-            $args = array( 
-             'meta_key' => 'subtitle',
-             'orderby' => 'meta_value',
-             'order' => 'ASC',
-             'paged' => $paged,
-             'post_type' => $slug,
-             'post_status' => 'publish',
-             'posts_per_page'   => -1,
-             'post_parent' => get_the_ID(),
-             'has_password' => false,
-             'post__not_in'=> array(get_the_ID())
-            );
-            $postslist = get_posts($args);
-            foreach ($postslist as $post) : setup_postdata($post);
-          ?>
-            <li>
-              <?php /* ?><a href="<?php the_permalink(); ?>"><?php */ ?>
-              <a href="javascript: void(0);">
-                <figure>
-                  <?php if(has_post_thumbnail()): ?>
-                    <?php the_post_thumbnail('medium'); ?>
-                  <?php else: ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/empty.jpg">
-                  <?php endif; ?>
-                  <figcaption><strong><?php the_title(); ?></strong></figcaption>
-                </figure>
-              </a>
-            </li>
-          <?php 
-            endforeach; 
-            wp_reset_postdata();
-          ?>
-          </ul>
-        </div>
-      <?php endif; ?>
+      <div class="section company" id="company">
+        <h2 class="h2">出展企業</h2>
+        <ul>
+        <?php
+          $parent_id = $post->post_parent;
+          $slug = get_post_type();
+          $args = array( 
+           'meta_key' => 'subtitle',
+           'orderby' => 'meta_value',
+           'order' => 'ASC',
+           'paged' => $paged,
+           'post_type' => $slug,
+           'post_status' => 'publish',
+           'posts_per_page'   => -1,
+           'post_parent' => get_the_ID(),
+           'has_password' => false,
+           'post__not_in'=> array(get_the_ID())
+          );
+          $postslist = get_posts($args);
+          foreach ($postslist as $post) : setup_postdata($post);
+        ?>
+          <li>
+            <?php /* ?><a href="<?php the_permalink(); ?>"><?php */ ?>
+            <a href="javascript: void(0);">
+              <figure>
+                <?php if(has_post_thumbnail()): ?>
+                  <?php the_post_thumbnail('medium'); ?>
+                <?php else: ?>
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/empty.jpg">
+                <?php endif; ?>
+                <figcaption><strong><?php the_title(); ?></strong></figcaption>
+              </figure>
+            </a>
+          </li>
+        <?php 
+          endforeach; 
+          wp_reset_postdata();
+        ?>
+        </ul>
+      </div>
 
       <?php /* ?>
       <div class="section company" id="company">
