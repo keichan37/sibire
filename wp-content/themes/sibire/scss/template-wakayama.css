@@ -500,6 +500,7 @@
 @media (max-width: 767px) {
   #template-wakayama .company ul li {
     width: 50%;
+    min-height: 165px;
   }
   #template-wakayama .company ul li figure figcaption strong {
     display: block;
