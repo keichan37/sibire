@@ -34,7 +34,7 @@
             </tr>
             <tr>
               <th><time>14:20</time></th>
-              <td><strong><span>第1部</span>　わかやまワークショップ</strong><br />〜和歌山で働く十人×都内在住の参加者〜</td>
+              <td><strong><span>第1部</span>　わかやまワークショップ</strong><br />〜和歌山で働く13人×都内在住の参加者〜</td>
             </tr>
             <tr>
               <th><time>15:10</time></th>
@@ -94,22 +94,6 @@
         ?>
         </ul>
       </div>
-
-      <?php /* ?>
-      <div class="section company" id="company">
-        <h2 class="h2">出展企業</h2>
-        <ul>
-          <li><figure><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/zaiseido.jpg"><figcaption><strong>剤盛堂薬品(株)</strong><span class="tag">製造業</span></figcaption></figure></li>
-          <li><figure><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/noritsu.jpg"><figcaption><strong>ノーリツプレシジョン(株)</strong></figcaption></figure><p><b>担当者から</b>１枚の写真にかける想いからはじまった当社では、和歌山から全世界に向けて新しい価値を発信できるモノづくり企業として、イメージング事業に注力しています。世界を目指し、ともに和歌山で働きましょう。社長の右腕となる方、ぜひお越しください！ </p></li>
-          <li><figure><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/nousouken.jpg"><figcaption><strong>(株)農業総合研究所</strong></figcaption></figure></li>
-          <li><figure><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/qualitysoft.jpg"><figcaption><strong>クオリティソフト(株)</strong></figcaption></figure></li>
-          <li><figure><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/hiina.jpg"><figcaption><strong>大阪屋ひいなの湯</strong></figcaption></figure></li>
-          <li><figure><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/enzantrades.jpg"><figcaption><strong>エンザントレイズ(株)</strong></figcaption></figure></li>
-          <li><figure><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/toyo-rice.jpg"><figcaption><strong>東洋ライス(株)</strong></figcaption></figure></li>
-          <li><figure><img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/w-meiwa.jpg"><figcaption><strong>(株)メイワ</strong></figcaption></figure></li>
-        </ul>
-      </div>
-      <?php */ ?>
 
       <div class="section section1">
         <h2>
