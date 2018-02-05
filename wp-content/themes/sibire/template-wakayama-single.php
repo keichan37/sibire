@@ -22,24 +22,14 @@
           <div class="single-left">
             <?php while(have_posts()): the_post(); ?>
               <article>
-                <span class="single-category">出展企業</span>
+                <span class="single-category">和歌山キャリアフェア出展企業</span>
                 <time class="single-date" datetime="<?php the_time('c') ;?>"><?php the_time('Y.n.j') ;?></time>
-                <h1 class="single-title"><?php the_title(); ?></h1>
+                <? $txt = get_field('development-language'); if($txt){ ?><h1 class="single-title"><? echo $txt; ?></h2><? } ?>
+                <h2 class="single-subtitle"><?php the_title(); ?></h2>
 
                 <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
 
                   <?php get_template_part('partials/sns-share'); ?>
-                  <?php
-                    $thumbnail_id = get_post_thumbnail_id();
-                    $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'large', true); //アイキャッチのURL取得
-                  ?>
-                  <?php if ( in_array(get_post_type(), array('niche','media')) ): ?>
-                  <?php elseif ( $page == 1 ) : // 1ページ目だけ表示 ?>
-                    <?php if (has_post_thumbnail()): ?>
-                      <img class="single-eyecatch" src="<?php echo $thumbnail_url[0]; ?>">
-                    <?php else: ?>
-                    <?php endif; ?>
-                  <?php endif; ?>
 
                   <!-- PRとインタビュー -->
                   <?php if ( in_array(get_post_type(), array('interview')) ): ?>
@@ -93,6 +83,15 @@
           <div class="single-right">
             <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
               <aside>
+
+                <?php
+                  $thumbnail_id = get_post_thumbnail_id();
+                  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'large', true); //アイキャッチのURL取得
+                ?>
+                <?php if (has_post_thumbnail()): ?>
+                  <img class="single-eyecatch" src="<?php echo $thumbnail_url[0]; ?>">
+                <?php else: ?>
+                <?php endif; ?>
                 <?php  $location = get_field('google_map'); if( !empty($location) ):?>
                   <h4>勤務地</h4>
                   <div class="single-map">
@@ -123,7 +122,7 @@
                 <?php endif; ?>
 
                 <div class="single-service">
-                  <a class="service-registration" href="<?php echo get_permalink($parent_id); ?>#form">申し込む</a>
+                  <a class="service-registration" href="<?php echo get_permalink($parent_id); ?>#form">イベントに申し込む</a>
                 </div>
               </aside>
             <?php endif; //パスワード保護 ?>
