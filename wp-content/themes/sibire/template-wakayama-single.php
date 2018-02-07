@@ -24,30 +24,12 @@
               <article>
                 <span class="single-category">和歌山キャリアフェア出展企業</span>
                 <time class="single-date" datetime="<?php the_time('c') ;?>"><?php the_time('Y.n.j') ;?></time>
-                <? $txt = get_field('development-language'); if($txt){ ?><h1 class="single-title"><? echo $txt; ?></h2><? } ?>
+                <? $txt = get_field('development-language'); if($txt){ ?><h1 class="single-title"><? echo $txt; ?></h1><? } ?>
                 <h2 class="single-subtitle"><?php the_title(); ?></h2>
 
                 <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
 
                   <?php get_template_part('partials/sns-share'); ?>
-
-                  <!-- PRとインタビュー -->
-                  <?php if ( in_array(get_post_type(), array('interview')) ): ?>
-                    <? $txt = get_field('profile'); if($txt){ ?>
-                      <div class="single-top-box">
-                        <img src="<?php the_field('avatar'); ?>" alt="">
-                        <div class="single-top-box-text"><? echo $txt; ?></div>
-                      </div>
-                     <? } ?>
-                  <?php elseif ( in_array(get_post_type(), array('niche')) ): ?>
-                    <?php if ( $page == 1 ) : // 1ページ目だけ表示 ?>
-                      <div class="single-top-box">
-                        <img src="<?php the_field('single-niche-top-image'); ?>" alt="">
-                        <div class="single-top-box-text"><? $txt = get_field('single-niche-top-text'); if($txt){ ?><? echo $txt; ?> <? } ?></div>
-                      </div>
-                    <?php endif; ?>
-                  <?php endif; ?>
-
 
                   <div class="single-content mce-content-body">
                     <?php if ( in_array(get_post_type(), array('recruit')) ): ?>
@@ -150,7 +132,12 @@
                     $thumbnail_id = get_post_thumbnail_id();
                     $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
                   ?>
-                  <a class="single-related" href="<?php the_permalink(); ?>">
+
+                  <?php  $url = get_field('company_url'); if( !empty($url) ):?>
+                    <a class="single-related" href="<?php the_permalink(); ?>">
+                  <?php else: ?>
+                    <a class="single-related fake-a" href="javascript: void(0);">
+                  <?php endif; ?>
                     <?php if (has_post_thumbnail()): ?>
                       <div class="single-related-eyecatch" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);"></div>
                     <?php else: ?>

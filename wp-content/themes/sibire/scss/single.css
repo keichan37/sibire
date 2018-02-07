@@ -410,6 +410,9 @@ Description: 投稿ページ
   -ms-transition: 0.3s;
   transition: 0.3s;
 }
+#common a.single-related.fake-a {
+  cursor: no-drop;
+}
 
 @media (max-width: 1100px) {
   #common .single-wrap .single-left article {

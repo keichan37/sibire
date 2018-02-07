@@ -256,6 +256,7 @@
         a {
           color: #222222;
           text-decoration: none;
+          cursor: no-drop;
           figure {
             position: relative;
             margin: 0;
@@ -284,14 +285,15 @@
               }
             }
           }
-          &:hover {
+          &:not(.fake-a):hover {
+            cursor: pointer;
             figure {
-              //img {
-              //  @include opacity;
-              //}
-              //figcaption {
-              //  color: #84b3d9;
-              //}
+              img {
+                @include opacity;
+              }
+              figcaption {
+                color: #84b3d9;
+              }
             }
           }
         }

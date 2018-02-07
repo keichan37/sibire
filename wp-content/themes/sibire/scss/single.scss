@@ -396,6 +396,9 @@ Description: 投稿ページ
       margin-bottom: 10px;
       @include transition;
     }
+    &.fake-a {
+      cursor: no-drop;
+    }
   }
 }
 

@@ -76,8 +76,11 @@
           foreach ($postslist as $post) : setup_postdata($post);
         ?>
           <li>
-            <?php /* ?><a href="<?php the_permalink(); ?>"><?php */ ?>
-            <a href="javascript: void(0);">
+            <?php  $url = get_field('company_url'); if( !empty($url) ):?>
+              <a href="<?php the_permalink(); ?>">
+            <?php else: ?>
+              <a class="fake-a" href="javascript: void(0);">
+            <?php endif; ?>
               <figure>
                 <?php if(has_post_thumbnail()): ?>
                   <?php the_post_thumbnail('medium'); ?>
