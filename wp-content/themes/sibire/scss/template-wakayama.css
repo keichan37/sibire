@@ -289,7 +289,7 @@
   float: left;
   list-style: none;
   min-height: 321px;
-  min-height: 221px;
+  min-height: 227px;
 }
 #template-wakayama .company ul li a {
   color: #222222;
@@ -513,7 +513,7 @@
 @media (max-width: 767px) {
   #template-wakayama .company ul li {
     width: 50%;
-    min-height: 165px;
+    min-height: 189px;
   }
   #template-wakayama .map .acf-map {
     height: 550px;
