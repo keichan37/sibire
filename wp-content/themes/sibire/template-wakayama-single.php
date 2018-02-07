@@ -117,11 +117,14 @@
                   $parent_id = $post->post_parent;
                   $slug = get_post_type();
                   $args = array( 
+                   'meta_key' => 'subtitle',
+                   'orderby' => 'meta_value',
+                   'order' => 'ASC',
                    'paged' => $paged,
                    'post_type' => $slug,
                    'post_status' => 'publish',
                    'post_parent' => $parent_id,
-                   'posts_per_page'   => 15,
+                   'posts_per_page'   => -1,
                    'has_password' => false,
                    'post__not_in'=> array(get_the_ID())
                   );
