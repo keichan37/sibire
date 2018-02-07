@@ -23,7 +23,6 @@
             <?php while(have_posts()): the_post(); ?>
               <article>
                 <span class="single-category">和歌山キャリアフェア出展企業</span>
-                <time class="single-date" datetime="<?php the_time('c') ;?>"><?php the_time('Y.n.j') ;?></time>
                 <? $txt = get_field('development-language'); if($txt){ ?><h1 class="single-title"><? echo $txt; ?></h1><? } ?>
                 <h2 class="single-subtitle"><?php the_title(); ?></h2>
 
