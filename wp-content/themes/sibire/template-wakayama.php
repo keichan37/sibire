@@ -87,7 +87,19 @@
                 <?php else: ?>
                   <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/empty.jpg">
                 <?php endif; ?>
-                <figcaption><strong><?php the_title(); ?></strong></figcaption>
+                <figcaption>
+                  <strong><?php the_title(); ?></strong>
+                  <?php if(has_tag()==true) : ?>
+                    <?php
+                      $posttags = get_the_tags();
+                      if ($posttags) {
+                        foreach($posttags as $tag) {
+                          echo '<span class="tag">'. $tag->name .'</span>';
+                        }
+                      }
+                    ?>
+                  <?php endif; ?>
+                </figcaption>
               </figure>
             </a>
           </li>
