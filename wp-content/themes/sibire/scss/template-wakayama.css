@@ -321,6 +321,9 @@
 #template-wakayama .company ul li a figure figcaption strong {
   display: block;
 }
+#template-wakayama .company ul li a figure figcaption strong span {
+  color: #84b3d9;
+}
 #template-wakayama .company ul li a figure figcaption span.tag {
   display: inline-block;
   font-size: 11px;
