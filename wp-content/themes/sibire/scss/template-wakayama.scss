@@ -271,7 +271,10 @@
               padding-top: 8px;
               line-height: 1.4;
               @include transition;
-              strong { display: block; }
+              strong {
+                display: block;
+                span { color: #84b3d9; }
+              }
               span.tag {
                 display: inline-block;
                 font-size: 11px;

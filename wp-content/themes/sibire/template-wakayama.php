@@ -93,7 +93,7 @@
                       <span class="icon-link"></span>
                     <?php else: ?>
                     <?php endif; ?>
-                    </strong>
+                  </strong>
                   <?php if(has_tag()==true) : ?>
                     <?php
                       $posttags = get_the_tags();
