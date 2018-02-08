@@ -88,7 +88,11 @@
                   <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/empty.jpg">
                 <?php endif; ?>
                 <figcaption>
-                  <strong><?php the_title(); ?></strong>
+                  <strong><?php the_title(); ?>
+                  <?php  $url = get_field('company_url'); if( !empty($url) ):?>
+                    &nbsp;<span class="icon-link"></span></strong>
+                  <?php else: ?>
+                  <?php endif; ?>
                   <?php if(has_tag()==true) : ?>
                     <?php
                       $posttags = get_the_tags();
