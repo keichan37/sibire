@@ -211,7 +211,7 @@
   font-size: 16px;
 }
 #template-wakayama .schedule table tbody tr td strong span {
-  color: #0d4675;
+  color: #ef4600;
 }
 #template-wakayama .schedule table tbody tr td ul {
   margin: 5px 0 0 0;
@@ -322,7 +322,7 @@
   display: block;
 }
 #template-wakayama .company ul li a figure figcaption strong span {
-  color: #84b3d9;
+  color: #0d4675;
 }
 #template-wakayama .company ul li a figure figcaption span.tag {
   display: inline-block;
