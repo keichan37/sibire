@@ -89,10 +89,11 @@
                 <?php endif; ?>
                 <figcaption>
                   <strong><?php the_title(); ?>
-                  <?php  $url = get_field('company_url'); if( !empty($url) ):?>
-                    &nbsp;<span class="icon-link"></span></strong>
-                  <?php else: ?>
-                  <?php endif; ?>
+                    <?php  $url = get_field('company_url'); if( !empty($url) ):?>
+                      <span class="icon-link"></span>
+                    <?php else: ?>
+                    <?php endif; ?>
+                    </strong>
                   <?php if(has_tag()==true) : ?>
                     <?php
                       $posttags = get_the_tags();
