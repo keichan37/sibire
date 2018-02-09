@@ -88,12 +88,7 @@
                   <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/empty.jpg">
                 <?php endif; ?>
                 <figcaption>
-                  <strong><?php the_title(); ?>
-                    <?php  $url = get_field('company_url'); if( !empty($url) ):?>
-                      <span class="icon-link"></span>
-                    <?php else: ?>
-                    <?php endif; ?>
-                  </strong>
+                  <strong><?php the_title(); ?></strong>
                   <?php if(has_tag()==true) : ?>
                     <?php
                       $posttags = get_the_tags();
@@ -123,9 +118,9 @@
       </div>
       <div class="section section2">
         <h2>
-          <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/h2-2.png" alt="リアルタイムVR企業訪問"/>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/h2-2.png" alt="VR技術を駆使！和歌山の企業にバーチャル訪問"/>
         </h2>
-        <p>VRゴーグルを覗くと、目の前には和歌山県の景色が。 東京に居ながらリアルタイムに会社訪問を実現</p>
+        <p>180&deg;3Dライブで東京に居ながらリアルタイムでVR企業訪問！さらに360&deg;動画を利用したVR企業訪問も</p>
       </div>
       <div class="section section2">
         <h2>
