@@ -350,7 +350,8 @@
       }
       .wpcf7-form-control-wrap {
         max-width: 100%;
-        &.interest {
+        &.interest,
+        &.route {
           max-width: 300px;
           width: 300px;
           .wpcf7-list-item {
@@ -362,7 +363,8 @@
     .wakayama,
     .industry,
     .offtokyo,
-    .interest {
+    .interest,
+    .route {
       select {
         width: 300px;
         padding-right: 40px
@@ -449,7 +451,8 @@
       .wakayama,
       .industry,
       .offtokyo,
-      .interest {
+      .interest,
+      .route {
         select {
           width: 100%
         }
