@@ -408,17 +408,18 @@
 #template-wakayama #common .form-group .wpcf7-form-control-wrap {
   max-width: 100%;
 }
-#template-wakayama #common .form-group .wpcf7-form-control-wrap.interest {
+#template-wakayama #common .form-group .wpcf7-form-control-wrap.interest, #template-wakayama #common .form-group .wpcf7-form-control-wrap.route {
   max-width: 300px;
   width: 300px;
 }
-#template-wakayama #common .form-group .wpcf7-form-control-wrap.interest .wpcf7-list-item {
+#template-wakayama #common .form-group .wpcf7-form-control-wrap.interest .wpcf7-list-item, #template-wakayama #common .form-group .wpcf7-form-control-wrap.route .wpcf7-list-item {
   display: block;
 }
 #template-wakayama #common .wakayama select,
 #template-wakayama #common .industry select,
 #template-wakayama #common .offtokyo select,
-#template-wakayama #common .interest select {
+#template-wakayama #common .interest select,
+#template-wakayama #common .route select {
   width: 300px;
   padding-right: 40px;
 }
@@ -499,7 +500,8 @@
   #template-wakayama #common .wakayama select,
   #template-wakayama #common .industry select,
   #template-wakayama #common .offtokyo select,
-  #template-wakayama #common .interest select {
+  #template-wakayama #common .interest select,
+  #template-wakayama #common .route select {
     width: 100%;
   }
   #template-wakayama #common .form-group {
