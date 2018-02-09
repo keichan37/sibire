@@ -408,12 +408,16 @@
 #template-wakayama #common .form-group .wpcf7-form-control-wrap {
   max-width: 100%;
 }
-#template-wakayama #common .form-group .wpcf7-form-control-wrap.interest, #template-wakayama #common .form-group .wpcf7-form-control-wrap.route {
+#template-wakayama #common .form-group .wpcf7-form-control-wrap.interest {
   max-width: 300px;
   width: 300px;
 }
-#template-wakayama #common .form-group .wpcf7-form-control-wrap.interest .wpcf7-list-item, #template-wakayama #common .form-group .wpcf7-form-control-wrap.route .wpcf7-list-item {
+#template-wakayama #common .form-group .wpcf7-form-control-wrap.interest .wpcf7-list-item {
   display: block;
+}
+#template-wakayama #common .form-group .wpcf7-form-control-wrap.route {
+  max-width: 300px;
+  width: 300px;
 }
 #template-wakayama #common .wakayama select,
 #template-wakayama #common .industry select,
