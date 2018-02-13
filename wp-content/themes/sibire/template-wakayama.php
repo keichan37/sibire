@@ -110,18 +110,16 @@
         </ul>
       </div>
 
-      <?php if (is_user_logged_in()): ?>
-        <div class="section mc">
-          <figure>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/mc.jpg" alt="MC"/>
-            <figcaption>
-              <strong>司会　朝妻久実（クミッチェル）</strong>
-              フリーアナウンサーとしてリポーター、キャスター、MCなどを行いながらも、東京都内の駅前で、出勤途中のサラリーマンを応援するチアリーダーの顔ももつ！
-              地元を盛り上げたい気持ちも高く、イベントに参加いただく皆さんにエールを送ります。
-            </figcaption>
-          </figure>
-        </div>
-      <?php endif; ?>
+      <div class="section mc">
+        <figure>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/mc.jpg" alt="MC"/>
+          <figcaption>
+            <strong>司会　朝妻久実（クミッチェル）</strong>
+            フリーアナウンサーとしてリポーター、キャスター、MCなどを行いながらも、東京都内の駅前で、出勤途中のサラリーマンを応援するチアリーダーの顔ももつ！
+            地元を盛り上げたい気持ちも高く、イベントに参加いただく皆さんにエールを送ります。
+          </figcaption>
+        </figure>
+      </div>
 
       <div class="section section1">
         <h2>
@@ -135,7 +133,6 @@
         </h2>
         <p>180&deg;3Dライブで東京に居ながらリアルタイムでVR企業訪問！さらに360&deg;動画を利用したVR企業訪問も</p>
         <div class="figure-list">
-          <?php if (is_user_logged_in()): ?>
           <figure>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/helicopter.jpg" alt=""/>
             <figcaption>リゾート地・白浜の企業をリアルタイムVRで訪問 </figcaption>
@@ -148,7 +145,6 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/okami.jpg" alt=""/>
             <figcaption>美人女将・3Dのんちゃんとバーチャル対面</figcaption>
           </figure>
-          <?php endif; ?>
         </div>
       </div>
       <div class="section section3">
