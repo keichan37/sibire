@@ -76,9 +76,10 @@
           foreach ($postslist as $post) : setup_postdata($post);
         ?>
           <li>
-            <?php  $url = get_field('company_url'); if( !empty($url) ):?>
+            <?php $wakayama = get_post_meta($post->ID,"wakayama",true); ?>
+            <?php if ($wakayama == 'true') : ?>
               <a href="<?php the_permalink(); ?>">
-            <?php else: ?>
+            <?php else : ?>
               <a class="fake-a" href="javascript: void(0);">
             <?php endif; ?>
               <figure>
