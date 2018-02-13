@@ -111,16 +111,16 @@
       </div>
 
       <?php if (is_user_logged_in()): ?>
-      <div class="section mc">
-        <figure>
-          <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/mc.jpg" alt="MC"/>
-          <figcaption>
-            <strong>司会　朝妻久実（クミッチェル）</strong>
-            フリーアナウンサーとしてリポーター、キャスター、MCなどを行いながらも、東京都内の駅前で、出勤途中のサラリーマンを応援するチアリーダーの顔ももつ！
-            地元を盛り上げたい気持ちも高く、イベントに参加いただく皆さんにエールを送ります。
-          </figcaption>
-        </figure>
-      </div>
+        <div class="section mc">
+          <figure>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/mc.jpg" alt="MC"/>
+            <figcaption>
+              <strong>司会　朝妻久実（クミッチェル）</strong>
+              フリーアナウンサーとしてリポーター、キャスター、MCなどを行いながらも、東京都内の駅前で、出勤途中のサラリーマンを応援するチアリーダーの顔ももつ！
+              地元を盛り上げたい気持ちも高く、イベントに参加いただく皆さんにエールを送ります。
+            </figcaption>
+          </figure>
+        </div>
       <?php endif; ?>
 
       <div class="section section1">
@@ -138,11 +138,11 @@
           <?php if (is_user_logged_in()): ?>
           <figure>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/helicopter.jpg" alt=""/>
-            <figcaption>目の前に和歌山の景色が広がります</figcaption>
+            <figcaption>リゾート地・白浜の企業をリアルタイムVRで訪問 </figcaption>
           </figure>
           <figure>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/vr.jpg" alt=""/>
-            <figcaption>リゾート地・白浜の企業をリアルタイムVRで訪問 </figcaption>
+            <figcaption>東京の会場にいながら、目の前に和歌山の景色が広がります</figcaption>
           </figure>
           <figure>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/okami.jpg" alt=""/>
