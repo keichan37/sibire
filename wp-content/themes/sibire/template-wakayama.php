@@ -76,33 +76,36 @@
           foreach ($postslist as $post) : setup_postdata($post);
         ?>
           <li>
-            <?php $wakayama = get_post_meta($post->ID,"wakayama",true); ?>
-            <?php if ($wakayama == 'true') : ?>
-              <a href="<?php the_permalink(); ?>">
-            <?php else : ?>
-              <a class="fake-a" href="javascript: void(0);">
-            <?php endif; ?>
-              <figure>
+            <figure>
+              <?php $wakayama = get_post_meta($post->ID,"wakayama",true); ?>
+              <?php if ($wakayama == 'true') : ?>
+                <a href="<?php the_permalink(); ?>">
+              <?php else : ?>
+                <a class="fake-a" href="javascript: void(0);">
+              <?php endif; ?>
                 <?php if(has_post_thumbnail()): ?>
                   <?php the_post_thumbnail('medium'); ?>
                 <?php else: ?>
                   <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/empty.jpg">
                 <?php endif; ?>
-                <figcaption>
+              </a>
+              <figcaption>
+                <div>
                   <strong><?php the_title(); ?></strong>
-                  <?php if(has_tag()==true) : ?>
-                    <?php
-                      $posttags = get_the_tags();
-                      if ($posttags) {
-                        foreach($posttags as $tag) {
-                          echo '<span class="tag">'. $tag->name .'</span>';
-                        }
+                  &nbsp;<? $txt = get_field('company_url'); if($txt){ ?><a href="<? echo $txt; ?>" target="_blank">[HP]</a><? } ?>
+                </div>
+                <?php if(has_tag()==true) : ?>
+                  <?php
+                    $posttags = get_the_tags();
+                    if ($posttags) {
+                      foreach($posttags as $tag) {
+                        echo '<span class="tag">'. $tag->name .'</span>';
                       }
-                    ?>
-                  <?php endif; ?>
-                </figcaption>
-              </figure>
-            </a>
+                    }
+                  ?>
+                <?php endif; ?>
+              </figcaption>
+            </figure>
           </li>
         <?php 
           endforeach; 

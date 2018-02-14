@@ -31,23 +31,6 @@
                   <?php get_template_part('partials/sns-share'); ?>
 
                   <div class="single-content mce-content-body">
-                    <?php if ( in_array(get_post_type(), array('recruit')) ): ?>
-                      <h4>会社の雰囲気</h4>
-                      <div class="single-image-wrap">
-                        <?php $image = get_field('company_image1'); if( !empty($image) ): ?>
-                          <figure class="single-image">
-                            <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
-                            <figcaption><?php echo $image['caption']; ?></figcaption>
-                          </figure>
-                        <?php endif; ?>
-                        <?php $image = get_field('company_image2'); if( !empty($image) ): ?>
-                          <figure class="single-image">
-                            <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
-                            <figcaption><?php echo $image['caption']; ?></figcaption>
-                          </figure>
-                        <?php endif; ?>
-                      </div>
-                    <?php endif; ?>
                 <?php endif; //パスワード保護 ?>
 
                     <?php the_content(); //本文 ?>
