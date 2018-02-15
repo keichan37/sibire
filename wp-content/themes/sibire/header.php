@@ -67,6 +67,17 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-T5QQFS5');</script>
     <!-- End Google Tag Manager -->
+    
+    <?php if(is_page('31952')): ?>
+      <!-- Twitter single-event website tag code -->
+      <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+      <script type="text/javascript">twttr.conversion.trackPid('nyzr5', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+      <noscript>
+      <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=nyzr5&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+      <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=nyzr5&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+      </noscript>
+      <!-- End Twitter single-event website tag code -->   
+    <?php endif; ?>
 
     <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?55gB3urzk3w%3D&aa=1&ab=2" charset="utf-8"></script>
 
