@@ -54,7 +54,6 @@
         </table>
       </div>
 
-      <?php if (is_user_logged_in()) : ?>
       <div class="section interview" id="interview">
         <h2 class="h2">Interview　和歌山で働く「仕事の流儀」</h2>
         <ul>
@@ -101,7 +100,6 @@
           </li>
         </ul>
       </div>
-      <?php endif;?>
 
       <div class="section company" id="company">
         <h2 class="h2">出展企業</h2>
