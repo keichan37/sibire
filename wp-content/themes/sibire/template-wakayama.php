@@ -56,7 +56,7 @@
 
       <?php if (is_user_logged_in()) : ?>
       <div class="section interview" id="interview">
-        <h2 class="h2">和歌山で働く「仕事の流儀」</h2>
+        <h2 class="h2">Interview　和歌山で働く「仕事の流儀」</h2>
         <ul>
         <?php
           $args = array( 
