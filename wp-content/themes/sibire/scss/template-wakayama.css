@@ -309,15 +309,18 @@
   margin: 0px auto;
   border: 3px solid #84b3d9;
 }
+#template-wakayama .interview,
 #template-wakayama .company {
   max-width: 900px;
   margin: 0px auto;
 }
+#template-wakayama .interview ul,
 #template-wakayama .company ul {
   padding: 15px 0;
   margin: 0px auto;
   margin-bottom: 50px;
 }
+#template-wakayama .interview ul li,
 #template-wakayama .company ul li {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -331,12 +334,15 @@
   min-height: 321px;
   min-height: 237px;
 }
+#template-wakayama .interview ul li figure,
 #template-wakayama .company ul li figure {
   margin: 0;
 }
+#template-wakayama .interview ul li figure a,
 #template-wakayama .company ul li figure a {
   position: relative;
 }
+#template-wakayama .interview ul li figure a img,
 #template-wakayama .company ul li figure a img {
   width: 100%;
   height: auto;
@@ -353,18 +359,23 @@
   -ms-box-sizing: border-box;
   border: 5px solid transparent;
 }
+#template-wakayama .interview ul li figure a.fake-a,
 #template-wakayama .company ul li figure a.fake-a {
   cursor: no-drop;
 }
+#template-wakayama .interview ul li figure a:not(.fake-a),
 #template-wakayama .company ul li figure a:not(.fake-a) {
   cursor: pointer;
 }
+#template-wakayama .interview ul li figure a:not(.fake-a) img,
 #template-wakayama .company ul li figure a:not(.fake-a) img {
   border-color: #84b3d9;
 }
+#template-wakayama .interview ul li figure a:not(.fake-a):hover img,
 #template-wakayama .company ul li figure a:not(.fake-a):hover img {
   border-color: #4a8fc7;
 }
+#template-wakayama .interview ul li figure figcaption,
 #template-wakayama .company ul li figure figcaption {
   padding-top: 8px;
   line-height: 1.4;
@@ -373,15 +384,19 @@
   -ms-transition: 0.3s;
   transition: 0.3s;
 }
+#template-wakayama .interview ul li figure figcaption strong span,
 #template-wakayama .company ul li figure figcaption strong span {
   color: #0d4675;
 }
+#template-wakayama .interview ul li figure figcaption a,
 #template-wakayama .company ul li figure figcaption a {
   font-size: 13px;
 }
+#template-wakayama .interview ul li figure figcaption a:hover,
 #template-wakayama .company ul li figure figcaption a:hover {
   text-decoration: none;
 }
+#template-wakayama .interview ul li figure figcaption span.tag,
 #template-wakayama .company ul li figure figcaption span.tag {
   display: inline-block;
   font-size: 11px;
@@ -396,6 +411,7 @@
   -o-border-radius: 2px;
   -ms-border-radius: 2px;
 }
+#template-wakayama .interview ul li p,
 #template-wakayama .company ul li p {
   background-color: #dff3f9;
   margin: 15px 0 0 0;
@@ -412,16 +428,25 @@
   -webkit-line-clamp: 4;
   overflow: hidden;
 }
+#template-wakayama .interview ul li p b,
 #template-wakayama .company ul li p b {
   display: block;
 }
-#template-wakayama .company ul:before, #template-wakayama .company ul:after {
+#template-wakayama .interview ul:before, #template-wakayama .interview ul:after,
+#template-wakayama .company ul:before,
+#template-wakayama .company ul:after {
   content: ".";
   display: block;
   height: 0;
   font-size: 0;
   clear: both;
   visibility: hidden;
+}
+#template-wakayama .interview {
+  max-width: 700px;
+}
+#template-wakayama .interview ul li {
+  width: 50%;
 }
 #template-wakayama .mc {
   margin-bottom: 40px;
@@ -608,6 +633,7 @@
   }
 }
 @media (max-width: 767px) {
+  #template-wakayama .interview ul li,
   #template-wakayama .company ul li {
     width: 50%;
     min-height: 215px;
