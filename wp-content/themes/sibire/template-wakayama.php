@@ -53,7 +53,56 @@
           </tbody>
         </table>
       </div>
-      
+
+      <?php if (is_user_logged_in()) : ?>
+      <div class="section interview" id="interview">
+        <h2 class="h2">和歌山で働く「仕事の流儀」</h2>
+        <ul>
+        <?php
+          $args = array( 
+           'paged' => $paged,
+           'post_type' => 'interview',
+           'post__in' => array(34302),
+           'post_status' => 'publish',
+           'posts_per_page'   => 1,
+           'has_password' => false
+          );
+          $postslist = get_posts($args);
+          foreach ($postslist as $post) : setup_postdata($post);
+        ?>
+          <li>
+            <figure>
+              <a href="<?php the_permalink(); ?>">
+                <?php if(has_post_thumbnail()): ?>
+                  <?php the_post_thumbnail('medium'); ?>
+                <?php else: ?>
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/company/empty.jpg">
+                <?php endif; ?>
+              </a>
+              <figcaption>
+                <div>
+                  <strong><?php the_title(); ?></strong>
+                  <br />
+                  <? $txt = get_field('subtitle'); if($txt){ ?><? echo $txt; ?><? } ?>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        <?php 
+          endforeach; 
+          wp_reset_postdata();
+        ?>
+          <li>
+            <figure>
+              <a class="fake-a" href="javascript:void(0);">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/interview/comingsoon.jpg">
+              </a>
+            </figure>
+          </li>
+        </ul>
+      </div>
+      <?php endif;?>
+
       <div class="section company" id="company">
         <h2 class="h2">出展企業</h2>
         <ul>
@@ -175,7 +224,6 @@
       <h2 class="h2" id="form">申し込みフォーム</h2>
       <div id="common">
         <?php echo do_shortcode('[contact-form-7 id="31972" title="OFF TOKYO 和歌山キャリアフェア"]'); ?>
-        <?php /* ?><?php echo do_shortcode('[contact-form-7 id="234" title="OFF TOKYO 和歌山キャリアフェア"]'); ?><?php */ ?>
       </div>
     </div>
     <?php get_footer(); ?>
