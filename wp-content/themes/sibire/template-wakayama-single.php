@@ -118,7 +118,8 @@
                     $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
                   ?>
 
-                  <?php  $url = get_field('company_url'); if( !empty($url) ):?>
+                  <?php $wakayama = get_post_meta($post->ID,"wakayama",true); ?>
+                  <?php if ($wakayama == 'true') : ?>
                     <a class="single-related" href="<?php the_permalink(); ?>">
                   <?php else: ?>
                     <a class="single-related fake-a" href="javascript: void(0);">
