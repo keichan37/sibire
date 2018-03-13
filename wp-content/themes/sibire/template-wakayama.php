@@ -16,7 +16,7 @@
             <?php the_content(); //本文 ?>
             <img src="<?php echo get_template_directory_uri(); ?>/images/template-wakayama/orange.png" class="content-img orange"/>
           </div>
-          <a class="button" href="#form">参加する</a>
+          <a class="button button-end" href="javascript:void(0);">本イベントは終了しました</a>
           <?php get_template_part('partials/sns-share'); ?>
         </div>
       </div>
@@ -247,9 +247,12 @@
           </div>
         </div>
       </div>
+
+      <?php /* ?>
       <h2 class="h2" id="form">申し込みフォーム</h2>
       <div id="common">
         <?php echo do_shortcode('[contact-form-7 id="31972" title="OFF TOKYO 和歌山キャリアフェア"]'); ?>
       </div>
+      <?php */ ?>
     </div>
     <?php get_footer(); ?>
