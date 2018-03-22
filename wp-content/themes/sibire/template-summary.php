@@ -102,6 +102,16 @@
         <div class="logo-wrap">
           <h2 class="logo-h2"><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/h2.png" alt="TEAM OFF TOKYO"/></h2>
           <ul>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/emblem-sapporo.png" alt="札幌市"/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/emblem-sendai.png" alt="仙台市"/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/emblem-yokohama.png" alt="横浜市"/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/emblem-kobe.png" alt="神戸市"/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/emblem-wakayama.png" alt="和歌山市"/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/emblem-shimane.png" alt="島根県"/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/emblem-tokushima.png" alt="徳島県"/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/emblem-fukuoka.png" alt="福岡市"/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/emblem-kitakyusyu.png" alt="北九州市"/></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/emblem-miyazaki.png" alt="宮崎県"/></li>
             <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-sibire.png" alt="sibire"/></li>
             <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-8infinity.png" alt="8infinity"/></li>
             <li><img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/logo-am.png" alt="am."/></li>
