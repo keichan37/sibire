@@ -1,4 +1,18 @@
 @import "mixin";
+@mixin theme-color($rgb: #e61673,$color: pink ) {
+  .summary-grid-wrap {
+    .summary-grid {
+      background: transparent url(images/template-summary/'bottom-' + $color + '.png') bottom left no-repeat;
+      &:hover {
+        color: $rgb;
+        h4,
+        p {
+          color: $rgb;
+        }
+      }
+    }
+  }
+}
 #summary {
   padding-bottom: 60px;
   $design: 'FOT-あおかね Std EB', 'AokaneStd-EB';
@@ -7,6 +21,15 @@
   $pink: #e61673;
   $black: #231815;
   $container: 1100px;
+  @include theme-color($pink,pink);
+  &.recruit   { @include theme-color(#49c6e8,blue); }
+  &.column    { @include theme-color(#dd4ae5, purple); }
+  &.event     { @include theme-color(#6ecc3e, green); }
+  &.interview { @include theme-color(#ff9e55, orange); }
+  &.niche     { @include theme-color(#1b1464, navy); }
+  &.blog      { @include theme-color(#1b1464, navy); }
+  &.media     { @include theme-color(#1b1464, navy); }
+
   .container {
     max-width: $container + 20px;
     margin: 0px auto;
@@ -100,7 +123,7 @@
       color: $black;
       margin: 15px $margin;
       overflow: hidden;
-      background: transparent url("images/template-summary/bottom.png") bottom left no-repeat;
+      background: transparent url("images/template-summary/bottom-pink.png") bottom left no-repeat;
       figure {
         margin: 0;
         text-align: center;
