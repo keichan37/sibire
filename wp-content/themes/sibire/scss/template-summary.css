@@ -284,6 +284,9 @@
 #summary .summary-grid-wrap .summary-grid.summary-grid-first {
   width: 510px;
 }
+#summary .summary-grid-wrap .summary-grid.summary-grid-first figure {
+  padding-top: 340px;
+}
 #summary .summary-grid-wrap .summary-grid.summary-grid-first figure img {
   height: 340px;
 }
@@ -392,6 +395,9 @@
   #summary .summary-grid-wrap .summary-grid.summary-grid.summary-grid-first {
     width: 96%;
     margin: 2% 2% 5% 2%;
+  }
+  #summary .summary-grid-wrap .summary-grid.summary-grid.summary-grid-first figure {
+    padding-top: 230px;
   }
   #summary .summary-grid-wrap .summary-grid.summary-grid.summary-grid-first figure img {
     height: 230px;
