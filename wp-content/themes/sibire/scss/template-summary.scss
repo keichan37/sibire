@@ -32,6 +32,11 @@
   &.niche     { @include theme-color(#1b1464, navy); }
   &.blog      { @include theme-color(#1b1464, navy); }
   &.media     { @include theme-color(#1b1464, navy); }
+  &.niche,
+  &.blog,
+  &.media     {
+    .summary-cover { color: #ffffff; }
+  }
 
   .container {
     max-width: $container + 20px;
