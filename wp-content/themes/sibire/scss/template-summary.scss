@@ -194,6 +194,7 @@
       &.summary-grid-first {
         width: ($width * 2) + ($margin * 2);
         figure {
+          padding-top: 340px;
           img {
             height: $img * 2;
           }
@@ -309,6 +310,7 @@
           width: 96%;
           margin: 2% 2% 5% 2%;
           figure {
+            padding-top: 230px;
             img {
               height: 230px;
             }
