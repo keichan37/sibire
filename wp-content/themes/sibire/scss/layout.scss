@@ -4,6 +4,8 @@ Description: レイアウト
 
 @import "mixin";
 
+  $gothic: 'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D';
+  $gothic-b: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
 html,
 body {
   font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
@@ -61,6 +63,9 @@ header {
       height: 19px;
       text-indent: -9999px;
       background: url("images/template-lp/lp-logo.png") no-repeat;
+      &:hover {
+        @include opacity;
+      }
     }
   }
 }
@@ -135,25 +140,23 @@ header .global_menu {
   li {
     list-style: none;
     line-height: 19px;
-    padding: 9px 10px 0 9px;
     float: left;
+    font-family: $gothic;
     a {
       color: #333333;
       text-decoration: none;
       display: block;
-      padding: 0 5px;
-      border-radius: 2px;
-      border: 1px solid #ffffff;
+      padding: 11px 15px;
+      @include transition;
       &:hover {
-        border-color: #dddddd;
         background-color: #f5f5f5;
       }
     }
     &.current-page-ancestor a,
     &.current-menu-item a {
+      font-family: $gothic-b;
       color: #ffffff;
       background-color: #1b1464;
-      border-color: #1b1464;
       cursor: default;
     }
   }
