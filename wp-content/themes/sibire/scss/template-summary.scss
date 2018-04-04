@@ -108,7 +108,8 @@
           height: $img;
           width: auto;
           vertical-align: bottom;
-          background-color: $pink;
+          background: #ffffff url("images/loading.gif") no-repeat;
+          background-position: center center;
           @include transition;
         }
         figcaption {
