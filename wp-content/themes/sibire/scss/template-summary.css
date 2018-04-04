@@ -106,6 +106,9 @@
 #summary.media .summary-grid-wrap .summary-grid:hover p {
   color: #1b1464;
 }
+#summary.niche .summary-cover, #summary.blog .summary-cover, #summary.media .summary-cover {
+  color: #ffffff;
+}
 #summary .container {
   max-width: 1120px;
   margin: 0px auto;
