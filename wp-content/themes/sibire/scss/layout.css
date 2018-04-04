@@ -159,7 +159,6 @@ header .global_menu li a:hover {
   background-color: #f5f5f5;
 }
 header .global_menu li.current-page-ancestor a, header .global_menu li.current-menu-item a {
-  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
   color: #ffffff;
   background-color: #1b1464;
   cursor: default;
