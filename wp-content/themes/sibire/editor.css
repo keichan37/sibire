@@ -217,6 +217,10 @@
   margin: 0;
 }
 
+.mce-content-body .gallery-item img {
+  height: auto;
+}
+
 .mce-content-body .gallery-item .gallery-caption {
   margin: 0;
   padding: 0 0 10px 0;
