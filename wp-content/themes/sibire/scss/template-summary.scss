@@ -1,5 +1,8 @@
 @import "mixin";
 @mixin theme-color($rgb: #e61673,$color: pink ) {
+  .summary-cover {
+    background-image: url(images/template-summary/'cover-background-' + $color  + '.jpg');
+  }
   .summary-grid-wrap {
     .summary-grid {
       background: transparent url(images/template-summary/'bottom-' + $color + '.png') bottom left no-repeat;
