@@ -244,6 +244,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  height: 79.8px;
 }
 #summary .summary-grid-wrap .summary-grid figure h4 {
   -webkit-transition: 0.3s;
@@ -261,6 +262,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  height: 19.5px;
 }
 #summary .summary-grid-wrap .summary-grid figure p {
   -webkit-transition: 0.3s;
