@@ -133,7 +133,8 @@
   height: 170px;
   width: auto;
   vertical-align: bottom;
-  background-color: #e61673;
+  background: #ffffff url("images/loading.gif") no-repeat;
+  background-position: center center;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
