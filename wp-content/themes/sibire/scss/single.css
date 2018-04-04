@@ -339,15 +339,35 @@ Description: 投稿ページ
   margin: -7px 0 0 -6px;
 }
 #common .single-related-list {
-  margin: 5px 0 40px 0;
-  padding: 0 0 0 25px;
+  margin: 5px 0 0px 0;
+  padding: 0 0 0 10px;
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
 }
 #common .single-related-list li {
   margin: 0 0 8px 0;
+  padding: 0 0 0 60px;
+  min-height: 50px;
   list-style-image: url("images/single/list-style.png");
+  list-style: none;
+  position: relative;
+}
+#common .single-related-list li img {
+  background: #ffffff url("images/loading.gif") no-repeat;
+  background-position: center center;
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -25px;
 }
 #common .single-related-list li a {
+  line-height: 1.6;
   color: #1b1464;
 }
 #common .single-related-list li a:hover {
