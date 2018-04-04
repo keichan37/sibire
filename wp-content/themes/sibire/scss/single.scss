@@ -340,6 +340,7 @@ Description: 投稿ページ
       list-style-image: url("images/single/list-style.png");
       list-style: none;
       position: relative;
+      line-height: 1.6;
       img {
         background: #ffffff url("images/loading.gif") no-repeat;
         background-position: center center;
@@ -352,7 +353,6 @@ Description: 投稿ページ
         margin-top: -25px;
       }
       a {
-        line-height: 1.6;
         color: #1b1464;
         &:hover { text-decoration: none; }
       }
