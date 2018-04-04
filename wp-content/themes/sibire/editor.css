@@ -1,5 +1,5 @@
 .mce-content-body {
-  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font-family: 'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
   -webkit-tap-highlight-color: rgba(28, 135, 201, 0.3);
 	word-wrap: break-word;
   color: #333333;
@@ -21,6 +21,10 @@
   padding-top: 10px;
 }
 
+.mce-content-body strong {
+  font-family: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
+}
+
 .mce-content-body h1,
 .mce-content-body h2,
 .mce-content-body h3,
@@ -30,6 +34,7 @@
   color: #1B1464;
   margin: 20px 0 0 0;
   padding-bottom: 10px;
+  font-family: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
 }
 
 
