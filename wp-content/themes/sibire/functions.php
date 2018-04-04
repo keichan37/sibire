@@ -203,6 +203,28 @@ function image_gallery_default_link( $settings ) {
 }
 add_filter( 'media_view_settings', 'image_gallery_default_link');
 
+/* 画像タグにLazyLoad用の属性などを追加 */
+function add_image_placeholders( $content ) {
+    //プレビューやフィードモバイルなどで遅延させない
+    if( is_feed() || is_preview() || ( function_exists( 'is_mobile' ) && is_mobile() ) )
+        return $content;
+ 
+    //既に適用させているところは処理しない
+    if ( false !== strpos( $content, 'data-original' ) )
+        return $content;
+ 
+    //画像正規表現で置換
+    $content = preg_replace(
+        '#<img([^>]+?)src=[\'"]?([^\'"\s>]+)[\'"]?([^>]*)>#',//IMGタグの正規表現
+        sprintf( '<img${1}src="%s" data-echo="${2}"${3} /><noscript><img${1}src="${2}"${3} /></noscript>', get_template_directory_uri().'/images/dummy.png' ),//置換するIMGタグ（JavaScriptがオフのとき用のnoscriptタグも追加）
+        $content );//投稿本文（置換する文章）
+ 
+    return $content;
+}
+add_filter( 'the_content', 'add_image_placeholders', 99 );
+add_filter( 'post_thumbnail_html', 'add_image_placeholders', 11 );
+add_filter( 'get_avatar', 'add_image_placeholders', 11 );
+
 /* 投稿画面用のcssを追加 */
 add_editor_style("editor.css");
 
