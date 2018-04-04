@@ -117,7 +117,7 @@
       display: block;
       width: $width;
       height: auto;
-      min-height: 345px;
+      min-height: 308px;
       float: left;
       text-decoration: none;
       color: $black;
@@ -127,9 +127,18 @@
       figure {
         margin: 0;
         text-align: center;
+        position: relative;
+        padding-top: 170px;
         img {
+          position: absolute;
           height: $img;
           width: auto;
+          left: 50%;
+          top: 0;
+          -webkit-transform: translate(-50%, 0%);
+          -moz-transform: translate(-50%, 0%);
+          -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
           vertical-align: bottom;
           background: #ffffff url("images/loading.gif") no-repeat;
           background-position: center center;
@@ -159,6 +168,11 @@
           font-size: 13px;
           line-height: 1.5;
           margin: 0 0 15px 0;
+          overflow : hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
         }
         p {
           @include transition;
