@@ -3,6 +3,7 @@ Description: 投稿ページ
 */
 
 @import "mixin";
+@import "variables";
 
 #common {
   .single-wrap {
@@ -34,12 +35,14 @@ Description: 投稿ページ
         font-size: 24px;
         line-height: 1.5;
         margin: 20px 0 10px 0;
+        font-family: $gothic-b;
       }
       h2.single-subtitle {
         font-size: 15px;
         font-weight: 400;
         margin: 0 0 15px 0;
         color: #1b1464;
+        font-family: $gothic;
       }
       .single-eyecatch {
         margin-bottom: 20px;
@@ -54,12 +57,14 @@ Description: 投稿ページ
         a {
           color: #1b1464;
           text-decoration: none;
+          font-family: $gothic-b;
         }
       }
       time.single-date {
         color: #888888;
         float: right;
         clear: right;
+        font-family: $gothic;
       }
       img {
         background: #ffffff url("images/loading.gif") no-repeat;
@@ -192,6 +197,7 @@ Description: 投稿ページ
       border-bottom: 1.5px solid #1B1464;
       padding: 20px 0 5px 0;
       margin: 0 0 10px 0;
+      font-family: $gothic-b;
     }
 
     img {
@@ -209,9 +215,11 @@ Description: 投稿ページ
     .single-map a {
       color: #1b1464;
       &:hover { text-decoration: none; }
+      font-family: $gothic;
     }
 
     .single-tag {
+      font-family: $gothic;
       &:before,
       &:after {
         @include clearfix;
@@ -324,6 +332,7 @@ Description: 投稿ページ
   .single-related-list {
     margin: 5px 0 40px 0;
     padding: 0 0 0 25px;
+    font-family: $gothic;
     li {
       margin: 0 0 8px 0;
       list-style-image: url("images/single/list-style.png");
@@ -384,12 +393,15 @@ Description: 投稿ページ
       background-size: 104% auto;
     }
     h5 {
+      font-family: $gothic-b;
       font-size: 14px;
+      line-height: 1.8;
       display: block;
       margin: 5px 0 0 0;
       &:hover { text-decoration: underline; }
     }
     p {
+      font-family: $gothic;
       font-size: 12px;
       margin: 5px 0 0 0;
     }
