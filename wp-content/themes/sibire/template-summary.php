@@ -1,7 +1,7 @@
 <?php /* Template Name: OFF TOKYO */ ?>
 
   <?php get_header(); ?>
-    <div id="summary">
+    <div id="summary" class="offtokyo">
       <div class="summary-cover">
         <div class="container">
           <h1>

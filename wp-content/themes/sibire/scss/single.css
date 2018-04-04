@@ -350,6 +350,7 @@ Description: 投稿ページ
   list-style-image: url("images/single/list-style.png");
   list-style: none;
   position: relative;
+  font-size: 12px;
   line-height: 1.6;
 }
 #common .single-related-list li img {
