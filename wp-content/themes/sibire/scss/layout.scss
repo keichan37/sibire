@@ -4,6 +4,8 @@ Description: レイアウト
 
 @import "mixin";
 
+  $gothic: 'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D';
+  $gothic-b: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
 html,
 body {
   font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
@@ -139,6 +141,7 @@ header .global_menu {
     list-style: none;
     line-height: 19px;
     float: left;
+    font-family: $gothic;
     a {
       color: #333333;
       text-decoration: none;
@@ -151,7 +154,7 @@ header .global_menu {
     }
     &.current-page-ancestor a,
     &.current-menu-item a {
-      font-weight: 700;
+      font-family: $gothic-b;
       color: #ffffff;
       background-color: #1b1464;
       cursor: default;
