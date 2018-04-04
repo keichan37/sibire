@@ -374,6 +374,9 @@
     margin: 2% 2% 5% 2%;
     min-height: 280px;
   }
+  #summary .summary-grid-wrap .summary-grid figure {
+    padding-top: 140px;
+  }
   #summary .summary-grid-wrap .summary-grid figure img {
     height: 140px;
   }
