@@ -23,7 +23,7 @@
   color: #49c6e8;
 }
 #summary.column .summary-grid-wrap .summary-grid {
-  background: transparent url(images/template-summary/"bottom-"pink.png) bottom left no-repeat;
+  background: transparent url(images/template-summary/"bottom-"purple.png) bottom left no-repeat;
 }
 #summary.column .summary-grid-wrap .summary-grid:hover {
   color: #dd4ae5;
@@ -33,7 +33,7 @@
   color: #dd4ae5;
 }
 #summary.event .summary-grid-wrap .summary-grid {
-  background: transparent url(images/template-summary/"bottom-"pink.png) bottom left no-repeat;
+  background: transparent url(images/template-summary/"bottom-"green.png) bottom left no-repeat;
 }
 #summary.event .summary-grid-wrap .summary-grid:hover {
   color: #6ecc3e;
@@ -43,7 +43,7 @@
   color: #6ecc3e;
 }
 #summary.interview .summary-grid-wrap .summary-grid {
-  background: transparent url(images/template-summary/"bottom-"pink.png) bottom left no-repeat;
+  background: transparent url(images/template-summary/"bottom-"orange.png) bottom left no-repeat;
 }
 #summary.interview .summary-grid-wrap .summary-grid:hover {
   color: #ff9e55;
@@ -53,7 +53,7 @@
   color: #ff9e55;
 }
 #summary.niche .summary-grid-wrap .summary-grid {
-  background: transparent url(images/template-summary/"bottom-"pink.png) bottom left no-repeat;
+  background: transparent url(images/template-summary/"bottom-"navy.png) bottom left no-repeat;
 }
 #summary.niche .summary-grid-wrap .summary-grid:hover {
   color: #1b1464;
@@ -63,7 +63,7 @@
   color: #1b1464;
 }
 #summary.blog .summary-grid-wrap .summary-grid {
-  background: transparent url(images/template-summary/"bottom-"pink.png) bottom left no-repeat;
+  background: transparent url(images/template-summary/"bottom-"navy.png) bottom left no-repeat;
 }
 #summary.blog .summary-grid-wrap .summary-grid:hover {
   color: #1b1464;
@@ -73,7 +73,7 @@
   color: #1b1464;
 }
 #summary.media .summary-grid-wrap .summary-grid {
-  background: transparent url(images/template-summary/"bottom-"pink.png) bottom left no-repeat;
+  background: transparent url(images/template-summary/"bottom-"navy.png) bottom left no-repeat;
 }
 #summary.media .summary-grid-wrap .summary-grid:hover {
   color: #1b1464;
@@ -197,7 +197,7 @@
   display: block;
   width: 235px;
   height: auto;
-  min-height: 309px;
+  min-height: 345px;
   float: left;
   text-decoration: none;
   color: #231815;
