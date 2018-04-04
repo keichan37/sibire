@@ -61,6 +61,10 @@ Description: 投稿ページ
         float: right;
         clear: right;
       }
+      img {
+        background: #ffffff url("images/loading.gif") no-repeat;
+        background-position: center center;
+      }
     }
   }
 

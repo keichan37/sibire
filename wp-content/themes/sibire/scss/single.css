@@ -67,6 +67,10 @@ Description: 投稿ページ
   float: right;
   clear: right;
 }
+#common .single-wrap article img {
+  background: #ffffff url("images/loading.gif") no-repeat;
+  background-position: center center;
+}
 #common .single-top-box {
   border: 5px solid #1b1464;
   margin: 0 0 40px 0;
