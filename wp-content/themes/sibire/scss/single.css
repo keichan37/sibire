@@ -40,12 +40,14 @@ Description: 投稿ページ
   font-size: 24px;
   line-height: 1.5;
   margin: 20px 0 10px 0;
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
 }
 #common .single-wrap article h2.single-subtitle {
   font-size: 15px;
   font-weight: 400;
   margin: 0 0 15px 0;
   color: #1b1464;
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
 }
 #common .single-wrap article .single-eyecatch {
   margin-bottom: 20px;
@@ -61,11 +63,13 @@ Description: 投稿ページ
 #common .single-wrap article .single-category a {
   color: #1b1464;
   text-decoration: none;
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
 }
 #common .single-wrap article time.single-date {
   color: #888888;
   float: right;
   clear: right;
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
 }
 #common .single-wrap article img {
   background: #ffffff url("images/loading.gif") no-repeat;
@@ -203,6 +207,7 @@ Description: 投稿ページ
   border-bottom: 1.5px solid #1B1464;
   padding: 20px 0 5px 0;
   margin: 0 0 10px 0;
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
 }
 #common aside img {
   max-width: 100%;
@@ -218,11 +223,13 @@ Description: 投稿ページ
 }
 #common aside .single-map a {
   color: #1b1464;
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
 }
 #common aside .single-map a:hover {
   text-decoration: none;
 }
 #common aside .single-tag {
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
   margin: 0 0 20px 0;
   padding: 0 6px;
 }
@@ -334,6 +341,7 @@ Description: 投稿ページ
 #common .single-related-list {
   margin: 5px 0 40px 0;
   padding: 0 0 0 25px;
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
 }
 #common .single-related-list li {
   margin: 0 0 8px 0;
@@ -393,7 +401,9 @@ Description: 投稿ページ
   background-size: 104% auto;
 }
 #common a.single-related h5 {
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
   font-size: 14px;
+  line-height: 1.8;
   display: block;
   margin: 5px 0 0 0;
 }
@@ -401,6 +411,7 @@ Description: 投稿ページ
   text-decoration: underline;
 }
 #common a.single-related p {
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
   font-size: 12px;
   margin: 5px 0 0 0;
 }
