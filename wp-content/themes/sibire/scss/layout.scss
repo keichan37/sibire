@@ -68,43 +68,90 @@ header {
   }
 }
 
+#wrap {
+  &.blur {
+    filter: blur(3px);
+  }
+}
+
 .slicknav_btn {
+  z-index: 10001;
+  position: fixed;
   display: block;
   width: 40px;
-  height: 32px;
-  padding-top: 8px;
+  height: 40px;
   background-color: #1b1464;
-  position: absolute;
   right: 0;
   top: 0;
   display: none;
-  &.slicknav_open { background-color: #15104f; }
+  &:hover { background-color: #15104f; }
+}
+
+.slicknav_icon,
+.slicknav_icon span {
+  display: inline-block;
+  @include transition;
+  @include border-box;
+}
+
+.slicknav_icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  span {
+    &:nth-of-type(1) {
+      top: 0;
+      margin-top: 13px;
+    }
+    &:nth-of-type(2) {
+      top: 50%;
+      margin-top: -1px;
+    }
+    &:nth-of-type(3) {
+      bottom: 0;
+      margin-bottom: 13px;
+    }
+  }
+}
+
+.slicknav_menu .slicknav_icon-bar{
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: #ffffff;
+}
+
+.slicknav_open .slicknav_icon-bar {
+  &:nth-of-type(1) {
+    -webkit-transform: translateY(6px) rotate(-45deg);
+    transform: translateY(6px) rotate(-45deg);
+  }
+  &:nth-of-type(2) {
+    opacity: 0;
+  }
+  &:nth-of-type(3) {
+    -webkit-transform: translateY(-6px) rotate(45deg);
+    transform: translateY(-6px) rotate(45deg);
+  }
 }
 
 .slicknav_arrow {
   display: none;
 }
 
-.slicknav_icon-bar {
-  display: block;
-  height: 1px;
-  width: 20px;
-  background-color: #ffffff;
-  margin: 0px auto;
-  margin-top: 5px;
-}
-
 .slicknav_nav {
-  position: absolute;
-  z-index: 3;
+  @include box-shadow;
+  position: fixed;
+  z-index: 10000;
   background-color: #1b1464;
   margin: 0;
-  padding: 0;
   right: 0;
   top: 0;
-  margin-top: 40px;
   width: 100%;
-  padding: 20px 0;
+  padding: 60px 0 20px 0;
   li {
     list-style: none;
     text-align: left;
@@ -293,9 +340,9 @@ header .global_menu {
 }
 
 @media(max-width: 815px) {
+  .slicknav_btn { display: block; }
   header {
     .global_menu  { display: none; }
-    .slicknav_btn { display: block; }
   }
   #common .container {
     padding: 0 20px;
