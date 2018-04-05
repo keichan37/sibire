@@ -16,7 +16,7 @@
       ?>
       <?php
         $thumbnail_id = get_post_thumbnail_id();
-        $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail', true);
+        $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
       ?>
       <a class="single-related" href="<?php the_permalink(); ?>">
         <div class="img">
