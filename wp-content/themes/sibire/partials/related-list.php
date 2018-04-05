@@ -20,7 +20,7 @@
       ?>
       <a class="single-related" href="<?php the_permalink(); ?>">
         <?php if (has_post_thumbnail()): ?>
-          <img class="single-related-eyecatch owl-lazy" data-src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" data-src-retina="<?php echo $thumbnail_url[0]; ?>" />
+          <img class="single-related-eyecatch owl-lazy" data-src="<?php echo $thumbnail_url[0]; ?>" />
         <?php else: ?>
           <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" />
         <?php endif; ?>
