@@ -209,14 +209,14 @@ Description: 投稿ページ
   margin: 0 0 10px 0;
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
 }
-#common aside img {
+#common aside .widget_sp_image-image-link img {
   max-width: 100%;
   height: auto;
   margin: 0px auto;
   margin-bottom: 15px;
   display: block;
 }
-#common aside a img:hover {
+#common aside .widget_sp_image-image-link:hover {
   opacity: 0.8;
   -moz-opacity: 0.8;
   -ms-filter: "alpha(opacity=$ratioms)";
@@ -374,8 +374,8 @@ Description: 投稿ページ
 #common .single-related-list li a:hover {
   text-decoration: none;
 }
-#common .owl-controls .owl-nav .owl-prev,
-#common .owl-controls .owl-nav .owl-next {
+#common .owl-nav .owl-prev,
+#common .owl-nav .owl-next {
   display: block;
   width: 30px;
   height: 30px;
@@ -392,17 +392,17 @@ Description: 投稿ページ
   background-size: 60px 30px;
   background-position: 0 0;
 }
-#common .owl-controls .owl-nav .owl-prev:hover,
-#common .owl-controls .owl-nav .owl-next:hover {
+#common .owl-nav .owl-prev:hover,
+#common .owl-nav .owl-next:hover {
   opacity: 0.8;
   -moz-opacity: 0.8;
   -ms-filter: "alpha(opacity=$ratioms)";
 }
-#common .owl-controls .owl-nav .owl-prev {
+#common .owl-nav .owl-prev {
   left: 0;
   margin-left: -30px;
 }
-#common .owl-controls .owl-nav .owl-next {
+#common .owl-nav .owl-next {
   right: 0;
   margin-right: -30px;
   background-position: -30px 0;
@@ -421,14 +421,8 @@ Description: 投稿ページ
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
   font-size: 14px;
   line-height: 1.6;
-  height: 69px;
   display: block;
   margin: 10px 0 0 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
 }
 #common a.single-related h5:hover {
   text-decoration: underline;
@@ -437,39 +431,20 @@ Description: 投稿ページ
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
   font-size: 12px;
   line-height: 1.6;
-  height: 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
   margin: 5px 0 0 0;
 }
-#common a.single-related .img {
-  overflow: hidden;
-  height: 150px;
-  position: relative;
-}
-#common a.single-related .img .single-related-eyecatch {
+#common a.single-related .single-related-eyecatch {
   background: #ffffff url("images/loading.gif") no-repeat;
   background-position: center center;
-  max-height: 150px;
-  width: auto;
-  margin-bottom: 0px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  -webkit-transform: translate(-50%, 0%);
-  -moz-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
   vertical-align: bottom;
+  width: 100%;
+  height: auto;
 }
-#common a.single-related .img.fake-a {
+#common a.single-related.fake-a {
   cursor: no-drop;
 }
 
