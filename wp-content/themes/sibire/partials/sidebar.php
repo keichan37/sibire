@@ -18,7 +18,7 @@
     <?php endif; ?>
   <?php endif; ?>
   <?php if(has_tag()==true) : ?>
-    <h4>タグ</h4>
+    <h4>関連キーワード</h4>
     <ul class="single-tag">
       <?php
         $posttags = get_the_tags();
