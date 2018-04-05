@@ -406,7 +406,6 @@ Description: 投稿ページ
     text-decoration: none;
     font-size: 13px;
     &:hover .img .single-related-eyecatch{
-      height: 155px;
     }
     h5 {
       font-family: $gothic-b;
@@ -441,7 +440,7 @@ Description: 投稿ページ
       .single-related-eyecatch {
         background: #ffffff url("images/loading.gif") no-repeat;
         background-position: center center;
-        height: 150px;
+        max-height: 150px;
         width: auto;
         margin-bottom: 0px;
         @include transition;
