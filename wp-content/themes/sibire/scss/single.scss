@@ -379,7 +379,6 @@ Description: 投稿ページ
         background-repeat: no-repeat;
         background-size: 60px 30px;
         background-position: 0 0;
-        &:hover,
         &:hover {
           @include opacity;
         }
@@ -406,33 +405,58 @@ Description: 投稿ページ
     color: #000000;
     text-decoration: none;
     font-size: 13px;
-    &:hover .single-related-eyecatch{
-      background-size: 104% auto;
+    &:hover .img .single-related-eyecatch{
+      height: 155px;
     }
     h5 {
       font-family: $gothic-b;
       font-size: 14px;
-      line-height: 1.8;
+      line-height: 1.6;
+      height: 69px;
       display: block;
-      margin: 5px 0 0 0;
+      margin: 10px 0 0 0;
+      overflow : hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
       &:hover { text-decoration: underline; }
     }
     p {
       font-family: $gothic;
       font-size: 12px;
+      line-height: 1.6;
+      height: 15px;
+      overflow : hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
       margin: 5px 0 0 0;
     }
-    .single-related-eyecatch {
-      width: 100%;
-      height: 120px;
-      background-size: 100% auto;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin-bottom: 10px;
-      @include transition;
-    }
-    &.fake-a {
-      cursor: no-drop;
+    .img {
+      overflow: hidden;
+      height: 150px;
+      position: relative;
+      .single-related-eyecatch {
+        background: #ffffff url("images/loading.gif") no-repeat;
+        background-position: center center;
+        height: 150px;
+        width: auto;
+        margin-bottom: 0px;
+        @include transition;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        -webkit-transform: translate(-50%, 0%);
+        -moz-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+        vertical-align: bottom;
+      }
+      &.fake-a {
+        cursor: no-drop;
+      }
     }
   }
 }
@@ -496,6 +520,10 @@ Description: 投稿ページ
     .single-image-wrap figure.single-image {
       float: none;
       width: 100%;
+    }
+
+    .single-related-wrap {
+      padding: 0 20px 40px;
     }
   }
 }

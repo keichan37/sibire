@@ -16,14 +16,16 @@
       ?>
       <?php
         $thumbnail_id = get_post_thumbnail_id();
-        $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
+        $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail', true);
       ?>
       <a class="single-related" href="<?php the_permalink(); ?>">
-        <?php if (has_post_thumbnail()): ?>
-          <div class="single-related-eyecatch" style="background-image: url(<?php echo $thumbnail_url[0]; ?>);"></div>
-        <?php else: ?>
-          <div class="single-related-eyecatch" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/common/no-image-eyecatch.png")></div>
-        <?php endif; ?>
+        <div class="img">
+          <?php if (has_post_thumbnail()): ?>
+            <img class="single-related-eyecatch" src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" data-echo="<?php echo $thumbnail_url[0]; ?>" />
+          <?php else: ?>
+            <img class="single-related-eyecatch" src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" />
+          <?php endif; ?>
+        </div>
         <h5><?php the_title(); ?></h5>
         <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
       </a>
