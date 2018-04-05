@@ -417,9 +417,6 @@ Description: 投稿ページ
   text-decoration: none;
   font-size: 13px;
 }
-#common a.single-related:hover .img .single-related-eyecatch {
-  height: 155px;
-}
 #common a.single-related h5 {
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
   font-size: 14px;
@@ -456,7 +453,7 @@ Description: 投稿ページ
 #common a.single-related .img .single-related-eyecatch {
   background: #ffffff url("images/loading.gif") no-repeat;
   background-position: center center;
-  height: 150px;
+  max-height: 150px;
   width: auto;
   margin-bottom: 0px;
   -webkit-transition: 0.3s;
