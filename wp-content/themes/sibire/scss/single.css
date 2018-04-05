@@ -392,8 +392,7 @@ Description: 投稿ページ
   background-size: 60px 30px;
   background-position: 0 0;
 }
-#common .owl-controls .owl-nav .owl-prev:hover, #common .owl-controls .owl-nav .owl-prev:hover,
-#common .owl-controls .owl-nav .owl-next:hover,
+#common .owl-controls .owl-nav .owl-prev:hover,
 #common .owl-controls .owl-nav .owl-next:hover {
   opacity: 0.8;
   -moz-opacity: 0.8;
@@ -418,15 +417,21 @@ Description: 投稿ページ
   text-decoration: none;
   font-size: 13px;
 }
-#common a.single-related:hover .single-related-eyecatch {
-  background-size: 104% auto;
+#common a.single-related:hover .img .single-related-eyecatch {
+  height: 155px;
 }
 #common a.single-related h5 {
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
   font-size: 14px;
-  line-height: 1.8;
+  line-height: 1.6;
+  height: 69px;
   display: block;
-  margin: 5px 0 0 0;
+  margin: 10px 0 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 #common a.single-related h5:hover {
   text-decoration: underline;
@@ -434,21 +439,40 @@ Description: 投稿ページ
 #common a.single-related p {
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
   font-size: 12px;
+  line-height: 1.6;
+  height: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
   margin: 5px 0 0 0;
 }
-#common a.single-related .single-related-eyecatch {
-  width: 100%;
-  height: 120px;
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 10px;
+#common a.single-related .img {
+  overflow: hidden;
+  height: 150px;
+  position: relative;
+}
+#common a.single-related .img .single-related-eyecatch {
+  background: #ffffff url("images/loading.gif") no-repeat;
+  background-position: center center;
+  height: 150px;
+  width: auto;
+  margin-bottom: 0px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  vertical-align: bottom;
 }
-#common a.single-related.fake-a {
+#common a.single-related .img.fake-a {
   cursor: no-drop;
 }
 
@@ -504,6 +528,9 @@ Description: 投稿ページ
   #common .single-image-wrap figure.single-image {
     float: none;
     width: 100%;
+  }
+  #common .single-related-wrap {
+    padding: 0 20px 40px;
   }
 }
 
