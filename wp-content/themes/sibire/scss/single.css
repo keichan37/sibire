@@ -394,9 +394,10 @@ Description: 投稿ページ
 }
 #common .owl-nav .owl-prev:hover,
 #common .owl-nav .owl-next:hover {
-  opacity: 0.8;
-  -moz-opacity: 0.8;
+  opacity: 0.7;
+  -moz-opacity: 0.7;
   -ms-filter: "alpha(opacity=$ratioms)";
+  background-color: #ffffff;
 }
 #common .owl-nav .owl-prev {
   left: 0;
@@ -424,9 +425,6 @@ Description: 投稿ページ
   display: block;
   margin: 10px 0 0 0;
 }
-#common a.single-related h5:hover {
-  text-decoration: underline;
-}
 #common a.single-related p {
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
   font-size: 12px;
@@ -446,6 +444,14 @@ Description: 投稿ページ
 }
 #common a.single-related.fake-a {
   cursor: no-drop;
+}
+#common a.single-related:hover .single-related-eyecatch {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-filter: "alpha(opacity=$ratioms)";
+}
+#common a.single-related:hover h5 {
+  text-decoration: underline;
 }
 
 @media (max-width: 1100px) {
