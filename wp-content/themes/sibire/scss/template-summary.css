@@ -15,6 +15,9 @@
 #summary .summary-grid-wrap .summary-grid:hover p {
   color: #e61673;
 }
+#summary .summary-grid-wrap .summary-grid:nth-child(even) p {
+  color: #e61673;
+}
 #summary.recruit .summary-cover {
   background-image: url(images/template-summary/"cover-background-"blue.jpg);
 }
@@ -26,6 +29,9 @@
 }
 #summary.recruit .summary-grid-wrap .summary-grid:hover h4,
 #summary.recruit .summary-grid-wrap .summary-grid:hover p {
+  color: #49c6e8;
+}
+#summary.recruit .summary-grid-wrap .summary-grid:nth-child(even) p {
   color: #49c6e8;
 }
 #summary.column .summary-cover {
@@ -41,6 +47,9 @@
 #summary.column .summary-grid-wrap .summary-grid:hover p {
   color: #dd4ae5;
 }
+#summary.column .summary-grid-wrap .summary-grid:nth-child(even) p {
+  color: #dd4ae5;
+}
 #summary.event .summary-cover {
   background-image: url(images/template-summary/"cover-background-"green.jpg);
 }
@@ -52,6 +61,9 @@
 }
 #summary.event .summary-grid-wrap .summary-grid:hover h4,
 #summary.event .summary-grid-wrap .summary-grid:hover p {
+  color: #6ecc3e;
+}
+#summary.event .summary-grid-wrap .summary-grid:nth-child(even) p {
   color: #6ecc3e;
 }
 #summary.interview .summary-cover {
@@ -67,6 +79,9 @@
 #summary.interview .summary-grid-wrap .summary-grid:hover p {
   color: #ff9e55;
 }
+#summary.interview .summary-grid-wrap .summary-grid:nth-child(even) p {
+  color: #ff9e55;
+}
 #summary.niche .summary-cover {
   background-image: url(images/template-summary/"cover-background-"navy.jpg);
 }
@@ -78,6 +93,9 @@
 }
 #summary.niche .summary-grid-wrap .summary-grid:hover h4,
 #summary.niche .summary-grid-wrap .summary-grid:hover p {
+  color: #1b1464;
+}
+#summary.niche .summary-grid-wrap .summary-grid:nth-child(even) p {
   color: #1b1464;
 }
 #summary.blog .summary-cover {
@@ -93,6 +111,9 @@
 #summary.blog .summary-grid-wrap .summary-grid:hover p {
   color: #1b1464;
 }
+#summary.blog .summary-grid-wrap .summary-grid:nth-child(even) p {
+  color: #1b1464;
+}
 #summary.media .summary-cover {
   background-image: url(images/template-summary/"cover-background-"navy.jpg);
 }
@@ -104,6 +125,9 @@
 }
 #summary.media .summary-grid-wrap .summary-grid:hover h4,
 #summary.media .summary-grid-wrap .summary-grid:hover p {
+  color: #1b1464;
+}
+#summary.media .summary-grid-wrap .summary-grid:nth-child(even) p {
   color: #1b1464;
 }
 #summary.niche .summary-cover, #summary.blog .summary-cover, #summary.media .summary-cover {
