@@ -379,7 +379,8 @@ Description: 投稿ページ
       background-size: 60px 30px;
       background-position: 0 0;
       &:hover {
-        @include opacity;
+        @include opacity(.7);
+        background-color: #ffffff;
       }
     }
     .owl-prev {
@@ -403,15 +404,12 @@ Description: 投稿ページ
     color: #000000;
     text-decoration: none;
     font-size: 13px;
-    &:hover .img .single-related-eyecatch{
-    }
     h5 {
       font-family: $gothic-b;
       font-size: 14px;
       line-height: 1.6;
       display: block;
       margin: 10px 0 0 0;
-      &:hover { text-decoration: underline; }
     }
     p {
       font-family: $gothic;
@@ -429,6 +427,10 @@ Description: 投稿ページ
     }
     &.fake-a {
       cursor: no-drop;
+    }
+    &:hover {
+      .single-related-eyecatch { @include opacity; }
+      h5 { text-decoration: underline; }
     }
   }
 }
