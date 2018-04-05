@@ -27,6 +27,7 @@ module.exports = function (grunt) {
             'scss/feather.css',
             'scss/normalize.css',
             'scss/owl.carousel.css',
+            'scss/owl.theme.default.css',
             'scss/layout.css',
             'scss/front-page.css',
             'scss/page.css',

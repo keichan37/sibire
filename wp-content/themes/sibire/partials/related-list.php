@@ -1,6 +1,6 @@
 <div class="single-related-wrap">
   <h4>関連記事</h4>
-  <div class="single-related-lists">
+  <div class="single-related-lists owl-carousel owl-theme">
     <?php
       $slug = get_post_type();
       $args = array( 
@@ -19,13 +19,11 @@
         $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
       ?>
       <a class="single-related" href="<?php the_permalink(); ?>">
-        <div class="img">
-          <?php if (has_post_thumbnail()): ?>
-            <img class="single-related-eyecatch" src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" data-echo="<?php echo $thumbnail_url[0]; ?>" />
-          <?php else: ?>
-            <img class="single-related-eyecatch" src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" />
-          <?php endif; ?>
-        </div>
+        <?php if (has_post_thumbnail()): ?>
+          <img class="single-related-eyecatch owl-lazy" data-src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" data-src-retina="<?php echo $thumbnail_url[0]; ?>" />
+        <?php else: ?>
+          <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" />
+        <?php endif; ?>
         <h5><?php the_title(); ?></h5>
         <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
       </a>
