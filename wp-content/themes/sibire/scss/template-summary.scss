@@ -1,7 +1,7 @@
 @import "mixin";
 @mixin theme-color($rgb: #e61673,$color: pink ) {
   .summary-cover {
-    background-image: url(images/template-summary/'cover-background-' + $color  + '.jpg');
+    background: transparent url(images/template-summary/'cover-background-' + $color  + '.jpg') center bottom /cover no-repeat;
   }
   .summary-grid-wrap {
     .summary-grid {
@@ -12,9 +12,6 @@
         p {
           color: $rgb;
         }
-      }
-      &:nth-child(even) {
-        h4 { color: $rgb; }
       }
     }
   }

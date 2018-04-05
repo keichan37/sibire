@@ -3,7 +3,7 @@
   padding-bottom: 60px;
 }
 #summary .summary-cover {
-  background-image: url(images/template-summary/"cover-background-"pink.jpg);
+  background: transparent url(images/template-summary/"cover-background-"pink.jpg) center bottom/cover no-repeat;
 }
 #summary .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"pink.png) bottom left no-repeat;
@@ -15,11 +15,8 @@
 #summary .summary-grid-wrap .summary-grid:hover p {
   color: #e61673;
 }
-#summary .summary-grid-wrap .summary-grid:nth-child(even) h4 {
-  color: #e61673;
-}
 #summary.recruit .summary-cover {
-  background-image: url(images/template-summary/"cover-background-"blue.jpg);
+  background: transparent url(images/template-summary/"cover-background-"blue.jpg) center bottom/cover no-repeat;
 }
 #summary.recruit .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"blue.png) bottom left no-repeat;
@@ -31,11 +28,8 @@
 #summary.recruit .summary-grid-wrap .summary-grid:hover p {
   color: #49c6e8;
 }
-#summary.recruit .summary-grid-wrap .summary-grid:nth-child(even) h4 {
-  color: #49c6e8;
-}
 #summary.column .summary-cover {
-  background-image: url(images/template-summary/"cover-background-"purple.jpg);
+  background: transparent url(images/template-summary/"cover-background-"purple.jpg) center bottom/cover no-repeat;
 }
 #summary.column .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"purple.png) bottom left no-repeat;
@@ -47,11 +41,8 @@
 #summary.column .summary-grid-wrap .summary-grid:hover p {
   color: #dd4ae5;
 }
-#summary.column .summary-grid-wrap .summary-grid:nth-child(even) h4 {
-  color: #dd4ae5;
-}
 #summary.event .summary-cover {
-  background-image: url(images/template-summary/"cover-background-"green.jpg);
+  background: transparent url(images/template-summary/"cover-background-"green.jpg) center bottom/cover no-repeat;
 }
 #summary.event .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"green.png) bottom left no-repeat;
@@ -63,11 +54,8 @@
 #summary.event .summary-grid-wrap .summary-grid:hover p {
   color: #6ecc3e;
 }
-#summary.event .summary-grid-wrap .summary-grid:nth-child(even) h4 {
-  color: #6ecc3e;
-}
 #summary.interview .summary-cover {
-  background-image: url(images/template-summary/"cover-background-"orange.jpg);
+  background: transparent url(images/template-summary/"cover-background-"orange.jpg) center bottom/cover no-repeat;
 }
 #summary.interview .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"orange.png) bottom left no-repeat;
@@ -79,11 +67,8 @@
 #summary.interview .summary-grid-wrap .summary-grid:hover p {
   color: #ff9e55;
 }
-#summary.interview .summary-grid-wrap .summary-grid:nth-child(even) h4 {
-  color: #ff9e55;
-}
 #summary.niche .summary-cover {
-  background-image: url(images/template-summary/"cover-background-"navy.jpg);
+  background: transparent url(images/template-summary/"cover-background-"navy.jpg) center bottom/cover no-repeat;
 }
 #summary.niche .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"navy.png) bottom left no-repeat;
@@ -95,11 +80,8 @@
 #summary.niche .summary-grid-wrap .summary-grid:hover p {
   color: #1b1464;
 }
-#summary.niche .summary-grid-wrap .summary-grid:nth-child(even) h4 {
-  color: #1b1464;
-}
 #summary.blog .summary-cover {
-  background-image: url(images/template-summary/"cover-background-"navy.jpg);
+  background: transparent url(images/template-summary/"cover-background-"navy.jpg) center bottom/cover no-repeat;
 }
 #summary.blog .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"navy.png) bottom left no-repeat;
@@ -111,11 +93,8 @@
 #summary.blog .summary-grid-wrap .summary-grid:hover p {
   color: #1b1464;
 }
-#summary.blog .summary-grid-wrap .summary-grid:nth-child(even) h4 {
-  color: #1b1464;
-}
 #summary.media .summary-cover {
-  background-image: url(images/template-summary/"cover-background-"navy.jpg);
+  background: transparent url(images/template-summary/"cover-background-"navy.jpg) center bottom/cover no-repeat;
 }
 #summary.media .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"navy.png) bottom left no-repeat;
@@ -125,9 +104,6 @@
 }
 #summary.media .summary-grid-wrap .summary-grid:hover h4,
 #summary.media .summary-grid-wrap .summary-grid:hover p {
-  color: #1b1464;
-}
-#summary.media .summary-grid-wrap .summary-grid:nth-child(even) h4 {
   color: #1b1464;
 }
 #summary.niche .summary-cover, #summary.blog .summary-cover, #summary.media .summary-cover {
