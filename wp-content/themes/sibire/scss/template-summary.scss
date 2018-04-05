@@ -13,6 +13,9 @@
           color: $rgb;
         }
       }
+      &:nth-child(even) {
+        p { color: $rgb; }
+      }
     }
   }
 }
