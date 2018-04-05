@@ -454,8 +454,8 @@ Description: Contact Form 7
   }
   #common form textarea {
     min-height: 66px;
-    width: 300%;
-    max-width: 300%;
+    width: 100%;
+    max-width: 100%;
   }
   #common form select {
     height: 44px;

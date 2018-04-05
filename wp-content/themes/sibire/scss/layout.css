@@ -69,45 +69,97 @@ header .logo a:hover {
   -ms-filter: "alpha(opacity=$ratioms)";
 }
 
+#wrap.blur {
+  filter: blur(3px);
+}
+
 .slicknav_btn {
+  z-index: 10001;
+  position: fixed;
   display: block;
   width: 40px;
-  height: 32px;
-  padding-top: 8px;
+  height: 40px;
   background-color: #1b1464;
-  position: absolute;
   right: 0;
   top: 0;
   display: none;
 }
-.slicknav_btn.slicknav_open {
+.slicknav_btn:hover {
   background-color: #15104f;
+}
+
+.slicknav_icon,
+.slicknav_icon span {
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+.slicknav_icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.slicknav_icon span:nth-of-type(1) {
+  top: 0;
+  margin-top: 13px;
+}
+.slicknav_icon span:nth-of-type(2) {
+  top: 50%;
+  margin-top: -1px;
+}
+.slicknav_icon span:nth-of-type(3) {
+  bottom: 0;
+  margin-bottom: 13px;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: #ffffff;
+}
+
+.slicknav_open .slicknav_icon-bar:nth-of-type(1) {
+  -webkit-transform: translateY(6px) rotate(-45deg);
+  transform: translateY(6px) rotate(-45deg);
+}
+.slicknav_open .slicknav_icon-bar:nth-of-type(2) {
+  opacity: 0;
+}
+.slicknav_open .slicknav_icon-bar:nth-of-type(3) {
+  -webkit-transform: translateY(-6px) rotate(45deg);
+  transform: translateY(-6px) rotate(45deg);
 }
 
 .slicknav_arrow {
   display: none;
 }
 
-.slicknav_icon-bar {
-  display: block;
-  height: 1px;
-  width: 20px;
-  background-color: #ffffff;
-  margin: 0px auto;
-  margin-top: 5px;
-}
-
 .slicknav_nav {
-  position: absolute;
-  z-index: 3;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 10000;
   background-color: #1b1464;
   margin: 0;
-  padding: 0;
   right: 0;
   top: 0;
-  margin-top: 40px;
   width: 100%;
-  padding: 20px 0;
+  padding: 60px 0 20px 0;
 }
 .slicknav_nav li {
   list-style: none;
@@ -338,11 +390,12 @@ header .global_menu li.current-page-ancestor a, header .global_menu li.current-m
   }
 }
 @media (max-width: 815px) {
+  .slicknav_btn {
+    display: block;
+  }
+
   header .global_menu {
     display: none;
-  }
-  header .slicknav_btn {
-    display: block;
   }
 
   #common .container {

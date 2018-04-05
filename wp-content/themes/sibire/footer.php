@@ -35,26 +35,31 @@
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/jquery.liMarquee.js "></script>
   <?php else : ?>
   <?php endif; ?>
-  <script>$(window).fadeThis({
-    reverse:  false,
-    offset: 10,
-    distance: 40
-  });
-  $('.global_menu').slicknav({
-    label: '',
-		prependTo: '.menu-global_menu-container'
-  });
-  //$(window).on('load',function(){
-    //$('#marquee').liMarquee({
-      //scrollDelay: 2000,
-      //scrollStop: true,
-      //stopOutScreen: true,
-      //dragAndDrop: true,
-      //startShow: true
-    //});
-  //})
-	// echo.jsを初期化(起動)する
-		echo.init() ;
+  <script>
+    $(window).fadeThis({
+      reverse:  false,
+      offset: 10,
+      distance: 40
+    });
+    $('.global_menu').slicknav({
+      label: '',
+      prependTo: 'body',
+    });
+    $(".slicknav_btn").click(function(){
+      $('#wrap').toggleClass("blur");
+      $('#wrap').toggleClass("slicknav_open");
+    });
+    //$(window).on('load',function(){
+      //$('#marquee').liMarquee({
+        //scrollDelay: 2000,
+        //scrollStop: true,
+        //stopOutScreen: true,
+        //dragAndDrop: true,
+        //startShow: true
+      //});
+    //})
+    // echo.jsを初期化(起動)する
+      echo.init() ;
   </script>
 
   </body>
