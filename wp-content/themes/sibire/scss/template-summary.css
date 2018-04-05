@@ -15,7 +15,7 @@
 #summary .summary-grid-wrap .summary-grid:hover p {
   color: #e61673;
 }
-#summary .summary-grid-wrap .summary-grid:nth-child(even) p {
+#summary .summary-grid-wrap .summary-grid:nth-child(even) h4 {
   color: #e61673;
 }
 #summary.recruit .summary-cover {
@@ -31,7 +31,7 @@
 #summary.recruit .summary-grid-wrap .summary-grid:hover p {
   color: #49c6e8;
 }
-#summary.recruit .summary-grid-wrap .summary-grid:nth-child(even) p {
+#summary.recruit .summary-grid-wrap .summary-grid:nth-child(even) h4 {
   color: #49c6e8;
 }
 #summary.column .summary-cover {
@@ -47,7 +47,7 @@
 #summary.column .summary-grid-wrap .summary-grid:hover p {
   color: #dd4ae5;
 }
-#summary.column .summary-grid-wrap .summary-grid:nth-child(even) p {
+#summary.column .summary-grid-wrap .summary-grid:nth-child(even) h4 {
   color: #dd4ae5;
 }
 #summary.event .summary-cover {
@@ -63,7 +63,7 @@
 #summary.event .summary-grid-wrap .summary-grid:hover p {
   color: #6ecc3e;
 }
-#summary.event .summary-grid-wrap .summary-grid:nth-child(even) p {
+#summary.event .summary-grid-wrap .summary-grid:nth-child(even) h4 {
   color: #6ecc3e;
 }
 #summary.interview .summary-cover {
@@ -79,7 +79,7 @@
 #summary.interview .summary-grid-wrap .summary-grid:hover p {
   color: #ff9e55;
 }
-#summary.interview .summary-grid-wrap .summary-grid:nth-child(even) p {
+#summary.interview .summary-grid-wrap .summary-grid:nth-child(even) h4 {
   color: #ff9e55;
 }
 #summary.niche .summary-cover {
@@ -95,7 +95,7 @@
 #summary.niche .summary-grid-wrap .summary-grid:hover p {
   color: #1b1464;
 }
-#summary.niche .summary-grid-wrap .summary-grid:nth-child(even) p {
+#summary.niche .summary-grid-wrap .summary-grid:nth-child(even) h4 {
   color: #1b1464;
 }
 #summary.blog .summary-cover {
@@ -111,7 +111,7 @@
 #summary.blog .summary-grid-wrap .summary-grid:hover p {
   color: #1b1464;
 }
-#summary.blog .summary-grid-wrap .summary-grid:nth-child(even) p {
+#summary.blog .summary-grid-wrap .summary-grid:nth-child(even) h4 {
   color: #1b1464;
 }
 #summary.media .summary-cover {
@@ -127,7 +127,7 @@
 #summary.media .summary-grid-wrap .summary-grid:hover p {
   color: #1b1464;
 }
-#summary.media .summary-grid-wrap .summary-grid:nth-child(even) p {
+#summary.media .summary-grid-wrap .summary-grid:nth-child(even) h4 {
   color: #1b1464;
 }
 #summary.niche .summary-cover, #summary.blog .summary-cover, #summary.media .summary-cover {
