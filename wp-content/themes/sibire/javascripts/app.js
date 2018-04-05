@@ -37,6 +37,7 @@ $(document).ready(function() {
     nav: true,
     navText: ["","" ],
     items : 4,
+    dots: false,
     autoHeight: true,
     responsiveClass: true,
     responsive:{
