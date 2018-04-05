@@ -55,8 +55,10 @@
         <div class="common-right">
           <?php get_search_form(); ?>
           <?php dynamic_sidebar('sidebar-1'); ?>
+          <?php /* 
           <?php get_template_part('partials/recruit-map'); ?>
           <?php get_template_part('partials/tag'); ?>
+          */ ?>
           <?php get_template_part('partials/registration'); ?>
         </div>
       </div>    

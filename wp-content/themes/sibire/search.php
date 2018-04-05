@@ -67,8 +67,10 @@ description: 検索結果が表示されます
         </div>    
         <div class="common-right">
           <?php get_search_form(); ?>
+          <?php /* 
           <?php get_template_part('partials/recruit-map'); ?>
           <?php get_template_part('partials/tag'); ?>
+          */ ?>
           <?php get_template_part('partials/registration'); ?>
         </div>
       </div>    
