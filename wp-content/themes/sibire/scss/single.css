@@ -340,7 +340,7 @@ Description: 投稿ページ
 }
 #common .single-related-list {
   margin: 5px 0 0px 0;
-  padding: 0 0 0 10px;
+  padding: 0 0 20px 10px;
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
 }
 #common .single-related-list li {
