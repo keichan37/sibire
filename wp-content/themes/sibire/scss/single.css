@@ -256,6 +256,7 @@ Description: 投稿ページ
   text-align: left;
 }
 #common aside .single-tag li a {
+  font-size: 12px;
   color: #1b1464;
   text-decoration: none;
 }
