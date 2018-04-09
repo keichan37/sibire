@@ -196,6 +196,7 @@ header a.brand svg#brand {
 }
 .slicknav_nav li.slicknav_parent > a {
   position: relative;
+  padding: 0 35px 0 20px;
 }
 .slicknav_nav li.slicknav_parent > a::after {
   -webkit-transition: 0.3s;
@@ -210,7 +211,7 @@ header a.brand svg#brand {
   border-right: 4px solid transparent;
   top: 50%;
   right: 0;
-  margin: -2px 8px 0 0;
+  margin: -2px 15px 0 0;
 }
 .slicknav_nav li.slicknav_parent.slicknav_open > a::after {
   -webkit-transform: rotate(180deg);
