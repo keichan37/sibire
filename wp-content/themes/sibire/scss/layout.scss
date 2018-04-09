@@ -65,9 +65,19 @@ header {
       }
     }
   }
+  a.brand {
+    display: block;
+    float: left;
+    height: 20px;
+    padding: 7px 10px 13px 0;
+    svg#brand {
+      width: 70px;
+      height: 20px;
+    }
+  }
 }
 
-#wrap {
+#blur {
   &.blur {
     filter: blur(3px);
   }
@@ -84,6 +94,7 @@ header {
   top: 0;
   display: none;
   &:hover { background-color: #15104f; }
+  &.slicknav_open { display: block; }
 }
 
 .slicknav_icon,
@@ -428,7 +439,29 @@ header .global_menu {
 @media(max-width: 815px) {
   .slicknav_btn { display: block; }
   header {
+    z-index: 10000;
     .global_menu  { display: none; }
+    a.brand {
+      float: none;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin: 7px 0 0 -35px;
+      padding: 0;
+      svg#brand {
+      }
+    }
+    &.slicknav_open {
+      background-color: transparent;
+      a.brand {
+        margin-top: 10px;
+        svg#brand {
+          fill: #ffffff;
+        }
+      }
+      &::before,
+      &::after { display: none; }
+    }
   }
   #common .container {
     padding: 0 20px;
