@@ -171,7 +171,7 @@ header a.brand svg#brand {
   right: 0;
   top: 0;
   width: 100%;
-  padding: 60px 0 20px 0;
+  padding: 45px 0 20px 0;
 }
 .slicknav_nav li {
   list-style: none;
@@ -524,9 +524,6 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   }
   header.slicknav_open {
     background-color: transparent;
-  }
-  header.slicknav_open a.brand {
-    margin-top: 10px;
   }
   header.slicknav_open a.brand svg#brand {
     fill: #ffffff;
