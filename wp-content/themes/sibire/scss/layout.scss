@@ -161,7 +161,7 @@ header {
   right: 0;
   top: 0;
   width: 100%;
-  padding: 60px 0 20px 0;
+  padding: 45px 0 20px 0;
   li {
     list-style: none;
     text-align: left;
@@ -454,7 +454,6 @@ header .global_menu {
     &.slicknav_open {
       background-color: transparent;
       a.brand {
-        margin-top: 10px;
         svg#brand {
           fill: #ffffff;
         }
