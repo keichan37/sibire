@@ -185,6 +185,7 @@ header {
     &.slicknav_parent {
       & > a {
         position: relative;
+        padding: 0 35px 0 20px;
         &::after {
           @include transition;
           content: '';
@@ -195,7 +196,7 @@ header {
           border-right: 4px solid transparent;
           top: 50%;
           right: 0;
-          margin: -2px 8px 0 0;
+          margin: -2px 15px 0 0;
         }
       }
       &.slicknav_open > a {
