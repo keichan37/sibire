@@ -44,6 +44,8 @@
     $('.global_menu').slicknav({
       label: '',
       prependTo: 'body',
+      allowParentLinks: true,
+      showChildren: true,
     });
     $(".slicknav_btn").click(function(){
       $('#wrap').toggleClass("blur");

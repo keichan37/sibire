@@ -21,7 +21,6 @@ header {
   height: 40px;
   padding: 0;
   text-align: center;
-  position: relative;
   position: fixed;
   z-index: 9999;
   width: 100%;
@@ -37,7 +36,7 @@ header {
     bottom: 0;
     left: 0;
     margin: 0 0 -20px 0;
-    z-index: 2;
+    z-index: 9998;
   }
   .header-inner{
     max-width: 1040px;
@@ -168,9 +167,37 @@ header {
         padding: 0;
       }
     }
-    &.current-menu-item a,
+    &.current-menu-item > a,
     a:hover {
       background-color: #15104f;
+    }
+    &.slicknav_parent {
+      & > a {
+        position: relative;
+        &::after {
+          @include transition;
+          content: '';
+          position: absolute;
+          display: block;
+          border-top: 4px solid #ffffff;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          top: 50%;
+          right: 0;
+          margin: -2px 8px 0 0;
+        }
+      }
+      &.slicknav_open > a {
+        &::after {
+          @include rotate(180deg);
+        }
+      }
+      .sub-menu {
+        padding: 0;
+        background-color: #211879;
+        border-top: 3px solid #211879;
+        border-bottom: 3px solid #211879;
+      }
     }
   }
 }
@@ -188,6 +215,7 @@ header .global_menu {
     float: left;
     font-family: $gothic;
     a {
+      position: relative;
       color: #333333;
       text-decoration: none;
       display: block;
@@ -197,11 +225,69 @@ header .global_menu {
         background-color: #f5f5f5;
       }
     }
-    &.current-page-ancestor a,
-    &.current-menu-item a {
+    &.current-page-ancestor > a,
+    &.current-menu-item > a {
       color: #ffffff;
       background-color: #1b1464;
       cursor: default;
+    }
+    &.menu-item-has-children {
+      @keyframes show{
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+      & > a {
+        padding-right: 25px;
+        &::after {
+          @include transition;
+          content: '';
+          position: absolute;
+          display: block;
+          border-top: 4px solid #000000;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          top: 50%;
+          right: 0;
+          margin: -2px 8px 0 0;
+        }
+      }
+      .sub-menu {
+        @include box-shadow(0,10px,10px,.4);
+        @include transition;
+        display: none;
+        padding: 0;
+        position: absolute;
+        z-index: 10000;
+        max-width: 100%;
+        padding: 10px 0;
+        background-color: #ffffff;
+        li {
+          width: 100%;
+          a  {
+            text-align: left;
+          }
+        }
+      }
+      &:hover {
+        .sub-menu {
+          display: block;
+          animation: show .1s linear 0s;
+        }
+      }
+      &:hover > a {
+        background-color: #f7f7f7;
+        &::after {
+          @include rotate(180deg);
+        }
+      }
+      &.current-menu-item {
+        & > a::after {
+          border-top-color: #ffffff;
+        }
+        &:hover > a {
+          background-color: #1b1464;
+        }
+      }
     }
   }
 }
