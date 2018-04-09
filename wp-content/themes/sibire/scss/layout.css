@@ -67,8 +67,18 @@ header .logo a:hover {
   -moz-opacity: 0.8;
   -ms-filter: "alpha(opacity=$ratioms)";
 }
+header a.brand {
+  display: block;
+  float: left;
+  height: 20px;
+  padding: 7px 10px 13px 0;
+}
+header a.brand svg#brand {
+  width: 70px;
+  height: 20px;
+}
 
-#wrap.blur {
+#blur.blur {
   filter: blur(3px);
 }
 
@@ -85,6 +95,9 @@ header .logo a:hover {
 }
 .slicknav_btn:hover {
   background-color: #15104f;
+}
+.slicknav_btn.slicknav_open {
+  display: block;
 }
 
 .slicknav_icon,
@@ -495,7 +508,30 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
     display: block;
   }
 
+  header {
+    z-index: 10000;
+  }
   header .global_menu {
+    display: none;
+  }
+  header a.brand {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 7px 0 0 -35px;
+    padding: 0;
+  }
+  header.slicknav_open {
+    background-color: transparent;
+  }
+  header.slicknav_open a.brand {
+    margin-top: 10px;
+  }
+  header.slicknav_open a.brand svg#brand {
+    fill: #ffffff;
+  }
+  header.slicknav_open::before, header.slicknav_open::after {
     display: none;
   }
 

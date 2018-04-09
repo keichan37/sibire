@@ -112,10 +112,16 @@
       <?php else : ?>
         <header>
           <div class="header-inner">
+            <a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+              <?php get_template_part('partials/brand'); ?>
+            </a>
+            <?php /* ?>
             <div class="logo">
               <?php echo '<a href="' . home_url(null, 'http') . '">sibire</a>';?>
             </div>
+            <?php */ ?>
             <?php wp_nav_menu( array('menu' => 'global_menu', 'menu_class' => 'global_menu')); ?>
           </div>
         </header>
       <?php endif; ?>
+      <div id="blur">

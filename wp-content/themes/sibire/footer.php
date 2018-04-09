@@ -19,6 +19,7 @@
       <?php endif; ?>
 
     </div>
+  </div>
 
   <?php wp_footer(); ?>
 
@@ -48,8 +49,8 @@
       showChildren: true,
     });
     $(".slicknav_btn").click(function(){
-      $('#wrap').toggleClass("blur");
-      $('#wrap').toggleClass("slicknav_open");
+      $('#blur').toggleClass("blur");
+      $('header').toggleClass("slicknav_open");
     });
     //$(window).on('load',function(){
       //$('#marquee').liMarquee({
