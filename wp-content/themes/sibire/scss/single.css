@@ -411,6 +411,7 @@ Description: 投稿ページ
 }
 #common .single-related-wrap {
   padding: 0 58px 40px;
+  overflow: hidden;
 }
 #common a.single-related {
   display: block;
