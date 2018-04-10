@@ -497,3 +497,9 @@ header .global_menu {
     padding: 0 20px;
   }
 }
+
+@media(max-width: 767px) {
+  #common .container {
+    padding: 0px;
+  }
+}
