@@ -423,17 +423,14 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
 
 #footer {
   background-color: #1b1464;
+  border-top: 3px solid #15104f;
   color: #ffffff;
-  font: 400 12px/16px 'Lucida Grande';
-  padding: 30px 0 15px 0;
-  text-align: center;
+  padding: 30px 0 0 0;
 }
 #footer .footer_menu {
-  padding: 0 20px 30px 20px;
-  text-align: center;
-  max-width: 500px;
+  padding: 0 20px 10px 20px;
+  max-width: 1100px;
   margin: 0px auto;
-  text-align: center;
 }
 #footer .footer_menu:before, #footer .footer_menu:after {
   content: ".";
@@ -445,11 +442,9 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
 }
 #footer .footer_menu li {
   list-style: none;
-  float: left;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 16px;
-  min-height: 16px;
-  padding: 7px 10px;
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
 }
 #footer .footer_menu li a {
   color: #ffffff;
@@ -457,6 +452,36 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
 }
 #footer .footer_menu li a:hover {
   text-decoration: underline;
+}
+#footer .footer_menu > li {
+  float: left;
+  padding: 0 20px 10px 10px;
+  margin-bottom: 10px;
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
+}
+#footer .footer_menu > li > a {
+  margin-bottom: 5px;
+  line-height: 1.6;
+}
+#footer .footer_menu > li .sub-menu {
+  padding: 0 0 0 10px;
+  margin-top: 5px;
+  border-left: 3px solid #ffffff;
+}
+#footer .footer_menu > li.fake-a > a:hover {
+  text-decoration: none;
+}
+#footer small.pay {
+  margin: 0px auto;
+  max-width: 1100px;
+  display: block;
+  text-align: center;
+}
+#footer small.copy {
+  display: block;
+  padding: 5px 0;
+  text-align: center;
+  font: 400 11px/16px 'Lucida Grande';
 }
 
 .clear {
