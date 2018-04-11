@@ -427,11 +427,11 @@ Description: 投稿ページ
 }
 #common .owl-nav .owl-prev {
   left: 0;
-  margin-left: -30px;
+  margin-left: -25px;
 }
 #common .owl-nav .owl-next {
   right: 0;
-  margin-right: -30px;
+  margin-right: -25px;
   background-position: -30px 0;
 }
 #common .single-related-wrap {
