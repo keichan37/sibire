@@ -15,7 +15,6 @@
                 <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
 
                   <? $txt = get_field('subtitle'); if($txt){ ?><h2 class="single-subtitle"><? echo $txt; ?></h2><? } ?>
-                  <?php get_template_part('partials/sns-share'); ?>
                   <?php
                     $thumbnail_id = get_post_thumbnail_id();
                     $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'large', true); //アイキャッチのURL取得
