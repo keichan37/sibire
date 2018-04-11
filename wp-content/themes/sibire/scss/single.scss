@@ -33,15 +33,30 @@ Description: 投稿ページ
       min-width: 800px - 88px;
       h1.single-title {
         font-size: 24px;
-        line-height: 1.5;
+        line-height: 1.4;
         margin: 20px 0 10px 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: $color;
         font-family: $gothic-b;
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          display: block;
+          left: 0;
+          top: 0;
+          width: 2px;
+          height: 100%;
+          margin: 0 0 0 -18px;
+          background-color: $color;
+        }
       }
       h2.single-subtitle {
         font-size: 15px;
         font-weight: 400;
         margin: 0 0 15px 0;
-        color: #1b1464;
+        color: $color;
         font-family: $gothic;
       }
       .single-eyecatch {
@@ -52,8 +67,6 @@ Description: 投稿ページ
         display: inline-block;
         font-weight: 700;
         color: #1b1464;
-        border-bottom: 2px solid #1b1464;
-        padding: 1px 24px 0 4px;
         font-size: 12px;
         .icon {
           position: relative;
@@ -481,11 +494,17 @@ Description: 投稿ページ
       }
       .single-left article  {
         .single-category { margin-left: 10px; }
-        .single-date { margin-right: 10px; }
-        .single-title,
-        .single-subtitle {
+        time.single-date { margin-right: 10px; }
+        h2.single-subtitle {
           padding-left: 10px;
           padding-right: 10px;
+        }
+        h1.single-title {
+          padding-left: 18px;
+          padding-right: 10px;
+          &:after {
+            margin-left: 5px;
+          }
         }
         padding: 20px 0 0 0;
         iframe  { width: 100%; }
