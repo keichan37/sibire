@@ -8,8 +8,8 @@
           <div class="single-left">
             <?php while(have_posts()): the_post(); ?>
               <article>
-                <span class="single-category"><a href="/<?php echo esc_html(get_post_type_object($post->post_type)->name); ?>"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></a></span>
-                <time class="single-date" datetime="<?php the_time('c') ;?>"><?php the_time('Y.n.j') ;?></time>
+                <span class="single-category"><span class="icon icon-paper"></span><a href="/<?php echo esc_html(get_post_type_object($post->post_type)->name); ?>"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></a></span>
+                <time class="single-date" datetime="<?php the_time('c') ;?>"><span class="icon icon-watch"></span><?php the_time('Y.n.j') ;?></time>
                 <h1 class="single-title"><?php the_title(); ?></h1>
 
                 <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
