@@ -455,9 +455,10 @@ header .global_menu {
   z-index: 99;
   margin: 0 20px 20px 0;
   @include transition;
+  @include box-shadow(0,0,15px);
   &.none { display: none; }
   &.absolute { position: absolute; }
-  &:hover { @include opacity; }
+  &:hover { background-color: #15104f; }
 }
 
 @media(max-width: 1130px) {
