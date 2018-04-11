@@ -69,7 +69,6 @@
 
                 <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
                     <?php if ( in_array(get_post_type(), array('recruit')) ): ?>
-                      <?php get_template_part('partials/registration'); ?>
                       <?php get_template_part('partials/single-table'); ?>
                     <?php endif; ?>
                   </div>
