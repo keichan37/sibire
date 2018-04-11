@@ -199,30 +199,6 @@ header a.brand svg#brand {
 .slicknav_nav li.current-menu-item > a:hover {
   background-color: #100c3a;
 }
-.slicknav_nav li.current-menu-item > a.recruit > a {
-  background-color: #49c6e8;
-}
-.slicknav_nav li.current-menu-item > a.recruit > a:hover {
-  background-color: #49c6e8;
-}
-.slicknav_nav li.current-menu-item > a.column > a {
-  background-color: #dd4ae5;
-}
-.slicknav_nav li.current-menu-item > a.column > a:hover {
-  background-color: #dd4ae5;
-}
-.slicknav_nav li.current-menu-item > a.event > a {
-  background-color: #6ecc3e;
-}
-.slicknav_nav li.current-menu-item > a.event > a:hover {
-  background-color: #6ecc3e;
-}
-.slicknav_nav li.current-menu-item > a.interview > a {
-  background-color: #ff9e55;
-}
-.slicknav_nav li.current-menu-item > a.interview > a:hover {
-  background-color: #ff9e55;
-}
 .slicknav_nav li.slicknav_parent > a {
   position: relative;
   padding: 0 35px 0 20px;
@@ -286,6 +262,30 @@ header .global_menu li.current-page-ancestor > a, header .global_menu li.current
   color: #ffffff;
   background-color: #1b1464;
   cursor: default;
+}
+header .global_menu li.current-page-ancestor.recruit > a, header .global_menu li.current-menu-item.recruit > a {
+  background-color: #49c6e8;
+}
+header .global_menu li.current-page-ancestor.recruit > a:hover, header .global_menu li.current-menu-item.recruit > a:hover {
+  background-color: #49c6e8;
+}
+header .global_menu li.current-page-ancestor.column > a, header .global_menu li.current-menu-item.column > a {
+  background-color: #dd4ae5;
+}
+header .global_menu li.current-page-ancestor.column > a:hover, header .global_menu li.current-menu-item.column > a:hover {
+  background-color: #dd4ae5;
+}
+header .global_menu li.current-page-ancestor.event > a, header .global_menu li.current-menu-item.event > a {
+  background-color: #6ecc3e;
+}
+header .global_menu li.current-page-ancestor.event > a:hover, header .global_menu li.current-menu-item.event > a:hover {
+  background-color: #6ecc3e;
+}
+header .global_menu li.current-page-ancestor.interview > a, header .global_menu li.current-menu-item.interview > a {
+  background-color: #ff9e55;
+}
+header .global_menu li.current-page-ancestor.interview > a:hover, header .global_menu li.current-menu-item.interview > a:hover {
+  background-color: #ff9e55;
 }
 @keyframes show {
   from {
