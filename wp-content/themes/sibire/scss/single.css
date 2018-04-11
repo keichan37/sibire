@@ -38,9 +38,24 @@ Description: 投稿ページ
 }
 #common .single-wrap article h1.single-title {
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 1.4;
   margin: 20px 0 10px 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #1b1464;
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
+  position: relative;
+}
+#common .single-wrap article h1.single-title:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  margin: 0 0 0 -18px;
+  background-color: #1b1464;
 }
 #common .single-wrap article h2.single-subtitle {
   font-size: 15px;
@@ -57,8 +72,6 @@ Description: 投稿ページ
   display: inline-block;
   font-weight: 700;
   color: #1b1464;
-  border-bottom: 2px solid #1b1464;
-  padding: 1px 24px 0 4px;
   font-size: 12px;
 }
 #common .single-wrap article .single-category .icon {
@@ -496,13 +509,19 @@ Description: 投稿ページ
   #common .single-wrap .single-left article .single-category {
     margin-left: 10px;
   }
-  #common .single-wrap .single-left article .single-date {
+  #common .single-wrap .single-left article time.single-date {
     margin-right: 10px;
   }
-  #common .single-wrap .single-left article .single-title,
-  #common .single-wrap .single-left article .single-subtitle {
+  #common .single-wrap .single-left article h2.single-subtitle {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  #common .single-wrap .single-left article h1.single-title {
+    padding-left: 18px;
+    padding-right: 10px;
+  }
+  #common .single-wrap .single-left article h1.single-title:after {
+    margin-left: 5px;
   }
   #common .single-wrap .single-left article iframe {
     width: 100%;
