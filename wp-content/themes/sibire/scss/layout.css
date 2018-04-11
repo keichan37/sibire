@@ -522,7 +522,7 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   position: absolute;
 }
 .scroll-top:hover {
-  background-color: #15104f;
+  background: #15104f url("images/common/scroll-top.png") no-repeat;
 }
 
 @media (max-width: 1130px) {
