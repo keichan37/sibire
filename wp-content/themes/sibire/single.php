@@ -4,7 +4,6 @@
     <div id="common">
       <div class="container">
         <div class="single-wrap">
-          <?php get_template_part('breadcrumb'); ?>
           <div class="single-left">
             <?php while(have_posts()): the_post(); ?>
               <article>
@@ -88,6 +87,7 @@
             <?php get_template_part('partials/registration'); ?>
             <?php get_template_part('partials/related-list'); ?>
           </aside>
+          <?php get_template_part('breadcrumb'); ?>
         </div>    
       </div>    
       

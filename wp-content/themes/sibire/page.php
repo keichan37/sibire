@@ -4,7 +4,6 @@
     <div id="common">
       <div class="container">
         <div class="page-wrap">
-          <?php get_template_part('breadcrumb'); //パンくずリスト ?>
           <?php wp_nav_menu( array('menu' => 'page_nav','container' => 'nav' ,'menu_class' => 'page-nav' )); ?>
           <?php while(have_posts()): the_post(); ?>
             <section>
@@ -16,6 +15,7 @@
               <?php }; ?>
             </section>
           <?php endwhile; ?>
+          <?php get_template_part('breadcrumb'); //パンくずリスト ?>
         </div>    
       </div>    
       
