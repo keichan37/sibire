@@ -464,18 +464,24 @@ Description: 投稿ページ
 @media(max-width: 815px) {
   #common {
     .single-wrap {
-      .single-left article,
       .single-right aside {
         padding: 20px;
       }
       .single-left article  {
-        padding-bottom: 0;
-        .single-eyecatch {
-          background-size: cover;
+        .single-category { margin-left: 10px; }
+        .single-date { margin-right: 10px; }
+        .single-title,
+        .single-subtitle {
+          padding-left: 10px;
+          padding-right: 10px;
         }
+        padding: 20px 0 0 0;
         iframe  { width: 100%; }
         img {
           height: auto;
+        }
+        .single-content {
+          padding: 0 10px 10px 10px;
         }
       }
       .single-right aside { padding-top: 0; }

@@ -475,21 +475,31 @@ Description: 投稿ページ
   }
 }
 @media (max-width: 815px) {
-  #common .single-wrap .single-left article,
   #common .single-wrap .single-right aside {
     padding: 20px;
   }
   #common .single-wrap .single-left article {
-    padding-bottom: 0;
+    padding: 20px 0 0 0;
   }
-  #common .single-wrap .single-left article .single-eyecatch {
-    background-size: cover;
+  #common .single-wrap .single-left article .single-category {
+    margin-left: 10px;
+  }
+  #common .single-wrap .single-left article .single-date {
+    margin-right: 10px;
+  }
+  #common .single-wrap .single-left article .single-title,
+  #common .single-wrap .single-left article .single-subtitle {
+    padding-left: 10px;
+    padding-right: 10px;
   }
   #common .single-wrap .single-left article iframe {
     width: 100%;
   }
   #common .single-wrap .single-left article img {
     height: auto;
+  }
+  #common .single-wrap .single-left article .single-content {
+    padding: 0 10px 10px 10px;
   }
   #common .single-wrap .single-right aside {
     padding-top: 0;
