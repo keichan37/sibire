@@ -65,7 +65,6 @@ Description: 投稿ページ
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
 }
 #common .single-wrap article .single-eyecatch {
-  margin-bottom: 20px;
   max-width: 100%;
 }
 #common .single-wrap article .single-category {
@@ -303,7 +302,7 @@ Description: 投稿ページ
   display: block;
   float: left;
   width: 50%;
-  margin: 20px 0;
+  margin: 10px 0 0 0;
 }
 #common .single-image img {
   max-width: 100%;
@@ -311,8 +310,9 @@ Description: 投稿ページ
 }
 #common .single-image figcaption {
   display: block;
-  padding: 5px 5px 20px 5px;
+  padding: 5px 8px;
   font-size: 12px;
+  line-height: 1.4;
 }
 #common a.service-registration {
   clear: left;
@@ -557,10 +557,6 @@ Description: 投稿ページ
   }
   #common .single-top-box .single-top-box-text {
     padding-left: 15px;
-  }
-  #common .single-image-wrap figure.single-image {
-    float: none;
-    width: 100%;
   }
   #common .single-related-wrap {
     padding: 0 20px 40px;

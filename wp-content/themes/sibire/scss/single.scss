@@ -60,7 +60,6 @@ Description: 投稿ページ
         font-family: $gothic;
       }
       .single-eyecatch {
-        margin-bottom: 20px;
         max-width: 100%;
       }
       .single-category {
@@ -291,15 +290,16 @@ Description: 投稿ページ
     display: block;
     float: left;
     width: 50%;
-    margin: 20px 0;
+    margin: 10px 0 0 0;
     img {
       max-width: 100%;
       height: auto;
     }
     figcaption {
       display: block;
-      padding: 5px 5px 20px 5px;
+      padding: 5px 8px;
       font-size: 12px;
+      line-height: 1.4;
     }
   }
 
@@ -543,8 +543,6 @@ Description: 投稿ページ
       }
     }
     .single-image-wrap figure.single-image {
-      float: none;
-      width: 100%;
     }
 
     .single-related-wrap {

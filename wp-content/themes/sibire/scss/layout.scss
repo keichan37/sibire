@@ -458,7 +458,9 @@ header .global_menu {
   @include box-shadow(0,0,15px);
   &.none { display: none; }
   &.absolute { position: absolute; }
-  &:hover { background-color: #15104f; }
+  &:hover {
+    background: #15104f url("images/common/scroll-top.png") no-repeat;
+  }
 }
 
 @media(max-width: 1130px) {
