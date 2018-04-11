@@ -3,7 +3,7 @@
   <table class="recruit-table">
     <tbody>
       <tr>
-        <th colspan="2">会社名</th>
+        <th colspan="2" class="colspan2">会社名</th>
         <td>
           <? $txt = get_field('company-name'); if($txt){ ?>
           <? echo $txt; ?>
@@ -27,7 +27,7 @@
           </td>
         </tr>
       <tr>
-        <th rowspan="3" colspan="1">求人概要</th>
+        <th rowspan="3" colspan="1" class="colspan1">求人概要</th>
           <th colspan="1">募集職種</th>
           <td>
             <? $txt = get_field('company-recruit'); if($txt){ ?>

@@ -249,6 +249,7 @@ Description: 投稿ページ
 #common aside .single-map a {
   color: #1b1464;
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
+  line-height: 1.4;
 }
 #common aside .single-map a:hover {
   text-decoration: none;

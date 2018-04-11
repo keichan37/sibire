@@ -184,6 +184,7 @@
   border: 1px solid #dddddd;
   text-align: left;
   padding: 15px 20px;
+  line-height: 1.4;
 }
 
 .mce-content-body table tr th {
@@ -248,4 +249,23 @@
 
 @media(max-width: 767px) {
   .mce-content-body [class*="gallery-columns-"] .gallery-item { width: 100%; }
+
+  .mce-content-body table {
+    table-layout: fixed;
+  }
+
+  .mce-content-body table tr th,
+  .mce-content-body table tr td {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .mce-content-body table tr th.colspan1 {
+    width: 5em;
+  }
+
+  .mce-content-body table tr th.colspan2 {
+    width: 12em;
+  }
+
 }
