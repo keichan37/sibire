@@ -121,7 +121,7 @@ Description: 固定ページ
 }
 #common .page-wrap section .page-content {
   font-size: 14px;
-  line-height: 32px;
+  line-height: 1.8;
   margin: 30px 13px;
 }
 #common .page-wrap section .page-content a {
