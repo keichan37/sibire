@@ -51,6 +51,7 @@
     });
     $(".slicknav_btn").click(function(){
       $('#blur').toggleClass("blur");
+      $('#transparent').toggleClass("none");
       $('header').toggleClass("slicknav_open");
     });
     //$(window).on('load',function(){
