@@ -18,9 +18,11 @@
       <div class="container">
         <div class="summary-grid-wrap">
           <?php
+            $paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
             $args = array(
+              'paged' => $paged,
               'posts_per_page' => -1,
-              'post_type' => array($cat_slug,$cat_slug2),
+              'post_type' => $cat_slug,
               'post_status' => 'publish',
               'has_password' => false
             );
@@ -30,11 +32,13 @@
             foreach ($postslist as $post) : setup_postdata($post);
           ?>
             <?php get_template_part('partials/summary-grid'); ?>
-
           <?php 
             endforeach; 
             wp_reset_postdata();
           ?>
+          <?php if (function_exists("pagination")) {
+            pagination($custom_query->max_num_pages);
+          } ?>
       </div>    
       
     </div>
