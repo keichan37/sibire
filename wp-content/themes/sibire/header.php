@@ -125,3 +125,4 @@
         </header>
       <?php endif; ?>
       <div id="blur">
+        <div id="transparent" class="none"></div>
