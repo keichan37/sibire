@@ -12,9 +12,12 @@
   <li>
 
     <a href=<?php echo get_permalink(); ?>>
-      <?php the_post_thumbnail('large'); ?>
+      <?php if (has_post_thumbnail()): ?>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" data-echo="<?php echo $thumbnail_url[0]; ?>" />
+      <?php else: ?>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/default.png" />
+      <?php endif; ?>
       <div class="post-table-text">
-        <?php get_template_part('partials/pr'); ?>
         <h2><?php the_title(); ?></h2>
         <?php the_excerpt(); ?>
         <div class="post-table-info">
