@@ -70,6 +70,7 @@ Description: 検索結果
   transition: 0.3s;
   width: 100%;
   height: auto;
+  background: #ffffff url("images/loading.gif") no-repeat;
 }
 #search ul.post-table li a .post-table-text {
   padding: 20px 30px;
