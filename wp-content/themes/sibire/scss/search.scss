@@ -143,6 +143,9 @@ Description: 検索結果
       li {
         a {
           width: 100%;
+          img {
+            height: auto!important;
+          }
         }
       }
     }
