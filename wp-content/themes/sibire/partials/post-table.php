@@ -11,7 +11,7 @@
     $src = $thumbnail_url[0]; //url
     $width = $thumbnail_url[1]; //横幅
     $height = $thumbnail_url[2]; //高さ
-    $division = floor($height/$width)
+    $division = $height/$width
   ?>
   <li>
 
