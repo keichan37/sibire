@@ -260,6 +260,18 @@ function my_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'my_excerpt_more');
 
+/* 検索結果ハイライト */
+function highlight_results($text){
+    if(is_search()){
+		$keys = implode('|', explode(' ', get_search_query()));
+		$text = preg_replace('/(' . $keys .')/iu', '<span class="search-highlight">\0</span>', $text);
+    }
+    return $text;
+}
+add_filter('the_content', 'highlight_results');
+add_filter('the_excerpt', 'highlight_results');
+add_filter('the_title', 'highlight_results');
+
 /* Google Map API */
 function my_acf_google_map_api( $api ){
 	$api['key'] = 'AIzaSyAC4maiLTsNgl8S0ueBDQEfaDjCJoxUEDc';
