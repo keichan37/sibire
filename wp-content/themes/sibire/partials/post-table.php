@@ -16,7 +16,7 @@
 
     <a href=<?php echo get_permalink(); ?>>
       <?php if (has_post_thumbnail()): ?>
-        <img src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" data-echo="<?php echo $thumbnail_url[0]; ?>" style="min-height: <?php echo $height; ?>px;"/>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" data-echo="<?php echo $thumbnail_url[0]; ?>" style="height: <?php echo $height; ?>px;"/>
       <?php else: ?>
         <img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/default.png" />
       <?php endif; ?>
