@@ -8,12 +8,16 @@
     $catName = $cat[0]->name; // 名称取得
     $catSlug = $cat[0]->category_nicename; // スラッグ取得
     $link = get_category_link($catId); // リンクURL取得
+    $src = $thumbnail_url[0]; //url
+    $width = $thumbnail_url[1]; //横幅
+    $height = $thumbnail_url[2]; //高さ
+    $division = floor($height/$width)
   ?>
   <li>
 
     <a href=<?php echo get_permalink(); ?>>
       <?php if (has_post_thumbnail()): ?>
-        <img src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" data-echo="<?php echo $thumbnail_url[0]; ?>" />
+        <img src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" data-echo="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo $division; ?>"/>
       <?php else: ?>
         <img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/default.png" />
       <?php endif; ?>
