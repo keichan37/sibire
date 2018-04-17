@@ -3,7 +3,7 @@
   padding-bottom: 60px;
 }
 #summary .summary-cover {
-  background: transparent url(images/template-summary/"cover-background-"pink.jpg) center bottom/cover no-repeat;
+  background: transparent url(images/template-summary/"cover-background-"pink.jpg) center top/cover no-repeat;
 }
 #summary .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"pink.png) bottom left no-repeat;
@@ -16,7 +16,7 @@
   color: #e61673;
 }
 #summary.recruit .summary-cover {
-  background: transparent url(images/template-summary/"cover-background-"blue.jpg) center bottom/cover no-repeat;
+  background: transparent url(images/template-summary/"cover-background-"blue.jpg) center top/cover no-repeat;
 }
 #summary.recruit .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"blue.png) bottom left no-repeat;
@@ -29,7 +29,7 @@
   color: #49c6e8;
 }
 #summary.column .summary-cover {
-  background: transparent url(images/template-summary/"cover-background-"purple.jpg) center bottom/cover no-repeat;
+  background: transparent url(images/template-summary/"cover-background-"purple.jpg) center top/cover no-repeat;
 }
 #summary.column .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"purple.png) bottom left no-repeat;
@@ -42,7 +42,7 @@
   color: #dd4ae5;
 }
 #summary.event .summary-cover {
-  background: transparent url(images/template-summary/"cover-background-"green.jpg) center bottom/cover no-repeat;
+  background: transparent url(images/template-summary/"cover-background-"green.jpg) center top/cover no-repeat;
 }
 #summary.event .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"green.png) bottom left no-repeat;
@@ -55,7 +55,7 @@
   color: #6ecc3e;
 }
 #summary.interview .summary-cover {
-  background: transparent url(images/template-summary/"cover-background-"orange.jpg) center bottom/cover no-repeat;
+  background: transparent url(images/template-summary/"cover-background-"orange.jpg) center top/cover no-repeat;
 }
 #summary.interview .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"orange.png) bottom left no-repeat;
@@ -68,7 +68,7 @@
   color: #ff9e55;
 }
 #summary.niche .summary-cover {
-  background: transparent url(images/template-summary/"cover-background-"navy.jpg) center bottom/cover no-repeat;
+  background: transparent url(images/template-summary/"cover-background-"navy.jpg) center top/cover no-repeat;
 }
 #summary.niche .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"navy.png) bottom left no-repeat;
@@ -81,7 +81,7 @@
   color: #1b1464;
 }
 #summary.blog .summary-cover {
-  background: transparent url(images/template-summary/"cover-background-"navy.jpg) center bottom/cover no-repeat;
+  background: transparent url(images/template-summary/"cover-background-"navy.jpg) center top/cover no-repeat;
 }
 #summary.blog .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"navy.png) bottom left no-repeat;
@@ -94,7 +94,7 @@
   color: #1b1464;
 }
 #summary.media .summary-cover {
-  background: transparent url(images/template-summary/"cover-background-"navy.jpg) center bottom/cover no-repeat;
+  background: transparent url(images/template-summary/"cover-background-"navy.jpg) center top/cover no-repeat;
 }
 #summary.media .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"navy.png) bottom left no-repeat;
