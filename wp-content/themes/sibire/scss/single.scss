@@ -14,6 +14,13 @@ Description: 投稿ページ
     &:before {
       @include clearfix;
     }
+    .single {
+      position: relative;
+      &:after,
+      &:before {
+        @include clearfix;
+      }
+    }
     .single-left,
     .single-right {
       float: left;
@@ -301,57 +308,94 @@ Description: 投稿ページ
       line-height: 1.4;
     }
   }
-
-  a.service-registration {
-    clear: left;
-    display: block;
-    max-width: 242px;
-    height: 50px;
-    border-radius: 3px;
-    background-color: #e2274b;
-    color: #ffffff;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    line-height: 50px;
-    position: relative;
-    margin: 0px auto;
-    span {
-      position: absolute;
-      font-size: 18px;
-      left: 50%;
-      top: 50%;
-      margin: -9px 0 0 -70px;
+  .single-service {
+    $theme-color: #e2274b;
+    @mixin border-shadow( $x: 0, $y: 4px, $blur: 0) {
+      -webkit-box-shadow: $x $y $blur darken($theme-color,8%);
+      -moz-box-shadow: $x $y $blur darken($theme-color,8%);
+      -ms-box-shadow: $x $y $blur darken($theme-color,8%);
+      -o-box-shadow: $x $y $blur darken($theme-color,8%);
+      box-shadow: $x $y $blur darken($theme-color,8%);
     }
-    &:hover {
-      background-color: #d31c40;
-      text-shadow: 0 0 3px rgba(255, 255, 255, 0.4);
-    }
-  }
-
-  .service-registration-window {
-    font-size: 13px;
-    text-align: center;
-    border: 1px solid #000000;
-    line-height: 18px;
-    padding: 5px 0;
-    max-width: 210px;
-    margin: 0px auto;
-    margin-top: 10px;
-    position: relative;
-    background-color: #ffffff;
-    b.caret {
-      position: absolute;
-      display: block;
-      height: 7px;
-      width: 12px;
-      background-image: url("images/single/caret.png");
-      background-repeat: no-repeat;
-      background-size: 12px 7px;
-      left: 50%;
+    &.fixed {
+      width: 260px;
       top: 0;
-      margin: -7px 0 0 -6px;
+      right: 50%;
+      margin: 60px -509px 0 0;
+      position: fixed;
+      &.absolute {
+        position: absolute;
+        margin: 0 40px 45px 0;
+        right: 0;
+        top: auto;
+        bottom: 0;
+      }
+    }
+    a.service-registration {
+      position: relative;
+      clear: left;
+      display: block;
+      max-width: 242px;
+      height: 50px;
+      @include border-shadow;
+      @include border-radius(3px);
+      background-color: $theme-color;
+      color: #ffffff;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: $gothic-design;
+      text-decoration: none;
+      line-height: 50px;
+      position: relative;
+      margin: 0px auto;
+      span {
+        position: absolute;
+        font-size: 18px;
+        left: 50%;
+        top: 50%;
+        margin: -9px 0 0 -70px;
+      }
+      &:hover {
+        top: -1px;
+        @include border-shadow($y: 5px);
+        .service-registration-window {
+          display: block;
+        }
+      }
+      &:active {
+        background-color: darken($theme-color,4%);
+        top: 4px;
+        @include transition;
+        @include border-shadow($y: 0px);
+      }
+    }
+
+    .service-registration-window {
+      font-size: 13px;
+      text-align: center;
+      color: #333333;
+      font-family: $gothic;
+      border: 1px solid #000000;
+      line-height: 1.2;
+      padding: 5px 0;
+      max-width: 210px;
+      margin: 0px auto;
+      margin-top: 15px;
+      position: relative;
+      background-color: #ffffff;
+      b.caret {
+        position: absolute;
+        display: block;
+        height: 7px;
+        width: 12px;
+        background-image: url("images/single/caret.png");
+        background-repeat: no-repeat;
+        background-size: 12px 7px;
+        left: 50%;
+        top: 0;
+        margin: -7px 0 0 -6px;
+      }
     }
   }
 

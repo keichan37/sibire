@@ -15,6 +15,17 @@ Description: 投稿ページ
   clear: both;
   visibility: hidden;
 }
+#common .single-wrap .single {
+  position: relative;
+}
+#common .single-wrap .single:after, #common .single-wrap .single:before {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
 #common .single-wrap .single-left,
 #common .single-wrap .single-right {
   float: left;
@@ -313,46 +324,93 @@ Description: 投稿ページ
   font-size: 12px;
   line-height: 1.4;
 }
-#common a.service-registration {
+#common .single-service.fixed {
+  width: 260px;
+  top: 0;
+  right: 50%;
+  margin: 60px -509px 0 0;
+  position: fixed;
+}
+#common .single-service.fixed.absolute {
+  position: absolute;
+  margin: 0 40px 45px 0;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+#common .single-service a.service-registration {
+  position: relative;
   clear: left;
   display: block;
   max-width: 242px;
   height: 50px;
+  -webkit-box-shadow: 0 4px 0 #c61b3b;
+  -moz-box-shadow: 0 4px 0 #c61b3b;
+  -ms-box-shadow: 0 4px 0 #c61b3b;
+  -o-box-shadow: 0 4px 0 #c61b3b;
+  box-shadow: 0 4px 0 #c61b3b;
   border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
   background-color: #e2274b;
   color: #ffffff;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
+  font-family: "FOT-ロックンロール Std DB", "RocknRollStd-DB";
   text-decoration: none;
   line-height: 50px;
   position: relative;
   margin: 0px auto;
 }
-#common a.service-registration span {
+#common .single-service a.service-registration span {
   position: absolute;
   font-size: 18px;
   left: 50%;
   top: 50%;
   margin: -9px 0 0 -70px;
 }
-#common a.service-registration:hover {
-  background-color: #d31c40;
-  text-shadow: 0 0 3px rgba(255, 255, 255, 0.4);
+#common .single-service a.service-registration:hover {
+  top: -1px;
+  -webkit-box-shadow: 0 5px 0 #c61b3b;
+  -moz-box-shadow: 0 5px 0 #c61b3b;
+  -ms-box-shadow: 0 5px 0 #c61b3b;
+  -o-box-shadow: 0 5px 0 #c61b3b;
+  box-shadow: 0 5px 0 #c61b3b;
 }
-#common .service-registration-window {
+#common .single-service a.service-registration:hover .service-registration-window {
+  display: block;
+}
+#common .single-service a.service-registration:active {
+  background-color: #d81d41;
+  top: 4px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 0px 0 #c61b3b;
+  -moz-box-shadow: 0 0px 0 #c61b3b;
+  -ms-box-shadow: 0 0px 0 #c61b3b;
+  -o-box-shadow: 0 0px 0 #c61b3b;
+  box-shadow: 0 0px 0 #c61b3b;
+}
+#common .single-service .service-registration-window {
   font-size: 13px;
   text-align: center;
+  color: #333333;
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
   border: 1px solid #000000;
-  line-height: 18px;
+  line-height: 1.2;
   padding: 5px 0;
   max-width: 210px;
   margin: 0px auto;
-  margin-top: 10px;
+  margin-top: 15px;
   position: relative;
   background-color: #ffffff;
 }
-#common .service-registration-window b.caret {
+#common .single-service .service-registration-window b.caret {
   position: absolute;
   display: block;
   height: 7px;
