@@ -8,15 +8,7 @@
     </div>
     <a class="partials-registration" href="/registration">サービスに申し込む</a>
     <p>
-      <?php if (is_front_page()): ?>
-        OFF TOKYOしたい<br />
-        エンジニアの転職を支援 
-      <?php elseif ( in_array(get_post_type(), array('recruit')) ): //求人用?>
-        この求人にシビレた！
-      <?php else: ?>
-        OFF TOKYOしたい<br />
-        エンジニアの転職を支援
-      <?php endif; ?>
+      エンジニアの<br />東京にこだわらない働き方を支援
     </p>
     <?php get_template_part('partials/sns-share'); ?>
   </div>
