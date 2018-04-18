@@ -31,7 +31,6 @@
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/jquery.slicknav.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/echo.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/wpcf7.js"></script>
-  <script type="text/javascript" src="https://minmoji.ucda.jp/sealjs/https%3A__www.sibire.co.jp" charset="UTF-8"></script>
 
   <?php if(is_page('offtokyomeetup2017')): ?>
     <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/template-event.js"></script>
