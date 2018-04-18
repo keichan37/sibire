@@ -338,7 +338,7 @@ Description: 投稿ページ
       max-width: 242px;
       height: 50px;
       @include border-shadow;
-      @include border-radius(3px);
+      @include border-radius(5px);
       background-color: $theme-color;
       color: #ffffff;
       text-align: center;
