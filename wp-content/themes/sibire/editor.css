@@ -1,13 +1,5 @@
-@font-face {
-  font-family: minmoji;
-  src: url('https://minmoji.ucda.jp/fontseot/https%3A__www.sibire.co.jp');
-  src: local('minmoji'),
-      url('https://minmoji.ucda.jp/fontswoff/https%3A__www.sibire.co.jp') format('woff'),
-      url('https://minmoji.ucda.jp/fonts/https%3A__www.sibire.co.jp') format('opentype');
-}
-
 .mce-content-body {
-  font-family: minmoji, 'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font-family: 'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
   -webkit-tap-highlight-color: rgba(28, 135, 201, 0.3);
 	word-wrap: break-word;
   color: #333333;
