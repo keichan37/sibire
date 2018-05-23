@@ -13,6 +13,7 @@
   -ms-box-sizing: border-box;
 }
 #lp .cover {
+  position: relative;
   background: transparent url("images/template-lp/cover.gif") center center/cover no-repeat;
   padding: 166px 0 158px 0;
   margin-bottom: 30px;
@@ -23,6 +24,60 @@
 }
 #lp .cover h1 svg {
   max-width: 90%;
+}
+#lp .cover .balloon {
+  position: absolute;
+  width: 69px;
+  height: 103px;
+  padding-top: 22px;
+  text-align: left;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-family: "FOT-アンチックセザンヌ Pro M", "AnticCezannePro-M";
+  font-size: 12px;
+  line-height: 1.25;
+  background-repeat: no-repeat;
+  background-image: url("images/template-lp/balloon.png");
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-name: fuwafuwa;
+}
+#lp .cover .balloon.balloon1 {
+  top: 0;
+  left: 50%;
+  margin: 170px 0 0 -500px;
+  padding: 19px 41px 0 0;
+  height: 106px;
+  -webkit-animation-duration: 4s;
+}
+#lp .cover .balloon.balloon2 {
+  bottom: 0;
+  left: 50%;
+  margin: 0 0 100px -370px;
+  padding-right: 41px;
+  background-position: -110px 0;
+  -webkit-animation-duration: 6s;
+}
+#lp .cover .balloon.balloon3 {
+  top: 0;
+  left: 50%;
+  margin: 180px 0 0 400px;
+  padding-right: 33px;
+  width: 77px;
+  background-position: -220px 0;
+  -webkit-animation-duration: 7s;
+}
+@-webkit-keyframes fuwafuwa {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, -5px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
 }
 #lp a.button {
   margin: 0px auto;
