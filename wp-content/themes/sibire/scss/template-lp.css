@@ -14,7 +14,7 @@
 }
 #lp .cover {
   position: relative;
-  background: transparent url("images/template-lp/cover.gif") center center/cover no-repeat;
+  background: #c2e2dd url("images/template-lp/cover.gif") center center/cover no-repeat;
   padding: 166px 0 158px 0;
   margin-bottom: 30px;
   text-align: center;
@@ -24,6 +24,22 @@
 }
 #lp .cover h1 svg {
   max-width: 90%;
+}
+#lp .cover h1 svg polygon,
+#lp .cover h1 svg path {
+  stroke: transparent;
+  fill: transparent;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 0;
+  animation: anime 3s ease-in 0s forwards;
+}
+@keyframes anime {
+  0% {
+    fill: #c2e2dd;
+  }
+  100% {
+    fill: #000000;
+  }
 }
 #lp .cover .balloon {
   position: absolute;
