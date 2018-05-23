@@ -74,7 +74,7 @@
 #lp .cover .balloon.balloon3 {
   top: 0;
   left: 50%;
-  margin: 180px 0 0 400px;
+  margin: 180px 0 0 300px;
   padding-right: 33px;
   width: 77px;
   background-position: -220px 0;
@@ -279,6 +279,54 @@
   padding: 10px 0;
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
   margin: 0px auto;
+}
+
+@media (max-width: 930px) {
+  #lp .cover .balloon.balloon1, #lp .cover .balloon.balloon2, #lp .cover .balloon.balloon3 {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    margin: 0;
+    float: left;
+  }
+  #lp .cover:before, #lp .cover:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+@media (max-width: 768px) {
+  #lp ul.service {
+    border-top: none;
+  }
+  #lp ul.service li {
+    width: 50%;
+    border-top: 3px solid #8cc63f;
+  }
+  #lp ul.service li h3 b {
+    font-size: 24px;
+  }
+  #lp ul.service li h3 strong {
+    font-size: 16px;
+  }
+  #lp ul.service li img {
+    max-width: 100%;
+    width: 100%;
+  }
+  #lp ul.service li:before, #lp ul.service li:after {
+    display: none;
+  }
+  #lp ul.merit li {
+    font-size: 16px;
+  }
+  #lp ul.merit:before, #lp ul.merit:after {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=template-lp.css.map */
