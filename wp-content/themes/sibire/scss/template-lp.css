@@ -27,10 +27,6 @@
 }
 #lp .cover h1 svg polygon,
 #lp .cover h1 svg path {
-  stroke: transparent;
-  fill: transparent;
-  stroke-dasharray: 2000;
-  stroke-dashoffset: 0;
   animation: anime 3s ease-in 0s forwards;
 }
 @keyframes anime {
