@@ -21,6 +21,9 @@
 #lp .cover h1 {
   margin: 0 0 56px 0;
 }
+#lp .cover h1 svg {
+  max-width: 90%;
+}
 #lp a.button {
   margin: 0px auto;
   display: block;

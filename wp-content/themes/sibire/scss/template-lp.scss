@@ -19,6 +19,9 @@
     text-align: center;
     h1 {
       margin: 0 0 56px 0;
+      svg {
+        max-width: 90%;
+      }
     }
   }
   a.button {
