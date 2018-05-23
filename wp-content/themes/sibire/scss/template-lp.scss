@@ -25,10 +25,6 @@
         max-width: 90%;
         polygon,
         path {
-          stroke: transparent;
-          fill: transparent;
-          stroke-dasharray: 2000;
-          stroke-dashoffset: 0;
           animation: anime 3s ease-in 0s forwards; 
         }
         @keyframes anime {
