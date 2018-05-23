@@ -6,10 +6,10 @@
         <h1>
           <?php get_template_part('partials/title'); ?>
         </h1>
+        <a class="button" href="/registration">サービスに申し込む</a>
         <div class="balloon balloon1">収入を落とさずに<br />地方で働きたい</div>
         <div class="balloon balloon2">多様な働き方を<br />実践したい！</div>
         <div class="balloon balloon3">東京以外の<br />魅力的な求人に<br />出会いたい！</div>
-        <a class="button" href="/registration">サービスに申し込む</a>
       </div>
       <div class="container">
         <h2><b>“</b>サービスの流れ<b>”</b><span>SERVICE</span></h2>
