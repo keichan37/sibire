@@ -64,4 +64,125 @@
       @include rotate(3deg);
     }
   }
+  ul {
+    margin: 0;
+    padding: 0;
+    &.service {
+      margin-bottom: 20px;
+      $green: #8cc63f;
+      border: 3px solid $green;
+      li {
+        position: relative;
+        @include border-box;
+        list-style: none;
+        width: 25%;
+        float: left;
+        padding: 0 10px 10px 10px;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 3px;
+          height: 70%;
+          background-color: $green;
+          top: 0;
+          right: 0;
+          margin: 15% -1px;
+        }
+        &:last-child {
+          &:after { display: none; }
+        }
+        h3 {
+          line-height: 37px;
+          margin: 10px 0 0 0;
+          @include rotate(-3deg);
+          b {
+            color: #ffffff;
+            background-color: $green;
+            font-family: $tsubame;
+            font-size: 37px;
+            padding: 0 11px;
+            @include border-radius(20px);
+            margin-right: 5px;
+            @include rotate(-3deg);
+          }
+          strong {
+            position: relative;
+            top: -7px;
+            color: $green;
+            font-size: 17px;
+            font-family: $kurokane;
+            &:after {
+              content: "";
+              position: absolute;
+              height: 3px;
+              width: 90%;
+              background-color: $green;
+              bottom: 0;
+              left: 0;
+              margin: 0 0 -10px 5%;
+            }
+          }
+        }
+        img {
+          display: block;
+          max-width: 200px;
+          margin: 0px auto;
+        }
+        p {
+          line-height: 1.4;
+          margin: 0;
+        }
+      }
+      &:before,
+      &:after { @include clearfix; }
+    }
+    &.merit {
+      max-width: 790px;
+      margin: 0px auto;
+      margin-bottom: 40px;
+      position: relative;
+      padding: 20px 0 0 0;
+      &:before,
+      &:after {
+        position: absolute;
+        content: "";
+        width: 35px;
+        height: 190px;
+        background-image: url("images/template-lp/parenthesis.png");       
+        background-repeat: no-repeat;
+        background-position: 0;
+        top: 0;
+      }
+      &:before {
+        left: 0;
+        margin-left: -70px;
+      }
+      &:after {
+        right: 0;
+        background-position: -35px 0;
+        margin-right: -70px;
+      }
+      li {
+        padding: 0 0 0 50px;
+        min-height: 40px;
+        list-style: none;
+        background-image: url("images/template-lp/check.png");
+        background-repeat: no-repeat;
+        background-position: 0;
+        font-size: 20px;
+        line-height: 40px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .message {
+    background: #faed00;
+    text-align: center;
+    max-width: 440px;
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 10px 0;
+    font-family: $gothic-b;
+    margin: 0px auto;
+  }
 }
