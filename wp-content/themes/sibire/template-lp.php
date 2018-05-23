@@ -11,12 +11,28 @@
       <div class="container">
         <h2><b>“</b>サービスの流れ<b>”</b><span>SERVICE</span></h2>
         <ul class="service">
-          <li><b>1</b><strong>サービス申し込み</strong><p>働きたいエリアやスキルを登録</p></li>
-          <li><b>2</b><strong>スキルに合った求人を紹介</strong><p>LINEやメール、やりやすい方法で連絡します</p></li>
-          <li><b>3</b><strong>選考開始</strong><p>遠方の場合、Web面談などにも対応</p></li>
-          <li><b>4</b><strong>内定・就業開始</strong><p>東京にこだわらず働こう！</p></li>
+          <li>
+            <h3><b>1</b><strong>サービス申し込み</strong></h3>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-lp/sp.jpg" alt="スマホ">
+            <p>働きたいエリアやスキルを登録</p>
+          </li>
+          <li>
+            <h3><b>2</b><strong>スキルに合った求人を紹介</strong></h3>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-lp/lang.jpg" alt="言語">
+            <p>LINEやメール、やりやすい方法で連絡します</p>
+          </li>
+          <li>
+            <h3><b>3</b><strong>選考開始</strong></h3>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-lp/resume.jpg" alt="履歴書">
+            <p>遠方の場合、Web面談などにも対応</p>
+          </li>
+          <li>
+            <h3><b>4</b><strong>内定・就業開始</strong></h3>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/template-lp/keyboard.jpg" alt="キーボード">
+            <p>東京にこだわらず働こう！</p>
+          </li>
         </ul>
-        <p>企業の紹介から、面接の調整、就業開始までサポートします。</p>
+        <p class="message">企業の紹介から、面接の調整、就業開始までサポートします。</p>
         <h2><b>“</b>3つのメリット<b>”</b><span>MERIT</span></h2>
         <ul class="merit">
           <li>働きたいエリアの求人を探してもらえる</li>
