@@ -265,14 +265,26 @@ $green: #8cc63f;
     }
   }
   .message {
-    background: #faed00;
+    $yellow: #faed00;
+    background: $yellow;
+    position: relative;
     text-align: center;
     max-width: 440px;
+    padding: 0 10px;
     font-size: 15px;
     line-height: 1.4;
     padding: 10px 0;
     font-family: $gothic-b;
     margin: 0px auto;
+    .caret {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      margin: -9px 0 0 -9px;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-bottom: 9px solid $yellow;
+    }
   }
   .topic-summary {
     $img: 170px;

@@ -36,7 +36,7 @@
               <p>東京にこだわらず働こう！</p>
             </li>
           </ul>
-          <p class="message">企業の紹介から、面接の調整、就業開始までサポートします。</p>
+          <p class="message"><b class="caret"></b>企業の紹介から、面接の調整、就業開始までサポートします。</p>
         </div>
         <div class="section">
           <h2><b>“</b>3つのメリット<b>”</b><span>MERIT</span></h2>
