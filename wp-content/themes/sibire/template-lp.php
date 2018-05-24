@@ -60,7 +60,7 @@
             </div>
 
           <?php wp_reset_query();?>
-        <a class="button" href="/registration">全て見る</a>
+        <a class="button button-small" href="javascript:void(0);">全て見る</a>
         <h2><b>“</b>sibire利用者の声<b>”</b><span>VOICE</span></h2>
       </div>
       
