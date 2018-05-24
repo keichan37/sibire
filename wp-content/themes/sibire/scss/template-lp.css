@@ -91,6 +91,9 @@
     -webkit-transform: translate(0, 0);
   }
 }
+#lp a {
+  color: #8cc63f;
+}
 #lp a.button {
   margin: 0px auto;
   display: block;

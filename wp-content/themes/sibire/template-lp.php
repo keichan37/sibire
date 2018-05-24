@@ -53,10 +53,11 @@
               'has_password' => false,
             ); ?>
           <?php query_posts( $args ); ?>
-          <?php while (have_posts()) : the_post(); 
-           ?>
-            <?php get_template_part('partials/common-grid'); ?>
+            <div class="owl-carousel owl-theme">
+          <?php while (have_posts()) : the_post(); ?>
+            <?php get_template_part('partials/summary-grid'); ?>
           <?php endwhile; ?>
+            </div>
 
           <?php wp_reset_query();?>
         <a class="button" href="/registration">全て見る</a>
