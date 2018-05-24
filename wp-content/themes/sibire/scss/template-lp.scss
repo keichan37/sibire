@@ -330,6 +330,39 @@ $green: #8cc63f;
         }
       }
     }
+    .owl-nav {
+      .owl-prev,
+      .owl-next {
+        display: block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border: none;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        margin-top: -15px;
+        float: none;
+        font-size: 16px;
+        background-image: url("images/template-summary/owl-nav.png");
+        background-repeat: no-repeat;
+        background-size: 60px 30px;
+        background-position: 0 0;
+        &:hover {
+          @include opacity(.7);
+          background-color: #ffffff;
+        }
+      }
+      .owl-prev {
+        left: 0;
+        margin-left: -25px;
+      }
+      .owl-next {
+        right: 0;
+        margin-right: -25px;
+        background-position: -30px 0;
+      }
+    }
   }
 }
 
