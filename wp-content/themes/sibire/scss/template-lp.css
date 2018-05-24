@@ -91,6 +91,9 @@
     -webkit-transform: translate(0, 0);
   }
 }
+#lp .section {
+  padding-bottom: 60px;
+}
 #lp a {
   color: #8cc63f;
   -webkit-transition: 0.3s;
@@ -311,6 +314,60 @@
   padding: 10px 0;
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
   margin: 0px auto;
+}
+#lp .topic-summary .owl-item a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+}
+#lp .topic-summary .owl-item a figure {
+  margin: 0 10px 10px 10px;
+  position: relative;
+  padding-top: 170px;
+}
+#lp .topic-summary .owl-item a figure img {
+  position: absolute;
+  height: 170px;
+  width: auto;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  vertical-align: bottom;
+  background: #ffffff url("images/loading.gif") no-repeat;
+  background-position: center center;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+#lp .topic-summary .owl-item a figure figcaption {
+  margin-top: 8px;
+}
+#lp .topic-summary .owl-item a figure figcaption h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
+  line-height: 1.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  height: 77px;
+}
+#lp .topic-summary .owl-item a figure figcaption h4 {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  height: 23px;
 }
 
 @media (max-width: 930px) {
