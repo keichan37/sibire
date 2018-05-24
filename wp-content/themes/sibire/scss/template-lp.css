@@ -307,13 +307,24 @@
 }
 #lp .message {
   background: #faed00;
+  position: relative;
   text-align: center;
   max-width: 440px;
+  padding: 0 10px;
   font-size: 15px;
   line-height: 1.4;
   padding: 10px 0;
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
   margin: 0px auto;
+}
+#lp .message .caret {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin: -9px 0 0 -9px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #faed00;
 }
 #lp .topic-summary .owl-item a {
   display: block;
