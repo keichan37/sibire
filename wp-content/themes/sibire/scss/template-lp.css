@@ -321,6 +321,7 @@
   text-decoration: none;
 }
 #lp .topic-summary .owl-item a figure {
+  overflow: hidden;
   margin: 0 10px 10px 10px;
   position: relative;
   padding-top: 170px;
