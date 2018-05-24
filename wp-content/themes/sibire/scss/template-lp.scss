@@ -1,11 +1,13 @@
 @import "mixin";
+
+$kurokane: 'FOT-くろかね Std EB', 'KurokaneStd-EB';
+$tsubame:  'FOT-つばめ Std R', 'TsubameStd-R';
+$gothic:   'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D';
+$gothic-b: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
+$antique:  'FOT-アンチックセザンヌ Pro M', 'AnticCezannePro-M';
+$container: 1100px;
+$green: #8cc63f;
 #lp {
-  $kurokane: 'FOT-くろかね Std EB', 'KurokaneStd-EB';
-  $tsubame:  'FOT-つばめ Std R', 'TsubameStd-R';
-  $gothic:   'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D';
-  $gothic-b: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
-  $antique:  'FOT-アンチックセザンヌ Pro M', 'AnticCezannePro-M';
-  $container: 1100px;
   font-family: $gothic;
   .container {
     max-width: $container + 20px;
@@ -88,19 +90,22 @@
       100% {-webkit-transform:translate(0, 0);}
     }
   }
-  a.button {
-    margin: 0px auto;
-    display: block;
-    text-align: center;
-    line-height: 52px;
-    width: 266px;
-    height: 52px;
-    font-size: 20px;
-    font-family: $kurokane;
-    text-decoration: none;
-    border: 4px solid #000000;
-    color: #000000;
-    background-color: #ffffff;
+  a {
+    color: $green;
+    &.button {
+      margin: 0px auto;
+      display: block;
+      text-align: center;
+      line-height: 52px;
+      width: 266px;
+      height: 52px;
+      font-size: 20px;
+      font-family: $kurokane;
+      text-decoration: none;
+      border: 4px solid #000000;
+      color: #000000;
+      background-color: #ffffff;
+    }
   }
   h2 {
     text-align: center;
@@ -133,7 +138,6 @@
     padding: 0;
     &.service {
       margin-bottom: 20px;
-      $green: #8cc63f;
       border: 3px solid $green;
       li {
         position: relative;
@@ -279,7 +283,6 @@
   #lp {
     ul {
       &.service {
-        $green: #8cc63f;
         border-top: none;
         li {
           width: 50%;
