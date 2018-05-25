@@ -67,7 +67,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-T5QQFS5');</script>
     <!-- End Google Tag Manager -->
-    <?php if(is_page('17572')); ?>
+    <?php if(is_page('17572')): ?>
       <!-- Begin INDEED conversion code -->
       <script type="text/javascript">
       /* <![CDATA[ */
