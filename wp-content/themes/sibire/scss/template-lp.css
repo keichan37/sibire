@@ -14,8 +14,8 @@
 }
 #lp .cover {
   position: relative;
-  background: #c2e2dd url("images/template-lp/cover.gif") center center/cover no-repeat;
-  padding: 166px 0 158px 0;
+  background: #c2e2dd url("images/template-lp/cover.gif") bottom center/cover no-repeat;
+  padding: 166px 0 128px 0;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -58,7 +58,7 @@
 #lp .cover .balloon.balloon1 {
   top: 0;
   left: 50%;
-  margin: 170px 0 0 -500px;
+  margin: 170px 0 0 -50%;
   padding: 19px 41px 0 0;
   height: 106px;
   -webkit-animation-duration: 4s;
@@ -66,7 +66,7 @@
 #lp .cover .balloon.balloon2 {
   bottom: 0;
   left: 50%;
-  margin: 0 0 100px -370px;
+  margin: 0 0 100px -40%;
   padding-right: 41px;
   background-position: -110px 0;
   -webkit-animation-duration: 6s;
@@ -74,7 +74,7 @@
 #lp .cover .balloon.balloon3 {
   top: 0;
   left: 50%;
-  margin: 180px 0 0 300px;
+  margin: 180px 0 0 30%;
   padding-right: 33px;
   width: 77px;
   background-position: -220px 0;
@@ -93,6 +93,10 @@
 }
 #lp .section {
   padding-bottom: 60px;
+}
+#lp .section#topic {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 #lp a {
   color: #8cc63f;
@@ -208,7 +212,6 @@
   display: none;
 }
 #lp ul.service li h3 {
-  line-height: 37px;
   margin: 10px 0 0 0;
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -217,17 +220,21 @@
   transform: rotate(-3deg);
 }
 #lp ul.service li h3 b {
+  display: inline-block;
+  text-align: center;
   color: #ffffff;
   background-color: #8cc63f;
   font-family: "FOT-つばめ Std R", "TsubameStd-R";
-  font-size: 37px;
-  padding: 0 11px;
+  font-size: 33px;
+  line-height: 1.1;
+  padding: 0 3%;
+  width: 10%;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -o-border-radius: 20px;
   -ms-border-radius: 20px;
-  margin-right: 5px;
+  margin-right: 3%;
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
   -ms-transform: rotate(-3deg);
@@ -239,7 +246,10 @@
   top: -7px;
   color: #8cc63f;
   font-size: 17px;
+  line-height: 1.4;
+  display: inline-block;
   font-family: "FOT-くろかね Std EB", "KurokaneStd-EB";
+  max-width: 81%;
 }
 #lp ul.service li h3 strong:after {
   content: "";
@@ -253,7 +263,8 @@
 }
 #lp ul.service li img {
   display: block;
-  max-width: 200px;
+  max-width: 100%;
+  height: auto;
   margin: 0px auto;
 }
 #lp ul.service li p {
@@ -310,10 +321,9 @@
   position: relative;
   text-align: center;
   max-width: 440px;
-  padding: 0 10px;
   font-size: 15px;
   line-height: 1.4;
-  padding: 10px 0;
+  padding: 10px;
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
   margin: 0px auto;
 }
@@ -416,25 +426,51 @@
 }
 
 @media (max-width: 930px) {
-  #lp .cover .balloon.balloon1, #lp .cover .balloon.balloon2, #lp .cover .balloon.balloon3 {
-    position: relative;
-    top: auto;
-    left: auto;
-    bottom: auto;
-    right: auto;
-    margin: 0;
-    float: left;
+  #lp .section#topic {
+    padding-left: 0px;
+    padding-right: 0px;
   }
-  #lp .cover:before, #lp .cover:after {
-    content: ".";
-    display: block;
-    height: 0;
-    font-size: 0;
-    clear: both;
-    visibility: hidden;
+  #lp .merit:before, #lp .merit:after {
+    display: none;
+  }
+  #lp .topic-summary .owl-nav .owl-prev,
+  #lp .topic-summary .owl-nav .owl-next {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  #lp .topic-summary .owl-nav .owl-prev {
+    margin-left: -10px;
+  }
+  #lp .topic-summary .owl-nav .owl-next {
+    margin-right: -10px;
   }
 }
 @media (max-width: 768px) {
+  #lp .cover {
+    padding: 66px 0 158px 0;
+  }
+  #lp .cover h1 {
+    margin: 0 0 0 0;
+  }
+  #lp .cover .balloon.balloon1, #lp .cover .balloon.balloon2, #lp .cover .balloon.balloon3 {
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: auto;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  #lp .cover .balloon.balloon1 {
+    left: 0;
+    margin-left: -41px;
+  }
+  #lp .cover .balloon.balloon2 {
+    left: 50%;
+    margin-left: -95px;
+  }
+  #lp .cover .balloon.balloon3 {
+    right: 0;
+    margin-right: 33px;
+  }
   #lp ul.service {
     border-top: none;
   }
@@ -448,18 +484,16 @@
   #lp ul.service li h3 strong {
     font-size: 16px;
   }
-  #lp ul.service li img {
-    max-width: 100%;
-    width: 100%;
-  }
   #lp ul.service li:before, #lp ul.service li:after {
     display: none;
   }
   #lp ul.merit li {
     font-size: 16px;
-  }
-  #lp ul.merit:before, #lp ul.merit:after {
-    display: none;
+    padding: 0 0 0 30px;
+    min-height: 20px;
+    background-image: url("images/template-lp/check_small.png");
+    line-height: 20px;
+    margin-bottom: 15px;
   }
 }
 
