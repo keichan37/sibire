@@ -67,7 +67,21 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-T5QQFS5');</script>
     <!-- End Google Tag Manager -->
-    
+    <?php if(is_page('17572')); ?>
+      <!-- Begin INDEED conversion code -->
+      <script type="text/javascript">
+      /* <![CDATA[ */
+      var indeed_conversion_id = '183861477270744';
+      var indeed_conversion_label = '';
+      /* ]]> */
+      </script>
+      <script type="text/javascript" src="//conv.indeed.com/applyconversion.js">
+      </script>
+      <noscript>
+      <img height=1 width=1 border=0 src="//conv.indeed.com/pagead/conv/183861477270744/?script=0">
+      </noscript>
+      <!-- End INDEED conversion code -->
+    <?php endif; ?>
     <?php if(is_page('31952')): ?>
       <!-- Twitter single-event website tag code -->
       <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
