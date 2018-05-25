@@ -38,7 +38,7 @@
           </ul>
           <p class="message"><b class="caret"></b>企業の紹介から、面接の調整、就業開始までサポートします。</p>
         </div>
-        <div class="section">
+        <div class="section" id="merit">
           <h2><b>“</b>3つのメリット<b>”</b><span>MERIT</span></h2>
           <ul class="merit">
             <li>働きたいエリアの求人を探してもらえる</li>
@@ -47,7 +47,7 @@
           </ul>
           <a class="button" href="/registration">サービスに申し込む</a>
         </div>
-        <div class="section">
+        <div class="section" id="topic">
           <h2><b>“</b>トピック<b>”</b><span>TOPIC</span></h2>
             <?php
               $args = array(

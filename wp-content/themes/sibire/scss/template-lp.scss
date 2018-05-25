@@ -17,8 +17,8 @@ $green: #8cc63f;
   }
   .cover {
     position: relative;
-    background: #c2e2dd url("images/template-lp/cover.gif") center center /cover no-repeat;
-    padding: 166px 0 158px 0;
+    background: #c2e2dd url("images/template-lp/cover.gif") bottom center /cover no-repeat;
+    padding: 166px 0 128px 0;
     margin-bottom: 30px;
     text-align: center;
     h1 {
@@ -61,7 +61,7 @@ $green: #8cc63f;
       &.balloon1 {
         top: 0;
         left: 50%;
-        margin: 170px 0 0 -500px;
+        margin: 170px 0 0 -50%;
         padding: 19px 41px 0 0;
         height: 106px;
         -webkit-animation-duration: 4s;
@@ -69,7 +69,7 @@ $green: #8cc63f;
       &.balloon2 {
         bottom: 0;
         left: 50%;
-        margin: 0 0 100px -370px;
+        margin: 0 0 100px -40%;
         padding-right: 41px;
         background-position: -110px 0;
         -webkit-animation-duration: 6s;
@@ -77,7 +77,7 @@ $green: #8cc63f;
       &.balloon3 {
         top: 0;
         left: 50%;
-        margin: 180px 0 0 300px;
+        margin: 180px 0 0 30%;
         padding-right: 33px;
         width: 77px;
         background-position: -220px 0;
@@ -92,6 +92,10 @@ $green: #8cc63f;
   }
   .section {
     padding-bottom: 60px;
+    &#topic {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
   a {
     color: $green;
@@ -181,17 +185,20 @@ $green: #8cc63f;
           &:after { display: none; }
         }
         h3 {
-          line-height: 37px;
           margin: 10px 0 0 0;
           @include rotate(-3deg);
           b {
+            display: inline-block;
+            text-align: center;
             color: #ffffff;
             background-color: $green;
             font-family: $tsubame;
-            font-size: 37px;
-            padding: 0 11px;
+            font-size: 33px;
+            line-height: 1.1;
+            padding: 0 3%;
+            width: 10%;
             @include border-radius(20px);
-            margin-right: 5px;
+            margin-right: 3%;
             @include rotate(-3deg);
           }
           strong {
@@ -199,7 +206,10 @@ $green: #8cc63f;
             top: -7px;
             color: $green;
             font-size: 17px;
+            line-height: 1.4;
+            display: inline-block;
             font-family: $kurokane;
+            max-width: 81%;
             &:after {
               content: "";
               position: absolute;
@@ -214,7 +224,8 @@ $green: #8cc63f;
         }
         img {
           display: block;
-          max-width: 200px;
+          max-width: 100%;
+          height: auto;
           margin: 0px auto;
         }
         p {
@@ -270,10 +281,9 @@ $green: #8cc63f;
     position: relative;
     text-align: center;
     max-width: 440px;
-    padding: 0 10px;
     font-size: 15px;
     line-height: 1.4;
-    padding: 10px 0;
+    padding: 10px;
     font-family: $gothic-b;
     margin: 0px auto;
     .caret {
@@ -379,23 +389,30 @@ $green: #8cc63f;
 
 @media(max-width: 930px) {
   #lp {
-    .cover {
-      .balloon {
-        &.balloon1,
-        &.balloon2,
-        &.balloon3 {
-          position: relative;
-          top: auto;
-          left: auto;
-          bottom: auto;
-          right: auto;
-          margin: 0;
-          float: left;
-        }
+    .section {
+      &#topic {
+        padding-left: 0px;
+        padding-right: 0px;
       }
+    }
+    .merit {
       &:before,
       &:after {
-        @include clearfix;
+        display: none;
+      }
+    }
+    .topic-summary {
+      .owl-nav {
+        .owl-prev,
+        .owl-next {
+          background-color: rgba(255,255,255,.7);
+        }
+        .owl-prev {
+          margin-left: -10px;
+        }
+        .owl-next {
+          margin-right: -10px;
+        }
       }
     }
   }
@@ -403,6 +420,37 @@ $green: #8cc63f;
 
 @media(max-width: 768px) {
   #lp {
+    .cover {
+      padding: 66px 0 158px 0;
+      h1 {
+        margin: 0 0 0 0;
+      }
+      .balloon {
+        &.balloon1,
+        &.balloon2,
+        &.balloon3 {
+          top: auto;
+          left: auto;
+          bottom: 0;
+          right: auto;
+          margin: 0;
+          margin-bottom: 20px;
+        }
+        &.balloon1 {
+          left: 0;
+          margin-left: -41px;
+        }
+        &.balloon2 {
+          left: 50%;
+          margin-left: -95px;
+        }
+        &.balloon3 {
+          right: 0;
+          margin-right: 33px;
+        }
+      }
+    }
+
     ul {
       &.service {
         border-top: none;
@@ -417,10 +465,6 @@ $green: #8cc63f;
               font-size: 16px;
             }
           }
-          img {
-            max-width: 100%;
-            width: 100%;
-          }
           &:before,
           &:after {
             display: none;
@@ -430,10 +474,11 @@ $green: #8cc63f;
       &.merit {
         li {
           font-size: 16px;
-        }
-        &:before,
-        &:after {
-          display: none;
+          padding: 0 0 0 30px;
+          min-height: 20px;
+          background-image: url("images/template-lp/check_small.png");
+          line-height: 20px;
+          margin-bottom: 15px;
         }
       }
     }
