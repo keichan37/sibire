@@ -379,6 +379,53 @@
   visibility: hidden;
 }
 
+.paginate-nav {
+  display: block;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.paginate-nav span,
+.paginate-nav a {
+  display: inline-block;
+  padding: 6px;
+  min-width: 20px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
+}
+.paginate-nav a {
+  color: #000000;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  -ms-border-radius: 15px;
+}
+.paginate-nav a:hover {
+  text-decoration: none;
+}
+.paginate-nav a.prev, .paginate-nav a.next {
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+}
+.paginate-nav a.prev:hover, .paginate-nav a.next:hover {
+  background-color: #333333;
+}
+.paginate-nav:before, .paginate-nav:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
 .summary-footer .sns-footer {
   background: #transparent url("images/template-summary/footer-background.jpg") center center/cover no-repeat;
   padding-top: 40px;
