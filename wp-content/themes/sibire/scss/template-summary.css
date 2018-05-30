@@ -41,16 +41,17 @@
 #summary.column .summary-grid-wrap .summary-grid:hover p {
   color: #dd4ae5;
 }
-#summary.event .summary-cover {
+#summary.topic .summary-cover, #summary.event .summary-cover {
   background: transparent url(images/template-summary/"cover-background-"green.jpg) center top/cover no-repeat;
 }
-#summary.event .summary-grid-wrap .summary-grid {
+#summary.topic .summary-grid-wrap .summary-grid, #summary.event .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"green.png) bottom left no-repeat;
 }
-#summary.event .summary-grid-wrap .summary-grid:hover {
+#summary.topic .summary-grid-wrap .summary-grid:hover, #summary.event .summary-grid-wrap .summary-grid:hover {
   color: #6ecc3e;
 }
-#summary.event .summary-grid-wrap .summary-grid:hover h4,
+#summary.topic .summary-grid-wrap .summary-grid:hover h4,
+#summary.topic .summary-grid-wrap .summary-grid:hover p, #summary.event .summary-grid-wrap .summary-grid:hover h4,
 #summary.event .summary-grid-wrap .summary-grid:hover p {
   color: #6ecc3e;
 }
