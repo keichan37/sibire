@@ -54,18 +54,6 @@ $(document).ready(function() {
   });
 });
 
-$(function(){
-  var getHeight = $('body').height();
-   $(window).scroll(function () {
-   var ScrollTop = $(document).scrollTop();
-   var bgPosition = 50/getHeight*ScrollTop;
-
-   $('.summary-cover').css(
-    {backgroundPositionY: "-"+bgPosition+"px"}
-   );
- });
-});
-
 (function() {
   var e;
   $(function() {

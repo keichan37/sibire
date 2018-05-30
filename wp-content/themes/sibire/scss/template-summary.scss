@@ -29,6 +29,7 @@ $gothic-b: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
   @include theme-color($pink,pink);
   &.recruit   { @include theme-color(#49c6e8,blue); }
   &.column    { @include theme-color(#dd4ae5, purple); }
+  &.topic,
   &.event     { @include theme-color(#6ecc3e, green); }
   &.interview { @include theme-color(#ff9e55, orange); }
   &.niche     { @include theme-color(#1b1464, navy); }
@@ -281,21 +282,22 @@ $gothic-b: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
     font-family: $gothic;
   }
   span {
+    color: #000000;
   }
   a {
-    color: #000000;
+    color: #6ecc3e;
     @include border-radius(15px);
     &:hover {
       text-decoration: none;
     }
     &.prev,
     &.next {
-      background-color: #000000;
+      background-color: #6ecc3e;
       color: #ffffff;
       text-decoration: none;
       @include border-radius(20px);
       &:hover {
-        background-color: #333333;
+        background-color: #7dd152;
       }
     }
   }
