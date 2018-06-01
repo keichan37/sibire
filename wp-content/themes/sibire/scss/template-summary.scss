@@ -1,5 +1,5 @@
 @import "mixin";
-@mixin theme-color($rgb: #e61673,$color: pink ) {
+@mixin theme-color($rgb: #6ecc3e,$color: green ) {
   .summary-cover {
     background: transparent url(images/template-summary/'cover-background-' + $color  + '.jpg') center top /cover no-repeat;
   }
@@ -26,20 +26,32 @@ $gothic-b: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
   $pink: #e61673;
   $black: #231815;
   $container: 1100px;
-  @include theme-color($pink,pink);
-  &.recruit   { @include theme-color(#49c6e8,blue); }
-  &.column    { @include theme-color(#dd4ae5, purple); }
+  &.recruit,
+  &.column,
   &.topic,
-  &.event     { @include theme-color(#6ecc3e, green); }
-  &.interview { @include theme-color(#ff9e55, orange); }
-  &.niche     { @include theme-color(#1b1464, navy); }
-  &.blog      { @include theme-color(#1b1464, navy); }
-  &.media     { @include theme-color(#1b1464, navy); }
+  &.event,
+  &.interview,
+  &.niche,
+  &.blog,    
+  &.media,    
   &.niche,
   &.blog,
-  &.media     {
-    .summary-cover { color: #ffffff; }
+  &.media {
+    @include theme-color(#6ecc3e, green);
   }
+  //&.recruit   { @include theme-color(#49c6e8,blue); }
+  //&.column    { @include theme-color(#dd4ae5, purple); }
+  //&.topic,
+  //&.event     { @include theme-color(#6ecc3e, green); }
+  //&.interview { @include theme-color(#ff9e55, orange); }
+  //&.niche     { @include theme-color(#1b1464, navy); }
+  //&.blog      { @include theme-color(#1b1464, navy); }
+  //&.media     { @include theme-color(#1b1464, navy); }
+  //&.niche,
+  //&.blog,
+  //&.media     {
+  //  .summary-cover { color: #ffffff; }
+  //}
 
   .container {
     max-width: $container + 20px;

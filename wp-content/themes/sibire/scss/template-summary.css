@@ -2,113 +2,28 @@
 #summary {
   padding-bottom: 60px;
 }
-#summary .summary-cover {
-  background: transparent url(images/template-summary/"cover-background-"pink.jpg) center top/cover no-repeat;
-}
-#summary .summary-grid-wrap .summary-grid {
-  background: transparent url(images/template-summary/"bottom-"pink.png) bottom left no-repeat;
-}
-#summary .summary-grid-wrap .summary-grid:hover {
-  color: #e61673;
-}
-#summary .summary-grid-wrap .summary-grid:hover h4,
-#summary .summary-grid-wrap .summary-grid:hover p {
-  color: #e61673;
-}
-#summary.recruit .summary-cover {
-  background: transparent url(images/template-summary/"cover-background-"blue.jpg) center top/cover no-repeat;
-}
-#summary.recruit .summary-grid-wrap .summary-grid {
-  background: transparent url(images/template-summary/"bottom-"blue.png) bottom left no-repeat;
-}
-#summary.recruit .summary-grid-wrap .summary-grid:hover {
-  color: #49c6e8;
-}
-#summary.recruit .summary-grid-wrap .summary-grid:hover h4,
-#summary.recruit .summary-grid-wrap .summary-grid:hover p {
-  color: #49c6e8;
-}
-#summary.column .summary-cover {
-  background: transparent url(images/template-summary/"cover-background-"purple.jpg) center top/cover no-repeat;
-}
-#summary.column .summary-grid-wrap .summary-grid {
-  background: transparent url(images/template-summary/"bottom-"purple.png) bottom left no-repeat;
-}
-#summary.column .summary-grid-wrap .summary-grid:hover {
-  color: #dd4ae5;
-}
-#summary.column .summary-grid-wrap .summary-grid:hover h4,
-#summary.column .summary-grid-wrap .summary-grid:hover p {
-  color: #dd4ae5;
-}
-#summary.topic .summary-cover, #summary.event .summary-cover {
+#summary.recruit .summary-cover, #summary.column .summary-cover, #summary.topic .summary-cover, #summary.event .summary-cover, #summary.interview .summary-cover, #summary.niche .summary-cover, #summary.blog .summary-cover, #summary.media .summary-cover, #summary.niche .summary-cover, #summary.blog .summary-cover, #summary.media .summary-cover {
   background: transparent url(images/template-summary/"cover-background-"green.jpg) center top/cover no-repeat;
 }
-#summary.topic .summary-grid-wrap .summary-grid, #summary.event .summary-grid-wrap .summary-grid {
+#summary.recruit .summary-grid-wrap .summary-grid, #summary.column .summary-grid-wrap .summary-grid, #summary.topic .summary-grid-wrap .summary-grid, #summary.event .summary-grid-wrap .summary-grid, #summary.interview .summary-grid-wrap .summary-grid, #summary.niche .summary-grid-wrap .summary-grid, #summary.blog .summary-grid-wrap .summary-grid, #summary.media .summary-grid-wrap .summary-grid, #summary.niche .summary-grid-wrap .summary-grid, #summary.blog .summary-grid-wrap .summary-grid, #summary.media .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"green.png) bottom left no-repeat;
 }
-#summary.topic .summary-grid-wrap .summary-grid:hover, #summary.event .summary-grid-wrap .summary-grid:hover {
+#summary.recruit .summary-grid-wrap .summary-grid:hover, #summary.column .summary-grid-wrap .summary-grid:hover, #summary.topic .summary-grid-wrap .summary-grid:hover, #summary.event .summary-grid-wrap .summary-grid:hover, #summary.interview .summary-grid-wrap .summary-grid:hover, #summary.niche .summary-grid-wrap .summary-grid:hover, #summary.blog .summary-grid-wrap .summary-grid:hover, #summary.media .summary-grid-wrap .summary-grid:hover, #summary.niche .summary-grid-wrap .summary-grid:hover, #summary.blog .summary-grid-wrap .summary-grid:hover, #summary.media .summary-grid-wrap .summary-grid:hover {
   color: #6ecc3e;
 }
-#summary.topic .summary-grid-wrap .summary-grid:hover h4,
+#summary.recruit .summary-grid-wrap .summary-grid:hover h4,
+#summary.recruit .summary-grid-wrap .summary-grid:hover p, #summary.column .summary-grid-wrap .summary-grid:hover h4,
+#summary.column .summary-grid-wrap .summary-grid:hover p, #summary.topic .summary-grid-wrap .summary-grid:hover h4,
 #summary.topic .summary-grid-wrap .summary-grid:hover p, #summary.event .summary-grid-wrap .summary-grid:hover h4,
-#summary.event .summary-grid-wrap .summary-grid:hover p {
-  color: #6ecc3e;
-}
-#summary.interview .summary-cover {
-  background: transparent url(images/template-summary/"cover-background-"orange.jpg) center top/cover no-repeat;
-}
-#summary.interview .summary-grid-wrap .summary-grid {
-  background: transparent url(images/template-summary/"bottom-"orange.png) bottom left no-repeat;
-}
-#summary.interview .summary-grid-wrap .summary-grid:hover {
-  color: #ff9e55;
-}
-#summary.interview .summary-grid-wrap .summary-grid:hover h4,
-#summary.interview .summary-grid-wrap .summary-grid:hover p {
-  color: #ff9e55;
-}
-#summary.niche .summary-cover {
-  background: transparent url(images/template-summary/"cover-background-"navy.jpg) center top/cover no-repeat;
-}
-#summary.niche .summary-grid-wrap .summary-grid {
-  background: transparent url(images/template-summary/"bottom-"navy.png) bottom left no-repeat;
-}
-#summary.niche .summary-grid-wrap .summary-grid:hover {
-  color: #1b1464;
-}
-#summary.niche .summary-grid-wrap .summary-grid:hover h4,
-#summary.niche .summary-grid-wrap .summary-grid:hover p {
-  color: #1b1464;
-}
-#summary.blog .summary-cover {
-  background: transparent url(images/template-summary/"cover-background-"navy.jpg) center top/cover no-repeat;
-}
-#summary.blog .summary-grid-wrap .summary-grid {
-  background: transparent url(images/template-summary/"bottom-"navy.png) bottom left no-repeat;
-}
-#summary.blog .summary-grid-wrap .summary-grid:hover {
-  color: #1b1464;
-}
-#summary.blog .summary-grid-wrap .summary-grid:hover h4,
-#summary.blog .summary-grid-wrap .summary-grid:hover p {
-  color: #1b1464;
-}
-#summary.media .summary-cover {
-  background: transparent url(images/template-summary/"cover-background-"navy.jpg) center top/cover no-repeat;
-}
-#summary.media .summary-grid-wrap .summary-grid {
-  background: transparent url(images/template-summary/"bottom-"navy.png) bottom left no-repeat;
-}
-#summary.media .summary-grid-wrap .summary-grid:hover {
-  color: #1b1464;
-}
-#summary.media .summary-grid-wrap .summary-grid:hover h4,
+#summary.event .summary-grid-wrap .summary-grid:hover p, #summary.interview .summary-grid-wrap .summary-grid:hover h4,
+#summary.interview .summary-grid-wrap .summary-grid:hover p, #summary.niche .summary-grid-wrap .summary-grid:hover h4,
+#summary.niche .summary-grid-wrap .summary-grid:hover p, #summary.blog .summary-grid-wrap .summary-grid:hover h4,
+#summary.blog .summary-grid-wrap .summary-grid:hover p, #summary.media .summary-grid-wrap .summary-grid:hover h4,
+#summary.media .summary-grid-wrap .summary-grid:hover p, #summary.niche .summary-grid-wrap .summary-grid:hover h4,
+#summary.niche .summary-grid-wrap .summary-grid:hover p, #summary.blog .summary-grid-wrap .summary-grid:hover h4,
+#summary.blog .summary-grid-wrap .summary-grid:hover p, #summary.media .summary-grid-wrap .summary-grid:hover h4,
 #summary.media .summary-grid-wrap .summary-grid:hover p {
-  color: #1b1464;
-}
-#summary.niche .summary-cover, #summary.blog .summary-cover, #summary.media .summary-cover {
-  color: #ffffff;
+  color: #6ecc3e;
 }
 #summary .container {
   max-width: 1120px;
@@ -394,8 +309,11 @@
   line-height: 1.4;
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
 }
-.paginate-nav a {
+.paginate-nav span {
   color: #000000;
+}
+.paginate-nav a {
+  color: #6ecc3e;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -406,7 +324,7 @@
   text-decoration: none;
 }
 .paginate-nav a.prev, .paginate-nav a.next {
-  background-color: #000000;
+  background-color: #6ecc3e;
   color: #ffffff;
   text-decoration: none;
   border-radius: 20px;
@@ -416,7 +334,7 @@
   -ms-border-radius: 20px;
 }
 .paginate-nav a.prev:hover, .paginate-nav a.next:hover {
-  background-color: #333333;
+  background-color: #7dd152;
 }
 .paginate-nav:before, .paginate-nav:after {
   content: ".";
