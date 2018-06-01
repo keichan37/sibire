@@ -338,89 +338,12 @@ Description: 投稿ページ
   top: auto;
   bottom: 0;
 }
-#common .single-service a.service-registration {
-  position: relative;
-  clear: left;
+#common .single-service svg {
   display: block;
-  max-width: 242px;
-  height: 50px;
-  -webkit-box-shadow: 0 4px 0 #c61b3b;
-  -moz-box-shadow: 0 4px 0 #c61b3b;
-  -ms-box-shadow: 0 4px 0 #c61b3b;
-  -o-box-shadow: 0 4px 0 #c61b3b;
-  box-shadow: 0 4px 0 #c61b3b;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  background-color: #e2274b;
-  color: #ffffff;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: "FOT-ロックンロール Std DB", "RocknRollStd-DB";
-  text-decoration: none;
-  line-height: 50px;
-  position: relative;
   margin: 0px auto;
-}
-#common .single-service a.service-registration span {
-  position: absolute;
-  font-size: 18px;
-  left: 50%;
-  top: 50%;
-  margin: -9px 0 0 -70px;
-}
-#common .single-service a.service-registration:hover {
-  top: -1px;
-  -webkit-box-shadow: 0 5px 0 #c61b3b;
-  -moz-box-shadow: 0 5px 0 #c61b3b;
-  -ms-box-shadow: 0 5px 0 #c61b3b;
-  -o-box-shadow: 0 5px 0 #c61b3b;
-  box-shadow: 0 5px 0 #c61b3b;
-}
-#common .single-service a.service-registration:hover .service-registration-window {
-  display: block;
-}
-#common .single-service a.service-registration:active {
-  background-color: #d81d41;
-  top: 4px;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-box-shadow: 0 0px 0 #c61b3b;
-  -moz-box-shadow: 0 0px 0 #c61b3b;
-  -ms-box-shadow: 0 0px 0 #c61b3b;
-  -o-box-shadow: 0 0px 0 #c61b3b;
-  box-shadow: 0 0px 0 #c61b3b;
-}
-#common .single-service .service-registration-window {
-  font-size: 13px;
-  text-align: center;
-  color: #333333;
-  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
-  border: 1px solid #000000;
-  line-height: 1.2;
-  padding: 5px 0;
-  max-width: 210px;
-  margin: 0px auto;
-  margin-top: 15px;
-  position: relative;
-  background-color: #ffffff;
-}
-#common .single-service .service-registration-window b.caret {
-  position: absolute;
-  display: block;
-  height: 7px;
-  width: 12px;
-  background-image: url("images/single/caret.png");
-  background-repeat: no-repeat;
-  background-size: 12px 7px;
-  left: 50%;
-  top: 0;
-  margin: -7px 0 0 -6px;
+  width: 170px;
+  height: auto;
+  margin-bottom: 20px;
 }
 #common .single-related-list {
   margin: 5px 0 0px 0;
@@ -552,9 +475,6 @@ Description: 投稿ページ
   #common .single-wrap .single-right {
     width: 100%;
     max-width: 100%;
-  }
-  #common .single-service {
-    display: none;
   }
 }
 @media (max-width: 815px) {
