@@ -59,8 +59,10 @@ $(document).ready(function() {
   $(function() {
     $(window).scroll(function() {
       if ($('.single-service').length) {
-        $(".r-fixed-box").toggleClass("fixed", $(this).scrollTop() + 60 > $(".e-fixed-box").offset().top),
-        $(".r-fixed-box").toggleClass("absolute", $(this).scrollTop() + $(this).height() - 558 > $(".partials").offset().top)
+        if ($(window).width() > 1100) {
+          $(".r-fixed-box").toggleClass("fixed", $(this).scrollTop() + 60 > $(".e-fixed-box").offset().top),
+          $(".r-fixed-box").toggleClass("absolute", $(this).scrollTop() + $(this).height() - 500 > $(".partials").offset().top)
+        }
       }
     })
   })
