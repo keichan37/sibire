@@ -1,4 +1,4 @@
-<?php /* Template Name: LP */ ?>
+<?php /* Template Name: フロントページ */ ?>
 
   <?php get_header(); ?>
     <div id="lp">
@@ -60,7 +60,7 @@
             <?php query_posts( $args ); ?>
               <div class="topic-summary owl-carousel">
             <?php while (have_posts()) : the_post(); ?>
-              <?php get_template_part('partials/summary-grid'); ?>
+              <?php get_template_part('partials/lp-grid'); ?>
             <?php endwhile; ?>
               </div>
 
