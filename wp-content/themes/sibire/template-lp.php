@@ -67,7 +67,10 @@
             <?php wp_reset_query();?>
           <a class="button button-small" href="/?page_id=37072">全て見る</a>
         </div>
+
+        <?php /* ?>
         <h2><b>“</b>sibire利用者の声<b>”</b><span>VOICE</span></h2>
+        <?php */ ?>
       </div>
       
     </div>
