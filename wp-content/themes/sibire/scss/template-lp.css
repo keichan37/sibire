@@ -340,14 +340,12 @@
   display: block;
   color: #000000;
   text-decoration: none;
-}
-#lp .topic-summary .owl-item a figure {
-  overflow: hidden;
-  margin: 0 10px 10px 10px;
   position: relative;
+  margin: 0 10px 10px 10px;
+  overflow: hidden;
   padding-top: 170px;
 }
-#lp .topic-summary .owl-item a figure img {
+#lp .topic-summary .owl-item a img {
   position: absolute;
   height: 170px;
   width: auto;
@@ -365,11 +363,8 @@
   -ms-transition: 0.3s;
   transition: 0.3s;
 }
-#lp .topic-summary .owl-item a figure figcaption {
-  margin-top: 8px;
-}
-#lp .topic-summary .owl-item a figure figcaption h3 {
-  margin: 0 0 8px 0;
+#lp .topic-summary .owl-item a h5 {
+  margin: 8px 0;
   font-size: 16px;
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
   line-height: 1.6;
@@ -380,7 +375,7 @@
   -webkit-line-clamp: 3;
   height: 77px;
 }
-#lp .topic-summary .owl-item a figure figcaption h4 {
+#lp .topic-summary .owl-item a p {
   font-size: 14px;
   line-height: 1.6;
   margin: 0;
