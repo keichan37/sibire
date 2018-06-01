@@ -1,9 +1,9 @@
 <div class="partials">
   <div class="partials-registration-wrap">
+    <?php /* ?>
     <div class="partials-img-wrap">
       <img class="partials-img" src="<?php echo get_template_directory_uri(); ?>/images/partials-registration/registration-service.png" alt="">
     </div>
-    <?php /* ?>
     <div class="partials-link-wrap">
       <a class="partials-link" href="/service">サービスの詳細はこちら</a>
     </div>
