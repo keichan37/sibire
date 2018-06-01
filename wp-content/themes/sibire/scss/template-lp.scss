@@ -298,6 +298,7 @@ $green: #8cc63f;
   }
   .topic-summary {
     $img: 170px;
+    margin-bottom: 15px;
     .owl-item {
       a {
         display: block;
@@ -344,6 +345,10 @@ $green: #8cc63f;
           -webkit-box-orient: vertical;
           -webkit-line-clamp: 1;
           height: 23px;
+        }
+        &:hover {
+          h5 { text-decoration: underline; }
+          img { @include opacity; }
         }
       }
     }

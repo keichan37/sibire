@@ -336,6 +336,9 @@
   border-right: 9px solid transparent;
   border-bottom: 9px solid #faed00;
 }
+#lp .topic-summary {
+  margin-bottom: 15px;
+}
 #lp .topic-summary .owl-item a {
   display: block;
   color: #000000;
@@ -385,6 +388,14 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   height: 23px;
+}
+#lp .topic-summary .owl-item a:hover h5 {
+  text-decoration: underline;
+}
+#lp .topic-summary .owl-item a:hover img {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-filter: "alpha(opacity=$ratioms)";
 }
 #lp .topic-summary .owl-nav .owl-prev,
 #lp .topic-summary .owl-nav .owl-next {
