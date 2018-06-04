@@ -106,31 +106,6 @@
   text-decoration: none;
 }
 
-.mce-content-body a.button {
-  cursor: pointer;
-  display: block;
-  background-color: #000000;
-  color: #ffffff;
-  border-radius: 8px;
-  -webkit-border: 8px;
-  -moz-border: 8px;
-  -ms-border: 8px;
-  max-width: 330px;
-  margin: 0px auto;
-  height: 73px;
-  line-height: 73px;
-  font-weight: 700;
-  font-size: 23px;
-  text-align: center;
-}
-.mce-content-body a.button:hover {
-  opacity: 0.8;
-  -moz-opacity: 0.8;
-  -ms-filter: "alpha(opacity=80)";
-}
-.mce-content-body a.button.button-blue { background-color: #1b1464; }
-.mce-content-body a.button.button-red  { background-color: #e2274b; }
-
 .mce-content-body hr {
   border: none;
   border-top: 2px solid #1B1464;
