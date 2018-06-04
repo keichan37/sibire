@@ -1,7 +1,8 @@
 @import "mixin";
 @mixin theme-color($rgb: #6ecc3e,$color: green ) {
   .summary-cover {
-    background: transparent url(images/template-summary/'cover-background-' + $color  + '.jpg') center top /cover no-repeat;
+    //background: transparent url(images/template-summary/'cover-background-' + $color  + '.jpg') center top /cover no-repeat;
+    background: #c2e2dd url("images/page/cover.png") bottom center /cover no-repeat;
   }
   .summary-grid-wrap {
     .summary-grid {
