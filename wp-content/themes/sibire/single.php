@@ -71,6 +71,10 @@
                   <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
                       <?php if ( in_array(get_post_type(), array('recruit')) ): ?>
                         <?php get_template_part('partials/single-table'); ?>
+                        <div id="lp" class="single-registration">
+                          <?php get_template_part('partials/title'); ?>
+                          <a class="button button-small" href="/registration">サービスに申し込む</a>
+                        </div>
                       <?php endif; ?>
                     </div>
                   <?php endif; //パスワード保護 ?>

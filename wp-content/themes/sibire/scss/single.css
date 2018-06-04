@@ -324,10 +324,15 @@ Description: 投稿ページ
   font-size: 12px;
   line-height: 1.4;
 }
+#common .single-registration {
+  margin-top: 15px;
+}
+#common .single-registration,
 #common .single-service {
   padding: 30px 0;
   background: #c2e2dd url("images/single/single-service.png") center center/cover no-repeat;
 }
+#common .single-registration.fixed,
 #common .single-service.fixed {
   width: 260px;
   top: 0;
@@ -335,6 +340,7 @@ Description: 投稿ページ
   margin: 60px -509px 0 0;
   position: fixed;
 }
+#common .single-registration.fixed.absolute,
 #common .single-service.fixed.absolute {
   position: absolute;
   margin: 0 40px 28px 0;
@@ -342,6 +348,7 @@ Description: 投稿ページ
   top: auto;
   bottom: 0;
 }
+#common .single-registration svg,
 #common .single-service svg {
   display: block;
   margin: 0px auto;
