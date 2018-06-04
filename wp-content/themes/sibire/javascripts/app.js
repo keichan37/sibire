@@ -61,7 +61,7 @@ $(document).ready(function() {
       if ($('.single-service').length) {
         if ($(window).width() > 1100) {
           $(".r-fixed-box").toggleClass("fixed", $(this).scrollTop() + 60 > $(".e-fixed-box").offset().top),
-          $(".r-fixed-box").toggleClass("absolute", $(this).scrollTop() + $(this).height() - 500 > $(".partials").offset().top)
+          $(".r-fixed-box").toggleClass("absolute", $(this).scrollTop() + $(this).height() - 440 > $(".partials").offset().top)
         }
       }
     })

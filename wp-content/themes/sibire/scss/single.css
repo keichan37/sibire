@@ -324,6 +324,10 @@ Description: 投稿ページ
   font-size: 12px;
   line-height: 1.4;
 }
+#common .single-service {
+  padding: 30px 0;
+  background: #c2e2dd url("images/single/single-service.png") center center/cover no-repeat;
+}
 #common .single-service.fixed {
   width: 260px;
   top: 0;
