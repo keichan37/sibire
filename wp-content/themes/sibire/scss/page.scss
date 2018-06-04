@@ -3,21 +3,26 @@ Description: 固定ページ
 */
 
 @import "mixin";
+@import "variables";
 
 #common {
-  .page-wrap {
-    background-color: #ffffff;
-    color: #1b1464;
-    position: relative;
-    padding-top: 40px;
+  .page-cover {
+    background: #c2e2dd url("images/page/cover.png") bottom center /cover no-repeat;
+    padding: 70px 0 50px 0;
     h1 {
       font-size: 22px;
       line-height: 1.3;
       min-height: 45px;
       margin: 0;
       padding: 30px 0 0 0;
-      border-bottom: 1px solid #1b1464;
+      text-align:center;
+      font-family: $kurokane;
     }
+  }
+  .page-wrap {
+    background-color: #ffffff;
+    color: #1b1464;
+    position: relative;
     h2 {
       font-size: 18px;
       line-height: 24px;
@@ -57,7 +62,7 @@ Description: 固定ページ
       position: absolute;
       left: 0;
       top: 0;
-      margin: 95px 0 0 15px;
+      margin: 35px 0 0 15px;
       li {
         list-style: none;
         a {
