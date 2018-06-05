@@ -536,7 +536,7 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   display: block;
   width: 60px;
   height: 60px;
-  background: #6ecc3e url("images/common/scroll-top.png") no-repeat;
+  background: #8cc63f url("images/common/scroll-top.png") no-repeat;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -546,11 +546,6 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 .scroll-top.none {
   display: none;
@@ -559,7 +554,7 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   position: absolute;
 }
 .scroll-top:hover {
-  background: #7dd152 url("images/common/scroll-top.png") no-repeat;
+  background: #7fb636 url("images/common/scroll-top.png") no-repeat;
 }
 
 @media (max-width: 1130px) {

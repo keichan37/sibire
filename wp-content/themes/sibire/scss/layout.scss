@@ -478,18 +478,17 @@ header .global_menu {
   display: block;
   width: 60px;
   height: 60px;
-  background: #6ecc3e url("images/common/scroll-top.png") no-repeat;
+  background: #8cc63f url("images/common/scroll-top.png") no-repeat;
   position: fixed;
   bottom: 0;
   right: 0;
   z-index: 99;
   margin: 0 20px 20px 0;
   @include transition;
-  @include box-shadow(0,0,15px);
   &.none { display: none; }
   &.absolute { position: absolute; }
   &:hover {
-    background: #7dd152 url("images/common/scroll-top.png") no-repeat;
+    background: #7fb636 url("images/common/scroll-top.png") no-repeat;
   }
 }
 
