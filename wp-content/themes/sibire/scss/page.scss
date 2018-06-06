@@ -64,30 +64,60 @@ Description: 固定ページ
       top: 0;
       margin: 35px 0 0 15px;
       li {
+        display: block;
         list-style: none;
+        margin-bottom: 10px;
+        width: 225px;
+        min-height: 31px;
+        line-height: 33px;
+        font-size: 14px;
+        border: 1px solid #1b1464;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
         a {
-          display: block;
-          margin-bottom: 10px;
-          width: 195px;
-          height: 31px;
-          line-height: 33px;
-          font-size: 14px;
-          border: 1px solid #1b1464;
-          color: #1b1464;
-          padding: 0 15px;
-          text-decoration: none;
-          border-radius: 3px;
-          -webkit-border-radius: 3px;
-          -moz-border-radius: 3px;
           background: #ffffff url("images/page/page-nav-caret.png") right 10px top no-repeat;
+          padding: 0 15px;
+          display: block;
+          text-decoration: none;
+          color: #1b1464;
           &:hover { background-color: #fafafa; }
         }
-        &.current-menu-item a {
+        &.current-menu-item {
           font-weight: 700;
-          color: #ffffff;
           cursor: default;
-          background-color: #1b1464;
-          background-position: right 10px top -31px;
+          a {
+            color: #ffffff;
+            background: #1b1464 url("images/page/page-nav-caret.png") right 10px top -31px no-repeat;
+            &:hover { background-color: #1b1464; }
+          }
+          .sub-menu {
+            li {
+              font-weight: 400;
+              cursor: pointer;
+              a {
+                color: #1b1464;
+                background: #ffffff url("images/page/page-nav-caret.png") right 10px top no-repeat;
+                &:hover { background-color: #f2f2f2; }
+              }
+            }
+          }
+        }
+        .sub-menu {
+          margin: 0;
+          padding: 0;
+          li {
+            margin-bottom: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0;
+            @include border-radius(0px);
+            a {
+              &:before {
+                content: '↳ ';
+              }
+            }
+          }
         }
       }
     }
@@ -135,6 +165,46 @@ Description: 固定ページ
         @include clearfix;
       }
     }
+    .authors {
+      color: #000000;
+      font-family: $gothic;
+      .author {
+        max-width: 228px;
+        img {
+          @include border-radius(114px);
+          margin-bottom: 15px;
+        }
+        strong {
+          display: block;
+          font-family: $gothic-b;
+          font-size: 22px;
+          line-height: 1.4;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        p {
+          margin: 0 0 5px 0;
+          font-size: 14px;
+          line-height: 1.4;
+        }
+        .twitter,
+        .facebook {
+          display: block;
+          width: 15px;
+          height: 15px;
+          float: left;
+          margin: 0 3px;
+          background: transparent url("images/common/sns.png") no-repeat;
+          background-size: 15px 60px;
+          text-indent: -9999px;
+          &:hover {
+            @include opacity(0.8);
+          }
+        }
+        .twitter  { background-position: 0 -30px; }
+        .facebook { background-position: 0 -45px; }
+      }
+    }
   }
 }
 
@@ -142,19 +212,19 @@ Description: 固定ページ
   #common {
     .page-wrap {
       .page-nav {
+        border-top: 2px solid #1b1464;
+        border-bottom: 2px solid #1b1464;
         position: relative;
-        margin: 0;
+        margin: 0 0 10px 0;
         padding: 0px;
         li {
           @include border-box;
-          a {
-            @include border-radius(0px);
-            border: none;
-            @include border-box;
-            width: 100%;
-            margin-bottom: 0;
-            font-size: 13px;
-          }
+          @include border-radius(0px);
+          border: none;
+          @include border-box;
+          width: 100%;
+          margin-bottom: 0;
+          font-size: 13px;
           &:nth-child(even) { padding-right: 0; }
         }
         &:before,

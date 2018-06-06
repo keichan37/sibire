@@ -272,6 +272,15 @@ add_filter('the_content', 'highlight_results');
 add_filter('the_excerpt', 'highlight_results');
 add_filter('the_title', 'highlight_results');
 
+/* ユーザー情報にTwitter Facebook追加 */
+function update_profile_fields( $contactmethods ) {
+    //項目の追加
+    $contactmethods['twitter'] = 'Twitter';
+    $contactmethods['facebook'] = 'Facebook';
+    return $contactmethods;
+}
+add_filter('user_contactmethods','update_profile_fields',10,1);
+
 /* Google Map API */
 function my_acf_google_map_api( $api ){
 	$api['key'] = 'AIzaSyAC4maiLTsNgl8S0ueBDQEfaDjCJoxUEDc';
