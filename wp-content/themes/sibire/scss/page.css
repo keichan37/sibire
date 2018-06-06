@@ -62,33 +62,67 @@ Description: 固定ページ
   margin: 35px 0 0 15px;
 }
 #common .page-wrap .page-nav li {
-  list-style: none;
-}
-#common .page-wrap .page-nav li a {
   display: block;
+  list-style: none;
   margin-bottom: 10px;
-  width: 195px;
-  height: 31px;
+  width: 225px;
+  min-height: 31px;
   line-height: 33px;
   font-size: 14px;
   border: 1px solid #1b1464;
-  color: #1b1464;
-  padding: 0 15px;
-  text-decoration: none;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
+}
+#common .page-wrap .page-nav li a {
   background: #ffffff url("images/page/page-nav-caret.png") right 10px top no-repeat;
+  padding: 0 15px;
+  display: block;
+  text-decoration: none;
+  color: #1b1464;
 }
 #common .page-wrap .page-nav li a:hover {
   background-color: #fafafa;
 }
-#common .page-wrap .page-nav li.current-menu-item a {
+#common .page-wrap .page-nav li.current-menu-item {
   font-weight: 700;
-  color: #ffffff;
   cursor: default;
+}
+#common .page-wrap .page-nav li.current-menu-item a {
+  color: #ffffff;
+  background: #1b1464 url("images/page/page-nav-caret.png") right 10px top -31px no-repeat;
+}
+#common .page-wrap .page-nav li.current-menu-item a:hover {
   background-color: #1b1464;
-  background-position: right 10px top -31px;
+}
+#common .page-wrap .page-nav li.current-menu-item .sub-menu li {
+  font-weight: 400;
+  cursor: pointer;
+}
+#common .page-wrap .page-nav li.current-menu-item .sub-menu li a {
+  color: #1b1464;
+  background: #ffffff url("images/page/page-nav-caret.png") right 10px top no-repeat;
+}
+#common .page-wrap .page-nav li.current-menu-item .sub-menu li a:hover {
+  background-color: #f2f2f2;
+}
+#common .page-wrap .page-nav li .sub-menu {
+  margin: 0;
+  padding: 0;
+}
+#common .page-wrap .page-nav li .sub-menu li {
+  margin-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+}
+#common .page-wrap .page-nav li .sub-menu li a:before {
+  content: '↳ ';
 }
 #common .page-wrap .sitemap {
   margin: 0;
@@ -142,11 +176,64 @@ Description: 固定ページ
   clear: both;
   visibility: hidden;
 }
+#common .page-wrap .authors {
+  color: #000000;
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
+}
+#common .page-wrap .authors .author {
+  max-width: 228px;
+}
+#common .page-wrap .authors .author img {
+  border-radius: 114px;
+  -webkit-border-radius: 114px;
+  -moz-border-radius: 114px;
+  -o-border-radius: 114px;
+  -ms-border-radius: 114px;
+  margin-bottom: 15px;
+}
+#common .page-wrap .authors .author strong {
+  display: block;
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
+  font-size: 22px;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#common .page-wrap .authors .author p {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+#common .page-wrap .authors .author .twitter,
+#common .page-wrap .authors .author .facebook {
+  display: block;
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin: 0 3px;
+  background: transparent url("images/common/sns.png") no-repeat;
+  background-size: 15px 60px;
+  text-indent: -9999px;
+}
+#common .page-wrap .authors .author .twitter:hover,
+#common .page-wrap .authors .author .facebook:hover {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-filter: "alpha(opacity=$ratioms)";
+}
+#common .page-wrap .authors .author .twitter {
+  background-position: 0 -30px;
+}
+#common .page-wrap .authors .author .facebook {
+  background-position: 0 -45px;
+}
 
 @media (max-width: 815px) {
   #common .page-wrap .page-nav {
+    border-top: 2px solid #1b1464;
+    border-bottom: 2px solid #1b1464;
     position: relative;
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 0px;
   }
   #common .page-wrap .page-nav li {
@@ -155,8 +242,6 @@ Description: 固定ページ
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
-  }
-  #common .page-wrap .page-nav li a {
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
