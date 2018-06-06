@@ -27,16 +27,21 @@ description: 検索結果が表示されます
             <?php if ($searchTagObj) echo 'タグ: '.$searchTagStr; ?>
               <?php if (isset($_GET['s']) && empty($_GET['s'])) { ?>
               <?php } else { ?>
-                <h1>検索結果: <strong><?php the_search_query(); ?></strong></h1>
-                <i><?php echo $wp_query->found_posts; ?>件</i>
+                <div class="search-cover">
+                  <h1>検索結果: <strong><?php the_search_query(); ?></strong></h1>
+                  <i><?php echo $wp_query->found_posts; ?>件</i>
+                </div>
               <?php } ?>
 
 
                 <?php if (isset($_GET['s']) && empty($_GET['s'])) { ?>
-                  <h1>検索条件が入力されていません。</h1>
+                  <div class="search-cover">
+                    <h1>検索条件が入力されていません。</h1>
+                  </div>
                   <?php get_search_form(); ?>
                 <?php } else { ?>
                 <?php if(have_posts()) : ?>
+                  <?php get_search_form(); ?>
                   <?php get_template_part('partials/post-table'); ?>
                   <?php if (function_exists("pagination")) {
                     pagination($custom_query->max_num_pages);
