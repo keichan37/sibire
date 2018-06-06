@@ -21,13 +21,15 @@
                     <strong><?php echo $user->last_name ; ?><?php echo $user->first_name ; ?></strong>
                     <p>
                       <?php echo $user->user_description ; ?>
-                      <a href="<?php echo get_bloginfo("url") . '/?author=' . $uid ?>">記事一覧</a>
                     </p>
                     <?php if ($user->twitter): ?>
-                       <a class="twitter" href="https://twitter.com/<?php echo $user->twitter; ?>" target="_blank">Twitter</a>
+                      <a class="twitter" href="https://twitter.com/<?php echo $user->twitter; ?>" target="_blank">Twitter</a>
                     <?php endif; ?>
                     <?php if ($user->facebook): ?>
-                       <a class="facebook" href="https://facebook.com/<?php echo $user->facebook; ?>" target="_blank">Facebook</a>
+                      <a class="facebook" href="https://facebook.com/<?php echo $user->facebook; ?>" target="_blank">Facebook</a>
+                    <?php endif; ?>
+                    <?php if( in_array( 'editor', $user->roles ))://編集者のみ ?>
+                      <a class="post" href="<?php echo get_bloginfo("url") . '/?author=' . $uid ?>">記事一覧</a>
                     <?php endif; ?>
                   </div>
                 <?php } ?>
