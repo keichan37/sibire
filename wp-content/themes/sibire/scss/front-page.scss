@@ -386,38 +386,6 @@ Description: フロントページ
   
   .partials {
   }
-  #searchform {
-    margin-bottom: 15px;
-    &:before,
-    &:after {
-      @include clearfix;
-    }
-    input[type="text"],
-    .submit-wrap {
-      float: left;
-      @include border-box;
-    }
-    input[type="text"],
-    input[type="submit"] {
-      @include border-radius(5px);
-    }
-    input[type="text"] {
-      border: none;
-      height: 38px;
-      width: 80%;
-    }
-    .submit-wrap {
-      width: 20%;
-      padding-left: 10px;
-    }
-    input[type="submit"] {
-      height: 38px;
-      clear: none;
-      width: 100%;
-      background: #1b1464 url("images/common/search.png") center center /38px 38px no-repeat;
-      text-indent: -9999px;
-    }
-  }
 
   h2.common-recruit-title,
   h2.common-tag-title {

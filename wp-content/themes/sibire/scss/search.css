@@ -7,6 +7,10 @@ Description: 検索結果
   min-height: 500px;
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
 }
+#search .search-cover {
+  background: #c2e2dd url("images/template-lp/cover.gif") bottom center/cover no-repeat;
+  margin-bottom: 15px;
+}
 #search h1 {
   text-align: center;
   margin: 0;
@@ -22,7 +26,7 @@ Description: 検索結果
 #search i {
   display: block;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 #search #searchform {
   max-width: 500px;
@@ -52,11 +56,6 @@ Description: 検索結果
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  border-radius: 1px;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  -o-border-radius: 1px;
-  -ms-border-radius: 1px;
   display: block;
   width: 606px;
   background-color: #ffffff;

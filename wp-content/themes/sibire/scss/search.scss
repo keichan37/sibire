@@ -8,6 +8,10 @@ Description: 検索結果
   padding-top: 64px;
   min-height: 500px;
   font-family: $gothic;
+  .search-cover {
+    background: #c2e2dd url("images/template-lp/cover.gif") bottom center /cover no-repeat;
+    margin-bottom: 15px;
+  }
   h1 {
     text-align: center;
     margin: 0;
@@ -16,14 +20,14 @@ Description: 検索結果
     padding: 50px 0 10px 0;
     font-family: $gothic-b;
     strong {
-	    background-color: #ffff00;
+      background-color: #ffff00;
       color: #000000;
     }
   }
   i {
     display: block;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   #searchform {
     max-width: 500px;
@@ -44,7 +48,6 @@ Description: 検索結果
         text-decoration: none;
         @include transition();
         @include border-box;
-        @include border-radius(1px);
         display: block;
         width: 606px;
         background-color: #ffffff;
