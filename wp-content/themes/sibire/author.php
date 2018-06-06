@@ -12,9 +12,17 @@
        
       <div class="container">
         <div class="summary-grid-wrap">
-          <?php $posts = get_posts("author=$userId&orderby=date&post_type=post&numberposts=1000"); ?>
-          <?php if (!empty($posts)) { ?>
-            <?php foreach( $posts as $post ) : setup_postdata($post); ?>
+          <?php
+            $args = array(
+              'paged' => $paged,
+              'post_type' => array('recruit','interview','column','event','niche','blog'),
+              'posts_per_page' => 10,
+              'author' => $userId,
+              'post_status' => 'publish',
+              'has_password' => false,
+            ); ?>
+          <?php query_posts( $args ); ?>
+            <?php while (have_posts()) : the_post(); ?>
               <a href="<?php the_permalink() ?>" class="summary-grid">
                 <figure>
                   <?php if (has_post_thumbnail()): ?>
@@ -28,8 +36,8 @@
                   </figcaption>
                 </figure>
               </a>
-            <?php endforeach; ?>
-          <?php } ?>
+          <?php endwhile; ?>
+
 
       <nav class="paginate-nav">
         <?php global $wp_rewrite;
@@ -37,7 +45,8 @@
             array(
               'paged' => $paged,
               'posts_per_page' => -1,
-              'post_type' => $cat_slug,
+              'author' => $userId,
+              'post_type' => array('recruit','interview','column','event','niche','blog'),
               'post_status' => 'publish',
               'has_password' => false
             )

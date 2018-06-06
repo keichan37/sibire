@@ -180,26 +180,39 @@ Description: 固定ページ
   color: #000000;
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
 }
+#common .page-wrap .authors:before, #common .page-wrap .authors:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
 #common .page-wrap .authors .author {
-  max-width: 228px;
+  max-width: 44%;
+  float: left;
+  margin: 0 3% 20px 3%;
+  text-align: center;
 }
 #common .page-wrap .authors .author img {
-  border-radius: 114px;
-  -webkit-border-radius: 114px;
-  -moz-border-radius: 114px;
-  -o-border-radius: 114px;
-  -ms-border-radius: 114px;
-  margin-bottom: 15px;
+  width: 80%;
+  height: auto;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -o-border-radius: 150px;
+  -ms-border-radius: 150px;
+  margin-bottom: 10px;
 }
 #common .page-wrap .authors .author strong {
   display: block;
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
   font-size: 22px;
   line-height: 1.4;
-  text-align: center;
   margin-bottom: 10px;
 }
 #common .page-wrap .authors .author p {
+  text-align: left;
   margin: 0 0 5px 0;
   font-size: 14px;
   line-height: 1.4;
@@ -226,6 +239,14 @@ Description: 固定ページ
 }
 #common .page-wrap .authors .author .facebook {
   background-position: 0 -45px;
+}
+#common .page-wrap .authors .author .post {
+  float: right;
+  position: relative;
+  top: -4px;
+}
+#common .page-wrap .authors .author:nth-child(odd) {
+  clear: both;
 }
 
 @media (max-width: 815px) {
