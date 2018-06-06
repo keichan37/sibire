@@ -13,8 +13,6 @@
       <div class="container">
         <div class="summary-grid-wrap">
           <?php
-            $thumbnail_id = get_post_thumbnail_id();
-            $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
             $args = array(
               'paged' => $paged,
               'post_type' => array('recruit','interview','column','event','niche','blog'),
@@ -25,6 +23,10 @@
             ); ?>
           <?php query_posts( $args ); ?>
             <?php while (have_posts()) : the_post(); ?>
+              <?php
+                $thumbnail_id = get_post_thumbnail_id();
+                $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
+              ?>
               <a href="<?php the_permalink() ?>" class="summary-grid">
                 <figure>
                   <?php if (has_post_thumbnail()): ?>
