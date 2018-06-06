@@ -189,6 +189,7 @@ Description: 固定ページ
   visibility: hidden;
 }
 #common .page-wrap .authors .author {
+  min-width: 44%;
   max-width: 44%;
   float: left;
   margin: 0 3% 20px 3%;
@@ -291,6 +292,12 @@ Description: 固定ページ
   }
   #common .page-wrap section {
     padding: 0 20px 30px 20px;
+  }
+}
+@media (max-width: 414px) {
+  #common .page-wrap .authors .author {
+    min-width: 94%;
+    max-width: 94%;
   }
 }
 
