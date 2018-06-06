@@ -281,6 +281,24 @@ function update_profile_fields( $contactmethods ) {
 }
 add_filter('user_contactmethods','update_profile_fields',10,1);
 
+function my_disable_redirect_canonical( $redirect_url ) {
+	if ( is_tag() || is_author() ){
+		$subject = $redirect_url;
+		$pattern = '/\/page\//'; // URLに「/page/」があるかチェック
+		preg_match($pattern, $subject, $matches);
+
+		if ($matches){
+		//リクエストURLに「/page/」があれば、リダイレクトしない。
+		$redirect_url = false;
+		return $redirect_url;
+		}
+	}
+}
+add_filter('redirect_canonical','my_disable_redirect_canonical');
+
+
+
+
 /* Google Map API */
 function my_acf_google_map_api( $api ){
 	$api['key'] = 'AIzaSyAC4maiLTsNgl8S0ueBDQEfaDjCJoxUEDc';
