@@ -16,7 +16,7 @@
             $args = array(
               'paged' => $paged,
               'post_type' => array('recruit','interview','column','event','niche','blog'),
-              'posts_per_page' => 10,
+              'posts_per_page' => 12,
               'author' => $userId,
               'post_status' => 'publish',
               'has_password' => false,
@@ -41,6 +41,7 @@
                 </figure>
               </a>
           <?php endwhile; ?>
+        </div>
 
 
       <nav class="paginate-nav">
