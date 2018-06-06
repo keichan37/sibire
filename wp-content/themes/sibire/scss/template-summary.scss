@@ -28,6 +28,7 @@ $gothic-b: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
   $black: #231815;
   $container: 1100px;
   &.tag,
+  &.error,
   &.recruit,
   &.column,
   &.topic,
@@ -71,6 +72,7 @@ $gothic-b: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
       padding: 30px 0 0 0;
       font-family: $design;
       font-size: 32px;
+      line-height: 1.4;
     }
     p {
       margin: 0 0 20px 0;

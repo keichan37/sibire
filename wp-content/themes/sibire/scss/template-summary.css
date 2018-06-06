@@ -2,17 +2,18 @@
 #summary {
   padding-bottom: 60px;
 }
-#summary.tag .summary-cover, #summary.recruit .summary-cover, #summary.column .summary-cover, #summary.topic .summary-cover, #summary.event .summary-cover, #summary.interview .summary-cover, #summary.niche .summary-cover, #summary.blog .summary-cover, #summary.media .summary-cover, #summary.niche .summary-cover, #summary.blog .summary-cover, #summary.media .summary-cover {
+#summary.tag .summary-cover, #summary.error .summary-cover, #summary.recruit .summary-cover, #summary.column .summary-cover, #summary.topic .summary-cover, #summary.event .summary-cover, #summary.interview .summary-cover, #summary.niche .summary-cover, #summary.blog .summary-cover, #summary.media .summary-cover, #summary.niche .summary-cover, #summary.blog .summary-cover, #summary.media .summary-cover {
   background: #c2e2dd url("images/page/cover.png") bottom center/cover no-repeat;
 }
-#summary.tag .summary-grid-wrap .summary-grid, #summary.recruit .summary-grid-wrap .summary-grid, #summary.column .summary-grid-wrap .summary-grid, #summary.topic .summary-grid-wrap .summary-grid, #summary.event .summary-grid-wrap .summary-grid, #summary.interview .summary-grid-wrap .summary-grid, #summary.niche .summary-grid-wrap .summary-grid, #summary.blog .summary-grid-wrap .summary-grid, #summary.media .summary-grid-wrap .summary-grid, #summary.niche .summary-grid-wrap .summary-grid, #summary.blog .summary-grid-wrap .summary-grid, #summary.media .summary-grid-wrap .summary-grid {
+#summary.tag .summary-grid-wrap .summary-grid, #summary.error .summary-grid-wrap .summary-grid, #summary.recruit .summary-grid-wrap .summary-grid, #summary.column .summary-grid-wrap .summary-grid, #summary.topic .summary-grid-wrap .summary-grid, #summary.event .summary-grid-wrap .summary-grid, #summary.interview .summary-grid-wrap .summary-grid, #summary.niche .summary-grid-wrap .summary-grid, #summary.blog .summary-grid-wrap .summary-grid, #summary.media .summary-grid-wrap .summary-grid, #summary.niche .summary-grid-wrap .summary-grid, #summary.blog .summary-grid-wrap .summary-grid, #summary.media .summary-grid-wrap .summary-grid {
   background: transparent url(images/template-summary/"bottom-"green.png) bottom left no-repeat;
 }
-#summary.tag .summary-grid-wrap .summary-grid:hover, #summary.recruit .summary-grid-wrap .summary-grid:hover, #summary.column .summary-grid-wrap .summary-grid:hover, #summary.topic .summary-grid-wrap .summary-grid:hover, #summary.event .summary-grid-wrap .summary-grid:hover, #summary.interview .summary-grid-wrap .summary-grid:hover, #summary.niche .summary-grid-wrap .summary-grid:hover, #summary.blog .summary-grid-wrap .summary-grid:hover, #summary.media .summary-grid-wrap .summary-grid:hover, #summary.niche .summary-grid-wrap .summary-grid:hover, #summary.blog .summary-grid-wrap .summary-grid:hover, #summary.media .summary-grid-wrap .summary-grid:hover {
+#summary.tag .summary-grid-wrap .summary-grid:hover, #summary.error .summary-grid-wrap .summary-grid:hover, #summary.recruit .summary-grid-wrap .summary-grid:hover, #summary.column .summary-grid-wrap .summary-grid:hover, #summary.topic .summary-grid-wrap .summary-grid:hover, #summary.event .summary-grid-wrap .summary-grid:hover, #summary.interview .summary-grid-wrap .summary-grid:hover, #summary.niche .summary-grid-wrap .summary-grid:hover, #summary.blog .summary-grid-wrap .summary-grid:hover, #summary.media .summary-grid-wrap .summary-grid:hover, #summary.niche .summary-grid-wrap .summary-grid:hover, #summary.blog .summary-grid-wrap .summary-grid:hover, #summary.media .summary-grid-wrap .summary-grid:hover {
   color: #6ecc3e;
 }
 #summary.tag .summary-grid-wrap .summary-grid:hover h4,
-#summary.tag .summary-grid-wrap .summary-grid:hover p, #summary.recruit .summary-grid-wrap .summary-grid:hover h4,
+#summary.tag .summary-grid-wrap .summary-grid:hover p, #summary.error .summary-grid-wrap .summary-grid:hover h4,
+#summary.error .summary-grid-wrap .summary-grid:hover p, #summary.recruit .summary-grid-wrap .summary-grid:hover h4,
 #summary.recruit .summary-grid-wrap .summary-grid:hover p, #summary.column .summary-grid-wrap .summary-grid:hover h4,
 #summary.column .summary-grid-wrap .summary-grid:hover p, #summary.topic .summary-grid-wrap .summary-grid:hover h4,
 #summary.topic .summary-grid-wrap .summary-grid:hover p, #summary.event .summary-grid-wrap .summary-grid:hover h4,
@@ -47,6 +48,7 @@
   padding: 30px 0 0 0;
   font-family: "FOT-あおかね Std EB", "AokaneStd-EB";
   font-size: 32px;
+  line-height: 1.4;
 }
 #summary .summary-cover p {
   margin: 0 0 20px 0;
