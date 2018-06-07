@@ -31,6 +31,9 @@
                     <?php if( in_array( 'editor', $user->roles ))://編集者のみ ?>
                       <a class="post" href="<?php echo get_bloginfo("url") . '/?author=' . $uid ?>">記事一覧</a>
                     <?php endif; ?>
+                    <?php if ($user->user_url): ?>
+                      <a class="post" href="<?php echo $user->user_url ; ?>">くわしくはこちら</a>
+                    <?php endif; ?>
                   </div>
                 <?php } ?>
                 </div>
