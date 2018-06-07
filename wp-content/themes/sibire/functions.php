@@ -133,9 +133,7 @@ add_filter('pre_get_posts','SearchFilter');
 /* PRE_GET_POSTS */
 function customize_main_query ( $query ) {
   if ( ! is_admin() || $query->is_main_query() ) { //管理画面以外 かつ メインクエリー
-    if ( $query->is_search() ) {
-      $query->set( 'has_password', false );
-    }
+    $query->set( 'has_password', false );
   }
 }
 add_action( 'pre_get_posts', 'customize_main_query' ); // PRE_GET_POSTSにフック
