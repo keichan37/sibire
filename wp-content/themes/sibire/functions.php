@@ -281,23 +281,17 @@ function update_profile_fields( $contactmethods ) {
 }
 add_filter('user_contactmethods','update_profile_fields',10,1);
 
-function my_disable_redirect_canonical( $redirect_url ) {
-	if ( is_tag() || is_author() ){
-		$subject = $redirect_url;
-		$pattern = '/\/page\//'; // URLに「/page/」があるかチェック
-		preg_match($pattern, $subject, $matches);
 
-		if ($matches){
-		//リクエストURLに「/page/」があれば、リダイレクトしない。
-		$redirect_url = false;
-		return $redirect_url;
-		}
-	}
+/* タグ一覧にカスタム投稿タイプを含める　*/
+function add_post_tag_archive( $wp_query ) {
+  if ($wp_query->is_main_query() && $wp_query->is_tag()) {
+    $wp_query->set( 'post_type', array('recruit','interview','column','event','niche','blog'));
+  }
+  if ($wp_query->is_main_query() && $wp_query->is_author()) {
+    $wp_query->set( 'post_type', array('recruit','interview','column','event','niche','blog'));
+  }
 }
-add_filter('redirect_canonical','my_disable_redirect_canonical');
-
-
-
+add_action( 'pre_get_posts', 'add_post_tag_archive' , 10 , 1);
 
 /* Google Map API */
 function my_acf_google_map_api( $api ){
