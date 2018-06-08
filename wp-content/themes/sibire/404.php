@@ -9,12 +9,6 @@
         </div>    
       </div>    
       <?php get_search_form(); ?>
-      <div id="common">
-        <div id="lp" class="single-registration">
-          <?php get_template_part('partials/title'); ?>
-          <a class="button button-small" href="/?page_id=272">サービスに申し込む</a>
-        </div>
-      </div>
       
     </div>
     <?php get_footer("lp"); //フッターリニューアル?>
