@@ -75,7 +75,7 @@
                       <?php endif; ?>
                       <div id="lp" class="single-registration">
                         <?php get_template_part('partials/title'); ?>
-                        <a class="button button-small" href="/registration">サービスに申し込む</a>
+                        <a class="button button-small" href="/?page_id=272">サービスに申し込む</a>
                       </div>
                     </div>
                   <?php endif; //パスワード保護 ?>
