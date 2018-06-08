@@ -23,6 +23,10 @@ Description: 固定ページ
     background-color: #ffffff;
     color: #1b1464;
     position: relative;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
     h2 {
       font-size: 18px;
       line-height: 24px;

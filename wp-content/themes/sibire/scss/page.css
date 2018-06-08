@@ -20,6 +20,10 @@ Description: 固定ページ
   color: #1b1464;
   position: relative;
 }
+#common .page-wrap img {
+  max-width: 100%;
+  height: auto;
+}
 #common .page-wrap h2 {
   font-size: 18px;
   line-height: 24px;
