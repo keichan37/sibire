@@ -80,6 +80,7 @@ function add_column($column_name, $post_id) {
     }
 }
 add_action( 'manage_posts_custom_column', 'add_column', 10, 2 );
+// 管理画面での一覧表示項目
 function sort_posts_columns($columns){
 	$columns = array(
 		'cb' => '<input type="checkbox" />',
@@ -93,33 +94,19 @@ function sort_posts_columns($columns){
 }
 add_filter( 'manage_posts_columns', 'sort_posts_columns' );
 
-// エディタ内でphpファイルを読み込む
-function Include_my_php($params = array()) {
-  extract(shortcode_atts(array(
-    'area' => 'sendai',
-    'title' => '仙台',
-    'file' => 'default'
-  ), $params));
-  ob_start();
-  include(get_theme_root() . '/' . get_template() . "/$file.php");
-  return ob_get_clean();
-}
-add_shortcode('partial-php', 'Include_my_php');
-
-
 // 固定ページにカテゴリーを設定
 function add_categorie_to_pages(){
 register_taxonomy_for_object_type('category', 'page');
 }
 add_action('init','add_categorie_to_pages');
-
 // 固定ページにタグを設定
 function add_tag_to_page() {
 register_taxonomy_for_object_type('post_tag', 'page');
 }
 add_action('init', 'add_tag_to_page');
 
-// 検索結果から固定ページを除外
+// 検索結果の表示設定
+/* カスタム投稿タイプのみ */
 function SearchFilter($query) {
   if ( !is_admin() && $query->is_main_query() && $query->is_search() ) {
     $query->set('post_type', array('recruit','interview','offer','column','event','niche','media'));
@@ -128,7 +115,7 @@ function SearchFilter($query) {
 }
 add_filter('pre_get_posts','SearchFilter');
 
-/* 検索機能で固定ページを除外 */
+/* 検索結果で固定ページを除外 */
 function fb_search_filter( $query ) {
 	if ( $query -> is_search ) {
     $query->set( 'post_type', 'post' );
@@ -137,13 +124,16 @@ function fb_search_filter( $query ) {
 }
 add_filter( 'pre_get_posts', 'SearchFilter' );
 
-/* 検索結果から保護中を除外 */
+/* 絞り込み条件から保護中を除外 */
 function customize_main_query ( $query ) {
-  if ( is_search() ) {
+  if ( is_search() || is_tag() || is_author() || is_archive() || is_category() ) {
     $query->set( 'has_password', false );
   }
 }
 add_action( 'pre_get_posts', 'customize_main_query' ); // PRE_GET_POSTSにフック
+//
+
+
 
 /* カスタムメニューにてカスタム投稿の下層でもcurrent_pageクラスを付与 */
 function add_nav_menu_custom_class( $menu_items ) {
@@ -192,10 +182,10 @@ function pagination($pages = '', $range = 4) {
   }
 }
 
-//管理画面の「見出し１」等を削除する
+// 管理画面の「見出し１」等を削除する
 function custom_editor_settings( $initArray ){
-$initArray['block_formats'] = "段落=p; 見出し１=h1; 見出し2=h2; 見出し3=h3; 見出し4=h4;";
-return $initArray;
+  $initArray['block_formats'] = "段落=p; 見出し１=h1; 見出し2=h2; 見出し3=h3; 見出し4=h4;";
+  return $initArray;
 }
 add_filter( 'tiny_mce_before_init', 'custom_editor_settings' );
 
@@ -242,8 +232,6 @@ add_filter( 'get_avatar', 'add_image_placeholders', 11 );
 
 /* 投稿画面用のcssを追加 */
 add_editor_style("editor.css");
-
-
 
 /* 概要（抜粋）の文字数調整 */
 function my_excerpt_length($length) {
