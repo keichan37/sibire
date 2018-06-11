@@ -8,7 +8,13 @@
             <div class="single-left">
               <?php while(have_posts()): the_post(); ?>
                 <article>
-                  <span class="single-category"><span class="icon icon-paper"></span><a href="/<?php echo esc_html(get_post_type_object($post->post_type)->name); ?>"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></a></span>
+                  <?php
+                    $category = get_the_category();
+                    $cat_id   = $category[0]->cat_ID;
+                    $cat_name = $category[0]->cat_name;
+                    $cat_slug = $category[0]->category_nicename;
+                  ?>
+                  <span class="single-category"><span class="icon icon-paper"></span><a href="/topics/<?php echo $cat_slug; ?>"><?php echo $cat_name; ?></a></span>
                   <time class="single-date" datetime="<?php the_time('c') ;?>"><span class="icon icon-watch"></span><?php the_time('Y.n.j') ;?></time>
                   <h1 class="single-title"><?php the_title(); ?></h1>
 
