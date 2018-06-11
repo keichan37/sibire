@@ -15,9 +15,16 @@
   <?php } elseif(is_tag() || is_category() ) {?>
     <?php single_cat_title(); ?>の検索結果
   <?php } else{ ?>
+    <?php
+      $category = get_the_category();
+      $cat_id   = $category[0]->cat_ID;
+      $cat_name = $category[0]->cat_name;
+      $cat_slug = $category[0]->category_nicename;
+    ?>
+
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-      <a href="/category/<?php echo esc_html(get_post_type_object($post->post_type)->name); ?>" itemprop="url">
-        <span itemprop="title"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></a></span>
+      <a href="/category/<?php echo $cat_slug; ?>" itemprop="url">
+        <span itemprop="title"><?php echo $cat_name; ?></a></span>
       </a>&nbsp;&gt;&nbsp;
     </span>
   <?php } ?>
