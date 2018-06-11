@@ -4,7 +4,8 @@
     <div id="summary" class="tag">
       <div class="summary-cover">
         <div class="container">
-          <h1><span class="icon icon-head"></span>&nbsp;<?php echo $user->last_name ; ?><?php echo $user->first_name ; ?></h1>
+          <h1><?php echo get_avatar( $uid ,34 ); ?>&nbsp;<?php echo $user->last_name ; ?><?php echo $user->first_name ; ?>の記事一覧</h1>
+          <?php echo $user->user_description ; ?>
         </div>
       </div>
       <div class="container">
