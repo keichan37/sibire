@@ -139,7 +139,7 @@ add_filter( 'pre_get_posts', 'SearchFilter' );
 
 /* 検索結果から保護中を除外 */
 function customize_main_query ( $query ) {
-  if ( ! is_admin() || $query->is_main_query() ) { //管理画面以外 かつ メインクエリー
+  if ( is_search() ) {
     $query->set( 'has_password', false );
   }
 }
