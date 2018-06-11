@@ -4,7 +4,7 @@
     <div id="summary" class="tag">
       <div class="summary-cover">
         <div class="container">
-          <h1><?php echo $user->last_name ; ?><?php echo $user->first_name ; ?><span>の投稿一覧</span></h1>
+          <h1><span class="icon icon-head"></span>&nbsp;<?php echo $user->last_name ; ?><?php echo $user->first_name ; ?></h1>
         </div>
       </div>
       <div class="container">

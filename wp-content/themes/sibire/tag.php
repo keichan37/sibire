@@ -2,7 +2,7 @@
     <div id="summary" class="tag">
       <div class="summary-cover">
         <div class="container">
-          <h1><strong>関連キーワード <?php single_tag_title(); ?></strong></h1>
+          <h1><span class="icon icon-tag"></span>&nbsp;<strong><?php single_tag_title(); ?></strong></h1>
         </div>
       </div>
       <div class="container">
