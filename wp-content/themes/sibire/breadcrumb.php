@@ -16,7 +16,7 @@
     <?php single_cat_title(); ?>の検索結果
   <?php } else{ ?>
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-      <a href="/<?php echo esc_html(get_post_type_object($post->post_type)->name); ?>" itemprop="url">
+      <a href="/category/<?php echo esc_html(get_post_type_object($post->post_type)->name); ?>" itemprop="url">
         <span itemprop="title"><?php echo esc_html(get_post_type_object($post->post_type)->label); ?></a></span>
       </a>&nbsp;&gt;&nbsp;
     </span>
@@ -27,7 +27,8 @@
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
       <a href="<?php echo bloginfo('url'); ?>?p=<?php echo $parentid;?>" itemprop="url">
         <span itemprop="title"><?php echo get_page($parentid)->post_title; ?></span>
-      </a>&nbsp;&gt;&nbsp;
+      </a>
+      &nbsp;&gt;&nbsp;
     </span>
   <?php } ?>
   <?php the_title(); ?>
