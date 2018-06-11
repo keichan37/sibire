@@ -265,6 +265,7 @@ function update_profile_fields( $contactmethods ) {
     return $contactmethods;
 }
 add_filter('user_contactmethods','update_profile_fields',10,1);
+remove_filter('pre_user_description', 'wp_filter_kses');
 
 
 /* タグ一覧、著者一覧、カテゴリ一覧にカスタム投稿タイプを含める　*/
