@@ -2,7 +2,7 @@
     <div id="summary" class="category">
       <div class="summary-cover">
         <div class="container">
-          <h1>カテゴリ: <?php single_cat_title(); ?></h1>
+          <h1><span class="icon icon-paper"></span>&nbsp;<?php single_cat_title(); ?></h1>
           <?php echo category_description(); ?>
         </div>
       </div>
