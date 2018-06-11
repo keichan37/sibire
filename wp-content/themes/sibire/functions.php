@@ -3,8 +3,6 @@
 /* アイキャッチ */
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 225, 140, true );
-/* 投稿に属性追加 */
-/* add_post_type_support( 'post', 'page-attributes' ); */
 /* コメントフィード削除 */
 remove_action('wp_head', 'feed_links_extra', 3);
 /* リモート投稿用リンク削除 */
@@ -124,13 +122,22 @@ add_action('init', 'add_tag_to_page');
 // 検索結果から固定ページを除外
 function SearchFilter($query) {
   if ( !is_admin() && $query->is_main_query() && $query->is_search() ) {
-    $query->set('post_type', array('recruit','interview','offer','column','event'));
+    $query->set('post_type', array('recruit','interview','offer','column','event','niche','media'));
   }
   return $query;
 }
 add_filter('pre_get_posts','SearchFilter');
 
-/* PRE_GET_POSTS */
+/* 検索機能で固定ページを除外 */
+function fb_search_filter( $query ) {
+	if ( $query -> is_search ) {
+    $query->set( 'post_type', 'post' );
+	}
+	return $query;
+}
+add_filter( 'pre_get_posts', 'SearchFilter' );
+
+/* 検索結果から保護中を除外 */
 function customize_main_query ( $query ) {
   if ( ! is_admin() || $query->is_main_query() ) { //管理画面以外 かつ メインクエリー
     $query->set( 'has_password', false );
@@ -236,14 +243,6 @@ add_filter( 'get_avatar', 'add_image_placeholders', 11 );
 /* 投稿画面用のcssを追加 */
 add_editor_style("editor.css");
 
-/* 検索機能で固定ページを除外 */
-function fb_search_filter( $query ) {
-	if ( $query -> is_search ) {
-    $query->set( 'post_type', 'post' );
-	}
-	return $query;
-}
-add_filter( 'pre_get_posts', 'SearchFilter' );
 
 
 /* 概要（抜粋）の文字数調整 */
@@ -280,12 +279,15 @@ function update_profile_fields( $contactmethods ) {
 add_filter('user_contactmethods','update_profile_fields',10,1);
 
 
-/* タグ一覧にカスタム投稿タイプを含める　*/
+/* タグ一覧、著者一覧、カテゴリ一覧にカスタム投稿タイプを含める　*/
 function add_post_tag_archive( $wp_query ) {
   if ($wp_query->is_main_query() && $wp_query->is_tag()) {
     $wp_query->set( 'post_type', array('recruit','interview','column','event','niche','blog'));
   }
   if ($wp_query->is_main_query() && $wp_query->is_author()) {
+    $wp_query->set( 'post_type', array('recruit','interview','column','event','niche','blog'));
+  }
+  if ($wp_query->is_main_query() && $wp_query->is_archive()) {
     $wp_query->set( 'post_type', array('recruit','interview','column','event','niche','blog'));
   }
 }
