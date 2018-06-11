@@ -281,7 +281,10 @@ add_filter('user_contactmethods','update_profile_fields',10,1);
 
 /* タグ一覧、著者一覧、カテゴリ一覧にカスタム投稿タイプを含める　*/
 function add_post_tag_archive( $wp_query ) {
-  if ($wp_query->is_main_query() && $wp_query->is_tag()) {
+  if ($wp_query->is_main_query() && $wp_query->is_tag() && $wp_query->is_author()&& $wp_query->is_archive()) {
+    $wp_query->set( 'post_type', array('recruit','interview','column','event','niche','blog','media'));
+  }
+  /*if ($wp_query->is_main_query() && $wp_query->is_tag()) {
     $wp_query->set( 'post_type', array('recruit','interview','column','event','niche','blog','media'));
   }
   if ($wp_query->is_main_query() && $wp_query->is_author()) {
@@ -289,7 +292,7 @@ function add_post_tag_archive( $wp_query ) {
   }
   if ($wp_query->is_main_query() && $wp_query->is_archive()) {
     $wp_query->set( 'post_type', array('recruit','interview','column','event','niche','blog','media'));
-  }
+  }*/
 }
 add_action( 'pre_get_posts', 'add_post_tag_archive' , 10 , 1);
 
