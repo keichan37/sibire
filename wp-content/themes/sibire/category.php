@@ -2,8 +2,8 @@
     <div id="summary" class="category">
       <div class="summary-cover">
         <div class="container">
-          <h1><?php the_title(); ?></h1>
-          <?php the_content(); ?>
+          <h1><?php single_cat_title(); ?></h1>
+          <?php echo category_description(); ?>
         </div>
       </div>
       <div class="container">
