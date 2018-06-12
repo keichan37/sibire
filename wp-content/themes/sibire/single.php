@@ -79,10 +79,7 @@
                       <?php if ( in_array(get_post_type(), array('recruit')) ): ?>
                         <?php get_template_part('partials/single-table'); ?>
                       <?php endif; ?>
-                      <div id="lp" class="single-registration">
-                        <?php get_template_part('partials/title'); ?>
-                        <a class="button button-small" href="/?page_id=272<? $txt = get_field('subtitle'); if($txt){ ?>?referer=<? echo $txt; ?><? } ?>">サービスに申し込む</a>
-                      </div>
+                      <?php get_template_part('partials/service'); ?>
                     </div>
                   <?php endif; //パスワード保護 ?>
 
