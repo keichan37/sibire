@@ -116,10 +116,10 @@ do_action( 'rss_tag_pre', 'rss2' );
 <?php endif; ?>
 <?php rss_enclosure(); ?>
 <?php
-    $image_id = get_post_thumbnail_id();
-    $image_url = wp_get_attachment_image_src($image_id, true);
+  $thumbnail_id = get_post_thumbnail_id();
+  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'thumbnail', true);
 ?>
-<media:thumbnail url="<?php echo $image_url[0]; ?>" />
+<media:thumbnail url="<?php echo $thumbnail_url[0]; ?>" />
 <snf:analytics><![CDATA[
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
