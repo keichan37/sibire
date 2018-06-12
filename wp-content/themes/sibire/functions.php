@@ -289,4 +289,13 @@ function my_acf_google_map_api( $api ){
 }
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
+/* RSSをテーマ内から読み込む */
+remove_filter('do_feed_rss2', 'do_feed_rss2', 10);
+function custom_feed_rss2(){
+    $rss2_file = '/feed-rss2.php';
+    load_template(get_template_directory() . $rss2_file);
+}
+add_action('do_feed_rss2', 'custom_feed_rss2', 10);
+
 ?>
+
