@@ -6,7 +6,7 @@
         <h1>
           <?php get_template_part('partials/title'); ?>
         </h1>
-        <a class="button" href="/?page_id=272">サービスに申し込む</a>
+        <a class="button" href="<?php echo get_permalink(272); ?>">サービスに申し込む</a>
         <div class="balloon balloon1">収入を落とさずに<br />地方で働きたい</div>
         <div class="balloon balloon2">多様な働き方を<br />実践したい！</div>
         <div class="balloon balloon3">東京以外の<br />魅力的な求人に<br />出会いたい！</div>
@@ -45,7 +45,7 @@
             <li>地方でしかできない魅力的な求人も紹介。「仕事」から住む場所を決めてもOK!</li>
             <li>東京にこだわらず働く「OFF TOKYO」をテーマとしたイベントを優先的にご案内</li>
           </ul>
-          <a class="button" href="/?page_id=272">サービスに申し込む</a>
+          <a class="button" href="<?php echo get_permalink(272); ?>">サービスに申し込む</a>
         </div>
         <div class="section" id="topic">
           <h2><b>“</b>トピック<b>”</b><span>TOPIC</span></h2>
