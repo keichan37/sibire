@@ -296,7 +296,6 @@ function custom_feed_rss2(){
     load_template(get_template_directory() . $rss2_file);
 }
 add_action('do_feed_rss2', 'custom_feed_rss2', 10);
-<?php
 function mysite_feed_request($vars) {
   if ( isset( $vars['feed'] ) && !isset( $vars['post_type'] ) ) {
     $vars['post_type'] = array(
@@ -314,4 +313,3 @@ function mysite_feed_request($vars) {
 add_filter( 'request', 'mysite_feed_request' );
 
 ?>
-
