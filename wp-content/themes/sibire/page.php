@@ -3,7 +3,13 @@
   <?php get_header(); ?>
     <div id="common">
       <div class="page-cover">
-        <h1 id="page-h1"><?php the_title(); ?></h1>
+      <h1 id="page-h1">
+      <?php if( !empty($favorite)): ?>
+        <?php echo $favorite; ?>に応募する
+      <?php else: ?>
+        <?php the_title(); ?>
+      <?php endif; ?>
+      </h1>
       </div>
       <div class="container">
         <div class="page-wrap">
