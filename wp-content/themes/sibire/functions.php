@@ -262,6 +262,7 @@ function update_profile_fields( $contactmethods ) {
     //項目の追加
     $contactmethods['twitter'] = 'Twitter';
     $contactmethods['facebook'] = 'Facebook';
+    $contactmethods['sort'] = '並び順';
     return $contactmethods;
 }
 add_filter('user_contactmethods','update_profile_fields',10,1);

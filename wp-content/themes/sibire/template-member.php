@@ -11,16 +11,26 @@
             <section>
               <div class="page-content">
                 <?php the_content(); //本文 ?>
-                <?php $users = get_users( array('orderby'=>ID,'order'=>ASC) ); ?>
+                <?php $users = get_users(
+                  array(
+                    'orderby' => 'meta_value',
+                    'order' => 'ASC',
+                    'meta_key' => 'sort',
+                  ));
+                ?>
                 <div class="authors">
                 <?php foreach($users as $user) {
                   $uid = $user->ID;
                 ?>
                   <div class="author">
                     <?php echo get_avatar( $uid ,228 ); ?>
+                      <?php echo $user->sort ; ?>
                     <strong><?php echo $user->last_name ; ?><?php echo $user->first_name ; ?></strong>
                     <p>
                       <?php echo $user->user_description ; ?>
+                      <?php /* 改行あり
+                        <?php echo wpautop(get_the_author_meta('user_description')); ?>
+                      */ ?>
                     </p>
                     <?php if ($user->twitter): ?>
                       <a class="twitter" href="https://twitter.com/<?php echo $user->twitter; ?>" target="_blank">Twitter</a>
