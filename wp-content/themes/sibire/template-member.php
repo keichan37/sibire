@@ -24,7 +24,6 @@
                 ?>
                   <div class="author">
                     <?php echo get_avatar( $uid ,228 ); ?>
-                      <?php echo $user->sort ; ?>
                     <strong><?php echo $user->last_name ; ?><?php echo $user->first_name ; ?></strong>
                     <p>
                       <?php echo $user->user_description ; ?>
