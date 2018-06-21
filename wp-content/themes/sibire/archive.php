@@ -3,6 +3,7 @@
       <div class="summary-cover">
         <div class="container">
           <h1><?php the_archive_title('','の記事');?></h1>
+          <i>全<?php echo $wp_query->found_posts; ?>件</i>
         </div>
       </div>
       <div class="container">
