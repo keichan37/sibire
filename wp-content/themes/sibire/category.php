@@ -4,6 +4,7 @@
         <div class="container">
           <h1><span class="icon icon-paper"></span>&nbsp;<?php single_cat_title(); ?></h1>
           <?php echo category_description(); ?>
+          <i>全<?php echo $wp_query->found_posts; ?>件</i>
         </div>
       </div>
       <div class="container">
