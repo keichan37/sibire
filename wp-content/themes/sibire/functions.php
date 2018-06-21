@@ -124,10 +124,12 @@ function fb_search_filter( $query ) {
 }
 add_filter( 'pre_get_posts', 'SearchFilter' );
 
-/* 絞り込み条件から保護中を除外 */
+/* 絞り込み条件から保護中、非公開を除外 */
 function customize_main_query ( $query ) {
   if ( is_search() || is_tag() || is_author() || is_archive() || is_category() ) {
     $query->set( 'has_password', false );
+    $query->set( 'post_status', 'publish');
+    return;
   }
 }
 add_action( 'pre_get_posts', 'customize_main_query' ); // PRE_GET_POSTSにフック
