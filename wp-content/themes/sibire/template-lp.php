@@ -65,7 +65,7 @@
               </div>
 
             <?php wp_reset_query();?>
-          <a class="button button-small" href="/?page_id=37072">全て見る</a>
+          <a class="button button-small" href="<?php echo get_permalink(37072); ?>">全て見る</a>
         </div>
 
         <?php /* ?>
