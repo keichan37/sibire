@@ -25,6 +25,37 @@
   font-family: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
 }
 
+.mce-content-body strong a {
+  font-family: 'FOT-筑紫A丸ゴシック Std D', 'TsukuARdGothicStd-D';
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  background-color: #1b1464;
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 1.4;
+  padding: 14px;
+  min-width: 300px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -o-border-radius: 25px;
+  -ms-border-radius: 25px;
+}
+
+.mce-content-body strong a:hover {
+  background-color: #211879;
+}
+
 .mce-content-body h1,
 .mce-content-body h2,
 .mce-content-body h3,
