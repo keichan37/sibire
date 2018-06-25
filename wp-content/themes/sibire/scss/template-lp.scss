@@ -1,12 +1,7 @@
 @import "mixin";
+@import "variables";
 
-$kurokane: 'FOT-くろかね Std EB', 'KurokaneStd-EB';
-$tsubame:  'FOT-つばめ Std R', 'TsubameStd-R';
-$gothic:   'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D';
-$gothic-b: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
-$antique:  'FOT-アンチックセザンヌ Pro M', 'AnticCezannePro-M';
 $container: 1100px;
-$green: #8cc63f;
 #lp {
   font-family: $gothic;
   .container {
@@ -322,6 +317,17 @@ $green: #8cc63f;
           background: #ffffff url("images/loading.gif") no-repeat;
           background-position: center center;
           @include transition;
+        }
+        b {
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: #000000;
+          font-size: 12px;
+          line-height: 1.4;
+          padding: 0 3px;
+          background-color: #f9f069;
+          font-family: $aokane;
         }
         h5 {
           margin: 8px 0;
