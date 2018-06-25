@@ -235,8 +235,10 @@
   left: 0;
   color: #ffffff;
   font-size: 12px;
+  line-height: 1.4;
   padding: 0 3px;
   background-color: #6ecc3e;
+  font-family: "FOT-あおかね Std EB", "AokaneStd-EB";
 }
 #summary .summary-grid-wrap .summary-grid.summary-grid-first {
   width: 510px;
