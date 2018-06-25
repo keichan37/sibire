@@ -51,6 +51,9 @@
 
 
                     <div class="single-content mce-content-body">
+                      <?php if ( is_user_logged_in() ): ?>
+                        <a href="/wp-admin/post.php?post=<?php the_ID(); ?>&action=edit">編集する</a>
+                      <?php endif; ?>
                       <?php if ( in_array(get_post_type(), array('recruit')) ): ?>
                         <?php $image = get_field('company_image1'); if( !empty($image) ): ?>
                           <h4>会社の雰囲気</h4>
