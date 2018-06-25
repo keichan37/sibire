@@ -366,6 +366,17 @@
   -ms-transition: 0.3s;
   transition: 0.3s;
 }
+#lp .topic-summary .owl-item a b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000000;
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 0 3px;
+  background-color: #f9f069;
+  font-family: "FOT-あおかね Std EB", "AokaneStd-EB";
+}
 #lp .topic-summary .owl-item a h5 {
   margin: 8px 0;
   font-size: 16px;

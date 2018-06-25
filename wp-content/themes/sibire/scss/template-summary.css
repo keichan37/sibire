@@ -233,11 +233,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: #ffffff;
+  color: #000000;
   font-size: 12px;
   line-height: 1.4;
   padding: 0 3px;
-  background-color: #6ecc3e;
+  background-color: #f9f069;
   font-family: "FOT-あおかね Std EB", "AokaneStd-EB";
 }
 #summary .summary-grid-wrap .summary-grid.summary-grid-first {
