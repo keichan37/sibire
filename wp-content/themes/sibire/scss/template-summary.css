@@ -229,6 +229,15 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
 }
+#summary .summary-grid-wrap .summary-grid figure b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0 3px;
+  background-color: #6ecc3e;
+}
 #summary .summary-grid-wrap .summary-grid.summary-grid-first {
   width: 510px;
 }
