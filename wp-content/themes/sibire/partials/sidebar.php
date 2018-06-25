@@ -17,19 +17,6 @@
       </div>
     <?php endif; ?>
   <?php endif; ?>
-  <?php if(has_tag()==true) : ?>
-    <h4>タグ</h4>
-    <ul class="single-tag">
-      <?php
-        $posttags = get_the_tags();
-        if ($posttags) {
-          foreach($posttags as $tag) {
-            echo '<li><a href="'. get_tag_link($tag->term_id) .'"><span class="icon-tag"></span>' . $tag->name . '</a></li>';
-          }
-        }
-      ?>
-    </ul>
-  <?php endif; ?>
   <h4>関連記事</h4>
   <ul class="single-related-list">
     <?php
