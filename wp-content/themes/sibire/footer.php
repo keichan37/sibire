@@ -15,7 +15,7 @@
             <?php wp_nav_menu( array('menu' => 'footer_menu', 'menu_class' => 'footer_menu')); ?>
           </nav>
           <ol class="tag-list">
-            <li><strong>タグリスト</strong>:</li>
+            <li><strong>人気タグ</strong>:</li>
             <?php wp_list_categories('orderby=count&order=DESC&taxonomy=post_tag&title_li=&number=9&show_count=1');?>
           </ol>
           <?php get_search_form(); ?>
