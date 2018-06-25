@@ -14,7 +14,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/images/template-summary/default.png" />
     <?php endif; ?>
     <figcaption>
-      <?php if (!is_category()) { ?>
+      <?php if (!is_category() && !is_page()) { ?>
         <b class="category <?php echo $cat_slug; ?>"><?php echo $cat_name; ?></b>
       <?php } ?>
       <h3><?php the_title(); ?></h3>
