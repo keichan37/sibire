@@ -375,7 +375,7 @@
   line-height: 1.4;
   padding: 0 3px;
   background-color: #f9f069;
-  font-family: "FOT-あおかね Std EB", "AokaneStd-EB";
+  font-family: "FOT-あおかね Std EB", "AokaneStd-EB", sans-serif;
 }
 #lp .topic-summary .owl-item a h5 {
   margin: 8px 0;
