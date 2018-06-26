@@ -589,6 +589,7 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   margin: 0px auto;
   margin-bottom: 15px;
   max-width: 400px;
+  padding: 0 10px;
 }
 .searchform:before, .searchform:after {
   content: ".";
