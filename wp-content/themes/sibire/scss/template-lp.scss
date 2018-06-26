@@ -309,6 +309,7 @@ $container: 1100px;
           width: auto;
           left: 50%;
           top: 0;
+          z-index: 2;
           -webkit-transform: translate(-50%, 0%);
           -moz-transform: translate(-50%, 0%);
           -ms-transform: translate(-50%, 0%);
@@ -322,12 +323,14 @@ $container: 1100px;
           position: absolute;
           top: 0;
           left: 0;
+          z-index: 3;
           color: #000000;
           font-size: 12px;
           line-height: 1.4;
           padding: 0 3px;
           background-color: #f9f069;
           font-family: $aokane, sans-serif;
+          @include transition;
         }
         h5 {
           margin: 8px 0;
