@@ -14,8 +14,8 @@
                     $cat_name = $category[0]->cat_name;
                     $cat_slug = $category[0]->category_nicename;
                   ?>
-                  <span class="single-category"><span class="icon icon-paper"></span><a href="/category/<?php echo $cat_slug; ?>"><?php echo $cat_name; ?></a></span>
-                  <time class="single-date" datetime="<?php the_time('c') ;?>"><span class="icon icon-watch"></span><?php the_time('Y.n.j') ;?></time>
+                  <span class="single-category"><span class="icon icon-folder"></span><a href="/category/<?php echo $cat_slug; ?>"><?php echo $cat_name; ?></a></span>
+                  <time class="single-date" datetime="<?php the_time('c') ;?>"><span class="icon icon-time"></span><?php the_time('Y.n.j') ;?></time>
                   <h1 class="single-title"><?php the_title(); ?></h1>
 
                   <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>

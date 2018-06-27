@@ -35,7 +35,7 @@ $(document).ready(function() {
     loop: true,
     lazyLoad: true,
     nav: true,
-    navText: ["","" ],
+    navText: ["<span class='icon icon-leftArrow'></span>","<span class='icon icon-rightArrow'></span>" ],
     items : 4,
     dots: false,
     autoHeight: true,

@@ -404,18 +404,16 @@ Description: 投稿ページ
   top: 50%;
   margin-top: -15px;
   float: none;
-  font-size: 16px;
-  background-image: url("images/single/owl-nav.png");
-  background-repeat: no-repeat;
-  background-size: 60px 30px;
-  background-position: 0 0;
+  font-size: 26px;
+  font-size: 26px;
+  text-align: center;
+  line-height: 30px;
+  color: #1b1464;
+  background: none;
 }
 #common .owl-nav .owl-prev:hover,
 #common .owl-nav .owl-next:hover {
-  opacity: 0.7;
-  -moz-opacity: 0.7;
-  -ms-filter: "alpha(opacity=$ratioms)";
-  background-color: #ffffff;
+  color: #261d8f;
 }
 #common .owl-nav .owl-prev {
   left: 0;

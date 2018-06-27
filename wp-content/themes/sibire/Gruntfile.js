@@ -24,7 +24,7 @@ module.exports = function (grunt) {
         files: {
           // 結合先のcssファイル名: 結合するcssファイル名
           'style.css': [
-            'scss/feather.css',
+            'scss/rdgothic-icons.css',
             'scss/normalize.css',
             'scss/owl.carousel.css',
             'scss/owl.theme.default.css',

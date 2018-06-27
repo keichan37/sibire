@@ -275,30 +275,6 @@ header .global_menu li.current-page-ancestor > a, header .global_menu li.current
   background-color: #1b1464;
   cursor: default;
 }
-header .global_menu li.current-page-ancestor.recruit > a, header .global_menu li.current-menu-item.recruit > a {
-  background-color: #49c6e8;
-}
-header .global_menu li.current-page-ancestor.recruit > a:hover, header .global_menu li.current-menu-item.recruit > a:hover {
-  background-color: #49c6e8;
-}
-header .global_menu li.current-page-ancestor.column > a, header .global_menu li.current-menu-item.column > a {
-  background-color: #dd4ae5;
-}
-header .global_menu li.current-page-ancestor.column > a:hover, header .global_menu li.current-menu-item.column > a:hover {
-  background-color: #dd4ae5;
-}
-header .global_menu li.current-page-ancestor.event > a, header .global_menu li.current-menu-item.event > a {
-  background-color: #6ecc3e;
-}
-header .global_menu li.current-page-ancestor.event > a:hover, header .global_menu li.current-menu-item.event > a:hover {
-  background-color: #6ecc3e;
-}
-header .global_menu li.current-page-ancestor.interview > a, header .global_menu li.current-menu-item.interview > a {
-  background-color: #ff9e55;
-}
-header .global_menu li.current-page-ancestor.interview > a:hover, header .global_menu li.current-menu-item.interview > a:hover {
-  background-color: #ff9e55;
-}
 @keyframes show {
   from {
     opacity: 0;
@@ -381,13 +357,12 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   text-align: left;
   border-bottom: 2px solid #1B1464;
   height: 27px;
-  padding: 13px 15px 0 40px;
+  padding: 13px 15px 0 20px;
   font-size: 11px;
   white-space: nowrap;
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  background: url("images/common/icon-home.png") no-repeat top left 15px;
 }
 #common .breadcrumb a {
   color: #1B1464;
@@ -536,12 +511,16 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   display: block;
   width: 60px;
   height: 60px;
-  background: #8cc63f url("images/common/scroll-top.png") no-repeat;
+  background-color: #8cc63f;
   position: fixed;
   bottom: 0;
   right: 0;
   z-index: 99;
   margin: 0 20px 20px 0;
+  color: #ffffff;
+  font-size: 33px;
+  text-align: center;
+  line-height: 60px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -554,7 +533,7 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   position: absolute;
 }
 .scroll-top:hover {
-  background: #7fb636 url("images/common/scroll-top.png") no-repeat;
+  background-color: #7fb636;
 }
 
 .tag-list {
