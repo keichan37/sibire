@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'rdgothic-icons';
+  src: url('fonts/RdGothic-icons.eot');
+  src: url('fonts/RdGothic-icons.eot?#iefix')format('embedded-opentype'),
+       url('fonts/RdGothic-icons.woff') format('woff'),
+       url('fonts/RdGothic-icons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon {
+  display: inline-block;
+  font-family: 'rdgothic-icons';
+  font-weight: normal;
+  font-style: normal;
+  user-select: none;
+  font-variant: normal;
+  text-transform: none;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-calendar:before    { content: "\f100"; }
+.icon-paper:before       { content: "\f101"; }
+.icon-chat:before        { content: "\f102"; }
+.icon-time:before        { content: "\f103"; }
+.icon-folder:before      { content: "\f104"; }
+.icon-topArrow:before    { content: "\f105"; }
+.icon-rightArrow:before  { content: "\f106"; }
+.icon-bottomArrow:before { content: "\f107"; }
+.icon-leftArrow:before   { content: "\f108"; }
+.icon-plus:before        { content: "\f109"; }
+.icon-gps:before         { content: "\f10A"; }
+.icon-home:before        { content: "\f10B"; }
+.icon-user:before        { content: "\f10C"; }
+.icon-search:before      { content: "\f10D"; }
+.icon-tag:before         { content: "\f10E"; }
+.icon-browser:before     { content: "\f10F"; }

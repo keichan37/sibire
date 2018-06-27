@@ -4,10 +4,11 @@
 <?php */ ?>
 
 <div class="breadcrumb">
+  <span class="icon icon-home"></span>
   <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
     <a href="<?php echo home_url(); ?>" itemprop="url">
       <span itemprop="title">ホーム</span>
-    </a>&nbsp;&gt;&nbsp;
+    </a>&nbsp;<span class="icon icon-rightArrow"></span>&nbsp;
   </span>
   
   <? php /* ?>固定ページ以外表示<?php */ ?>
@@ -25,7 +26,7 @@
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
       <a href="/category/<?php echo $cat_slug; ?>" itemprop="url">
         <span itemprop="title"><?php echo $cat_name; ?></a></span>
-      </a>&nbsp;&gt;&nbsp;
+      </a>&nbsp;<span class="icon icon-rightArrow"></span>&nbsp;
     </span>
   <?php } ?>
   

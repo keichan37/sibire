@@ -10,7 +10,7 @@
         </div>
         <table>
           <tr>
-            <th><span class="icon-link"></span></th>
+            <th><span class="icon icon-gps"></span></th>
             <td><a href="http://maps.google.com/maps?q=<?php echo $location['address']; ?>" target="_blank"><?php echo $location['address']; ?></a></td>
           </tr>
         </table>

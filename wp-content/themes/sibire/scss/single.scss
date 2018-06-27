@@ -384,15 +384,16 @@ Description: 投稿ページ
       top: 50%;
       margin-top: -15px;
       float: none;
-      font-size: 16px;
-      background-image: url("images/single/owl-nav.png");
-      background-repeat: no-repeat;
-      background-size: 60px 30px;
-      background-position: 0 0;
+      font-size: 26px;
+      font-size: 26px;
+      text-align: center;
+      line-height: 30px;
+      color: #1b1464;
+      background: none;
       &:hover {
-        @include opacity(.7);
-        background-color: #ffffff;
+        color: #261d8f;
       }
+
     }
     .owl-prev {
       left: 0;

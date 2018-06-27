@@ -374,13 +374,12 @@ $container: 1100px;
         top: 50%;
         margin-top: -15px;
         float: none;
-        font-size: 16px;
-        background-image: url("images/template-lp/owl-nav.png");
-        background-repeat: no-repeat;
-        background-size: 60px 30px;
-        background-position: 0 0;
+        font-size: 26px;
+        text-align: center;
+        line-height: 30px;
+        color: #8cc63f;
         &:hover {
-          @include opacity(.7);
+          color: #7fb636;
         }
       }
       .owl-prev {
