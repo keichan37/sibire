@@ -349,7 +349,9 @@
 }
 .paginate-nav a.prev span, .paginate-nav a.next span {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 16px;
+  min-width: auto;
+  padding: 0;
 }
 .paginate-nav a.prev:hover, .paginate-nav a.next:hover {
   background-color: #7dd152;
