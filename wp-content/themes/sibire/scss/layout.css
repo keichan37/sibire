@@ -613,12 +613,14 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   height: 38px;
   clear: none;
   width: 100%;
-  background: #000000 url("images/common/search.png") center center/25px 25px no-repeat;
-  text-indent: -9999px;
+  font-family: 'RdGothic-icons';
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #000000;
   border: none;
 }
 .searchform input[type="submit"]:hover {
-  background-color: #555555;
+  background-color: #333333;
 }
 
 @media (max-width: 1130px) {
