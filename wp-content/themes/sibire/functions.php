@@ -173,13 +173,13 @@ function pagination($pages = '', $range = 4) {
   }   
   if(1 != $pages) {
     echo "<nav class=\"paginate-nav\">";
-    if($paged > 1) echo "<a class=\"prev\" href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
+    if($paged > 1) echo "<a class=\"prev\" href='".get_pagenum_link($paged - 1)."'><span class='icon icon-leftArrow'></a>";
     for ($i=1; $i <= $pages; $i++) {
       if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )) {
         echo ($paged == $i)? "<span class=\"active\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
       }
     }
-    if ($paged < $showitems && $paged < $pages) echo "<a class=\"next\" href=\"".get_pagenum_link($paged + 1)."\">&rsaquo;</a>";  
+    if ($paged < $showitems && $paged < $pages) echo "<a class=\"next\" href=\"".get_pagenum_link($paged + 1)."\"><span class='icon icon-rightArrow'></a>";  
     echo "</nav>";
   }
 }
