@@ -308,7 +308,6 @@ $gothic-b: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
     min-width: 20px;
     font-size: 14px;
     line-height: 1.4;
-    font-family: $gothic;
   }
   span {
     color: #000000;
@@ -322,9 +321,11 @@ $gothic-b: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
     &.prev,
     &.next {
       background-color: #6ecc3e;
-      color: #ffffff;
       text-decoration: none;
       @include border-radius(20px);
+      span {
+        color: #ffffff;
+      }
       &:hover {
         background-color: #7dd152;
       }
