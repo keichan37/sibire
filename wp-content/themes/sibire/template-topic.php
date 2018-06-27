@@ -58,8 +58,8 @@
               'total' => $max_pages,
               'mid_size' => 12,
               'current' => ($paged ? $paged : 1),
-              'prev_text' => '&lsaquo;',
-              'next_text' => '&rsaquo;',
+              'prev_text' => '<span class="icon icon-leftArrow"></span>',
+              'next_text' => '<span class="icon icon-rightArrow"></span>',
             ));
           ?>
         </nav>
