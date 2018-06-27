@@ -24,10 +24,11 @@
         <h2><?php the_title(); ?></h2>
         <?php the_excerpt(); ?>
         <div class="post-table-info">
+          <span class="icon icon-category"></span><?php echo $catName ?></span>
           <?php if(has_tag()==true) : ?>
-            <span class="icon-tag"></span><span class="link-tag-wrap"><?php $posttags=get_the_tags();if($posttags){foreach($posttags as $tag){ if( $tag->slug == 'pr') continue; echo '<span class="link-tag">'.$tag->name.'</span> ';}} ?></span>
+            <span class="icon icon-tag"></span><span class="link-tag-wrap"><?php $posttags=get_the_tags();if($posttags){foreach($posttags as $tag){ if( $tag->slug == 'pr') continue; echo '<span class="link-tag">'.$tag->name.'</span> ';}} ?></span>
           <?php endif; ?>
-          <span class="icon-watch"></span><time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+          <span class="icon icon-time"></span><time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
         </div>
       </div>
     </a>

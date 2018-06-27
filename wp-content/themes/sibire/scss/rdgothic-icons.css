@@ -22,10 +22,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-event:before,
 .icon-calendar:before    { content: "\f100"; }
+.icon-column:before,
 .icon-paper:before       { content: "\f101"; }
+.icon-interview:before,
 .icon-chat:before        { content: "\f102"; }
 .icon-time:before        { content: "\f103"; }
+.icon-category:before,
 .icon-folder:before      { content: "\f104"; }
 .icon-topArrow:before    { content: "\f105"; }
 .icon-rightArrow:before  { content: "\f106"; }
@@ -34,7 +38,9 @@
 .icon-plus:before        { content: "\f109"; }
 .icon-gps:before         { content: "\f10A"; }
 .icon-home:before        { content: "\f10B"; }
+.icon-recruit:before,
 .icon-user:before        { content: "\f10C"; }
 .icon-search:before      { content: "\f10D"; }
 .icon-tag:before         { content: "\f10E"; }
+.icon-media:before,
 .icon-browser:before     { content: "\f10F"; }
