@@ -178,6 +178,9 @@ Description: 固定ページ
 #common .page-wrap .sitemap li a:hover {
   text-decoration: underline;
 }
+#common .page-wrap .sitemap li.menu-item-has-children > a:after {
+  content: '\f107';
+}
 #common .page-wrap .sitemap li .sub-menu {
   padding-left: 0px;
 }
