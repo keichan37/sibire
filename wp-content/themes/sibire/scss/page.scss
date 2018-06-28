@@ -80,11 +80,22 @@ Description: 固定ページ
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         a {
-          background: #ffffff url("images/page/page-nav-caret.png") right 10px top no-repeat;
+          position: relative;
+          background-color: #ffffff;
           padding: 0 15px;
           display: block;
           text-decoration: none;
           color: #1b1464;
+          &:after {
+            font-family: 'RdGothic-icons';
+            content: '\f106';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            font-size: 14px;
+            line-height: 1;
+            margin: -8px 5px 0 0;
+          }
           &:hover { background-color: #fafafa; }
         }
         &.current-menu-item {
@@ -92,7 +103,7 @@ Description: 固定ページ
           cursor: default;
           a {
             color: #ffffff;
-            background: #1b1464 url("images/page/page-nav-caret.png") right 10px top -31px no-repeat;
+            background-color: #1b1464;
             &:hover { background-color: #1b1464; }
           }
           .sub-menu {
@@ -101,11 +112,14 @@ Description: 固定ページ
               cursor: pointer;
               a {
                 color: #1b1464;
-                background: #ffffff url("images/page/page-nav-caret.png") right 10px top no-repeat;
+                background-color: #ffffff;
                 &:hover { background-color: #f2f2f2; }
               }
             }
           }
+        }
+        &.menu-item-has-children > a:after {
+          content: '\f107';
         }
         .sub-menu {
           margin: 0;
@@ -117,9 +131,6 @@ Description: 固定ページ
             border-bottom: 0;
             @include border-radius(0px);
             a {
-              &:before {
-                content: '↳ ';
-              }
             }
           }
         }
@@ -133,11 +144,24 @@ Description: 固定ページ
       min-width: 230px;
       li {
         margin: 0;
-        padding-left: 23px;
+        padding-left: 0px;
         min-height: 44px;
         line-height: 44px;
         list-style: none;
-        background: url("images/page/sitemap.png") no-repeat left top 13px;
+        &:before {
+          font-family: 'RdGothic-icons';
+          content: '\f106';
+          margin-right: 6px;
+          display: inline;
+          font-size: 10px;
+          line-height: 1;
+          padding: 3px 2px;
+          background-color: #1b1464;
+          color: #ffffff;
+          position: relative;
+          top: -2px;
+          @include border-radius(10px);
+        }
         a {
           color: #1b1464;
           text-decoration: none;
@@ -146,8 +170,13 @@ Description: 固定ページ
         .sub-menu {
           padding-left: 0px;  
           li {
-            background: url("images/page/sitemap-sub.png") no-repeat left 1px top 18px;
             padding-left: 13px;
+            &:before {
+              background: none;
+              color: #1b1464;
+              position: relative;
+              top: -2px;
+            }
           }
         }
       }

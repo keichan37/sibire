@@ -79,11 +79,22 @@ Description: 固定ページ
   -moz-border-radius: 3px;
 }
 #common .page-wrap .page-nav li a {
-  background: #ffffff url("images/page/page-nav-caret.png") right 10px top no-repeat;
+  position: relative;
+  background-color: #ffffff;
   padding: 0 15px;
   display: block;
   text-decoration: none;
   color: #1b1464;
+}
+#common .page-wrap .page-nav li a:after {
+  font-family: 'RdGothic-icons';
+  content: '\f106';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 14px;
+  line-height: 1;
+  margin: -8px 5px 0 0;
 }
 #common .page-wrap .page-nav li a:hover {
   background-color: #fafafa;
@@ -94,7 +105,7 @@ Description: 固定ページ
 }
 #common .page-wrap .page-nav li.current-menu-item a {
   color: #ffffff;
-  background: #1b1464 url("images/page/page-nav-caret.png") right 10px top -31px no-repeat;
+  background-color: #1b1464;
 }
 #common .page-wrap .page-nav li.current-menu-item a:hover {
   background-color: #1b1464;
@@ -105,10 +116,13 @@ Description: 固定ページ
 }
 #common .page-wrap .page-nav li.current-menu-item .sub-menu li a {
   color: #1b1464;
-  background: #ffffff url("images/page/page-nav-caret.png") right 10px top no-repeat;
+  background-color: #ffffff;
 }
 #common .page-wrap .page-nav li.current-menu-item .sub-menu li a:hover {
   background-color: #f2f2f2;
+}
+#common .page-wrap .page-nav li.menu-item-has-children > a:after {
+  content: '\f107';
 }
 #common .page-wrap .page-nav li .sub-menu {
   margin: 0;
@@ -125,9 +139,6 @@ Description: 固定ページ
   -o-border-radius: 0px;
   -ms-border-radius: 0px;
 }
-#common .page-wrap .page-nav li .sub-menu li a:before {
-  content: '↳ ';
-}
 #common .page-wrap .sitemap {
   margin: 0;
   padding: 0 0 0 40px;
@@ -137,11 +148,28 @@ Description: 固定ページ
 }
 #common .page-wrap .sitemap li {
   margin: 0;
-  padding-left: 23px;
+  padding-left: 0px;
   min-height: 44px;
   line-height: 44px;
   list-style: none;
-  background: url("images/page/sitemap.png") no-repeat left top 13px;
+}
+#common .page-wrap .sitemap li:before {
+  font-family: 'RdGothic-icons';
+  content: '\f106';
+  margin-right: 6px;
+  display: inline;
+  font-size: 10px;
+  line-height: 1;
+  padding: 3px 2px;
+  background-color: #1b1464;
+  color: #ffffff;
+  position: relative;
+  top: -2px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
 }
 #common .page-wrap .sitemap li a {
   color: #1b1464;
@@ -154,8 +182,13 @@ Description: 固定ページ
   padding-left: 0px;
 }
 #common .page-wrap .sitemap li .sub-menu li {
-  background: url("images/page/sitemap-sub.png") no-repeat left 1px top 18px;
   padding-left: 13px;
+}
+#common .page-wrap .sitemap li .sub-menu li:before {
+  background: none;
+  color: #1b1464;
+  position: relative;
+  top: -2px;
 }
 #common .page-wrap section {
   padding: 0 100px 30px 290px;
