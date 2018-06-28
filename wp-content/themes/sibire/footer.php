@@ -14,10 +14,6 @@
           <nav>
             <?php wp_nav_menu( array('menu' => 'footer_menu', 'menu_class' => 'footer_menu')); ?>
           </nav>
-          <ol class="tag-list">
-            <li><strong>人気タグ</strong>:</li>
-            <?php wp_list_categories('orderby=count&order=DESC&taxonomy=post_tag&title_li=&number=9&show_count=1');?>
-          </ol>
           <?php get_search_form(); ?>
           <small class="pay">有料職業紹介事業許可番号04-ユ-300214</small>
           <small class="copy">&copy; <?php echo date("Y"); ?> sibire ,inc. All Rights Reserved.</small>
