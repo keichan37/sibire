@@ -167,7 +167,7 @@ Description: 固定ページ
           text-decoration: none;
           &:hover { text-decoration: underline; }
         }
-        &.menu-item-has-children > a:after {
+        &.menu-item-has-children > a:before {
           content: '\f107';
         }
         .sub-menu {
