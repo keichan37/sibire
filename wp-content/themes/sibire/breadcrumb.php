@@ -7,7 +7,7 @@
   <span class="icon icon-home"></span>
   <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
     <a href="<?php echo home_url(); ?>" itemprop="url">
-      <span itemprop="title">ホーム</span>
+      <span itemprop="title">TOP</span>
     </a>&nbsp;<span class="icon icon-rightArrow"></span>&nbsp;
   </span>
   
