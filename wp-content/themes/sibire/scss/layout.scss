@@ -203,20 +203,20 @@ header {
         padding: 0 35px 0 20px;
         &::after {
           @include transition;
-          content: '';
+          content: '\f108';
+          font-family: 'RdGothic-icons';
+          line-height: 1;
+          font-size: 14px;
           position: absolute;
           display: block;
-          border-top: 4px solid #ffffff;
-          border-left: 4px solid transparent;
-          border-right: 4px solid transparent;
           top: 50%;
           right: 0;
-          margin: -2px 15px 0 0;
+          margin: -6px 5px 0 0;
         }
       }
       &.slicknav_open > a {
         &::after {
-          @include rotate(180deg);
+          @include rotate(-90deg);
         }
       }
       .sub-menu {
@@ -265,15 +265,15 @@ header .global_menu {
         padding-right: 25px;
         &::after {
           @include transition;
-          content: '';
+          content: '\f107';
+          font-family: 'RdGothic-icons';
+          line-height: 1;
+          font-size: 14px;
           position: absolute;
           display: block;
-          border-top: 4px solid #000000;
-          border-left: 4px solid transparent;
-          border-right: 4px solid transparent;
           top: 50%;
           right: 0;
-          margin: -2px 8px 0 0;
+          margin: -6px 5px 0 0;
         }
       }
       .sub-menu {
