@@ -368,6 +368,7 @@
   transition: 0.3s;
 }
 #lp .topic-summary a i {
+  z-index: 3;
   position: absolute;
   top: 0;
   right: 0;
@@ -375,6 +376,8 @@
   font-size: 12px;
   line-height: 1.3;
   color: red;
+  margin: 0 2px 0 0;
+  border-bottom: 2px solid red;
 }
 #lp .topic-summary a b {
   position: absolute;
