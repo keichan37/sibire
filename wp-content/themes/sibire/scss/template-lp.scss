@@ -393,6 +393,7 @@ $container: 1100px;
     &.voice {
       max-width: 530px;
       margin: 0px auto;
+      margin-bottom: 15px;
       a {
         margin: 0 2% 0 2%;
         @include border-box;
