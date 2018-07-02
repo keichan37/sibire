@@ -54,6 +54,7 @@
                 'paged' => $paged,
                 'post_type' => array('recruit','interview','column','event','niche','blog'),
                 'posts_per_page' => 10,
+                'tag__not_in' => 3762,
                 'post_status' => 'publish',
                 'has_password' => false,
               ); ?>
@@ -68,9 +69,26 @@
           <a class="button button-small" href="<?php echo get_permalink(37072); ?>">全て見る</a>
         </div>
 
-        <?php /* ?>
+        <?php /*
         <h2><b>“</b>sibire利用者の声<b>”</b><span>VOICE</span></h2>
-        <?php */ ?>
+        */ ?>
+        <?php
+          $args = array(
+            'paged' => $paged,
+            'post_type' => 'interview',
+            'posts_per_page' => -1,
+            'tag_id' => 3762,
+            'post_status' => 'publish',
+            'has_password' => false,
+          ); ?>
+        <?php query_posts( $args ); ?>
+          <div class="topic-summary voice">
+        <?php while (have_posts()) : the_post(); ?>
+          <?php get_template_part('partials/lp-grid'); ?>
+        <?php endwhile; ?>
+          </div>
+
+          <?php wp_reset_query();?>
       </div>
       
     </div>

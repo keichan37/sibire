@@ -294,71 +294,69 @@ $container: 1100px;
   .topic-summary {
     $img: 170px;
     margin-bottom: 15px;
-    .owl-item {
-      a {
-        display: block;
+    a {
+      display: block;
+      color: #000000;
+      text-decoration: none;
+      position: relative;
+      margin: 0 10px 10px 10px;
+      overflow: hidden;
+      padding-top: 170px;
+      img {
+        position: absolute;
+        height: $img;
+        width: auto;
+        left: 50%;
+        top: 0;
+        z-index: 2;
+        -webkit-transform: translate(-50%, 0%);
+        -moz-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+        vertical-align: bottom;
+        background: #ffffff url("images/loading.gif") no-repeat;
+        background-position: center center;
+        @include transition;
+      }
+      b {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
         color: #000000;
-        text-decoration: none;
-        position: relative;
-        margin: 0 10px 10px 10px;
-        overflow: hidden;
-        padding-top: 170px;
-        img {
-          position: absolute;
-          height: $img;
-          width: auto;
-          left: 50%;
-          top: 0;
-          z-index: 2;
-          -webkit-transform: translate(-50%, 0%);
-          -moz-transform: translate(-50%, 0%);
-          -ms-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
-          vertical-align: bottom;
-          background: #ffffff url("images/loading.gif") no-repeat;
-          background-position: center center;
-          @include transition;
-        }
-        b {
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 3;
-          color: #000000;
-          font-size: 12px;
-          line-height: 1.4;
-          padding: 0 3px;
-          background-color: #f9f069;
-          font-family: $aokane, sans-serif;
-          @include transition;
-        }
-        h5 {
-          margin: 8px 0;
-          font-size: 16px;
-          font-family: $gothic-b;
-          line-height: 1.6;
-          overflow : hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 3;
-          height: 77px;
-        }
-        p {
-          font-size: 14px;
-          line-height: 1.6;
-          margin: 0;
-          overflow : hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 1;
-          height: 23px;
-        }
-        &:hover {
-          h5 { text-decoration: underline; }
-          img { @include opacity; }
-        }
+        font-size: 12px;
+        line-height: 1.4;
+        padding: 0 3px;
+        background-color: #f9f069;
+        font-family: $aokane, sans-serif;
+        @include transition;
+      }
+      h5 {
+        margin: 8px 0;
+        font-size: 16px;
+        font-family: $gothic-b;
+        line-height: 1.6;
+        overflow : hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        height: 77px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+        overflow : hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        height: 23px;
+      }
+      &:hover {
+        h5 { text-decoration: underline; }
+        img { @include opacity; }
       }
     }
     .owl-nav {
@@ -390,6 +388,21 @@ $container: 1100px;
         right: 0;
         margin-right: -25px;
         background-position: -30px 0;
+      }
+    }
+    &.voice {
+      max-width: 530px;
+      margin: 0px auto;
+      a {
+        margin: 0 2% 0 2%;
+        @include border-box;
+        width: 46%;
+        float: left;
+        b.category { display: none; }
+      }
+      &:before,
+      &:after {
+        @include clearfix;
       }
     }
   }
