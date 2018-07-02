@@ -318,6 +318,15 @@ $container: 1100px;
         background-position: center center;
         @include transition;
       }
+      i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-family: $tsubame;
+        font-size: 12px;
+        line-height: 1.3;
+        color: red;
+      }
       b {
         position: absolute;
         top: 0;

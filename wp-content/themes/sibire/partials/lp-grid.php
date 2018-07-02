@@ -7,6 +7,14 @@
   $cat_slug = $category[0]->category_nicename;
 ?>
 <a class="single-related" href="<?php the_permalink(); ?>">
+  <?php
+    $days = 7;
+    $today = date_i18n('U');
+    $entry = get_the_time('U');
+    $kiji = date('U',($today - $entry)) / 86400 ;
+    if( $days > $kiji ){
+      echo '<i class="single-related-new">New</i>';
+  }?>
   <?php if (has_post_thumbnail()): ?>
     <img class="single-related-eyecatch owl-lazy" data-src="<?php echo $thumbnail_url[0]; ?>" />
   <?php else: ?>
