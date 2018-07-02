@@ -368,6 +368,7 @@
   transition: 0.3s;
 }
 #lp .topic-summary a i {
+  z-index: 3;
   position: absolute;
   top: 0;
   right: 0;

@@ -319,6 +319,7 @@ $container: 1100px;
         @include transition;
       }
       i {
+        z-index: 3;
         position: absolute;
         top: 0;
         right: 0;
