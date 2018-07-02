@@ -447,6 +447,7 @@
 #lp .topic-summary.voice {
   max-width: 530px;
   margin: 0px auto;
+  margin-bottom: 15px;
 }
 #lp .topic-summary.voice a {
   margin: 0 2% 0 2%;
