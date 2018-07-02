@@ -71,7 +71,7 @@ Description: 投稿ページ
       .single-category {
         display: inline-block;
         font-weight: 700;
-        color: #1b1464;
+        color: $color;
         font-size: 12px;
         .icon {
           position: relative;
@@ -79,7 +79,7 @@ Description: 投稿ページ
           top: -2px;
         }
         a {
-          color: #1b1464;
+          color: $color;
           text-decoration: none;
           font-family: $gothic-b;
         }
@@ -108,7 +108,7 @@ Description: 投稿ページ
     &:after {
       @include clearfix;
     }
-    border: 5px solid #1b1464;
+    border: 5px solid $color;
     margin: 0 0 40px 0;
     padding: 30px 15px 30px 25px;
     img {
@@ -141,8 +141,8 @@ Description: 投稿ページ
       font-weight: 700;
     }
     a li {
-      border-color: #1b1464;
-      color: #1b1464;
+      border-color: $color;
+      color: $color;
       font-weight: 400;
     }
   }
@@ -182,7 +182,7 @@ Description: 投稿ページ
       .partials-link-wrap {
         margin-bottom: 10px;
         .partials-link {
-          color: #1b1464;
+          color: $color;
           &:hover { text-decoration: none; }
         }
       }
@@ -243,7 +243,7 @@ Description: 投稿ページ
     }
 
     .single-map a {
-      color: #1b1464;
+      color: $color;
       &:hover { text-decoration: none; }
       font-family: $gothic;
       line-height: 1.4;
@@ -258,22 +258,27 @@ Description: 投稿ページ
       margin: 0 0 20px 0;
       padding: 0 6px;
       li {
-        list-style: none;
-        border: 1px solid #1b1464;
-        list-style: none;
-        border-radius: 2px;
-        width: auto;
-        min-height: 15px;
-        margin: 4px;
-        line-height: 15px;
-        padding: 4px 10px 4px 7px;
-        display: block;
         float: left;
-        text-align: left;
+        list-style: none;
         a {
+          @include transition;
+          text-align: left;
+          border: 1px solid $color;
+          list-style: none;
+          border-radius: 2px;
+          width: auto;
+          min-height: 15px;
+          margin: 4px;
+          line-height: 15px;
+          padding: 2px 5px 2px 2px;
+          display: block;
           font-size: 12px;
-          color: #1b1464;
+          color: $color;
           text-decoration: none;
+          &:hover {
+            color: #ffffff;
+            background-color: $color;
+          }
         }
         span {
           position: relative;
@@ -365,7 +370,7 @@ Description: 投稿ページ
         margin-top: -25px;
       }
       a {
-        color: #1b1464;
+        color: $color;
         &:hover { text-decoration: none; }
       }
     }
@@ -388,7 +393,7 @@ Description: 投稿ページ
       font-size: 26px;
       text-align: center;
       line-height: 30px;
-      color: #1b1464;
+      color: $color;
       background: none;
       &:hover {
         color: #261d8f;
