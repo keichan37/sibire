@@ -17,6 +17,9 @@
                   <span class="single-category"><span class="icon icon-<?php echo $cat_slug; ?>"></span><a href="/category/<?php echo $cat_slug; ?>"><?php echo $cat_name; ?></a></span>
                   <time class="single-date" datetime="<?php the_time('c') ;?>"><span class="icon icon-time"></span><?php the_time('Y.n.j') ;?></time>
                   <h1 class="single-title"><?php the_title(); ?></h1>
+                  <?php if ( is_user_logged_in() ): ?>
+                    <a href="/wp-admin/post.php?post=<?php the_ID(); ?>&action=edit">編集する</a>
+                  <?php endif; ?>
 
                   <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
 
@@ -51,9 +54,6 @@
 
 
                     <div class="single-content mce-content-body">
-                      <?php if ( is_user_logged_in() ): ?>
-                        <a href="/wp-admin/post.php?post=<?php the_ID(); ?>&action=edit">編集する</a>
-                      <?php endif; ?>
                       <?php if ( in_array(get_post_type(), array('recruit')) ): ?>
                         <?php $image = get_field('company_image1'); if( !empty($image) ): ?>
                           <h4>会社の雰囲気</h4>
