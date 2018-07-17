@@ -186,7 +186,7 @@
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
   font-size: 19px;
   line-height: 1.4;
-  margin: 0 0 15px 0;
+  margin: 0 0 5px 0;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -204,7 +204,7 @@
   color: #888888;
   font-size: 13px;
   line-height: 1.5;
-  margin: 0 0 5px 0;
+  margin: 0 0 15px 0;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
