@@ -1,3 +1,9 @@
+:root {
+  --color: #1b1464;
+  --yellow: #f9f069;
+  --green: #8cc63f;
+}
+
 .mce-content-body {
   font-family: 'FOT-筑紫ゴシック Pr5 D', 'TsukuGoPr5-D', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
   -webkit-tap-highlight-color: rgba(28, 135, 201, 0.3);
@@ -30,7 +36,7 @@
   font-size: 16px;
   text-align: center;
   display: inline-block;
-  background-color: #1b1464;
+  background-color: var(--color);
   color: #ffffff;
   text-decoration: none;
   line-height: 1.4;
@@ -51,7 +57,6 @@
   -o-border-radius: 25px;
   -ms-border-radius: 25px;
 }
-
 .mce-content-body strong a:hover {
   background-color: #261d8f;
 }
@@ -62,7 +67,7 @@
 .mce-content-body h4,
 .mce-content-body h5,
 .mce-content-body h6 {
-  color: #1B1464;
+  color: var(--color);
   margin: 20px 0 0 0;
   padding-bottom: 10px;
   font-family: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
@@ -106,7 +111,7 @@
 
 .mce-content-body h4 {
   font-size: 16px;
-  border-bottom: 1.5px solid #1B1464;
+  border-bottom: 1.5px solid var(--color);
   padding: 20px 0 5px 0;
   margin: 0 0 5px 0;
 }
@@ -131,7 +136,7 @@
 }
 
 .mce-content-body a {
-  color: #1B1464;
+  color: var(--color);
 }
 .mce-content-body a:hover {
   text-decoration: none;
@@ -139,7 +144,7 @@
 
 .mce-content-body hr {
   border: none;
-  border-top: 2px solid #1B1464;
+  border-top: 2px solid var(--color);
   margin: 0 0 10px 0;
 }
 

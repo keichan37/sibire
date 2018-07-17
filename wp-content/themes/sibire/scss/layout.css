@@ -106,7 +106,7 @@ header a.brand svg#brand {
   display: none;
 }
 .slicknav_btn:hover {
-  background-color: #15104f;
+  background-color: #241b86;
 }
 .slicknav_btn.slicknav_open {
   display: block;
@@ -203,13 +203,13 @@ header a.brand svg#brand {
   padding: 0;
 }
 .slicknav_nav li a:hover {
-  background-color: #15104f;
+  background-color: #241b86;
 }
 .slicknav_nav li.current-menu-item > a {
-  background-color: #100c3a;
+  background-color: #120d42;
 }
 .slicknav_nav li.current-menu-item > a:hover {
-  background-color: #100c3a;
+  background-color: #161153;
 }
 .slicknav_nav li.slicknav_parent > a {
   position: relative;
@@ -239,7 +239,7 @@ header a.brand svg#brand {
 }
 .slicknav_nav li.slicknav_parent .sub-menu {
   padding: 0;
-  background-color: #211879;
+  background-color: #090620;
 }
 
 header .menu-global_menu-container {
@@ -355,7 +355,7 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
 }
 #common .breadcrumb {
   text-align: left;
-  border-bottom: 2px solid #1B1464;
+  border-bottom: 2px solid #1b1464;
   height: 27px;
   padding: 13px 15px 0 20px;
   font-size: 11px;
@@ -365,7 +365,7 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   text-overflow: ellipsis;
 }
 #common .breadcrumb a {
-  color: #1B1464;
+  color: #1b1464;
   text-decoration: none;
 }
 #common .breadcrumb a:hover {
@@ -533,7 +533,7 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   position: absolute;
 }
 .scroll-top:hover {
-  background-color: #7fb636;
+  background-color: #9fcf5e;
 }
 
 .tag-list {

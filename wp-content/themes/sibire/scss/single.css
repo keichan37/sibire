@@ -74,6 +74,12 @@ Description: 投稿ページ
   color: #1b1464;
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
 }
+#common .single-wrap article a.single-edit {
+  color: #1b1464;
+}
+#common .single-wrap article a.single-edit:hover {
+  text-decoration: none;
+}
 #common .single-wrap article .single-eyecatch {
   max-width: 100%;
 }
@@ -242,9 +248,9 @@ Description: 投稿ページ
   padding-top: 20px;
 }
 #common aside h4 {
-  color: #1B1464;
+  color: #1b1464;
   font-size: 16px;
-  border-bottom: 1.5px solid #1B1464;
+  border-bottom: 1.5px solid #1b1464;
   padding: 20px 0 5px 0;
   margin: 0 0 10px 0;
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
@@ -534,6 +540,9 @@ Description: 投稿ページ
     background-color: #1b1464;
     right: 0;
     margin: 0 5px 0 0;
+  }
+  #common .single-wrap .single-left article a.single-edit {
+    padding: 0 10px;
   }
   #common .single-wrap .single-left article iframe {
     width: 100%;
