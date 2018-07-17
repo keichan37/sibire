@@ -520,7 +520,7 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   color: #ffffff;
   font-size: 33px;
   text-align: center;
-  line-height: 60px;
+  line-height: 1.7;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
