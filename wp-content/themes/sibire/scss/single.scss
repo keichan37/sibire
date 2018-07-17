@@ -69,19 +69,24 @@ Description: 投稿ページ
         max-width: 100%;
       }
       .single-category {
-        display: inline-block;
-        font-weight: 700;
-        color: $color;
-        font-size: 12px;
-        .icon {
-          position: relative;
-          margin-right: 3px;
-          top: -2px;
-        }
         a {
-          color: $color;
+          padding: 0 5px;
+          display: inline-block;
+          font-weight: 700;
+          color: #000000;
+          font-size: 12px;
+          background-color: $yellow;
+          @include transition;
           text-decoration: none;
-          font-family: $gothic-b;
+          font-family: $aokane;
+          .icon {
+            position: relative;
+            margin-right: 3px;
+            top: -1px;
+          }
+          &:hover {
+            background-color: darken($yellow,15%);
+          }
         }
       }
       time.single-date {

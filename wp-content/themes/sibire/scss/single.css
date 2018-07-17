@@ -77,21 +77,27 @@ Description: 投稿ページ
 #common .single-wrap article .single-eyecatch {
   max-width: 100%;
 }
-#common .single-wrap article .single-category {
+#common .single-wrap article .single-category a {
+  padding: 0 5px;
   display: inline-block;
   font-weight: 700;
-  color: #1b1464;
+  color: #000000;
   font-size: 12px;
+  background-color: #f9f069;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+  font-family: "FOT-あおかね Std EB", "AokaneStd-EB";
 }
-#common .single-wrap article .single-category .icon {
+#common .single-wrap article .single-category a .icon {
   position: relative;
   margin-right: 3px;
-  top: -2px;
+  top: -1px;
 }
-#common .single-wrap article .single-category a {
-  color: #1b1464;
-  text-decoration: none;
-  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
+#common .single-wrap article .single-category a:hover {
+  background-color: #f6e91f;
 }
 #common .single-wrap article time.single-date {
   color: #888888;
