@@ -94,7 +94,7 @@ Description: 検索結果
 }
 #search ul.post-table li a [class^="icon-"],
 #search ul.post-table li a [class*=" icon-"] {
-  color: #8cc63f;
+  color: #1b1464;
   font-size: 13px;
   position: relative;
   top: -2px;
@@ -105,10 +105,10 @@ Description: 検索結果
   font-weight: normal;
 }
 #search ul.post-table li a:hover {
-  border-color: #8cc63f;
+  border-color: #1b1464;
 }
 #search ul.post-table li a:hover h2 {
-  color: #8cc63f;
+  color: #1b1464;
 }
 #search ul.post-table li a:hover img {
   opacity: 0.9;
@@ -135,7 +135,7 @@ Description: 検索結果
   height: 40px;
   text-align: center;
   line-height: 40px;
-  color: #8cc63f;
+  color: #1b1464;
 }
 #search nav.pagination-wrap ul.pagination:after, #search nav.pagination-wrap ul.pagination:before {
   content: ".";

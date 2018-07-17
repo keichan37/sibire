@@ -52,7 +52,7 @@ Description: 投稿ページ
   line-height: 1.4;
   margin: 15px 0 10px 0;
   padding-bottom: 5px;
-  color: #8cc63f;
+  color: #1b1464;
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
   position: relative;
 }
@@ -63,7 +63,7 @@ Description: 投稿ページ
   top: 0;
   width: 2px;
   height: 100%;
-  background-color: #8cc63f;
+  background-color: #1b1464;
   left: 0;
   margin: 0 0 0 -18px;
 }
@@ -71,11 +71,11 @@ Description: 投稿ページ
   font-size: 15px;
   font-weight: 400;
   margin: 0 0 15px 0;
-  color: #8cc63f;
+  color: #1b1464;
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
 }
 #common .single-wrap article a.single-edit {
-  color: #8cc63f;
+  color: #1b1464;
 }
 #common .single-wrap article a.single-edit:hover {
   text-decoration: none;
@@ -122,7 +122,7 @@ Description: 投稿ページ
   background-position: center center;
 }
 #common .single-top-box {
-  border: 5px solid #8cc63f;
+  border: 5px solid #1b1464;
   margin: 0 0 40px 0;
   padding: 30px 15px 30px 25px;
 }
@@ -163,8 +163,8 @@ Description: 投稿ページ
   font-weight: 700;
 }
 #common .link_page_navi a li {
-  border-color: #8cc63f;
-  color: #8cc63f;
+  border-color: #1b1464;
+  color: #1b1464;
   font-weight: 400;
 }
 #common .sns-share {
@@ -208,7 +208,7 @@ Description: 投稿ページ
   margin-bottom: 10px;
 }
 #common .partials .partials-registration-wrap .partials-link-wrap .partials-link {
-  color: #8cc63f;
+  color: #1b1464;
 }
 #common .partials .partials-registration-wrap .partials-link-wrap .partials-link:hover {
   text-decoration: none;
@@ -248,9 +248,9 @@ Description: 投稿ページ
   padding-top: 20px;
 }
 #common aside h4 {
-  color: #8cc63f;
+  color: #1b1464;
   font-size: 16px;
-  border-bottom: 1.5px solid #8cc63f;
+  border-bottom: 1.5px solid #1b1464;
   padding: 20px 0 5px 0;
   margin: 0 0 10px 0;
   font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
@@ -268,7 +268,7 @@ Description: 投稿ページ
   -ms-filter: "alpha(opacity=$ratioms)";
 }
 #common aside .single-map a {
-  color: #8cc63f;
+  color: #1b1464;
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
   line-height: 1.4;
 }
@@ -298,7 +298,7 @@ Description: 投稿ページ
   -ms-transition: 0.3s;
   transition: 0.3s;
   text-align: left;
-  border: 1px solid #8cc63f;
+  border: 1px solid #1b1464;
   list-style: none;
   border-radius: 2px;
   width: auto;
@@ -308,12 +308,12 @@ Description: 投稿ページ
   padding: 2px 5px 2px 2px;
   display: block;
   font-size: 12px;
-  color: #8cc63f;
+  color: #1b1464;
   text-decoration: none;
 }
 #common aside .single-tag li a:hover {
   color: #ffffff;
-  background-color: #8cc63f;
+  background-color: #1b1464;
 }
 #common aside .single-tag li span {
   position: relative;
@@ -407,7 +407,7 @@ Description: 投稿ページ
   margin-top: -25px;
 }
 #common .single-related-list li a {
-  color: #8cc63f;
+  color: #1b1464;
 }
 #common .single-related-list li a:hover {
   text-decoration: none;
@@ -428,7 +428,7 @@ Description: 投稿ページ
   font-size: 26px;
   text-align: center;
   line-height: 30px;
-  color: #8cc63f;
+  color: #1b1464;
   background: none;
 }
 #common .owl-nav .owl-prev:hover,
@@ -537,7 +537,7 @@ Description: 投稿ページ
     top: 0;
     width: 2px;
     height: 100%;
-    background-color: #8cc63f;
+    background-color: #1b1464;
     right: 0;
     margin: 0 5px 0 0;
   }
