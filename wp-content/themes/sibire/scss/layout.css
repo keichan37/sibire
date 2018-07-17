@@ -100,13 +100,13 @@ header a.brand svg#brand {
   display: block;
   width: 40px;
   height: 40px;
-  background-color: #1b1464;
+  background-color: #8cc63f;
   right: 0;
   top: 0;
   display: none;
 }
 .slicknav_btn:hover {
-  background-color: #15104f;
+  background-color: #9fcf5e;
 }
 .slicknav_btn.slicknav_open {
   display: block;
@@ -178,7 +178,7 @@ header a.brand svg#brand {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   position: fixed;
   z-index: 10000;
-  background-color: #1b1464;
+  background-color: #8cc63f;
   margin: 0;
   right: 0;
   top: 0;
@@ -203,13 +203,13 @@ header a.brand svg#brand {
   padding: 0;
 }
 .slicknav_nav li a:hover {
-  background-color: #15104f;
+  background-color: #9fcf5e;
 }
 .slicknav_nav li.current-menu-item > a {
-  background-color: #100c3a;
+  background-color: #77aa32;
 }
 .slicknav_nav li.current-menu-item > a:hover {
-  background-color: #100c3a;
+  background-color: #81ba37;
 }
 .slicknav_nav li.slicknav_parent > a {
   position: relative;
@@ -239,7 +239,7 @@ header a.brand svg#brand {
 }
 .slicknav_nav li.slicknav_parent .sub-menu {
   padding: 0;
-  background-color: #211879;
+  background-color: #618a29;
 }
 
 header .menu-global_menu-container {
@@ -272,7 +272,7 @@ header .global_menu li a:hover {
 }
 header .global_menu li.current-page-ancestor > a, header .global_menu li.current-menu-item > a {
   color: #ffffff;
-  background-color: #1b1464;
+  background-color: #8cc63f;
   cursor: default;
 }
 @keyframes show {
@@ -343,7 +343,7 @@ header .global_menu li.menu-item-has-children.current-menu-item > a::after {
   border-top-color: #ffffff;
 }
 header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
-  background-color: #1b1464;
+  background-color: #8cc63f;
 }
 
 #common {
@@ -355,7 +355,7 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
 }
 #common .breadcrumb {
   text-align: left;
-  border-bottom: 2px solid #1B1464;
+  border-bottom: 2px solid #8cc63f;
   height: 27px;
   padding: 13px 15px 0 20px;
   font-size: 11px;
@@ -365,7 +365,7 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   text-overflow: ellipsis;
 }
 #common .breadcrumb a {
-  color: #1B1464;
+  color: #8cc63f;
   text-decoration: none;
 }
 #common .breadcrumb a:hover {
@@ -533,7 +533,7 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   position: absolute;
 }
 .scroll-top:hover {
-  background-color: #7fb636;
+  background-color: #9fcf5e;
 }
 
 .tag-list {

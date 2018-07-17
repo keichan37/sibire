@@ -21,7 +21,7 @@ Description: 固定ページ
   }
   .page-wrap {
     background-color: #ffffff;
-    color: #1b1464;
+    color: $color;
     position: relative;
     img {
       max-width: 100%;
@@ -75,7 +75,7 @@ Description: 固定ページ
         min-height: 31px;
         line-height: 33px;
         font-size: 14px;
-        border: 1px solid #1b1464;
+        border: 1px solid $color;
         border-radius: 3px;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
@@ -85,7 +85,7 @@ Description: 固定ページ
           padding: 0 15px;
           display: block;
           text-decoration: none;
-          color: #1b1464;
+          color: $color;
           &:after {
             font-family: 'RdGothic-icons';
             content: '\f106';
@@ -103,15 +103,15 @@ Description: 固定ページ
           cursor: default;
           a {
             color: #ffffff;
-            background-color: #1b1464;
-            &:hover { background-color: #1b1464; }
+            background-color: $color;
+            &:hover { background-color: $color; }
           }
           .sub-menu {
             li {
               font-weight: 400;
               cursor: pointer;
               a {
-                color: #1b1464;
+                color: $color;
                 background-color: #ffffff;
                 &:hover { background-color: #f2f2f2; }
               }
@@ -156,14 +156,14 @@ Description: 固定ページ
           font-size: 10px;
           line-height: 1;
           padding: 3px 2px;
-          background-color: #1b1464;
+          background-color: $color;
           color: #ffffff;
           position: relative;
           top: -2px;
           @include border-radius(10px);
         }
         a {
-          color: #1b1464;
+          color: $color;
           text-decoration: none;
           &:hover { text-decoration: underline; }
         }
@@ -176,7 +176,7 @@ Description: 固定ページ
             padding-left: 13px;
             &:before {
               background: none;
-              color: #1b1464;
+              color: $color;
               position: relative;
               top: -2px;
             }
@@ -192,7 +192,7 @@ Description: 固定ページ
         line-height: 1.8;
         margin: 30px 13px;
         a {
-          color: #1b1464;
+          color: $color;
           &:hover { text-decoration: none; }
         }
       }
@@ -264,8 +264,8 @@ Description: 固定ページ
   #common {
     .page-wrap {
       .page-nav {
-        border-top: 2px solid #1b1464;
-        border-bottom: 2px solid #1b1464;
+        border-top: 2px solid $color;
+        border-bottom: 2px solid $color;
         position: relative;
         margin: 0 0 10px 0;
         padding: 0px;

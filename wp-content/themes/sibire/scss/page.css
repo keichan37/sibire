@@ -17,7 +17,7 @@ Description: 固定ページ
 }
 #common .page-wrap {
   background-color: #ffffff;
-  color: #1b1464;
+  color: #8cc63f;
   position: relative;
 }
 #common .page-wrap img {
@@ -73,7 +73,7 @@ Description: 固定ページ
   min-height: 31px;
   line-height: 33px;
   font-size: 14px;
-  border: 1px solid #1b1464;
+  border: 1px solid #8cc63f;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -84,7 +84,7 @@ Description: 固定ページ
   padding: 0 15px;
   display: block;
   text-decoration: none;
-  color: #1b1464;
+  color: #8cc63f;
 }
 #common .page-wrap .page-nav li a:after {
   font-family: 'RdGothic-icons';
@@ -105,17 +105,17 @@ Description: 固定ページ
 }
 #common .page-wrap .page-nav li.current-menu-item a {
   color: #ffffff;
-  background-color: #1b1464;
+  background-color: #8cc63f;
 }
 #common .page-wrap .page-nav li.current-menu-item a:hover {
-  background-color: #1b1464;
+  background-color: #8cc63f;
 }
 #common .page-wrap .page-nav li.current-menu-item .sub-menu li {
   font-weight: 400;
   cursor: pointer;
 }
 #common .page-wrap .page-nav li.current-menu-item .sub-menu li a {
-  color: #1b1464;
+  color: #8cc63f;
   background-color: #ffffff;
 }
 #common .page-wrap .page-nav li.current-menu-item .sub-menu li a:hover {
@@ -161,7 +161,7 @@ Description: 固定ページ
   font-size: 10px;
   line-height: 1;
   padding: 3px 2px;
-  background-color: #1b1464;
+  background-color: #8cc63f;
   color: #ffffff;
   position: relative;
   top: -2px;
@@ -172,7 +172,7 @@ Description: 固定ページ
   -ms-border-radius: 10px;
 }
 #common .page-wrap .sitemap li a {
-  color: #1b1464;
+  color: #8cc63f;
   text-decoration: none;
 }
 #common .page-wrap .sitemap li a:hover {
@@ -189,7 +189,7 @@ Description: 固定ページ
 }
 #common .page-wrap .sitemap li .sub-menu li:before {
   background: none;
-  color: #1b1464;
+  color: #8cc63f;
   position: relative;
   top: -2px;
 }
@@ -203,7 +203,7 @@ Description: 固定ページ
   margin: 30px 13px;
 }
 #common .page-wrap section .page-content a {
-  color: #1b1464;
+  color: #8cc63f;
 }
 #common .page-wrap section .page-content a:hover {
   text-decoration: none;
@@ -292,8 +292,8 @@ Description: 固定ページ
 
 @media (max-width: 815px) {
   #common .page-wrap .page-nav {
-    border-top: 2px solid #1b1464;
-    border-bottom: 2px solid #1b1464;
+    border-top: 2px solid #8cc63f;
+    border-bottom: 2px solid #8cc63f;
     position: relative;
     margin: 0 0 10px 0;
     padding: 0px;

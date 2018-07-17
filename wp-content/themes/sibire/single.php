@@ -18,7 +18,7 @@
                   <time class="single-date" datetime="<?php the_time('c') ;?>"><span class="icon icon-time"></span><?php the_time('Y.n.j') ;?></time>
                   <h1 class="single-title"><?php the_title(); ?></h1>
                   <?php if ( is_user_logged_in() ): ?>
-                    <a href="/wp-admin/post.php?post=<?php the_ID(); ?>&action=edit">編集する</a>
+                    <a class="single-edit" href="/wp-admin/post.php?post=<?php the_ID(); ?>&action=edit">編集する</a>
                   <?php endif; ?>
 
                   <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
