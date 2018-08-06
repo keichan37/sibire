@@ -1,4 +1,4 @@
-<Files ~ ".(gif|jpe?g|png|ico)$">
+Files ~ ".(gif|jpe?g|png|ico)$">
 	Header set Cache-Control "max-age=2592000, public"
 </Files>
 <IfModule mod_deflate.c>
@@ -23,6 +23,6 @@
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.php [L]
   Options +FollowSymLinks
-  RewriteCond %{HTTP_HOST} ^sibire\.co\.jp$
+  RewriteCond %{HTTP_HOST} ^www\.sibire\.co\.jp$
   RewriteRule ^(.*)$ https://www.sibire.co.jp/$1 [R=301,L]
 </IfModule>
