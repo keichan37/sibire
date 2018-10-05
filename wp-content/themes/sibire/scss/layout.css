@@ -254,7 +254,7 @@ header .global_menu li {
   list-style: none;
   line-height: 18px;
   float: left;
-  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D", sans-serif;
 }
 header .global_menu li a {
   position: relative;
@@ -459,7 +459,7 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   list-style: none;
   font-size: 12px;
   line-height: 16px;
-  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D", sans-serif;
 }
 #footer .footer_menu li a {
   color: #000000;
@@ -472,7 +472,7 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   float: left;
   padding: 0 20px 10px 10px;
   margin-bottom: 10px;
-  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E", sans-serif;
 }
 #footer .footer_menu > li > a {
   margin-bottom: 5px;
