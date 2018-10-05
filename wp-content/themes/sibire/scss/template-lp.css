@@ -1,6 +1,6 @@
 @charset "UTF-8";
 #lp {
-  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D", sans-serif;
 }
 #lp .container {
   max-width: 1120px;
@@ -46,7 +46,7 @@
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  font-family: "FOT-アンチックセザンヌ Pro M", "AnticCezannePro-M";
+  font-family: "FOT-アンチックセザンヌ Pro M", "AnticCezannePro-M", sans-serif;
   font-size: 12px;
   line-height: 1.25;
   background-repeat: no-repeat;
@@ -113,7 +113,7 @@
   width: 266px;
   height: 52px;
   font-size: 20px;
-  font-family: "FOT-くろかね Std EB", "KurokaneStd-EB";
+  font-family: "FOT-くろかね Std EB", "KurokaneStd-EB", sans-serif;
   text-decoration: none;
   border: 4px solid #000000;
   color: #000000;
@@ -147,7 +147,7 @@
 #lp h2 {
   text-align: center;
   font-size: 28px;
-  font-family: "FOT-くろかね Std EB", "KurokaneStd-EB";
+  font-family: "FOT-くろかね Std EB", "KurokaneStd-EB", sans-serif;
   position: relative;
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
@@ -157,7 +157,7 @@
 }
 #lp h2 b,
 #lp h2 span {
-  font-family: "FOT-つばめ Std R", "TsubameStd-R";
+  font-family: "FOT-つばめ Std R", "TsubameStd-R", sans-serif;
   color: #ff0000;
 }
 #lp h2 b {
@@ -224,7 +224,7 @@
   text-align: center;
   color: #ffffff;
   background-color: #8cc63f;
-  font-family: "FOT-つばめ Std R", "TsubameStd-R";
+  font-family: "FOT-つばめ Std R", "TsubameStd-R", sans-serif;
   font-size: 33px;
   line-height: 1.1;
   padding: 0 3%;
@@ -248,7 +248,7 @@
   font-size: 17px;
   line-height: 1.4;
   display: inline-block;
-  font-family: "FOT-くろかね Std EB", "KurokaneStd-EB";
+  font-family: "FOT-くろかね Std EB", "KurokaneStd-EB", sans-serif;
   max-width: 81%;
 }
 #lp ul.service li h3 strong:after {
@@ -324,7 +324,7 @@
   font-size: 15px;
   line-height: 1.4;
   padding: 10px;
-  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E", sans-serif;
   margin: 0px auto;
 }
 #lp .message .caret {
@@ -372,7 +372,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  font-family: "FOT-つばめ Std R", "TsubameStd-R";
+  font-family: "FOT-つばめ Std R", "TsubameStd-R", sans-serif;
   font-size: 12px;
   line-height: 1.3;
   color: red;
@@ -389,7 +389,7 @@
   line-height: 1.4;
   padding: 0 3px;
   background-color: #f9f069;
-  font-family: "FOT-あおかね Std EB", "AokaneStd-EB", sans-serif;
+  font-family: "FOT-あおかね Std EB", "AokaneStd-EB", sans-serif, sans-serif;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -398,7 +398,7 @@
 #lp .topic-summary a h5 {
   margin: 8px 0;
   font-size: 16px;
-  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E", sans-serif;
   line-height: 1.6;
   overflow: hidden;
   text-overflow: ellipsis;

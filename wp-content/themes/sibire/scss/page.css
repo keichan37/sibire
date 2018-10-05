@@ -13,7 +13,7 @@ Description: 固定ページ
   margin: 0;
   padding: 30px 0 0 0;
   text-align: center;
-  font-family: "FOT-くろかね Std EB", "KurokaneStd-EB";
+  font-family: "FOT-くろかね Std EB", "KurokaneStd-EB", sans-serif;
 }
 #common .page-wrap {
   background-color: #ffffff;
@@ -218,7 +218,7 @@ Description: 固定ページ
 }
 #common .page-wrap .authors {
   color: #000000;
-  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D";
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D", sans-serif;
 }
 #common .page-wrap .authors:before, #common .page-wrap .authors:after {
   content: ".";
@@ -247,7 +247,7 @@ Description: 固定ページ
 }
 #common .page-wrap .authors .author strong {
   display: block;
-  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E";
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E", sans-serif;
   font-size: 22px;
   line-height: 1.4;
   margin-bottom: 10px;
