@@ -28,11 +28,11 @@
 }
 
 .mce-content-body strong {
-  font-family: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
+  font-family: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E', sans-serif;
 }
 
 .mce-content-body strong a {
-  font-family: 'FOT-筑紫A丸ゴシック Std D', 'TsukuARdGothicStd-D';
+  font-family: 'FOT-筑紫A丸ゴシック Std D', 'TsukuARdGothicStd-D', sans-serif;
   font-size: 16px;
   text-align: center;
   display: inline-block;
@@ -70,7 +70,7 @@
   color: var(--color);
   margin: 20px 0 0 0;
   padding-bottom: 10px;
-  font-family: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E';
+  font-family: 'FOT-筑紫ゴシック Pro E', 'TsukuGoPro-E', sans-serif;
 }
 
 
