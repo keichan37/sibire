@@ -1,5 +1,6 @@
 # WordPress(シビレ)
 ## localhost
+### heroku-16 
 $ xcode-select --install  
 $ brew install git  
 $ brew install mysql  
