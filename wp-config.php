@@ -83,7 +83,7 @@ $table_prefix  = 'wp_';
  * @link http://wpdocs.osdn.jp/WordPress%E3%81%A7%E3%81%AE%E3%83%87%E3%83%90%E3%83%83%E3%82%B0
  */
 define('AUTOMATIC_UPDATER_DISABLED', true);
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 define('FORCE_SSL_ADMIN', true);
 define('WP_POST_REVISIONS', false);
 
