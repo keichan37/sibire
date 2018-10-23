@@ -81,6 +81,8 @@
                   <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
                       <?php if ( in_array(get_post_type(), array('recruit')) ): ?>
                         <?php get_template_part('partials/single-table'); ?>
+                      <?php elseif ( in_array(get_post_type(), array('local-recruit')) ): ?>
+                        <?php get_template_part('partials/single-table-sub'); ?>
                       <?php endif; ?>
                       <?php get_template_part('partials/service'); ?>
                     </div>
