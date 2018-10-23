@@ -1,4 +1,4 @@
-<h4>求人情報</h3>
+<h4>求人情報</h4>
 <div class="mce-content-body">
   <table class="recruit-table">
     <tbody>
