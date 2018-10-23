@@ -79,9 +79,9 @@
                       <?php get_template_part('partials/link_pages'); //ページング ?>
 
                   <?php if ( !post_password_required( $post->ID ) ) : // パスワード保護?>
-                      <?php if ( in_array(get_post_type(), array('recruit')) ): ?>
+                      <?php if(is_category('recruit')) : ?>
                         <?php get_template_part('partials/single-table'); ?>
-                      <?php elseif ( in_array(get_post_type(), array('local-recruit')) ): ?>
+                      <?php elseif(is_category('local-recruit')) : ?>
                         <?php get_template_part('partials/single-table-sub'); ?>
                       <?php endif; ?>
                       <?php get_template_part('partials/service'); ?>
