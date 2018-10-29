@@ -5,7 +5,7 @@
     <div id="lp" class="feature">
       <div class="feature-cover">
         <h1>
-          <img src="<?php echo get_template_directory_uri(); ?>/images/template-feature/h1-wakayama.jpg" alt="<?php the_title(); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/template-feature/h1-wakayama.png" alt="<?php the_title(); ?>">
         </h1>
         <div class="feature-content"><?php the_content(); //本文 ?></div>
       </div>
