@@ -1,7 +1,10 @@
 <?php /* Template Name: 特集ページ */ ?>
 
   <?php get_header(); ?>
-
+    <?php
+      $tag = get_the_tags();
+      echo $tag->name;
+    ?>
     <div id="lp" class="feature">
       <div class="feature-cover">
         <h1>
