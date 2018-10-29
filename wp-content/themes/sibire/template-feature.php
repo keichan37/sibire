@@ -5,7 +5,7 @@
       $posttags = get_the_tags();
       $posttag = $posttags[0]->slug;
     ?>
-    <div id="lp" class="feature">
+    <div id="lp" class="feature <?php echo $posttag; ?>">
       <div class="feature-cover" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/template-feature/cover-<?php echo $posttag; ?>.jpg') ;">
         <h1>
         <img src="<?php echo get_template_directory_uri(); ?>/images/template-feature/h1-<?php echo $posttag; ?>.png" alt="<?php the_title(); ?>">

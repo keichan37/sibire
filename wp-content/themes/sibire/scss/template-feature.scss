@@ -4,7 +4,10 @@
 #lp.feature {
   .feature-cover {
     position: relative;
-    background: #95b2d6 url("images/template-feature/cover-wakayama.jpg") bottom center /cover no-repeat;
+    //background: #95b2d6 url("images/template-feature/cover-wakayama.jpg") bottom center /cover no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 120px 0 80px 0;
     margin-bottom: 30px;
     text-align: center;
@@ -21,6 +24,12 @@
     }
   }
   .section {
+  }
+
+  // タグごとに作成
+  &.wakayama {
+    .feature-cover { background-color: #95b2d6; }
+    h2 { b,span { color: #fbb03b; }}
   }
 }
 
