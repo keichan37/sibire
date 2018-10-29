@@ -1,6 +1,8 @@
 #lp.feature .feature-cover {
   position: relative;
-  background: #95b2d6 url("images/template-feature/cover-wakayama.jpg") bottom center/cover no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 120px 0 80px 0;
   margin-bottom: 30px;
   text-align: center;
@@ -15,6 +17,12 @@
 }
 #lp.feature .feature-cover .feature-content {
   padding: 0 10px;
+}
+#lp.feature.wakayama .feature-cover {
+  background-color: #95b2d6;
+}
+#lp.feature.wakayama h2 b, #lp.feature.wakayama h2 span {
+  color: #fbb03b;
 }
 
 @media (max-width: 768px) {
