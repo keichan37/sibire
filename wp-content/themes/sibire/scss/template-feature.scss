@@ -1,0 +1,32 @@
+@import "mixin";
+@import "variables";
+
+#lp.feature {
+  .feature-cover {
+    position: relative;
+    background: #95b2d6 url("images/template-feature/cover-wakayama.jpg") bottom center /cover no-repeat;
+    padding: 120px 0 80px 0;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #ffffff;
+    h1 {
+      margin: 0 0 150px 0;
+    }
+  }
+  .section {
+  }
+}
+
+@media(max-width: 930px) {
+  #lp.feature {
+    .section {
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  #lp.feature {
+    .feature-cover {
+    }
+  }
+}
