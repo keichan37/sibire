@@ -13,5 +13,14 @@
   max-width: 330px;
   height: auto;
 }
+#lp.feature .feature-cover .feature-content {
+  padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  #lp.feature .feature-cover .feature-content {
+    text-align: left;
+  }
+}
 
 /*# sourceMappingURL=template-feature.css.map */
