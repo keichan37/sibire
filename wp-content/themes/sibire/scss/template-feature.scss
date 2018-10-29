@@ -25,6 +25,11 @@
   }
   .section {
   }
+  h2 {
+    span {
+      text-transform: capitalize;
+    }
+  }
 
   // タグごとに作成
   &.wakayama {
