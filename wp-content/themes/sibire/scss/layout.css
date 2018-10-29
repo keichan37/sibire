@@ -19,22 +19,7 @@ header {
   height: 40px;
   padding: 0;
   text-align: center;
-  position: fixed;
-  z-index: 9999;
   width: 100%;
-  background-color: #ffffff;
-}
-header:after, header:before {
-  content: "";
-  display: block;
-  height: 20px;
-  width: 100%;
-  background: transparent url("images/common/header.png") repeat-x;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 0 0 -20px 0;
-  z-index: 9998;
 }
 header .header-inner {
   max-width: 1040px;
