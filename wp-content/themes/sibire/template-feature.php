@@ -33,7 +33,7 @@
           <?php wp_reset_query();?>
         </div>
 
-        <?php if (!empty($pagelink)): ?>
+        <?php if(post_custom('pagelink')): ?>
           <div class="section">
             <a class="pagelink" href="<?php echo $pagelink; ?>" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/template-feature/pagelink-<?php echo $posttag; ?>.jpg') ;">移住などに関する制度情報</a>
           </div>
