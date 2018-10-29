@@ -29,6 +29,20 @@
     span {
     }
   }
+  a.pagelink {
+    display: block;
+    width: 100%;
+    height: 640px;
+    color: #8cc63f;
+    border: 3px solid #000000;
+    @include border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    &:hover {
+      border-color: #8cc63f;
+    }
+  }
 
   // タグごとに作成
   &.wakayama {
