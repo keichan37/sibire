@@ -6,7 +6,6 @@
       $posttag = $posttags[0]->slug;
     ?>
     <div id="lp" class="feature <?php echo $posttag; ?>">
-      <div class="feature-cover" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/template-feature/cover-<?php echo $posttag; ?>.jpg') ;">
       <?php /* <div class="feature-cover" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/template-feature/cover-<?php echo $posttag; ?>.jpg') ;">*/ ?>
       <div class="feature-cover" style="background-image: url(' <?  $coverimage = get_field('coverimage');if($coverimage){ foreach((array)$coverimage as $value) {echo $value;}} ?>') ;">
         <h1>
