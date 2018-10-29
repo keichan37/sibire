@@ -48,6 +48,9 @@
 }
 
 @media (max-width: 768px) {
+  #lp.feature .feature-cover h1 img {
+    max-width: 95%;
+  }
   #lp.feature .feature-cover .feature-content {
     text-align: left;
   }
