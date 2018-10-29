@@ -2,19 +2,18 @@
 
   <?php get_header(); ?>
     <?php
-      $tag = get_the_tags();
-      echo $tag->name;
+      $posttags = get_the_tags();
     ?>
     <div id="lp" class="feature">
       <div class="feature-cover">
         <h1>
-          <img src="<?php echo get_template_directory_uri(); ?>/images/template-feature/h1-wakayama.png" alt="<?php the_title(); ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-feature/h1-<?php if ( $posttags[0] ) {echo $posttags[0]->name;} ?>.png" alt="<?php the_title(); ?>">
         </h1>
         <div class="feature-content"><?php the_content(); //本文 ?></div>
       </div>
       <div class="container">
         <div class="section">
-          <h2><b>“</b>求人情報<b>”</b><span>WAKAYAMA</span></h2>
+          <h2><b>“</b>求人情報<b>”</b><span><?php if ( $posttags[0] ) {echo $posttags[0]->name;} ?></span></h2>
           <?php
             $args = array(
               'paged' => $paged,
@@ -34,7 +33,7 @@
         </div>
 
         <div class="section">
-          <h2><b>“</b>トピック<b>”</b><span>WAKAYAMA</span></h2>
+          <h2><b>“</b>トピック<b>”</b><span><?php if ( $posttags[0] ) {echo $posttags[0]->name;} ?></span></h2>
           <?php
             $args = array(
               'paged' => $paged,
