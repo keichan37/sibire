@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIE,0BAAe;EACb,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,uFAAwF;EACpG,OAAO,EAAE,cAAc;EACvB,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,MAAM;EAClB,KAAK,EAAE,OAAO;;AACd,6BAAG;EACD,MAAM,EAAE,WAAW",
+"sources": ["template-feature.scss"],
+"names": [],
+"file": "template-feature.css"
+}

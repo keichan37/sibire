@@ -5,7 +5,7 @@
     <div id="lp" class="feature">
       <div class="feature-cover">
         <h1>
-          <img src="<?php echo get_template_directory_uri(); ?>/images/template-feature/h1-wakayama.jpg" alt="<?php the_title(); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/template-feature/h1-wakayama.png" alt="<?php the_title(); ?>">
         </h1>
         <div class="feature-content"><?php the_content(); //本文 ?></div>
       </div>
@@ -35,17 +35,18 @@
           <?php
             $args = array(
               'paged' => $paged,
-              'post_type' => array('recruit','interview','column','event','blog'),
+              'post_type' => array('interview','column','event','blog'),
               'tag' => 'wakayama',
               'posts_per_page' => 12,
               'post_status' => 'publish',
               'has_password' => false,
             ); ?>
-          <div class="summary-grid-wrap">
-            <?php if(have_posts()): while(have_posts()):the_post(); ?>
-              <?php get_template_part('partials/summary-grid'); ?>
-            <?php endwhile; endif; ?>
-          </div>
+          <?php query_posts( $args ); ?>
+            <div class="topic-summary owl-carousel">
+          <?php while (have_posts()) : the_post(); ?>
+            <?php get_template_part('partials/lp-grid'); ?>
+          <?php endwhile; ?>
+            </div>
           <?php wp_reset_query();?>
         </div>
 
