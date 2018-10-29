@@ -35,7 +35,7 @@
 
         <?php if(post_custom('pagelink')): ?>
           <div class="section">
-            <a class="pagelink" href="<?php echo $pagelink; ?>" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/template-feature/pagelink-<?php echo $posttag; ?>.jpg') ;"><img src="<?php echo get_template_directory_uri(); ?>/images/template-feature/pagelinktext.png" alt="移住などに関する制度情報"></a>
+            <a class="pagelink" href="<?  $pagelink = get_field('pagelink');if($pagelink){ foreach((array)$pagelink as $value) {echo $value;}} ?>" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/template-feature/pagelink-<?php echo $posttag; ?>.jpg') ;"><img src="<?php echo get_template_directory_uri(); ?>/images/template-feature/pagelinktext.png" alt="移住などに関する制度情報"></a>
           </div>
         <?php endif; ?>
 
