@@ -48,11 +48,6 @@
     }
   }
 
-  // タグごとに作成
-  &.wakayama {
-    .feature-cover { background-color: #95b2d6; }
-    h2 { b,span { color: #fbb03b; }}
-  }
 }
 
 @media(max-width: 930px) {

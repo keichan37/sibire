@@ -7,8 +7,10 @@
     ?>
     <div id="lp" class="feature <?php echo $posttag; ?>">
       <div class="feature-cover" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/template-feature/cover-<?php echo $posttag; ?>.jpg') ;">
+      <?php /* <div class="feature-cover" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/template-feature/cover-<?php echo $posttag; ?>.jpg') ;">*/ ?>
+      <div class="feature-cover" style="background-image: url(' <?  $coverimage = get_field('coverimage');if($coverimage){ foreach((array)$coverimage as $value) {echo $value;}} ?>') ;">
         <h1>
-        <img src="<?php echo get_template_directory_uri(); ?>/images/template-feature/h1-<?php echo $posttag; ?>.png" alt="<?php the_title(); ?>">
+          <img src="<?  $titleimage = get_field('titleimage');if($titleimage){ foreach((array)$titleimage as $value) {echo $value;}} ?>" alt="<?php the_title(); ?>">
         </h1>
         <div class="feature-content"><?php the_content(); //本文 ?></div>
       </div>
@@ -35,7 +37,7 @@
 
         <?php if(post_custom('pagelink')): ?>
           <div class="section">
-            <a class="pagelink" href="<?  $pagelink = get_field('pagelink');if($pagelink){ foreach((array)$pagelink as $value) {echo $value;}} ?>" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/template-feature/pagelink-<?php echo $posttag; ?>.jpg') ;"><img src="<?php echo get_template_directory_uri(); ?>/images/template-feature/pagelinktext.png" alt="移住などに関する制度情報"></a>
+            <a class="pagelink" href="<?  $pagelink = get_field('pagelink');if($pagelink){ foreach((array)$pagelink as $value) {echo $value;}} ?>" style="background-image: url('<?  $pageimage = get_field('pageimage');if($pageimage){ foreach((array)$pageimage as $value) {echo $value;}} ?>" alt="<?php the_title(); ?>') ;"><img src="<?php echo get_template_directory_uri(); ?>/images/template-feature/pagelinktext.png" alt="移住などに関する制度情報"></a>
           </div>
         <?php endif; ?>
 

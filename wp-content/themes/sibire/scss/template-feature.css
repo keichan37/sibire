@@ -40,12 +40,6 @@
 #lp.feature a.pagelink:hover {
   border-color: #8cc63f;
 }
-#lp.feature.wakayama .feature-cover {
-  background-color: #95b2d6;
-}
-#lp.feature.wakayama h2 b, #lp.feature.wakayama h2 span {
-  color: #fbb03b;
-}
 
 @media (max-width: 768px) {
   #lp.feature .feature-cover h1 img {
