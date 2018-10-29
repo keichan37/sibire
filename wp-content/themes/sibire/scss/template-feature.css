@@ -9,5 +9,9 @@
 #lp.feature .feature-cover h1 {
   margin: 0 0 150px 0;
 }
+#lp.feature .feature-cover h1 img {
+  max-width: 330px;
+  height: auto;
+}
 
 /*# sourceMappingURL=template-feature.css.map */
