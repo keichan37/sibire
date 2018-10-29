@@ -3,22 +3,23 @@
   <?php get_header(); ?>
     <?php
       $posttags = get_the_tags();
+      $posttag = $posttags[0]->slug;
     ?>
     <div id="lp" class="feature">
-      <div class="feature-cover">
+      <div class="feature-cover" style="background-image: url("<?php echo get_template_directory_uri(); ?>/images/template-feature/cover-<?php echo $posttag; ?>.jpg") ;">
         <h1>
-        <img src="<?php echo get_template_directory_uri(); ?>/images/template-feature/h1-<?php if ( $posttags[0] ) {echo $posttags[0]->name;} ?>.png" alt="<?php the_title(); ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/template-feature/h1-<?php echo $posttag; ?>.png" alt="<?php the_title(); ?>">
         </h1>
         <div class="feature-content"><?php the_content(); //本文 ?></div>
       </div>
       <div class="container">
         <div class="section">
-          <h2><b>“</b>求人情報<b>”</b><span><?php if ( $posttags[0] ) {echo $posttags[0]->name;} ?></span></h2>
+          <h2><b>“</b>求人情報<b>”</b><span><?php echo $posttag; ?></span></h2>
           <?php
             $args = array(
               'paged' => $paged,
               'post_type' => 'recruit',
-              'tag' => 'wakayama',
+              'tag' => $posttag,
               'posts_per_page' => 10,
               'post_status' => 'publish',
               'has_password' => false,
@@ -33,12 +34,12 @@
         </div>
 
         <div class="section">
-          <h2><b>“</b>トピック<b>”</b><span><?php if ( $posttags[0] ) {echo $posttags[0]->name;} ?></span></h2>
+          <h2><b>“</b>トピック<b>”</b><span><?php echo $posttag; ?></span></h2>
           <?php
             $args = array(
               'paged' => $paged,
               'post_type' => array('interview','column','event','blog'),
-              'tag' => 'wakayama',
+              'tag' => $posttag,
               'posts_per_page' => 12,
               'post_status' => 'publish',
               'has_password' => false,
