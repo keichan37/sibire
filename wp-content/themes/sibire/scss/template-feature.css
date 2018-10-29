@@ -18,6 +18,24 @@
 #lp.feature .feature-cover .feature-content {
   padding: 0 10px;
 }
+#lp.feature a.pagelink {
+  display: block;
+  width: 100%;
+  height: 640px;
+  color: #8cc63f;
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#lp.feature a.pagelink:hover {
+  border-color: #8cc63f;
+}
 #lp.feature.wakayama .feature-cover {
   background-color: #95b2d6;
 }
