@@ -16,6 +16,9 @@
         height: auto;
       }
     }
+    .feature-content {
+      padding: 0 10px;
+    }
   }
   .section {
   }
@@ -23,6 +26,8 @@
 
 @media(max-width: 930px) {
   #lp.feature {
+    .feature-cover {
+    }
     .section {
     }
   }
@@ -31,6 +36,9 @@
 @media(max-width: 768px) {
   #lp.feature {
     .feature-cover {
+      .feature-content {
+        text-align: left;
+      }
     }
   }
 }
