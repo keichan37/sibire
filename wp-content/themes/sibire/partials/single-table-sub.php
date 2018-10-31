@@ -3,7 +3,7 @@
   <table class="recruit-table">
     <tbody>
       <tr>
-        <th>案件名</th>
+        <th style="width: 7em;">案件名</th>
         <td>
           <? $txt = get_field('project_name'); if($txt){ ?>
           <? echo $txt; ?>
