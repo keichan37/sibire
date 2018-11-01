@@ -1,6 +1,6 @@
   <?php get_header(); ?>
     <div id="summary" class="category">
-      <div class="summary-cover">
+      <div class="summary-cover scroll-cover">
         <div class="container">
           <h1>
             <?php if(is_category(recruit)): ?>
