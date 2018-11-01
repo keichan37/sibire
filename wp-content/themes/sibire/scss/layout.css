@@ -55,7 +55,7 @@ header .logo a:hover {
 header a.brand {
   display: block;
   float: left;
-  padding: 9px 15px 11px 0;
+  padding: 9px 15px 6px 0;
 }
 header a.brand svg#brand {
   width: 60px;
