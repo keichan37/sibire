@@ -2,7 +2,7 @@
 
   <?php get_header(); ?>
     <div id="summary" class="topic">
-      <div class="summary-cover">
+      <div class="summary-cover scroll-cover">
         <div class="container">
           <h1><?php the_title(); ?></h1>
           <?php the_content(); ?>

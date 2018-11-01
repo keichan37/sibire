@@ -54,16 +54,17 @@ $(document).ready(function() {
   });
 });
 
-(function() {
-  var e;
-  $(function() {
-    $(window).scroll(function() {
-      if ($('.single-service').length) {
-        if ($(window).width() > 1100) {
-          $(".r-fixed-box").toggleClass("fixed", $(this).scrollTop() + 60 > $(".e-fixed-box").offset().top),
-          $(".r-fixed-box").toggleClass("absolute", $(this).scrollTop() + $(this).height() - 440 > $(".partials").offset().top)
-        }
-      }
-    })
-  })
-}).call(this);
+$(function(){
+  var getHeight = $('body').height();
+   $(window).scroll(function () {
+   if ($('.scroll-cover').length) {
+     var ScrollTop = $(document).scrollTop();
+     var bgPosition = 95/getHeight*ScrollTop+10;
+
+     $('.scroll-cover').css(
+      {backgroundPositionY: bgPosition+"%"}
+     );
+   }
+ });
+});
+

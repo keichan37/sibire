@@ -1,6 +1,6 @@
   <?php get_header(); ?>
     <div id="summary" class="tag">
-      <div class="summary-cover">
+      <div class="summary-cover scroll-cover">
         <div class="container">
           <h1><span class="icon icon-tag"></span>&nbsp;<strong><?php single_tag_title(); ?></strong></h1>
           <?php echo tag_description(); ?>
