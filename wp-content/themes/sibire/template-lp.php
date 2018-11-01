@@ -2,6 +2,7 @@
 
   <?php get_header(); ?>
     <div id="lp">
+
       <div class="cover">
         <h1>
           <?php get_template_part('partials/title'); ?>

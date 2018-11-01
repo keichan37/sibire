@@ -55,12 +55,12 @@ header .logo a:hover {
 header a.brand {
   display: block;
   float: left;
-  height: 20px;
-  padding: 7px 10px 13px 0;
+  height: 23px;
+  padding: 7px 10px 10px 0;
 }
 header a.brand svg#brand {
   width: 70px;
-  height: 20px;
+  height: 23px;
 }
 
 #blur.blur {
