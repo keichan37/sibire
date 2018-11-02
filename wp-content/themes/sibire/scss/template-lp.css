@@ -14,7 +14,7 @@
 }
 #lp .cover {
   position: relative;
-  background: #c2e2dd url("images/template-lp/cover.gif") bottom center/cover no-repeat;
+  background: #c2e2dd url("images/template-lp/cover.gif") top center/cover no-repeat;
   padding: 166px 0 128px 0;
   margin-bottom: 30px;
   text-align: center;
