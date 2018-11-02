@@ -94,7 +94,7 @@
       <!-- End Twitter single-event website tag code -->   
     <?php endif; ?>
 
-    <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?55gB3urzk3w%3D&aa=1&ab=2" charset="utf-8"></script>
+    <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?55gB3urzk3w%3D&delay=1&aa=1&ab=2"" charset="utf-8"></script>
 
   <?php wp_head(); ?>
   </head>
