@@ -18,6 +18,10 @@
 #lp.feature .feature-cover .feature-content {
   padding: 0 10px;
 }
+#lp.feature .section.section-topic {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 #lp.feature a.pagelink {
   display: block;
   width: 100%;
@@ -41,6 +45,12 @@
   border-color: #8cc63f;
 }
 
+@media (max-width: 930px) {
+  #lp.feature .section#topic {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 @media (max-width: 768px) {
   #lp.feature .feature-cover h1 img {
     max-width: 95%;

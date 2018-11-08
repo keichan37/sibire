@@ -13,7 +13,7 @@
         <div class="feature-content"><?php the_content(); //本文 ?></div>
       </div>
       <div class="container">
-        <div class="section">
+        <div class="section section-topic">
           <h2><b>“</b>求人情報<b>”</b><span><?php echo $posttag; ?></span></h2>
           <?php
             $args = array(
@@ -39,7 +39,7 @@
           </div>
         <?php endif; ?>
 
-        <div class="section">
+        <div class="section section-topic">
           <h2><b>“</b>トピック<b>”</b><span><?php echo $posttag; ?></span></h2>
           <?php
             $args = array(

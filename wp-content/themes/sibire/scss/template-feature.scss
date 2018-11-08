@@ -24,6 +24,10 @@
     }
   }
   .section {
+    &.section-topic {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
   h2 {
     span {
@@ -55,6 +59,10 @@
     .feature-cover {
     }
     .section {
+      &#topic {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
     }
   }
 }
