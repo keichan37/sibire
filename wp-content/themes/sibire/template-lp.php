@@ -70,9 +70,7 @@
           <a class="button button-small" href="<?php echo get_permalink(37072); ?>">全て見る</a>
         </div>
 
-        <?php /*
         <h2><b>“</b>sibire利用者の声<b>”</b><span>VOICE</span></h2>
-        */ ?>
         <?php
           $args = array(
             'paged' => $paged,
@@ -91,9 +89,9 @@
           ?>
           <a class="single-related" href="<?php the_permalink(); ?>">
             <?php if (has_post_thumbnail()): ?>
-              <img class="single-related-eyecatch owl-lazy" data-src="<?php echo $thumbnail_url[0]; ?>" />
+              <img class="single-related-eyecatch" data-src="<?php echo $thumbnail_url[0]; ?>" />
             <?php else: ?>
-              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" />
+              <img class="single-related-eyecatch" src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" />
             <?php endif; ?>
 
             <h5><?php the_title(); ?></h5>
