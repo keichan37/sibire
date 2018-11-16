@@ -98,6 +98,18 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+#lp .section#feature {
+  margin-top: 40px;
+}
+#lp .section#feature h3 {
+  font-family: "FOT-くろかね Std EB", "KurokaneStd-EB", sans-serif;
+  margin: 0;
+  text-align: center;
+  padding: 100px 0;
+  background-image: url("images/template-feature/cover-wakayama.jpg");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 #lp a {
   color: #8cc63f;
   -webkit-transition: 0.3s;
