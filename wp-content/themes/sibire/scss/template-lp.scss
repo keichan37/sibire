@@ -91,6 +91,18 @@ $container: 1100px;
       padding-left: 20px;
       padding-right: 20px;
     }
+    &#feature {
+      margin-top: 40px;
+      h3 {
+        font-family: $kurokane;
+        margin: 0;
+        text-align: center;
+        padding: 100px 0;
+        background-image: url("images/template-feature/cover-wakayama.jpg");
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
   }
   a {
     color: $green;
