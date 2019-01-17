@@ -66,7 +66,9 @@
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-T5QQFS5');</script>
+    })(window,document,'script','dataLayer','GTM-T5QQFS5');
+    gtag('config', 'AW-874262737');
+    </script>
     <!-- End Google Tag Manager -->
     <?php if(is_page('17572')): ?>
       <!-- Begin INDEED conversion code -->
@@ -93,6 +95,8 @@
       </noscript>
       <!-- End Twitter single-event website tag code -->   
     <?php endif; ?>
+
+    <? $txt = get_field('head_ad'); if($txt){ ?><? echo $txt; ?><? } ?>
 
     <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?55gB3urzk3w%3D&delay=1&aa=1&ab=2"" charset="utf-8"></script>
 
