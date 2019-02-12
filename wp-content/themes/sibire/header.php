@@ -67,9 +67,13 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-T5QQFS5');
-    gtag('config', 'AW-874262737');
     </script>
     <!-- End Google Tag Manager -->
+    <!-- User Heat Tag --> 
+    <script type="text/javascript"> 
+    (function(add, cla){window['UserHeatTag']=cla;window[cla]=window[cla]||function(){(window[cla].q=window[cla].q||[]).push(arguments)},window[cla].l=1*new Date();var ul=document.createElement('script');var tag = document.getElementsByTagName('script')[0];ul.async=1;ul.src=add;tag.parentNode.insertBefore(ul,tag);})('//uh.nakanohito.jp/uhj2/uh.js', '_uhtracker');_uhtracker({id:'uhNEVa9Hts'}); 
+    </script> 
+    <!-- End User Heat Tag --> 
     <?php if(is_page('17572')): ?>
       <!-- Begin INDEED conversion code -->
       <script type="text/javascript">
