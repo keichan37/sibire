@@ -144,6 +144,9 @@
   line-height: 38px;
   font-size: 17px;
 }
+#lp a.button.button-small.button-small-last-child {
+  margin-top: 20px;
+}
 #lp a.button:hover {
   background-color: #f7f7f7;
   top: 5px;

@@ -47,6 +47,7 @@
             <li>東京にこだわらず働く「OFF TOKYO」をテーマとしたイベントを優先的にご案内</li>
           </ul>
           <a class="button" href="<?php echo get_permalink(272); ?>">サービスに申し込む</a>
+          <a class="button button-small button-small-last-child" href="<?php echo get_permalink(1222); ?>">法人の方はこちら</a> 
         </div>
         <div class="section" id="topic">
           <h2><b>“</b>トピック<b>”</b><span>TOPIC</span></h2>
