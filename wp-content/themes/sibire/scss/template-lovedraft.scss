@@ -79,6 +79,7 @@ $container: 1100px;
           @include clearfix;
         }
         li {
+          position: relative;
           list-style: none;
           float: left;
           width: 25%;
@@ -103,6 +104,16 @@ $container: 1100px;
                 top: -8px;
               }
             }
+          }
+          b {
+            font-family: $tsubame;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 0 -30px 13px 0;
+            font-size: 70px;
+            color: #50a61e;
+            z-index: 2;
           }
         }
       }
@@ -185,6 +196,66 @@ $container: 1100px;
       background-color: #ffd05c;
       p {
         text-align: center;
+      }
+      .wpcf7 {
+        padding-top: 15px;
+        .r-form-group-wrap {
+          max-width: 700px;
+          margin: 0px auto;
+          .form-group {
+            margin-bottom: 10px;
+            .wpcf7-form-control-wrap {
+              display: block;
+              max-width: 300px;
+              float: left;
+              margin-bottom: 7px;
+              select,
+              textarea,
+              input[type="text"],
+              input[type="tel"],
+              input[type="email"] {
+                &.wpcf7-not-valid {
+                  border: 1px solid #e73828;
+                }
+              }
+            }
+            .control-label {
+              text-align: right;
+              width: 225px;
+              margin: 4px 15px 0 0;
+              display: block;
+              float: left;
+              font-size: 12px;
+              line-height: 1.3;
+            }
+            &:after {
+              @include clearfix;
+            }
+          }
+        }
+      }
+      span.wpcf7-not-valid-tip {
+        font-size: 11px;
+        color: #e73828;
+      }
+      div.wpcf7-response-output {
+        max-width: 400px;
+        margin: 0px auto;
+        padding: 10px;
+        border: none;
+        color: #e73828;
+      }
+      input[type="submit"],
+      input[type="button"]{
+        @include appearance;
+        background-color: #50a61e;
+        border: none;
+        width: 150px;
+        height: 30px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 14px;
+        margin: 0 5px;
       }
     }
   }
