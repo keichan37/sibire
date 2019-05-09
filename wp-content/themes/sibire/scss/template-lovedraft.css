@@ -14,6 +14,9 @@
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
 }
+#template-lovedraft img {
+  max-width: 100%;
+}
 #template-lovedraft #cover {
   text-align: center;
 }
@@ -39,9 +42,46 @@
   margin: 0px auto;
   margin-bottom: 60px;
 }
+#template-lovedraft #cover .content {
+  margin: 0;
+  padding-bottom: 30px;
+}
 #template-lovedraft #cover .button {
+  position: relative;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
   display: block;
   margin-bottom: 50px;
+  font-size: 19px;
+  color: #ffffff;
+  background-color: #ff931e;
+  width: 300px;
+  height: 40px;
+  line-height: 37px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 0px #ffc28f;
+  -moz-box-shadow: 0px 5px 0px #ffc28f;
+  -ms-box-shadow: 0px 5px 0px #ffc28f;
+  -o-box-shadow: 0px 5px 0px #ffc28f;
+  box-shadow: 0px 5px 0px #ffc28f;
+  text-decoration: none;
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E", sans-serif;
+}
+#template-lovedraft #cover .button:hover {
+  top: 5px;
+  -webkit-box-shadow: 0px 0px 0px #ffc28f;
+  -moz-box-shadow: 0px 0px 0px #ffc28f;
+  -ms-box-shadow: 0px 0px 0px #ffc28f;
+  -o-box-shadow: 0px 0px 0px #ffc28f;
+  box-shadow: 0px 0px 0px #ffc28f;
 }
 #template-lovedraft .section h2 {
   text-align: center;
@@ -272,6 +312,53 @@
 }
 #template-lovedraft footer small {
   text-align: center;
+}
+
+@media (max-width: 1020px) {
+  #template-lovedraft {
+    background-size: 200% auto;
+  }
+  #template-lovedraft #cover h1 {
+    padding-top: 70px;
+  }
+  #template-lovedraft #cover img {
+    width: 70%;
+  }
+  #template-lovedraft .section.flow ul.lovedraft-flow li figure {
+    height: auto;
+    padding-bottom: 60px;
+    background-size: 50% auto;
+    background-position: center center;
+    background: none;
+  }
+  #template-lovedraft .section.flow ul.lovedraft-flow li figure img {
+    width: 130px;
+  }
+  #template-lovedraft .section.flow ul.lovedraft-flow li figure figcaption {
+    position: relative;
+    top: -10px;
+    color: #000000;
+  }
+  #template-lovedraft .section.flow ul.lovedraft-flow li figure.figure-scout {
+    padding-bottom: 30px;
+  }
+  #template-lovedraft .section.schedule table.overview {
+    font-size: 13px;
+  }
+  #template-lovedraft .section.schedule table.timetable thead {
+    font-size: 13px;
+  }
+  #template-lovedraft .section.form .wpcf7 .r-form-group-wrap {
+    max-width: 300px;
+    margin: 0px auto;
+  }
+  #template-lovedraft .section.form .wpcf7 .r-form-group-wrap .form-group .control-label {
+    width: 100%;
+    text-align: left;
+  }
+  #template-lovedraft footer img {
+    max-width: 300px;
+  }
 }
 
 /*# sourceMappingURL=template-lovedraft.css.map */

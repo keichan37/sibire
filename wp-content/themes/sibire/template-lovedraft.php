@@ -84,7 +84,7 @@
                 <div class="content">
                   <?php the_content(); //本文 ?>
                 </div>
-                <a class="button" href="javascript:void(0);">エントリーフォームはこちら</a>
+                <a class="button" href="#form">エントリーフォームはこちら</a>
               </div>
             </div>
             <div class="section flow">
@@ -106,7 +106,7 @@
                     <b>→</b>
                   </li>
                   <li>
-                    <figure>
+                    <figure class="figure-scout">
                       <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/scout.png" alt="">
                       <figcaption class="scout">和歌山県が<br /><span>あなたをスカウト！</span></figcaption>
                     </figure>
@@ -188,14 +188,20 @@
               </div>
             </div>
 
-            <div class="section form">
+            <div id="form" class="section form">
               <div class="container">
                 <h2 class="h2"><b>招待チケット</b>をGetせよ!<br />PRしてチャンスUP</h2>
                 <p>
                   和歌山県の各エリアが「この人がほしい!」と 思った方には、招待チケットをご用意。<br />
                   エントリー時に、あなた自身の経験・PRポイントを明記し、 招待チケットをぜひ手に入れてください
                 </p>
-                <?php echo do_shortcode('[contact-form-7 id="45072" title="和歌山LOVEドラフト フォーム"]'); ?>
+
+                <?php $url = $_SERVER['REQUEST_URI']; ?>
+                  <?php if(strstr($url,'wakayama_draft_osaka')): ?>
+                    <?php echo do_shortcode('[contact-form-7 id="45072" title="和歌山LOVEドラフト フォーム"]'); ?>
+                  <?php else: ?>
+                    <?php echo do_shortcode('[contact-form-7 id="10" title="local"]'); ?>
+                  <?php endif; ?>
               </div>
             </div>
 
