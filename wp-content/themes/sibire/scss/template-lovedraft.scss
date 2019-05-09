@@ -1,0 +1,205 @@
+@import "mixin";
+@import "variables";
+
+$container: 1100px;
+#template-lovedraft {
+  font-family: $gothic;
+  color: #000000;
+  background: #ffffff url("images/template-lovedraft/background.jpg") top center /100% no-repeat;
+  .container {
+    max-width: $container + 20px;
+    margin: 0px auto;
+    padding: 0 10px;
+    @include border-box;
+  }
+  #cover {
+    text-align: center;
+    h1 {
+      margin: 0px auto;
+      max-width: 700px;
+      padding-top: 120px;
+      .title {
+        fill: #000000;
+      }
+      .subtitle {
+        fill: #ffffff;
+      }
+    }
+    img {
+      max-width: 400px;
+    }
+    .sponsored {
+      text-align: left;
+      font-size: 13px;
+      line-height: 1.2;
+      max-width: 320px;
+      margin: 0px auto;
+      margin-bottom: 60px;
+    }
+    .content {
+    }
+    .button {
+      display: block;
+      margin-bottom: 50px;
+    }
+  }
+  .section {
+    h2 {
+      text-align: center;
+      padding-top: 55px;
+      font-size: 31px;
+      margin: 0;
+    }
+    h3 {
+      text-align: center;
+      font-size: 28px;
+      padding-top: 35px;
+      margin: 0 0 20px 0;
+      &.timetable {
+        color: #ff931e;
+      }
+    }
+    h2,
+    h3 {
+      b {
+        font-family: $tsubame;
+        color: #50a61e;
+        font-size: 130%;
+        letter-spacing: -0.17em;
+      }
+    }
+    &.flow {
+      background-color: #e4ffd2;
+      padding-bottom: 80px;
+      ul.lovedraft-flow {
+        max-width: 920px;
+        margin: 0px auto;
+        &:before,
+        &:after {
+          @include clearfix;
+        }
+        li {
+          list-style: none;
+          float: left;
+          width: 25%;
+          figure {
+            background: #e4ffd2 url("images/template-lovedraft/balloon.png") bottom center /60% no-repeat;
+            margin: 0;
+            text-align: center;
+            height: 280px;
+            img {
+              width: 90%;
+            }
+            figcaption {
+              color: #ffffff;
+              font-family: $gothic-b;
+              font-size: 18px;
+              line-height: 1.2;
+              span {
+                font-size: 13px;
+              }
+              &.scout {
+                position: relative;
+                top: -8px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.schedule {
+      padding-bottom: 55px;
+      table {
+        border-collapse: collapse;
+        &.overview,
+        &.timetable {
+          margin: 0px auto;
+          color: #ffffff;
+        }
+        &.overview {
+          max-width: 742px;
+          background-color: #50a61e;
+          font-size: 18px;
+          @include border-radius(20px);
+          tr {
+            th,
+            td {
+              padding: 9px 20px;
+            }
+            th {
+              border-right: 2px dashed #ffffff;
+              text-align: right;
+            }
+            &:first-child {
+              th,
+              td {
+                padding-top: 18px;
+              }
+            }
+            &:last-child {
+              th,
+              td {
+                padding-bottom: 18px;
+              }
+            }
+          }
+        }
+        &.timetable {
+          background-color: #ff931e;
+          font-size: 12px;
+          padding: 8px 30px;
+          @include border-radius(20px);
+          thead {
+            font-size: 16px;
+            tr {
+              th {
+                border-bottom: 2px solid #ffffff;
+                padding: 10px 30px;
+                text-align: left;
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                padding: 5px 10px;
+                &:first-child {
+                  padding-left: 30px;
+                }
+                &:last-child {
+                  padding-right: 30px;
+                }
+              }
+              &:last-child {
+                td {
+                  padding-bottom: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.form {
+      padding-bottom: 20px;
+      background-color: #ffd05c;
+      p {
+        text-align: center;
+      }
+    }
+  }
+  footer {
+    padding: 20px 0 5px 0;
+    background-color: #50a61e;
+    color: #ffffff;
+    text-align: center;
+    img {
+      display: block;
+      max-width: 350px;
+      margin: 0px auto;
+    }
+    small {
+      text-align: center;
+    }
+  }
+}
