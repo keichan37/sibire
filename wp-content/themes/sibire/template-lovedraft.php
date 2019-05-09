@@ -96,18 +96,21 @@
                       <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/entry.png" alt="">
                       <figcaption>エントリー</figcaption>
                     </figure>
+                    <b>→</b>
                   </li>
                   <li>
                     <figure>
                       <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/event.png" alt="">
                       <figcaption>イベント参加</figcaption>
                     </figure>
+                    <b>→</b>
                   </li>
                   <li>
                     <figure>
                       <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/scout.png" alt="">
                       <figcaption class="scout">和歌山県が<br /><span>あなたをスカウト！</span></figcaption>
                     </figure>
+                    <b>→</b>
                   </li>
                   <li>
                     <figure>
@@ -192,9 +195,7 @@
                   和歌山県の各エリアが「この人がほしい!」と 思った方には、招待チケットをご用意。<br />
                   エントリー時に、あなた自身の経験・PRポイントを明記し、 招待チケットをぜひ手に入れてください
                 </p>
-                  <?php /* ?>
-                  <?php echo do_shortcode('[contact-form-7 id="31972" title="OFF TOKYO 和歌山キャリアフェア"]'); ?>
-                  <?php */ ?>
+                <?php echo do_shortcode('[contact-form-7 id="45072" title="和歌山LOVEドラフト フォーム"]'); ?>
               </div>
             </div>
 
@@ -218,11 +219,6 @@
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/echo.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/wpcf7.js"></script>
 
-  <?php if(is_page('offtokyomeetup2017')): ?>
-    <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/template-event.js"></script>
-    <script type="text/javascript" src="<?php bloginfo(template_url);?>/javascripts/jquery.liMarquee.js "></script>
-  <?php else : ?>
-  <?php endif; ?>
   <script>
     $(window).fadeThis({
       reverse:  false,
