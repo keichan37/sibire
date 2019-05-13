@@ -80,7 +80,7 @@
               <div class="container">
                 <h1><?php get_template_part('partials/lovedraft'); ?></h1>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/schedule.png" alt="">
-                <p class="sponsored">主催：和歌山県<br />イベント受託：シビレ株式会社<br />集客協力：株式会社ネットマーケティング「Omiai」</p>
+                <p class="sponsored">主催：和歌山県<br />イベント受託：シビレ株式会社<br />協力：株式会社ネットマーケティング「Omiai」</p>
                 <div class="content">
                   <?php the_content(); //本文 ?>
                 </div>
@@ -179,7 +179,7 @@
                     </tr>
                     <tr>
                       <td><time>21:30</time>～</td>
-                      <td>SpecialContenst<br />敗者復活！再アプローチ</td>
+                      <td>SpecialContenst<br />スカウト獲得！再アプローチ</td>
                       <td>参加者から市町村・事業所へ<br />ハートを送ろう！</td>
                     </tr>
                   </tbody>
