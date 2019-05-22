@@ -1,4 +1,7 @@
-<?php /* Template Name: LOVEドラフト 記事ページ */ ?>
+<?php
+  /* Template Name: LOVEドラフト 記事ページ 
+     Template Post Type: recruit-event
+*/ ?>
 
 <!doctype html>
 <html>
