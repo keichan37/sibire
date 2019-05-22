@@ -314,6 +314,23 @@
   text-align: center;
 }
 
+#common.template-lovedraft-single .single-wrap {
+  border-top: none;
+}
+#common.template-lovedraft-single .single-wrap .single-left,
+#common.template-lovedraft-single .single-wrap .single-right {
+  margin: 0px auto;
+  float: none;
+}
+#common.template-lovedraft-single .single-wrap .single-left .single-title-img,
+#common.template-lovedraft-single .single-wrap .single-right .single-title-img {
+  display: block;
+  max-width: 400px;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 1020px) {
   #template-lovedraft {
     background-size: 200% auto;

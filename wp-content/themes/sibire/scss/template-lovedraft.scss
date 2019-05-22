@@ -12,6 +12,9 @@ $container: 1100px;
     padding: 0 10px;
     @include border-box;
   }
+  img {
+    max-width: 100%;
+  }
   #cover {
     text-align: center;
     h1 {
@@ -37,10 +40,38 @@ $container: 1100px;
       margin-bottom: 60px;
     }
     .content {
+      margin: 0;
+      padding-bottom: 30px;
     }
     .button {
+      position: relative;
+      @include transition;
       display: block;
       margin-bottom: 50px;
+      font-size: 19px;
+      color: #ffffff;
+      background-color: #ff931e;
+      width: 300px;
+      height: 40px;
+      line-height: 37px;
+      margin: 0px auto;
+      margin-bottom: 50px;
+      @include border-radius(10px);
+      -webkit-box-shadow: 0px 5px 0px rgba(255,194,143,1);
+      -moz-box-shadow: 0px 5px 0px rgba(255,194,143,1);
+      -ms-box-shadow: 0px 5px 0px rgba(255,194,143,1);
+      -o-box-shadow: 0px 5px 0px rgba(255,194,143,1);
+      box-shadow: 0px 5px 0px rgba(255,194,143,1);
+      text-decoration: none;
+      font-family: $gothic-b;
+      &:hover {
+        top: 5px;
+        -webkit-box-shadow: 0px 0px 0px rgba(255,194,143,1);
+        -moz-box-shadow: 0px 0px 0px rgba(255,194,143,1);
+        -ms-box-shadow: 0px 0px 0px rgba(255,194,143,1);
+        -o-box-shadow: 0px 0px 0px rgba(255,194,143,1);
+        box-shadow: 0px 0px 0px rgba(255,194,143,1);
+      }
     }
   }
   .section {
@@ -271,6 +302,100 @@ $container: 1100px;
     }
     small {
       text-align: center;
+    }
+  }
+}
+
+#common.template-lovedraft-single {
+  .single-wrap {
+    border-top: none;
+    .single-left,
+    .single-right {
+      margin: 0px auto;
+      float: none;
+      .single-title-img {
+        display: block;
+        max-width: 400px;
+        margin: 0px auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width: 1020px) {
+  #template-lovedraft {
+     background-size: 200% auto;
+    #cover {
+      h1 {
+        padding-top: 70px;
+      }
+      img {
+        width: 70%;
+      }
+    }
+    .section {
+      &.flow {
+        ul.lovedraft-flow {
+          li {
+            figure {
+              height: auto;
+              padding-bottom: 60px;
+              background-size: 50% auto;
+              background-position: center center;
+              background: none;
+              img {
+                width: 130px;
+              }
+              figcaption {
+                position: relative;
+                top: -10px;
+                color: #000000;
+              }
+              &.figure-scout {
+                padding-bottom: 30px;
+              }
+            }
+          }
+        }
+      }
+      &.schedule {
+        table {
+          &.overview {
+            font-size: 13px;
+          }
+          &.timetable {
+            thead {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      &.form {
+        .wpcf7 {
+          .r-form-group-wrap {
+            max-width: 300px;
+            margin: 0px auto;
+            .form-group {
+              .control-label {
+                width: 100%;
+                text-align: left;
+              }
+              .wpcf7-form-control-wrap {
+                .form-group {
+                }
+              }
+            }
+          }
+        }
+        
+      }
+    }
+    footer {
+      img {
+        max-width: 300px;
+      }
     }
   }
 }
