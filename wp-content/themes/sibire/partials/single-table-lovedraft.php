@@ -1,4 +1,5 @@
-<?php if(get_post_meta($post->ID,'recruit-table',true) == 'company'): ?>
+<?php $cat = get_field('recruit-table');?>
+<?php if ($cat == 'company');?>
   <table class="recruit-table">
     <tbody>
       <tr>
@@ -109,7 +110,7 @@
       </tr>
     </tbody>
   </table>
-<?php elseif(get_post_meta($post->ID,'recruit-table',true) == 'government'): ?>
+<?php elseif ($cat == 'government');?>
   <table class="recruit-table">
     <tbody>
       <tr>
