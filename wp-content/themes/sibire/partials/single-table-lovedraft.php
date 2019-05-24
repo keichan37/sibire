@@ -1,5 +1,5 @@
-<?php $cat = get_field('recruit-table');?>
-<?php if ($cat == 'company');?>
+<?php $cat = get_field('recruit-table'); ?>
+<?php if($cat == 'company'): ?>
   <table class="recruit-table">
     <tbody>
       <tr>
@@ -110,7 +110,7 @@
       </tr>
     </tbody>
   </table>
-<?php elseif ($cat == 'government');?>
+<?php elseif($cat == 'government'): ?>
   <table class="recruit-table">
     <tbody>
       <tr>
