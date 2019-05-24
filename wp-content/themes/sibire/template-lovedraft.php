@@ -80,7 +80,7 @@
               <div class="container">
                 <h1><?php get_template_part('partials/lovedraft'); ?></h1>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/schedule.png" alt="">
-                <p class="sponsored">主催：和歌山県<br />イベント受託：シビレ株式会社<br />協力：株式会社ネットマーケティング「Omiai」</p>
+                <p class="sponsored">主催：和歌山県<br />イベント受託：シビレ株式会社<br />集客協力：株式会社ネットマーケティング「Omiai」</p>
                 <div class="content">
                   <?php the_content(); //本文 ?>
                 </div>
@@ -179,7 +179,7 @@
                     </tr>
                     <tr>
                       <td><time>21:30</time>～</td>
-                      <td>SpecialContenst<br />スカウト獲得！再アプローチ</td>
+                      <td>SpecialContenst<br />敗者復活！再アプローチ</td>
                       <td>参加者から市町村・事業所へ<br />ハートを送ろう！</td>
                     </tr>
                   </tbody>
@@ -202,6 +202,43 @@
                   <?php else: ?>
                     <?php echo do_shortcode('[contact-form-7 id="10" title="local"]'); ?>
                   <?php endif; ?>
+              </div>
+            </div>
+            <div class="section recruit">
+              <div class="container">
+                <h3>和歌山でできる<b>Wanted!</b>なシゴト</h3>
+                <?php
+                  $args = array(
+                    'paged' => $paged,
+                    'post_type' => array('recruit-event'),
+                    'posts_per_page' => -1,
+                    'post_status' => 'publish',
+                    'has_password' => false,
+                  ); ?>
+                <?php query_posts( $args ); ?>
+                <ul>
+                  <?php while (have_posts()) : the_post(); ?>
+                    <li>
+                      <a href=<?php echo get_permalink(); ?>>
+                        <h4>
+                        <?php
+                          $title = get_the_title($ID);
+                          $title = str_replace("  ", "<br />", $title);
+                          echo $title;
+                        ?>
+                        </h4>
+                        <?php
+                          $posttags = get_the_tags();
+                          if ($posttags) {
+                            foreach($posttags as $tag) {
+                              echo '<b>' . $tag->name . '</b>';
+                            }
+                          }
+                        ?>
+                      </a>
+                    </li>
+                  <?php endwhile; ?>
+                </ul>
               </div>
             </div>
 
