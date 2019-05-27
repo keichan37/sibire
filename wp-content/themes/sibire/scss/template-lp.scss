@@ -10,6 +10,16 @@ $container: 1100px;
     padding: 0 10px;
     @include border-box;
   }
+  .widget_sp_image-image-link {
+    max-width: 600px;
+    margin: 0px auto;
+    display: block;
+    &:hover {
+      img {
+        @include opacity;
+      }
+    }
+  }
   .cover {
     position: relative;
     background: #c2e2dd url("images/template-lp/cover.gif") top center /cover no-repeat;
