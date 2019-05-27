@@ -71,6 +71,8 @@
           <a class="button button-small" href="<?php echo get_permalink(37072); ?>">全て見る</a>
         </div>
 
+        <?php dynamic_sidebar('lp-banner'); ?>
+
         <h2><b>“</b>sibire利用者の声<b>”</b><span>VOICE</span></h2>
         <?php
           $args = array(
