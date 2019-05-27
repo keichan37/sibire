@@ -12,6 +12,16 @@
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
 }
+#lp .widget_sp_image-image-link {
+  max-width: 600px;
+  margin: 0px auto;
+  display: block;
+}
+#lp .widget_sp_image-image-link:hover img {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-filter: "alpha(opacity=$ratioms)";
+}
 #lp .cover {
   position: relative;
   background: #c2e2dd url("images/template-lp/cover.gif") top center/cover no-repeat;
