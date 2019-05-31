@@ -93,7 +93,7 @@
         </td>
       </tr>
       <tr>
-        <th colspan="1">創業者</th>
+        <th colspan="1">代表者</th>
         <td>
           <? $txt = get_field('company-founder'); if($txt){ ?>
           <? echo $txt; ?>
