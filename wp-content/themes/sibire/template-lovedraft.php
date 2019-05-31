@@ -246,7 +246,7 @@
             <div class="container">
               <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/title.png" alt="Wakayama Love ドラフト">
               和歌山県&nbsp;&nbsp;
-              問合せ先:<a href="mail:info@sibire.co.jp">info@sibire.co.jp</a>&nbsp;&nbsp;
+              問合せ先:<a href="mailto:info@sibire.co.jp">info@sibire.co.jp</a>&nbsp;&nbsp;
               <small>Copyright &copy; Wakayama Prefecture. All Rights Reserved.</small>
             </div>
           </footer>
