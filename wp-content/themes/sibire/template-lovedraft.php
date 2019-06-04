@@ -214,6 +214,8 @@
                     'posts_per_page' => -1,
                     'post_status' => 'publish',
                     'has_password' => false,
+                    'orderby' => 'modified',
+                    'order' => 'DESC',
                   ); ?>
                 <?php query_posts( $args ); ?>
                 <ul>
