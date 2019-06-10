@@ -390,6 +390,7 @@ $container: 1100px;
     }
     .section {
       &.flow {
+        display: none;
         ul.lovedraft-flow {
           li {
             figure {
