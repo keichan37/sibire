@@ -397,6 +397,9 @@
   #template-lovedraft #cover img {
     width: 70%;
   }
+  #template-lovedraft .section.flow {
+    display: none;
+  }
   #template-lovedraft .section.flow ul.lovedraft-flow li figure {
     height: auto;
     padding-bottom: 60px;
