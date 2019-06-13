@@ -183,7 +183,7 @@
                     </tr>
                     <tr>
                       <td><time>21:30</time>～</td>
-                      <td>SpecialContenst<br />敗者復活！再アプローチ</td>
+                      <td>SpecialContents<br />敗者復活！再アプローチ</td>
                       <td>参加者から市町村・事業所へ<br />ハートを送ろう！</td>
                     </tr>
                   </tbody>
@@ -194,10 +194,11 @@
 
             <div id="form" class="section form">
               <div class="container">
-                <h2 class="h2"><b>招待チケット</b>をGetせよ!<br />PRしてチャンスUP</h2>
+                <h2 class="h2"><b>エントリーフォーム</b></h2>
                 <p>
-                  和歌山県の各エリアが「この人がほしい!」と 思った方には、招待チケットをご用意。<br />
-                  エントリー時に、あなた自身の経験・PRポイントを明記し、 招待チケットをぜひ手に入れてください
+                  「和歌山でできるWanted!なシゴト」の中から、興味のあるシゴトを選んでエントリー。<br />
+                  イベント当日、スカウトされた方には、和歌山県への「招待チケット」もご用意！<br />
+                  自己PRやこんな暮らしがしてみたい！を、ぜひ教えてください。
                 </p>
 
                 <?php $url = $_SERVER['REQUEST_URI']; ?>
