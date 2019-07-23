@@ -192,6 +192,7 @@
               </div>
             </div>
 
+            <?php /*
             <div id="form" class="section form">
               <div class="container">
                 <h2 class="h2"><b>エントリーフォーム</b></h2>
@@ -209,6 +210,7 @@
                   <?php endif; ?>
               </div>
             </div>
+            */ ?>
             <div class="section recruit" id="recruit">
               <div class="container">
                 <h3>和歌山でできる<b>Wanted!</b>なシゴト</h3>
