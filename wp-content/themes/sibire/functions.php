@@ -124,15 +124,6 @@ function SearchFilter($query) {
 }
 add_filter('pre_get_posts','SearchFilter');
 
-/* 検索結果で固定ページを除外 */
-function fb_search_filter( $query ) {
-	if ( $query -> is_search ) {
-    $query->set( 'post_type', 'post' );
-	}
-	return $query;
-}
-add_filter( 'pre_get_posts', 'SearchFilter' );
-
 /* 絞り込み条件から保護中、非公開を除外 */
 function customize_main_query ( $query ) {
   if ( is_search() || is_tag() || is_author() || is_archive() || is_category() ) {
