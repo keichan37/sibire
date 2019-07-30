@@ -102,9 +102,6 @@
           </a>
 
         <?php endwhile; ?>
-          <a class="single-related" href="javascript: void(0);">
-            <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-lp/comingsoon.png" />
-          </a>
           </div>
 
           <?php wp_reset_query();?>
