@@ -26,8 +26,8 @@ add_filter( 'style_loader_src', 'remove_wp_ver', 9999 );
 add_filter( 'script_loader_src', 'remove_wp_ver', 9999 );
 
 // API関係
-require get_template_directory_uri( '/inc/isin_api.php' );
-require get_template_directory_uri( '/inc/custom.php' );
+require get_template_directory_uri( 'inc/isin_api.php' );
+require get_template_directory_uri( 'inc/custom.php' );
 
 /* 投稿画面 ページ分割ボタン追加 */
 function page_split_buttons($buttons){
