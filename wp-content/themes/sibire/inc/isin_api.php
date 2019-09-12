@@ -15,7 +15,7 @@ function isin_post_jobs($post) {
     /* ここをうまく合わせて欲しい TOあぶちゃん*/
     $data = [
         "image_url"=>"https://picsum.photos/358/256",
-        "title"=> get_field("company-name");,
+        "title"=> get_field('company-name'),
         "kinmujikan_kaishi"=>9,
         "kinmujikan_shuuryou"=>17,
         "kyuuyo"=>"月給22.5万円～23.5万円",
