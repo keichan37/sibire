@@ -102,10 +102,7 @@
 
     <? $txt = get_field('head_ad'); if($txt){ ?><? echo $txt; ?><? } ?>
 
-    <?php /*
     <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?55gB3urzk3w%3D&delay=1&aa=1&ab=2"" charset="utf-8"></script>
-    */ ?>
-    <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?55gB3urzk3w%3D&box=ayuzSDr3dNM%3D&delay=1&aa=1&ab=2" charset="utf-8"></script>
 
   <?php wp_head(); ?>
   </head>
