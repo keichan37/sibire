@@ -25,6 +25,10 @@ function remove_wp_ver( $src ) {
 add_filter( 'style_loader_src', 'remove_wp_ver', 9999 );
 add_filter( 'script_loader_src', 'remove_wp_ver', 9999 );
 
+// API関係
+require get_parent_theme_file_path( '/inc/isin_api.php' );
+require get_parent_theme_file_path( '/inc/custom.php' );
+
 /* 投稿画面 ページ分割ボタン追加 */
 function page_split_buttons($buttons){
     // wp_page ページ分割ボタン
