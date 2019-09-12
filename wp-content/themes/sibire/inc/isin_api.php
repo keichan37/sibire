@@ -15,18 +15,18 @@ function isin_post_jobs($post) {
     /* ここをうまく合わせて欲しい TOあぶちゃん*/
     $data = [
         "image_url"=>"https://picsum.photos/358/256",
-        "title"=>company-name,
+        "title"=> get_field("company-name");,
         "kinmujikan_kaishi"=>9,
         "kinmujikan_shuuryou"=>17,
         "kyuuyo"=>"月給22.5万円～23.5万円",
-        "kyuuyo_bikou"=>company-character,
-        "kinmuchi"=>company-address,
+        "kyuuyo_bikou"=>"company-character",
+        "kinmuchi"=>"company-address",
         "boshuushikaku"=>"募集資格 です",
-        "shigotonaiyou"=>company-content,
+        "shigotonaiyou"=>"company-content",
         "koyoukeitai_id"=>1,
-        "kaisha_mei"=>company-name,
-        "kaisha_jigyounaiyou"=>company-business,
-        "kaisha_address"=>company-address
+        "kaisha_mei"=>"company-name",
+        "kaisha_jigyounaiyou"=>"company-business",
+        "kaisha_address"=>"company-address"
     ];
 
     $header = [
