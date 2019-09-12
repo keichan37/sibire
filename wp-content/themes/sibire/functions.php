@@ -28,6 +28,9 @@ add_filter( 'script_loader_src', 'remove_wp_ver', 9999 );
 // API関係
 require get_parent_theme_file_path( '/inc/isin_api.php' );
 require get_parent_theme_file_path( '/inc/custom.php' );
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
 
 /* 投稿画面 ページ分割ボタン追加 */
 function page_split_buttons($buttons){
