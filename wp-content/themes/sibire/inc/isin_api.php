@@ -14,17 +14,15 @@ function isin_post_jobs($post) {
 
     /* ここをうまく合わせて欲しい TOあぶちゃん*/
     $data = [
-        "image_url"=> get_the_post_thumbnail_url(get_the_ID(),'medium'),
+        "image_url"=> get_the_post_thumbnail_url(get_the_ID(),'large'),
         "title"=> get_field('company-name'),
-        "kinmujikan_kaishi"=>9,
-        "kinmujikan_shuuryou"=>17,
-        "kyuuyo"=>"月給22.5万円～23.5万円",
         "kyuuyo_bikou"=> get_field('company-character'),
         "kinmuchi"=> get_field('company-address'),
-        "boshuushikaku"=>"募集資格 です",
         "shigotonaiyou"=> get_field('company-content'),
         "koyoukeitai_id"=>1,
+        "positionname"=> get_field('company-recruit'),
         "kaisha_mei"=> get_field('company-name'),
+        "fukuri"=> get_field('company-workinghours'),
         "kaisha_jigyounaiyou"=> get_field('company-business'),
         "kaisha_address"=> get_field('company-address')
     ];
