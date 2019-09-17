@@ -47,7 +47,8 @@ function save_post_recruit_api_all( $post_ID, $post, $update ) {
         "kaisha_mei"=> get_field('company-name'),
         "fukuri"=> get_field('company-workinghours'),
         "kaisha_jigyounaiyou"=> get_field('company-business'),
-        "kaisha_address"=> get_field('company-address')
+        "kaisha_address"=> get_field('company-address'),
+        "chiiki_id"=> get_field('city')
     ];
 
     if(empty($jobs_id)){
