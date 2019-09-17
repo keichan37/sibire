@@ -2,59 +2,66 @@
 /**
  * 求人投稿処理
  */
-function isin_post_jobs($post) {
-    if($post->post_status != "publish"){
-        return false;
-    }
-
-    $token = isin_get_token();
+function isin_post_jobs($data) {
 
     $base_url = get_field("isin_base_url", "option");
     $api = "/api/jobs";
 
-    /* ここをうまく合わせて欲しい TOあぶちゃん*/
-    $data = [
-        "image_url"=> get_the_post_thumbnail_url(get_the_ID(),'large'),
-        "title"=> get_field('company-name'),
-        "kyuuyo_bikou"=> get_field('company-character'),
-        "kinmuchi"=> get_field('company-address'),
-        "shigotonaiyou"=> get_field('company-content'),
-        "koyoukeitai_id"=>1,
-        "positionname"=> get_field('company-recruit'),
-        "kaisha_mei"=> get_field('company-name'),
-        "fukuri"=> get_field('company-workinghours'),
-        "kaisha_jigyounaiyou"=> get_field('company-business'),
-        "kaisha_address"=> get_field('company-address')
-    ];
-
-    $header = [
-        'Authorization: Bearer '.$token,  // 前準備で取得したtokenをヘッダに含める
-        'Accept: application/json',
-        'Content-Type: application/json',
-    ];
-
-    $result = call_api( $base_url, $api, $data, $header);
-    
-    if(isset($result["message"]) && $result["message"] == "Unauthenticated."){
-        echo "リフレッシュトークンを使うのだ";
-        // フレッシュトークンを使って再度トライ
-        $token = isin_refresh_token();
-        $header = [
-            'Authorization: Bearer '.$token,  // 前準備で取得したtokenをヘッダに含める
-            'Accept: application/json',
-            'Content-Type: application/json',
-        ];
-        $result = call_api( $base_url, $api, $data, $header);
-    }
+    $result = call_auth_required_api( $base_url, $api, $data, 'POST');
 
     if (isset($result["error"])) {
         add_admin_message( $result["error_description"], "error");
+        return false;
     } else {
-        // update_field('isin_jobs_id', $result["data"]["id"], $post->ID );
-        add_admin_message( "アプリへのデータ連携が成功しました。(ID:".$result["data"]["id"].")");
+        add_admin_message( "アプリへのデータ登録が成功しました。(ID:".$result["data"]["id"].")".print_r($result, true));
     }
+
+    // 登録済みの求人IDを返す
+    return $result["data"]["id"];
 }
 
+/**
+ * 求人更新処理
+ */
+function isin_update_jobs ($jobs_id, $data) {
+
+    $base_url = get_field("isin_base_url", "option");
+    $api = "/api/jobs/".$jobs_id;
+
+    $result = call_auth_required_api( $base_url, $api, $data, 'PUT');
+
+    if (isset($result["error"])) {
+        add_admin_message( $result["error_description"], "error");
+        return false;
+    } else {
+        add_admin_message( "アプリデータの更新が成功しました。(ID:".$result["data"]["id"].") job_id=".$jobs_id.print_r($data, true).print_r($result, true));
+    }
+
+    // 登録済みの求人IDを返す
+    return $result["data"]["id"];
+}
+
+/**
+ * 求人更新処理
+ */
+function isin_delete_jobs ($jobs_id) {
+    $data = null;
+    $base_url = get_field("isin_base_url", "option");
+    $api = "/api/jobs/".$jobs_id;
+
+    $result = call_auth_required_api( $base_url, $api, $data, 'DELETE');
+    
+    if (isset($result["error"])) {
+        add_admin_message( $result["error_description"], "error");
+        return false;
+    } else {
+        add_admin_message( "アプリデータの削除が成功しました。(ID:".$jobs_id.")".$jobs_id.print_r($data, true).print_r($result, true));
+    }
+    return true;
+}
+/**
+ * トークンを取得
+ */
 function isin_get_token($retry = false){
 
     // 共通設定のアクセストークンを取得
@@ -88,7 +95,7 @@ function isin_get_token($retry = false){
         'Content-Type: application/json',
     ];
 
-    $result = call_api( $base_url, $api, $data, $header);
+    $result = call_api( $base_url, $api, $data, $header, 'POST');
 
     if (isset($result["error"])) {
         add_admin_message( $result["error_description"], "error");
@@ -106,6 +113,9 @@ function isin_get_token($retry = false){
     return $result["access_token"];
 }
 
+/**
+ * レフレッシュトークンを利用して、トークンをh崇徳
+ */
 function isin_refresh_token(){
 
     // 共通設定のリフレッシュトークンを取得
@@ -128,7 +138,7 @@ function isin_refresh_token(){
         'Content-Type: application/json',
     ];
 
-    $result = call_api( $base_url, $api, $data, $header);
+    $result = call_api( $base_url, $api, $data, $header, 'POST');
 
     if(isset($result["error"])){
         add_admin_message( $result["error_description"], "error");
@@ -152,12 +162,12 @@ function isin_refresh_token(){
     return $result["access_token"];
 }
 
-function call_api( $base_url, $api, $data, $header) {
+function call_api( $base_url, $api, $data, $header, $method = 'POST') {
 
     $curl = curl_init();
 
     curl_setopt($curl, CURLOPT_URL, $base_url.$api);
-    curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST'); // post
+    curl_setopt($curl, CURLOPT_CUSTOMREQUEST, $method); // post
     curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data)); // jsonデータを送信
     curl_setopt($curl, CURLOPT_HTTPHEADER, $header); // リクエストにヘッダーを含める
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -165,14 +175,40 @@ function call_api( $base_url, $api, $data, $header) {
     curl_setopt($curl, CURLOPT_HEADER, true);
 
     $response = curl_exec($curl);
-
     $header_size = curl_getinfo($curl, CURLINFO_HEADER_SIZE);
     $header = substr($response, 0, $header_size);
     $body = substr($response, $header_size);
     $result = json_decode($body, true);
 
     curl_close($curl);
+    return $result;
+}
 
+/**
+ * トークンの取得、リフレッシュトークンなどを考慮してAPIを呼び出す処理
+ */
+function call_auth_required_api ( $base_url, $api, $data, $method = 'POST') {
+
+    $token = isin_get_token();
+    
+    $header = [
+        'Authorization: Bearer '.$token,  // 前準備で取得したtokenをヘッダに含める
+        'Accept: application/json',
+        'Content-Type: application/json',
+    ];
+
+    $result = call_api( $base_url, $api, $data, $header, $method);
+    
+    if(isset($result["message"]) && $result["message"] == "Unauthenticated."){ // ステータスコード返すようにAPIカエテホシイ
+        // フレッシュトークンを使って再度トライ
+        $token = isin_refresh_token();
+        $header = [
+            'Authorization: Bearer '.$token,  // 前準備で取得したtokenをヘッダに含める
+            'Accept: application/json',
+            'Content-Type: application/json',
+        ];
+        $result = call_api( $base_url, $api, $data, $header, $method);
+    }
     return $result;
 }
 
@@ -182,19 +218,19 @@ function add_admin_message($message, $status = "updated")
     if(!$api_message){
         $api_message = array();
     }
+
     $api_message[] = [
         "message" => $message,
         "status" => $status,
     ];
-
     set_theme_mod('_isin_api_message', $api_message);
 }
 
 add_action('admin_notices', 'show_admin_message');
 function show_admin_message(){
-    $api_messages = get_theme_mod('_isin_api_message');
+    $api_message = get_theme_mod('_isin_api_message');
 
-    foreach ($api_messages as $message){
+    foreach ($api_message as $message){
         echo '<div class="'.$message["status"].'"><p>'.$message["message"].'</p></div>';
     }
     // クリア
