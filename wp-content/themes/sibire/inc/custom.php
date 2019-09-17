@@ -50,7 +50,7 @@ function save_post_recruit_api_all( $post_ID, $post, $update ) {
         "kaisha_address"=> get_field('company-address'),
         "chiiki_id"=> get_field('city'),
         "kinmujikan_kaishi"=> 0,
-        "kinmujikan_shuuryou"=>0
+        "kinmujikan_shuuryou"=>0,
         "kyuuyo"=>""
     ];
 
