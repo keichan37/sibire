@@ -51,6 +51,7 @@ function save_post_recruit_api_all( $post_ID, $post, $update ) {
         "chiiki_id"=> get_field('city'),
         "kinmujikan_kaishi"=> 0,
         "kinmujikan_shuuryou"=>0
+        "kyuuyo"=>""
     ];
 
     if(empty($jobs_id)){
