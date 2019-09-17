@@ -37,19 +37,17 @@ function save_post_recruit_api_all( $post_ID, $post, $update ) {
 
     /* ここをうまく合わせて欲しい TOあぶちゃん*/
     $data = [
-        "image_url"=>"https://picsum.photos/358/256",
-        "title"=> "test",
-        "kinmujikan_kaishi"=>9,
-        "kinmujikan_shuuryou"=>17,
-        "kyuuyo"=>"月給22.5万円～23.5万円",
-        "kyuuyo_bikou"=>"company-character",
-        "kinmuchi"=>"company-address",
-        "boshuushikaku"=>"募集資格 です",
-        "shigotonaiyou"=>"company-content",
+        "image_url"=> get_the_post_thumbnail_url(get_the_ID(),'large'),
+        "title"=> get_field('company-name'),
+        "kyuuyo_bikou"=> get_field('company-character'),
+        "kinmuchi"=> get_field('company-address'),
+        "shigotonaiyou"=> get_field('company-content'),
         "koyoukeitai_id"=>1,
-        "kaisha_mei"=>"company-name",
-        "kaisha_jigyounaiyou"=>"company-business",
-        "kaisha_address"=>"company-address"
+        "positionname"=> get_field('company-recruit'),
+        "kaisha_mei"=> get_field('company-name'),
+        "fukuri"=> get_field('company-workinghours'),
+        "kaisha_jigyounaiyou"=> get_field('company-business'),
+        "kaisha_address"=> get_field('company-address')
     ];
 
     if(empty($jobs_id)){
