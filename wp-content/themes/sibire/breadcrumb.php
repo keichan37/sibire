@@ -6,7 +6,6 @@
     </a>&nbsp;<span class="icon icon-rightArrow"></span>&nbsp;
   </span>
   
-  <? php /* ?>固定ページ以外表示<?php */ ?>
   <?php if (is_page() ||  is_404()) {?>
   <?php } elseif(is_tag() || is_category() ) {?>
     <?php single_cat_title(); ?>の検索結果
@@ -25,7 +24,6 @@
     </span>
   <?php } ?>
   
-  <? php /* ?>親要素がある場合<?php */ ?>
   <?php foreach ( array_reverse(get_post_ancestors($post->ID)) as $parentid ) { ?>
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
       <a href="<?php echo bloginfo('url'); ?>?p=<?php echo $parentid;?>" itemprop="url">
