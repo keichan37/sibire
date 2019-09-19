@@ -106,7 +106,7 @@
 
   <?php wp_head(); ?>
   </head>
-  <body <?php body_class( $class ); ?>>
+  <body <?php body_class(); ?>>
     <?php include_once("analyticstracking.php") ?>
     <!-- Google Tag Manager (noscript) adinte -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5QQFS5"
