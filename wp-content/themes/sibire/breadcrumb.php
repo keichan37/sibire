@@ -1,8 +1,3 @@
-<? php /* ?>
-  title: パンくずリストの部分テンプレート
-  description: 固定ページ以外は3段階のパンくずになります。改行するとスペースが入るので1行で記述
-<?php */ ?>
-
 <div class="breadcrumb">
   <span class="icon icon-home"></span>
   <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
