@@ -11,10 +11,10 @@
     <?php single_cat_title(); ?>の検索結果
   <?php } else{ ?>
     <?php
-      $category = get_the_category();
-      $cat_id   = $category[0]->cat_ID;
-      $cat_name = $category[0]->cat_name;
-      $cat_slug = $category[0]->category_nicename;
+      $cat      = get_the_category();
+      $cat_id   = $cat->cat_ID;
+      $cat_name = $cat->name;
+      $cat_slug = $cat->slug;
     ?>
 
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
