@@ -8,39 +8,35 @@ class WPCF7_Validation implements ArrayAccess {
 		$this->container = array(
 			'valid' => true,
 			'reason' => array(),
-			'idref' => array(),
-		);
+			'idref' => array() );
 	}
 
 	public function invalidate( $context, $message ) {
-		if ( $context instanceof WPCF7_FormTag ) {
+		if ( $context instanceof WPCF7_Shortcode ) {
 			$tag = $context;
 		} elseif ( is_array( $context ) ) {
-			$tag = new WPCF7_FormTag( $context );
+			$tag = new WPCF7_Shortcode( $context );
 		} elseif ( is_string( $context ) ) {
-			$tags = wpcf7_scan_form_tags( array( 'name' => trim( $context ) ) );
-			$tag = $tags ? new WPCF7_FormTag( $tags[0] ) : null;
+			$tags = wpcf7_scan_shortcode( array( 'name' => trim( $context ) ) );
+			$tag = $tags ? new WPCF7_Shortcode( $tags[0] ) : null;
 		}
 
 		$name = ! empty( $tag ) ? $tag->name : null;
 
-		if ( empty( $name )
-		or ! wpcf7_is_name( $name ) ) {
+		if ( empty( $name ) || ! wpcf7_is_name( $name ) ) {
 			return;
 		}
 
 		if ( $this->is_valid( $name ) ) {
 			$id = $tag->get_id_option();
 
-			if ( empty( $id )
-			or ! wpcf7_is_name( $id ) ) {
+			if ( empty( $id ) || ! wpcf7_is_name( $id ) ) {
 				$id = null;
 			}
 
 			$this->invalid_fields[$name] = array(
 				'reason' => (string) $message,
-				'idref' => $id,
-			);
+				'idref' => $id );
 		}
 	}
 
@@ -61,8 +57,7 @@ class WPCF7_Validation implements ArrayAccess {
 			$this->container[$offset] = $value;
 		}
 
-		if ( 'reason' == $offset
-		and is_array( $value ) ) {
+		if ( 'reason' == $offset && is_array( $value ) ) {
 			foreach ( $value as $k => $v ) {
 				$this->invalidate( $k, $v );
 			}
@@ -82,3 +77,5 @@ class WPCF7_Validation implements ArrayAccess {
 	public function offsetUnset( $offset ) {
 	}
 }
+
+?>

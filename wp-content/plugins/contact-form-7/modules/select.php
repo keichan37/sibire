@@ -3,42 +3,36 @@
 ** A base module for [select] and [select*]
 **/
 
-/* form_tag handler */
+/* Shortcode handler */
 
-add_action( 'wpcf7_init', 'wpcf7_add_form_tag_select', 10, 0 );
+add_action( 'wpcf7_init', 'wpcf7_add_shortcode_select' );
 
-function wpcf7_add_form_tag_select() {
-	wpcf7_add_form_tag( array( 'select', 'select*' ),
-		'wpcf7_select_form_tag_handler',
-		array(
-			'name-attr' => true,
-			'selectable-values' => true,
-		)
-	);
+function wpcf7_add_shortcode_select() {
+	wpcf7_add_shortcode( array( 'select', 'select*' ),
+		'wpcf7_select_shortcode_handler', true );
 }
 
-function wpcf7_select_form_tag_handler( $tag ) {
-	if ( empty( $tag->name ) ) {
+function wpcf7_select_shortcode_handler( $tag ) {
+	$tag = new WPCF7_Shortcode( $tag );
+
+	if ( empty( $tag->name ) )
 		return '';
-	}
 
 	$validation_error = wpcf7_get_validation_error( $tag->name );
 
 	$class = wpcf7_form_controls_class( $tag->type );
 
-	if ( $validation_error ) {
+	if ( $validation_error )
 		$class .= ' wpcf7-not-valid';
-	}
 
 	$atts = array();
 
 	$atts['class'] = $tag->get_class_option( $class );
 	$atts['id'] = $tag->get_id_option();
-	$atts['tabindex'] = $tag->get_option( 'tabindex', 'signed_int', true );
+	$atts['tabindex'] = $tag->get_option( 'tabindex', 'int', true );
 
-	if ( $tag->is_required() ) {
+	if ( $tag->is_required() )
 		$atts['aria-required'] = 'true';
-	}
 
 	$atts['aria-invalid'] = $validation_error ? 'true' : 'false';
 
@@ -46,35 +40,38 @@ function wpcf7_select_form_tag_handler( $tag ) {
 	$include_blank = $tag->has_option( 'include_blank' );
 	$first_as_label = $tag->has_option( 'first_as_label' );
 
-	if ( $tag->has_option( 'size' ) ) {
-		$size = $tag->get_option( 'size', 'int', true );
-
-		if ( $size ) {
-			$atts['size'] = $size;
-		} elseif ( $multiple ) {
-			$atts['size'] = 4;
-		} else {
-			$atts['size'] = 1;
-		}
-	}
-
-	if ( $data = (array) $tag->get_data_option() ) {
-		$tag->values = array_merge( $tag->values, array_values( $data ) );
-		$tag->labels = array_merge( $tag->labels, array_values( $data ) );
-	}
-
 	$values = $tag->values;
 	$labels = $tag->labels;
 
-	$default_choice = $tag->get_default_option( null, array(
-		'multiple' => $multiple,
-		'shifted' => $include_blank,
-	) );
+	if ( $data = (array) $tag->get_data_option() ) {
+		$values = array_merge( $values, array_values( $data ) );
+		$labels = array_merge( $labels, array_values( $data ) );
+	}
 
-	if ( $include_blank
-	or empty( $values ) ) {
+	$defaults = array();
+
+	$default_choice = $tag->get_default_option( null, 'multiple=1' );
+
+	foreach ( $default_choice as $value ) {
+		$key = array_search( $value, $values, true );
+
+		if ( false !== $key ) {
+			$defaults[] = (int) $key + 1;
+		}
+	}
+
+	if ( $matches = $tag->get_first_match_option( '/^default:([0-9_]+)$/' ) ) {
+		$defaults = array_merge( $defaults, explode( '_', $matches[1] ) );
+	}
+
+	$defaults = array_unique( $defaults );
+
+	$shifted = false;
+
+	if ( $include_blank || empty( $values ) ) {
 		array_unshift( $labels, '---' );
 		array_unshift( $values, '' );
+		$shifted = true;
 	} elseif ( $first_as_label ) {
 		$values[0] = '';
 	}
@@ -83,16 +80,25 @@ function wpcf7_select_form_tag_handler( $tag ) {
 	$hangover = wpcf7_get_hangover( $tag->name );
 
 	foreach ( $values as $key => $value ) {
+		$selected = false;
+
 		if ( $hangover ) {
-			$selected = in_array( $value, (array) $hangover, true );
+			if ( $multiple ) {
+				$selected = in_array( esc_sql( $value ), (array) $hangover );
+			} else {
+				$selected = ( $hangover == esc_sql( $value ) );
+			}
 		} else {
-			$selected = in_array( $value, (array) $default_choice, true );
+			if ( ! $shifted && in_array( (int) $key + 1, (array) $defaults ) ) {
+				$selected = true;
+			} elseif ( $shifted && in_array( (int) $key, (array) $defaults ) ) {
+				$selected = true;
+			}
 		}
 
 		$item_atts = array(
 			'value' => $value,
-			'selected' => $selected ? 'selected' : '',
-		);
+			'selected' => $selected ? 'selected' : '' );
 
 		$item_atts = wpcf7_format_atts( $item_atts );
 
@@ -102,9 +108,8 @@ function wpcf7_select_form_tag_handler( $tag ) {
 			$item_atts, esc_html( $label ) );
 	}
 
-	if ( $multiple ) {
+	if ( $multiple )
 		$atts['multiple'] = 'multiple';
-	}
 
 	$atts['name'] = $tag->name . ( $multiple ? '[]' : '' );
 
@@ -124,20 +129,20 @@ add_filter( 'wpcf7_validate_select', 'wpcf7_select_validation_filter', 10, 2 );
 add_filter( 'wpcf7_validate_select*', 'wpcf7_select_validation_filter', 10, 2 );
 
 function wpcf7_select_validation_filter( $result, $tag ) {
+	$tag = new WPCF7_Shortcode( $tag );
+
 	$name = $tag->name;
 
-	if ( isset( $_POST[$name] )
-	and is_array( $_POST[$name] ) ) {
+	if ( isset( $_POST[$name] ) && is_array( $_POST[$name] ) ) {
 		foreach ( $_POST[$name] as $key => $value ) {
-			if ( '' === $value ) {
+			if ( '' === $value )
 				unset( $_POST[$name][$key] );
-			}
 		}
 	}
 
 	$empty = ! isset( $_POST[$name] ) || empty( $_POST[$name] ) && '0' !== $_POST[$name];
 
-	if ( $tag->is_required() and $empty ) {
+	if ( $tag->is_required() && $empty ) {
 		$result->invalidate( $tag, wpcf7_get_message( 'invalid_required' ) );
 	}
 
@@ -147,7 +152,7 @@ function wpcf7_select_validation_filter( $result, $tag ) {
 
 /* Tag generator */
 
-add_action( 'wpcf7_admin_init', 'wpcf7_add_tag_generator_menu', 25, 0 );
+add_action( 'wpcf7_admin_init', 'wpcf7_add_tag_generator_menu', 25 );
 
 function wpcf7_add_tag_generator_menu() {
 	$tag_generator = WPCF7_TagGenerator::get_instance();
@@ -160,7 +165,7 @@ function wpcf7_tag_generator_menu( $contact_form, $args = '' ) {
 
 	$description = __( "Generate a form-tag for a drop-down menu. For more details, see %s.", 'contact-form-7' );
 
-	$desc_link = wpcf7_link( __( 'https://contactform7.com/checkboxes-radio-buttons-and-menus/', 'contact-form-7' ), __( 'Checkboxes, Radio Buttons and Menus', 'contact-form-7' ) );
+	$desc_link = wpcf7_link( __( 'http://contactform7.com/checkboxes-radio-buttons-and-menus/', 'contact-form-7' ), __( 'Checkboxes, Radio Buttons and Menus', 'contact-form-7' ) );
 
 ?>
 <div class="control-box">
