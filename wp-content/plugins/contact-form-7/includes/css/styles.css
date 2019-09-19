@@ -3,6 +3,11 @@ div.wpcf7 {
 	padding: 0;
 }
 
+div.wpcf7-response-output {
+	margin: 2em 0.5em 1em;
+	padding: 0.2em 1em;
+}
+
 div.wpcf7 .screen-reader-response {
 	position: absolute;
 	overflow: hidden;
@@ -14,18 +19,11 @@ div.wpcf7 .screen-reader-response {
 	border: 0;
 }
 
-div.wpcf7-response-output {
-	margin: 2em 0.5em 1em;
-	padding: 0.2em 1em;
-	border: 2px solid #ff0000;
-}
-
 div.wpcf7-mail-sent-ok {
 	border: 2px solid #398f14;
 }
 
-div.wpcf7-mail-sent-ng,
-div.wpcf7-aborted {
+div.wpcf7-mail-sent-ng {
 	border: 2px solid #ff0000;
 }
 
@@ -33,8 +31,7 @@ div.wpcf7-spam-blocked {
 	border: 2px solid #ffa500;
 }
 
-div.wpcf7-validation-errors,
-div.wpcf7-acceptance-missing {
+div.wpcf7-validation-errors {
 	border: 2px solid #f7e700;
 }
 
@@ -45,7 +42,6 @@ div.wpcf7-acceptance-missing {
 span.wpcf7-not-valid-tip {
 	color: #f00;
 	font-size: 1em;
-	font-weight: normal;
 	display: block;
 }
 
@@ -60,33 +56,17 @@ span.wpcf7-not-valid-tip {
 }
 
 span.wpcf7-list-item {
-	display: inline-block;
-	margin: 0 0 0 1em;
-}
-
-span.wpcf7-list-item-label::before,
-span.wpcf7-list-item-label::after {
-	content: " ";
+	margin-left: 0.5em;
 }
 
 .wpcf7-display-none {
 	display: none;
 }
 
-div.wpcf7 .ajax-loader {
-	visibility: hidden;
-	display: inline-block;
-	background-image: url('../../images/ajax-loader.gif');
-	width: 16px;
-	height: 16px;
+div.wpcf7 img.ajax-loader {
 	border: none;
-	padding: 0;
-	margin: 0 0 0 4px;
 	vertical-align: middle;
-}
-
-div.wpcf7 .ajax-loader.is-active {
-	visibility: visible;
+	margin-left: 4px;
 }
 
 div.wpcf7 div.ajax-error {
@@ -95,16 +75,4 @@ div.wpcf7 div.ajax-error {
 
 div.wpcf7 .placeheld {
 	color: #888;
-}
-
-div.wpcf7 input[type="file"] {
-	cursor: pointer;
-}
-
-div.wpcf7 input[type="file"]:disabled {
-	cursor: default;
-}
-
-div.wpcf7 .wpcf7-submit:disabled {
-	cursor: not-allowed;
 }
