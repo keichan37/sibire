@@ -1,8 +1,3 @@
-<? php /* ?>
-  title: パンくずリストの部分テンプレート
-  description: 固定ページ以外は3段階のパンくずになります。改行するとスペースが入るので1行で記述
-<?php */ ?>
-
 <div class="breadcrumb">
   <span class="icon icon-home"></span>
   <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
@@ -11,16 +6,15 @@
     </a>&nbsp;<span class="icon icon-rightArrow"></span>&nbsp;
   </span>
   
-  <? php /* ?>固定ページ以外表示<?php */ ?>
   <?php if (is_page() ||  is_404()) {?>
   <?php } elseif(is_tag() || is_category() ) {?>
     <?php single_cat_title(); ?>の検索結果
   <?php } else{ ?>
     <?php
-      $category = get_the_category();
-      $cat_id   = $category[0]->cat_ID;
-      $cat_name = $category[0]->cat_name;
-      $cat_slug = $category[0]->category_nicename;
+      $cat      = get_the_category();
+      $cat_id   = $cat->cat_ID;
+      $cat_name = $cat->name;
+      $cat_slug = $cat->slug;
     ?>
 
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
@@ -30,7 +24,6 @@
     </span>
   <?php } ?>
   
-  <? php /* ?>親要素がある場合<?php */ ?>
   <?php foreach ( array_reverse(get_post_ancestors($post->ID)) as $parentid ) { ?>
     <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
       <a href="<?php echo bloginfo('url'); ?>?p=<?php echo $parentid;?>" itemprop="url">

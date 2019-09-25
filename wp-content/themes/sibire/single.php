@@ -9,10 +9,10 @@
               <?php while(have_posts()): the_post(); ?>
                 <article>
                   <?php
-                    $category = get_the_category();
-                    $cat_id   = $category[0]->cat_ID;
-                    $cat_name = $category[0]->cat_name;
-                    $cat_slug = $category[0]->category_nicename;
+                    $cat      = get_the_category();
+                    $cat_id   = $cat->cat_ID;
+                    $cat_name = $cat->name;
+                    $cat_slug = $cat->slug;
                   ?>
                   <span class="single-category"><a href="/category/<?php echo $cat_slug; ?>"><span class="icon icon-<?php echo $cat_slug; ?>"></span><?php echo $cat_name; ?></a></span>
                   <time class="single-date" datetime="<?php the_time('c') ;?>"><span class="icon icon-time"></span><?php the_time('Y.n.j') ;?></time>
