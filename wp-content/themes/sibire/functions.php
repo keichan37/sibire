@@ -31,6 +31,12 @@ require get_parent_theme_file_path( '/inc/custom.php' );
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 }
+function my_acf_init() {
+	if (function_exists('acf_update_setting')) {
+		acf_update_setting('remove_wp_meta_box', false);
+	}
+}
+add_action('acf/init', 'my_acf_init');
 
 /* 投稿画面 ページ分割ボタン追加 */
 function page_split_buttons($buttons){
