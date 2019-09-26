@@ -7,11 +7,6 @@
 #template-lovedraft.template-lovedraft-tokyo {
   background: #ffffff url("images/template-lovedraft/background-tokyo.jpg") top center/100% no-repeat;
 }
-#template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow {
-  width: 1200px;
-  max-width: 1200px;
-  overflow-x: auto;
-}
 #template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow li {
   float: left;
   width: 20%;
