@@ -1,8 +1,117 @@
 @import "mixin";
 @import "variables";
 
+.scroll-x {
+  overflow-x: auto;
+}
+
+.button {
+  position: relative;
+  @include transition;
+  display: block;
+  font-size: 19px;
+  color: #ffffff;
+  background-color: #ff931e;
+  width: 300px;
+  height: 40px;
+  line-height: 37px;
+  margin: 0px auto;
+  @include border-radius(10px);
+  text-align: center;
+  -webkit-box-shadow: 0px 5px 0px rgba(255,194,143,1);
+  -moz-box-shadow: 0px 5px 0px rgba(255,194,143,1);
+  -ms-box-shadow: 0px 5px 0px rgba(255,194,143,1);
+  -o-box-shadow: 0px 5px 0px rgba(255,194,143,1);
+  box-shadow: 0px 5px 0px rgba(255,194,143,1);
+  text-decoration: none;
+  font-family: $gothic-b;
+  &:hover {
+    top: 5px;
+    -webkit-box-shadow: 0px 0px 0px rgba(255,194,143,1);
+    -moz-box-shadow: 0px 0px 0px rgba(255,194,143,1);
+    -ms-box-shadow: 0px 0px 0px rgba(255,194,143,1);
+    -o-box-shadow: 0px 0px 0px rgba(255,194,143,1);
+    box-shadow: 0px 0px 0px rgba(255,194,143,1);
+  }
+}
 $container: 1100px;
 #template-lovedraft {
+  &.template-lovedraft-tokyo {
+    background: #ffffff url("images/template-lovedraft/background-tokyo.jpg") top center /100% no-repeat;
+    .section {
+      &.flow {
+        padding-bottom: 50px;
+        ul.lovedraft-flow {
+          margin-bottom: 40px;
+          max-width: none;
+          li {
+            float: left;
+            width: 20%;
+            figure {
+              figcaption {
+                &.immigrate {
+                  padding-top: 210px;
+                }
+              }
+            }
+            p {
+              font-size: 11px;
+              margin: 0;
+              padding: 0 10px;
+              text-align: center;
+            }
+          }
+        }
+      }
+      &.schedule {
+        table {
+          &.timetable {
+            background-color: #ffffff;
+            font-size: 12px;
+            padding: 8px 30px;
+            @include border-radius(0px);
+            thead,
+            tbody {
+              tr {
+                th,
+                td {
+                  border: 2px solid #000000;
+                  color: #000000;
+                }
+              }
+            }
+            thead {
+              font-size: 16px;
+              tr {
+                th {
+                  background-color: #ff931e;
+                  text-align: center;
+                }
+              }
+            }
+            tbody {
+              tr {
+                td {
+                  &:first-child {
+                    padding-left: 10px;
+                    text-align: center;
+                  }
+                  &:last-child {
+                    padding-right: 10px;
+                  }
+                }
+                &:last-child {
+                  td {
+                    padding-bottom: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   font-family: $gothic;
   color: #000000;
   background: #ffffff url("images/template-lovedraft/background.jpg") top center /100% no-repeat;
@@ -11,11 +120,16 @@ $container: 1100px;
     margin: 0px auto;
     padding: 0 10px;
     @include border-box;
+    &.container-scroll {
+      max-width: none;
+      width: $container + 100px;
+    }
   }
   img {
     max-width: 100%;
   }
   #cover {
+    padding-bottom: 50px;
     text-align: center;
     h1 {
       margin: 0px auto;
@@ -42,36 +156,6 @@ $container: 1100px;
     .content {
       margin: 0;
       padding-bottom: 30px;
-    }
-    .button {
-      position: relative;
-      @include transition;
-      display: block;
-      margin-bottom: 50px;
-      font-size: 19px;
-      color: #ffffff;
-      background-color: #ff931e;
-      width: 300px;
-      height: 40px;
-      line-height: 37px;
-      margin: 0px auto;
-      margin-bottom: 50px;
-      @include border-radius(10px);
-      -webkit-box-shadow: 0px 5px 0px rgba(255,194,143,1);
-      -moz-box-shadow: 0px 5px 0px rgba(255,194,143,1);
-      -ms-box-shadow: 0px 5px 0px rgba(255,194,143,1);
-      -o-box-shadow: 0px 5px 0px rgba(255,194,143,1);
-      box-shadow: 0px 5px 0px rgba(255,194,143,1);
-      text-decoration: none;
-      font-family: $gothic-b;
-      &:hover {
-        top: 5px;
-        -webkit-box-shadow: 0px 0px 0px rgba(255,194,143,1);
-        -moz-box-shadow: 0px 0px 0px rgba(255,194,143,1);
-        -ms-box-shadow: 0px 0px 0px rgba(255,194,143,1);
-        -o-box-shadow: 0px 0px 0px rgba(255,194,143,1);
-        box-shadow: 0px 0px 0px rgba(255,194,143,1);
-      }
     }
   }
   .section {
@@ -255,6 +339,7 @@ $container: 1100px;
               line-height: 1.3;
             }
             b {
+              font-size: 20px;
               padding: 4px 5px;
               font-family: $tsubame;
               background-color: #000000;
@@ -262,7 +347,7 @@ $container: 1100px;
               position: absolute;
               top: 0;
               right: 0;
-              margin: 3px 10px 0 0;
+              margin: -3px 10px 0 0;
               @include transform(20deg);
             }
             &:hover {
@@ -379,7 +464,15 @@ $container: 1100px;
 
 @media(max-width: 1020px) {
   #template-lovedraft {
-     background-size: 200% auto;
+    &.template-lovedraft-tokyo {
+       background-size: 200% auto;
+      .section {
+        &.flow {
+          display: block;
+        }
+      }
+    }
+    background-size: 200% auto;
     #cover {
       h1 {
         padding-top: 70px;
@@ -391,28 +484,6 @@ $container: 1100px;
     .section {
       &.flow {
         display: none;
-        ul.lovedraft-flow {
-          li {
-            figure {
-              height: auto;
-              padding-bottom: 60px;
-              background-size: 50% auto;
-              background-position: center center;
-              background: none;
-              img {
-                width: 130px;
-              }
-              figcaption {
-                position: relative;
-                top: -10px;
-                color: #000000;
-              }
-              &.figure-scout {
-                padding-bottom: 30px;
-              }
-            }
-          }
-        }
       }
       &.schedule {
         table {

@@ -1,8 +1,106 @@
 @charset "UTF-8";
+.scroll-x {
+  overflow-x: auto;
+}
+
+.button {
+  position: relative;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  display: block;
+  font-size: 19px;
+  color: #ffffff;
+  background-color: #ff931e;
+  width: 300px;
+  height: 40px;
+  line-height: 37px;
+  margin: 0px auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  text-align: center;
+  -webkit-box-shadow: 0px 5px 0px #ffc28f;
+  -moz-box-shadow: 0px 5px 0px #ffc28f;
+  -ms-box-shadow: 0px 5px 0px #ffc28f;
+  -o-box-shadow: 0px 5px 0px #ffc28f;
+  box-shadow: 0px 5px 0px #ffc28f;
+  text-decoration: none;
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E", sans-serif;
+}
+.button:hover {
+  top: 5px;
+  -webkit-box-shadow: 0px 0px 0px #ffc28f;
+  -moz-box-shadow: 0px 0px 0px #ffc28f;
+  -ms-box-shadow: 0px 0px 0px #ffc28f;
+  -o-box-shadow: 0px 0px 0px #ffc28f;
+  box-shadow: 0px 0px 0px #ffc28f;
+}
+
 #template-lovedraft {
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D", sans-serif;
   color: #000000;
   background: #ffffff url("images/template-lovedraft/background.jpg") top center/100% no-repeat;
+}
+#template-lovedraft.template-lovedraft-tokyo {
+  background: #ffffff url("images/template-lovedraft/background-tokyo.jpg") top center/100% no-repeat;
+}
+#template-lovedraft.template-lovedraft-tokyo .section.flow {
+  padding-bottom: 50px;
+}
+#template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow {
+  margin-bottom: 40px;
+  max-width: none;
+}
+#template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow li {
+  float: left;
+  width: 20%;
+}
+#template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow li figure figcaption.immigrate {
+  padding-top: 210px;
+}
+#template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow li p {
+  font-size: 11px;
+  margin: 0;
+  padding: 0 10px;
+  text-align: center;
+}
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable {
+  background-color: #ffffff;
+  font-size: 12px;
+  padding: 8px 30px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+}
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable thead tr th,
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable thead tr td,
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable tbody tr th,
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable tbody tr td {
+  border: 2px solid #000000;
+  color: #000000;
+}
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable thead {
+  font-size: 16px;
+}
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable thead tr th {
+  background-color: #ff931e;
+  text-align: center;
+}
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable tbody tr td:first-child {
+  padding-left: 10px;
+  text-align: center;
+}
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable tbody tr td:last-child {
+  padding-right: 10px;
+}
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable tbody tr:last-child td {
+  padding-bottom: 10px;
 }
 #template-lovedraft .container {
   max-width: 1120px;
@@ -14,10 +112,15 @@
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
 }
+#template-lovedraft .container.container-scroll {
+  max-width: none;
+  width: 1200px;
+}
 #template-lovedraft img {
   max-width: 100%;
 }
 #template-lovedraft #cover {
+  padding-bottom: 50px;
   text-align: center;
 }
 #template-lovedraft #cover h1 {
@@ -45,43 +148,6 @@
 #template-lovedraft #cover .content {
   margin: 0;
   padding-bottom: 30px;
-}
-#template-lovedraft #cover .button {
-  position: relative;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
-  display: block;
-  margin-bottom: 50px;
-  font-size: 19px;
-  color: #ffffff;
-  background-color: #ff931e;
-  width: 300px;
-  height: 40px;
-  line-height: 37px;
-  margin: 0px auto;
-  margin-bottom: 50px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -webkit-box-shadow: 0px 5px 0px #ffc28f;
-  -moz-box-shadow: 0px 5px 0px #ffc28f;
-  -ms-box-shadow: 0px 5px 0px #ffc28f;
-  -o-box-shadow: 0px 5px 0px #ffc28f;
-  box-shadow: 0px 5px 0px #ffc28f;
-  text-decoration: none;
-  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E", sans-serif;
-}
-#template-lovedraft #cover .button:hover {
-  top: 5px;
-  -webkit-box-shadow: 0px 0px 0px #ffc28f;
-  -moz-box-shadow: 0px 0px 0px #ffc28f;
-  -ms-box-shadow: 0px 0px 0px #ffc28f;
-  -o-box-shadow: 0px 0px 0px #ffc28f;
-  box-shadow: 0px 0px 0px #ffc28f;
 }
 #template-lovedraft .section h2 {
   text-align: center;
@@ -258,6 +324,7 @@
   line-height: 1.3;
 }
 #template-lovedraft .section.recruit ul li a b {
+  font-size: 20px;
   padding: 4px 5px;
   font-family: "FOT-つばめ Std R", "TsubameStd-R", sans-serif;
   background-color: #000000;
@@ -265,7 +332,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  margin: 3px 10px 0 0;
+  margin: -3px 10px 0 0;
   -ms-transform: rotate(20deg);
   -webkit-transform: rotate(20deg);
   transform: rotate(20deg);
@@ -391,6 +458,12 @@
   #template-lovedraft {
     background-size: 200% auto;
   }
+  #template-lovedraft.template-lovedraft-tokyo {
+    background-size: 200% auto;
+  }
+  #template-lovedraft.template-lovedraft-tokyo .section.flow {
+    display: block;
+  }
   #template-lovedraft #cover h1 {
     padding-top: 70px;
   }
@@ -399,24 +472,6 @@
   }
   #template-lovedraft .section.flow {
     display: none;
-  }
-  #template-lovedraft .section.flow ul.lovedraft-flow li figure {
-    height: auto;
-    padding-bottom: 60px;
-    background-size: 50% auto;
-    background-position: center center;
-    background: none;
-  }
-  #template-lovedraft .section.flow ul.lovedraft-flow li figure img {
-    width: 130px;
-  }
-  #template-lovedraft .section.flow ul.lovedraft-flow li figure figcaption {
-    position: relative;
-    top: -10px;
-    color: #000000;
-  }
-  #template-lovedraft .section.flow ul.lovedraft-flow li figure.figure-scout {
-    padding-bottom: 30px;
   }
   #template-lovedraft .section.schedule table.overview {
     font-size: 13px;
