@@ -7,14 +7,14 @@
 #template-lovedraft.template-lovedraft-tokyo {
   background: #ffffff url("images/template-lovedraft/background-tokyo.jpg") top center/100% no-repeat;
 }
-#template-lovedraft.template-lovedraft-tokyo section.flow ul.lovedraft-flow {
+#template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow {
   max-width: 1150px;
 }
-#template-lovedraft.template-lovedraft-tokyo section.flow ul.lovedraft-flow li {
+#template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow li {
   float: left;
   width: 20%;
 }
-#template-lovedraft.template-lovedraft-tokyo section.schedule table.timetable {
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable {
   background-color: #ffffff;
   font-size: 12px;
   padding: 8px 30px;
@@ -24,27 +24,27 @@
   -o-border-radius: 0px;
   -ms-border-radius: 0px;
 }
-#template-lovedraft.template-lovedraft-tokyo section.schedule table.timetable thead tr th,
-#template-lovedraft.template-lovedraft-tokyo section.schedule table.timetable thead tr td,
-#template-lovedraft.template-lovedraft-tokyo section.schedule table.timetable tbody tr th,
-#template-lovedraft.template-lovedraft-tokyo section.schedule table.timetable tbody tr td {
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable thead tr th,
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable thead tr td,
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable tbody tr th,
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable tbody tr td {
   border: 2px solid #000000;
   color: #000000;
 }
-#template-lovedraft.template-lovedraft-tokyo section.schedule table.timetable thead {
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable thead {
   font-size: 16px;
 }
-#template-lovedraft.template-lovedraft-tokyo section.schedule table.timetable thead tr th {
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable thead tr th {
   background-color: #ff931e;
   text-align: center;
 }
-#template-lovedraft.template-lovedraft-tokyo section.schedule table.timetable tbody tr td:first-child {
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable tbody tr td:first-child {
   padding-left: 0px;
 }
-#template-lovedraft.template-lovedraft-tokyo section.schedule table.timetable tbody tr td:last-child {
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable tbody tr td:last-child {
   padding-right: 0px;
 }
-#template-lovedraft.template-lovedraft-tokyo section.schedule table.timetable tbody tr:last-child td {
+#template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable tbody tr:last-child td {
   padding-bottom: 0px;
 }
 #template-lovedraft .container {

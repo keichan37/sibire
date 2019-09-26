@@ -5,7 +5,7 @@ $container: 1100px;
 #template-lovedraft {
   &.template-lovedraft-tokyo {
     background: #ffffff url("images/template-lovedraft/background-tokyo.jpg") top center /100% no-repeat;
-    section {
+    .section {
       &.flow {
         ul.lovedraft-flow {
           max-width: 1150px;
