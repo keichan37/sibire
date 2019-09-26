@@ -9,6 +9,7 @@
 }
 #template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow {
   width: 1200px;
+  max-width: 1200px;
   overflow-x: auto;
 }
 #template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow li {
@@ -447,6 +448,12 @@
 @media (max-width: 1020px) {
   #template-lovedraft {
     background-size: 200% auto;
+  }
+  #template-lovedraft.template-lovedraft-tokyo {
+    background-size: 200% auto;
+  }
+  #template-lovedraft.template-lovedraft-tokyo .section.flow {
+    display: block;
   }
   #template-lovedraft #cover h1 {
     padding-top: 70px;
