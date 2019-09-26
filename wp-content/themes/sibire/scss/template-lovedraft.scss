@@ -19,6 +19,7 @@
   margin: 0px auto;
   margin-bottom: 50px;
   @include border-radius(10px);
+  text-align: center;
   -webkit-box-shadow: 0px 5px 0px rgba(255,194,143,1);
   -moz-box-shadow: 0px 5px 0px rgba(255,194,143,1);
   -ms-box-shadow: 0px 5px 0px rgba(255,194,143,1);
@@ -42,6 +43,7 @@ $container: 1100px;
     .section {
       &.flow {
         ul.lovedraft-flow {
+          margin-bottom: 20px;
           max-width: none;
           li {
             float: left;
