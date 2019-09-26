@@ -88,7 +88,7 @@
               </div>
             </div>
             <div class="section flow">
-              <div class="container">
+              <div class="container container-scroll">
                 <h2>和歌山県に<b>“スカウト”</b>されるまでの流れ</h2>
                 <ul class="lovedraft-flow">
                   <li>
