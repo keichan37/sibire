@@ -8,16 +8,24 @@
   background: #ffffff url("images/template-lovedraft/background-tokyo.jpg") top center/100% no-repeat;
 }
 #template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow {
-  max-width: 1150px;
+  width: 1200px;
+  overflow-x: auto;
 }
 #template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow li {
   float: left;
   width: 20%;
 }
+#template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow li figure figcaption {
+  padding-top: 15px;
+}
+#template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow li figure figcaption.immigrate {
+  padding-top: 210px;
+}
 #template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow li p {
-  font-size: 14px;
+  font-size: 11px;
   margin: 0;
   padding: 0 10px;
+  text-align: center;
 }
 #template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable {
   background-color: #ffffff;

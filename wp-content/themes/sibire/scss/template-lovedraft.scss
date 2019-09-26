@@ -8,14 +8,24 @@ $container: 1100px;
     .section {
       &.flow {
         ul.lovedraft-flow {
-          max-width: 1150px;
+          width: 1200px;
+          overflow-x: auto;
           li {
             float: left;
             width: 20%;
+            figure {
+              figcaption {
+                padding-top: 15px;
+                &.immigrate {
+                  padding-top: 210px;
+                }
+              }
+            }
             p {
-              font-size: 14px;
+              font-size: 11px;
               margin: 0;
               padding: 0 10px;
+              text-align: center;
             }
           }
         }

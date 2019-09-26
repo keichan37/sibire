@@ -125,7 +125,7 @@
                   </li>
                   <li>
                     <figure class="figure-scout">
-                      <figcaption class="scout">移住へ</figcaption>
+                      <figcaption class="immigrate">移住へ</figcaption>
                     </figure>
                   </li>
                 </ul>
