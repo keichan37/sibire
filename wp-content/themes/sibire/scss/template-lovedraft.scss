@@ -8,6 +8,7 @@ $container: 1100px;
     .section {
       &.flow {
         ul.lovedraft-flow {
+          max-width: none;
           li {
             float: left;
             width: 20%;
@@ -86,7 +87,7 @@ $container: 1100px;
     padding: 0 10px;
     @include border-box;
     &.container-scroll {
-      max-width: auto;
+      max-width: none;
       width: $container + 100px;
       overflow-x: auto;
     }
