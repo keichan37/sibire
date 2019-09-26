@@ -85,9 +85,9 @@
                   <?php
                     $event = get_field('event');
                     if ($event == 'tokyo'){
-                      echo <?php echo get_permalink(48992); ?>;
+                      echo '/wakayama_draft_tokyo';
                     }else{
-                      echo <?php echo get_permalink(44822); ?>;
+                      echo '/wakayama_draft_osaka';
                     }
                   ?>">
                   <img class="single-title-img" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/single-title.png" alt="Wakayama Love ドラフト">
