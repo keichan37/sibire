@@ -72,6 +72,11 @@
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
 }
+#template-lovedraft .container.container-scroll {
+  max-width: auto;
+  width: 1200px;
+  overflow-x: auto;
+}
 #template-lovedraft img {
   max-width: 100%;
 }

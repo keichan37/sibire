@@ -88,6 +88,11 @@ $container: 1100px;
     margin: 0px auto;
     padding: 0 10px;
     @include border-box;
+    &.container-scroll {
+      max-width: auto;
+      width: $container + 100px;
+      overflow-x: auto;
+    }
   }
   img {
     max-width: 100%;
