@@ -39,13 +39,14 @@
   text-align: center;
 }
 #template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable tbody tr td:first-child {
-  padding-left: 0px;
+  padding-left: 10px;
+  text-align: center;
 }
 #template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable tbody tr td:last-child {
-  padding-right: 0px;
+  padding-right: 10px;
 }
 #template-lovedraft.template-lovedraft-tokyo .section.schedule table.timetable tbody tr:last-child td {
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 }
 #template-lovedraft .container {
   max-width: 1120px;

@@ -45,15 +45,16 @@ $container: 1100px;
               tr {
                 td {
                   &:first-child {
-                    padding-left: 0px;
+                    padding-left: 10px;
+                    text-align: center;
                   }
                   &:last-child {
-                    padding-right: 0px;
+                    padding-right: 10px;
                   }
                 }
                 &:last-child {
                   td {
-                    padding-bottom: 0px;
+                    padding-bottom: 10px;
                   }
                 }
               }
