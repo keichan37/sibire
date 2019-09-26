@@ -132,8 +132,10 @@
                       </figure>
                     </li>
                   </ul>
-                  <a class="button" href="#form">エントリーフォームはこちら</a>
                 </div>
+              </div>
+              <div class="container">
+                <a class="button" href="#form">エントリーフォームはこちら</a>
               </div>
             </div>
             <div class="section schedule">
