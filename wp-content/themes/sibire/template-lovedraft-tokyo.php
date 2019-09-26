@@ -90,45 +90,47 @@
             <div class="section flow">
               <div class="container container-scroll">
                 <h2>和歌山県に<b>“スカウト”</b>されるまでの流れ</h2>
-                <ul class="lovedraft-flow">
-                  <li>
-                    <figure>
-                      <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/entry.png" alt="">
-                      <figcaption>エントリー</figcaption>
-                    </figure>
-                    <p>和歌山でできる仕事をチェック！<br />このページからイベントにエントリー</p>
-                    <b>→</b>
-                  </li>
-                  <li>
-                    <figure>
-                      <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/event.png" alt="">
-                      <figcaption>イベント参加</figcaption>
-                    </figure>
-                    <p>イベントに参加して、<br />あなた自身をPRしよう</p>
-                    <b>→</b>
-                  </li>
-                  <li>
-                    <figure class="figure-scout">
-                      <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/scout.png" alt="">
-                      <figcaption class="scout">和歌山が<br /><span>あなたをスカウト！</span></figcaption>
-                    </figure>
-                    <p>市町村が「ほしい！」人を指名。<br />イベント内で結果発表！</p>
-                    <b>→</b>
-                  </li>
-                  <li>
-                    <figure>
-                      <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/invitation.png" alt="">
-                      <figcaption>現地にご招待</figcaption>
-                    </figure>
-                    <p>マッチングした人には交通費を補助！<br />現地で仕事や暮らしを体験</p>
-                    <b>→</b>
-                  </li>
-                  <li>
-                    <figure class="figure-scout">
-                      <figcaption class="immigrate">移住へ</figcaption>
-                    </figure>
-                  </li>
-                </ul>
+                <div class="scroll-x">
+                  <ul class="lovedraft-flow">
+                    <li>
+                      <figure>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/entry.png" alt="">
+                        <figcaption>エントリー</figcaption>
+                      </figure>
+                      <p>和歌山でできる仕事をチェック！<br />このページからイベントにエントリー</p>
+                      <b>→</b>
+                    </li>
+                    <li>
+                      <figure>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/event.png" alt="">
+                        <figcaption>イベント参加</figcaption>
+                      </figure>
+                      <p>イベントに参加して、<br />あなた自身をPRしよう</p>
+                      <b>→</b>
+                    </li>
+                    <li>
+                      <figure class="figure-scout">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/scout.png" alt="">
+                        <figcaption class="scout">和歌山が<br /><span>あなたをスカウト！</span></figcaption>
+                      </figure>
+                      <p>市町村が「ほしい！」人を指名。<br />イベント内で結果発表！</p>
+                      <b>→</b>
+                    </li>
+                    <li>
+                      <figure>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/invitation.png" alt="">
+                        <figcaption>現地にご招待</figcaption>
+                      </figure>
+                      <p>マッチングした人には交通費を補助！<br />現地で仕事や暮らしを体験</p>
+                      <b>→</b>
+                    </li>
+                    <li>
+                      <figure class="figure-scout">
+                        <figcaption class="immigrate">移住へ</figcaption>
+                      </figure>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="section schedule">

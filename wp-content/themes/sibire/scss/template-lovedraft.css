@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.scroll-x {
+  overflow-x: auto;
+}
+
 #template-lovedraft {
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D", sans-serif;
   color: #000000;
@@ -6,9 +10,6 @@
 }
 #template-lovedraft.template-lovedraft-tokyo {
   background: #ffffff url("images/template-lovedraft/background-tokyo.jpg") top center/100% no-repeat;
-}
-#template-lovedraft.template-lovedraft-tokyo .section.flow {
-  overflow-x: auto;
 }
 #template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow {
   max-width: none;
