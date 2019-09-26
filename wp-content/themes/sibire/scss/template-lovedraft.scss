@@ -3,6 +3,66 @@
 
 $container: 1100px;
 #template-lovedraft {
+  &.template-lovedraft-tokyo {
+    background: #ffffff url("images/template-lovedraft/background-tokyo.jpg") top center /100% no-repeat;
+    section {
+      &.flow {
+        ul.lovedraft-flow {
+          max-width: 1150px;
+          li {
+            float: left;
+            width: 20%;
+          }
+        }
+      }
+      &.schedule {
+        table {
+          &.timetable {
+            background-color: #ffffff;
+            font-size: 12px;
+            padding: 8px 30px;
+            @include border-radius(0px);
+            thead,
+            tbody {
+              tr {
+                th,
+                td {
+                  border: 2px solid #000000;
+                  color: #000000;
+                }
+              }
+            }
+            thead {
+              font-size: 16px;
+              tr {
+                th {
+                  background-color: #ff931e;
+                  text-align: center;
+                }
+              }
+            }
+            tbody {
+              tr {
+                td {
+                  &:first-child {
+                    padding-left: 0px;
+                  }
+                  &:last-child {
+                    padding-right: 0px;
+                  }
+                }
+                &:last-child {
+                  td {
+                    padding-bottom: 0px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   font-family: $gothic;
   color: #000000;
   background: #ffffff url("images/template-lovedraft/background.jpg") top center /100% no-repeat;
