@@ -12,6 +12,11 @@ $container: 1100px;
           li {
             float: left;
             width: 20%;
+            p {
+              font-size: 14px;
+              margin: 0;
+              padding: 0 10px;
+            }
           }
         }
       }
