@@ -84,13 +84,14 @@
                 <a href="
                   <?php
                     $event = get_field('event');
-                    if ($event == 'osaka'){
-                      echo '<?php echo get_permalink(44822); ?>';
+                    if ($event == 'tokyo'){
+                      echo <?php echo get_permalink(48992); ?>;
                     }else{
-                      echo '<?php echo get_permalink(48992); ?>';
+                      echo <?php echo get_permalink(44822); ?>;
                     }
-                  ?>
-                "><img class="single-title-img" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/single-title.png" alt="Wakayama Love ドラフト"></a>
+                  ?>">
+                  <img class="single-title-img" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/single-title.png" alt="Wakayama Love ドラフト">
+                </a>
                 <?php while(have_posts()): the_post(); ?>
                   <article>
                     <h1 class="single-title"><?php the_title(); ?></h1>
