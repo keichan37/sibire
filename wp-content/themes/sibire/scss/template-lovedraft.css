@@ -324,6 +324,7 @@
   line-height: 1.3;
 }
 #template-lovedraft .section.recruit ul li a b {
+  font-size: 20px;
   padding: 4px 5px;
   font-family: "FOT-つばめ Std R", "TsubameStd-R", sans-serif;
   background-color: #000000;
@@ -331,7 +332,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  margin: 3px 10px 0 0;
+  margin: -3px 10px 0 0;
   -ms-transform: rotate(20deg);
   -webkit-transform: rotate(20deg);
   transform: rotate(20deg);
