@@ -3,6 +3,44 @@
   overflow-x: auto;
 }
 
+.button {
+  position: relative;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  display: block;
+  margin-bottom: 50px;
+  font-size: 19px;
+  color: #ffffff;
+  background-color: #ff931e;
+  width: 300px;
+  height: 40px;
+  line-height: 37px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 0px #ffc28f;
+  -moz-box-shadow: 0px 5px 0px #ffc28f;
+  -ms-box-shadow: 0px 5px 0px #ffc28f;
+  -o-box-shadow: 0px 5px 0px #ffc28f;
+  box-shadow: 0px 5px 0px #ffc28f;
+  text-decoration: none;
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E", sans-serif;
+}
+.button:hover {
+  top: 5px;
+  -webkit-box-shadow: 0px 0px 0px #ffc28f;
+  -moz-box-shadow: 0px 0px 0px #ffc28f;
+  -ms-box-shadow: 0px 0px 0px #ffc28f;
+  -o-box-shadow: 0px 0px 0px #ffc28f;
+  box-shadow: 0px 0px 0px #ffc28f;
+}
+
 #template-lovedraft {
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D", sans-serif;
   color: #000000;
@@ -106,43 +144,6 @@
 #template-lovedraft #cover .content {
   margin: 0;
   padding-bottom: 30px;
-}
-#template-lovedraft #cover .button {
-  position: relative;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
-  display: block;
-  margin-bottom: 50px;
-  font-size: 19px;
-  color: #ffffff;
-  background-color: #ff931e;
-  width: 300px;
-  height: 40px;
-  line-height: 37px;
-  margin: 0px auto;
-  margin-bottom: 50px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -webkit-box-shadow: 0px 5px 0px #ffc28f;
-  -moz-box-shadow: 0px 5px 0px #ffc28f;
-  -ms-box-shadow: 0px 5px 0px #ffc28f;
-  -o-box-shadow: 0px 5px 0px #ffc28f;
-  box-shadow: 0px 5px 0px #ffc28f;
-  text-decoration: none;
-  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E", sans-serif;
-}
-#template-lovedraft #cover .button:hover {
-  top: 5px;
-  -webkit-box-shadow: 0px 0px 0px #ffc28f;
-  -moz-box-shadow: 0px 0px 0px #ffc28f;
-  -ms-box-shadow: 0px 0px 0px #ffc28f;
-  -o-box-shadow: 0px 0px 0px #ffc28f;
-  box-shadow: 0px 0px 0px #ffc28f;
 }
 #template-lovedraft .section h2 {
   text-align: center;

@@ -4,6 +4,37 @@
 .scroll-x {
   overflow-x: auto;
 }
+
+.button {
+  position: relative;
+  @include transition;
+  display: block;
+  margin-bottom: 50px;
+  font-size: 19px;
+  color: #ffffff;
+  background-color: #ff931e;
+  width: 300px;
+  height: 40px;
+  line-height: 37px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  @include border-radius(10px);
+  -webkit-box-shadow: 0px 5px 0px rgba(255,194,143,1);
+  -moz-box-shadow: 0px 5px 0px rgba(255,194,143,1);
+  -ms-box-shadow: 0px 5px 0px rgba(255,194,143,1);
+  -o-box-shadow: 0px 5px 0px rgba(255,194,143,1);
+  box-shadow: 0px 5px 0px rgba(255,194,143,1);
+  text-decoration: none;
+  font-family: $gothic-b;
+  &:hover {
+    top: 5px;
+    -webkit-box-shadow: 0px 0px 0px rgba(255,194,143,1);
+    -moz-box-shadow: 0px 0px 0px rgba(255,194,143,1);
+    -ms-box-shadow: 0px 0px 0px rgba(255,194,143,1);
+    -o-box-shadow: 0px 0px 0px rgba(255,194,143,1);
+    box-shadow: 0px 0px 0px rgba(255,194,143,1);
+  }
+}
 $container: 1100px;
 #template-lovedraft {
   &.template-lovedraft-tokyo {
@@ -123,36 +154,6 @@ $container: 1100px;
     .content {
       margin: 0;
       padding-bottom: 30px;
-    }
-    .button {
-      position: relative;
-      @include transition;
-      display: block;
-      margin-bottom: 50px;
-      font-size: 19px;
-      color: #ffffff;
-      background-color: #ff931e;
-      width: 300px;
-      height: 40px;
-      line-height: 37px;
-      margin: 0px auto;
-      margin-bottom: 50px;
-      @include border-radius(10px);
-      -webkit-box-shadow: 0px 5px 0px rgba(255,194,143,1);
-      -moz-box-shadow: 0px 5px 0px rgba(255,194,143,1);
-      -ms-box-shadow: 0px 5px 0px rgba(255,194,143,1);
-      -o-box-shadow: 0px 5px 0px rgba(255,194,143,1);
-      box-shadow: 0px 5px 0px rgba(255,194,143,1);
-      text-decoration: none;
-      font-family: $gothic-b;
-      &:hover {
-        top: 5px;
-        -webkit-box-shadow: 0px 0px 0px rgba(255,194,143,1);
-        -moz-box-shadow: 0px 0px 0px rgba(255,194,143,1);
-        -ms-box-shadow: 0px 0px 0px rgba(255,194,143,1);
-        -o-box-shadow: 0px 0px 0px rgba(255,194,143,1);
-        box-shadow: 0px 0px 0px rgba(255,194,143,1);
-      }
     }
   }
   .section {
