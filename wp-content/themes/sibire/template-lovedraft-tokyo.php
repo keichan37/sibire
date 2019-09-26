@@ -89,7 +89,7 @@
             </div>
             <div class="section flow">
               <div class="container">
-                <h2>和歌山県に<b>“スカウト”</b>されるまでの流れ</h2>
+                <h2>和歌山に<b>“スカウト”</b>されるまでの流れ</h2>
               </div>
               <div class="scroll-x">
                 <div class="container container-scroll">
