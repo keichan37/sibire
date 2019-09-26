@@ -218,7 +218,9 @@
                   $args = array(
                     'paged' => $paged,
                     'post_type' => array('recruit-event'),
-                    'event' => 'osaka',
+                    'meta_key' => 'event',
+                    'meta_value' => 'osaka',
+                    'meta_compare' => 'LIKE',
                     'posts_per_page' => -1,
                     'post_status' => 'publish',
                     'has_password' => false,
