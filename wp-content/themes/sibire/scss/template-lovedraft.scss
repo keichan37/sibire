@@ -7,6 +7,7 @@ $container: 1100px;
     background: #ffffff url("images/template-lovedraft/background-tokyo.jpg") top center /100% no-repeat;
     .section {
       &.flow {
+        overflow-x: auto;
         ul.lovedraft-flow {
           max-width: none;
           li {
@@ -14,7 +15,6 @@ $container: 1100px;
             width: 20%;
             figure {
               figcaption {
-                padding-top: 15px;
                 &.immigrate {
                   padding-top: 210px;
                 }
@@ -89,7 +89,6 @@ $container: 1100px;
     &.container-scroll {
       max-width: none;
       width: $container + 100px;
-      overflow-x: auto;
     }
   }
   img {
@@ -479,28 +478,6 @@ $container: 1100px;
     .section {
       &.flow {
         display: none;
-        ul.lovedraft-flow {
-          li {
-            figure {
-              height: auto;
-              padding-bottom: 60px;
-              background-size: 50% auto;
-              background-position: center center;
-              background: none;
-              img {
-                width: 130px;
-              }
-              figcaption {
-                position: relative;
-                top: -10px;
-                color: #000000;
-              }
-              &.figure-scout {
-                padding-bottom: 30px;
-              }
-            }
-          }
-        }
       }
       &.schedule {
         table {

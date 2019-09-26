@@ -7,15 +7,15 @@
 #template-lovedraft.template-lovedraft-tokyo {
   background: #ffffff url("images/template-lovedraft/background-tokyo.jpg") top center/100% no-repeat;
 }
+#template-lovedraft.template-lovedraft-tokyo .section.flow {
+  overflow-x: auto;
+}
 #template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow {
   max-width: none;
 }
 #template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow li {
   float: left;
   width: 20%;
-}
-#template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow li figure figcaption {
-  padding-top: 15px;
 }
 #template-lovedraft.template-lovedraft-tokyo .section.flow ul.lovedraft-flow li figure figcaption.immigrate {
   padding-top: 210px;
@@ -73,7 +73,6 @@
 #template-lovedraft .container.container-scroll {
   max-width: none;
   width: 1200px;
-  overflow-x: auto;
 }
 #template-lovedraft img {
   max-width: 100%;
@@ -466,24 +465,6 @@
   }
   #template-lovedraft .section.flow {
     display: none;
-  }
-  #template-lovedraft .section.flow ul.lovedraft-flow li figure {
-    height: auto;
-    padding-bottom: 60px;
-    background-size: 50% auto;
-    background-position: center center;
-    background: none;
-  }
-  #template-lovedraft .section.flow ul.lovedraft-flow li figure img {
-    width: 130px;
-  }
-  #template-lovedraft .section.flow ul.lovedraft-flow li figure figcaption {
-    position: relative;
-    top: -10px;
-    color: #000000;
-  }
-  #template-lovedraft .section.flow ul.lovedraft-flow li figure.figure-scout {
-    padding-bottom: 30px;
   }
   #template-lovedraft .section.schedule table.overview {
     font-size: 13px;
