@@ -232,6 +232,7 @@
                   $args = array(
                     'paged' => $paged,
                     'post_type' => array('recruit-event'),
+                    'event' => 'tokyo',
                     'posts_per_page' => -1,
                     'post_status' => 'publish',
                     'has_password' => false,
