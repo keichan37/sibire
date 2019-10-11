@@ -84,7 +84,7 @@
                 <div class="content">
                   <?php the_content(); //本文 ?>
                 </div>
-                <a class="button" href="#form">エントリーフォームはこちら</a>
+                <a class="button" href="/48992">東京でのイベントに参加する</a>
               </div>
             </div>
             <div class="section flow">
