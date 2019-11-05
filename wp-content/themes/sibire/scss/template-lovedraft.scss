@@ -183,6 +183,14 @@ $container: 1100px;
         letter-spacing: -0.17em;
       }
     }
+    &.mc {
+      padding: 40px 0;
+      text-align: center;
+      img {
+        max-width: 560px;
+        height: auto;
+      }
+    }
     &.flow {
       background-color: #e4ffd2;
       padding-bottom: 80px;
