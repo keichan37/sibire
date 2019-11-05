@@ -267,6 +267,9 @@
                 </ul>
               </div>
             </div>
+            <div class="section mc" id="mc">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/mc.jpg" alt="MC">
+            </div>
 
           <footer id="footer" class="template-lovedraft-footer">
             <div class="container">
