@@ -9,11 +9,17 @@ $container: 1100px;
     margin: 0px auto;
     padding: 0 10px;
     @include border-box;
+    &.container-top {
+      padding-top: 20px;
+    }
   }
   .widget_sp_image-image-link {
     max-width: 600px;
     margin: 0px auto;
     display: block;
+    img {
+      height: auto;
+    }
     &:hover {
       img {
         @include opacity;
