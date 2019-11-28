@@ -120,6 +120,7 @@
       js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5&appId=207637699615029";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+    <a href="https://play.google.com/store/apps/details?id=jp.itans.isin.job.work.programming.sibire&hl=ja" id="SmBnLink" style="display:none;"><img src="https://lh3.googleusercontent.com/V831fDdfOGZGtICre0xiT-uLhnCydNiBdYnKU1hrhoh4qqPyYEg_KM8Q33dDdasrLKw=s360" style="width:100%; height:auto;"></a> <script> var link = document.getElementById("SmBnLink"); if ((navigator.userAgent.indexOf('Android') != -1) && navigator.userAgent.indexOf('Yappli') == -1) { document.getElementById("SmBnLink").style.display="block"; } </script>
     <div id="wrap">
       <?php $url = $_SERVER['REQUEST_URI']; ?>
       <?php if(strstr($url,'wakayama-careerfair')): ?>
