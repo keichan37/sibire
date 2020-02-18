@@ -16,6 +16,7 @@
                     'orderby' => 'meta_value',
                     'order' => 'ASC',
                     'meta_key' => 'sort',
+                    'exclude' => array(2,72)
                   ));
                 ?>
                 <div class="authors">
