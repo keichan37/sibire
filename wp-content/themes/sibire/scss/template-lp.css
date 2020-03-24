@@ -12,10 +12,16 @@
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
 }
+#lp .container.container-top {
+  padding-top: 20px;
+}
 #lp .widget_sp_image-image-link {
   max-width: 600px;
   margin: 0px auto;
   display: block;
+}
+#lp .widget_sp_image-image-link img {
+  height: auto;
 }
 #lp .widget_sp_image-image-link:hover img {
   opacity: 0.8;
