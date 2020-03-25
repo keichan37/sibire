@@ -50,6 +50,13 @@
               各エリアや企業のセールスポイントをつくり、欲しい人材を獲得できるお手伝いをします。<br />
               ターゲットの選定からロゴ、バナーなどクリエイティブの作成、記事や動画の作成など、ターゲットに届くコンテンツをつくり、情報発信します。
           </p>
+          <div class="topic-summary owl-carousel">
+            <a class="single-related" href="<?php the_permalink(); ?>">
+              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.jpg" />
+              <h5><?php the_title(); ?></h5>
+              <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
+            </a>
+          </div>
           <a href="javascript:void(0);" class="button">その他の事例を見る</a>
         </div>
         <div class="section">
@@ -89,6 +96,13 @@
           <p>
             企業やエリアにあった方を紹介します。
           </p>
+          <div class="topic-summary owl-carousel">
+            <a class="single-related" href="<?php the_permalink(); ?>">
+              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.jpg" />
+              <h5><?php the_title(); ?></h5>
+              <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
+            </a>
+          </div>
           <a href="javascript:void(0);" class="button">その他の事例を見る</a>
         </div>
         <div class="section">
