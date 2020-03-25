@@ -12,13 +12,38 @@
       </h1>
       <div id="corporations" class="container">
         <div class="section">
+          <svg version="1.1" class="border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+             y="0px" viewBox="0 0 81.2 5.7" style="enable-background:new 0 0 81.2 5.7;" xml:space="preserve">
+            <g>
+              <rect width="81.2" height="1.6"/>
+              <rect y="2.4" width="81.2" height="0.8"/>
+              <rect y="4" width="81.2" height="1.6"/>
+            </g>
+          </svg>
           <h2>イベントの企画・運営</h2>
           <p>「OFF TOKYO」を加速するためのイベントを開催。<br />
               拠点に就業する人員の獲得、人材誘致、企業誘致など、<br />
               各社・各エリアが求める内容により、イベントの企画を提案し、運営します。</p>
+
+          <div class="topic-summary owl-carousel">
+            <a class="single-related" href="<?php the_permalink(); ?>">
+              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.jpg" />
+              <h5><?php the_title(); ?></h5>
+              <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
+            </a>
+          </div>
+
           <a href="javascript:void(0);" class="button">その他のイベントを見る</a>
         </div>
         <div class="section">
+          <svg version="1.1" class="border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+             y="0px" viewBox="0 0 81.2 5.7" style="enable-background:new 0 0 81.2 5.7;" xml:space="preserve">
+            <g>
+              <rect width="81.2" height="1.6"/>
+              <rect y="2.4" width="81.2" height="0.8"/>
+              <rect y="4" width="81.2" height="1.6"/>
+            </g>
+          </svg>
           <h2>「OFF TOKYO®」を絡めた魅力化</h2>
           <p>
               OFF TOKYOを後押しする取り組みには、商標登録している「OFF TOKYO®」を絡めて魅力化します。<br />
@@ -28,12 +53,20 @@
           <a href="javascript:void(0);" class="button">その他の事例を見る</a>
         </div>
         <div class="section">
+          <svg version="1.1" class="border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+             y="0px" viewBox="0 0 81.2 5.7" style="enable-background:new 0 0 81.2 5.7;" xml:space="preserve">
+            <g>
+              <rect width="81.2" height="1.6"/>
+              <rect y="2.4" width="81.2" height="0.8"/>
+              <rect y="4" width="81.2" height="1.6"/>
+            </g>
+          </svg>
           <h2>ターゲットに届く情報発信</h2>
           <p>
               シビレが有する「OFF TOKYOコミュニティ」（「東京にこだわらない働き方」に関心のある個人・企業群）に対し、情報発信します。<br />
               イベントやツアーの集客および、各種PRにご利用いただけます。
           </p>
-          <ul>
+          <ul class="prefectures">
             <li><a href="javascript:void(0);">宮崎</a></li>
             <li><a href="javascript:void(0);">佐賀</a></li>
             <li><a href="javascript:void(0);">徳島</a></li>
@@ -44,6 +77,14 @@
           <a href="javascript:void(0);" class="button">その他の事例を見る</a>
         </div>
         <div class="section">
+          <svg version="1.1" class="border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+             y="0px" viewBox="0 0 81.2 5.7" style="enable-background:new 0 0 81.2 5.7;" xml:space="preserve">
+            <g>
+              <rect width="81.2" height="1.6"/>
+              <rect y="2.4" width="81.2" height="0.8"/>
+              <rect y="4" width="81.2" height="1.6"/>
+            </g>
+          </svg>
           <h2>人材紹介</h2>
           <p>
             企業やエリアにあった方を紹介します。
@@ -51,6 +92,14 @@
           <a href="javascript:void(0);" class="button">その他の事例を見る</a>
         </div>
         <div class="section">
+          <svg version="1.1" class="border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+             y="0px" viewBox="0 0 81.2 5.7" style="enable-background:new 0 0 81.2 5.7;" xml:space="preserve">
+            <g>
+              <rect width="81.2" height="1.6"/>
+              <rect y="2.4" width="81.2" height="0.8"/>
+              <rect y="4" width="81.2" height="1.6"/>
+            </g>
+          </svg>
           <h2>発起人</h2>
           <p>
             <b>誰もが好きな場所でやりたい仕事ができるように。それが私たちがシビレる状態です</b>
@@ -65,6 +114,14 @@
           <a href="javascript:void(0);" class="button">メンバー一覧</a>
         </div>
         <div class="section">
+          <svg version="1.1" class="border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+             y="0px" viewBox="0 0 81.2 5.7" style="enable-background:new 0 0 81.2 5.7;" xml:space="preserve">
+            <g>
+              <rect width="81.2" height="1.6"/>
+              <rect y="2.4" width="81.2" height="0.8"/>
+              <rect y="4" width="81.2" height="1.6"/>
+            </g>
+          </svg>
           <h2>掲載実績</h2>
           <a href="javascript:void(0);" class="button">掲載実績一覧</a>
         </div>

@@ -16,15 +16,75 @@
   font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D", sans-serif;
 }
 #corporations .section {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   padding-top: 25px;
+}
+#corporations .section .border {
+  display: block;
+  width: 81px;
+  height: 4px;
+  margin: 0px auto;
 }
 #corporations .section h2 {
   font-family: "FOT-あおかね Std EB", "AokaneStd-EB", sans-serif;
+  font-size: 29px;
   text-align: center;
+  margin: 40px 0 20px 0;
 }
 #corporations .section p {
   text-align: center;
+  font-size: 16px;
+  margin: 0 0 40px 0;
+}
+#corporations .section ul.prefectures {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  max-width: 612px;
+  margin: 0px auto;
+  margin-bottom: 40px;
+}
+#corporations .section ul.prefectures li {
+  margin: 0 18px;
+}
+#corporations .section ul.prefectures li a {
+  position: relative;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #000000;
+  font-family: "FOT-あおかね Std EB", "AokaneStd-EB", sans-serif;
+  font-size: 24px;
+  line-height: 58px;
+  writing-mode: vertical-rl;
+  text-align: center;
+  width: 58px;
+  height: 200px;
+  border: 4px solid #000000;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 0px black;
+  -moz-box-shadow: 0px 5px 0px black;
+  -ms-box-shadow: 0px 5px 0px black;
+  -o-box-shadow: 0px 5px 0px black;
+  box-shadow: 0px 5px 0px black;
+}
+#corporations .section ul.prefectures li a:hover {
+  top: 5px;
+  -webkit-box-shadow: 0px 0px 0px black;
+  -moz-box-shadow: 0px 0px 0px black;
+  -ms-box-shadow: 0px 0px 0px black;
+  -o-box-shadow: 0px 0px 0px black;
+  box-shadow: 0px 0px 0px black;
 }
 #corporations .section .button {
   font-family: "FOT-あおかね Std EB", "AokaneStd-EB", sans-serif;
@@ -44,6 +104,9 @@
   -ms-box-shadow: 0px 0px 0px black;
   -o-box-shadow: 0px 0px 0px black;
   box-shadow: 0px 0px 0px black;
+}
+#corporations .section:first-child {
+  padding-top: 70px;
 }
 
 /*# sourceMappingURL=template-corporations.css.map */
