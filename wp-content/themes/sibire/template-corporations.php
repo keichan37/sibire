@@ -131,7 +131,7 @@
               'paged' => $paged,
               'post_type' => 'interview',
               'posts_per_page' => 4,
-              'tag_id' => 3762,
+              'tag_id' => 4732,
               'post_status' => 'publish',
               'has_password' => false,
             ); ?>
