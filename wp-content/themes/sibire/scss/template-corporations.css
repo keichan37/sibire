@@ -31,6 +31,9 @@
   text-align: center;
   margin: 40px 0 20px 0;
 }
+#corporations .section b {
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E", sans-serif;
+}
 #corporations .section p {
   text-align: center;
   font-size: 16px;
@@ -112,10 +115,13 @@
   -o-box-shadow: 0px 0px 0px black;
   box-shadow: 0px 0px 0px black;
 }
-#corporations .section.media {
+#corporations .section.member img {
+  margin-bottom: 15px;
+}
+#corporations .section.member, #corporations .section.media {
   text-align: center;
 }
-#corporations .section.media img {
+#corporations .section.member img, #corporations .section.media img {
   max-width: 600px;
 }
 #corporations .section:first-child {
@@ -128,6 +134,7 @@
 
 @media (max-width: 768px) {
   #corporations .section {
+    overflow: hidden;
     margin-bottom: 30px;
     padding: 15px 20px 0 20px;
   }
@@ -149,8 +156,11 @@
   #corporations .section ul.prefectures li a {
     height: 80px;
   }
-  #corporations .section.media img {
+  #corporations .section.member img, #corporations .section.media img {
     max-width: 100%;
+  }
+  #corporations .section:first-child {
+    padding-top: 40px;
   }
 }
 
