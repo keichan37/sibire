@@ -152,7 +152,7 @@
           <?php wp_reset_query();?>
           <a href="/category/recruit" class="button">その他の事例を見る</a>
         </div>
-        <div class="section">
+        <div class="section member">
           <svg version="1.1" class="border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
              y="0px" viewBox="0 0 81.2 5.7" style="enable-background:new 0 0 81.2 5.7;" xml:space="preserve">
             <g>
@@ -162,6 +162,7 @@
             </g>
           </svg>
           <h2>発起人</h2>
+          <img src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/member.jpg" />
           <p>
             <b>誰もが好きな場所でやりたい仕事ができるように。それが私たちがシビレる状態です</b>
             <br /><br />
