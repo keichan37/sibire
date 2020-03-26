@@ -39,6 +39,9 @@
 #corporations .section .owl-carousel {
   margin-bottom: 30px;
 }
+#corporations .section .owl-carousel a.single-related p {
+  text-align: left;
+}
 #corporations .section ul.prefectures {
   list-style: none;
   margin: 0;

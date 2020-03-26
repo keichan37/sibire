@@ -38,6 +38,11 @@
     }
     .owl-carousel {
       margin-bottom: 30px;
+      a.single-related {
+        p {
+          text-align: left;
+        }
+      }
     }
     ul.prefectures {
       list-style: none;

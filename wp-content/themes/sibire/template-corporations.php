@@ -25,6 +25,47 @@
               拠点に就業する人員の獲得、人材誘致、企業誘致など、<br />
               各社・各エリアが求める内容により、イベントの企画を提案し、運営します。</p>
 
+          <?php
+            $args = array(
+              'paged' => $paged,
+              'post_type' => 'event',
+              'posts_per_page' => 10,
+              'post_status' => 'publish',
+              'has_password' => false,
+            ); ?>
+          <?php query_posts( $args ); ?>
+            <div class="topic-summary owl-carousel">
+            <?php while (have_posts()) : the_post(); ?>
+              <?php
+                $thumbnail_id = get_post_thumbnail_id();
+                $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
+              ?>
+              <a class="single-related" href="<?php the_permalink(); ?>">
+                <img class="single-related-eyecatch owl-lazy" data-src="<?php echo $thumbnail_url[0]; ?>" />
+                <h5><?php the_title(); ?></h5>
+                <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
+              </a>
+            <?php endwhile; ?>
+            </div>
+          <?php wp_reset_query();?>
+
+          <a href="/category/event" class="button">その他のイベントを見る</a>
+        </div>
+        <div class="section">
+          <svg version="1.1" class="border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+             y="0px" viewBox="0 0 81.2 5.7" style="enable-background:new 0 0 81.2 5.7;" xml:space="preserve">
+            <g>
+              <rect width="81.2" height="1.6"/>
+              <rect y="2.4" width="81.2" height="0.8"/>
+              <rect y="4" width="81.2" height="1.6"/>
+            </g>
+          </svg>
+          <h2>「OFF TOKYO®」を絡めた魅力化</h2>
+          <p>
+              OFF TOKYOを後押しする取り組みには、商標登録している「OFF TOKYO®」を絡めて魅力化します。<br />
+              各エリアや企業のセールスポイントをつくり、欲しい人材を獲得できるお手伝いをします。<br />
+              ターゲットの選定からロゴ、バナーなどクリエイティブの作成、記事や動画の作成など、ターゲットに届くコンテンツをつくり、情報発信します。
+          </p>
           <div class="topic-summary owl-carousel">
             <a class="single-related" href="/event/49022">
               <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.jpg" />
@@ -45,31 +86,6 @@
               <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.jpg" />
               <h5>学生向けイベント！10月24日、仙台で「エンジニアのキャリアの作り方」開催</h5>
               <p>異なるキャリアパスを描くエンジニア2名が、仕事のリアルを伝えます！</p>
-            </a>
-          </div>
-
-          <a href="/category/event" class="button">その他のイベントを見る</a>
-        </div>
-        <div class="section">
-          <svg version="1.1" class="border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-             y="0px" viewBox="0 0 81.2 5.7" style="enable-background:new 0 0 81.2 5.7;" xml:space="preserve">
-            <g>
-              <rect width="81.2" height="1.6"/>
-              <rect y="2.4" width="81.2" height="0.8"/>
-              <rect y="4" width="81.2" height="1.6"/>
-            </g>
-          </svg>
-          <h2>「OFF TOKYO®」を絡めた魅力化</h2>
-          <p>
-              OFF TOKYOを後押しする取り組みには、商標登録している「OFF TOKYO®」を絡めて魅力化します。<br />
-              各エリアや企業のセールスポイントをつくり、欲しい人材を獲得できるお手伝いをします。<br />
-              ターゲットの選定からロゴ、バナーなどクリエイティブの作成、記事や動画の作成など、ターゲットに届くコンテンツをつくり、情報発信します。
-          </p>
-          <div class="topic-summary owl-carousel">
-            <a class="single-related" href="<?php the_permalink(); ?>">
-              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.jpg" />
-              <h5><?php the_title(); ?></h5>
-              <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
             </a>
           </div>
           <a href="/tag/offtokyo" class="button">その他の事例を見る</a>
@@ -110,13 +126,30 @@
           <p>
             企業やエリアにあった方を紹介します。
           </p>
-          <div class="topic-summary owl-carousel">
-            <a class="single-related" href="<?php the_permalink(); ?>">
-              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.jpg" />
-              <h5><?php the_title(); ?></h5>
-              <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
-            </a>
-          </div>
+          <?php
+            $args = array(
+              'paged' => $paged,
+              'post_type' => 'interview',
+              'posts_per_page' => 4,
+              'tag_id' => 3762,
+              'post_status' => 'publish',
+              'has_password' => false,
+            ); ?>
+          <?php query_posts( $args ); ?>
+            <div class="topic-summary owl-carousel">
+            <?php while (have_posts()) : the_post(); ?>
+              <?php
+                $thumbnail_id = get_post_thumbnail_id();
+                $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
+              ?>
+              <a class="single-related" href="<?php the_permalink(); ?>">
+                <img class="single-related-eyecatch owl-lazy" data-src="<?php echo $thumbnail_url[0]; ?>" />
+                <h5><?php the_title(); ?></h5>
+                <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
+              </a>
+            <?php endwhile; ?>
+            </div>
+          <?php wp_reset_query();?>
           <a href="/category/recruit" class="button">その他の事例を見る</a>
         </div>
         <div class="section">
