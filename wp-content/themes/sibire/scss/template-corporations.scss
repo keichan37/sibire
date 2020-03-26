@@ -18,7 +18,7 @@
   font-family: $gothic;
   .section {
     margin-bottom: 50px;
-    padding-top: 25px;
+    padding: 25px 20px 0 20px;
     .border {
       display: block;
       width: 81px;
@@ -89,7 +89,6 @@
     }
     &.media {
       text-align: center;
-      margin-bottom: 100px;
       img {
         max-width: 600px;
       }
@@ -97,5 +96,9 @@
     &:first-child {
       padding-top: 70px;
     }
+  }
+  div.wpcf7 {
+    max-width: 600px;
+    margin: 0px auto;
   }
 }
