@@ -188,6 +188,7 @@
           <a href="/category/media" class="button">掲載実績一覧</a>
         </div>
       </div>
+      <?php echo do_shortcode('[contact-form-7 id="1242" title="シビレる企業、募集中！"]'); ?>
       
     </div>
     <div class="footer"> 
