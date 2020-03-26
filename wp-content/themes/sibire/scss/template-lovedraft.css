@@ -171,6 +171,14 @@
   font-size: 130%;
   letter-spacing: -0.17em;
 }
+#template-lovedraft .section.mc {
+  padding: 40px 0;
+  text-align: center;
+}
+#template-lovedraft .section.mc img {
+  max-width: 560px;
+  height: auto;
+}
 #template-lovedraft .section.flow {
   background-color: #e4ffd2;
   padding-bottom: 80px;
