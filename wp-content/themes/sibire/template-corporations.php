@@ -26,14 +26,29 @@
               各社・各エリアが求める内容により、イベントの企画を提案し、運営します。</p>
 
           <div class="topic-summary owl-carousel">
-            <a class="single-related" href="<?php the_permalink(); ?>">
-              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.jpg" />
-              <h5><?php the_title(); ?></h5>
-              <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
+            <a class="single-related" href="/event/49022">
+              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.ajpg" />
+              <h5>OFF TOKYO×宮崎県</h5>
+              <p>（自治体向けの魅力化／企業）</p>
+            </a>
+            <a class="single-related" href="/offtokyo/wakayama-careerfair">
+              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.ajpg" />
+              <h5>＜OFF TOKYO×宮崎県＞Work！Relax！Sports！デュアルライフMeetup</h5>
+              <p>出社前のサーフィン、気軽に山登り。メリハリをつけて仕事に超集中！</p>
+            </a>
+            <a class="single-related" href="/event/55702">
+              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.ajpg" />
+              <h5>sibire Study Cafeスタート！#１は「ゲストハウス経営留学」</h5>
+              <p>＜OFF TOKYO×Manabi-Stay＞3月5日、イベント開催</p>
+            </a>
+            <a class="single-related" href="/column/50022">
+              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.ajpg" />
+              <h5>学生向けイベント！10月24日、仙台で「エンジニアのキャリアの作り方」開催</h5>
+              <p>異なるキャリアパスを描くエンジニア2名が、仕事のリアルを伝えます！</p>
             </a>
           </div>
 
-          <a href="javascript:void(0);" class="button">その他のイベントを見る</a>
+          <a href="/category/event" class="button">その他のイベントを見る</a>
         </div>
         <div class="section">
           <svg version="1.1" class="border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -57,7 +72,7 @@
               <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
             </a>
           </div>
-          <a href="javascript:void(0);" class="button">その他の事例を見る</a>
+          <a href="/tag/offtokyo" class="button">その他の事例を見る</a>
         </div>
         <div class="section">
           <svg version="1.1" class="border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -74,14 +89,13 @@
               イベントやツアーの集客および、各種PRにご利用いただけます。
           </p>
           <ul class="prefectures">
-            <li><a href="javascript:void(0);">宮崎</a></li>
-            <li><a href="javascript:void(0);">佐賀</a></li>
-            <li><a href="javascript:void(0);">徳島</a></li>
-            <li><a href="javascript:void(0);">高知</a></li>
-            <li><a href="javascript:void(0);">和歌山</a></li>
-            <li><a href="javascript:void(0);">仙台</a></li>
+            <li><a href="/tag/miyazaki">宮崎</a></li>
+            <li><a href="/tag/saga">佐賀</a></li>
+            <li><a href="/tag/tokushima">徳島</a></li>
+            <li><a href="/tag/kochi">高知</a></li>
+            <li><a href="/tag/wakayama">和歌山</a></li>
+            <li><a href="/tag/sendai">仙台</a></li>
           </ul>
-          <a href="javascript:void(0);" class="button">その他の事例を見る</a>
         </div>
         <div class="section">
           <svg version="1.1" class="border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -103,7 +117,7 @@
               <p><?php echo nl2br(get_post_meta($post->ID, 'subtitle', true)); ?></p>
             </a>
           </div>
-          <a href="javascript:void(0);" class="button">その他の事例を見る</a>
+          <a href="/category/recruit" class="button">その他の事例を見る</a>
         </div>
         <div class="section">
           <svg version="1.1" class="border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -125,9 +139,9 @@
             私たちは、ひとりひとりがシビレる場所を見つけ、シビレる仕事ができるよう、<br />
             さまざまなかたちで支援していきます。
           </p>
-          <a href="javascript:void(0);" class="button">メンバー一覧</a>
+          <a href="/member" class="button">メンバー一覧</a>
         </div>
-        <div class="section">
+        <div class="section media">
           <svg version="1.1" class="border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
              y="0px" viewBox="0 0 81.2 5.7" style="enable-background:new 0 0 81.2 5.7;" xml:space="preserve">
             <g>
@@ -137,7 +151,8 @@
             </g>
           </svg>
           <h2>掲載実績</h2>
-          <a href="javascript:void(0);" class="button">掲載実績一覧</a>
+          <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/logo.jpg" />
+          <a href="/category/media" class="button">掲載実績一覧</a>
         </div>
       </div>
       

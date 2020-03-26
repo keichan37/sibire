@@ -108,6 +108,13 @@
   -o-box-shadow: 0px 0px 0px black;
   box-shadow: 0px 0px 0px black;
 }
+#corporations .section.media {
+  text-align: center;
+  margin-bottom: 100px;
+}
+#corporations .section.media img {
+  max-width: 600px;
+}
 #corporations .section:first-child {
   padding-top: 70px;
 }
