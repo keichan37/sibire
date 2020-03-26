@@ -149,6 +149,7 @@
     justify-content: center;
     flex-wrap: wrap-reverse;
     align-items: center;
+    margin-bottom: 0px;
   }
   #corporations .section ul.prefectures li {
     margin: 0 5px 10px 5px;
