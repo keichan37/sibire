@@ -187,8 +187,8 @@
           <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/logo.jpg" />
           <a href="/category/media" class="button">掲載実績一覧</a>
         </div>
+        <?php echo do_shortcode('[contact-form-7 id="1242" title="シビレる企業、募集中！"]'); ?>
       </div>
-      <?php echo do_shortcode('[contact-form-7 id="1242" title="シビレる企業、募集中！"]'); ?>
       
     </div>
     <div class="footer"> 
