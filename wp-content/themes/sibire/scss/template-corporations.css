@@ -133,8 +133,10 @@
 }
 
 @media (max-width: 768px) {
-  #corporations .section {
+  #corporations {
     overflow: hidden;
+  }
+  #corporations .section {
     margin-bottom: 30px;
     padding: 15px 20px 0 20px;
   }
