@@ -27,22 +27,22 @@
 
           <div class="topic-summary owl-carousel">
             <a class="single-related" href="/event/49022">
-              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.ajpg" />
-              <h5>OFF TOKYO×宮崎県</h5>
-              <p>（自治体向けの魅力化／企業）</p>
-            </a>
-            <a class="single-related" href="/offtokyo/wakayama-careerfair">
-              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.ajpg" />
+              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.jpg" />
               <h5>＜OFF TOKYO×宮崎県＞Work！Relax！Sports！デュアルライフMeetup</h5>
               <p>出社前のサーフィン、気軽に山登り。メリハリをつけて仕事に超集中！</p>
             </a>
+            <a class="single-related" href="/offtokyo/wakayama-careerfair">
+              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.jpg" />
+              <h5>OFF TOKYO 和歌山キャリアフェア</h5>
+              <p>和歌山県の仕事と暮らしを体験できるイベントです。</p>
+            </a>
             <a class="single-related" href="/event/55702">
-              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.ajpg" />
+              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.jpg" />
               <h5>sibire Study Cafeスタート！#１は「ゲストハウス経営留学」</h5>
               <p>＜OFF TOKYO×Manabi-Stay＞3月5日、イベント開催</p>
             </a>
             <a class="single-related" href="/column/50022">
-              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.ajpg" />
+              <img class="single-related-eyecatch owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/template-corporations/sample.jpg" />
               <h5>学生向けイベント！10月24日、仙台で「エンジニアのキャリアの作り方」開催</h5>
               <p>異なるキャリアパスを描くエンジニア2名が、仕事のリアルを伝えます！</p>
             </a>
