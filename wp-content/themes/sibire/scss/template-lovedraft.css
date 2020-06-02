@@ -45,6 +45,9 @@
   color: #000000;
   background: #ffffff url("images/template-lovedraft/background.jpg") top center/100% no-repeat;
 }
+#template-lovedraft.template-lovedraft2020 {
+  background: #ffffff url("images/template-lovedraft/background2020.jpg") top center/100% no-repeat;
+}
 #template-lovedraft.template-lovedraft-tokyo {
   background: #ffffff url("images/template-lovedraft/background-tokyo.jpg") top center/100% no-repeat;
 }
@@ -136,6 +139,7 @@
 }
 #template-lovedraft #cover img {
   max-width: 400px;
+  margin-bottom: 45px;
 }
 #template-lovedraft #cover .sponsored {
   text-align: left;
@@ -233,8 +237,81 @@
   color: #50a61e;
   z-index: 2;
 }
+#template-lovedraft .section.flow p.description {
+  text-align: center;
+  margin: 0 0 40px 0;
+  padding-top: 25px;
+}
+#template-lovedraft .section.flow ul.lovedraft2020-flow {
+  list-style: none;
+  margin: 0 0 40px 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+#template-lovedraft .section.flow ul.lovedraft2020-flow li {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 10px;
+  text-align: center;
+  width: 25%;
+}
+#template-lovedraft .section.flow ul.lovedraft2020-flow li h4 {
+  font-size: 17px;
+  position: relative;
+  margin: 0 0 20px 0;
+}
+#template-lovedraft .section.flow ul.lovedraft2020-flow li h4 span {
+  position: relative;
+  z-index: 2;
+}
+#template-lovedraft .section.flow ul.lovedraft2020-flow li h4 b {
+  display: block;
+  width: 73px;
+  height: 73px;
+  text-indent: -9999px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  margin: -25px 0 0 -35px;
+  background-image: url("images/template-lovedraft/flow-number.png");
+  background-size: 292px 73px;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+#template-lovedraft .section.flow ul.lovedraft2020-flow li h4 b.nth-child2 {
+  background-position: -73px 0;
+}
+#template-lovedraft .section.flow ul.lovedraft2020-flow li h4 b.nth-child3 {
+  background-position: -146px 0;
+}
+#template-lovedraft .section.flow ul.lovedraft2020-flow li h4 b.nth-child4 {
+  background-position: -219px 0;
+}
+#template-lovedraft .section.flow ul.lovedraft2020-flow li p {
+  font-size: 10px;
+}
+#template-lovedraft .section.flow ul.lovedraft2020-flow li img {
+  max-width: 90%;
+}
 #template-lovedraft .section.schedule {
   padding-bottom: 55px;
+}
+#template-lovedraft .section.schedule p.rule {
+  max-width: 742px;
+  margin: 0;
+  margin: 0px auto;
+  padding: 35px 0 0 0;
+}
+#template-lovedraft .section.schedule p.rule b {
+  font-size: 18px;
+  display: block;
 }
 #template-lovedraft .section.schedule table {
   border-collapse: collapse;
@@ -298,6 +375,37 @@
 }
 #template-lovedraft .section.schedule table.timetable tbody tr:last-child td {
   padding-bottom: 15px;
+}
+#template-lovedraft .section.schedule table.timetable.timetable2020 {
+  background-color: #ffffff;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border: 2px solid #000000;
+  color: #000000;
+}
+#template-lovedraft .section.schedule table.timetable.timetable2020 thead tr th {
+  border: 2px solid #000000;
+  background-color: #ff931e;
+  padding: 5px 10px;
+}
+#template-lovedraft .section.schedule table.timetable.timetable2020 tbody tr td {
+  border: 2px solid #000000;
+}
+#template-lovedraft .section.schedule table.timetable.timetable2020 tbody tr td:first-child {
+  padding-left: 10px;
+}
+#template-lovedraft .section.schedule table.timetable.timetable2020 tbody tr td:last-child {
+  padding-right: 10px;
+}
+#template-lovedraft .section.schedule table.timetable.timetable2020 tbody tr td ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+#template-lovedraft .section.schedule table.timetable.timetable2020 tbody tr:last-child td {
+  padding-bottom: 5px;
 }
 #template-lovedraft .section.recruit h3 b {
   letter-spacing: 0;
@@ -472,6 +580,19 @@
   }
   #template-lovedraft.template-lovedraft-tokyo .section.flow {
     display: block;
+  }
+  #template-lovedraft.template-lovedraft2020 {
+    background-size: 200% auto;
+  }
+  #template-lovedraft.template-lovedraft2020 .section.flow {
+    display: block;
+  }
+  #template-lovedraft.template-lovedraft2020 .section.flow ul {
+    flex-direction: column;
+  }
+  #template-lovedraft.template-lovedraft2020 .section.flow ul li {
+    width: 100%;
+    margin-bottom: 30px;
   }
   #template-lovedraft #cover h1 {
     padding-top: 70px;
