@@ -247,7 +247,7 @@
                 </p>
 
                 <?php $url = $_SERVER['REQUEST_URI']; ?>
-                  <?php if(strstr($url,'wakayama_draft_osaka')): ?>
+                  <?php if(strstr($url,'wakayama-draft-online')): ?>
                     <?php echo do_shortcode('[contact-form-7 id="45072" title="和歌山LOVEドラフト フォーム"]'); ?>
                   <?php else: ?>
                     <?php echo do_shortcode('[contact-form-7 id="10" title="local"]'); ?>
