@@ -82,12 +82,15 @@
             <div class="single">
               <div class="single-left">
 
-                <?php $customfield = get_post_meta($post->ID, 'event', true); ?>
-                <?php if( $customfield == 'online'); ?>
-                  <a href="<?php echo get_permalink(57932); ?>"><img class="single-title-img" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/single-online-title.jpg" alt="Wakayama Love ドラフト"></a>
-                <?php else: ?>
-                  <a href="<?php echo get_permalink(48992); ?>"><img class="single-title-img" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/single-title.png" alt="Wakayama Love ドラフト"></a>
-                <?php endif; ?>
+                <?php $check = get_field('event');
+                  if( $check && in_array('online', $check) ) {
+                     <a href="<?php echo get_permalink(57932); ?>"><img class="single-title-img" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/single-online-title.jpg" alt="Wakayama Love ドラフト"></a>
+                  };
+                  else {
+                    <a href="<?php echo get_permalink(48992); ?>"><img class="single-title-img" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/single-title.png" alt="Wakayama Love ドラフト"></a>
+                  };
+                ?>
+
                 <?php while(have_posts()): the_post(); ?>
                   <article>
                     <h1 class="single-title"><?php the_title(); ?></h1>
