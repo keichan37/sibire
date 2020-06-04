@@ -83,7 +83,7 @@
               <div class="single-left">
                 <?php
                   $colors = get_field('event');
-                  if( $colors && in_array('event', $colors ) ) {
+                  if( $colors && in_array('online', $colors ) ) {
                       echo 'online';
                   }
                 ?>
