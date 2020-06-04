@@ -81,7 +81,9 @@
           <div class="single-wrap">
             <div class="single">
               <div class="single-left">
-                <?php if(has_tag('wakayama-draft-online')) : ?>
+
+                <?php $customfield = get_post_meta($post->ID, 'event', true); ?>
+                <?php if( $customfield == 'online' ): ?>
                   <a href="<?php echo get_permalink(57932); ?>"><img class="single-title-img" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/single-online-title.jpg" alt="Wakayama Love ドラフト"></a>
                 <?php else: ?>
                   <a href="<?php echo get_permalink(48992); ?>"><img class="single-title-img" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/single-title.png" alt="Wakayama Love ドラフト"></a>
