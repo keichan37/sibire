@@ -83,9 +83,9 @@
               <div class="single-left">
                 <?php if(is_tag('wakayama-draft-online')) : ?>
                   <a href="<?php echo get_permalink(57932); ?>"><img class="single-title-img" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/single-online-title.png" alt="Wakayama Love ドラフト"></a>
-                <?php else : ?>
+                <?php else: ?>
                   <a href="<?php echo get_permalink(48992); ?>"><img class="single-title-img" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/single-title.png" alt="Wakayama Love ドラフト"></a>
-                <?php endif : ?>
+                <?php endif; ?>
                 <?php while(have_posts()): the_post(); ?>
                   <article>
                     <h1 class="single-title"><?php the_title(); ?></h1>
