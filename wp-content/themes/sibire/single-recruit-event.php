@@ -81,6 +81,12 @@
           <div class="single-wrap">
             <div class="single">
               <div class="single-left">
+                <?php
+                  $colors = get_field('event');
+                  if( $colors && in_array('red', $colors)){
+                    echo 'online';
+                  }
+                ?>
                 <?php if(get_field('event') == "online"): ?>
                   <a href="<?php echo get_permalink(57932); ?>"><img class="single-title-img" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/single-online-title.jpg" alt="Wakayama Love ドラフト"></a>
                 <?php else: ?>
