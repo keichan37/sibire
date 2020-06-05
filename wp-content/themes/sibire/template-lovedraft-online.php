@@ -129,7 +129,7 @@
                     </tr>
                     <tr>
                       <th>定員</th>
-                      <td>30名 (先着順にご案内)</td>
+                      <td>20名 (先着順にご案内)</td>
                     </tr>
                     <tr>
                       <th>主催</th>
@@ -181,14 +181,19 @@
                       <td><ul><li>参加者と市町村の交流タイム</li></ul>※個別ルームを用意するので仕事の詳細を聞くことも可能</td>
                     </tr>
                     <tr>
-                      <td><time>16:40</time>～</td>
+                      <td><time>17:00</time>～</td>
                       <td>Contents3 告白タイム</td>
                       <td><ul><li>行きたい市町村を選ぼう</li></ul></td>
                     </tr>
                     <tr>
-                      <td><time>16:50</time>～</td>
+                      <td><time>17:05</time>～</td>
                       <td> Contents4 あなたにこそ和歌山に来てほしい！<br />スカウト結果発表！</td>
                       <td><ul><li>市町村が来てほしい人を投票</li></ul></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>個別ルームで、和歌山訪問の相談（連絡先のやりとり）</td>
+                      <td></td>
                     </tr>
                   </tbody>
                 </table>
