@@ -92,6 +92,12 @@
 #kiraboshi .articles ul li a img {
   max-width: 100%;
   height: auto;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  border: 4px solid #ffffff;
 }
 #kiraboshi .articles ul li a .article-content {
   position: relative;
