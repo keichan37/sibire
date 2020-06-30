@@ -44,6 +44,7 @@ module.exports = function (grunt) {
             'scss/template-lovedraft.css',
             'scss/template-feature.css',
             'scss/template-corporations.css',
+            'scss/template-kiraboshi.css',
             'scss/partials-catchcopy.css',
             'scss/plugin-wpcf7.css',
             'scss/wordpress.css'
@@ -79,6 +80,7 @@ module.exports = function (grunt) {
           'scss/template-lovedraft.css',
           'scss/template-feature.css',
           'scss/template-corporations.css',
+          'scss/template-kiraboshi.css',
           'scss/partials-catchcopy.css',
           'scss/plugin-wpcf7.css',
           'scss/wordpress.css'

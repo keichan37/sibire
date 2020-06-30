@@ -1,0 +1,177 @@
+@charset "UTF-8";
+#kiraboshi {
+  background-color: #46bee8;
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D", sans-serif;
+}
+#kiraboshi .container {
+  max-width: 1120px;
+  margin: 0px auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+#kiraboshi .cover {
+  text-align: center;
+  padding-top: 13px;
+}
+#kiraboshi .cover h1 {
+  color: #fff100;
+  margin: 0 0 15px 0;
+}
+#kiraboshi .cover h1 img {
+  max-width: 457px;
+  height: auto;
+}
+#kiraboshi .cover img.illust {
+  max-width: 885px;
+  height: auto;
+  margin-bottom: 30px;
+}
+#kiraboshi .cover p {
+  color: #fff100;
+  margin: 0;
+  margin-bottom: 80px;
+}
+#kiraboshi .articles {
+  padding-bottom: 60px;
+}
+#kiraboshi .articles.topic ul {
+  max-width: 850px;
+}
+#kiraboshi .articles.topic ul li {
+  width: 50%;
+  padding: none;
+}
+#kiraboshi .articles.topic ul li:first-child {
+  padding-right: 35px;
+}
+#kiraboshi .articles.topic ul li:last-child {
+  padding-left: 35px;
+}
+#kiraboshi .articles ul {
+  margin: 0px auto;
+  padding: 0;
+  list-style: none;
+}
+#kiraboshi .articles ul li {
+  float: left;
+  width: 33.3%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+#kiraboshi .articles ul li a {
+  position: relative;
+  display: block;
+  color: #000000;
+  text-decoration: none;
+}
+#kiraboshi .articles ul li a strong {
+  display: block;
+  width: 290px;
+  height: 87px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: -60px 0 0 -35px;
+  z-index: 2;
+  background-image: url("images/template-kiraboshi/tag.png");
+  background-size: 290px 174px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+#kiraboshi .articles ul li a strong.kiraboshi-person {
+  background-position: 0 -87px;
+}
+#kiraboshi .articles ul li a img {
+  max-width: 100%;
+  height: auto;
+}
+#kiraboshi .articles ul li a .article-content {
+  position: relative;
+  padding: 5px 0 0 70px;
+}
+#kiraboshi .articles ul li a .article-content b {
+  height: 53px;
+  width: 53px;
+  border-radius: 27px;
+  -webkit-border-radius: 27px;
+  -moz-border-radius: 27px;
+  -o-border-radius: 27px;
+  -ms-border-radius: 27px;
+  background-color: #000000;
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  text-align: center;
+  line-height: 53px;
+  font-size: 17px;
+}
+#kiraboshi .articles ul li a .article-content h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+#kiraboshi .articles ul li a .article-content p {
+  margin: 0;
+}
+#kiraboshi .articles ul li a:hover .article-content h3,
+#kiraboshi .articles ul li a:hover .article-content p {
+  text-decoration: underline;
+}
+#kiraboshi .articles ul:before, #kiraboshi .articles ul:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+@media (max-width: 930px) {
+  #kiraboshi .cover img.illust {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #kiraboshi .container {
+    padding-bottom: 30px;
+  }
+  #kiraboshi .cover h1 a img {
+    max-width: 100%;
+  }
+  #kiraboshi .cover p br {
+    display: none;
+  }
+  #kiraboshi .articles,
+  #kiraboshi .articles.topic {
+    padding-bottom: 0;
+  }
+  #kiraboshi .articles ul li,
+  #kiraboshi .articles.topic ul li {
+    padding: 0;
+    width: 100%;
+  }
+  #kiraboshi .articles ul li:first-child, #kiraboshi .articles ul li:last-child,
+  #kiraboshi .articles.topic ul li:first-child,
+  #kiraboshi .articles.topic ul li:last-child {
+    padding: 0;
+  }
+  #kiraboshi .articles.topic ul li a strong {
+    margin-left: -10px;
+  }
+  #kiraboshi .articles.topic ul li:first-child {
+    margin-bottom: 70px;
+  }
+  #kiraboshi .articles ul li {
+    margin-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=template-kiraboshi.css.map */

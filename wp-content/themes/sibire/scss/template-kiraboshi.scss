@@ -1,0 +1,195 @@
+@import "mixin";
+@import "variables";
+
+$container: 1100px;
+$blue:      #46bee8;
+$yellow:    #fff100;
+
+#kiraboshi {
+  background-color: $blue;
+  font-family: $gothic;
+  .container {
+    max-width: $container + 20px;
+    margin: 0px auto;
+    padding: 0 10px;
+    @include border-box;
+  }
+  .cover {
+    text-align: center;
+    padding-top: 13px;
+    h1 {
+      color: $yellow;
+      margin: 0 0 15px 0;
+      img {
+        max-width: 457px;
+        height: auto;
+      }
+    }
+    img {
+      &.illust {
+        max-width: 885px;
+        height: auto;
+        margin-bottom: 30px;
+      }
+    }
+    p {
+      color: $yellow;
+      margin: 0;
+      margin-bottom: 80px;
+    }
+  }
+  .articles {
+    padding-bottom: 60px;
+    &.topic {
+      ul {
+        max-width: 850px;
+        li {
+          width: 50%;
+          padding: none;
+          &:first-child { padding-right: 35px; }
+          &:last-child  { padding-left: 35px; }
+        }
+      }
+    }
+    ul {
+      margin: 0px auto;
+      padding: 0;
+      list-style: none;
+      li {
+        float: left;
+        width: 33.3%;
+        padding: 0 20px;
+        @include border-box;
+        a {
+          position: relative;
+          display: block;
+          color: #000000;
+          text-decoration: none;
+          strong {
+            display: block;
+            width: 290px;
+            height: 87px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: -60px 0 0 -35px;
+            z-index: 2;
+            background-image: url("images/template-kiraboshi/tag.png");
+            background-size: 290px 174px;
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+            &.kiraboshi-person {
+              background-position: 0 -87px;
+            }
+          }
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+          .article-content {
+            position: relative;
+            padding: 5px 0 0 70px;
+            b {
+              height: 53px;
+              width: 53px;
+              @include border-radius(27px);
+              background-color: #000000;
+              color: #ffffff;
+              position: absolute;
+              left: 0;
+              top: 10px;
+              text-align: center;
+              line-height: 53px;
+              font-size: 17px;
+            }
+            h3 {
+              margin: 0 0 5px 0;
+              font-size: 16px;
+            }
+            p {
+              margin: 0;
+            }
+          }
+          &:hover {
+            .article-content {
+              h3,
+              p {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      &:before,
+      &:after { @include clearfix; }
+    }
+  }
+}
+
+@media(max-width: 930px) {
+  #kiraboshi {
+    .cover {
+      img {
+        &.illust {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 768px) {
+  #kiraboshi {
+    .container {
+      padding-bottom: 30px;
+    }
+    .cover {
+      h1 {
+        a {
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+      p {
+        br {
+          display: none;
+        }
+      }
+    }
+    .articles,
+    .articles.topic {
+      padding-bottom: 0;
+      ul {
+        li {
+          padding: 0;
+          width: 100%;
+          &:first-child,
+          &:last-child {
+            padding: 0;
+          }
+        }
+      }
+    }
+    .articles.topic {
+      ul {
+        li {
+          a {
+            strong {
+              margin-left: -10px;
+            }
+          }
+          &:first-child {
+            margin-bottom: 70px;
+          }
+        }
+      }
+    }
+    .articles {
+      ul {
+        li {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
