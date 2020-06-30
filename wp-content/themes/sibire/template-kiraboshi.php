@@ -36,9 +36,9 @@
                 <a class="article" href="<?php the_permalink(); ?>">
                   <strong class="kiraboshi-company">キラぼし企業</strong>
                   <?php if (has_post_thumbnail()): ?>
-                    <img class="owl-lazy" data-src="<?php echo $thumbnail_url[0]; ?>" />
+                    <img src="<?php echo $thumbnail_url[0]; ?>" />
                   <?php else: ?>
-                    <img class="owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" />
                   <?php endif; ?>
                   <div class="article-content">
                     <b><?php echo nl2br(get_post_meta($post->ID, 'prefecture', true)); ?></b>
@@ -67,9 +67,9 @@
                 <a class="article" href="<?php the_permalink(); ?>">
                   <strong class="kiraboshi-person">キラぼしパーソン</strong>
                   <?php if (has_post_thumbnail()): ?>
-                    <img class="owl-lazy" data-src="<?php echo $thumbnail_url[0]; ?>" />
+                    <img src="<?php echo $thumbnail_url[0]; ?>" />
                   <?php else: ?>
-                    <img class="owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" />
                   <?php endif; ?>
                   <div class="article-content">
                     <b><?php echo nl2br(get_post_meta($post->ID, 'prefecture', true)); ?></b>
@@ -101,9 +101,9 @@
                 <li>
                   <a class="article" href="<?php the_permalink(); ?>">
                     <?php if (has_post_thumbnail()): ?>
-                      <img class="owl-lazy" data-src="<?php echo $thumbnail_url[0]; ?>" />
+                      <img src="<?php echo $thumbnail_url[0]; ?>" />
                     <?php else: ?>
-                      <img class="owl-lazy" src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" />
+                      <img src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" />
                     <?php endif; ?>
                     <div class="article-content">
                       <b><?php echo nl2br(get_post_meta($post->ID, 'prefecture', true)); ?></b>
