@@ -15,6 +15,12 @@
 #lp .container.container-top {
   padding-top: 20px;
 }
+#lp .top-banner {
+  padding-top: 20px;
+}
+#lp .top-banner .last-child {
+  margin-top: 10px;
+}
 #lp .widget_sp_image-image-link {
   max-width: 600px;
   margin: 0px auto;
