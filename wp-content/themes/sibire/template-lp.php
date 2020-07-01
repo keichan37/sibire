@@ -12,8 +12,9 @@
         <div class="balloon balloon2">多様な働き方を<br />実践したい！</div>
         <div class="balloon balloon3">東京以外の<br />魅力的な求人に<br />出会いたい！</div>
       </div>
-      <div class="container" style="padding-top: 20px;">
+      <div class="container" class="top-banner">
         <?php dynamic_sidebar('lp-banner-top'); ?>
+        <?php dynamic_sidebar('lp-banner-top2'); ?>
       </div>
       <div class="container">
         <div class="section">

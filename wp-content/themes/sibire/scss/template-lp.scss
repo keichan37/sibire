@@ -13,6 +13,12 @@ $container: 1100px;
       padding-top: 20px;
     }
   }
+  .top-banner {
+    padding-top: 20px;
+    .last-child {
+      margin-top: 10px;
+    }
+  }
   .widget_sp_image-image-link {
     max-width: 600px;
     margin: 0px auto;
