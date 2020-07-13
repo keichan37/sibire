@@ -13,6 +13,7 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+  RewriteRule ^xmlrpc\.php$ "http\:\/\/0\.0\.0\.0\/" [R=301,L]
 
   ##Force SSL 
   RewriteCond %{HTTP:X-Forwarded-Proto} !https 
