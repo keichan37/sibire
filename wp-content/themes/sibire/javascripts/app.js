@@ -54,29 +54,6 @@ $(document).ready(function() {
   });
 });
 
-$(document).ready(function() {
-  $(".top-banner").owlCarousel({
-    loop: true,
-    lazyLoad: true,
-    nav: false,
-    items : 3,
-    dots: false,
-    autoHeight: true,
-    responsiveClass: true,
-    responsive:{
-      0:{
-        items: 1,
-      },
-      450:{
-        items: 1,
-      },
-      768:{
-        items: 3,
-      }
-    }
-  });
-});
-
 $(function(){
   var getHeight = $('body').height();
    $(window).scroll(function () {
