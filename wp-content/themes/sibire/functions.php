@@ -102,6 +102,15 @@ register_sidebars(1,
     'after_widget' => '</div>',
   )
 );
+register_sidebars(1,
+  array(
+    'name' => 'トップページバナーTOP 3',
+    'id' => 'lp-banner-top3',
+    'description' => 'トップページのTOPの下に表示されます',
+    'before_widget' => '<div class="last-child">',
+    'after_widget' => '</div>',
+  )
+);
 
 // 管理画面画面一覧表示 順番変更
 function manage_posts_columns($columns) {
