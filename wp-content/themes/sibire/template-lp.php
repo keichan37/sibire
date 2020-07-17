@@ -16,6 +16,7 @@
         <div class="top-banner">
           <?php dynamic_sidebar('lp-banner-top'); ?>
           <?php dynamic_sidebar('lp-banner-top2'); ?>
+          <?php dynamic_sidebar('lp-banner-top3'); ?>
         </div>
       </div>
       <div class="container">
