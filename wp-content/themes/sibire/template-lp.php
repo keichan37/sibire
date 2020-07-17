@@ -13,7 +13,7 @@
         <div class="balloon balloon3">東京以外の<br />魅力的な求人に<br />出会いたい！</div>
       </div>
       <div class="container">
-        <div class="top-banner owl-carousel">
+        <div class="top-banner">
           <?php dynamic_sidebar('lp-banner-top'); ?>
           <?php dynamic_sidebar('lp-banner-top2'); ?>
           <?php dynamic_sidebar('lp-banner-top3'); ?>
