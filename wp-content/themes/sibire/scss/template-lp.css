@@ -17,9 +17,19 @@
 }
 #lp .top-banner {
   padding-top: 20px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
-#lp .top-banner .last-child {
-  margin-top: 10px;
+#lp .top-banner > div {
+  margin: 0 5px;
+}
+#lp .top-banner > div:first-child {
+  margin: 0 5px 0 0;
+}
+#lp .top-banner > div:last-child {
+  margin: 0 0 0 5px;
 }
 #lp .widget_sp_image-image-link {
   max-width: 600px;
@@ -565,6 +575,17 @@
   #lp .cover .balloon.balloon3 {
     right: 0;
     margin-right: 33px;
+  }
+  #lp .top-banner {
+    display: block;
+  }
+  #lp .top-banner > div {
+    margin: 0;
+    text-align: center;
+  }
+  #lp .top-banner > div:first-child, #lp .top-banner > div:last-child {
+    margin-left: 0;
+    margin-right: 0;
   }
   #lp ul.service {
     border-top: none;

@@ -15,8 +15,17 @@ $container: 1100px;
   }
   .top-banner {
     padding-top: 20px;
+    @include flex;
+    & > div {
+      margin: 0 5px;
+      &:first-child {
+        margin: 0 5px 0 0;
+      }
+      &:last-child {
+        margin: 0 0 0 5px;
+      }
+    }
     .last-child {
-      margin-top: 10px;
     }
   }
   .widget_sp_image-image-link {
@@ -518,6 +527,18 @@ $container: 1100px;
         &.balloon3 {
           right: 0;
           margin-right: 33px;
+        }
+      }
+    }
+    .top-banner {
+      display: block;
+      & > div {
+        margin: 0;
+        text-align: center;
+        &:first-child,
+        &:last-child {
+          margin-left: 0;
+          margin-right: 0;
         }
       }
     }
