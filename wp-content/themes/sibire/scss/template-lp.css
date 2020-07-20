@@ -26,7 +26,7 @@
   margin: 0 5px;
 }
 #lp .top-banner > div:first-child {
-  margin: 0 0 5px 0;
+  margin: 0 5px 0 0;
 }
 #lp .top-banner > div:last-child {
   margin: 0 0 0 5px;
@@ -575,6 +575,12 @@
   #lp .cover .balloon.balloon3 {
     right: 0;
     margin-right: 33px;
+  }
+  #lp .top-banner {
+    display: block;
+  }
+  #lp .top-banner > div {
+    margin: 0;
   }
   #lp ul.service {
     border-top: none;
