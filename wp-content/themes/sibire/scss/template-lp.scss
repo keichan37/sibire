@@ -534,6 +534,12 @@ $container: 1100px;
       display: block;
       & > div {
         margin: 0;
+        text-align: center;
+        &:first-child,
+        &:last-child {
+          margin-left: 0;
+          margin-right: 0;
+        }
       }
     }
 

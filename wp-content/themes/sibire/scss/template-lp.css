@@ -581,6 +581,11 @@
   }
   #lp .top-banner > div {
     margin: 0;
+    text-align: center;
+  }
+  #lp .top-banner > div:first-child, #lp .top-banner > div:last-child {
+    margin-left: 0;
+    margin-right: 0;
   }
   #lp ul.service {
     border-top: none;
