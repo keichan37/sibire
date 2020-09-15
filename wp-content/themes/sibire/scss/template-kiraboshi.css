@@ -60,6 +60,7 @@
   float: left;
   width: 33.3%;
   padding: 0 20px;
+  min-height: 280px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -176,6 +177,7 @@
     margin-bottom: 70px;
   }
   #kiraboshi .articles ul li {
+    min-height: auto;
     margin-bottom: 30px;
   }
 }
