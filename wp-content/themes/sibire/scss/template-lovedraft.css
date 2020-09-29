@@ -336,10 +336,14 @@
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
 }
+#template-lovedraft .section.schedule p.rule.qa b {
+  margin-bottom: 10px;
+}
 #template-lovedraft .section.schedule p.rule.qa span {
   display: inline-block;
   color: #ffffff;
-  padding: 2px;
+  padding: 0 5px;
+  margin-right: 5px;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -348,6 +352,7 @@
 }
 #template-lovedraft .section.schedule p.rule.qa span.q {
   background-color: #50a61e;
+  margin-bottom: 3px;
 }
 #template-lovedraft .section.schedule p.rule.qa span.a {
   background-color: #1e50a6;
