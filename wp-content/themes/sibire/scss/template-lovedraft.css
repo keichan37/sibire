@@ -48,6 +48,9 @@
 #template-lovedraft.template-lovedraft2020 {
   background: #ffffff url("images/template-lovedraft/background2020.jpg") top center/100% no-repeat;
 }
+#template-lovedraft.template-lovedraft2020.template-lovedraft2020_ver2 {
+  background: #ffffff url("images/template-lovedraft/background_online2.jpg") top center/100% no-repeat;
+}
 #template-lovedraft.template-lovedraft-tokyo {
   background: #ffffff url("images/template-lovedraft/background-tokyo.jpg") top center/100% no-repeat;
 }
@@ -127,6 +130,7 @@
   text-align: center;
 }
 #template-lovedraft #cover h1 {
+  position: relative;
   margin: 0px auto;
   max-width: 700px;
   padding-top: 120px;
@@ -136,6 +140,16 @@
 }
 #template-lovedraft #cover h1 .subtitle {
   fill: #ffffff;
+}
+#template-lovedraft #cover h1 img {
+  max-width: 89px;
+  width: 89px;
+  height: 138px;
+  max-height: 138px;
+  margin: 0 0 -70px 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 #template-lovedraft #cover img {
   max-width: 400px;
@@ -594,8 +608,18 @@
     width: 100%;
     margin-bottom: 30px;
   }
+  #template-lovedraft.template-lovedraft2020.template-lovedraft2020_ver2 {
+    background-size: 200% auto;
+  }
   #template-lovedraft #cover h1 {
     padding-top: 70px;
+  }
+  #template-lovedraft #cover h1 img {
+    max-width: 40px;
+    width: 40px;
+    height: auto;
+    max-height: auto;
+    margin: 0 0 -20px 0;
   }
   #template-lovedraft #cover img {
     width: 70%;

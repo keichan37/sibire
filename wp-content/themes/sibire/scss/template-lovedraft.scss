@@ -38,6 +38,9 @@ $container: 1100px;
 #template-lovedraft {
   &.template-lovedraft2020 {
     background: #ffffff url("images/template-lovedraft/background2020.jpg") top center /100% no-repeat;
+    &.template-lovedraft2020_ver2 {
+      background: #ffffff url("images/template-lovedraft/background_online2.jpg") top center /100% no-repeat;
+    }
   }
   &.template-lovedraft-tokyo {
     background: #ffffff url("images/template-lovedraft/background-tokyo.jpg") top center /100% no-repeat;
@@ -135,6 +138,7 @@ $container: 1100px;
     padding-bottom: 50px;
     text-align: center;
     h1 {
+      position:  relative;
       margin: 0px auto;
       max-width: 700px;
       padding-top: 120px;
@@ -143,6 +147,16 @@ $container: 1100px;
       }
       .subtitle {
         fill: #ffffff;
+      }
+      img {
+        max-width: 89px;
+        width: 89px;
+        height: 138px;
+        max-height: 138px;
+        margin: 0 0 -70px 0 ;
+        position:  absolute;
+        right: 0;
+        bottom: 0;
       }
     }
     img {
@@ -602,11 +616,21 @@ $container: 1100px;
           }
         }
       }
+      &.template-lovedraft2020_ver2 {
+        background-size: 200% auto;
+      }
     }
     background-size: 200% auto;
     #cover {
       h1 {
         padding-top: 70px;
+        img {
+          max-width: 40px;
+          width: 40px;
+          height: auto;
+          max-height: auto;
+          margin: 0 0 -20px 0;
+        }
       }
       img {
         width: 70%;
