@@ -275,7 +275,7 @@
                   イベントでマッチングしたら、招待チケットを差し上げます！<br />
                   エントリー時に、あなた自身の経験・PRポイントを明記し、 しっかりアピールしよう。
                 </p>
-                <iframe frameborder="0" style="height:500px;width:99%;border:none;" src='https://forms.zohopublic.com/ishizawa/form/wakayamaonlinesecond/formperma/kK7EK4vtKzw6LTohx7sV_VEXNTmLS8wQGRtyS_y6FaE'></iframe>
+                <iframe frameborder="0" style="border:none;" src='https://forms.zohopublic.com/ishizawa/form/wakayamaonlinesecond/formperma/kK7EK4vtKzw6LTohx7sV_VEXNTmLS8wQGRtyS_y6FaE'></iframe>
               </div>
             </div>
 
