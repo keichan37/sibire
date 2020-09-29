@@ -159,7 +159,7 @@
                   イベントでは、目当ての求人当日までにLivecanvas（Webアプリ）を利用し自己紹介を投稿いただきます。投稿方法は主催者からアナウンスいたします。
                 </p>
                 <h3>利用するツール</h3>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/tool.png" alt="" class="tool">
+                <img class="tool" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/tool.png" alt="">
                 <p class="rule qa">
                   <b>イベントに利用するツールについて</b>
                   <span class="q">Q.</span>参加するために必要なものを教えてください。<br />

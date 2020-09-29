@@ -317,6 +317,13 @@
 #template-lovedraft .section.schedule {
   padding-bottom: 55px;
 }
+#template-lovedraft .section.schedule img.tool {
+  display: block;
+  margin: 0px auto;
+  width: 250xp;
+  height: auto;
+  margin-bottom: 35px;
+}
 #template-lovedraft .section.schedule p.rule {
   max-width: 742px;
   margin: 0;

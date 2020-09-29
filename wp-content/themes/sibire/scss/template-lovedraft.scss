@@ -317,6 +317,13 @@ $container: 1100px;
     }
     &.schedule {
       padding-bottom: 55px;
+      img.tool {
+        display: block;
+        margin: 0px auto;
+        width: 250xp;
+        height: auto;
+        margin-bottom: 35px;
+      }
       p.rule {
         max-width: 742px;
         margin: 0;
@@ -346,13 +353,6 @@ $container: 1100px;
             &.a { background-color: #1e50a6; }
           }
         }
-      }
-      img.tool {
-        display: block;
-        margin: 0px auto;
-        width: 250xp;
-        height: auto;
-        margin-bottom: 35px;
       }
       table {
         border-collapse: collapse;
