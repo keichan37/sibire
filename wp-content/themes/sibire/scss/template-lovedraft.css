@@ -146,7 +146,7 @@
   width: 89px;
   height: 138px;
   max-height: 138px;
-  margin: 260px 0 0 0;
+  margin: 0 0 -70px 0;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -613,6 +613,13 @@
   }
   #template-lovedraft #cover h1 {
     padding-top: 70px;
+  }
+  #template-lovedraft #cover h1 img {
+    max-width: 40px;
+    width: 40px;
+    height: auto;
+    max-height: auto;
+    margin: 0 0 -20px 0;
   }
   #template-lovedraft #cover img {
     width: 70%;
