@@ -326,6 +326,19 @@ $container: 1100px;
           font-size: 18px;
           display: block;
         }
+        &.qa {
+          background-color: #e4ffd2;
+          padding: 20px;
+          @include border-radius(4px);
+          span {
+            display: inline-block;
+            color: #ffffff;
+            padding: 2px;
+            @include border-radius(3px);
+            &.q { background-color: #50a61e; }
+            &.a { background-color: #1e50a6; }
+          }
+        }
       }
       table {
         border-collapse: collapse;

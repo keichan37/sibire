@@ -327,6 +327,31 @@
   font-size: 18px;
   display: block;
 }
+#template-lovedraft .section.schedule p.rule.qa {
+  background-color: #e4ffd2;
+  padding: 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+}
+#template-lovedraft .section.schedule p.rule.qa span {
+  display: inline-block;
+  color: #ffffff;
+  padding: 2px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+}
+#template-lovedraft .section.schedule p.rule.qa span.q {
+  background-color: #50a61e;
+}
+#template-lovedraft .section.schedule p.rule.qa span.a {
+  background-color: #1e50a6;
+}
 #template-lovedraft .section.schedule table {
   border-collapse: collapse;
 }
