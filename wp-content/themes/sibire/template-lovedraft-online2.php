@@ -78,7 +78,7 @@
           <div id="template-lovedraft" class="template-lovedraft2020 template-lovedraft2020_ver2">
             <div id="cover">
               <div class="container">
-                <h1><?php get_template_part('partials/lovedraft2020'); ?></h1>
+                <h1><?php get_template_part('partials/lovedraft2020'); ?><img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/subtitle.png" alt=""></h1>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/datetime2.png" alt="">
                 <a class="button" href="#form">参加エントリー</a>
               </div>
