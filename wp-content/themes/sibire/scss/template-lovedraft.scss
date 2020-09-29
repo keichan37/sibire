@@ -347,6 +347,13 @@ $container: 1100px;
           }
         }
       }
+      img.tool {
+        display: block;
+        margin: 0px auto;
+        width: 250xp;
+        height: auto;
+        margin-bottom: 35px;
+      }
       table {
         border-collapse: collapse;
         &.overview,
