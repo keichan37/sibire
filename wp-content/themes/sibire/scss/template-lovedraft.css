@@ -486,6 +486,12 @@
 #template-lovedraft .section.form p {
   text-align: center;
 }
+#template-lovedraft .section.form iframe {
+  display: block;
+  margin: 0px auto;
+  width: 700px;
+  height: 1000px;
+}
 #template-lovedraft .section.form .wpcf7 {
   padding-top: 15px;
 }
@@ -640,6 +646,10 @@
   #template-lovedraft .section.form .wpcf7 .r-form-group-wrap .form-group .control-label {
     width: 100%;
     text-align: left;
+  }
+  #template-lovedraft .section.form iframe {
+    width: 100%;
+    height: 1600px;
   }
   #template-lovedraft footer img {
     max-width: 300px;
