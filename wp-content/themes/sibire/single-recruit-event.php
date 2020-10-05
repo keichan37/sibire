@@ -83,7 +83,9 @@
               <div class="single-left">
 
                 <?php $cus = get_field('event'); ?>
-                <? if($cus && in_array('online', $cus )): ?>
+                <? if($cus && in_array('online2', $cus )): ?>
+                  <a href="<?php echo get_permalink(60782); ?>"><img class="single-title-img" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/single-online-title.jpg" alt="Wakayama Love ドラフト"></a>'
+                <? else if($cus && in_array('online', $cus )): ?>
                   <a href="<?php echo get_permalink(57932); ?>"><img class="single-title-img" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/single-online-title.jpg" alt="Wakayama Love ドラフト"></a>'
                 <?php else: ?>
                   <a href="<?php echo get_permalink(48992); ?>"><img class="single-title-img" src="<?php echo get_template_directory_uri(); ?>/images/template-lovedraft/single-title.png" alt="Wakayama Love ドラフト"></a>

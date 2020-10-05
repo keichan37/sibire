@@ -243,6 +243,7 @@
               </div>
             </div>
 
+            <?php /*
             <div id="form" class="section form">
               <div class="container">
                 <h2 class="h2"><b>エントリーフォーム</b></h2>
@@ -259,6 +260,7 @@
                   <?php endif; ?>
               </div>
             </div>
+            */ ?>
 
           <footer id="footer" class="template-lovedraft-footer">
             <div class="container">
