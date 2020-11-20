@@ -143,6 +143,11 @@ $yellow:    #fff100;
     }
     &:first-child { margin-right: 5px; }
     &:last-child  { margin-left: 5px; }
+    &:hover {
+      > img {
+        @include opacity;
+      }
+    }
   }
 }
 
@@ -160,7 +165,7 @@ $yellow:    #fff100;
     text-decoration: none;
     line-height: 1.4;
     padding: 12px 14px 15px 14px;
-    min-width: 300px;
+    max-width: 300px;
     @include transition;
     @include border-box;
     border-radius: 25px;
