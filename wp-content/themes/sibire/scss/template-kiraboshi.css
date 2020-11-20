@@ -179,7 +179,8 @@
   font-family: 'FOT-筑紫A丸ゴシック Std D', 'TsukuARdGothicStd-D', sans-serif;
   font-size: 16px;
   text-align: center;
-  display: inline-block;
+  display: block;
+  margin: 0px auto;
   background-color: #46bee8;
   color: #ffffff;
   text-decoration: none;

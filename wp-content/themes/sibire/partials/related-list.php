@@ -13,6 +13,44 @@
       ?>
     </ul>
   <?php endif; ?>
+
+  <?php if( has_tag('4822') || has_tag('4842')) : ?>
+    <div class="kiraboshi-banner">
+      <?php if( get_field('kiraboshi-prefecture') === "akita"): ?>
+        <a href="https://www.kira-boshi.jp/category/akita/" target="_blank" rel="nofollow">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/kiraboshi/akita.png" alt='秋田のキラ☆企業'>
+        </a>
+      <?php elseif( get_field('kiraboshi-prefecture') === "aomori"): ?>
+        <a href="https://www.kira-boshi.jp/category/aomori/" target="_blank" rel="nofollow">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/kiraboshi/aomori.png" alt='青森のキラ☆企業'>
+        </a>
+      <?php elseif( get_field('kiraboshi-prefecture') === "miyagi"): ?>
+        <a href="https://www.kira-boshi.jp/category/miyagi/" target="_blank" rel="nofollow">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/kiraboshi/miyagi.png" alt='宮城のキラ☆企業'>
+        </a>
+      <?php elseif( get_field('kiraboshi-prefecture') === "yamagata"): ?>
+        <a href="https://www.kira-boshi.jp/category/yamagata/" target="_blank" rel="nofollow">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/kiraboshi/yamagata.png" alt='山形のキラ☆企業'>
+        </a>
+      <?php elseif( get_field('kiraboshi-prefecture') === "fukushima"): ?>
+        <a href="https://www.kira-boshi.jp/category/fukushima/" target="_blank" rel="nofollow">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/kiraboshi/fukushima.png" alt='福島のキラ☆企業'>
+        </a>
+      <?php elseif( get_field('kiraboshi-prefecture') === "iwate"): ?>
+        <a href="https://www.kira-boshi.jp/category/iwate/" target="_blank" rel="nofollow">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/kiraboshi/iwate.png" alt='岩手のキラ☆企業'>
+        </a>
+      <?php elseif( get_field('kiraboshi-prefecture') === "niigata"): ?>
+        <a href="https://www.kira-boshi.jp/category/niigata/" target="_blank" rel="nofollow">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/kiraboshi/niigata.png" alt='新潟のキラ☆企業'>
+        </a>
+      <?php endif; ?>
+      <a href="https://www.kira-boshi.jp/" target="_blank" rel="nofollow">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/kiraboshi/banner.png" alt="東北・新潟のキラ☆企業">
+      </a>
+    </div>
+  <?php endif; ?>
+
   <h4>関連記事</h4>
   <div class="single-related-lists owl-carousel owl-theme">
     <?php
