@@ -129,6 +129,47 @@ $yellow:    #fff100;
   }
 }
 
+.kiraboshi-banner {
+  @include border-box;
+  @include flex;
+  @include flex-middle;
+  > a {
+    display: block;
+    width: calc(50% -5px);
+    height: auto;
+    > img {
+      width: 100%;
+      height: auto;
+    }
+    &:first-child { margin-right: 5px; }
+    &:last-child  { margin-left: 5px; }
+  }
+}
+
+.kiraboshi-message {
+  padding: 20px 30px;
+  background-color: $yellow;
+  > a {
+    font-family: 'FOT-筑紫A丸ゴシック Std D', 'TsukuARdGothicStd-D', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    background-color: $blue;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 1.4;
+    padding: 12px 14px 15px 14px;
+    min-width: 300px;
+    @include transition;
+    @include border-box;
+    border-radius: 25px;
+    @include border-radius(25px);
+    &:hover {
+      background-color: darken($blue,10%);
+    }
+  }
+}
+
 @media(max-width: 930px) {
   #kiraboshi {
     .cover {
@@ -193,6 +234,16 @@ $yellow:    #fff100;
           min-height: auto;
           margin-bottom: 30px;
         }
+      }
+    }
+  }
+  .kiraboshi-banner {
+    display: block;
+    > a {
+      width: 100%;
+      &:first-child,
+      &:last-child {
+        margin: 0;
       }
     }
   }

@@ -141,6 +141,71 @@
   visibility: hidden;
 }
 
+.kiraboshi-banner {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+.kiraboshi-banner > a {
+  display: block;
+  width: calc(50% -5px);
+  height: auto;
+}
+.kiraboshi-banner > a > img {
+  width: 100%;
+  height: auto;
+}
+.kiraboshi-banner > a:first-child {
+  margin-right: 5px;
+}
+.kiraboshi-banner > a:last-child {
+  margin-left: 5px;
+}
+
+.kiraboshi-message {
+  padding: 20px 30px;
+  background-color: #fff100;
+}
+.kiraboshi-message > a {
+  font-family: 'FOT-筑紫A丸ゴシック Std D', 'TsukuARdGothicStd-D', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  background-color: #46bee8;
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 1.4;
+  padding: 12px 14px 15px 14px;
+  min-width: 300px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  border-radius: 25px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -o-border-radius: 25px;
+  -ms-border-radius: 25px;
+}
+.kiraboshi-message > a:hover {
+  background-color: #1caddf;
+}
+
 @media (max-width: 930px) {
   #kiraboshi .cover img.illust {
     max-width: 100%;
@@ -179,6 +244,16 @@
   #kiraboshi .articles ul li {
     min-height: auto;
     margin-bottom: 30px;
+  }
+
+  .kiraboshi-banner {
+    display: block;
+  }
+  .kiraboshi-banner > a {
+    width: 100%;
+  }
+  .kiraboshi-banner > a:first-child, .kiraboshi-banner > a:last-child {
+    margin: 0;
   }
 }
 
