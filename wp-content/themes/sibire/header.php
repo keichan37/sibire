@@ -107,8 +107,8 @@
   </head>
   <body <?php body_class(); ?>>
     <?php include_once("analyticstracking.php") ?>
-    <!-- Google Tag Manager (noscript) adinte -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5QQFS5"
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DN4B6X"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div id="fb-root"></div>
