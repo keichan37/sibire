@@ -51,7 +51,7 @@ $yellow:    #fff100;
           &.kiraboshi_border {
             border: 2px dashed $yellow;
             padding-top: 20px;
-            padding-top: 20px;
+            padding-bottom: 20px;
           }
         }
       }
@@ -230,13 +230,11 @@ $yellow:    #fff100;
         li {
           padding: 0;
           width: 100%;
-          &:first-child,
-          &:last-child {
+          &:first-child {
             padding: 0;
           }
-          &.kiraboshi-border {
-            padding-left: 10px;
-            padding-right: 10px;
+          &.kiraboshi_border {
+            padding: 15px;
           }
         }
       }
