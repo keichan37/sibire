@@ -54,7 +54,7 @@
                   'paged' => $paged,
                   'post_type' => 'event',
                   'posts_per_page' => 1,
-                  'tag_id' => 4842,
+                  'tag_id' => 4865,
                   'post_status' => 'publish',
                   'has_password' => false,
                 ); ?>
@@ -70,8 +70,7 @@
                   <?php else: ?>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" />
                   <?php endif; ?>
-                  <div class="article-content">
-                    <b><?php echo nl2br(get_post_meta($post->ID, 'prefecture', true)); ?></b>
+                  <div class="article-content-padding">
                     <h3><?php the_title(); ?></h3>
                   </div>
                 </a>
@@ -104,10 +103,16 @@
                     <?php else: ?>
                       <img src="<?php echo get_template_directory_uri(); ?>/images/dummy.png" />
                     <?php endif; ?>
-                    <div class="article-content">
-                      <b><?php echo nl2br(get_post_meta($post->ID, 'prefecture', true)); ?></b>
-                      <h3><?php the_title(); ?></h3>
-                    </div>
+                    <?php $pref = get_field('prefecture'); if( !empty($pref) ): ?>
+                      <div class="article-content">
+                        <b><?php echo nl2br(get_post_meta($post->ID, 'prefecture', true)); ?></b>
+                        <h3><?php the_title(); ?></h3>
+                      </div>
+                    <?php else: ?>
+                      <div class="article-content-padding">
+                        <h3><?php the_title(); ?></h3>
+                      </div>
+                    <?php endif; ?>
                   </a>
                 </li>
               <?php endwhile; ?>
