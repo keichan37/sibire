@@ -49,7 +49,7 @@ $yellow:    #fff100;
           &:first-child { padding-right: 35px; }
           &:last-child  { padding-left: 35px; }
           &.kiraboshi_border {
-            border: 2px solid $yellow;
+            border: 2px dashed $yellow;
             padding-top: 20px;
           }
         }
@@ -95,7 +95,7 @@ $yellow:    #fff100;
           }
           .article-content-padding {
             position: relative;
-            padding: 5px 0 0 70px;
+            padding: 5px 0 0 0;
             h3 {
               margin: 0 0 5px 0;
               font-size: 16px;
