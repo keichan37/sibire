@@ -51,13 +51,6 @@
 #kiraboshi .articles.topic ul li:last-child {
   padding-left: 35px;
 }
-#kiraboshi .articles.topic ul li.kiraboshi_border {
-  position: relative;
-  top: -20px;
-  border: 2px dashed #fff100;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 #kiraboshi .articles ul {
   margin: 0px auto;
   padding: 0;
@@ -256,14 +249,10 @@
     padding: 0;
     width: 100%;
   }
-  #kiraboshi .articles ul li:first-child,
-  #kiraboshi .articles.topic ul li:first-child {
+  #kiraboshi .articles ul li:first-child, #kiraboshi .articles ul li:last-child,
+  #kiraboshi .articles.topic ul li:first-child,
+  #kiraboshi .articles.topic ul li:last-child {
     padding: 0;
-  }
-  #kiraboshi .articles ul li.kiraboshi_border,
-  #kiraboshi .articles.topic ul li.kiraboshi_border {
-    padding: 15px;
-    top: 0;
   }
   #kiraboshi .articles.topic ul li a strong {
     margin-left: -10px;
