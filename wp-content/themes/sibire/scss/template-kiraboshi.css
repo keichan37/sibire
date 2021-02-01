@@ -51,6 +51,10 @@
 #kiraboshi .articles.topic ul li:last-child {
   padding-left: 35px;
 }
+#kiraboshi .articles.topic ul li.kiraboshi-border {
+  border: 2px solid #fff100;
+  padding-top: 20px;
+}
 #kiraboshi .articles ul {
   margin: 0px auto;
   padding: 0;
@@ -240,6 +244,11 @@
   #kiraboshi .articles.topic ul li:first-child,
   #kiraboshi .articles.topic ul li:last-child {
     padding: 0;
+  }
+  #kiraboshi .articles ul li.kiraboshi-border,
+  #kiraboshi .articles.topic ul li.kiraboshi-border {
+    padding-left: 10px;
+    padding-right: 10px;
   }
   #kiraboshi .articles.topic ul li a strong {
     margin-left: -10px;

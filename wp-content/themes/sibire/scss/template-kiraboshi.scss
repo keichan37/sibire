@@ -221,6 +221,10 @@ $yellow:    #fff100;
           &:last-child {
             padding: 0;
           }
+          &.kiraboshi-border {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
         }
       }
     }
