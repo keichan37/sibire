@@ -49,11 +49,6 @@ $yellow:    #fff100;
           &:first-child { padding-right: 35px; }
           &:last-child  { padding-left: 35px; }
           &.kiraboshi_border {
-            position: relative;
-            top: -20px;
-            border: 2px dashed $yellow;
-            padding-top: 20px;
-            padding-bottom: 20px;
           }
         }
       }
@@ -86,7 +81,7 @@ $yellow:    #fff100;
             background-size: 290px 174px;
             background-repeat: no-repeat;
             text-indent: -9999px;
-            &.kiraboshi-person {
+            &.kiraboshi-event {
               background-position: 0 -87px;
             }
           }
@@ -232,12 +227,9 @@ $yellow:    #fff100;
         li {
           padding: 0;
           width: 100%;
-          &:first-child {
+          &:first-child,
+          &:last-child {
             padding: 0;
-          }
-          &.kiraboshi_border {
-            padding: 15px;
-            top: 0;
           }
         }
       }

@@ -65,6 +65,7 @@
               ?>
               <li class="kiraboshi_border">
                 <a class="article" href="<?php the_permalink(); ?>">
+                  <strong class="kiraboshi-event">イベント</strong>
                   <?php if (has_post_thumbnail()): ?>
                     <img src="<?php echo $thumbnail_url[0]; ?>" />
                   <?php else: ?>
