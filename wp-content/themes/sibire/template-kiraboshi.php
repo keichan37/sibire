@@ -48,22 +48,22 @@
               <?php endwhile; ?>
               <?php wp_reset_query();?>
             </li>
-            <li class="kiraboshi_border">
+            <?php
+              $args = array(
+                'paged' => $paged,
+                'post_type' => 'event',
+                'posts_per_page' => 1,
+                'tag_id' => 4865,
+                'post_status' => 'publish',
+                'has_password' => false,
+              ); ?>
+            <?php query_posts( $args ); ?>
+            <?php while (have_posts()) : the_post(); ?>
               <?php
-                $args = array(
-                  'paged' => $paged,
-                  'post_type' => 'event',
-                  'posts_per_page' => 1,
-                  'tag_id' => 4865,
-                  'post_status' => 'publish',
-                  'has_password' => false,
-                ); ?>
-              <?php query_posts( $args ); ?>
-              <?php while (have_posts()) : the_post(); ?>
-                <?php
-                  $thumbnail_id = get_post_thumbnail_id();
-                  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
-                ?>
+                $thumbnail_id = get_post_thumbnail_id();
+                $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
+              ?>
+              <li class="kiraboshi_border">
                 <a class="article" href="<?php the_permalink(); ?>">
                   <?php if (has_post_thumbnail()): ?>
                     <img src="<?php echo $thumbnail_url[0]; ?>" />
@@ -74,9 +74,9 @@
                     <h3><?php the_title(); ?></h3>
                   </div>
                 </a>
-              <?php endwhile; ?>
-              <?php wp_reset_query();?>
-            </li>
+              </li>
+            <?php endwhile; ?>
+            <?php wp_reset_query();?>
           </ul>
         </div>
         <div class="articles">
