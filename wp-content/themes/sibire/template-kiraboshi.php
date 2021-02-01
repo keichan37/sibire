@@ -52,9 +52,9 @@
               <?php
                 $args = array(
                   'paged' => $paged,
-                  'post_type' => 'interview',
+                  'post_type' => 'event',
                   'posts_per_page' => 1,
-                  'tag_id' => 4832,
+                  'tag_id' => 29,
                   'post_status' => 'publish',
                   'has_password' => false,
                 ); ?>
