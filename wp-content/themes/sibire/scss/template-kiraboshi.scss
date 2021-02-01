@@ -48,6 +48,10 @@ $yellow:    #fff100;
           padding: none;
           &:first-child { padding-right: 35px; }
           &:last-child  { padding-left: 35px; }
+          &.kiraboshi-border {
+            border: 2px solid $yellow;
+            padding-top: 20px;
+          }
         }
       }
     }
