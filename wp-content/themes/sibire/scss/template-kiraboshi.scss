@@ -49,6 +49,8 @@ $yellow:    #fff100;
           &:first-child { padding-right: 35px; }
           &:last-child  { padding-left: 35px; }
           &.kiraboshi_border {
+            position: relative;
+            top: -20px;
             border: 2px dashed $yellow;
             padding-top: 20px;
             padding-bottom: 20px;
@@ -235,6 +237,7 @@ $yellow:    #fff100;
           }
           &.kiraboshi_border {
             padding: 15px;
+            top: 0;
           }
         }
       }
