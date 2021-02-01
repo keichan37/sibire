@@ -48,6 +48,10 @@ $yellow:    #fff100;
           padding: none;
           &:first-child { padding-right: 35px; }
           &:last-child  { padding-left: 35px; }
+          &.kiraboshi-border {
+            border: 2px solid $yellow;
+            padding-top: 20px;
+          }
         }
       }
     }
@@ -216,6 +220,10 @@ $yellow:    #fff100;
           &:first-child,
           &:last-child {
             padding: 0;
+          }
+          &.kiraboshi-border {
+            padding-left: 10px;
+            padding-right: 10px;
           }
         }
       }

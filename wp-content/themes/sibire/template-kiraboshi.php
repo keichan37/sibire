@@ -48,7 +48,7 @@
               <?php endwhile; ?>
               <?php wp_reset_query();?>
             </li>
-            <li>
+            <li class="kiraboshi_border">
               <?php
                 $args = array(
                   'paged' => $paged,
