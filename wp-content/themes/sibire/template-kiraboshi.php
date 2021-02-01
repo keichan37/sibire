@@ -54,7 +54,7 @@
                   'paged' => $paged,
                   'post_type' => 'event',
                   'posts_per_page' => 1,
-                  'tag_id' => 29,
+                  'tag_id' => 4842,
                   'post_status' => 'publish',
                   'has_password' => false,
                 ); ?>
@@ -65,7 +65,6 @@
                   $thumbnail_url = wp_get_attachment_image_src($thumbnail_id,'medium', true);
                 ?>
                 <a class="article" href="<?php the_permalink(); ?>">
-                  <strong class="kiraboshi-person">キラぼしパーソン</strong>
                   <?php if (has_post_thumbnail()): ?>
                     <img src="<?php echo $thumbnail_url[0]; ?>" />
                   <?php else: ?>
@@ -86,7 +85,7 @@
               <?php
                 $args = array(
                   'paged' => $paged,
-                  'post_type' => 'interview',
+                  'post_type' => array('interview','event'),
                   'posts_per_page' => -1,
                   'tag_id' => 4842,
                   'post_status' => 'publish',
