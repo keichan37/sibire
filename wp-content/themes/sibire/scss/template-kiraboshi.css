@@ -52,7 +52,8 @@
   padding-left: 35px;
 }
 #kiraboshi .articles.topic ul li.kiraboshi_border {
-  border: 2px solid #fff100;
+  border: 2px dashed #fff100;
+  padding-top: 20px;
   padding-top: 20px;
 }
 #kiraboshi .articles ul {
@@ -106,7 +107,7 @@
 }
 #kiraboshi .articles ul li a .article-content-padding {
   position: relative;
-  padding: 5px 0 0 70px;
+  padding: 5px 0 0 0;
 }
 #kiraboshi .articles ul li a .article-content-padding h3 {
   margin: 0 0 5px 0;
