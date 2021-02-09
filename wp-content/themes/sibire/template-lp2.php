@@ -49,7 +49,7 @@
             <?php query_posts( $args ); ?>
               <div class="summary-grid-wrap">
             <?php while (have_posts()) : the_post(); ?>
-              <?php get_template_part('partials/lp-grid'); ?>
+              <?php get_template_part('partials/summary-grid'); ?>
             <?php endwhile; ?>
               </div>
 
@@ -70,7 +70,7 @@
             <?php query_posts( $args ); ?>
               <div class="summary-grid-wrap">
             <?php while (have_posts()) : the_post(); ?>
-              <?php get_template_part('partials/lp-grid'); ?>
+              <?php get_template_part('partials/summary-grid'); ?>
             <?php endwhile; ?>
               </div>
 
