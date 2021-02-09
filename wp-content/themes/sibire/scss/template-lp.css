@@ -363,6 +363,146 @@
   line-height: 40px;
   margin-bottom: 10px;
 }
+#lp .summary-grid-wrap:before, #lp .summary-grid-wrap:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+#lp .summary-grid-wrap .summary-grid {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  display: block;
+  width: 235px;
+  height: auto;
+  min-height: 298px;
+  float: left;
+  text-decoration: none;
+  color: #231815;
+  margin: 15px 20px;
+  overflow: hidden;
+  background: transparent url("images/template-summary/bottom-pink.png") bottom left no-repeat;
+}
+#lp .summary-grid-wrap .summary-grid figure {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  padding-top: 170px;
+}
+#lp .summary-grid-wrap .summary-grid figure img {
+  position: absolute;
+  height: 170px;
+  width: auto;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  vertical-align: bottom;
+  background: #ffffff url("images/loading.gif") no-repeat;
+  background-position: center center;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+#lp .summary-grid-wrap .summary-grid figure figcaption {
+  padding: 8px 0 0 0;
+  background-color: #ffffff;
+}
+#lp .summary-grid-wrap .summary-grid figure h3 {
+  text-align: left;
+  font-family: "FOT-筑紫ゴシック Pro E", "TsukuGoPro-E", sans-serif;
+  font-size: 19px;
+  line-height: 1.4;
+  margin: 0 0 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  height: 80px;
+}
+#lp .summary-grid-wrap .summary-grid figure h4 {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  text-align: left;
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D", sans-serif;
+  color: #888888;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 0 15px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  height: 20px;
+}
+#lp .summary-grid-wrap .summary-grid figure p {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  text-align: left;
+  font-family: "FOT-筑紫ゴシック Pr5 D", "TsukuGoPr5-D", sans-serif;
+  color: #888888;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0 0 17px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+#lp .summary-grid-wrap .summary-grid figure b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000000;
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 0 3px;
+  background-color: #f9f069;
+  font-family: "FOT-あおかね Std EB", "AokaneStd-EB";
+}
+#lp .summary-grid-wrap .summary-grid.summary-grid-first {
+  width: 510px;
+}
+#lp .summary-grid-wrap .summary-grid.summary-grid-first figure {
+  padding-top: 340px;
+}
+#lp .summary-grid-wrap .summary-grid.summary-grid-first figure img {
+  height: 340px;
+}
+#lp .summary-grid-wrap .summary-grid.summary-grid-first figure figcaption {
+  padding-top: 10px;
+}
+#lp .summary-grid-wrap .summary-grid:hover {
+  color: #e61673;
+}
+#lp .summary-grid-wrap .summary-grid:hover h4,
+#lp .summary-grid-wrap .summary-grid:hover p {
+  color: #e61673;
+}
+#lp .summary-grid-wrap .summary-grid:hover figure img {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-filter: "alpha(opacity=$ratioms)";
+}
 #lp .message {
   background: #faed00;
   position: relative;
@@ -610,6 +750,34 @@
     background-image: url("images/template-lp/check_small.png");
     line-height: 20px;
     margin-bottom: 15px;
+  }
+  #lp .summary-grid-wrap .summary-grid {
+    width: 46%;
+    margin: 2% 2% 5% 2%;
+    min-height: 280px;
+  }
+  #lp .summary-grid-wrap .summary-grid figure {
+    padding-top: 140px;
+  }
+  #lp .summary-grid-wrap .summary-grid figure img {
+    height: 140px;
+  }
+  #lp .summary-grid-wrap .summary-grid figure figcaption h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  #lp .summary-grid-wrap .summary-grid.summary-grid.summary-grid-first {
+    width: 96%;
+    margin: 2% 2% 5% 2%;
+  }
+  #lp .summary-grid-wrap .summary-grid.summary-grid.summary-grid-first figure {
+    padding-top: 230px;
+  }
+  #lp .summary-grid-wrap .summary-grid.summary-grid.summary-grid-first figure img {
+    height: 230px;
   }
 }
 
