@@ -47,9 +47,11 @@
                 'has_password' => false,
               ); ?>
             <?php query_posts( $args ); ?>
+              <div class="summary-grid-wrap">
             <?php while (have_posts()) : the_post(); ?>
               <?php get_template_part('partials/lp-grid'); ?>
             <?php endwhile; ?>
+              </div>
 
             <?php wp_reset_query();?>
           <a class="button button-small" href="<?php get_category_link(892); ?>">全て見る</a>
@@ -66,9 +68,11 @@
                 'has_password' => false,
               ); ?>
             <?php query_posts( $args ); ?>
+              <div class="summary-grid-wrap">
             <?php while (have_posts()) : the_post(); ?>
               <?php get_template_part('partials/lp-grid'); ?>
             <?php endwhile; ?>
+              </div>
 
             <?php wp_reset_query();?>
         </div>
