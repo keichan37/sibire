@@ -54,7 +54,7 @@
               </div>
 
             <?php wp_reset_query();?>
-          <a class="button button-small" href="<?php get_category_link(892); ?>">全て見る</a>
+          <a class="button button-small" href="/category/recruit">全て見る</a>
         </div>
         <div class="section" id="topic">
           <h2><b>“</b>トピック<b>”</b><span>TOPIC</span></h2>
