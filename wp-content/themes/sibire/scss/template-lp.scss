@@ -316,6 +316,134 @@ $container: 1100px;
       }
     }
   }
+  .summary-grid-wrap {
+    $black: #231815;
+    $pink: #e61673;
+    $design: 'FOT-あおかね Std EB', 'AokaneStd-EB';
+    &:before,
+    &:after {
+      @include clearfix;
+    }
+    .summary-grid {
+      $img: 170px;
+      $margin: 20px;
+      $width: ($container - ($margin * 8)) / 4;
+      @include transition;
+      @include border-box;
+      display: block;
+      width: $width;
+      height: auto;
+      min-height: 298px;
+      float: left;
+      text-decoration: none;
+      color: $black;
+      margin: 15px $margin;
+      overflow: hidden;
+      background: transparent url("images/template-summary/bottom-pink.png") bottom left no-repeat;
+      figure {
+        margin: 0;
+        text-align: center;
+        position: relative;
+        padding-top: 170px;
+        img {
+          position: absolute;
+          height: $img;
+          width: auto;
+          left: 50%;
+          top: 0;
+          -webkit-transform: translate(-50%, 0%);
+          -moz-transform: translate(-50%, 0%);
+          -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+          vertical-align: bottom;
+          background: #ffffff url("images/loading.gif") no-repeat;
+          background-position: center center;
+          @include transition;
+        }
+        figcaption {
+          padding: 8px 0 0 0;
+          background-color: #ffffff;
+        }
+        h3 {
+          text-align: left;
+          font-family: $gothic-b;
+          font-size: 19px;
+          line-height: 1.4;
+          margin: 0 0 5px 0;
+          overflow : hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          height: 80px;
+        }
+        h4 {
+          @include transition;
+          text-align: left;
+          font-family: $gothic;
+          color: #888888;
+          font-size: 13px;
+          line-height: 1.5;
+          margin: 0 0 15px 0;
+          overflow : hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          height: 20px;
+        }
+        p {
+          @include transition;
+          text-align: left;
+          font-family: $gothic;
+          color: #888888;
+          font-size: 13px;
+          line-height: 1.7;
+          margin: 0 0 17px 0;
+          overflow : hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 5;
+        }
+        b {
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: #000000;
+          font-size: 12px;
+          line-height: 1.4;
+          padding: 0 3px;
+          background-color: #f9f069;
+          font-family: $design;
+        }
+      }
+      &.summary-grid-first {
+        width: ($width * 2) + ($margin * 2);
+        figure {
+          padding-top: 340px;
+          img {
+            height: $img * 2;
+          }
+          figcaption {
+            padding-top: 10px;
+          }
+        }
+      }
+      &:hover {
+        color: $pink;
+        h4,
+        p {
+          color: $pink;
+        }
+        figure {
+          img {
+            @include opacity;
+          }
+        }
+      }
+    }
+  }
   .message {
     $yellow: #faed00;
     background: $yellow;
@@ -571,6 +699,38 @@ $container: 1100px;
           background-image: url("images/template-lp/check_small.png");
           line-height: 20px;
           margin-bottom: 15px;
+        }
+      }
+    }
+    .summary-grid-wrap {
+      .summary-grid {
+        width: 46%;
+        margin: 2% 2% 5% 2%;
+        min-height: 280px;
+        figure {
+          padding-top: 140px;
+          img {
+            height: 140px;
+          }
+          figcaption {
+            h4 {
+              overflow : hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 1;
+            }
+          }
+        }
+        &.summary-grid.summary-grid-first {
+          width: 96%;
+          margin: 2% 2% 5% 2%;
+          figure {
+            padding-top: 230px;
+            img {
+              height: 230px;
+            }
+          }
         }
       }
     }
