@@ -4,7 +4,7 @@
     <div id="lp">
 
       <div class="cover scroll-cover">
-        <h1>
+        <h1 class="rocknroll">
           エンジニア×地方特化型<br />転職支援サービス
         </h1>
       </div>

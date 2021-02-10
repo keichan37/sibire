@@ -69,6 +69,10 @@
     fill: #000000;
   }
 }
+#lp .cover h1.rocknroll {
+  font-family: 'FOT-ロックンロール Std DB', 'RocknRollStd-DB', sans-serif;
+  font-size: 40px;
+}
 #lp .cover .balloon {
   position: absolute;
   width: 69px;
