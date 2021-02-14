@@ -456,23 +456,22 @@ header .global_menu {
 
 .scroll-top {
   display: block;
-  width: 60px;
-  height: 60px;
-  background-color: $green;
+  width: 140px;
+  height: 44px;
+  background-color: #00b900;
   position: fixed;
   bottom: 0;
   right: 0;
   z-index: 99;
   margin: 0 20px 20px 0;
   color: #ffffff;
-  font-size: 33px;
+  font-size: 17px;
   text-align: center;
-  line-height: 1.7;
+  line-height: 44px;
   @include transition;
-  &.none { display: none; }
-  &.absolute { position: absolute; }
+  text-decoration: none;
   &:hover {
-    background-color: lighten($green,8%);
+    background-color: lighten(#00b900,8%);
   }
 }
 
