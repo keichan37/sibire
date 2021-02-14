@@ -1,6 +1,6 @@
 
 <svg version="1.1" id="brand2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" width="60px" height="20px" xml:space="preserve">
+	 y="0px" xml:space="preserve">
 <g>
 	<polygon points="31.99,7.65 32.75,7.65 32.75,19.87 34.59,19.87 34.59,5.81 31.99,5.81 	"/>
 	<rect x="32.75" width="1.84" height="1.84"/>

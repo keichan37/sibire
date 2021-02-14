@@ -55,7 +55,8 @@
   margin: 0 0 56px 0;
 }
 #lp .cover h1 svg {
-  max-width: 90%;
+  width: 300px;
+  height: auto;
   display: block;
   margin: 0px auto;
   margin-bottom: 15px;
