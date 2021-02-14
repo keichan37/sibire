@@ -380,7 +380,8 @@ Description: 投稿ページ
 #common .single-registration#lp a.button.button-small,
 #common .single-service#lp a.button.button-small {
   width: 270px;
-  margin: 15px 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 #common .single-related-list {
   margin: 5px 0 0px 0;
