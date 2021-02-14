@@ -53,6 +53,7 @@
 }
 #lp .cover h1 {
   margin: 0 0 56px 0;
+  color: #000000;
 }
 #lp .cover h1 svg {
   width: 300px;
@@ -64,14 +65,6 @@
 #lp .cover h1 svg polygon,
 #lp .cover h1 svg path {
   animation: anime 3s ease-in 0s forwards;
-}
-@keyframes anime {
-  0% {
-    fill: #c2e2dd;
-  }
-  100% {
-    fill: #000000;
-  }
 }
 #lp .cover h1.rocknroll {
   font-family: 'FOT-ロックンロール Std DB', 'RocknRollStd-DB', sans-serif;

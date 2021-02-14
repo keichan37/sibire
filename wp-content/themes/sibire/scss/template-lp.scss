@@ -49,6 +49,7 @@ $container: 1100px;
     text-align: center;
     h1 {
       margin: 0 0 56px 0;
+      color: #000000;
       svg {
         width: 300px;
         height: auto;
@@ -58,16 +59,6 @@ $container: 1100px;
         polygon,
         path {
           animation: anime 3s ease-in 0s forwards; 
-        }
-        @keyframes anime {
-          0% {
-            fill: #c2e2dd;
-          }
-          50% {
-          }
-          100% {
-            fill: #000000;
-          }
         }
       }
       &.rocknroll {
