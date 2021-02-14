@@ -351,6 +351,7 @@ Description: 投稿ページ
 #common .single-service {
   padding: 30px 0;
   background: #c2e2dd url("images/single/single-service.png") center center/cover no-repeat;
+  text-align: center;
 }
 #common .single-registration.fixed,
 #common .single-service.fixed {
@@ -375,6 +376,11 @@ Description: 投稿ページ
   width: 170px;
   height: auto;
   margin-bottom: 20px;
+}
+#common .single-registration#lp a.button.button-small,
+#common .single-service#lp a.button.button-small {
+  width: 270px;
+  margin: 15px 0;
 }
 #common .single-related-list {
   margin: 5px 0 0px 0;
