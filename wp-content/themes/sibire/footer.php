@@ -8,7 +8,7 @@
       <?php else : ?>
       <?php get_template_part('partials/sns-footer'); ?>
         <div class="scroll-top-wrap">
-          <a class="scroll-top" href="https://lin.ee/mVwbQHE" target="_blank"><?php get_template_part('partials/lineapp'); ?>LINEで仕事相談</a>
+          <a class="scroll-top" href="https://lin.ee/mVwbQHE" target="_blank"><?php get_template_part('partials/line'); ?>LINEで仕事相談</a>
         </div>
         <footer id="footer">
           <nav>
