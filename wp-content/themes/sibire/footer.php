@@ -8,7 +8,7 @@
       <?php else : ?>
       <?php get_template_part('partials/sns-footer'); ?>
         <div class="scroll-top-wrap">
-          <a class="e-scroll-top r-scroll-top scroll-top none" href="javascript:void(0);"><span class="icon icon-topArrow"></span></a>
+          <a class="scroll-top" href="https://lin.ee/mVwbQHE" target="_blank">LINE@</a>
         </div>
         <footer id="footer">
           <nav>
