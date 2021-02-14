@@ -523,6 +523,9 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
   height: 20px;
   width: auto;
   margin: 0 3px 0 0;
+  position: relative;
+  top: 4px;
+  fill: #ffffff;
 }
 
 .tag-list {
