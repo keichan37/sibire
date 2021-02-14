@@ -8,7 +8,7 @@
       <?php else : ?>
       <?php get_template_part('partials/sns-footer'); ?>
         <div class="scroll-top-wrap">
-          <a class="scroll-top" href="https://lin.ee/mVwbQHE" target="_blank">LINE@</a>
+          <a class="scroll-top" href="https://lin.ee/mVwbQHE" target="_blank">LINEで仕事相談</a>
         </div>
         <footer id="footer">
           <nav>

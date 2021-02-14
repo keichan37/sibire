@@ -5,7 +5,7 @@
 
       <div class="cover scroll-cover">
         <h1 class="rocknroll">
-          <?php get_template_part('partials/brand'); ?>
+          <?php get_template_part('partials/brand2'); ?>
           エンジニア×地方特化型<br />転職支援サービス
         </h1>
       </div>

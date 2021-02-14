@@ -51,6 +51,9 @@ $container: 1100px;
       margin: 0 0 56px 0;
       svg {
         max-width: 90%;
+        display: block;
+        margin: 0px auto;
+        margin-bottom: 15px;
         polygon,
         path {
           animation: anime 3s ease-in 0s forwards; 
