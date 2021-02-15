@@ -697,6 +697,9 @@
   #lp .cover h1 {
     margin: 0 0 0 0;
   }
+  #lp .cover h1.rocknroll {
+    font-size: 8.5vw;
+  }
   #lp .cover .balloon.balloon1, #lp .cover .balloon.balloon2, #lp .cover .balloon.balloon3 {
     top: auto;
     left: auto;

@@ -631,6 +631,9 @@ $container: 1100px;
       padding: 66px 0 158px 0;
       h1 {
         margin: 0 0 0 0;
+        &.rocknroll {
+          font-size: 8.5vw;
+        }
       }
       .balloon {
         &.balloon1,
