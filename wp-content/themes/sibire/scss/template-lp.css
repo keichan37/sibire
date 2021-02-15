@@ -53,21 +53,18 @@
 }
 #lp .cover h1 {
   margin: 0 0 56px 0;
+  color: #000000;
 }
 #lp .cover h1 svg {
-  max-width: 90%;
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 15px;
 }
 #lp .cover h1 svg polygon,
 #lp .cover h1 svg path {
   animation: anime 3s ease-in 0s forwards;
-}
-@keyframes anime {
-  0% {
-    fill: #c2e2dd;
-  }
-  100% {
-    fill: #000000;
-  }
 }
 #lp .cover h1.rocknroll {
   font-family: 'FOT-ロックンロール Std DB', 'RocknRollStd-DB', sans-serif;
@@ -699,6 +696,9 @@
   }
   #lp .cover h1 {
     margin: 0 0 0 0;
+  }
+  #lp .cover h1.rocknroll {
+    font-size: 8.5vw;
   }
   #lp .cover .balloon.balloon1, #lp .cover .balloon.balloon2, #lp .cover .balloon.balloon3 {
     top: auto;

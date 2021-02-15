@@ -49,21 +49,16 @@ $container: 1100px;
     text-align: center;
     h1 {
       margin: 0 0 56px 0;
+      color: #000000;
       svg {
-        max-width: 90%;
+        width: 300px;
+        height: auto;
+        display: block;
+        margin: 0px auto;
+        margin-bottom: 15px;
         polygon,
         path {
           animation: anime 3s ease-in 0s forwards; 
-        }
-        @keyframes anime {
-          0% {
-            fill: #c2e2dd;
-          }
-          50% {
-          }
-          100% {
-            fill: #000000;
-          }
         }
       }
       &.rocknroll {
@@ -636,6 +631,9 @@ $container: 1100px;
       padding: 66px 0 158px 0;
       h1 {
         margin: 0 0 0 0;
+        &.rocknroll {
+          font-size: 8.5vw;
+        }
       }
       .balloon {
         &.balloon1,

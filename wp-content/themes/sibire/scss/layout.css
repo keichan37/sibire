@@ -493,31 +493,39 @@ header .global_menu li.menu-item-has-children.current-menu-item:hover > a {
 
 .scroll-top {
   display: block;
-  width: 60px;
-  height: 60px;
-  background-color: #8cc63f;
+  width: 180px;
+  height: 44px;
+  background-color: #00b900;
   position: fixed;
   bottom: 0;
   right: 0;
   z-index: 99;
   margin: 0 20px 20px 0;
   color: #ffffff;
-  font-size: 33px;
+  font-size: 17px;
   text-align: center;
-  line-height: 1.7;
+  line-height: 44px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
-}
-.scroll-top.none {
-  display: none;
-}
-.scroll-top.absolute {
-  position: absolute;
+  text-decoration: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
 }
 .scroll-top:hover {
-  background-color: #9fcf5e;
+  background-color: #00e200;
+}
+.scroll-top > svg {
+  height: 20px;
+  width: auto;
+  margin: 0 3px 0 0;
+  position: relative;
+  top: 4px;
+  fill: #ffffff;
 }
 
 .tag-list {

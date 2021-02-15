@@ -7,9 +7,11 @@
       <?php elseif(strstr($url,'offtokyomeetup2017')): ?>
       <?php else : ?>
       <?php get_template_part('partials/sns-footer'); ?>
+        <?php /* ?>
         <div class="scroll-top-wrap">
-          <a class="e-scroll-top r-scroll-top scroll-top none" href="javascript:void(0);"><span class="icon icon-topArrow"></span></a>
+          <a class="scroll-top" href="https://lin.ee/mVwbQHE" target="_blank"><?php get_template_part('partials/line'); ?>LINEで仕事相談</a>
         </div>
+        <?php */ ?>
         <footer id="footer">
           <nav>
             <?php wp_nav_menu( array('menu' => 'footer_menu', 'menu_class' => 'footer_menu')); ?>
