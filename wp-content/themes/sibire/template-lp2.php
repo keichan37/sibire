@@ -79,6 +79,15 @@
         </div>
 
       </div>
+      <div class="container">
+        <div class="top-banner">
+          <?php dynamic_sidebar('lp-banner-top'); ?>
+          <?php dynamic_sidebar('lp-banner-top2'); ?>
+          <?php dynamic_sidebar('lp-banner-top3'); ?>
+          <?php dynamic_sidebar('lp-banner-top4'); ?>
+          <?php dynamic_sidebar('lp-banner-top5'); ?>
+        </div>
+      </div>
       
     </div>
     <div class="footer"> 
