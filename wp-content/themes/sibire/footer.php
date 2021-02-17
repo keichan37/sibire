@@ -50,7 +50,7 @@
       label: '',
       prependTo: 'body',
       allowParentLinks: true,
-      showChildren: true,
+      showChildren: false,
     });
     $(".slicknav_btn").click(function(){
       $('#blur').toggleClass("blur");
