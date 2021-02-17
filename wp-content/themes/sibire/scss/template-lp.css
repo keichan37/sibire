@@ -17,6 +17,7 @@
 }
 #lp .top-banner {
   padding-top: 20px;
+  padding-bottom: 20px;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
