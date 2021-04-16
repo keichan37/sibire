@@ -99,6 +99,3 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-
-define('WP_HOME','https://sibire.herokuapp.com');
-define('WP_SITEURL','https://sibire.herokuapp.com');
