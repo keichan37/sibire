@@ -27,3 +27,8 @@
   RewriteCond %{HTTP_HOST} ^sibire\.co\.jp$
   RewriteRule ^(.*)$ https://www.sibire.co.jp/$1 [R=301,L]
 </IfModule>
+
+AuthUserFile /app/.htpasswd
+AuthType Basic
+AuthName "Restricted Access"
+Require valid-user
