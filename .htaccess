@@ -24,6 +24,6 @@
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.php [L]
   Options +FollowSymLinks
-  #RewriteCond %{HTTP_HOST} ^sibire\.co\.jp$
-  #RewriteRule ^(.*)$ https://www.sibire.co.jp/$1 [R=301,L]
+  RewriteCond %{HTTP_HOST} ^sibire\.co\.jp$
+  RewriteRule ^(.*)$ https://www.sibire.co.jp/$1 [R=301,L]
 </IfModule>
